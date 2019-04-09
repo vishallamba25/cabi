@@ -21,20 +21,20 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl(findTestData('virtualShowData').getValue(1, 5))
+/*not_run: WebUI.navigateToUrl(findTestData('virtualShowData').getValue(1, 5))
 
-WebUI.setText(findTestObject('Page_/input_Username_username'), findTestData('virtualShowData').getValue(2, 5))
+not_run: WebUI.setText(findTestObject('Page_/input_Username_username'), findTestData('virtualShowData').getValue(2, 5))
 
-WebUI.setText(findTestObject('Page_/input_Password_password'), findTestData('virtualShowData').getValue(3, 5))
+not_run: WebUI.setText(findTestObject('Page_/input_Password_password'), findTestData('virtualShowData').getValue(3, 5))
 
-WebUI.click(findTestObject('Page_/input_Password_Submit'))
+not_run: WebUI.click(findTestObject('Page_/input_Password_Submit'))
 
-WebUI.click(findTestObject('Page_/a_Set Vhost'))
+not_run: WebUI.click(findTestObject('Page_/a_Set Vhost'))
 
-WebUI.selectOptionByValue(findTestObject('Page_/select_cabitestcabitest2cabitest3cabitest4cabitest5virtual_cabitest18virtual_cabitest19virtual_cabitest21virtual_cabitest6virtual_cabitest7virtual_cabitest8virtual_cabitest9'), 
+not_run: WebUI.selectOptionByValue(findTestObject('Page_/select_cabitestcabitest2cabitest3cabitest4cabitest5virtual_cabitest18virtual_cabitest19virtual_cabitest21virtual_cabitest6virtual_cabitest7virtual_cabitest8virtual_cabitest9'), 
     '19', true)
 
-WebUI.click(findTestObject('Page_/input'))
+not_run: WebUI.click(findTestObject('Page_/input'))*/
 
 WebUI.navigateToUrl(findTestData('virtualShowData').getValue(1, 2))
 

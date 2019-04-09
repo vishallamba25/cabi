@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="MicrositeTestSuite" time="121" tests="0" failures="2" errors="0">
+   <testsuite name="MicrositeTestSuite" tests="0" failures="2" errors="0" time="121" timestamp="2019-04-09 12:37:08" hostname="user - 10.0.102.159" id="Test Suites/MicrositeTestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Katalon Studio\\ShowMicrositeTesting\\Reports\\MicrositeTestSuite\\20190409_123705"/>
+         <property name="logFiles" value="C:\\Users\\user\\Katalon Studio\\ShowMicrositeTesting\\Reports\\MicrositeTestSuite\\20190409_123705\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\user\\Katalon Studio\\ShowMicrositeTesting\\Reports\\MicrositeTestSuite\\20190409_123705\\1554793747244.png, C:\\Users\\user\\Katalon Studio\\ShowMicrositeTesting\\Reports\\MicrositeTestSuite\\20190409_123705\\1554793748160.png"/>
+         <property name="hostName" value="user - 10.0.102.159"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.0.5.10"/>
+         <property name="browser" value="Chrome 73.0.3683.103"/>
+         <property name="hostAddress" value="10.0.102.159"/>
+         <property name="sessionId" value="f032f1487db7840d09afe3369fd8dbd1"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/createShow" classname="Test Cases/createShow" status="FAILED">
+         <failure type="FAILED" message="Test Cases/createShow FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Create Show - Time and Place/check_Virtual_Show'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$4.call(Unknown Source)
+	at createShow.run(createShow:69)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554793625232.run(TempTestSuite1554793625232.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-09 12:37:09 - [TEST_CASE][FAILED] - Test Cases/createShow: Test Cases/createShow FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Create Show - Time and Place/check_Virtual_Show'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$4.call(Unknown Source)
+	at createShow.run(createShow:69)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554793625232.run(TempTestSuite1554793625232.groovy:35)
+
+
+2019-04-09 12:37:10 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-04-09 12:37:10 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-09 12:37:10 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-09 12:37:14 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-04-09 12:37:14 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-04-09 12:37:16 - [MESSAGE][PASSED] - Current window maximized
+
+2019-04-09 12:37:16 - [TEST_STEP][PASSED] - navigateToUrl(findTestData("virtualShowData").getValue(7, 1)): Navigate to 'https://test3.cliotest.com/backoffice/control/main' successfully
+
+2019-04-09 12:37:25 - [MESSAGE][PASSED] - Navigate to 'https://test3.cliotest.com/backoffice/control/main' successfully
+
+2019-04-09 12:37:25 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_username"), findTestData("virtualShowData").getValue(1, 1)): Text '400000002' is set on object 'Object Repository/Page_cabi/input_username'
+
+2019-04-09 12:37:25 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_username'
+
+2019-04-09 12:37:25 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_cabi/input_password"), "B/N/DIt9VtgMeGq7IFnfMA=="): Text ****** has been set on object 'Object Repository/Page_cabi/input_password'
+
+2019-04-09 12:37:25 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_cabi/input_password'
+
+2019-04-09 12:37:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi/input_consultantLogin")): Object: 'Object Repository/Page_cabi/input_consultantLogin' is clicked on
+
+2019-04-09 12:37:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_consultantLogin' is clicked on
+
+2019-04-09 12:37:39 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-04-09 12:37:49 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-04-09 12:37:49 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi/span_username"), findTestData("virtualShowData").getValue(17, 1)): Actual text and expected text of test object 'Object Repository/Page_cabi/span_username' are matched.
+
+2019-04-09 12:37:49 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi/span_username' are matched.
+
+2019-04-09 12:37:49 - [TEST_STEP][PASSED] - rightClick(findTestObject("Page_cabi Home/a_shows _orders")): Object: 'Object Repository/Page_cabi Home/a_shows _orders' is right clicked on
+
+2019-04-09 12:37:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_shows _orders' is right clicked on
+
+2019-04-09 12:37:49 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Home/a_Create_A_Show")): Object: 'Object Repository/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-04-09 12:37:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-04-09 12:37:56 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Create Show - Set Hostess/input_Hostess"), findTestData("virtualShowData").getValue(3, 1)): Text 'neohost1 abc' is set on object 'Object Repository/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-04-09 12:37:56 - [MESSAGE][PASSED] - Text 'neohost1 abc' is set on object 'Object Repository/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-04-09 12:37:56 - [TEST_STEP][PASSED] - rightClick(findTestObject("Page_cabi Create Show - Set Hostess/input_Hostess")): Object: 'Object Repository/Page_cabi Create Show - Set Hostess/input_Hostess' is right clicked on
+
+2019-04-09 12:37:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Create Show - Set Hostess/input_Hostess' is right clicked on
+
+2019-04-09 12:37:56 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Create Show - Set Hostess/a_select_hostess")): Object: 'Object Repository/Page_cabi Create Show - Set Hostess/a_select_hostess' is clicked on
+
+2019-04-09 12:37:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Create Show - Set Hostess/a_select_hostess' is clicked on
+
+2019-04-09 12:37:58 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Create Show - Set Hostess/input_Hostess_Txt"), findTestData("virtualShowData").getValue(3, 1)): Text 'neohost1 abc' is set on object 'Object Repository/Page_cabi Create Show - Set Hostess/input_Hostess_Txt'
+
+2019-04-09 12:37:58 - [MESSAGE][PASSED] - Text 'neohost1 abc' is set on object 'Object Repository/Page_cabi Create Show - Set Hostess/input_Hostess_Txt'
+
+2019-04-09 12:37:58 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess"), "3", true): All options with value '3' are selected in object 'Object Repository/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-04-09 12:37:58 - [MESSAGE][PASSED] - All options with value '3' are selected in object 'Object Repository/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-04-09 12:37:58 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Create Show - Set Hostess/input_Cohostess"), findTestData("virtualShowData").getValue(4, 1)): Text 'neocohost1 abc' is set on object 'Object Repository/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-04-09 12:37:58 - [MESSAGE][PASSED] - Text 'neocohost1 abc' is set on object 'Object Repository/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-04-09 12:37:58 - [TEST_STEP][PASSED] - rightClick(findTestObject("Page_cabi Create Show - Set Hostess/input_Cohostess")): Object: 'Object Repository/Page_cabi Create Show - Set Hostess/input_Cohostess' is right clicked on
+
+2019-04-09 12:37:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Create Show - Set Hostess/input_Cohostess' is right clicked on
+
+2019-04-09 12:37:59 - [TEST_STEP][PASSED] - rightClick(findTestObject("Page_cabi Create Show - Set Hostess/input_Cohostess")): Object: 'Object Repository/Page_cabi Create Show - Set Hostess/input_Cohostess' is right clicked on
+
+2019-04-09 12:37:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Create Show - Set Hostess/input_Cohostess' is right clicked on
+
+2019-04-09 12:37:59 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Create Show - Set Hostess/a_select_cohostess")): Object: 'Object Repository/Page_cabi Create Show - Set Hostess/a_select_cohostess' is clicked on
+
+2019-04-09 12:37:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Create Show - Set Hostess/a_select_cohostess' is clicked on
+
+2019-04-09 12:37:59 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Create Show - Set Hostess/input_Cohostess"), findTestData("virtualShowData").getValue(4, 1)): Text 'neocohost1 abc' is set on object 'Object Repository/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-04-09 12:38:00 - [MESSAGE][PASSED] - Text 'neocohost1 abc' is set on object 'Object Repository/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-04-09 12:38:00 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Create Show - Set Hostess/input_next")): Object: 'Object Repository/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-04-09 12:38:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-04-09 12:38:00 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-04-09 12:38:05 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-04-09 12:38:05 - [TEST_STEP][FAILED] - click(findTestObject("Page_cabi Create Show - Time and Place/check_Virtual_Show")): click(findTestObject("Page_cabi Create Show - Time and Place/check_Virtual_Show")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Create Show - Time and Place/check_Virtual_Show'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$4.call(Unknown Source)
+	at createShow.run(createShow:69)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554793625232.run(TempTestSuite1554793625232.groovy:35)
+
+
+2019-04-09 12:38:05 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2019-04-09 12:38:05 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_cabi Create Show - Time and Place/check_Virtual_Show'
+
+2019-04-09 12:38:05 - [MESSAGE][FAILED] - click(findTestObject("Page_cabi Create Show - Time and Place/check_Virtual_Show")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Create Show - Time and Place/check_Virtual_Show'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$4.call(Unknown Source)
+	at createShow.run(createShow:69)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554793625232.run(TempTestSuite1554793625232.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-04-09 12:37:09 - [TEST_CASE][FAILED] - Test Cases/createShow: Test Cases/createShow FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Create Show - Time and Place/check_Virtual_Show'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$4.call(Unknown Source)
+	at createShow.run(createShow:69)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554793625232.run(TempTestSuite1554793625232.groovy:35)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/micrositeRSVPValidUser" classname="Test Cases/micrositeRSVPValidUser" status="FAILED">
+         <failure type="FAILED" message="Test Cases/micrositeRSVPValidUser FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)' FAILED.
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$5.call(Unknown Source)
+	at micrositeRSVPValidUser.run(micrositeRSVPValidUser:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554793625232.run(TempTestSuite1554793625232.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-09 12:38:05 - [TEST_CASE][FAILED] - Test Cases/micrositeRSVPValidUser: Test Cases/micrositeRSVPValidUser FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)' FAILED.
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$5.call(Unknown Source)
+	at micrositeRSVPValidUser.run(micrositeRSVPValidUser:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554793625232.run(TempTestSuite1554793625232.groovy:35)
+
+
+2019-04-09 12:38:05 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-04-09 12:38:05 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-04-09 12:38:06 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-09 12:38:08 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-04-09 12:38:08 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-04-09 12:38:09 - [MESSAGE][PASSED] - Current window maximized
+
+2019-04-09 12:38:09 - [TEST_STEP][PASSED] - navigateToUrl(findTestData("virtualShowData").getValue(1, 2)): Navigate to 'https://mirandakate.cabitest3.com/show-microsite/104515482/' successfully
+
+2019-04-09 12:38:26 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabitest3.com/show-microsite/104515482/' successfully
+
+2019-04-09 12:38:26 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-04-09 12:38:36 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-04-09 12:38:36 - [TEST_STEP][FAILED] - verifyElementText(findTestObject("Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)"), "You're invited"): verifyElementText(findTestObject("Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)"), "You're invited") FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)' FAILED.
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$5.call(Unknown Source)
+	at micrositeRSVPValidUser.run(micrositeRSVPValidUser:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554793625232.run(TempTestSuite1554793625232.groovy:35)
+
+
+2019-04-09 12:39:07 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='page']/show-microsite/div/div/div/div/div/div/app-rsvp-panel/div/div/h1'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-04-09 12:39:08 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)' located by 'By.xpath: //div[@id='page']/show-microsite/div/div/div/div/div/div/app-rsvp-panel/div/div/h1' not found
+[[ATTACHMENT|C:\\Users\\user\\Katalon Studio\\ShowMicrositeTesting\\Reports\\MicrositeTestSuite\\20190409_123705\\1554793747244.png]]
+
+2019-04-09 12:39:09 - [MESSAGE][FAILED] - Verify element text of test object 'Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)' FAILED.
+[[ATTACHMENT|C:\\Users\\user\\Katalon Studio\\ShowMicrositeTesting\\Reports\\MicrositeTestSuite\\20190409_123705\\1554793748160.png]]
+
+2019-04-09 12:39:09 - [MESSAGE][FAILED] - verifyElementText(findTestObject("Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)"), "You're invited") FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)' FAILED.
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$5.call(Unknown Source)
+	at micrositeRSVPValidUser.run(micrositeRSVPValidUser:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554793625232.run(TempTestSuite1554793625232.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-04-09 12:38:05 - [TEST_CASE][FAILED] - Test Cases/micrositeRSVPValidUser: Test Cases/micrositeRSVPValidUser FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)' FAILED.
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$5.call(Unknown Source)
+	at micrositeRSVPValidUser.run(micrositeRSVPValidUser:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554793625232.run(TempTestSuite1554793625232.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-09 12:37:08 - [TEST_SUITE][FAILED] - MicrositeTestSuite: Test Cases/createShow FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Create Show - Time and Place/check_Virtual_Show'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$4.call(Unknown Source)
+	at createShow.run(createShow:69)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554793625232.run(TempTestSuite1554793625232.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-04-09 12:37:08 - [TEST_SUITE][FAILED] - MicrositeTestSuite: Test Cases/createShow FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Create Show - Time and Place/check_Virtual_Show'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$4.call(Unknown Source)
+	at createShow.run(createShow:69)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554793625232.run(TempTestSuite1554793625232.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

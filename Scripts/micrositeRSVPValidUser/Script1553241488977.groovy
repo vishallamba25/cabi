@@ -21,25 +21,26 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-/*not_run: WebUI.navigateToUrl(findTestData('virtualShowData').getValue(1, 5))
+WebUI.navigateToUrl(findTestData('virtualShowData').getValue(1, 5))
 
-not_run: WebUI.setText(findTestObject('Page_/input_Username_username'), findTestData('virtualShowData').getValue(2, 5))
+WebUI.setText(findTestObject('Page_/input_Username_username'), findTestData('virtualShowData').getValue(2, 5))
 
-not_run: WebUI.setEncryptedText(findTestObject('Page_/input_Password_password'), findTestData('virtualShowData').getValue(3, 5))
+WebUI.setText(findTestObject('Page_/input_Password_password'), findTestData('virtualShowData').getValue(3, 5))
 
-not_run: WebUI.click(findTestObject('Page_/input_Password_Submit'))
+WebUI.click(findTestObject('Page_/input_Password_Submit'))
 
-not_run: WebUI.click(findTestObject('Page_/a_Set Vhost'))
+WebUI.click(findTestObject('Page_/a_Set Vhost'))
 
-not_run: WebUI.selectOptionByValue(findTestObject('Page_/select_cabitestcabitest2cabitest3cabitest4cabitest5virtual_cabitest18virtual_cabitest19virtual_cabitest21virtual_cabitest6virtual_cabitest7virtual_cabitest8virtual_cabitest9'), 
+WebUI.selectOptionByValue(findTestObject('Page_/select_cabitestcabitest2cabitest3cabitest4cabitest5virtual_cabitest18virtual_cabitest19virtual_cabitest21virtual_cabitest6virtual_cabitest7virtual_cabitest8virtual_cabitest9'), 
     '19', true)
 
-not_run: WebUI.click(findTestObject('Page_/input'))*/
+WebUI.click(findTestObject('Page_/input'))
+
 WebUI.navigateToUrl(findTestData('virtualShowData').getValue(1, 2))
 
-WebUI.delay(10)
+WebUI.delay(12)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)'), 
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited'), 
     'You\'re invited')
 
 WebUI.click(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/button_Login to RSVP'))
@@ -52,8 +53,8 @@ WebUI.click(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 20
 
 WebUI.delay(5)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/input_Welcome_password'), 
-    'B/N/DIt9VtgMeGq7IFnfMA==')
+WebUI.setText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/input_Welcome_password'), 
+    findTestData('virtualShowData').getValue(14, 1))
 
 WebUI.click(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/button_Continue'))
 
@@ -151,8 +152,7 @@ WebUI.navigateToUrl(findTestData('virtualShowData').getValue(1, 2))
 
 WebUI.delay(5)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)'), 
-    'You\'re invited')
+WebUI.verifyElementText(findTestObject('Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited'), 'You\'re invited')
 
 WebUI.delay(5)
 
@@ -163,8 +163,8 @@ WebUI.setText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 
 
 WebUI.click(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/button_Continue'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/input_Welcome_password'), 
-    'B/N/DIt9VtgMeGq7IFnfMA==')
+WebUI.setText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/input_Welcome_password'), 
+    findTestData('virtualShowData').getValue(16, 1))
 
 WebUI.click(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/button_Continue'))
 
@@ -194,8 +194,7 @@ WebUI.navigateToUrl(findTestData('virtualShowData').getValue(1, 2))
 
 WebUI.delay(5)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)'), 
-    'You\'re invited')
+WebUI.verifyElementText(findTestObject('Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited'), 'You\'re invited')
 
 WebUI.delay(5)
 
@@ -206,8 +205,8 @@ WebUI.setText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 
 
 WebUI.click(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/button_Continue'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/input_Welcome_password'), 
-    'B/N/DIt9VtgMeGq7IFnfMA==')
+WebUI.setText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/input_Welcome_password'), 
+    findTestData('virtualShowData').getValue(10, 1))
 
 WebUI.click(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/button_Continue'))
 
@@ -237,8 +236,7 @@ WebUI.navigateToUrl(findTestData('virtualShowData').getValue(1, 2))
 
 WebUI.delay(5)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited (1)'), 
-    'You\'re invited')
+WebUI.verifyElementText(findTestObject('Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited'), 'You\'re invited')
 
 WebUI.delay(5)
 
@@ -249,8 +247,8 @@ WebUI.setText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 
 
 WebUI.click(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/button_Continue'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/input_Welcome_password'), 
-    'B/N/DIt9VtgMeGq7IFnfMA==')
+WebUI.setText(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/input_Welcome_password'), 
+    findTestData('virtualShowData').getValue(12, 1))
 
 WebUI.click(findTestObject('Object Repository/Page_Show microsite - Cabi Fall 2018 Collection/button_Continue'))
 

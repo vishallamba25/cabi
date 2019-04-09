@@ -25,7 +25,7 @@ WebUI.navigateToUrl(findTestData('virtualShowData').getValue(7, 1))
 
 WebUI.setText(findTestObject('Page_cabi/input_username'), findTestData('virtualShowData').getValue(1, 1))
 
-WebUI.setEncryptedText(findTestObject('Page_cabi/input_password'), 'B/N/DIt9VtgMeGq7IFnfMA==')
+WebUI.setText(findTestObject('Page_cabi/input_password'), findTestData('virtualShowData').getValue(2, 1))
 
 WebUI.click(findTestObject('Page_cabi/input_consultantLogin'))
 
@@ -47,6 +47,19 @@ WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_select_hostess
 WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Hostess_Txt'), findTestData('virtualShowData').getValue(
         3, 1))
 
+/////////////////////////
+List<WebElement> validateHostessAddressMsg = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Create Show - Set Hostess/validate_address_msg'), 
+    5)
+
+println(validateHostessAddressMsg.size())
+
+if (validateHostessAddressMsg.isEmpty()) {
+    WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/validate_hostess_address'))
+
+    WebUI.delay(5)
+}
+
+/////////////////////////
 WebUI.selectOptionByValue(findTestObject('Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'), 
     '3', true)
 
@@ -62,6 +75,17 @@ WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_select_cohoste
 WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Cohostess'), findTestData('virtualShowData').getValue(
         4, 1))
 
+/////////////////////////
+validateHostessAddressMsg = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Create Show - Set Hostess/validate_address_msg'), 
+    5)
+
+if (validateHostessAddressMsg.size() != 4) {
+    WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/validate_cohostess_address'))
+
+    WebUI.delay(5)
+}
+
+/////////////////////////
 WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/input_next'))
 
 WebUI.delay(5)
@@ -146,8 +170,8 @@ for (int i = 0; i < guestCount; i++) {
         println(we.getText())
 
         if (we.getText().equals(findTestData('virtualShowData').getValue(21 + i, 1))) {
-            flag = true
-        } //println(WebUI.getText(we))
+            flag = true //println(WebUI.getText(we))
+        }
     }
 }
 

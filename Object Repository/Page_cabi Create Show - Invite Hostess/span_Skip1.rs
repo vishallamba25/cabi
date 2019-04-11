@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_Skip</name>
+   <name>span_Skip1</name>
    <tag></tag>
    <elementGuidId>b5af366f-610f-495b-9695-328ad7d40070</elementGuidId>
    <selectorCollection>

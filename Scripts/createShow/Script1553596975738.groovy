@@ -21,31 +21,29 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl(findTestData('virtualShowData').getValue(7, 1))
+WebUI.navigateToUrl(testEnvt)
 
-WebUI.setText(findTestObject('Page_cabi/input_username'), findTestData('virtualShowData').getValue(1, 1))
+WebUI.setText(findTestObject('Page_cabi/input_username'), username)
 
-WebUI.setText(findTestObject('Page_cabi/input_password'), findTestData('virtualShowData').getValue(2, 1))
+WebUI.setText(findTestObject('Page_cabi/input_password'), password)
 
 WebUI.click(findTestObject('Page_cabi/input_consultantLogin'))
 
 WebUI.delay(10)
 
-WebUI.verifyElementText(findTestObject('Page_cabi/span_username'), findTestData('virtualShowData').getValue(17, 1))
+WebUI.verifyElementText(findTestObject('Page_cabi/span_username'), stylist)
 
 WebUI.rightClick(findTestObject('Page_cabi Home/a_shows _orders'))
 
 WebUI.click(findTestObject('Page_cabi Home/a_Create_A_Show'))
 
-WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Hostess'), findTestData('virtualShowData').getValue(
-        3, 1))
+WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Hostess'), hostess)
 
 WebUI.rightClick(findTestObject('Page_cabi Create Show - Set Hostess/input_Hostess'))
 
 WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_select_hostess'))
 
-WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Hostess_Txt'), findTestData('virtualShowData').getValue(
-        3, 1))
+WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Hostess_Txt'), hostess)
 
 /////////////////////////
 List<WebElement> validateHostessAddressMsg = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Create Show - Set Hostess/validate_address_msg'), 
@@ -63,8 +61,7 @@ if (validateHostessAddressMsg.isEmpty()) {
 WebUI.selectOptionByValue(findTestObject('Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'), 
     '3', true)
 
-WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Cohostess'), findTestData('virtualShowData').getValue(
-        4, 1))
+WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Cohostess'), cohostess)
 
 WebUI.rightClick(findTestObject('Page_cabi Create Show - Set Hostess/input_Cohostess'))
 
@@ -72,8 +69,7 @@ WebUI.rightClick(findTestObject('Page_cabi Create Show - Set Hostess/input_Cohos
 
 WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_select_cohostess'))
 
-WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Cohostess'), findTestData('virtualShowData').getValue(
-        4, 1))
+WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Cohostess'), cohostess)
 
 /////////////////////////
 validateHostessAddressMsg = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Create Show - Set Hostess/validate_address_msg'), 
@@ -108,8 +104,7 @@ WebUI.click(findTestObject('Page_cabi Create Show - Invite Hostess/input_Skip_In
 
 WebUI.rightClick(findTestObject('Page_cabi Edit Show - Add Guests/contact_search_box'))
 
-WebUI.setText(findTestObject('Page_cabi Edit Show - Add Guests/contact_search_box'), findTestData('virtualShowData').getValue(
-        5, 1))
+WebUI.setText(findTestObject('Page_cabi Edit Show - Add Guests/contact_search_box'), guest1)
 
 WebUI.click(findTestObject('Page_cabi Edit Show - Add Guests/plus_add_guest'))
 
@@ -125,8 +120,7 @@ WebUI.click(findTestObject('Page_cabi Edit Show - Add Guests/i_span_add_guest'))
 
 WebUI.rightClick(findTestObject('Page_cabi Edit Show - Add Guests/contact_search_box'))
 
-WebUI.setText(findTestObject('Page_cabi Edit Show - Add Guests/contact_search_box'), findTestData('virtualShowData').getValue(
-        6, 1))
+WebUI.setText(findTestObject('Page_cabi Edit Show - Add Guests/contact_search_box'), guest2)
 
 WebUI.rightClick(findTestObject('Page_cabi Edit Show - Add Guests/contact_search_box'))
 
@@ -144,17 +138,15 @@ WebUI.click(findTestObject('Page_cabi Edit Show - Add Guests/i_span_add_guest'))
 
 WebUI.delay(5)
 
-WebUI.verifyElementText(findTestObject('Page_cabi Edit Show - Add Guests/span_hostess_name'), findTestData('virtualShowData').getValue(
-        18, 1))
+WebUI.verifyElementText(findTestObject('Page_cabi Edit Show - Add Guests/span_hostess_name'), verifyHostess)
 
-WebUI.verifyElementText(findTestObject('Page_cabi Edit Show - Add Guests/span_cohostess_name'), findTestData('virtualShowData').getValue(
-        19, 1))
+WebUI.verifyElementText(findTestObject('Page_cabi Edit Show - Add Guests/span_cohostess_name'), verifyCoHostess)
 
 /////////////////////////
 List<WebElement> listElement = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Edit Show - Add Guests/span_guest_name_list'), 
     5)
 
-int guestCount = Integer.parseInt(findTestData('virtualShowData').getValue(20, 1))
+int guestCount = Integer.parseInt(verifyGuestCount)
 
 //println "guest count is"
 //println guestCount
@@ -166,12 +158,18 @@ boolean flag = false
 for (int i = 0; i < guestCount; i++) {
     flag = false
 
-    for (WebElement we : listElement) {
+    if (listElement.get(i).getText().equals(verifyGuest1)) {
+        flag = true //println(WebUI.getText(we))
+    }
+    
+    if (listElement.get(i).getText().equals(verifyGuest2)) {
+        flag = true //println(WebUI.getText(we))
+        /*for (WebElement we : listElement) {
         println(we.getText())
-
-        if (we.getText().equals(findTestData('virtualShowData').getValue(21 + i, 1))) {
+		if (we.getText().equals(findTestData('virtualShowData').getValue(21 + i, 1))) {
             flag = true //println(WebUI.getText(we))
         }
+    }*/
     }
 }
 
@@ -192,11 +190,12 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Orders/a_My Profile'))
 
 String rsName = WebUI.getText(findTestObject('Page_cabi My Profile/span_rsName'))
 
-String cabitTestEnvt = findTestData('virtualShowData').getValue(8, 1)
+String cabitTestEnvt = cabiTestEnvt
 
-String micrositeURL = WriteToExcel.createURL(rsName, cabitTestEnvt, showID)
+GlobalVariable.micrositeURL = WriteToExcel.createURL(rsName, cabitTestEnvt, showID)
 
-CustomKeywords.'myPack.WriteExcel.demoKey'(micrositeURL)
+/*String micrositeURL = WriteToExcel.createURL(rsName, cabitTestEnvt, showID)
 
+CustomKeywords.'myPack.WriteExcel.demoKey'(micrositeURL)*/
 WebUI.closeBrowser()
 

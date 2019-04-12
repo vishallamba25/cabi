@@ -12,7 +12,7 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object username1
+    public static Object micrositeURL
      
 
     static {
@@ -21,7 +21,7 @@ public class GlobalVariable {
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
             selectedVariables += RunConfiguration.getOverridingParameters()
     
-            username1 = selectedVariables['username1']
+            micrositeURL = selectedVariables['micrositeURL']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

@@ -19,51 +19,51 @@
          <combinationType>ONE</combinationType>
          <id>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/virtualShowData</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>username</value>
          <variableId>6fa34b38-6b70-4e86-bfb8-8af5df243999</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
          <variableId>8df15ebe-7734-4c25-bae3-a4f6128a752f</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>hostess</value>
          <variableId>93f310b6-cb8e-4bbd-b681-927314c49b49</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>cohostess</value>
          <variableId>c6b272fb-272d-46df-a56e-7ed105405f34</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>guest1</value>
          <variableId>3a350b21-00ef-452c-9a7e-afe1b44f0681</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>guest2</value>
          <variableId>e4245740-0c7c-471a-beaa-456df1866d16</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>testEnvt</value>
          <variableId>9497093f-b7a0-4b10-9ad3-7dce8baf6581</variableId>
       </variableLink>
    </testCaseLink>

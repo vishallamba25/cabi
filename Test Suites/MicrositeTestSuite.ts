@@ -27,6 +27,10 @@
       <variableLink>
          <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
          <type>DATA_COLUMN</type>
+<<<<<<< HEAD
+         <value>username</value>
+         <variableId>6fa34b38-6b70-4e86-bfb8-8af5df243999</variableId>
+=======
          <value>testEnvt</value>
          <variableId>e6d9df27-8161-4784-b480-b15b82fe5a87</variableId>
       </variableLink>
@@ -65,40 +69,70 @@
          <type>DATA_COLUMN</type>
          <value>guest2</value>
          <variableId>c5b25a9e-0208-413b-a83e-fc78aa3eec73</variableId>
+>>>>>>> c2ee801a4288fd72d0d08c56359abc7a6b6c23d6
       </variableLink>
       <variableLink>
          <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
          <type>DATA_COLUMN</type>
+<<<<<<< HEAD
+         <value>password</value>
+         <variableId>8df15ebe-7734-4c25-bae3-a4f6128a752f</variableId>
+=======
          <value>verifyHostess</value>
          <variableId>67613932-711f-4f74-a30d-df41d650501c</variableId>
+>>>>>>> c2ee801a4288fd72d0d08c56359abc7a6b6c23d6
       </variableLink>
       <variableLink>
          <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
          <type>DATA_COLUMN</type>
+<<<<<<< HEAD
+         <value>hostess</value>
+         <variableId>93f310b6-cb8e-4bbd-b681-927314c49b49</variableId>
+=======
          <value>verifyCohostess</value>
          <variableId>38a27d98-9bcf-4ff3-bc92-e09827e33218</variableId>
+>>>>>>> c2ee801a4288fd72d0d08c56359abc7a6b6c23d6
       </variableLink>
       <variableLink>
          <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
          <type>DATA_COLUMN</type>
+<<<<<<< HEAD
+         <value>cohostess</value>
+         <variableId>c6b272fb-272d-46df-a56e-7ed105405f34</variableId>
+=======
          <value>verifyGuest1</value>
          <variableId>708ec0d9-d0ec-4409-8062-62015a94640a</variableId>
+>>>>>>> c2ee801a4288fd72d0d08c56359abc7a6b6c23d6
       </variableLink>
       <variableLink>
          <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
          <type>DATA_COLUMN</type>
+<<<<<<< HEAD
+         <value>guest1</value>
+         <variableId>3a350b21-00ef-452c-9a7e-afe1b44f0681</variableId>
+=======
          <value>verifyGuest2</value>
          <variableId>3f6f22b9-28ca-4173-abee-2f0b0dca26a4</variableId>
+>>>>>>> c2ee801a4288fd72d0d08c56359abc7a6b6c23d6
       </variableLink>
       <variableLink>
          <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
          <type>DATA_COLUMN</type>
+<<<<<<< HEAD
+         <value>guest2</value>
+         <variableId>e4245740-0c7c-471a-beaa-456df1866d16</variableId>
+=======
          <value>cabiTestEnvt</value>
          <variableId>ff601af0-7aae-472d-a995-7ef1822bd2f3</variableId>
+>>>>>>> c2ee801a4288fd72d0d08c56359abc7a6b6c23d6
       </variableLink>
       <variableLink>
          <testDataLinkId>2ce6578b-c9c6-4cfb-bd38-4f9b3e91b589</testDataLinkId>
          <type>DATA_COLUMN</type>
+<<<<<<< HEAD
+         <value>testEnvt</value>
+         <variableId>9497093f-b7a0-4b10-9ad3-7dce8baf6581</variableId>
+=======
          <value>stylist</value>
          <variableId>56a3b13a-2310-4185-9e2e-ea0b1ade2b49</variableId>
       </variableLink>
@@ -107,6 +141,7 @@
          <type>DATA_COLUMN</type>
          <value>verifyGuestCount</value>
          <variableId>cbb92a5a-4ae9-4025-b5e2-13cd4942995a</variableId>
+>>>>>>> c2ee801a4288fd72d0d08c56359abc7a6b6c23d6
       </variableLink>
    </testCaseLink>
    <testCaseLink>

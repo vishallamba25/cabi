@@ -118,8 +118,8 @@
          <combinationType>ONE</combinationType>
          <id>32fa2df6-44d6-4a1e-89be-fe3d2226cc21</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/micrositeData</testDataId>
       </testDataLink>

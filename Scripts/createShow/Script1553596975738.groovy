@@ -44,6 +44,7 @@ WebUI.rightClick(findTestObject('Page_cabi Create Show - Set Hostess/input_Hoste
 WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_select_hostess'))
 
 WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Hostess_Txt'), hostess)
+WebUI.delay(3)
 
 /////////////////////////
 List<WebElement> validateHostessAddressMsg = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Create Show - Set Hostess/validate_address_msg'), 
@@ -70,7 +71,7 @@ WebUI.rightClick(findTestObject('Page_cabi Create Show - Set Hostess/input_Cohos
 WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_select_cohostess'))
 
 WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Cohostess'), cohostess)
-
+WebUI.delay(3)
 /////////////////////////
 validateHostessAddressMsg = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Create Show - Set Hostess/validate_address_msg'), 
     5)

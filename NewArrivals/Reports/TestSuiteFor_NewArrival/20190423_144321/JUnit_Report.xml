@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestSuiteFor_NewArrival" time="133" tests="1" failures="0" errors="0">
+   <testsuite name="TestSuiteFor_NewArrival" tests="1" failures="0" errors="0" time="133" timestamp="2019-04-23 14:43:23" hostname="user - 10.0.102.159" id="Test Suites/TestSuiteFor_NewArrival">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="F:\\my katalon bkp\\CabiClio\\Reports\\TestSuiteFor_NewArrival\\20190423_144321"/>
+         <property name="logFiles" value="F:\\my katalon bkp\\CabiClio\\Reports\\TestSuiteFor_NewArrival\\20190423_144321\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 10.0.102.159"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 73.0.3683.103"/>
+         <property name="hostAddress" value="10.0.102.159"/>
+         <property name="sessionId" value="16b5b058f8d32e2ce95ef9c0db03e19d"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/NewArrivals" classname="Test Cases/NewArrivals" status="PASSED">
+         <system-out><![CDATA[2019-04-23 14:43:24 - [TEST_CASE][PASSED] - Test Cases/NewArrivals: Test Cases/NewArrivals
+
+2019-04-23 14:43:24 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-04-23 14:43:24 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-04-23 14:43:24 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-04-23 14:43:24 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-04-23 14:43:24 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-23 14:43:25 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-23 14:43:28 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-04-23 14:43:28 - [TEST_STEP][PASSED] - navigateToUrl(CabiUrl): Navigate to 'https://test14.cliotest.com/backoffice/control/main' successfully
+
+2019-04-23 14:43:35 - [MESSAGE][PASSED] - Navigate to 'https://test14.cliotest.com/backoffice/control/main' successfully
+
+2019-04-23 14:43:35 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-04-23 14:43:36 - [MESSAGE][PASSED] - Current window maximized
+
+2019-04-23 14:43:36 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), Username): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-04-23 14:43:36 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-04-23 14:43:36 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), Password): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-04-23 14:43:37 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-04-23 14:43:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-04-23 14:43:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-04-23 14:43:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-04-23 14:43:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-04-23 14:43:47 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:43:50 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:43:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Personal Purchases")): Object: 'Object Repository/Page_cabi Home/a_Personal Purchases' is clicked on
+
+2019-04-23 14:43:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Personal Purchases' is clicked on
+
+2019-04-23 14:43:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Personal Store/span_Continue to Order")): Object: 'Object Repository/Page_cabi Personal Store/span_Continue to Order' is clicked on
+
+2019-04-23 14:43:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Personal Store/span_Continue to Order' is clicked on
+
+2019-04-23 14:43:55 - [TEST_STEP][PASSED] - for ([row = 1, row <= findTestData("New Test Data").getRowNumbers(), (row++)]): null
+
+2019-04-23 14:43:55 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), findTestData("New Test Data").getValue("Style", row)): Text '5618' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:43:56 - [MESSAGE][PASSED] - Text '5618' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:43:56 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-04-23 14:44:01 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-04-23 14:44:01 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:01 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:01 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Order Items/li_5618 Breeze Dress")): Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-23 14:44:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-23 14:44:03 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:44:06 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:44:06 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/GetAttribute_getID"), findTestData("New Test Data").getValue("Style", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-23 14:44:06 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-23 14:44:06 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:44:09 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - colorOptions = findWebElements(findTestObject("Page_cabi Order Items/GetAttribute_Color"), 5): null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - println(colorOptions.size()): null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - expectedColour = findTestData("New Test Data").getValue("Color", row): null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - println("expected colour is"): null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - println(expectedColour): null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - colourVerified = false: null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - for (org.openqa.selenium.WebElement op : colorOptions): null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - println(op.getText()): null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - if (expectedColour.equalsIgnoreCase(op.getText())): null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - colourVerified = true: null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - break: null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - assert colourVerified == true: null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - getPrice = getText(findTestObject("Page_cabi Order Items/GetAttribute_Price")): Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $119.00'
+
+2019-04-23 14:44:09 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $119.00'
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - Split_Data = UtilityMethods.SplitData(getPrice): null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - verifyMatch(Split_Data, findTestData("New Test Data").getValue("Retail", row), true): Actual text '119' and expected text '119' are matched  using regular expression
+
+2019-04-23 14:44:09 - [MESSAGE][PASSED] - Actual text '119' and expected text '119' are matched  using regular expression
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - sizeRange1 = ["XXS", "XS", "S", "M", "L", "XL"]: null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - sizeRange2 = ["00", "0", "2", "4", "6", "8", "10", "12", "14", "16"]: null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - sizeRange3 = ["Long", "Regular", "Short"]: null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - sizeRange4 = ["5", "6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "11"]: null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - sizeRangeSplit = UtilityMethods.SplitSizes(findTestData("New Test Data").getValue("SzRange", row)): null
+
+2019-04-23 14:44:09 - [TEST_STEP][PASSED] - sizeType = getText(findTestObject("Object Repository/Page_cabi Order Items/Size")): Text of object 'Object Repository/Page_cabi Order Items/Size' is: 'Select'
+
+2019-04-23 14:44:10 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/Size' is: 'Select'
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - sizeOptions = findWebElements(findTestObject("Object Repository/Page_cabi Order Items/Size"), 5): null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - actualRange = new java.util.ArrayList(): null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - expectedRange = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - if (sizeType.equalsIgnoreCase("Select")): null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - for ([i = 1, i < sizeOptions.size(), (i++)]): null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("XS") || toString().equalsIgnoreCase("XXS")): null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - expectedRange = UtilityMethods.getExpectedRange(sizeRange1, sizeRangeSplit): null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - println("XS"): null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - println(expectedRange.toString()): null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - assert UtilityMethods.listEquals(expectedRange, actualRange) == true: null
+
+2019-04-23 14:44:10 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:44:13 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:44:13 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/product_title"), findTestData("New Test Data").getValue("Description", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_title' are matched.
+
+2019-04-23 14:44:13 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_title' are matched.
+
+2019-04-23 14:44:13 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/product_fabric"), findTestData("New Test Data").getValue("FinalContent", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_fabric' are matched.
+
+2019-04-23 14:44:13 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_fabric' are matched.
+
+2019-04-23 14:44:13 - [TEST_STEP][PASSED] - println(getText(findTestObject("Page_cabi Order Items/care_instruction"))): Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Turn garment inside out and place in a mesh bag. Machine wash separately in cold water on the delicate cycle. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Warm iron if needed. Can be dry cleaned.'
+
+2019-04-23 14:44:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Turn garment inside out and place in a mesh bag. Machine wash separately in cold water on the delicate cycle. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Warm iron if needed. Can be dry cleaned.'
+
+2019-04-23 14:44:13 - [TEST_STEP][PASSED] - actualCasreIntrn = "<div>" + getText(findTestObject("Page_cabi Order Items/care_instruction")) + "</div>": Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Turn garment inside out and place in a mesh bag. Machine wash separately in cold water on the delicate cycle. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Warm iron if needed. Can be dry cleaned.'
+
+2019-04-23 14:44:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Turn garment inside out and place in a mesh bag. Machine wash separately in cold water on the delicate cycle. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Warm iron if needed. Can be dry cleaned.'
+
+2019-04-23 14:44:13 - [TEST_STEP][PASSED] - assert actualCasreIntrn.equals(findTestData("New Test Data").getValue("CareInstr", row)): null
+
+2019-04-23 14:44:13 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), findTestData("New Test Data").getValue("Style", row)): Text '5558' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:13 - [MESSAGE][PASSED] - Text '5558' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:13 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-04-23 14:44:18 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-04-23 14:44:18 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:18 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:18 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Order Items/li_5618 Breeze Dress")): Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-23 14:44:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-23 14:44:24 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:44:27 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:44:27 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/GetAttribute_getID"), findTestData("New Test Data").getValue("Style", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-23 14:44:27 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-23 14:44:27 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:44:30 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - colorOptions = findWebElements(findTestObject("Page_cabi Order Items/GetAttribute_Color"), 5): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - println(colorOptions.size()): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - expectedColour = findTestData("New Test Data").getValue("Color", row): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - println("expected colour is"): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - println(expectedColour): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - colourVerified = false: null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - for (org.openqa.selenium.WebElement op : colorOptions): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - println(op.getText()): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - if (expectedColour.equalsIgnoreCase(op.getText())): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - println(op.getText()): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - if (expectedColour.equalsIgnoreCase(op.getText())): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - println(op.getText()): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - if (expectedColour.equalsIgnoreCase(op.getText())): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - colourVerified = true: null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - break: null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - assert colourVerified == true: null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - getPrice = getText(findTestObject("Page_cabi Order Items/GetAttribute_Price")): Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $66.00'
+
+2019-04-23 14:44:30 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $66.00'
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - Split_Data = UtilityMethods.SplitData(getPrice): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - verifyMatch(Split_Data, findTestData("New Test Data").getValue("Retail", row), true): Actual text '66' and expected text '66' are matched  using regular expression
+
+2019-04-23 14:44:30 - [MESSAGE][PASSED] - Actual text '66' and expected text '66' are matched  using regular expression
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - sizeRange1 = ["XXS", "XS", "S", "M", "L", "XL"]: null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - sizeRange2 = ["00", "0", "2", "4", "6", "8", "10", "12", "14", "16"]: null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - sizeRange3 = ["Long", "Regular", "Short"]: null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - sizeRange4 = ["5", "6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "11"]: null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - sizeRangeSplit = UtilityMethods.SplitSizes(findTestData("New Test Data").getValue("SzRange", row)): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - sizeType = getText(findTestObject("Object Repository/Page_cabi Order Items/Size")): Text of object 'Object Repository/Page_cabi Order Items/Size' is: 'N/A'
+
+2019-04-23 14:44:30 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/Size' is: 'N/A'
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - sizeOptions = findWebElements(findTestObject("Object Repository/Page_cabi Order Items/Size"), 5): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - actualRange = new java.util.ArrayList(): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - expectedRange = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - if (sizeType.equalsIgnoreCase("Select")): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - else: null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - assert sizeType.equalsIgnoreCase("N/A") || sizeType.equalsIgnoreCase(sizeRangeSplit[0]): null
+
+2019-04-23 14:44:30 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:44:33 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:44:33 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/product_title"), findTestData("New Test Data").getValue("Description", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_title' are matched.
+
+2019-04-23 14:44:33 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_title' are matched.
+
+2019-04-23 14:44:33 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/product_fabric"), findTestData("New Test Data").getValue("FinalContent", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_fabric' are matched.
+
+2019-04-23 14:44:33 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_fabric' are matched.
+
+2019-04-23 14:44:33 - [TEST_STEP][PASSED] - println(getText(findTestObject("Page_cabi Order Items/care_instruction"))): Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Wash by hand separately with cold water. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Steam press back to shape. Can be dry cleaned.'
+
+2019-04-23 14:44:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Wash by hand separately with cold water. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Steam press back to shape. Can be dry cleaned.'
+
+2019-04-23 14:44:33 - [TEST_STEP][PASSED] - actualCasreIntrn = "<div>" + getText(findTestObject("Page_cabi Order Items/care_instruction")) + "</div>": Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Wash by hand separately with cold water. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Steam press back to shape. Can be dry cleaned.'
+
+2019-04-23 14:44:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Wash by hand separately with cold water. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Steam press back to shape. Can be dry cleaned.'
+
+2019-04-23 14:44:33 - [TEST_STEP][PASSED] - assert actualCasreIntrn.equals(findTestData("New Test Data").getValue("CareInstr", row)): null
+
+2019-04-23 14:44:33 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), findTestData("New Test Data").getValue("Style", row)): Text '5559' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:34 - [MESSAGE][PASSED] - Text '5559' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:34 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-04-23 14:44:39 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-04-23 14:44:39 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:39 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:39 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Order Items/li_5618 Breeze Dress")): Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-23 14:44:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-23 14:44:44 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:44:47 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:44:47 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/GetAttribute_getID"), findTestData("New Test Data").getValue("Style", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-23 14:44:47 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-23 14:44:47 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:44:50 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - colorOptions = findWebElements(findTestObject("Page_cabi Order Items/GetAttribute_Color"), 5): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - println(colorOptions.size()): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - expectedColour = findTestData("New Test Data").getValue("Color", row): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - println("expected colour is"): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - println(expectedColour): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - colourVerified = false: null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - for (org.openqa.selenium.WebElement op : colorOptions): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - println(op.getText()): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - if (expectedColour.equalsIgnoreCase(op.getText())): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - println(op.getText()): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - if (expectedColour.equalsIgnoreCase(op.getText())): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - println(op.getText()): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - if (expectedColour.equalsIgnoreCase(op.getText())): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - colourVerified = true: null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - break: null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - assert colourVerified == true: null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - getPrice = getText(findTestObject("Page_cabi Order Items/GetAttribute_Price")): Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $59.00'
+
+2019-04-23 14:44:50 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $59.00'
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - Split_Data = UtilityMethods.SplitData(getPrice): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - verifyMatch(Split_Data, findTestData("New Test Data").getValue("Retail", row), true): Actual text '59' and expected text '59' are matched  using regular expression
+
+2019-04-23 14:44:50 - [MESSAGE][PASSED] - Actual text '59' and expected text '59' are matched  using regular expression
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - sizeRange1 = ["XXS", "XS", "S", "M", "L", "XL"]: null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - sizeRange2 = ["00", "0", "2", "4", "6", "8", "10", "12", "14", "16"]: null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - sizeRange3 = ["Long", "Regular", "Short"]: null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - sizeRange4 = ["5", "6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "11"]: null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - sizeRangeSplit = UtilityMethods.SplitSizes(findTestData("New Test Data").getValue("SzRange", row)): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - sizeType = getText(findTestObject("Object Repository/Page_cabi Order Items/Size")): Text of object 'Object Repository/Page_cabi Order Items/Size' is: 'N/A'
+
+2019-04-23 14:44:50 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/Size' is: 'N/A'
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - sizeOptions = findWebElements(findTestObject("Object Repository/Page_cabi Order Items/Size"), 5): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - actualRange = new java.util.ArrayList(): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - expectedRange = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - if (sizeType.equalsIgnoreCase("Select")): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - else: null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - assert sizeType.equalsIgnoreCase("N/A") || sizeType.equalsIgnoreCase(sizeRangeSplit[0]): null
+
+2019-04-23 14:44:50 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:44:53 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:44:53 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/product_title"), findTestData("New Test Data").getValue("Description", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_title' are matched.
+
+2019-04-23 14:44:54 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_title' are matched.
+
+2019-04-23 14:44:54 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/product_fabric"), findTestData("New Test Data").getValue("FinalContent", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_fabric' are matched.
+
+2019-04-23 14:44:54 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_fabric' are matched.
+
+2019-04-23 14:44:54 - [TEST_STEP][PASSED] - println(getText(findTestObject("Page_cabi Order Items/care_instruction"))): Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Wash by hand separately with cold water. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Steam iron only if needed. Can be dry cleaned.'
+
+2019-04-23 14:44:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Wash by hand separately with cold water. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Steam iron only if needed. Can be dry cleaned.'
+
+2019-04-23 14:44:54 - [TEST_STEP][PASSED] - actualCasreIntrn = "<div>" + getText(findTestObject("Page_cabi Order Items/care_instruction")) + "</div>": Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Wash by hand separately with cold water. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Steam iron only if needed. Can be dry cleaned.'
+
+2019-04-23 14:44:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Wash by hand separately with cold water. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Steam iron only if needed. Can be dry cleaned.'
+
+2019-04-23 14:44:54 - [TEST_STEP][PASSED] - assert actualCasreIntrn.equals(findTestData("New Test Data").getValue("CareInstr", row)): null
+
+2019-04-23 14:44:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), findTestData("New Test Data").getValue("Style", row)): Text '5595' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:54 - [MESSAGE][PASSED] - Text '5595' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:54 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-04-23 14:44:59 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-04-23 14:44:59 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:59 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:44:59 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Order Items/li_5618 Breeze Dress")): Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-23 14:45:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-23 14:45:05 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:45:08 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:45:08 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/GetAttribute_getID"), findTestData("New Test Data").getValue("Style", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-23 14:45:08 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-23 14:45:08 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:45:11 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - colorOptions = findWebElements(findTestObject("Page_cabi Order Items/GetAttribute_Color"), 5): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - println(colorOptions.size()): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - expectedColour = findTestData("New Test Data").getValue("Color", row): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - println("expected colour is"): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - println(expectedColour): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - colourVerified = false: null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - for (org.openqa.selenium.WebElement op : colorOptions): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - println(op.getText()): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - if (expectedColour.equalsIgnoreCase(op.getText())): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - colourVerified = true: null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - break: null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - assert colourVerified == true: null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - getPrice = getText(findTestObject("Page_cabi Order Items/GetAttribute_Price")): Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $89.00'
+
+2019-04-23 14:45:11 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $89.00'
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - Split_Data = UtilityMethods.SplitData(getPrice): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - verifyMatch(Split_Data, findTestData("New Test Data").getValue("Retail", row), true): Actual text '89' and expected text '89' are matched  using regular expression
+
+2019-04-23 14:45:11 - [MESSAGE][PASSED] - Actual text '89' and expected text '89' are matched  using regular expression
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - sizeRange1 = ["XXS", "XS", "S", "M", "L", "XL"]: null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - sizeRange2 = ["00", "0", "2", "4", "6", "8", "10", "12", "14", "16"]: null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - sizeRange3 = ["Long", "Regular", "Short"]: null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - sizeRange4 = ["5", "6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "11"]: null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - sizeRangeSplit = UtilityMethods.SplitSizes(findTestData("New Test Data").getValue("SzRange", row)): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - sizeType = getText(findTestObject("Object Repository/Page_cabi Order Items/Size")): Text of object 'Object Repository/Page_cabi Order Items/Size' is: 'Select'
+
+2019-04-23 14:45:11 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/Size' is: 'Select'
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - sizeOptions = findWebElements(findTestObject("Object Repository/Page_cabi Order Items/Size"), 5): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - actualRange = new java.util.ArrayList(): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - expectedRange = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - if (sizeType.equalsIgnoreCase("Select")): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - for ([i = 1, i < sizeOptions.size(), (i++)]): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:11 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:12 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("XS") || toString().equalsIgnoreCase("XXS")): null
+
+2019-04-23 14:45:12 - [TEST_STEP][PASSED] - else if (toString().equalsIgnoreCase("00") || toString().equalsIgnoreCase("0")): null
+
+2019-04-23 14:45:12 - [TEST_STEP][PASSED] - expectedRange = UtilityMethods.getExpectedRange(sizeRange2, sizeRangeSplit): null
+
+2019-04-23 14:45:12 - [TEST_STEP][PASSED] - println("00"): null
+
+2019-04-23 14:45:12 - [TEST_STEP][PASSED] - println(expectedRange.toString()): null
+
+2019-04-23 14:45:12 - [TEST_STEP][PASSED] - assert UtilityMethods.listEquals(expectedRange, actualRange) == true: null
+
+2019-04-23 14:45:12 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:45:15 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:45:15 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/product_title"), findTestData("New Test Data").getValue("Description", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_title' are matched.
+
+2019-04-23 14:45:15 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_title' are matched.
+
+2019-04-23 14:45:15 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/product_fabric"), findTestData("New Test Data").getValue("FinalContent", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_fabric' are matched.
+
+2019-04-23 14:45:15 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_fabric' are matched.
+
+2019-04-23 14:45:15 - [TEST_STEP][PASSED] - println(getText(findTestObject("Page_cabi Order Items/care_instruction"))): Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Machine wash separately, inside out, in cold water on the delicate cycle. Do not bleach. Tumble dry low, remove promptly. Warm iron if needed.'
+
+2019-04-23 14:45:15 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Machine wash separately, inside out, in cold water on the delicate cycle. Do not bleach. Tumble dry low, remove promptly. Warm iron if needed.'
+
+2019-04-23 14:45:15 - [TEST_STEP][PASSED] - actualCasreIntrn = "<div>" + getText(findTestObject("Page_cabi Order Items/care_instruction")) + "</div>": Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Machine wash separately, inside out, in cold water on the delicate cycle. Do not bleach. Tumble dry low, remove promptly. Warm iron if needed.'
+
+2019-04-23 14:45:15 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Machine wash separately, inside out, in cold water on the delicate cycle. Do not bleach. Tumble dry low, remove promptly. Warm iron if needed.'
+
+2019-04-23 14:45:15 - [TEST_STEP][PASSED] - assert actualCasreIntrn.equals(findTestData("New Test Data").getValue("CareInstr", row)): null
+
+2019-04-23 14:45:15 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), findTestData("New Test Data").getValue("Style", row)): Text '5590' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:45:15 - [MESSAGE][PASSED] - Text '5590' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:45:15 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-04-23 14:45:20 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-04-23 14:45:20 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:45:20 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-23 14:45:20 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Order Items/li_5618 Breeze Dress")): Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-23 14:45:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-23 14:45:26 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:45:29 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:45:29 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/GetAttribute_getID"), findTestData("New Test Data").getValue("Style", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-23 14:45:29 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-23 14:45:29 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:45:32 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - colorOptions = findWebElements(findTestObject("Page_cabi Order Items/GetAttribute_Color"), 5): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - println(colorOptions.size()): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - expectedColour = findTestData("New Test Data").getValue("Color", row): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - println("expected colour is"): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - println(expectedColour): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - colourVerified = false: null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - for (org.openqa.selenium.WebElement op : colorOptions): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - println(op.getText()): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - if (expectedColour.equalsIgnoreCase(op.getText())): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - colourVerified = true: null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - break: null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - assert colourVerified == true: null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - getPrice = getText(findTestObject("Page_cabi Order Items/GetAttribute_Price")): Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $89.00'
+
+2019-04-23 14:45:32 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $89.00'
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - Split_Data = UtilityMethods.SplitData(getPrice): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - verifyMatch(Split_Data, findTestData("New Test Data").getValue("Retail", row), true): Actual text '89' and expected text '89' are matched  using regular expression
+
+2019-04-23 14:45:32 - [MESSAGE][PASSED] - Actual text '89' and expected text '89' are matched  using regular expression
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - sizeRange1 = ["XXS", "XS", "S", "M", "L", "XL"]: null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - sizeRange2 = ["00", "0", "2", "4", "6", "8", "10", "12", "14", "16"]: null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - sizeRange3 = ["Long", "Regular", "Short"]: null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - sizeRange4 = ["5", "6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "11"]: null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - sizeRangeSplit = UtilityMethods.SplitSizes(findTestData("New Test Data").getValue("SzRange", row)): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - sizeType = getText(findTestObject("Object Repository/Page_cabi Order Items/Size")): Text of object 'Object Repository/Page_cabi Order Items/Size' is: 'Select'
+
+2019-04-23 14:45:32 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/Size' is: 'Select'
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - sizeOptions = findWebElements(findTestObject("Object Repository/Page_cabi Order Items/Size"), 5): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - actualRange = new java.util.ArrayList(): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - expectedRange = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - if (sizeType.equalsIgnoreCase("Select")): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - for ([i = 1, i < sizeOptions.size(), (i++)]): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - actualRange.add(get(i).getText()): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("XS") || toString().equalsIgnoreCase("XXS")): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - expectedRange = UtilityMethods.getExpectedRange(sizeRange1, sizeRangeSplit): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - println("XS"): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - println(expectedRange.toString()): null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - assert UtilityMethods.listEquals(expectedRange, actualRange) == true: null
+
+2019-04-23 14:45:32 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-04-23 14:45:35 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-04-23 14:45:35 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/product_title"), findTestData("New Test Data").getValue("Description", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_title' are matched.
+
+2019-04-23 14:45:36 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_title' are matched.
+
+2019-04-23 14:45:36 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/product_fabric"), findTestData("New Test Data").getValue("FinalContent", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_fabric' are matched.
+
+2019-04-23 14:45:36 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/product_fabric' are matched.
+
+2019-04-23 14:45:36 - [TEST_STEP][PASSED] - println(getText(findTestObject("Page_cabi Order Items/care_instruction"))): Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Wash by hand separately with cold water. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Steam press back to shape. Can be dry cleaned.'
+
+2019-04-23 14:45:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Wash by hand separately with cold water. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Steam press back to shape. Can be dry cleaned.'
+
+2019-04-23 14:45:36 - [TEST_STEP][PASSED] - actualCasreIntrn = "<div>" + getText(findTestObject("Page_cabi Order Items/care_instruction")) + "</div>": Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Wash by hand separately with cold water. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Steam press back to shape. Can be dry cleaned.'
+
+2019-04-23 14:45:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/care_instruction' is: 'Wash by hand separately with cold water. Only non-chlorine bleach if needed. Do not twist or wring. Lay flat to dry. Steam press back to shape. Can be dry cleaned.'
+
+2019-04-23 14:45:36 - [TEST_STEP][PASSED] - assert actualCasreIntrn.equals(findTestData("New Test Data").getValue("CareInstr", row)): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-23 14:43:23 - [TEST_SUITE][PASSED] - TestSuiteFor_NewArrival: Test Cases/NewArrivals]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

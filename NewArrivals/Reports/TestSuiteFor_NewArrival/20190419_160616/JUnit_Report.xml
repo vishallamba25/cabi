@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestSuiteFor_NewArrival" time="33" tests="0" failures="0" errors="1">
+   <testsuite name="TestSuiteFor_NewArrival" tests="0" failures="0" errors="1" time="33" timestamp="2019-04-19 16:06:27" hostname="user - 10.0.102.159" id="Test Suites/TestSuiteFor_NewArrival">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="F:\\my katalon bkp\\CabiClio\\Reports\\TestSuiteFor_NewArrival\\20190419_160616"/>
+         <property name="logFiles" value="F:\\my katalon bkp\\CabiClio\\Reports\\TestSuiteFor_NewArrival\\20190419_160616\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 10.0.102.159"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 73.0.3683.103"/>
+         <property name="hostAddress" value="10.0.102.159"/>
+         <property name="sessionId" value="19293942d324b7dff0c09a839c5a8314"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/NewArrivals" classname="Test Cases/NewArrivals" status="ERROR">
+         <error type="ERROR" message="Test Cases/NewArrivals FAILED.
+Reason:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java_util_List$get$2.call(Unknown Source)
+	at NewArrivals.run(NewArrivals:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555670176781.run(TempTestSuite1555670176781.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-19 16:06:27 - [TEST_CASE][ERROR] - Test Cases/NewArrivals: Test Cases/NewArrivals FAILED.
+Reason:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java_util_List$get$2.call(Unknown Source)
+	at NewArrivals.run(NewArrivals:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555670176781.run(TempTestSuite1555670176781.groovy:35)
+
+
+2019-04-19 16:06:27 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-04-19 16:06:27 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-04-19 16:06:27 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-04-19 16:06:28 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-04-19 16:06:28 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-19 16:06:28 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-19 16:06:31 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-04-19 16:06:31 - [TEST_STEP][PASSED] - navigateToUrl(CabiUrl): Navigate to 'https://test14.cliotest.com/backoffice/control/main' successfully
+
+2019-04-19 16:06:38 - [MESSAGE][PASSED] - Navigate to 'https://test14.cliotest.com/backoffice/control/main' successfully
+
+2019-04-19 16:06:38 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-04-19 16:06:40 - [MESSAGE][PASSED] - Current window maximized
+
+2019-04-19 16:06:40 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), Username): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-04-19 16:06:40 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-04-19 16:06:40 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), Password): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-04-19 16:06:40 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-04-19 16:06:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-04-19 16:06:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-04-19 16:06:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-04-19 16:06:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-04-19 16:06:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Personal Purchases")): Object: 'Object Repository/Page_cabi Home/a_Personal Purchases' is clicked on
+
+2019-04-19 16:06:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Personal Purchases' is clicked on
+
+2019-04-19 16:06:52 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Personal Store/span_Continue to Order")): Object: 'Object Repository/Page_cabi Personal Store/span_Continue to Order' is clicked on
+
+2019-04-19 16:06:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Personal Store/span_Continue to Order' is clicked on
+
+2019-04-19 16:06:52 - [TEST_STEP][ERROR] - for ([row = 1, row <= findTestData("New Test Data").getRowNumbers(), (row++)]): for ([row = 1, row <= findTestData("New Test Data").getRowNumbers(), (row++)]) FAILED.
+Reason:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java_util_List$get$2.call(Unknown Source)
+	at NewArrivals.run(NewArrivals:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555670176781.run(TempTestSuite1555670176781.groovy:35)
+
+
+2019-04-19 16:06:53 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), findTestData("New Test Data").getValue("Style", row)): Text '5618' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-19 16:06:53 - [MESSAGE][PASSED] - Text '5618' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-19 16:06:53 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-19 16:06:54 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-19 16:06:54 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Order Items/li_5618 Breeze Dress")): Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-19 16:06:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/GetAttribute_getID"), findTestData("New Test Data").getValue("Style", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-19 16:06:57 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - colorOptions = findWebElements(findTestObject("Page_cabi Order Items/GetAttribute_Color"), 5): null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - println(colorOptions.size()): null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - expectedColour = findTestData("New Test Data").getValue("Color", row): null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - println("expected colour is"): null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - println(expectedColour): null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - colourVerified = false: null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - for (org.openqa.selenium.WebElement op : colorOptions): null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - println(op.getText()): null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - if (expectedColour.equalsIgnoreCase(op.getText())): null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - colourVerified = true: null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - break: null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - assert colourVerified == true: null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - getPrice = getText(findTestObject("Page_cabi Order Items/GetAttribute_Price")): Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $119.00'
+
+2019-04-19 16:06:57 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $119.00'
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - Split_Data = UtilityMethods.SplitData(getPrice): null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - verifyMatch(Split_Data, findTestData("New Test Data").getValue("Retail", row), true): Actual text '119' and expected text '119' are matched  using regular expression
+
+2019-04-19 16:06:57 - [MESSAGE][PASSED] - Actual text '119' and expected text '119' are matched  using regular expression
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - sizeOptions = findWebElements(findTestObject("Object Repository/Page_cabi Order Items/Size"), 5): null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - s = sizeOptions.size(): null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - Split_Data1 = UtilityMethods.SplitSizes(findTestData("New Test Data").getValue("SzRange", row)): null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - Split_Data2 = UtilityMethods.SplitData(findTestData("New Test Data").getValue("SzRange", row)): null
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - verifyMatch(get(1).getAttribute("value"), Split_Data1, true): Actual text 'XS' and expected text 'XS' are matched  using regular expression
+
+2019-04-19 16:06:57 - [MESSAGE][PASSED] - Actual text 'XS' and expected text 'XS' are matched  using regular expression
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - verifyMatch(get(s - 1).getAttribute("value"), Split_Data2, true): Actual text 'XL' and expected text 'XL' are matched  using regular expression
+
+2019-04-19 16:06:57 - [MESSAGE][PASSED] - Actual text 'XL' and expected text 'XL' are matched  using regular expression
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), findTestData("New Test Data").getValue("Style", row)): Text '5558' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-19 16:06:57 - [MESSAGE][PASSED] - Text '5558' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-19 16:06:57 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-19 16:06:57 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Order Items/li_5618 Breeze Dress")): Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-19 16:06:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-19 16:06:58 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/GetAttribute_getID"), findTestData("New Test Data").getValue("Style", row)): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-19 16:07:00 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - colorOptions = findWebElements(findTestObject("Page_cabi Order Items/GetAttribute_Color"), 5): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - println(colorOptions.size()): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - expectedColour = findTestData("New Test Data").getValue("Color", row): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - println("expected colour is"): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - println(expectedColour): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - colourVerified = false: null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - for (org.openqa.selenium.WebElement op : colorOptions): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - println(op.getText()): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - if (expectedColour.equalsIgnoreCase(op.getText())): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - println(op.getText()): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - if (expectedColour.equalsIgnoreCase(op.getText())): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - println(op.getText()): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - if (expectedColour.equalsIgnoreCase(op.getText())): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - colourVerified = true: null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - break: null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - assert colourVerified == true: null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - getPrice = getText(findTestObject("Page_cabi Order Items/GetAttribute_Price")): Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $66.00'
+
+2019-04-19 16:07:00 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $66.00'
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - Split_Data = UtilityMethods.SplitData(getPrice): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - verifyMatch(Split_Data, findTestData("New Test Data").getValue("Retail", row), true): Actual text '66' and expected text '66' are matched  using regular expression
+
+2019-04-19 16:07:00 - [MESSAGE][PASSED] - Actual text '66' and expected text '66' are matched  using regular expression
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - sizeOptions = findWebElements(findTestObject("Object Repository/Page_cabi Order Items/Size"), 5): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - s = sizeOptions.size(): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - Split_Data1 = UtilityMethods.SplitSizes(findTestData("New Test Data").getValue("SzRange", row)): null
+
+2019-04-19 16:07:00 - [TEST_STEP][PASSED] - Split_Data2 = UtilityMethods.SplitData(findTestData("New Test Data").getValue("SzRange", row)): null
+
+2019-04-19 16:07:00 - [TEST_STEP][ERROR] - verifyMatch(get(1).getAttribute("value"), Split_Data1, true): for ([row = 1, row <= findTestData("New Test Data").getRowNumbers(), (row++)]) FAILED.
+Reason:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java_util_List$get$2.call(Unknown Source)
+	at NewArrivals.run(NewArrivals:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555670176781.run(TempTestSuite1555670176781.groovy:35)
+
+
+2019-04-19 16:07:00 - [MESSAGE][ERROR] - for ([row = 1, row <= findTestData("New Test Data").getRowNumbers(), (row++)]) FAILED.
+Reason:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java_util_List$get$2.call(Unknown Source)
+	at NewArrivals.run(NewArrivals:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555670176781.run(TempTestSuite1555670176781.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-04-19 16:06:27 - [TEST_CASE][ERROR] - Test Cases/NewArrivals: Test Cases/NewArrivals FAILED.
+Reason:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java_util_List$get$2.call(Unknown Source)
+	at NewArrivals.run(NewArrivals:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555670176781.run(TempTestSuite1555670176781.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-19 16:06:27 - [TEST_SUITE][ERROR] - TestSuiteFor_NewArrival: Test Cases/NewArrivals FAILED.
+Reason:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java_util_List$get$2.call(Unknown Source)
+	at NewArrivals.run(NewArrivals:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555670176781.run(TempTestSuite1555670176781.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-04-19 16:06:27 - [TEST_SUITE][ERROR] - TestSuiteFor_NewArrival: Test Cases/NewArrivals FAILED.
+Reason:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java_util_List$get$2.call(Unknown Source)
+	at NewArrivals.run(NewArrivals:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555670176781.run(TempTestSuite1555670176781.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

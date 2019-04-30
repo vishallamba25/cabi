@@ -39,6 +39,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
         WebUI.setText(findTestObject('Page_cabi/input_Welcome to_USERNAME'), BOuser)
 
         WebUI.setText(findTestObject('Object Repository/Page_cabi/input_Welcome to_PASSWORD'), BOpass)
+		
+		WebUI.delay(3)
 
         WebUI.click(findTestObject('Object Repository/Page_cabi/input_Welcome to_consultantLogin'))
     }

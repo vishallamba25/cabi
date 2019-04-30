@@ -47,10 +47,23 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     WebUI.delay(3)
 
-    WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Personal Purchases'))
+    WebUI.click(findTestObject('Page_cabi Home/a_personal_purchases'))
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/span_Continue to Order'))
 
     WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BOPersonal], FailureHandling.STOP_ON_FAILURE)
-	/*****************going to backoffice: retail******************/
+
+    /*****************going to backoffice: retail******************/
+    WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
+    WebUI.delay(3)
+    WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
+	WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_Continue to Order'))
+	WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BORetail], FailureHandling.STOP_ON_FAILURE)
+	
+	/*****************going to backoffice: online******************/
+	WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
+	WebUI.delay(3)
+	WebUI.click(findTestObject('Page_cabi Home/a_online_outlet_purchases'))
+	WebUI.click(findTestObject('Object Repository/Page_cabi Online Outlet Store/span_Continue to Order'))
+	WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BOOnline], FailureHandling.STOP_ON_FAILURE)
 }

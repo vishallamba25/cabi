@@ -2,8 +2,6 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -13,42 +11,14 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import commonUtility.UtilityMethods as UtilityMethods
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.By as By
-import org.openqa.selenium.WebDriver as WebDriver
-import com.kms.katalon.core.annotation.Keyword as Keyword
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
-import org.stringtemplate.v4.compiler.STParser.listElement_return as listElement_return
 
-/*WebUI.openBrowser('')
-
-WebUI.navigateToUrl(CabiUrl)
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Page_cabi/input_Welcome to_USERNAME'), Username)
-
-WebUI.setText(findTestObject('Object Repository/Page_cabi/input_Welcome to_PASSWORD'), Password)
-
-WebUI.click(findTestObject('Object Repository/Page_cabi/input_Welcome to_consultantLogin'))
-*/
-/*WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_cabi Home/a_personal_purchases'))
-
-WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/span_Continue to Order'))*/
 for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
-    WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), findTestData(
-            'productData').getValue('Style', row))
+    WebUI.setText(findTestObject('Page_cabicentral_orders/input_style'), findTestData('productData').getValue('Style', row))
 
     WebUI.delay(5)
 
-    WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), 
-        Keys.chord(Keys.ENTER))
+    WebUI.sendKeys(findTestObject('Page_cabicentral_orders/input_style'), Keys.chord(Keys.ENTER))
 
     if (available.toString().equalsIgnoreCase('no')) {
 		List<WebElement> noResultMessages = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Order Items/no_result_found'),5)
@@ -173,3 +143,4 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
     
     
 }
+

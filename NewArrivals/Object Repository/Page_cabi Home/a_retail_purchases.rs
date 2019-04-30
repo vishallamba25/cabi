@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Personal Purchases</name>
+   <name>a_retail_purchases</name>
    <tag></tag>
-   <elementGuidId>da666e63-ae83-4022-90cf-7408aeee30ba</elementGuidId>
+   <elementGuidId>f908b03f-46a0-497e-baed-a4371c284664</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='products-sub-btn']/li[9]/a</value>
+         <value>//a[contains(text(), 'Retail Orders')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -44,7 +44,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//ul[@id='products-sub-btn']/li[9]/a</value>
+      <value>//a[contains(text(), 'Retail Orders')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

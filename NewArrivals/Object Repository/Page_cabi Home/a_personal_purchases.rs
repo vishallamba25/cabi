@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='products-sub-btn']/li[9]/a</value>
+         <value>//a[contains(text(), 'Personal Purchases')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -44,7 +44,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//ul[@id='products-sub-btn']/li[9]/a</value>
+      <value>//a[contains(text(), 'Personal Purchases')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

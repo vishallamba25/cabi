@@ -51,19 +51,66 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/span_Continue to Order'))
 
-    WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BOPersonal], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BOPersonal, ('storeType') : 'BOPersonal'], 
+        FailureHandling.STOP_ON_FAILURE)
 
     /*****************going to backoffice: retail******************/
     WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
+
     WebUI.delay(3)
+
     WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
-	WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_Continue to Order'))
-	WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BORetail], FailureHandling.STOP_ON_FAILURE)
-	
-	/*****************going to backoffice: online******************/
-	WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
-	WebUI.delay(3)
-	WebUI.click(findTestObject('Page_cabi Home/a_online_outlet_purchases'))
-	WebUI.click(findTestObject('Object Repository/Page_cabi Online Outlet Store/span_Continue to Order'))
-	WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BOOnline], FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_Continue to Order'))
+
+    WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BORetail, ('storeType') : 'BORetail'], FailureHandling.STOP_ON_FAILURE)
+
+    /*****************going to backoffice: online******************/
+    WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
+
+    WebUI.delay(3)
+
+    WebUI.click(findTestObject('Page_cabi Home/a_online_outline_purchases'))
+
+    WebUI.click(findTestObject('Object Repository/Page_cabi Online Outlet Store/span_Continue to Order'))
+
+    WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BOOnlineoutlet, ('storeType') : 'BOOnlineoutlet'], FailureHandling.STOP_ON_FAILURE)
+
+    /*****************going to CabiCentral: personal order******************/
+    WebUI.navigateToUrl('https://test14.cliotest.com/cabicentral/control/main')
+
+    WebUI.setText(findTestObject('Page_cabi/input_Username_USERNAME'), 'ehudson')
+
+    WebUI.setEncryptedText(findTestObject('Page_cabi/input_Password_PASSWORD'), 'B/N/DIt9VtgMeGq7IFnfMA==')
+
+    WebUI.click(findTestObject('Page_cabi/input_Password_section-btn btn-stl-pk rFloat'))
+
+    WebUI.click(findTestObject('Page_cabi cabiCentral Tasks/a_ORDERS'))
+
+    WebUI.click(findTestObject('Page_cabi Find Order/a_Create Order'))
+
+    WebUI.selectOptionByValue(findTestObject('Page_cabi Create Order/select_order_type'), 'PERSONAL', true)
+
+    WebUI.click(findTestObject('Page_cabi Create Order/input_select_order_type'))
+
+    WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.CCPersonal, ('storeType') : 'CCPersonal'], FailureHandling.STOP_ON_FAILURE)
+
+    /*****************going to CabiCentral: retail order******************/
+    WebUI.click(findTestObject('Page_cabi Find Order/a_Create Order'))
+
+    WebUI.selectOptionByValue(findTestObject('Page_cabi Create Order/select_order_type'), 'RETAIL', true)
+
+    WebUI.click(findTestObject('Page_cabi Create Order/input_select_order_type'))
+
+    WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.CCRetail], FailureHandling.STOP_ON_FAILURE)
+
+    /*****************going to CabiCentral: show order******************/
+    WebUI.click(findTestObject('Page_cabi Find Order/a_Create Order'))
+
+    WebUI.selectOptionByValue(findTestObject('Page_cabi Create Order/select_order_type'), 'SHOW', true)
+
+    WebUI.click(findTestObject('Page_cabi Create Order/input_select_order_type'))
+
+    WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.CCShow], FailureHandling.STOP_ON_FAILURE)
 }
+

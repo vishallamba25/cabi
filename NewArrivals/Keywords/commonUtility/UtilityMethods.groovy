@@ -102,4 +102,13 @@ public class UtilityMethods {
 		println(abc)
 		//return elements
 	}
+
+	@Keyword
+	public static String createScreenshotImagePath(String storeType, String style) throws IOException{
+		File directory = new File("productImages/"+storeType+"_"+style+" "+"image.png");
+		String filePath=directory.getAbsolutePath();
+		System.out.println(filePath);
+
+		return filePath;
+	}
 }

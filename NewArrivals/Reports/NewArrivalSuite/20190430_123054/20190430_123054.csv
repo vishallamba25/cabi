@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+NewArrivalSuite,Chrome 73.0.3683.103,,2019-04-30 12:30:58,2019-04-30 12:31:58,59.243s,FAILED
+,,,,,,
+Test Cases/NewArrivals,Chrome 73.0.3683.103,,2019-04-30 12:30:59,2019-04-30 12:31:57,57.860s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 73.0.3683.103,,2019-04-30 12:30:59,2019-04-30 12:30:59,0.108s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.103,,2019-04-30 12:31:00,2019-04-30 12:31:04,4.618s,PASSED
+"navigateToUrl(""https://test14.cliotest.com/backoffice/control/main"")",Chrome 73.0.3683.103,,2019-04-30 12:31:04,2019-04-30 12:31:12,7.630s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 73.0.3683.103,,2019-04-30 12:31:12,2019-04-30 12:31:57,44.677s,FAILED

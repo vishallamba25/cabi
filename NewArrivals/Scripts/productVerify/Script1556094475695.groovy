@@ -57,9 +57,15 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 		
     }
 	else{
-		WebUI.click(findTestObject('Page_cabi Order Items/li_5618 Breeze Dress'))
+		WebUI.click(findTestObject('Page_cabi Order Items/li_order_item'))
 		
-			WebUI.delay(3)
+			WebUI.delay(5)
+			/*******screenshot***********************************/
+			
+			String imgString1=findTestData('productData').getValue('Style', row).toString()
+			String imagePath = UtilityMethods.createScreenshotImagePath(storeType, imgString1)
+			println imagePath
+			WebUI.takeScreenshot(imagePath)
 		
 			/*******Style***********************************/
 			WebUI.verifyElementText(findTestObject('Page_cabi Order Items/GetAttribute_getID'), findTestData('productData').getValue(

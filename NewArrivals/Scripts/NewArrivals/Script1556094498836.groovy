@@ -28,6 +28,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
         FailureHandling.STOP_ON_FAILURE)
 
     /*****************going to backoffice: personal*******************/
+	WebUI.openBrowser('')
+	
     WebUI.navigateToUrl(BOURL)
 
     WebUI.maximizeWindow()

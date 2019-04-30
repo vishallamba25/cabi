@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuiteFor_NewArrival,Chrome 73.0.3683.103,,2019-04-16 13:30:41,2019-04-16 13:31:15,33.763s,FAILED
+,,,,,,
+Test Cases/NewArrivals,Chrome 73.0.3683.103,,2019-04-16 13:30:42,2019-04-16 13:31:14,32.291s,FAILED
+"openBrowser("""")",Chrome 73.0.3683.103,,2019-04-16 13:30:43,2019-04-16 13:30:47,4.387s,PASSED
+navigateToUrl(CabiUrl),Chrome 73.0.3683.103,,2019-04-16 13:30:47,2019-04-16 13:30:55,7.456s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi/input_Welcome to_USERNAME""), Username)",Chrome 73.0.3683.103,,2019-04-16 13:30:55,2019-04-16 13:30:55,0.395s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi/input_Welcome to_PASSWORD""), Password)",Chrome 73.0.3683.103,,2019-04-16 13:30:55,2019-04-16 13:30:55,0.175s,PASSED
+maximizeWindow(),Chrome 73.0.3683.103,,2019-04-16 13:30:55,2019-04-16 13:30:56,1.155s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi/input_Welcome to_consultantLogin""))",Chrome 73.0.3683.103,,2019-04-16 13:30:56,2019-04-16 13:31:04,7.507s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Home/a_Shows  Orders""))",Chrome 73.0.3683.103,,2019-04-16 13:31:04,2019-04-16 13:31:04,0.300s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Home/a_Personal Purchases""))",Chrome 73.0.3683.103,,2019-04-16 13:31:04,2019-04-16 13:31:09,4.833s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Personal Store/span_Continue to Order""))",Chrome 73.0.3683.103,,2019-04-16 13:31:09,2019-04-16 13:31:09,0.288s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style""), Style)",Chrome 73.0.3683.103,,2019-04-16 13:31:09,2019-04-16 13:31:10,1.174s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style""), Keys.chord(ENTER))",Chrome 73.0.3683.103,,2019-04-16 13:31:10,2019-04-16 13:31:11,0.160s,PASSED
+"click(findTestObject(""Page_cabi Order Items/li_5618 Breeze Dress""))",Chrome 73.0.3683.103,,2019-04-16 13:31:11,2019-04-16 13:31:14,3.156s,PASSED
+"verifyElementText(findTestObject(""Page_cabi Order Items/GetAttribute_getID""), Style)",Chrome 73.0.3683.103,,2019-04-16 13:31:14,2019-04-16 13:31:14,0.151s,PASSED
+"verifyElementText(findTestObject(""Page_cabi Order Items/GetAttribute_Color""), Color)",Chrome 73.0.3683.103,,2019-04-16 13:31:14,2019-04-16 13:31:14,0.093s,PASSED
+"getPrice = getText(findTestObject(""Page_cabi Order Items/GetAttribute_Price""))",Chrome 73.0.3683.103,,2019-04-16 13:31:14,2019-04-16 13:31:14,0.103s,PASSED
+Split_Data = UtilityMethods.SplitData(getPrice),Chrome 73.0.3683.103,,2019-04-16 13:31:14,2019-04-16 13:31:14,0.014s,PASSED
+"verifyMatch(Split_Data, Retail, true)",Chrome 73.0.3683.103,,2019-04-16 13:31:14,2019-04-16 13:31:14,0.066s,FAILED

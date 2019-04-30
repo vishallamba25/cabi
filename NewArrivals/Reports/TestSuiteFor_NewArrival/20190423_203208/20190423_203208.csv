@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuiteFor_NewArrival,Chrome 73.0.3683.103,,2019-04-23 20:32:11,2019-04-23 20:32:25,14.433s,PASSED
+,,,,,,
+Test Cases/New Test Case,Chrome 73.0.3683.103,,2019-04-23 20:32:11,2019-04-23 20:32:24,13.478s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 73.0.3683.103,,2019-04-23 20:32:11,2019-04-23 20:32:11,0.044s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.103,,2019-04-23 20:32:11,2019-04-23 20:32:15,3.482s,PASSED
+"navigateToUrl(""https://test14.cliotest.com/backoffice/control/main"")",Chrome 73.0.3683.103,,2019-04-23 20:32:15,2019-04-23 20:32:22,7.227s,PASSED
+row = 1,Chrome 73.0.3683.103,,2019-04-23 20:32:22,2019-04-23 20:32:22,0.001s,PASSED
+"callTestCase(findTestCase(""populateGlobalVars""), [""row"":row], STOP_ON_FAILURE)",Chrome 73.0.3683.103,,2019-04-23 20:32:22,2019-04-23 20:32:23,1.062s,PASSED
+maximizeWindow(),Chrome 73.0.3683.103,,2019-04-23 20:32:23,2019-04-23 20:32:24,1.132s,PASSED
+"setText(findTestObject(""Page_cabi/input_Welcome to_USERNAME""), SzRange)",Chrome 73.0.3683.103,,2019-04-23 20:32:24,2019-04-23 20:32:24,0.160s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi/input_Welcome to_PASSWORD""), ""def"")",Chrome 73.0.3683.103,,2019-04-23 20:32:24,2019-04-23 20:32:24,0.118s,PASSED

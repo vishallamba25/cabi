@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuiteFor_NewArrival,Chrome 73.0.3683.103,,2019-04-22 18:02:03,2019-04-22 18:02:48,44.440s,ERROR
+,,,,,,
+Test Cases/NewArrivals,Chrome 73.0.3683.103,,2019-04-22 18:02:04,2019-04-22 18:02:47,43.440s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 73.0.3683.103,,2019-04-22 18:02:04,2019-04-22 18:02:04,0.043s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.103,,2019-04-22 18:02:04,2019-04-22 18:02:08,3.285s,PASSED
+navigateToUrl(CabiUrl),Chrome 73.0.3683.103,,2019-04-22 18:02:08,2019-04-22 18:02:14,6.709s,PASSED
+maximizeWindow(),Chrome 73.0.3683.103,,2019-04-22 18:02:14,2019-04-22 18:02:16,1.168s,PASSED
+"setText(findTestObject(""Page_cabi/input_Welcome to_USERNAME""), Username)",Chrome 73.0.3683.103,,2019-04-22 18:02:16,2019-04-22 18:02:16,0.196s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi/input_Welcome to_PASSWORD""), Password)",Chrome 73.0.3683.103,,2019-04-22 18:02:16,2019-04-22 18:02:16,0.148s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi/input_Welcome to_consultantLogin""))",Chrome 73.0.3683.103,,2019-04-22 18:02:16,2019-04-22 18:02:24,8.042s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Home/a_Shows  Orders""))",Chrome 73.0.3683.103,,2019-04-22 18:02:24,2019-04-22 18:02:24,0.108s,PASSED
+delay(3),Chrome 73.0.3683.103,,2019-04-22 18:02:24,2019-04-22 18:02:27,3.028s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Home/a_Personal Purchases""))",Chrome 73.0.3683.103,,2019-04-22 18:02:27,2019-04-22 18:02:31,3.952s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Personal Store/span_Continue to Order""))",Chrome 73.0.3683.103,,2019-04-22 18:02:31,2019-04-22 18:02:31,0.314s,PASSED
+"for ([row = 1, row <= findTestData(""New Test Data"").getRowNumbers(), (row++)])",Chrome 73.0.3683.103,,2019-04-22 18:02:31,2019-04-22 18:02:47,15.724s,ERROR

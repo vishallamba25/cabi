@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestSuiteFor_NewArrival" time="8" tests="0" failures="0" errors="1">
+   <testsuite name="TestSuiteFor_NewArrival" tests="0" failures="0" errors="1" time="8" timestamp="2019-04-16 11:13:49" hostname="user - 10.0.102.96" id="Test Suites/TestSuiteFor_NewArrival">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Aishwarya\\KATALON PROJECTS\\CABI CLIO\\CabiClio\\Reports\\TestSuiteFor_NewArrival\\20190416_111345"/>
+         <property name="logFiles" value="D:\\Aishwarya\\KATALON PROJECTS\\CABI CLIO\\CabiClio\\Reports\\TestSuiteFor_NewArrival\\20190416_111345\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 10.0.102.96"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 73.0.3683.103"/>
+         <property name="hostAddress" value="10.0.102.96"/>
+         <property name="sessionId" value="6cf12c768a6830d80967ee130e6feea0"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/NewArrivals" classname="Test Cases/NewArrivals" status="ERROR">
+         <error type="ERROR" message="Test Cases/NewArrivals FAILED.
+Reason:
+groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl() is applicable for argument types: (java.lang.Class) values: [class java.net.URL]
+Possible solutions: navigateToUrl(java.lang.String), navigateToUrl(java.lang.String, com.kms.katalon.core.model.FailureHandling)
+	at NewArrivals.run(NewArrivals:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555393425778.run(TempTestSuite1555393425778.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-16 11:13:49 - [TEST_CASE][ERROR] - Test Cases/NewArrivals: Test Cases/NewArrivals FAILED.
+Reason:
+groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl() is applicable for argument types: (java.lang.Class) values: [class java.net.URL]
+Possible solutions: navigateToUrl(java.lang.String), navigateToUrl(java.lang.String, com.kms.katalon.core.model.FailureHandling)
+	at NewArrivals.run(NewArrivals:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555393425778.run(TempTestSuite1555393425778.groovy:35)
+
+
+2019-04-16 11:13:50 - [TEST_STEP][ERROR] - for ([row = 1, row <= findTestData("New Test Data").getRowNumbers(), (row++)]): for ([row = 1, row <= findTestData("New Test Data").getRowNumbers(), (row++)]) FAILED.
+Reason:
+groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl() is applicable for argument types: (java.lang.Class) values: [class java.net.URL]
+Possible solutions: navigateToUrl(java.lang.String), navigateToUrl(java.lang.String, com.kms.katalon.core.model.FailureHandling)
+	at NewArrivals.run(NewArrivals:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555393425778.run(TempTestSuite1555393425778.groovy:35)
+
+
+2019-04-16 11:13:51 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-04-16 11:13:52 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-16 11:13:52 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-16 11:13:56 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-04-16 11:13:56 - [TEST_STEP][ERROR] - navigateToUrl(java.net.URL): for ([row = 1, row <= findTestData("New Test Data").getRowNumbers(), (row++)]) FAILED.
+Reason:
+groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl() is applicable for argument types: (java.lang.Class) values: [class java.net.URL]
+Possible solutions: navigateToUrl(java.lang.String), navigateToUrl(java.lang.String, com.kms.katalon.core.model.FailureHandling)
+	at NewArrivals.run(NewArrivals:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555393425778.run(TempTestSuite1555393425778.groovy:35)
+
+
+2019-04-16 11:13:56 - [MESSAGE][ERROR] - for ([row = 1, row <= findTestData("New Test Data").getRowNumbers(), (row++)]) FAILED.
+Reason:
+groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl() is applicable for argument types: (java.lang.Class) values: [class java.net.URL]
+Possible solutions: navigateToUrl(java.lang.String), navigateToUrl(java.lang.String, com.kms.katalon.core.model.FailureHandling)
+	at NewArrivals.run(NewArrivals:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555393425778.run(TempTestSuite1555393425778.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-04-16 11:13:49 - [TEST_CASE][ERROR] - Test Cases/NewArrivals: Test Cases/NewArrivals FAILED.
+Reason:
+groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl() is applicable for argument types: (java.lang.Class) values: [class java.net.URL]
+Possible solutions: navigateToUrl(java.lang.String), navigateToUrl(java.lang.String, com.kms.katalon.core.model.FailureHandling)
+	at NewArrivals.run(NewArrivals:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555393425778.run(TempTestSuite1555393425778.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-16 11:13:49 - [TEST_SUITE][ERROR] - TestSuiteFor_NewArrival: Test Cases/NewArrivals FAILED.
+Reason:
+groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl() is applicable for argument types: (java.lang.Class) values: [class java.net.URL]
+Possible solutions: navigateToUrl(java.lang.String), navigateToUrl(java.lang.String, com.kms.katalon.core.model.FailureHandling)
+	at NewArrivals.run(NewArrivals:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555393425778.run(TempTestSuite1555393425778.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-04-16 11:13:49 - [TEST_SUITE][ERROR] - TestSuiteFor_NewArrival: Test Cases/NewArrivals FAILED.
+Reason:
+groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.navigateToUrl() is applicable for argument types: (java.lang.Class) values: [class java.net.URL]
+Possible solutions: navigateToUrl(java.lang.String), navigateToUrl(java.lang.String, com.kms.katalon.core.model.FailureHandling)
+	at NewArrivals.run(NewArrivals:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555393425778.run(TempTestSuite1555393425778.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

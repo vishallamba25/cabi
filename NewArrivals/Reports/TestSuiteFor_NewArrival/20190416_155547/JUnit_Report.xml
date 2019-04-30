@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestSuiteFor_NewArrival" time="40" tests="1" failures="0" errors="0">
+   <testsuite name="TestSuiteFor_NewArrival" tests="1" failures="0" errors="0" time="40" timestamp="2019-04-16 15:55:50" hostname="user - 10.0.102.96" id="Test Suites/TestSuiteFor_NewArrival">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Aishwarya\\KATALON PROJECTS\\CABI CLIO\\CabiClio\\Reports\\TestSuiteFor_NewArrival\\20190416_155547"/>
+         <property name="logFiles" value="D:\\Aishwarya\\KATALON PROJECTS\\CABI CLIO\\CabiClio\\Reports\\TestSuiteFor_NewArrival\\20190416_155547\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 10.0.102.96"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 73.0.3683.103"/>
+         <property name="hostAddress" value="10.0.102.96"/>
+         <property name="sessionId" value="49d97d59be41d58f30f8dfc12cb2fbbb"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/NewArrivals" classname="Test Cases/NewArrivals" status="PASSED">
+         <system-out><![CDATA[2019-04-16 15:55:51 - [TEST_CASE][PASSED] - Test Cases/NewArrivals: Test Cases/NewArrivals
+
+2019-04-16 15:55:52 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-04-16 15:55:53 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-16 15:55:53 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-16 15:55:57 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-04-16 15:55:57 - [TEST_STEP][PASSED] - navigateToUrl(CabiUrl): Navigate to 'https://test14.cliotest.com/backoffice/control/main' successfully
+
+2019-04-16 15:56:08 - [MESSAGE][PASSED] - Navigate to 'https://test14.cliotest.com/backoffice/control/main' successfully
+
+2019-04-16 15:56:08 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), Username): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-04-16 15:56:08 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-04-16 15:56:08 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), Password): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-04-16 15:56:08 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-04-16 15:56:08 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-04-16 15:56:09 - [MESSAGE][PASSED] - Current window maximized
+
+2019-04-16 15:56:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-04-16 15:56:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-04-16 15:56:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-04-16 15:56:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-04-16 15:56:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Personal Purchases")): Object: 'Object Repository/Page_cabi Home/a_Personal Purchases' is clicked on
+
+2019-04-16 15:56:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Personal Purchases' is clicked on
+
+2019-04-16 15:56:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Personal Store/span_Continue to Order")): Object: 'Object Repository/Page_cabi Personal Store/span_Continue to Order' is clicked on
+
+2019-04-16 15:56:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Personal Store/span_Continue to Order' is clicked on
+
+2019-04-16 15:56:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), Style): Text '5618' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-16 15:56:25 - [MESSAGE][PASSED] - Text '5618' is set on object 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-16 15:56:25 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-16 15:56:26 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'
+
+2019-04-16 15:56:26 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Order Items/li_5618 Breeze Dress")): Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-16 15:56:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/li_5618 Breeze Dress' is clicked on
+
+2019-04-16 15:56:29 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/GetAttribute_getID"), Style): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-16 15:56:30 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_getID' are matched.
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Order Items/GetAttribute_Color"), Color): Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_Color' are matched.
+
+2019-04-16 15:56:30 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Order Items/GetAttribute_Color' are matched.
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - getPrice = getText(findTestObject("Page_cabi Order Items/GetAttribute_Price")): Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $119.00'
+
+2019-04-16 15:56:30 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Order Items/GetAttribute_Price' is: 'Price : $119.00'
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - Split_Data = UtilityMethods.SplitData(getPrice): null
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - verifyMatch(Split_Data, Retail, true): Actual text '119' and expected text '119' are matched  using regular expression
+
+2019-04-16 15:56:30 - [MESSAGE][PASSED] - Actual text '119' and expected text '119' are matched  using regular expression
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - listElement = findWebElements(findTestObject("Object Repository/Page_cabi Order Items/Size"), 5): null
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - println(listElement.size()): null
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - for ([i = 0, i < listElement.size(), (i++)]): null
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - if (getAttribute("value").equals(SzRange)): null
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - flag = true: null
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - if (getAttribute("value").equals(SzRange)): null
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - if (getAttribute("value").equals(SzRange)): null
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - if (getAttribute("value").equals(SzRange)): null
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - if (getAttribute("value").equals(SzRange)): null
+
+2019-04-16 15:56:30 - [TEST_STEP][PASSED] - if (getAttribute("value").equals(SzRange)): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-16 15:55:50 - [TEST_SUITE][PASSED] - TestSuiteFor_NewArrival: Test Cases/NewArrivals]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

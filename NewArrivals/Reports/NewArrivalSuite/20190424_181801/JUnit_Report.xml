@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="NewArrivalSuite" time="0" tests="0" failures="0" errors="1">
+   <testsuite name="NewArrivalSuite" tests="0" failures="0" errors="1" time="0" timestamp="2019-04-24 18:18:04" hostname="user - 10.0.102.159" id="Test Suites/NewArrivalSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\CabiClio\\Reports\\NewArrivalSuite\\20190424_181801"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\CabiClio\\Reports\\NewArrivalSuite\\20190424_181801\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 10.0.102.159"/>
+         <property name="hostAddress" value="10.0.102.159"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+      </properties>
+      <testcase name="Test Cases/NewArrivals" classname="Test Cases/NewArrivals" status="ERROR">
+         <error type="ERROR" message="Test Cases/NewArrivals FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/user/Documents/CabiClio/Scripts/NewArrivals/Script1556094498836.groovy: 33: unable to resolve class WebElement 
+ @ line 33, column 10.
+       List&lt;WebElement> logOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/log_out'), 
+            ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556110082127.run(TempTestSuite1556110082127.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-24 18:18:04 - [TEST_CASE][ERROR] - Test Cases/NewArrivals: Test Cases/NewArrivals FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/user/Documents/CabiClio/Scripts/NewArrivals/Script1556094498836.groovy: 33: unable to resolve class WebElement 
+ @ line 33, column 10.
+       List<WebElement> logOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/log_out'), 
+            ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556110082127.run(TempTestSuite1556110082127.groovy:35)
+
+
+2019-04-24 18:18:05 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-04-24 18:18:05 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-04-24 18:18:05 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null]]></system-out>
+         <system-err><![CDATA[2019-04-24 18:18:04 - [TEST_CASE][ERROR] - Test Cases/NewArrivals: Test Cases/NewArrivals FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/user/Documents/CabiClio/Scripts/NewArrivals/Script1556094498836.groovy: 33: unable to resolve class WebElement 
+ @ line 33, column 10.
+       List<WebElement> logOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/log_out'), 
+            ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556110082127.run(TempTestSuite1556110082127.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-24 18:18:04 - [TEST_SUITE][ERROR] - NewArrivalSuite: Test Cases/NewArrivals FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/user/Documents/CabiClio/Scripts/NewArrivals/Script1556094498836.groovy: 33: unable to resolve class WebElement 
+ @ line 33, column 10.
+       List<WebElement> logOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/log_out'), 
+            ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556110082127.run(TempTestSuite1556110082127.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-04-24 18:18:04 - [TEST_SUITE][ERROR] - NewArrivalSuite: Test Cases/NewArrivals FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/user/Documents/CabiClio/Scripts/NewArrivals/Script1556094498836.groovy: 33: unable to resolve class WebElement 
+ @ line 33, column 10.
+       List<WebElement> logOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/log_out'), 
+            ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556110082127.run(TempTestSuite1556110082127.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

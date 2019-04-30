@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuiteFor_NewArrival,Chrome 73.0.3683.103,,2019-04-16 16:13:58,2019-04-16 16:14:32,33.927s,FAILED
+,,,,,,
+Test Cases/NewArrivals,Chrome 73.0.3683.103,,2019-04-16 16:13:59,2019-04-16 16:14:31,32.546s,FAILED
+"openBrowser("""")",Chrome 73.0.3683.103,,2019-04-16 16:14:00,2019-04-16 16:14:04,4.230s,PASSED
+navigateToUrl(CabiUrl),Chrome 73.0.3683.103,,2019-04-16 16:14:04,2019-04-16 16:14:12,7.312s,PASSED
+"setText(findTestObject(""Page_cabi/input_Welcome to_USERNAME""), Username)",Chrome 73.0.3683.103,,2019-04-16 16:14:12,2019-04-16 16:14:12,0.252s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi/input_Welcome to_PASSWORD""), Password)",Chrome 73.0.3683.103,,2019-04-16 16:14:12,2019-04-16 16:14:12,0.166s,PASSED
+maximizeWindow(),Chrome 73.0.3683.103,,2019-04-16 16:14:12,2019-04-16 16:14:13,1.146s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi/input_Welcome to_consultantLogin""))",Chrome 73.0.3683.103,,2019-04-16 16:14:13,2019-04-16 16:14:22,8.749s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Home/a_Shows  Orders""))",Chrome 73.0.3683.103,,2019-04-16 16:14:22,2019-04-16 16:14:22,0.134s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Home/a_Personal Purchases""))",Chrome 73.0.3683.103,,2019-04-16 16:14:22,2019-04-16 16:14:26,3.464s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Personal Store/span_Continue to Order""))",Chrome 73.0.3683.103,,2019-04-16 16:14:26,2019-04-16 16:14:26,0.261s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style""), Style)",Chrome 73.0.3683.103,,2019-04-16 16:14:26,2019-04-16 16:14:27,0.872s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style""), Keys.chord(ENTER))",Chrome 73.0.3683.103,,2019-04-16 16:14:27,2019-04-16 16:14:27,0.163s,PASSED
+"click(findTestObject(""Page_cabi Order Items/li_5618 Breeze Dress""))",Chrome 73.0.3683.103,,2019-04-16 16:14:27,2019-04-16 16:14:31,4.082s,PASSED
+"verifyElementText(findTestObject(""Page_cabi Order Items/GetAttribute_getID""), Style)",Chrome 73.0.3683.103,,2019-04-16 16:14:31,2019-04-16 16:14:31,0.113s,PASSED
+"verifyElementText(findTestObject(""Page_cabi Order Items/GetAttribute_Color""), Color)",Chrome 73.0.3683.103,,2019-04-16 16:14:31,2019-04-16 16:14:31,0.079s,PASSED
+"getPrice = getText(findTestObject(""Page_cabi Order Items/GetAttribute_Price""))",Chrome 73.0.3683.103,,2019-04-16 16:14:31,2019-04-16 16:14:31,0.094s,PASSED
+Split_Data = UtilityMethods.SplitData(getPrice),Chrome 73.0.3683.103,,2019-04-16 16:14:31,2019-04-16 16:14:31,0.016s,PASSED
+"verifyMatch(Split_Data, Retail, true)",Chrome 73.0.3683.103,,2019-04-16 16:14:31,2019-04-16 16:14:31,0.037s,PASSED
+"listElement = findWebElements(findTestObject(""Object Repository/Page_cabi Order Items/Size""), 5)",Chrome 73.0.3683.103,,2019-04-16 16:14:31,2019-04-16 16:14:31,0.065s,PASSED
+println(listElement.size()),Chrome 73.0.3683.103,,2019-04-16 16:14:31,2019-04-16 16:14:31,0.005s,PASSED
+"for ([i = 1, i < listElement.size(), (i++)])",Chrome 73.0.3683.103,,2019-04-16 16:14:31,2019-04-16 16:14:31,0.071s,FAILED

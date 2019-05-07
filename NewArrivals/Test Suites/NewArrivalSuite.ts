@@ -136,24 +136,6 @@
          <testDataId>Data Files/contactData</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>2049861a-975a-4ca6-9a7e-65b1becafae4</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>4b864aa2-6917-4b8d-9ca8-3d15b01021a4</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>270b33bb-908e-476c-87cd-d399d4caee63</variableId>
-      </variableLink>
-      <variableLink>
          <testDataLinkId>6e0cc874-d5d0-4ccb-9130-d4b616ebdd43</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>firstName</value>

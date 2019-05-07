@@ -17,19 +17,7 @@ import org.openqa.selenium.WebElement as WebElement
 
 WebUI.openBrowser('')
 
-BOURL = findTestData('credData').getValue('BOURL', 1)
-
-BOuser = findTestData('credData').getValue('BOuser', 1)
-
-BOpass = findTestData('credData').getValue('BOpass', 1)
-
-WebUI.navigateToUrl(BOURL)
-
-WebUI.setText(findTestObject('Page_cabi/input_Welcome to_USERNAME'), BOuser)
-
-WebUI.setText(findTestObject('Page_cabi/input_Welcome to_PASSWORD'), BOpass)
-
-WebUI.click(findTestObject('Page_cabi/input_Welcome to_consultantLogin'))
+WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 for (int row = 1; row <= findTestData('contactData').getRowNumbers(); row++) {
     firstName = findTestData('contactData').getValue('firstName', row)
@@ -107,3 +95,4 @@ for (int row = 1; row <= findTestData('contactData').getRowNumbers(); row++) {
 }
 
 WebUI.closeBrowser()
+

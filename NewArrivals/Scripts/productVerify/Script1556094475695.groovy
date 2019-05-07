@@ -60,7 +60,7 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 	else{
 		WebUI.click(findTestObject('Page_cabi Order Items/li_order_item'))
 		
-			WebUI.delay(10)
+			WebUI.delay(5)
 			/*******screenshot***********************************/
 			
 			String imgString1=findTestData('productData').getValue('Style', row).toString()
@@ -72,7 +72,7 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 			WebUI.verifyElementText(findTestObject('Page_cabi Order Items/GetAttribute_getID'), findTestData('productData').getValue(
 					'Style', row))
 		
-			WebUI.delay(3)
+			//WebUI.delay(3)
 		
 			/*******Colour***********************************/
 			List<WebElement> colorOptions = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Order Items/GetAttribute_Color'),
@@ -164,7 +164,7 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 				assert sizeType.equalsIgnoreCase('N/A') || sizeType.equalsIgnoreCase(sizeRangeSplit[0])
 			}
 			
-			WebUI.delay(3)
+			WebUI.delay(2)
 		
 			/*******Description***********************************/
 			WebUI.verifyElementText(findTestObject('Page_cabi Order Items/product_title'), findTestData('productData').getValue(

@@ -45,15 +45,15 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
     WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), findTestData(
             'productData').getValue('Style', row))
 
-    WebUI.delay(5)
+    WebUI.delay(2)
 
 	String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
 	
-	WebUI.delay(3)
+	WebUI.delay(1)
 	
     WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
 
-    
+
 
     if (available.toString().equalsIgnoreCase('no')) {
 		assert prod_message.equalsIgnoreCase("No matching result found")

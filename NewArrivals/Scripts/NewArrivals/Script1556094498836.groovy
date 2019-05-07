@@ -18,8 +18,6 @@ import org.openqa.selenium.WebElement as WebElement
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://test14.cliotest.com/backoffice/control/main')
-
 for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
     WebUI.callTestCase(findTestCase('populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
 
@@ -30,23 +28,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     /*****************going to backoffice: personal*******************/
     WebUI.openBrowser('')
 
-    WebUI.navigateToUrl(BOURL)
+    WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.maximizeWindow()
-
-    List<WebElement> logOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/log_out'), 
-        5)
-
-    if (logOut.size() == 0) {
-        WebUI.setText(findTestObject('Page_cabi/input_Welcome to_USERNAME'), BOuser)
-
-        WebUI.setText(findTestObject('Object Repository/Page_cabi/input_Welcome to_PASSWORD'), BOpass)
-
-        WebUI.delay(3)
-
-        WebUI.click(findTestObject('Object Repository/Page_cabi/input_Welcome to_consultantLogin'))
-    }
-    
     WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
 
     WebUI.delay(3)

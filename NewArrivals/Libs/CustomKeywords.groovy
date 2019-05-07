@@ -51,3 +51,11 @@ def static "commonUtility.UtilityMethods.getWebElementsAsList"(
     (new commonUtility.UtilityMethods()).getWebElementsAsList(
         	xpath4elements)
 }
+
+def static "commonUtility.UtilityMethods.createScreenshotImagePath"(
+    	String storeType	
+     , 	String style	) {
+    (new commonUtility.UtilityMethods()).createScreenshotImagePath(
+        	storeType
+         , 	style)
+}

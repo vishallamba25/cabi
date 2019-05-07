@@ -49,6 +49,8 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 
 	String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
 	
+	WebUI.delay(3)
+	
     WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
 
     

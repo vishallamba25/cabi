@@ -45,10 +45,11 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
     WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), findTestData(
             'productData').getValue('Style', row))
 
-    WebUI.delay(5)
 
     WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), 
         Keys.chord(Keys.ENTER))
+	
+	WebUI.delay(5)
 
     if (available.toString().equalsIgnoreCase('no')) {
 		List<WebElement> noResultMessages = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Order Items/no_result_found'),5)
@@ -59,7 +60,7 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 	else{
 		WebUI.click(findTestObject('Page_cabi Order Items/li_order_item'))
 		
-			WebUI.delay(5)
+			WebUI.delay(10)
 			/*******screenshot***********************************/
 			
 			String imgString1=findTestData('productData').getValue('Style', row).toString()
@@ -128,7 +129,9 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 		
 			if (sizeType.equalsIgnoreCase('Select')) {
 				for (int i = 1; i < sizeOptions.size(); i++) {
-					actualRange.add(sizeOptions.get(i).getText())
+					
+					
+					actualRange.add(sizeOptions.get(i).getAttribute("value").toString())
 				}
 				
 				if (actualRange.get(0).toString().equalsIgnoreCase('XS') || actualRange.get(0).toString().equalsIgnoreCase('XXS')) {

@@ -28,8 +28,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
         FailureHandling.STOP_ON_FAILURE)
 
     /*****************going to backoffice: personal*******************/
-	WebUI.openBrowser('')
-	
+    WebUI.openBrowser('')
+
     WebUI.navigateToUrl(BOURL)
 
     WebUI.maximizeWindow()
@@ -41,8 +41,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
         WebUI.setText(findTestObject('Page_cabi/input_Welcome to_USERNAME'), BOuser)
 
         WebUI.setText(findTestObject('Object Repository/Page_cabi/input_Welcome to_PASSWORD'), BOpass)
-		
-		WebUI.delay(3)
+
+        WebUI.delay(3)
 
         WebUI.click(findTestObject('Object Repository/Page_cabi/input_Welcome to_consultantLogin'))
     }
@@ -50,6 +50,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
 
     WebUI.delay(3)
+
+    WebUI.rightClick(findTestObject('Page_cabi Home/a_personal_purchases'))
 
     WebUI.click(findTestObject('Page_cabi Home/a_personal_purchases'))
 
@@ -63,27 +65,42 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     WebUI.delay(3)
 
+    WebUI.rightClick(findTestObject('Page_cabi Home/a_retail_purchases'))
+
     WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_Continue to Order'))
 
-    WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BORetail, ('storeType') : 'BORetail'], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BORetail, ('storeType') : 'BORetail'], 
+        FailureHandling.STOP_ON_FAILURE)
 
     /*****************going to backoffice: online******************/
     WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
 
     WebUI.delay(3)
 
+    WebUI.rightClick(findTestObject('Page_cabi Home/a_online_outline_purchases'))
+
     WebUI.click(findTestObject('Page_cabi Home/a_online_outline_purchases'))
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Online Outlet Store/span_Continue to Order'))
 
-    WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BOOnlineoutlet, ('storeType') : 'BOOnlineoutlet'], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BOOnlineoutlet, ('storeType') : 'BOOnlineoutlet'], 
+        FailureHandling.STOP_ON_FAILURE)
 
+    /*****************going to backoffice: showorder************************/
+    if (timeRow == 1) {
+        WebUI.callTestCase(findTestCase('createContact'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : '', ('firstName') : ''
+                , ('lastName') : '', ('email') : '', ('address1') : '', ('city') : '', ('state') : '', ('zip') : ''], FailureHandling.STOP_ON_FAILURE)
+
+        WebUI.callTestCase(findTestCase('createAPhysicalShow'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : '', ('hostess') : ''
+                , ('cohostess') : ''], FailureHandling.STOP_ON_FAILURE)
+    }
+    
     /*****************going to CabiCentral: personal order******************/
     WebUI.navigateToUrl('https://test14.cliotest.com/cabicentral/control/main')
 
-    WebUI.setText(findTestObject('Page_cabi/input_Username_USERNAME'), 'ehudson')
+    WebUI.setText(findTestObject('Page_cabi/input_Username_USERNAME_cabicentral'), 'ehudson')
 
     WebUI.setEncryptedText(findTestObject('Page_cabi/input_Password_PASSWORD'), 'B/N/DIt9VtgMeGq7IFnfMA==')
 
@@ -97,7 +114,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     WebUI.click(findTestObject('Page_cabi Create Order/input_select_order_type'))
 
-    WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.CCPersonal, ('storeType') : 'CCPersonal'], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.CCPersonal, ('storeType') : 'CCPersonal'], 
+        FailureHandling.STOP_ON_FAILURE)
 
     /*****************going to CabiCentral: retail order******************/
     WebUI.click(findTestObject('Page_cabi Find Order/a_Create Order'))

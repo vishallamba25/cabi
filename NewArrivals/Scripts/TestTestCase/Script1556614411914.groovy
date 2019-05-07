@@ -13,50 +13,89 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+WebUI.navigateToUrl('https://test14.cliotest.com/backoffice/control/main')
 
-WebUI.navigateToUrl('https://test14.cliotest.com/cabicentral/control/main')
+WebUI.setText(findTestObject('Page_cabi/input_Welcome to_USERNAME'), '400000002')
 
-WebUI.setText(findTestObject('Page_cabi/input_Username_USERNAME'), 'ehudson')
+WebUI.setEncryptedText(findTestObject('Page_cabi/input_Welcome to_PASSWORD'), 'B/N/DIt9VtgMeGq7IFnfMA==')
 
-WebUI.setEncryptedText(findTestObject('Page_cabi/input_Password_PASSWORD'), 'B/N/DIt9VtgMeGq7IFnfMA==')
+WebUI.click(findTestObject('Page_cabi/input_Welcome to_consultantLogin'))
 
-WebUI.click(findTestObject('Page_cabi/input_Password_section-btn btn-stl-pk rFloat'))
+WebUI.rightClick(findTestObject('Page_cabi Home/a_Shows  Orders'))
 
-WebUI.click(findTestObject('Page_cabi cabiCentral Tasks/a_ORDERS'))
+WebUI.click(findTestObject('Page_cabi Home/a_Create A Show'))
 
-WebUI.click(findTestObject('Page_cabi Find Order/a_Create Order'))
+WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_New_cohost'), 'neoh')
 
-WebUI.click(findTestObject('Page_cabi Create Order/input_select_order_type'))
+WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_neohost1 abc'))
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/a_Create Order'))
+WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_New_cohost'), 'neohost1 abc')
 
-WebUI.selectOptionByValue(findTestObject('Page_cabi Create Order/select_order_type'), 
-    'PERSONAL', true)
+WebUI.selectOptionByValue(findTestObject('Page_cabi Create Show - Set Hostess/choose_from_contacts'), '3', true)
 
-WebUI.click(findTestObject('Page_cabi Create Order/input_select_order_type'))
+WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Co-Hostess'), 'neoc')
 
-WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), '5618')
+WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_neocohost1 abc'))
 
-WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
+WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Co-Hostess'), 'neocohost1 abc')
 
-WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), '21211')
+WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/input_Cancel_submitButton'))
 
-WebUI.rightClick(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'))
+WebUI.rightClick(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/input_Show_date_time'))
 
-WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), '21211')
+WebUI.rightClick(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/a_16'))
 
-WebUI.rightClick(findTestObject('Object Repository/Page_cabi Create Order/a_No matching result found'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/a_16'))
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/a_No matching result found'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/b'))
 
-WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), '5618')
+WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/div_Location for ShowSame as Hostess Home Address'))
 
-WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/input__address_Same_as_hostess'))
 
-WebUI.rightClick(findTestObject('Page_cabi Create Order/select_colour'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/input_Same as show location'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_cabi Create Order/select_SelectXSSMLXL'), 'XS', true)
+WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/label_Tax Rate Calculated'))
 
-WebUI.click(findTestObject('Page_cabi Create Order/retail_price'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/input_Back_section'))
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/input_PlaceOrderTab'))
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Orders/button_Place Order'))
+
+WebUI.click(findTestObject('Page_cabi/span_Order Items'))
+
+WebUI.setText(findTestObject('Object Repository/Page_cabi Order Entry/input_Discount_'), '5618')
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Entry/a_5618 Breeze Dress'))
+
+WebUI.setText(findTestObject('Object Repository/Page_cabi Order Entry/input_Discount_'), '5618 Breeze Dress')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_cabi Order Entry/select_Select_size'), 'XS', true)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Entry/span_Next'))
+
+WebUI.setText(findTestObject('Object Repository/Page_cabi Order Entry/input_Discount_'), '5618')
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Entry/a_5618'))
+
+WebUI.setText(findTestObject('Object Repository/Page_cabi Order Entry/input_Discount_'), '5618 Breeze Dress')
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Entry/span_Next'))
+
+WebUI.setText(findTestObject('Object Repository/Page_cabi Order Entry/input_Discount_'), '5618')
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Entry/a_5618_2'))
+
+WebUI.setText(findTestObject('Object Repository/Page_cabi Order Entry/input_Discount_'), '5618 Breeze Dress')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_cabi Order Entry/select_Select_size'), 'M', true)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Entry/span_Add to Cart'))
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Entry/span_Next'))
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/span_Next'))
+
+WebUI.closeBrowser()
 

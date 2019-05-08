@@ -13,57 +13,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.navigateToUrl('https://test14.cliotest.com/backoffice/control/main')
+GlobalVariable.BOShow="on"
 
-WebUI.setText(findTestObject('Page_cabi/input_Welcome to_USERNAME'), '400000002')
+WebUI.callTestCase(findTestCase('createContact'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : '', ('firstName') : ''
+	, ('lastName') : '', ('email') : '', ('address1') : '', ('city') : '', ('state') : '', ('zip') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setEncryptedText(findTestObject('Page_cabi/input_Welcome to_PASSWORD'), 'B/N/DIt9VtgMeGq7IFnfMA==')
+WebUI.callTestCase(findTestCase('createAPhysicalShow'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : '', ('hostess') : ''
+	, ('cohostess') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_cabi/input_Welcome to_consultantLogin'))
+WebUI.delay(3)
 
-WebUI.rightClick(findTestObject('Page_cabi Home/a_Shows  Orders'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Orders/span_orders'))
 
-WebUI.click(findTestObject('Page_cabi Home/a_Create A Show'))
+WebUI.click(findTestObject('Page_cabi Orders/button_placeOrder'))
 
-WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_New_cohost'), 'neoh')
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Entry/span_orderItems'))
 
-WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_neohost1 abc'))
+WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.BOShow], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_New_cohost'), 'neohost1 abc')
-
-WebUI.selectOptionByValue(findTestObject('Page_cabi Create Show - Set Hostess/choose_from_contacts'), '3', true)
-
-WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Co-Hostess'), 'neoc')
-
-WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_neocohost1 abc'))
-
-WebUI.setText(findTestObject('Page_cabi Create Show - Set Hostess/input_Co-Hostess'), 'neocohost1 abc')
-
-WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/input_Cancel_submitButton'))
-
-WebUI.rightClick(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/input_Show_date_time'))
-
-WebUI.rightClick(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/a_16'))
-
-WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/a_16'))
-
-WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/b'))
-
-WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/div_Location for ShowSame as Hostess Home Address'))
-
-WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/input__address_Same_as_hostess'))
-
-WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/input_Same as show location'))
-
-WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/label_Tax Rate Calculated'))
-
-WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/input_Back_section'))
-
-WebUI.click(findTestObject('Object Repository/Page_cabi Create ShowTime_Place/input_PlaceOrderTab'))
-
-WebUI.click(findTestObject('Object Repository/Page_cabi Orders/button_Place Order'))
-
-WebUI.click(findTestObject('Page_cabi/span_Order Items'))
+/*
 
 WebUI.setText(findTestObject('Object Repository/Page_cabi Order Entry/input_Discount_'), '5618')
 
@@ -97,5 +65,5 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Order Entry/span_Next'))
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/span_Next'))
 
-WebUI.closeBrowser()
+WebUI.closeBrowser()*/
 

@@ -21,8 +21,6 @@ BOuser = findTestData('credData').getValue('BOuser', 1)
 
 BOpass = findTestData('credData').getValue('BOpass', 1)
 
-not_run: WebUI.openBrowser('')
-
 WebUI.navigateToUrl(BOURL)
 
 WebUI.maximizeWindow()

@@ -181,7 +181,7 @@
    <testCaseLink>
       <guid>7594559b-538d-46bb-9565-02533a30c88a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NewArrivals</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -227,6 +227,30 @@
          <type>DATA_COLUMN</type>
          <value>BOpass</value>
          <variableId>ed9ce90b-11c8-40a9-ba31-8ac284897fa4</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>31426064-c87d-43a5-a58c-03d4961a120a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TestCase_2</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>403bc708-fef5-4099-874a-12416d8cd9b5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fbc3a604-8b76-4a84-8ecb-be34e728deeb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a68779ee-2326-404a-8bfb-45550c161e5f</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -34,7 +34,7 @@ for (int row = 1; row <= findTestData('contactData').getRowNumbers(); row++) {
 
     zip = findTestData('contactData').getValue('zip', row)
 
-    WebUI.click(findTestObject('Page_cabi Home/a_Connections'))
+    WebUI.rightClick(findTestObject('Page_cabi Home/a_Connections'))
 
     WebUI.click(findTestObject('Page_cabi Home/a_Contact Manager'))
 

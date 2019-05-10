@@ -37,11 +37,9 @@ if (emptyCart.size() > 0) {
     WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'))
 }
 
-WebUI.delay(5)
-
 WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_Discount_stylelookup_0'), '5447')
 
-WebUI.delay(10)
+WebUI.delay(3)
 
 WebUI.sendKeys(findTestObject('Page_cabi Order Items/input_Discount_stylelookup_0'), Keys.chord(Keys.DOWN))
 

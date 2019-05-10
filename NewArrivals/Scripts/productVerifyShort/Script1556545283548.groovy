@@ -42,6 +42,8 @@ WebUI.click(findTestObject('Page_cabi Home/a_personal_purchases'))
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/span_Continue to Order'))*/
 for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
+	WebUI.delay(2)
+	
     WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), findTestData(
             'productData').getValue('Style', row))
 

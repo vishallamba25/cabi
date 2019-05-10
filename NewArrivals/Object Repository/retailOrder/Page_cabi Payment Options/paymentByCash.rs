@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>paymentByCash</name>
+   <tag></tag>
+   <elementGuidId>031e77bd-4fb1-4e13-bf03-0f740209165f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@class='payment-select']/option[@value='CUST_DEPOSIT_PMT_Cash']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;payment_info_container&quot;)/div[@id=&quot;payment-method_103182089&quot;]/ul[@class=&quot;form-list payment-row&quot;]/li[1]/select[@id=&quot;payment-select_103182089&quot;][count(. | //select[@class = 'payment-select' and @name = 'payment-first' and @id = 'payment-select_103182089' and (text() = 'Kelli Cornett Visa ****0007CashCheckGift CardAdd New Credit Card' or . = 'Kelli Cornett Visa ****0007CashCheckGift CardAdd New Credit Card')]) = count(//select[@class = 'payment-select' and @name = 'payment-first' and @id = 'payment-select_103182089' and (text() = 'Kelli Cornett Visa ****0007CashCheckGift CardAdd New Credit Card' or . = 'Kelli Cornett Visa ****0007CashCheckGift CardAdd New Credit Card')])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>payment-select</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>payment-first</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>payment-select_103182089</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Kelli Cornett Visa ****0007CashCheckGift CardAdd New Credit Card</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;payment_info_container&quot;)/div[@id=&quot;payment-method_103182089&quot;]/ul[@class=&quot;form-list payment-row&quot;]/li[1]/select[@id=&quot;payment-select_103182089&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <value>//select[@class='payment-select']/option[@value='CUST_DEPOSIT_PMT_Cash']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <value>//div[@id='payment-method_103182089']/ul/li/select</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='First Payment:'])[1]/following::select[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='®'])[1]/following::select[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Enter Payment:'])[1]/preceding::select[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='x'])[1]/preceding::select[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <value>//li/select</value>
+   </webElementXpaths>
+</WebElementEntity>

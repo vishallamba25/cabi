@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//span[@id='returnToActionLabel']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;returnToActionLabel&quot;)[count(. | //span[@id = 'returnToActionLabel' and (text() = 'Next' or . = 'Next')]) = count(//span[@id = 'returnToActionLabel' and (text() = 'Next' or . = 'Next')])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,7 +38,7 @@
       <value>Next</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

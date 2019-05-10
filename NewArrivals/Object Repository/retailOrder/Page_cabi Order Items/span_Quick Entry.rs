@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//div[@id='product_content_wrapper']/header/ul/li/a/span</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;product_content_wrapper&quot;]/header/ul/li[1]/a/span[count(. | //span[(text() = 'Quick Entry' or . = 'Quick Entry')]) = count(//span[(text() = 'Quick Entry' or . = 'Quick Entry')])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -27,11 +31,11 @@
       <value>Quick Entry</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;product_content_wrapper&quot;)/header[@class=&quot;content-header menuSeperateFromHeader&quot;]/ul[@class=&quot;content-nav&quot;]/li[1]/a[@class=&quot;category-tab tab-btn quick-entry-tab&quot;]/span[1]</value>
+      <value>//*[@id=&quot;product_content_wrapper&quot;]/header/ul/li[1]/a/span</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

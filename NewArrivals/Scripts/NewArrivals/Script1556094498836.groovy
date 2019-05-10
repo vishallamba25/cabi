@@ -47,8 +47,28 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.rightClick(findTestObject('Page_cabi Home/a_Shows  Orders'))
 
     WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
+	
+	WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
+	///////////////////////
+	String existingCustFName= findTestData('contactData').getValue('firstName', 3)
+	String existingCustLName= findTestData('contactData').getValue('lastName', 3)
+	String gap=" "
+	String existingCust="$existingCustFName$gap$existingCustLName"
+	
+	WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
+	
+	WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
+	
+	WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
+	
+	WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_select_cohostess'))
+	
+	WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
+	/////////////////////////
+	
+	WebUI.delay(3)
 
-    WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_Continue to Order'))
+    WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_next'))
 
     WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BORetail, ('storeType') : 'BORetail'], 
         FailureHandling.STOP_ON_FAILURE)

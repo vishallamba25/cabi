@@ -181,7 +181,7 @@
    <testCaseLink>
       <guid>7594559b-538d-46bb-9565-02533a30c88a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NewArrivals</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -232,7 +232,13 @@
    <testCaseLink>
       <guid>31426064-c87d-43a5-a58c-03d4961a120a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/warehouseShipping</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0b0eafcb-4f79-4490-a114-219634a06ffe</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

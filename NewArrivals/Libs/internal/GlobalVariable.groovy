@@ -32,7 +32,7 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object BOAddon
+    public static Object BOAddonPersonal
      
     /**
      * <p></p>
@@ -69,6 +69,16 @@ public class GlobalVariable {
      */
     public static Object CCShow
      
+    /**
+     * <p></p>
+     */
+    public static Object addOnOrderId
+     
+    /**
+     * <p></p>
+     */
+    public static Object BOAddonRetail
+     
 
     static {
         try {
@@ -80,7 +90,7 @@ public class GlobalVariable {
             orderType = selectedVariables['orderType']
             timeZone = selectedVariables['timeZone']
             BOPersonal = selectedVariables['BOPersonal']
-            BOAddon = selectedVariables['BOAddon']
+            BOAddonPersonal = selectedVariables['BOAddonPersonal']
             BORetail = selectedVariables['BORetail']
             BOShow = selectedVariables['BOShow']
             BOOnlineoutlet = selectedVariables['BOOnlineoutlet']
@@ -88,6 +98,8 @@ public class GlobalVariable {
             CCPersonal = selectedVariables['CCPersonal']
             CCRetail = selectedVariables['CCRetail']
             CCShow = selectedVariables['CCShow']
+            addOnOrderId = selectedVariables['addOnOrderId']
+            BOAddonRetail = selectedVariables['BOAddonRetail']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

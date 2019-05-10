@@ -1,0 +1,9 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+NewArrivalSuite,,,2019-05-08 18:10:34,2019-05-08 18:10:37,3.512s,FAILED
+,,,,,,
+Test Cases/TestCase_2,,,2019-05-08 18:10:34,2019-05-08 18:10:37,2.892s,FAILED
+Start listener action : sampleBeforeTestCase,,,2019-05-08 18:10:35,2019-05-08 18:10:35,0.077s,PASSED
+"CWURL = findTestData(""credData"").getValue(""CWURL"", 1)",,,2019-05-08 18:10:35,2019-05-08 18:10:37,1.301s,PASSED
+"CWuser = findTestData(""credData"").getValue(""CWuser"", 1)",,,2019-05-08 18:10:37,2019-05-08 18:10:37,0.062s,PASSED
+"CWpass = findTestData(""credData"").getValue(""CWpass"", 1)",,,2019-05-08 18:10:37,2019-05-08 18:10:37,0.057s,PASSED
+navigateToUrl(CWURL),,,2019-05-08 18:10:37,2019-05-08 18:10:37,0.518s,FAILED

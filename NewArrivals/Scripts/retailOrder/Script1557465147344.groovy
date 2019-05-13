@@ -28,7 +28,7 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/retailOrder/Page_cabi Guest Information/existingCustomerOption'))
 
-WebUI.setText(findTestObject('Object Repository/retailOrder/Page_cabi Guest Information/existingCustomer'), 'kelli')
+not_run: WebUI.setText(findTestObject('Object Repository/retailOrder/Page_cabi Guest Information/existingCustomer'), 'kelli')
 
 WebUI.sendKeys(findTestObject('Page_cabi Order Items/input_Discount_stylelookup_0'), Keys.chord(Keys.DOWN))
 

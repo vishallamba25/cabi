@@ -19,11 +19,7 @@ WebUI.click(findTestObject('Page_cabi Manage PickLists/a_Create PickLists'))
 
 WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi SampleLine Shipment Screen/a_Single Order'))
 
-<<<<<<< HEAD
 WebUI.setText(findTestObject('Page_cabi Create Single Order PickList/input_Order Id_orderId'), orderId)
-=======
-WebUI.setText(findTestObject('Page_cabi Create Single Order PickList/input_Order Id_orderId'), ' RT707934509')
->>>>>>> 29279761128638fb29c27501e86a25ce8fa615aa
 
 WebUI.click(findTestObject('Page_cabi Create Single Order PickList/input_Create even if fully backordered_submitButton'))
 
@@ -31,11 +27,7 @@ not_run: WebUI.verifyElementText(findTestObject('Cabi warehouse/picklistCreatedM
 
 WebUI.click(findTestObject('Page_cabi Create Single Order PickList/a_Manage PickLists'))
 
-<<<<<<< HEAD
 WebUI.setText(findTestObject('Page_cabi Manage PickLists/input_Order _orderId'), orderId)
-=======
-WebUI.setText(findTestObject('Page_cabi Manage PickLists/input_Order _orderId'), ' RT707934509')
->>>>>>> 29279761128638fb29c27501e86a25ce8fa615aa
 
 WebUI.click(findTestObject('Page_cabi Manage PickLists/input'))
 
@@ -60,8 +52,6 @@ WebUI.click(findTestObject('Page_cabi General Pack/input_Pack Station  30_shipCo
 WebUI.click(findTestObject('Cabi warehouse/warehouseLogout'))
 
 
-<<<<<<< HEAD
-=======
 WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Home/a_Shows  Orders'))
 
 WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Home/a_Orders'))
@@ -107,5 +97,4 @@ WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/P
 WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_Submit RMA'))
 
 WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/addonOrder'))
->>>>>>> 29279761128638fb29c27501e86a25ce8fa615aa
 

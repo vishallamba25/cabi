@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Contact Manager</name>
+   <name>a_Stylist Picks</name>
    <tag></tag>
-   <elementGuidId>5dd27ad0-fca0-4cad-bf21-2fb6b1e4596b</elementGuidId>
+   <elementGuidId>80e3f52e-fa7d-4d91-bfd0-1e557c67c999</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='my-team-sub-btn']/li/a</value>
+         <value>//a[@value='S18_STYLISTPICKS']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,74 +24,88 @@
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>/backoffice/control/ContactManager?externalLoginKey=EL466540351398&amp;reset=Y</value>
+      <value>javascript:void(0);</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>rel</name>
+      <type>Main</type>
+      <value>S18_STYLISTPICKS</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>S18_STYLISTPICKS</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Contact Manager</value>
+      <value>Stylist Picks</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;my-team-sub-btn&quot;)/li[1]/a[1]</value>
+      <value>id(&quot;selectEblast&quot;)/li[40]/a[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <value>//a[@value='S18_STYLISTPICKS']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//ul[@id='my-team-sub-btn']/li/a</value>
+      <value>//ul[@id='selectEblast']/li[40]/a</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
-      <value>//a[contains(text(),'Contact Manager')]</value>
+      <value>//a[contains(text(),'Stylist Picks')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Connections'])[1]/following::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='S19 White Denim'])[1]/following::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sales by Category'])[1]/following::a[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='S19 Top 20'])[1]/following::a[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hostess Benefits'])[1]/preceding::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Zulily Sale'])[1]/preceding::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Jewelry Benefits'])[1]/preceding::a[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ADD PRODUCTS TO EBLAST'])[1]/preceding::a[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
-      <value>//a[contains(@href, '/backoffice/control/ContactManager?externalLoginKey=EL466540351398&amp;reset=Y')]</value>
+      <value>(//a[contains(@href, 'javascript:void(0);')])[40]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
-      <value>//li[3]/ul/li/a</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:href</name>
-      <value>//a[contains(@href, '/backoffice/control/ContactManager?externalLoginKey=EL235785302452&amp;reset=Y')]</value>
+      <value>//li[40]/a</value>
    </webElementXpaths>
 </WebElementEntity>

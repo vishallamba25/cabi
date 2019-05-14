@@ -17,7 +17,30 @@ WebUI.openBrowser('')
 
 WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
+WebUI.click(findTestObject('Page_cabi Home/a_Connections'))
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Product Watch List'))
+WebUI.click(findTestObject('Page_cabi Home/a_Contact Manager'))
 
+WebUI.click(findTestObject('Page_cabi/span_SEND eBLAST'))
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/a_Stylist Picks'))
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST'))
+
+WebUI.setText(findTestObject('Page_cabi Eblast/eBlastStyleSearch'), '5618')
+
+for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
+	WebUI.delay(2)
+	
+	WebUI.setText(findTestObject('Page_cabi Eblast/eBlastStyleSearch'), findTestData(
+			'productData').getValue('Style', row))
+
+	WebUI.delay(2)
+
+	String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
+	
+	WebUI.delay(1)
+	
+	WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
+
+}

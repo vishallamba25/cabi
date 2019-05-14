@@ -21,16 +21,16 @@ CWuser = findTestData('credData').getValue('CWuser', 1)
 
 CWpass = findTestData('credData').getValue('CWpass', 1)
 
+//WebUI.openBrowser("")
+
 WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(CWURL)
 
-List<WebElement> logOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Cabi warehouse/Page_cabi_home/log_out'),5)
+List<WebElement> logOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Cabi warehouse/Page_cabi_home/log_out'),1)
 if (logOut.size() == 0) {
 	WebUI.setText(findTestObject('Object Repository/Cabi warehouse/Page_cabi/input_Username_USERNAME'), CWuser)
-	
 	WebUI.setText(findTestObject('Object Repository/Cabi warehouse/Page_cabi/input_Password_PASSWORD'), CWpass)
-	
 	WebUI.click(findTestObject('Object Repository/Cabi warehouse/Page_cabi/input_Password_section-btn btn-stl-pk rFloat'))
 }
 

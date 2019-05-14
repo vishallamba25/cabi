@@ -22,7 +22,7 @@ WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') 
 
 WebUI.click(findTestObject('Page_cabi Home/a_Shows  Orders'))
 
-WebUI.delay(3)
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Page_cabi Home/a_personal_purchases'))
 

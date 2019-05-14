@@ -28,14 +28,14 @@ WebUI.navigateToUrl(CCURL)
 WebUI.maximizeWindow()
 
 List<WebElement> logOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/log_out'), 
-    5)
+    1)
 
 if (logOut.size() == 0) {
     WebUI.setText(findTestObject('Object Repository/Page_cabi/input_Username_USERNAME'), CCuser)
 
     WebUI.setText(findTestObject('Object Repository/Page_cabi/input_Password_PASSWORD'), CCpass)
 
-    WebUI.delay(3)
+    WebUI.delay(1)
 
     WebUI.click(findTestObject('Object Repository/Page_cabi/input_Password_section-btn btn-stl-pk rFloat'))
 }

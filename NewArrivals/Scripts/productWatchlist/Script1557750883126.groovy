@@ -11,7 +11,11 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+import commonUtility.UtilityMethods
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import org.openqa.selenium.WebElement as WebElement
 
 WebUI.openBrowser('')
 
@@ -20,4 +24,35 @@ WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') 
 WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Product Watch List'))
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)'))
+
+WebUI.verifyElementText(findTestObject('Page_cabi Product Watch list/span_(New Arrivals 2)'), '(New Arrivals 2)')
+
+List<WebElement> actualProductList = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Product Watch list/div_product_list'),5)
+
+println actualProductList.size()
+
+
+ArrayList<String> actualList= new ArrayList<>();
+ArrayList<String> expectedList= new ArrayList<>();
+for(WebElement product: actualProductList){
+	actualList.add(product.getText());
+	println product.getText();
+}
+for (int row = 1; row <= findTestData('productData1').getRowNumbers(); row++) {
+	String productStyle=findTestData('productData1').getValue('Style', row);
+	String productDescription=findTestData('productData1').getValue('Description', row);
+	String productColor=findTestData('productData1').getValue('Color', row);
+	String expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor);
+	println expectedString
+	expectedList.add(expectedString)
+}
+
+assert UtilityMethods.listEquals(expectedList, actualList) == true
+
+
+
+
+
 

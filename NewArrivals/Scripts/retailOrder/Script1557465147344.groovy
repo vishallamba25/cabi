@@ -26,40 +26,17 @@ WebUI.click(findTestObject('retailOrder/Page_cabi Home/a_Retail Orders'))
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
-///////////////////////
-String existingCustFName= findTestData('contactData').getValue('firstName', 3)
-String existingCustLName= findTestData('contactData').getValue('lastName', 3)
-String gap=" "
-String existingCust="$existingCustFName$gap$existingCustLName"
+WebUI.click(findTestObject('Object Repository/retailOrder/Page_cabi Guest Information/existingCustomerOption'))
 
-WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
+WebUI.setText(findTestObject('Object Repository/retailOrder/Page_cabi Guest Information/existingCustomer'), 'kelli')
 
-WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
-
-WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
-
-WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_select_cohostess'))
-
-WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
-/////////////////////////
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_next'))
-
-
-not_run: WebUI.click(findTestObject('Object Repository/retailOrder/Page_cabi Guest Information/existingCustomerOption'))
-
-not_run: WebUI.setText(findTestObject('Object Repository/retailOrder/Page_cabi Guest Information/existingCustomer'), 'kelli')
-
-not_run: WebUI.sendKeys(findTestObject('Page_cabi Order Items/input_Discount_stylelookup_0'), Keys.chord(Keys.DOWN))
+WebUI.sendKeys(findTestObject('Page_cabi Order Items/input_Discount_stylelookup_0'), Keys.chord(Keys.DOWN))
 
 not_run: WebUI.sendKeys(findTestObject('Page_cabi Order Items/input_Discount_stylelookup_0'), Keys.chord(Keys.DOWN))
 
 not_run: WebUI.click(findTestObject('Page_cabi Personal Store/styleID'))
 
-not_run: WebUI.sendKeys(findTestObject('Object Repository/retailOrder/Page_cabi Guest Information/existingCustomer'), Keys.chord(
+WebUI.sendKeys(findTestObject('Object Repository/retailOrder/Page_cabi Guest Information/existingCustomer'), Keys.chord(
         Keys.ENTER))
 
 not_run: WebUI.click(findTestObject('Page_cabi Shipping/span_Next'))

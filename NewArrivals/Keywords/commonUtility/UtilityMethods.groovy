@@ -39,8 +39,8 @@ public class UtilityMethods {
 		//String sizeRangeFirst = size[0].toString()
 		return sizeRangeSplit;
 	}
-	
-	
+
+
 	@Keyword
 	public static ArrayList<String> getExpectedRange(String[] sizeRange, String[] arr) {
 		ArrayList<String> expectedRange= new ArrayList<>();
@@ -111,5 +111,12 @@ public class UtilityMethods {
 		System.out.println(filePath);
 
 		return filePath;
+	}
+	
+	@Keyword
+	public static String createSkuForPWL(String productStyle, String productDescription, String productColor) throws IOException{
+		String sku=productStyle + "\n"+productDescription+" "+productColor;
+
+		return sku;
 	}
 }

@@ -21,8 +21,6 @@ WebUI.openBrowser('')
 
 WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://test17.cliotest.com/backoffice/control/main')
-
 WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Product Watch List'))

@@ -27,7 +27,25 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/a_Stylist Picks')
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST'))
 
-WebUI.setText(findTestObject('Page_cabi Eblast/eBlastStyleSearch'), '5618')
+
+String space= ' '
+
+String style_id = WebUI.getText(findTestObject('Page_cabi Eblast/style_id'))
+
+String style_name = WebUI.getText(findTestObject('Page_cabi Eblast/style_name'))
+
+String style_color = WebUI.getText(findTestObject('Page_cabi Eblast/style_color'))
+
+style_web = "$style_id$space$style_name$space$style_color"
+
+String styleid_data = findTestData('productData').getValue('Style',row)
+
+String styleid_name = findTestData('productData').getValue('Description',row)
+
+String styleid_color = findTestData('productData').getValue('Color',row)
+
+style_data = "$styleid_data$space$styleid_name$space$styleid_color"
+
 
 for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 	WebUI.delay(2)
@@ -36,11 +54,24 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 			'productData').getValue('Style', row))
 
 	WebUI.delay(2)
-
-	String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
 	
-	WebUI.delay(1)
-	
-	WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
+	if(available.toString().equalsIgnoreCase('no')){
 
+		List<WebElement> style_notfound = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/styleNotFound'))
+	
+		assert style_notfound.size()>0
+	
+		WebUI.verifyElementText(findTestObject('Page_cabi Eblast/styleNotFound'), "No matching product")
+	}
+	
+	else{
+		
+		println(style_data.equalsIgnorecase(style_web))
+		
+	}
+				
+	
 }
+
+
+

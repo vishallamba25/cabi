@@ -112,11 +112,19 @@ public class UtilityMethods {
 
 		return filePath;
 	}
-	
+
 	@Keyword
 	public static String createSkuForPWL(String productStyle, String productDescription, String productColor) throws IOException{
 		String sku=productStyle + "\n"+productDescription+" "+productColor;
 
 		return sku;
+	}
+	
+	@Keyword
+	public static String splitStyle(String style) {
+
+		String[] data = style.split(' \\(')
+		String data1 = data[0].toString()
+		return data1;
 	}
 }

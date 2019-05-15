@@ -72,7 +72,11 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 		String s2= " ";
 		String s3= findTestData('productData').getValue('Description', row).toString();
 		
+		
         String expectedStyleDescription = "$s1$s2$s3"
+		
+		/*********to remove extra chars like '(' ********/
+		prod_message= UtilityMethods.splitStyle(prod_message); println prod_message;
 		
 		assert prod_message.equalsIgnoreCase(expectedStyleDescription)
 		

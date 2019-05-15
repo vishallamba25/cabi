@@ -43,7 +43,17 @@ if (emptyCart.size() > 0) {
 
 addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
 
-WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_Discount_stylelookup_0'), addOnStyle)
+///////////////
+WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
+
+WebUI.delay(3)
+
+String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
+
+WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
+///////////////
+
+/*WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_Discount_stylelookup_0'), addOnStyle)
 
 WebUI.delay(3)
 
@@ -53,7 +63,7 @@ WebUI.sendKeys(findTestObject('Page_cabi Order Items/input_Discount_stylelookup_
 
 not_run: WebUI.click(findTestObject('Page_cabi Personal Store/styleID'))
 
-WebUI.sendKeys(findTestObject('Page_cabi Order Items/input_Discount_stylelookup_0'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Page_cabi Order Items/input_Discount_stylelookup_0'), Keys.chord(Keys.ENTER))*/
 
 WebUI.delay(5)
 
@@ -120,6 +130,10 @@ WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/P
 
 WebUI.click(findTestObject('findOrders/Page_cabi Find Orders/orderView'))
 
+WebUI.delay(3)
+
+WebUI.refresh()
+
 WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Order View/a_(Return Order)'))
 
 WebUI.delay(3)
@@ -150,5 +164,6 @@ WebUI.click(findTestObject('Object Repository/Page_cabi_addOn_order/a_continue_t
 
 WebUI.delay(2)
 
+/****************product Verify Short******************/
 WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.BOAddonPersonal], FailureHandling.STOP_ON_FAILURE)
 

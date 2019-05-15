@@ -115,7 +115,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     /*****************going to backoffice: addOn order************************/
     /************ addOn for personal order RMA *******/
-    //WebUI.callTestCase(findTestCase('addOnOrder'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
+    //WebUI.callTestCase(findTestCase('addOnOrderPersonal'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
   
 	
     /*****************going to CabiCentral: personal order******************/

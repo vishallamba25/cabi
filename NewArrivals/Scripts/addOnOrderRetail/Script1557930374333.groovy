@@ -24,7 +24,7 @@ WebUI.click(findTestObject('Page_cabi Home/a_Shows  Orders'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Page_cabi Home/a_personal_purchases'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_retail_purchases'))
 
 WebUI.click(findTestObject('Page_cabi Personal Store/span_Continue to Order'))
 
@@ -52,18 +52,6 @@ String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first
 
 WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
 ///////////////
-
-/*WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_Discount_stylelookup_0'), addOnStyle)
-
-WebUI.delay(3)
-
-WebUI.sendKeys(findTestObject('Page_cabi Order Items/input_Discount_stylelookup_0'), Keys.chord(Keys.DOWN))
-
-WebUI.sendKeys(findTestObject('Page_cabi Order Items/input_Discount_stylelookup_0'), Keys.chord(Keys.DOWN))
-
-not_run: WebUI.click(findTestObject('Page_cabi Personal Store/styleID'))
-
-WebUI.sendKeys(findTestObject('Page_cabi Order Items/input_Discount_stylelookup_0'), Keys.chord(Keys.ENTER))*/
 
 WebUI.delay(5)
 

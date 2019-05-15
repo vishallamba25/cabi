@@ -69,3 +69,9 @@ def static "commonUtility.UtilityMethods.createSkuForPWL"(
          , 	productDescription
          , 	productColor)
 }
+
+def static "commonUtility.UtilityMethods.splitStyle"(
+    	String style	) {
+    (new commonUtility.UtilityMethods()).splitStyle(
+        	style)
+}

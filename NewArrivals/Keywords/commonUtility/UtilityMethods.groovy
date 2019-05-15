@@ -119,7 +119,7 @@ public class UtilityMethods {
 
 		return sku;
 	}
-	
+
 	@Keyword
 	public static String splitStyle(String style) {
 

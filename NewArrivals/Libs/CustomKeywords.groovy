@@ -59,3 +59,13 @@ def static "commonUtility.UtilityMethods.createScreenshotImagePath"(
         	storeType
          , 	style)
 }
+
+def static "commonUtility.UtilityMethods.createSkuForPWL"(
+    	String productStyle	
+     , 	String productDescription	
+     , 	String productColor	) {
+    (new commonUtility.UtilityMethods()).createSkuForPWL(
+        	productStyle
+         , 	productDescription
+         , 	productColor)
+}

@@ -47,26 +47,30 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.rightClick(findTestObject('Page_cabi Home/a_Shows  Orders'))
 
     WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
-	
-	WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
-	///////////////////////
-	String existingCustFName= findTestData('contactData').getValue('firstName', 3)
-	String existingCustLName= findTestData('contactData').getValue('lastName', 3)
-	String gap=" "
-	String existingCust="$existingCustFName$gap$existingCustLName"
-	
-	WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
-	
-	WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
-	
-	WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
-	
-	WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_select_cohostess'))
-	
-	WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
-	/////////////////////////
-	
-	WebUI.delay(3)
+
+    WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
+
+    ///////////////////////
+    String existingCustFName = findTestData('contactData').getValue('firstName', 3)
+
+    String existingCustLName = findTestData('contactData').getValue('lastName', 3)
+
+    String gap = ' '
+
+    String existingCust = "$existingCustFName$gap$existingCustLName"
+
+    WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
+
+    WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
+
+    WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
+
+    WebUI.click(findTestObject('Page_cabi Create Show - Set Hostess/a_select_cohostess'))
+
+    WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
+
+    /////////////////////////
+    WebUI.delay(3)
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_next'))
 
@@ -104,13 +108,15 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.delay(2)
 
     WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.BOShow], FailureHandling.STOP_ON_FAILURE)
+	
+	/***********Backoffice eblast************/
+
+    WebUI.callTestCase(findTestCase('newArrivalsEblast'), [('available') : GlobalVariable.BOEblast], FailureHandling.STOP_ON_FAILURE)
 
     /*****************going to backoffice: addOn order************************/
     /************ addOn for personal order RMA *******/
-	//WebUI.callTestCase(findTestCase('addOnOrder'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
-	
-	
-	
+    //WebUI.callTestCase(findTestCase('addOnOrder'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
+  
 	
     /*****************going to CabiCentral: personal order******************/
     WebUI.callTestCase(findTestCase('cabiCentralLogin'), [:], FailureHandling.STOP_ON_FAILURE)

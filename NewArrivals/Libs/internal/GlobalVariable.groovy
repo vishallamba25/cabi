@@ -79,6 +79,11 @@ public class GlobalVariable {
      */
     public static Object BOAddonRetail
      
+    /**
+     * <p></p>
+     */
+    public static Object BOEblast
+     
 
     static {
         try {
@@ -100,6 +105,7 @@ public class GlobalVariable {
             CCShow = selectedVariables['CCShow']
             addOnOrderId = selectedVariables['addOnOrderId']
             BOAddonRetail = selectedVariables['BOAddonRetail']
+            BOEblast = selectedVariables['BOEblast']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

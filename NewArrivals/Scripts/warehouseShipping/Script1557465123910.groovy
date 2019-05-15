@@ -31,6 +31,8 @@ WebUI.setText(findTestObject('Page_cabi Manage PickLists/input_Order _orderId'),
 
 WebUI.click(findTestObject('Page_cabi Manage PickLists/input'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Page_cabi Manage PickLists/td_104238610'))
 
 picklistId = WebUI.getText(findTestObject('Page_cabi Manage PickLists/td_104238610'))
@@ -50,7 +52,6 @@ WebUI.click(findTestObject('Page_cabi General Pack/input_Cream Of Wheat_button a
 WebUI.click(findTestObject('Page_cabi General Pack/input_Pack Station  30_shipConfirmBtn'))
 
 WebUI.click(findTestObject('Cabi warehouse/warehouseLogout'))
-
 
 WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Home/a_Shows  Orders'))
 

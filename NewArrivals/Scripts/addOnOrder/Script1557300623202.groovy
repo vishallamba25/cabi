@@ -35,7 +35,9 @@ List<WebElement> emptyCart = WebUiCommonHelper.findWebElements(findTestObject('O
 
 if (emptyCart.size() > 0) {
     WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'))
+
     println('cart not empty')
+
     WebUI.delay(5)
 }
 
@@ -55,7 +57,7 @@ WebUI.sendKeys(findTestObject('Page_cabi Order Items/input_Discount_stylelookup_
 
 WebUI.delay(5)
 
-WebUI.selectOptionByValue(findTestObject('Page_cabi Order Items/selectSize'), 'L', true)
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize'))
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Add to Cart'))
 
@@ -64,6 +66,8 @@ WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Continue to Shipping'))
 
 WebUI.click(findTestObject('Page_cabi Personal Store/nextButtonShipping'))
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_cabi Personal Store/makeFirstPayment'))
 
@@ -88,9 +92,10 @@ if (successMsgs.size() > 0) {
 
 assert orderSuccess == true
 
+/***************************warehouse shipping***************************/
 WebUI.callTestCase(findTestCase('warehouseShipping'), [('orderId') : GlobalVariable.addOnOrderId], FailureHandling.STOP_ON_FAILURE)
 
-/***************************End warehouse shipping***************************/
+/***********************************************************************/
 WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Home/a_Shows  Orders'))

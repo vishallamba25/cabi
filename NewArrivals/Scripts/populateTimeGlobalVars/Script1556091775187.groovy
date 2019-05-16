@@ -31,3 +31,5 @@ GlobalVariable.BOEmployee= UtilityMethods.getTestData(dataFile, 'BOEmployee', ro
 GlobalVariable.CCPersonal= UtilityMethods.getTestData(dataFile, 'CCPersonal', row)
 GlobalVariable.CCRetail= UtilityMethods.getTestData(dataFile, 'CCRetail', row)
 GlobalVariable.CCShow= UtilityMethods.getTestData(dataFile, 'CCShow', row)
+
+GlobalVariable.BOEblast= UtilityMethods.getTestData(dataFile, 'BOEblast', row)

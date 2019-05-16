@@ -21,7 +21,7 @@ CCuser = findTestData('credData').getValue('CCuser', 1)
 
 CCpass = findTestData('credData').getValue('CCpass', 1)
 
-WebUI.openBrowser("")
+//WebUI.openBrowser("")
 
 WebUI.navigateToUrl(CCURL)
 

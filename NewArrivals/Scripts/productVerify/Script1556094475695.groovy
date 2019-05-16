@@ -22,25 +22,8 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.stringtemplate.v4.compiler.STParser.listElement_return as listElement_return
 
-/*WebUI.openBrowser('')
+//WebUI.openBrowser('')
 
-WebUI.navigateToUrl(CabiUrl)
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Page_cabi/input_Welcome to_USERNAME'), Username)
-
-WebUI.setText(findTestObject('Object Repository/Page_cabi/input_Welcome to_PASSWORD'), Password)
-
-WebUI.click(findTestObject('Object Repository/Page_cabi/input_Welcome to_consultantLogin'))
-*/
-/*WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_cabi Home/a_personal_purchases'))
-
-WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/span_Continue to Order'))*/
 for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
     WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), findTestData(
             'productData').getValue('Style', row))

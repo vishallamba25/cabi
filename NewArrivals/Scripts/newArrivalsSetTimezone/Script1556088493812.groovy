@@ -37,5 +37,5 @@ WebUI.click(findTestObject('Object Repository/Page_/input'))
 
 WebUI.delay(10)
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 

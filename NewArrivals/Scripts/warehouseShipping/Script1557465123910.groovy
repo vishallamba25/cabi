@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 //orderId="PR707945104"
-WebUI.openBrowser("")
+//WebUI.openBrowser("")
 WebUI.callTestCase(findTestCase('cabiWarehouseLogin'), [('CWURL') : '', ('CWuser') : '', ('CWpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_cabi Manage PickLists/a_Create PickLists'))

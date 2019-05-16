@@ -22,8 +22,8 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.stringtemplate.v4.compiler.STParser.listElement_return as listElement_return
 
-
-WebUI.openBrowser('')
+//available= "no"
+//WebUI.openBrowser('')
 
 WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -39,54 +39,39 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/button_ADD PRODUC
 
 
 for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
-	WebUI.delay(2)
-
 	
+	WebUI.delay(2)
 	WebUI.setText(findTestObject('Page_cabi Eblast/eBlastStyleSearch'), findTestData(
 			'productData').getValue('Style', row))
-
 	WebUI.delay(2)
 	
 	if(available.toString().equalsIgnoreCase('no')){
-
-		List<WebElement> style_notfound = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/styleNotFound'))
 		
+		List<WebElement> style_notfound = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/styleNotFound'), 5)
 		println(style_notfound.size())
-		
 		assert style_notfound.size()>0
-	
 		WebUI.verifyElementText(findTestObject('Page_cabi Eblast/styleNotFound'), "No matching product")
 	}
 	
 	else{
 		
 		String space= ' '
-		
 		String openbrace= '('
-		
 		String closebrace=')'
-		
 		String style_id = WebUI.getText(findTestObject('Page_cabi Eblast/style_id'))
-		
 		String style_name = WebUI.getText(findTestObject('Page_cabi Eblast/style_name'))
-		
 		String style_color = WebUI.getText(findTestObject('Page_cabi Eblast/style_color'))
-		
 		style_web = "$style_id$space$style_name$space$style_color"
 		
-		println(style_web)
-		
 		String styleid_data = findTestData('productData').getValue('Style',row)
-		
 		String styleid_name = findTestData('productData').getValue('Description',row)
-		
 		String styleid_color = findTestData('productData').getValue('Color',row)
-		
 		style_data = "$styleid_data$space$styleid_name$space$openbrace$styleid_color$closebrace"
 		
+		println(style_web)
 		println(style_data)
 		
-		println(style_data.equalsIgnoreCase(style_web))
+		assert style_data.equalsIgnoreCase(style_web)
 		
 	}
 				

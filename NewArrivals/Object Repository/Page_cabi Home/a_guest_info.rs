@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_next</name>
+   <name>a_guest_info</name>
    <tag></tag>
-   <elementGuidId>110ec6de-8238-43db-9f8d-5bbc9e45e065</elementGuidId>
+   <elementGuidId>f8c3b6c0-b1a9-4b74-8fa5-3aac8ad6d61b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/a/span[contains(text(), 'Next')]</value>
+         <value>//li[@tabname='GuestInfo']/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -20,15 +20,48 @@ WebUI.openBrowser('')
 
 WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_cabi Home/a_Shows  Orders'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_retail_purchases'))
+WebUI.rightClick(findTestObject('Page_cabi Home/a_Shows  Orders'))
 
-WebUI.click(findTestObject('Page_cabi Personal Store/span_Continue to Order'))
+WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
 
-WebUI.delay(5)
+WebUI.delay(3)
+
+//WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_guest_info'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
+
+///////////////////////
+String existingCustFName = findTestData('contactData').getValue('firstName', 3)
+
+String existingCustLName = findTestData('contactData').getValue('lastName', 3)
+
+String space = ' '
+
+String existingCust = "$existingCustFName$space$existingCustLName"
+
+WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
+
+WebUI.delay(3)
+
+/*WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
+
+    WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))*/
+WebUI.click(findTestObject('Object Repository/Page_cabi Create Show - Set Hostess/a_select_customer'))
+
+WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
+
+WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+
+WebUI.click(findTestObject('Page_cabi Retail Store/span_next_1'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_entry'))
+
+WebUI.delay(3)
 
 List<WebElement> emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 
     5)
@@ -51,8 +84,8 @@ WebUI.delay(3)
 String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
 
 WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
-///////////////
 
+///////////////
 WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize'))
@@ -122,6 +155,10 @@ WebUI.delay(3)
 
 WebUI.refresh()
 
+WebUI.delay(3)
+
+WebUI.refresh()
+
 WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Order View/a_(Return Order)'))
 
 WebUI.delay(3)
@@ -148,10 +185,10 @@ WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/P
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Object Repository/Page_cabi_addOn_order/a_continue_to_order'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_next'))
 
 WebUI.delay(2)
 
 /****************product Verify Short******************/
-WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.BOAddonPersonal], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.BOAddonRetail], FailureHandling.STOP_ON_FAILURE)
 

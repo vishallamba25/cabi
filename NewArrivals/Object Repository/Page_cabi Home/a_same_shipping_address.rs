@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_next</name>
+   <name>a_same_shipping_address</name>
    <tag></tag>
-   <elementGuidId>110ec6de-8238-43db-9f8d-5bbc9e45e065</elementGuidId>
+   <elementGuidId>d232133c-ed65-42bb-a9ce-cc6201759297</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/a/span[contains(text(), 'Next')]</value>
+         <value>//li/span/input[@id='copyMailAddrCheck']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

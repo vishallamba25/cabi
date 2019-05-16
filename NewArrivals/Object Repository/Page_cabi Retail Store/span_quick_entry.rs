@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_next</name>
+   <name>span_quick_entry</name>
    <tag></tag>
-   <elementGuidId>110ec6de-8238-43db-9f8d-5bbc9e45e065</elementGuidId>
+   <elementGuidId>9b9935ff-e798-4cb0-8557-2fe9e99fab69</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/a/span[contains(text(), 'Next')]</value>
+         <value>//ul/li/a/span[contains(text(), 'Quick Entry')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

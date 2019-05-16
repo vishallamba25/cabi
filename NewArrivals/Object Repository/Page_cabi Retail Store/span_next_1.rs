@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_next</name>
+   <name>span_next_1</name>
    <tag></tag>
-   <elementGuidId>110ec6de-8238-43db-9f8d-5bbc9e45e065</elementGuidId>
+   <elementGuidId>1b6fc226-cc18-4e3c-aa27-63fcd8c9e021</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//li/a/span[@id='returnToActionLabel']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div/a/span[contains(text(), 'Next')]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,0 +1,70 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+NASuit1_addOnOrderPersonal,Chrome 74.0.3729.157,,2019-05-22 17:06:14,2019-05-22 17:09:17,3m - 2.969s,PASSED
+,,,,,,
+Test Cases/addOnOrderPersonal,Chrome 74.0.3729.157,,2019-05-22 17:06:15,2019-05-22 17:09:16,3m - 1.636s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 74.0.3729.157,,2019-05-22 17:06:15,2019-05-22 17:06:15,0.170s,PASSED
+"openBrowser("""")",Chrome 74.0.3729.157,,2019-05-22 17:06:16,2019-05-22 17:06:22,6.117s,PASSED
+"callTestCase(findTestCase(""backOfficeLogin""), [""BOURL"":"""", ""BOuser"":"""", ""BOpass"":""""], STOP_ON_FAILURE)",Chrome 74.0.3729.157,,2019-05-22 17:06:22,2019-05-22 17:06:55,33.398s,PASSED
+"click(findTestObject(""Page_cabi Home/a_Shows  Orders""))",Chrome 74.0.3729.157,,2019-05-22 17:06:55,2019-05-22 17:06:55,0.131s,PASSED
+delay(1),Chrome 74.0.3729.157,,2019-05-22 17:06:55,2019-05-22 17:06:56,1.005s,PASSED
+"click(findTestObject(""Page_cabi Home/a_personal_purchases""))",Chrome 74.0.3729.157,,2019-05-22 17:06:56,2019-05-22 17:06:58,2.200s,PASSED
+"click(findTestObject(""Page_cabi Personal Store/span_Continue to Order""))",Chrome 74.0.3729.157,,2019-05-22 17:06:58,2019-05-22 17:06:59,0.318s,PASSED
+delay(5),Chrome 74.0.3729.157,,2019-05-22 17:06:59,2019-05-22 17:07:04,5.004s,PASSED
+"emptyCart = findWebElements(findTestObject(""Object Repository/Page_cabi Personal Store/removeFromCart""), 5)",Chrome 74.0.3729.157,,2019-05-22 17:07:04,2019-05-22 17:07:09,5.198s,PASSED
+if (emptyCart.size() > 0),Chrome 74.0.3729.157,,2019-05-22 17:07:09,2019-05-22 17:07:09,0.002s,PASSED
+"addOnStyle = findTestData(""miscData"").getValue(""addOnStyle"", 1)",Chrome 74.0.3729.157,,2019-05-22 17:07:09,2019-05-22 17:07:09,0.074s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""))",Chrome 74.0.3729.157,,2019-05-22 17:07:09,2019-05-22 17:07:09,0.096s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), addOnStyle)",Chrome 74.0.3729.157,,2019-05-22 17:07:09,2019-05-22 17:07:09,0.111s,PASSED
+delay(3),Chrome 74.0.3729.157,,2019-05-22 17:07:09,2019-05-22 17:07:12,3.004s,PASSED
+"prod_message = getText(findTestObject(""Page_cabi Create Order/first_option""))",Chrome 74.0.3729.157,,2019-05-22 17:07:12,2019-05-22 17:07:12,0.078s,PASSED
+"click(findTestObject(""Page_cabi Create Order/first_option""))",Chrome 74.0.3729.157,,2019-05-22 17:07:12,2019-05-22 17:07:12,0.086s,PASSED
+delay(5),Chrome 74.0.3729.157,,2019-05-22 17:07:12,2019-05-22 17:07:17,5.004s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/selectSize""))",Chrome 74.0.3729.157,,2019-05-22 17:07:17,2019-05-22 17:07:18,0.086s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/span_Add to Cart""))",Chrome 74.0.3729.157,,2019-05-22 17:07:18,2019-05-22 17:07:18,0.089s,PASSED
+delay(3),Chrome 74.0.3729.157,,2019-05-22 17:07:18,2019-05-22 17:07:21,3.004s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/span_Continue to Shipping""))",Chrome 74.0.3729.157,,2019-05-22 17:07:21,2019-05-22 17:07:21,0.631s,PASSED
+"click(findTestObject(""Page_cabi Personal Store/nextButtonShipping""))",Chrome 74.0.3729.157,,2019-05-22 17:07:21,2019-05-22 17:07:22,0.677s,PASSED
+delay(3),Chrome 74.0.3729.157,,2019-05-22 17:07:22,2019-05-22 17:07:25,3.006s,PASSED
+"click(findTestObject(""Page_cabi Personal Store/makeFirstPayment""))",Chrome 74.0.3729.157,,2019-05-22 17:07:25,2019-05-22 17:07:25,0.139s,PASSED
+"click(findTestObject(""Page_cabi Personal Store/submitPayment""))",Chrome 74.0.3729.157,,2019-05-22 17:07:25,2019-05-22 17:07:25,0.138s,PASSED
+"click(findTestObject(""Page_cabi Personal Store/submitOrderId""))",Chrome 74.0.3729.157,,2019-05-22 17:07:25,2019-05-22 17:07:28,2.792s,PASSED
+"successMsg = """"",Chrome 74.0.3729.157,,2019-05-22 17:07:28,2019-05-22 17:07:28,0.001s,PASSED
+orderSuccess = false,Chrome 74.0.3729.157,,2019-05-22 17:07:28,2019-05-22 17:07:28,0.001s,PASSED
+"successMsgs = findWebElements(findTestObject(""Object Repository/Page_cabi Personal Store/p_success_msg""), 5)",Chrome 74.0.3729.157,,2019-05-22 17:07:28,2019-05-22 17:07:28,0.036s,PASSED
+if (successMsgs.size() > 0),Chrome 74.0.3729.157,,2019-05-22 17:07:28,2019-05-22 17:07:29,0.503s,PASSED
+assert orderSuccess == true,Chrome 74.0.3729.157,,2019-05-22 17:07:29,2019-05-22 17:07:29,0.002s,PASSED
+"callTestCase(findTestCase(""warehouseShipping""), [""orderId"":addOnOrderId], STOP_ON_FAILURE)",Chrome 74.0.3729.157,,2019-05-22 17:07:29,2019-05-22 17:07:55,26.924s,PASSED
+"callTestCase(findTestCase(""backOfficeLogin""), [""BOURL"":"""", ""BOuser"":"""", ""BOpass"":""""], STOP_ON_FAILURE)",Chrome 74.0.3729.157,,2019-05-22 17:07:55,2019-05-22 17:08:07,11.202s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Home/a_Shows  Orders""))",Chrome 74.0.3729.157,,2019-05-22 17:08:07,2019-05-22 17:08:07,0.105s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Home/a_Orders""))",Chrome 74.0.3729.157,,2019-05-22 17:08:07,2019-05-22 17:08:08,1.444s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Find Orders/b""))",Chrome 74.0.3729.157,,2019-05-22 17:08:08,2019-05-22 17:08:08,0.147s,PASSED
+delay(3),Chrome 74.0.3729.157,,2019-05-22 17:08:08,2019-05-22 17:08:11,3.002s,PASSED
+"click(findTestObject(""findOrders/Page_cabi Find Orders/orderNo""))",Chrome 74.0.3729.157,,2019-05-22 17:08:11,2019-05-22 17:08:11,0.102s,PASSED
+delay(3),Chrome 74.0.3729.157,,2019-05-22 17:08:11,2019-05-22 17:08:14,3.004s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Find Orders/pendingShipment""))",Chrome 74.0.3729.157,,2019-05-22 17:08:14,2019-05-22 17:08:15,0.119s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Find Orders/inputShipped""))",Chrome 74.0.3729.157,,2019-05-22 17:08:15,2019-05-22 17:08:15,0.087s,PASSED
+"setText(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Find Orders/inputOrderId""), addOnOrderId)",Chrome 74.0.3729.157,,2019-05-22 17:08:15,2019-05-22 17:08:15,0.229s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Find Orders/findOrders""))",Chrome 74.0.3729.157,,2019-05-22 17:08:15,2019-05-22 17:08:15,0.107s,PASSED
+"click(findTestObject(""findOrders/Page_cabi Find Orders/orderView""))",Chrome 74.0.3729.157,,2019-05-22 17:08:15,2019-05-22 17:08:20,4.576s,PASSED
+delay(3),Chrome 74.0.3729.157,,2019-05-22 17:08:20,2019-05-22 17:08:23,3.005s,PASSED
+refresh(),Chrome 74.0.3729.157,,2019-05-22 17:08:23,2019-05-22 17:08:24,1.308s,PASSED
+delay(3),Chrome 74.0.3729.157,,2019-05-22 17:08:24,2019-05-22 17:08:27,3.003s,PASSED
+refresh(),Chrome 74.0.3729.157,,2019-05-22 17:08:27,2019-05-22 17:08:27,0.040s,PASSED
+delay(10),Chrome 74.0.3729.157,,2019-05-22 17:08:27,2019-05-22 17:08:37,10.003s,PASSED
+refresh(),Chrome 74.0.3729.157,,2019-05-22 17:08:37,2019-05-22 17:08:37,0.031s,PASSED
+delay(3),Chrome 74.0.3729.157,,2019-05-22 17:08:37,2019-05-22 17:08:40,3.004s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Order View/a_(Return Order)""))",Chrome 74.0.3729.157,,2019-05-22 17:08:40,2019-05-22 17:08:44,3.536s,PASSED
+delay(3),Chrome 74.0.3729.157,,2019-05-22 17:08:44,2019-05-22 17:08:47,3.005s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/selectReason1""), ""CABI_c"", true)",Chrome 74.0.3729.157,,2019-05-22 17:08:47,2019-05-22 17:08:47,0.220s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/selectReason2""), ""CABI_c_a"", true)",Chrome 74.0.3729.157,,2019-05-22 17:08:47,2019-05-22 17:08:47,0.179s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/inputRefund""))",Chrome 74.0.3729.157,,2019-05-22 17:08:47,2019-05-22 17:08:47,0.081s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_Next""))",Chrome 74.0.3729.157,,2019-05-22 17:08:47,2019-05-22 17:08:49,1.856s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/inputPostalService""))",Chrome 74.0.3729.157,,2019-05-22 17:08:49,2019-05-22 17:08:49,0.082s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/inputConfirmAdderess""))",Chrome 74.0.3729.157,,2019-05-22 17:08:49,2019-05-22 17:08:49,0.078s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_Next_1""))",Chrome 74.0.3729.157,,2019-05-22 17:08:49,2019-05-22 17:08:49,0.095s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_Submit RMA""))",Chrome 74.0.3729.157,,2019-05-22 17:08:49,2019-05-22 17:08:51,1.727s,PASSED
+"click(findTestObject(""Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/addonOrder""))",Chrome 74.0.3729.157,,2019-05-22 17:08:51,2019-05-22 17:08:55,4.353s,PASSED
+delay(3),Chrome 74.0.3729.157,,2019-05-22 17:08:55,2019-05-22 17:08:58,3.004s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi_addOn_order/a_continue_to_order""))",Chrome 74.0.3729.157,,2019-05-22 17:08:58,2019-05-22 17:08:58,0.109s,PASSED
+delay(2),Chrome 74.0.3729.157,,2019-05-22 17:08:58,2019-05-22 17:09:00,2.005s,PASSED
+"callTestCase(findTestCase(""productVerifyShort""), [""available"":BOAddonPersonal], STOP_ON_FAILURE)",Chrome 74.0.3729.157,,2019-05-22 17:09:00,2019-05-22 17:09:16,15.837s,PASSED

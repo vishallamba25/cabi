@@ -84,6 +84,16 @@ public class GlobalVariable {
      */
     public static Object BOEblast
      
+    /**
+     * <p></p>
+     */
+    public static Object controlParallelism
+     
+    /**
+     * <p></p>
+     */
+    public static Object parallelTC
+     
 
     static {
         try {
@@ -106,6 +116,8 @@ public class GlobalVariable {
             addOnOrderId = selectedVariables['addOnOrderId']
             BOAddonRetail = selectedVariables['BOAddonRetail']
             BOEblast = selectedVariables['BOEblast']
+            controlParallelism = selectedVariables['controlParallelism']
+            parallelTC = selectedVariables['parallelTC']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

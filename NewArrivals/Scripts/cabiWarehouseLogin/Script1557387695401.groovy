@@ -23,7 +23,7 @@ CWpass = findTestData('credData').getValue('CWpass', 1)
 
 //WebUI.openBrowser("")
 
-WebUI.maximizeWindow()
+//WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(CWURL)
 

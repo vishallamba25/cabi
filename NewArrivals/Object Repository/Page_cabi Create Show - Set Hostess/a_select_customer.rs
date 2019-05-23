@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul/li/a[contains(text(), 'neoguest1 abc')]</value>
+         <value>(//ul/li/a[contains(@id,'ui-id-')])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -58,7 +58,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
-      <value>//ul/li/a[contains(text(), 'neoguest1 abc')]</value>
+      <value>(//ul/li/a[contains(@id,'ui-id-')])[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

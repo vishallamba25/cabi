@@ -17,6 +17,12 @@ not_run: WebUI.openBrowser('')
 
 not_run: WebUI.maximizeWindow()
 
+ofbizURL = findTestData('credData').getValue('ofbizURL', 1)
+
+ofbizuser = findTestData('credData').getValue('ofbizuser', 1)
+
+ofbizpass = findTestData('credData').getValue('ofbizpass', 1)
+
 WebUI.navigateToUrl(ofbizURL)
 
 WebUI.setText(findTestObject('Page_/input_Username_username'), ofbizuser)

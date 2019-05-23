@@ -16,7 +16,18 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 
-//WebUI.openBrowser('')
+WebUI.openBrowser('')
+for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
+	if(timeRow>1){
+		while(GlobalVariable.controlParallelism < GlobalVariable.parallelTC){
+			
+		}
+	}
+	WebUI.callTestCase(findTestCase('populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
+
+	WebUI.callTestCase(findTestCase('newArrivalsSetTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
+			, ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget],
+		FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -44,6 +55,8 @@ if (emptyCart.size() > 0) {
 addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
 
 ///////////////
+WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'))
+
 WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
 
 WebUI.delay(3)
@@ -51,8 +64,8 @@ WebUI.delay(3)
 String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
 
 WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
-///////////////
 
+///////////////
 WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize'))
@@ -122,6 +135,16 @@ WebUI.delay(3)
 
 WebUI.refresh()
 
+WebUI.delay(3)
+
+WebUI.refresh()
+
+WebUI.delay(10)
+
+WebUI.refresh()
+
+WebUI.delay(3)
+
 WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Order View/a_(Return Order)'))
 
 WebUI.delay(3)
@@ -155,3 +178,5 @@ WebUI.delay(2)
 /****************product Verify Short******************/
 WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.BOAddonPersonal], FailureHandling.STOP_ON_FAILURE)
 
+GlobalVariable.controlParallelism = GlobalVariable.controlParallelism+1;
+}

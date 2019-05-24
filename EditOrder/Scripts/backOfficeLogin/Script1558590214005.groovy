@@ -12,9 +12,9 @@ BOuser = findTestData('credData').getValue('BOuser', 1)
 
 BOpass = findTestData('credData').getValue('BOpass', 1)
 
-//WebUI.openBrowser('')
+WebUI.openBrowser('')
 
-//WebUI.maximizeWindow()
+WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(BOURL)
 

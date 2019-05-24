@@ -3,7 +3,7 @@
    <description></description>
    <name>validate_cohostess_address</name>
    <tag></tag>
-   <elementGuidId>99cb26c1-dd17-40ef-a320-d380fcb5db22</elementGuidId>
+   <elementGuidId>946ba636-ffd5-4fb3-bbf1-9f7ee80318d6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

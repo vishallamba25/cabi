@@ -3,7 +3,7 @@
    <description></description>
    <name>input_next</name>
    <tag></tag>
-   <elementGuidId>9cbbb7ee-3bbc-4348-8edc-fe8d163193cb</elementGuidId>
+   <elementGuidId>9e5690f3-0531-469d-a1bc-8f767fd12b4a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

@@ -3,18 +3,14 @@
    <description></description>
    <name>a_select_customer</name>
    <tag></tag>
-   <elementGuidId>5f715286-a428-45d6-aa0a-102aa903e37a</elementGuidId>
+   <elementGuidId>3505df73-33be-464b-9c54-f88a28c500ee</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
          <value>(//ul/li/a[contains(@id,'ui-id-')])[1]</value>
       </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;ui-id-7&quot;)[count(. | //a[@id = 'ui-id-7' and (text() = 'neocohost1 abc' or . = 'neocohost1 abc')]) = count(//a[@id = 'ui-id-7' and (text() = 'neocohost1 abc' or . = 'neocohost1 abc')])]</value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,7 +48,7 @@
       <value>neocohost1 abc</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

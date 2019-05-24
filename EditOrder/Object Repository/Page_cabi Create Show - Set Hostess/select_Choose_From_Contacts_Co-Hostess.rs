@@ -3,7 +3,7 @@
    <description></description>
    <name>select_Choose_From_Contacts_Co-Hostess</name>
    <tag></tag>
-   <elementGuidId>b217cdc5-f627-4b79-8f7c-ce828753d108</elementGuidId>
+   <elementGuidId>35ac6540-1557-4454-b5fb-42c5bb98cc4c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

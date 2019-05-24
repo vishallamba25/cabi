@@ -3,7 +3,7 @@
    <description></description>
    <name>a_neohost1 abc</name>
    <tag></tag>
-   <elementGuidId>9774e4d5-edae-4d6b-90bf-888682c02409</elementGuidId>
+   <elementGuidId>fdc61921-891f-4eea-af07-05e83f68cd16</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

@@ -3,7 +3,7 @@
    <description></description>
    <name>validate_hostess_address</name>
    <tag></tag>
-   <elementGuidId>9b0aaa38-f911-45d9-acac-4ad74a1c0515</elementGuidId>
+   <elementGuidId>ac5d2755-db76-4623-822c-3f167421f65b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

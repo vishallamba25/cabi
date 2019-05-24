@@ -3,7 +3,7 @@
    <description></description>
    <name>choose_from_contacts</name>
    <tag></tag>
-   <elementGuidId>8db8b593-3117-4e4d-bfe5-ea7849c04aee</elementGuidId>
+   <elementGuidId>81c56218-c928-4907-a896-1bf8a10f65b6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

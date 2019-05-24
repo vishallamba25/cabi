@@ -3,7 +3,7 @@
    <description></description>
    <name>validate_address_msg</name>
    <tag></tag>
-   <elementGuidId>a48bf298-120e-4eb2-800f-64bb9f296cb9</elementGuidId>
+   <elementGuidId>1bac9278-df19-42d3-8a56-b231523a5a49</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

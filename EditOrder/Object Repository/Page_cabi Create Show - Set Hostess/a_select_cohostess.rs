@@ -3,7 +3,7 @@
    <description></description>
    <name>a_select_cohostess</name>
    <tag></tag>
-   <elementGuidId>087a1ec2-16f9-4d2b-a3a1-58422a8841f0</elementGuidId>
+   <elementGuidId>6ee08ae4-16e5-41b6-855f-40df77113099</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

@@ -166,10 +166,10 @@ WebUI.delay(3)
     WebUI.callTestCase(findTestCase('productEblast'), [('available') : GlobalVariable.BOEblast], FailureHandling.STOP_ON_FAILURE)
 
     /************6 addOn for personal order RMA *******/
-    WebUI.callTestCase(findTestCase('addOnOrderPersonal'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
+    //WebUI.callTestCase(findTestCase('addOnOrderPersonal'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
 
     /************7 addOn for retail order RMA *******/
-    WebUI.callTestCase(findTestCase('addOnOrderRetail'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
+    //WebUI.callTestCase(findTestCase('addOnOrderRetail'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
 
     /*****************8 going to CabiCentral: personal order******************/
     WebUI.callTestCase(findTestCase('cabiCentralLogin'), [:], FailureHandling.STOP_ON_FAILURE)

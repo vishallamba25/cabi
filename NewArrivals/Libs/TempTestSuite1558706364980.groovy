@@ -15,9 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
 
-suiteProperties.put('id', 'Test Suites/NewArrivalSuite')
+suiteProperties.put('id', 'Test Suites/NASuit1_addOnOrderPersonal')
 
-suiteProperties.put('name', 'NewArrivalSuite')
+suiteProperties.put('name', 'NASuit1_addOnOrderPersonal')
 
 suiteProperties.put('description', '')
  
@@ -28,8 +28,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\NewArrivals\\Reports\\NewArrivalSuite\\20190524_154806\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\NewArrivals\\Reports\\NASuit1_addOnOrderPersonal\\20190524_192924\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/NewArrivalSuite', suiteProperties, [new TestCaseBinding('Test Cases/NewArrivals', 'Test Cases/NewArrivals',  [ 'BOpass' : 'blackdress19' , 'BOuser' : '400000002' , 'BOURL' : 'https://test14.cliotest.com/backoffice/control/main' , 'ofbizuser' : 'sshinde' , 'ofbizpass' : 'C@bi$ush5' , 'ofbizURL' : 'https://pushofbiz.cliotest.com/login.php' ,  ])])
+TestCaseMain.startTestSuite('Test Suites/NASuit1_addOnOrderPersonal', suiteProperties, [new TestCaseBinding('Test Cases/addOnOrderPersonal', 'Test Cases/addOnOrderPersonal',  null)])

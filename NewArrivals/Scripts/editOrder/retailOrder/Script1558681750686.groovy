@@ -43,6 +43,7 @@ WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
 
 WebUI.delay(3)
 
+
 //WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_guest_info'))
 WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
 

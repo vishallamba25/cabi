@@ -22,6 +22,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 		while(GlobalVariable.controlParallelism < GlobalVariable.parallelTC){
 			
 		}
+		GlobalVariable.controlParallelism = GlobalVariable.controlParallelism-1;
 	}
 	WebUI.callTestCase(findTestCase('populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
 

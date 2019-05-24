@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//*[@class = 'module-normal-message-success']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='module-normal-message-success']/p</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

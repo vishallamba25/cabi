@@ -75,3 +75,9 @@ def static "commonUtility.UtilityMethods.splitStyle"(
     (new commonUtility.UtilityMethods()).splitStyle(
         	style)
 }
+
+def static "commonUtility.UtilityMethods.concat"(
+    	String[] s	) {
+    (new commonUtility.UtilityMethods()).concat(
+        	s)
+}

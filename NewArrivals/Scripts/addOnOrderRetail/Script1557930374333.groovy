@@ -69,8 +69,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     String space = ' '
 
     String existingCust = "$existingCustFName$space$existingCustLName"
-	///////////////////////
 
+    ///////////////////////
     WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
 
     WebUI.delay(3)
@@ -78,6 +78,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
 
     WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
+
     WebUI.click(findTestObject('Object Repository/Page_cabi Create Show - Set Hostess/a_select_customer'))
 
     WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
@@ -243,16 +244,35 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_Next'))
 
+    //////////////////////////////
+    WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_edit_address'))
+
+    ////////////////////////////////
+    WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/select_address'))
+
     WebUI.delay(3)
 
-    WebUI.refresh()
-
     WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/inputPostalService'))
+
+    WebUI.delay(3)
 
     WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/inputConfirmAdderess'))
 
     WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_Next_1'))
 
+    WebUI.delay(5)
+
+    ///////////////
+    List<WebElement> confirmAddress = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/inputConfirmAdderess'), 
+        1)
+
+    if (confirmAddress.size() != 0) {
+        WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/inputConfirmAdderess'))
+
+        WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_Next_1'))
+    }
+    
+    ////////////////
     WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_Submit RMA'))
 
     WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/addonOrder'))
@@ -268,4 +288,3 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     GlobalVariable.controlParallelism = (GlobalVariable.controlParallelism + 1)
 }
-

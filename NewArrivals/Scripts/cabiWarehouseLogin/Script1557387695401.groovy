@@ -21,7 +21,7 @@ CWuser = findTestData('credData').getValue('CWuser', 1)
 
 CWpass = findTestData('credData').getValue('CWpass', 1)
 
-//WebUI.openBrowser("")
+WebUI.openBrowser("")
 
 //WebUI.maximizeWindow()
 

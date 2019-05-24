@@ -17,6 +17,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.openqa.selenium.WebElement as WebElement
 
 WebUI.openBrowser('')
+
 WebUI.maximizeWindow()
 
 for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
@@ -26,8 +27,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
             , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget], 
         FailureHandling.STOP_ON_FAILURE)
 
-    /*****************1 going to backoffice: personal*******************//*
-    
+    /*****************1 going to backoffice: personal*******************/
     WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
@@ -39,16 +39,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BOPersonal, ('storeType') : 'BOPersonal'], 
         FailureHandling.STOP_ON_FAILURE)
 
-    *//*****************2 going to backoffice: retail******************//*
-    WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
-
-WebUI.delay(1)
-
-WebUI.rightClick(findTestObject('Page_cabi Home/a_Shows  Orders'))
+    /*****************2 going to backoffice: retail******************/
+    WebUI.rightClick(findTestObject('Page_cabi Home/a_Shows  Orders'))
 
 WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
 
@@ -58,7 +50,7 @@ WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
 
 ///////////////////////
-int contactNumber = 1
+int contactNumber = 5
 
 String firstName = findTestData('contactData').getValue('firstName', contactNumber)
 
@@ -82,13 +74,15 @@ String space = ' '
 
 String existingCust = "$existingCustFName$space$existingCustLName"
 
+///////////////////////
 WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
 
 WebUI.delay(3)
 
 WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
 
-    WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
+WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
+
 WebUI.click(findTestObject('Object Repository/Page_cabi Create Show - Set Hostess/a_select_customer'))
 
 WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
@@ -98,12 +92,12 @@ WebUI.setText(findTestObject('Object Repository/Page_cabi Retail Store/input_ema
 WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'), address1)
 
 //WebUI.click(findTestObject('Object Repository/Page_cabi Edit Customer Profile/li_Address2'))
-
 WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'), '')
 
 WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_City_city'), city)
 
 WebUI.click(findTestObject('Page_cabi Edit Customer Profile/span_select_a_state'))
+
 WebUI.delay(1)
 
 WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_state_1'), state)
@@ -115,12 +109,14 @@ WebUI.click(findTestObject('Page_cabi Edit Customer Profile/span_state'))
 WebUI.setText(findTestObject('Page_cabi Edit Customer Profile/input_state_postalCode'), zip)
 
 //WebUI.click(findTestObject('Page_cabi Edit Customer Profile/span_click_near_address_1'))
+WebUI.delay(5)
+
+WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
 WebUI.delay(5)
 
 WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
-WebUI.delay(5)
-WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+
 WebUI.delay(10)
 
 WebUI.click(findTestObject('Page_cabi Retail Store/span_next_1'))
@@ -131,7 +127,7 @@ WebUI.delay(3)
     WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BORetail, ('storeType') : 'BORetail'], 
         FailureHandling.STOP_ON_FAILURE)
 
-    *//*****************3 going to backoffice: online******************//*
+    /*****************3 going to backoffice: online******************/
     WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
 
     WebUI.delay(3)
@@ -145,7 +141,7 @@ WebUI.delay(3)
     WebUI.callTestCase(findTestCase('productVerify'), [('available') : GlobalVariable.BOOnlineoutlet, ('storeType') : 'BOOnlineoutlet'], 
         FailureHandling.STOP_ON_FAILURE)
 
-    *//*****************4 going to backoffice: showorder************************//*
+    /*****************4 going to backoffice: showorder************************/
     WebUI.callTestCase(findTestCase('createAPhysicalShow_IMHostess'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], 
         FailureHandling.STOP_ON_FAILURE)
 
@@ -163,22 +159,19 @@ WebUI.delay(3)
 
     WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.BOShow], FailureHandling.STOP_ON_FAILURE)
 
-    
+    /***********5 backoffice productWatchList************/
+    WebUI.callTestCase(findTestCase('productWatchlist'), [('available') : GlobalVariable.BOEblast], FailureHandling.STOP_ON_FAILURE)
 
-    *//***********5 backoffice productWatchList************//*
-	WebUI.callTestCase(findTestCase('productWatchlist'), [('available') : GlobalVariable.BOEblast], FailureHandling.STOP_ON_FAILURE)
-	
-    *//***********5 backoffice eblast************//*
-    WebUI.callTestCase(findTestCase('productEblast'), [('available') : GlobalVariable.BOEblast], FailureHandling.STOP_ON_FAILURE)*/
+    /***********5 backoffice eblast************/
+    WebUI.callTestCase(findTestCase('productEblast'), [('available') : GlobalVariable.BOEblast], FailureHandling.STOP_ON_FAILURE)
 
     /************6 addOn for personal order RMA *******/
     WebUI.callTestCase(findTestCase('addOnOrderPersonal'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
 
     /************7 addOn for retail order RMA *******/
-    WebUI.callTestCase(findTestCase('addOnOrderRetail'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE) 
-	
-	/*****************8 going to CabiCentral: personal order******************/
-    
+    WebUI.callTestCase(findTestCase('addOnOrderRetail'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
+
+    /*****************8 going to CabiCentral: personal order******************/
     WebUI.callTestCase(findTestCase('cabiCentralLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.delay(3)
@@ -195,11 +188,8 @@ WebUI.delay(3)
 
     WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.CCPersonal, ('storeType') : 'CCPersonal'], 
         FailureHandling.STOP_ON_FAILURE)
-	
-    
-    /*****************9 going to CabiCentral: retail order******************/
-     
 
+    /*****************9 going to CabiCentral: retail order******************/
     WebUI.click(findTestObject('Page_cabi Find Order/a_Create Order'))
 
     WebUI.selectOptionByValue(findTestObject('Page_cabi Create Order/select_order_type'), 'RETAIL', true)
@@ -208,9 +198,7 @@ WebUI.delay(3)
 
     WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.CCRetail], FailureHandling.STOP_ON_FAILURE)
 
-    
     /*****************10 going to CabiCentral: show order******************/
-    
     WebUI.click(findTestObject('Page_cabi Find Order/a_Create Order'))
 
     WebUI.selectOptionByValue(findTestObject('Page_cabi Create Order/select_order_type'), 'SHOW', true)
@@ -219,4 +207,3 @@ WebUI.delay(3)
 
     WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.CCShow], FailureHandling.STOP_ON_FAILURE)
 }
-

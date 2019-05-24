@@ -165,6 +165,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.delay(3)
 
     WebUI.click(findTestObject('Page_cabi Personal Store/makeFirstPayment'))
+	
+	WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/select_cash'))
 
     WebUI.click(findTestObject('Page_cabi Personal Store/submitPayment'))
 

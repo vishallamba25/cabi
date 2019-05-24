@@ -120,6 +120,7 @@ WebUI.delay(10)
 WebUI.click(findTestObject('Page_cabi Retail Store/span_next_1'))
 
 WebUI.delay(3)
+/////////////////////////////////////////////////
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_entry'))
 
@@ -167,6 +168,8 @@ WebUI.click(findTestObject('Page_cabi Personal Store/nextButtonShipping'))
 WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_cabi Personal Store/makeFirstPayment'))
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/select_cash'))
 
 WebUI.click(findTestObject('Page_cabi Personal Store/submitPayment'))
 

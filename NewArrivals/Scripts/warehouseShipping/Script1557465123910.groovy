@@ -1,17 +1,11 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+
+import org.openqa.selenium.WebElement
+
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import internal.GlobalVariable as GlobalVariable
 //orderId="PR707945104"
 //WebUI.openBrowser("")
 WebUI.callTestCase(findTestCase('cabiWarehouseLogin'), [('CWURL') : '', ('CWuser') : '', ('CWpass') : ''], FailureHandling.STOP_ON_FAILURE)
@@ -24,7 +18,30 @@ WebUI.setText(findTestObject('Page_cabi Create Single Order PickList/input_Order
 
 WebUI.click(findTestObject('Page_cabi Create Single Order PickList/input_Create even if fully backordered_submitButton'))
 
-not_run: WebUI.verifyElementText(findTestObject('Cabi warehouse/picklistCreatedMessage'), 'Picklist for order has been created successfully.')
+List<WebElement> pickListCreated = WebUiCommonHelper.findWebElements(findTestObject('Cabi warehouse/picklistCreatedMessage'),
+	5)
+
+if (pickListCreated.size() == 0) {
+	WebUI.refresh()
+	WebUI.delay(10)
+	WebUI.setText(findTestObject('Page_cabi Create Single Order PickList/input_Order Id_orderId'), orderId)
+	WebUI.click(findTestObject('Page_cabi Create Single Order PickList/input_Create even if fully backordered_submitButton'))
+}
+
+pickListCreated = WebUiCommonHelper.findWebElements(findTestObject('Cabi warehouse/picklistCreatedMessage'),
+	5)
+
+if (pickListCreated.size() == 0) {
+	WebUI.refresh()
+	WebUI.delay(10)
+	WebUI.setText(findTestObject('Page_cabi Create Single Order PickList/input_Order Id_orderId'), orderId)
+	WebUI.click(findTestObject('Page_cabi Create Single Order PickList/input_Create even if fully backordered_submitButton'))
+}
+
+
+
+String picklistCreatedMessage= commonUtility.UtilityMethods.concat("Picklist for order: [", orderId, "] has been created successfully.")
+WebUI.verifyElementText(findTestObject('Cabi warehouse/picklistCreatedMessage'), picklistCreatedMessage)
 
 WebUI.click(findTestObject('Page_cabi Create Single Order PickList/a_Manage PickLists'))
 

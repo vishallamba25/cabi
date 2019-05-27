@@ -43,7 +43,6 @@ WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
 
 WebUI.delay(3)
 
-
 //WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_guest_info'))
 WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
 
@@ -120,8 +119,8 @@ WebUI.delay(10)
 WebUI.click(findTestObject('Page_cabi Retail Store/span_next_1'))
 
 WebUI.delay(3)
-/////////////////////////////////////////////////
 
+/////////////////////////////////////////////////
 WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_entry'))
 
 WebUI.delay(3)
@@ -191,4 +190,6 @@ if (successMsgs.size() > 0) {
 }
 
 assert orderSuccess == true
+
+not_run: WebUI.closeBrowser()
 

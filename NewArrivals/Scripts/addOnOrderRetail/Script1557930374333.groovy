@@ -18,9 +18,11 @@ import org.openqa.selenium.WebElement as WebElement
 
 WebUI.openBrowser('')
 
+int i=1;
 for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
-    if (timeRow > 1) {
-        while (GlobalVariable.controlParallelism < GlobalVariable.parallelTC) {
+    if(timeRow > i){
+        while(GlobalVariable.controlParallelism < GlobalVariable.parallelTC){
+			
         }
     }
     
@@ -289,4 +291,10 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.BOAddonRetail], FailureHandling.STOP_ON_FAILURE)
 
     GlobalVariable.controlParallelism = (GlobalVariable.controlParallelism + 1)
+	if(GlobalVariable.controlParallelism==GlobalVariable.parallelTC){
+		i++;
+	}
+	println "retail"
+	println GlobalVariable.controlParallelism
+	println GlobalVariable.parallelTC
 }

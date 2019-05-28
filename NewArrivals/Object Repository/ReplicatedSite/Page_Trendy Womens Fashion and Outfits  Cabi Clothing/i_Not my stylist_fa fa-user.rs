@@ -9,11 +9,15 @@
          <key>XPATH</key>
          <value>//body[@id='page-']/div[2]/div[3]/div/div/div[5]/div[2]/a/i</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;page-&quot;]/div[3]/div[3]/div/div/div[5]/div[2]/a</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -31,7 +35,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;page-&quot;)/div[@class=&quot;c-site-header c-site-header--fixed-wrapper&quot;]/div[@class=&quot;c-site-header__navigation-bar&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;o-flex-layout o-flex-layout--include-fluid o-flex-layout--justify-start&quot;]/div[@class=&quot;c-flex-col c-site-header__utility-group c-flex-col o-flex-layout o-flex-layout--include-fluid o-flex-layout--justify-start align-right&quot;]/div[@class=&quot;c-site-header__account-wrapper ng-isolate-scope show&quot;]/a[@class=&quot;ng-isolate-scope&quot;]/i[@class=&quot;fa fa-user&quot;]</value>
+      <value>//*[@id=&quot;page-&quot;]/div[3]/div[3]/div/div/div[5]/div[2]/a</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

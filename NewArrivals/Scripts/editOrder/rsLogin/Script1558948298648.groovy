@@ -25,6 +25,8 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(RSURL)
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/i_Not my stylist_fa fa-user'))
 
 WebUI.setText(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/input_Sign in  Create account_email'), 
@@ -36,4 +38,6 @@ WebUI.setText(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Women
     RSpass)
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/button_Continue'))
+
+WebUI.click(findTestObject('ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/completeProfileLater'))
 

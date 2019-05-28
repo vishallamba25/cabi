@@ -186,7 +186,7 @@ if (successMsgs.size() > 0) {
 
     orderSuccess = true
 
-    GlobalVariable.addOnOrderId = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_order_id'))
+    GlobalVariable.retailOrderID = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_order_id'))
 }
 
 assert orderSuccess == true

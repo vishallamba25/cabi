@@ -39,5 +39,11 @@ WebUI.setText(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Women
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/button_Continue'))
 
-WebUI.click(findTestObject('ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/completeProfileLater'))
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/completeProfileLater'))
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/i_Michigan_fa fa-caret-down'))
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/a_My Profile'))
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Profile - Cabi Fall 2018 Collection/span_Order History'))
 

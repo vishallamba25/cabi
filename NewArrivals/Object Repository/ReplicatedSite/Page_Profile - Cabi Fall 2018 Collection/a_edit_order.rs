@@ -3,7 +3,7 @@
    <description></description>
    <name>a_edit_order</name>
    <tag></tag>
-   <elementGuidId>a387dbb8-f037-4f86-9360-d49647759226</elementGuidId>
+   <elementGuidId>a0ca6034-ff60-49b3-809b-60e7396adfea</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

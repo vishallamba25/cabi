@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(), '${orderID}')]/parent::div/parent::div/div[@class='table-row-edit-order']</value>
+         <value>//span[contains(text(), ${GlobalVariable.retailOrderID})]/parent::div/parent::div/div[@class='table-row-edit-order']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

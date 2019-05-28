@@ -17,3 +17,5 @@ WebUI.callTestCase(findTestCase('editOrder/retailOrderRS'), [('giftCardOrDonatio
 
 WebUI.callTestCase(findTestCase('editOrder/rsLogin'), [('RSURL') : '', ('RSuser') : '', ('RSpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('editOrder/rsOrderHistoryConfirm'), [('orderID') : ''], FailureHandling.STOP_ON_FAILURE)
+

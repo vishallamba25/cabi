@@ -13,3 +13,14 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+RSURL = findTestData('credData').getValue('RSURL', 1)
+
+RSuser = findTestData('credData').getValue('RSuser', 1)
+
+RSpass = findTestData('credData').getValue('RSpass', 1)
+
+WebUI.openBrowser('')
+
+WebUI.maximizeWindow()
+
+WebUI.navigateToUrl(RSURL)

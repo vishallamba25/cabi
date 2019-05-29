@@ -15,6 +15,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('editOrder/retailOrderRS'), [('giftCardOrDonation') : true], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(10)
+
 WebUI.callTestCase(findTestCase('editOrder/rsLogin'), [('RSURL') : '', ('RSuser') : '', ('RSpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('editOrder/rsOrderHistoryConfirm'), [('orderID') : ''], FailureHandling.STOP_ON_FAILURE)

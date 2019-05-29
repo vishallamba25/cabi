@@ -19,9 +19,9 @@ RSuser = findTestData('credData').getValue('RSuser', 1)
 
 RSpass = findTestData('credData').getValue('RSpass', 1)
 
-WebUI.openBrowser('')
+//WebUI.openBrowser('')
 
-WebUI.maximizeWindow()
+//WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('https://mirandakate.cabitest3.com/')
 

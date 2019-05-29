@@ -13,15 +13,11 @@ import internal.GlobalVariable as GlobalVariable
 
 orderID = GlobalVariable.retailOrderID
 println orderID
-//orderID = "1234"
 
 ////////////////span[contains(text(), '${orderID}')]/parent::div/parent::div/div[@class='table-row-edit-order']
-String dynamicId = 'Katalon123'
 String xpath = UtilityMethods.concat("//span[contains(text(), '", orderID, "')]/parent::div/parent::div/div[@class='table-row-edit-order']")
-//String xpath = '//div[@id="' + dynamicId + '"]'
 TestObject to = new TestObject("a_link_dynamic")
 to.addProperty("xpath", ConditionType.EQUALS, xpath)
-//WebUI.click(to)
 //////////////
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/i_Michigan_fa fa-caret-down'))
@@ -38,6 +34,33 @@ assert editButton.size() > 0
 
 if (editButton.size() > 0) {
 	WebUI.click(to)
+	WebUI.delay(10)
+	
+	if(editScenarioNumber==1 || editScenarioNumber==2){
+		println "scen = 1 or 2"
+	}
+	else if(editScenarioNumber==3){
+		println "scen = 3"
+		String expectedNoEditMsg1= "We're Sorry."
+		String expectedNoEditMsg2= "Your order has gift card items and cannot be edited."
+		String actualNoEditMsg1= WebUI.getText(findTestObject('Object Repository/ReplicatedSite/div_no_edit_msg1'))
+		String actualNoEditMsg2= WebUI.getText(findTestObject('Object Repository/ReplicatedSite/div_no_edit_msg2'))
+		assert actualNoEditMsg1.equalsIgnoreCase(expectedNoEditMsg1)
+		assert actualNoEditMsg2.equalsIgnoreCase(expectedNoEditMsg2)
+		WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_accept_msg'))
+	}
+	else if(editScenarioNumber==4){
+		println "scen = 4"
+		
+	}
+	else if(editScenarioNumber==5){
+		println "scen = 5"
+	}
+	else{
+		println "editScenarioNumber is should be from 1 to 5"
+		assert false
+	}
+	
 }
 
 

@@ -13,13 +13,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('editOrder/retailOrderRS'), [('giftCardOrDonation') : true], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('editOrder/retailOrderRS'), [('editScenarioNumber') : 3], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)
 
 WebUI.callTestCase(findTestCase('editOrder/rsLogin'), [('RSURL') : '', ('RSuser') : '', ('RSpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
-
-
-WebUI.callTestCase(findTestCase('editOrder/rsOrderHistoryConfirm'), [('orderID') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('editOrder/rsOrderHistoryConfirm'), [('orderID') : '', ('editScenarioNumber') : 3], FailureHandling.STOP_ON_FAILURE)
 

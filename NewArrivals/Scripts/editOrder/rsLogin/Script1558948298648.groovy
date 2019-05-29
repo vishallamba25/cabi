@@ -23,7 +23,7 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl(RSURL)
+WebUI.navigateToUrl('https://mirandakate.cabitest3.com/')
 
 WebUI.delay(5)
 
@@ -40,6 +40,4 @@ WebUI.setText(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Women
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/button_Continue'))
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/completeProfileLater'))
-
-
 

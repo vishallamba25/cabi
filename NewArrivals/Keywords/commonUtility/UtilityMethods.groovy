@@ -126,7 +126,7 @@ public class UtilityMethods {
 		String data1 = data[0].toString()
 		return data1;
 	}
-	
+
 	@Keyword
 	public static String concat(String ...s) {
 		String result="";
@@ -135,7 +135,4 @@ public class UtilityMethods {
 		}
 		return result;
 	}
-	
-	
-	
 }

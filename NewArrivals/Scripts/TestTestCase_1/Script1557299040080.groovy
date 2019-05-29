@@ -11,5 +11,21 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement as WebElement
+
+WebUI.openBrowser('')
+
+WebUI.maximizeWindow()
+
+WebUI.delay(3)
+
+String orderID="abcd"
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Profile - Cabi Fall 2018 Collection/a_edit_order'))
+
+
+
 

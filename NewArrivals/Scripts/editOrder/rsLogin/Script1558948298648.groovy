@@ -19,13 +19,13 @@ RSuser = findTestData('credData').getValue('RSuser', 1)
 
 RSpass = findTestData('credData').getValue('RSpass', 1)
 
-//WebUI.openBrowser('')
+WebUI.openBrowser('')
 
 //WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(RSURL)
 
-WebUI.delay(5)
+WebUI.delay(10)
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/i_Not my stylist_fa fa-user'))
 

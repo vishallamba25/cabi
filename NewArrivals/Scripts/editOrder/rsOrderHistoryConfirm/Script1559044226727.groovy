@@ -9,7 +9,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 orderID = GlobalVariable.retailOrderID
-
+orderID= "qwwqeqe"
 println orderID
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/i_Michigan_fa fa-caret-down'))

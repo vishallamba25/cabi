@@ -22,8 +22,7 @@ RSpass = findTestData('credData').getValue('RSpass', 1)
 WebUI.openBrowser('')
 
 //WebUI.maximizeWindow()
-
-WebUI.navigateToUrl('https://mirandakate.cabitest3.com/')
+WebUI.navigateToUrl(RSURL)
 
 WebUI.delay(10)
 

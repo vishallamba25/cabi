@@ -158,30 +158,57 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Add to 
 
 WebUI.delay(5)
 
-/***************add gift card*******************/
+if ((editScenarioNumber == 1) || (editScenarioNumber == 2)) {
+	
+	
+	
+	
+} else if (editScenarioNumber == 3) {/***************add gift card*******************/
+    WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_gift_card'))
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_gift_card'))
-WebUI.delay(5)
-WebUI.click(findTestObject('Page_cabi Order Items/select_gc_amount'))
-WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/select_delivery_method'))
-WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/input_gc_type'))
-int recContactNumber = 3
-String recFName = findTestData('contactData').getValue('firstName', recContactNumber)
-String recLName = findTestData('contactData').getValue('lastName', recContactNumber)
-String recEmail = findTestData('contactData').getValue('email', recContactNumber)
-WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_rec_fname'), recFName)
-WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_rec_lname'), recLName)
-WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_rec_email'), recEmail)
-WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_send_fname'), firstName)
-WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_send_lname'), lastName)
-WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_send_email'), email)
-WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/a_submit'))
-/***************add donation*******************
-WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_donation'))
-WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/select_donation_amount'))
-WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_add_to_cart'))
-/********************************************/
+    WebUI.delay(5)
+
+    WebUI.click(findTestObject('Page_cabi Order Items/select_gc_amount'))
+
+    WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/select_delivery_method'))
+
+    WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/input_gc_type'))
+
+    int recContactNumber = 3
+
+    String recFName = findTestData('contactData').getValue('firstName', recContactNumber)
+
+    String recLName = findTestData('contactData').getValue('lastName', recContactNumber)
+
+    String recEmail = findTestData('contactData').getValue('email', recContactNumber)
+
+    WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_rec_fname'), recFName)
+
+    WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_rec_lname'), recLName)
+
+    WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_rec_email'), recEmail)
+
+    WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_send_fname'), firstName)
+
+    WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_send_lname'), lastName)
+
+    WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_send_email'), email)
+
+    WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/a_submit'))
+} else if (editScenarioNumber == 4) {/***************add donation*******************/
+    WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_donation'))
+
+    WebUI.delay(5)
+
+    WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/select_donation_amount'))
+
+    WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_add_to_cart'))
+} else if (editScenarioNumber == 5) {
+} else {
+    println('editScenarioNumber is should be from 1 to 5')
+
+    assert false
+}
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/a_checkout'))
 
@@ -217,4 +244,3 @@ if (successMsgs.size() > 0) {
 assert orderSuccess == true
 
 not_run: WebUI.closeBrowser()
-

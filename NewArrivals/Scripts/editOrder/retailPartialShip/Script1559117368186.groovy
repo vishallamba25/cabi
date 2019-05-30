@@ -203,7 +203,7 @@ if (successMsgs.size() > 0) {
 
 assert orderSuccess == true
 
-WebUI.callTestCase(findTestCase('warehouseShipping'), [('orderId') : ''], FailureHandling.STOP_ON_FAILURE)
+ WebUI.callTestCase(findTestCase('warehouseShipping'), [('orderId') : GlobalVariable.retailOrderID], FailureHandling.STOP_ON_FAILURE)
 
 not_run: WebUI.closeBrowser()
 

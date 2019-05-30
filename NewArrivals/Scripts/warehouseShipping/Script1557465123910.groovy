@@ -28,18 +28,6 @@ if (pickListCreated.size() == 0) {
 	WebUI.click(findTestObject('Page_cabi Create Single Order PickList/input_Create even if fully backordered_submitButton'))
 }
 
-pickListCreated = WebUiCommonHelper.findWebElements(findTestObject('Cabi warehouse/picklistCreatedMessage'),
-	5)
-
-if (pickListCreated.size() == 0) {
-	WebUI.refresh()
-	WebUI.delay(10)
-	WebUI.setText(findTestObject('Page_cabi Create Single Order PickList/input_Order Id_orderId'), orderId)
-	WebUI.click(findTestObject('Page_cabi Create Single Order PickList/input_Create even if fully backordered_submitButton'))
-}
-
-
-
 String picklistCreatedMessage= commonUtility.UtilityMethods.concat("Picklist for order: [", orderId, "] has been created successfully.")
 WebUI.verifyElementText(findTestObject('Cabi warehouse/picklistCreatedMessage'), picklistCreatedMessage)
 
@@ -68,6 +56,17 @@ WebUI.click(findTestObject('Page_cabi Pack Init/input_Picklist ID_submitButton')
 WebUI.click(findTestObject('Page_cabi General Pack/input_Cream Of Wheat_button addItemForVerification'))
 
 WebUI.click(findTestObject('Page_cabi General Pack/input_Pack Station  30_shipConfirmBtn'))
+
+WebUI.delay(3)
+
+List<WebElement> itemsNotpacked = WebUiCommonHelper.findWebElements(findTestObject('Cabi warehouse/itemsNotPacked'),
+	5)
+
+if (itemsNotpacked.size() > 0) {
+	
+	WebUI.click(findTestObject('Cabi warehouse/completeAnywayButton'))
+}
+
 
 WebUI.click(findTestObject('Cabi warehouse/warehouseLogout'))
 

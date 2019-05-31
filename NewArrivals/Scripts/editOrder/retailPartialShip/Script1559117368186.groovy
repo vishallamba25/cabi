@@ -126,7 +126,8 @@ if (emptyCart.size() > 0) {
 }
 
 addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
-addonStyle2 = findTestData('miscData').getValue('addOnStyle', 2)
+
+addOnStyle2 = findTestData('miscData').getValue('addOnStyle', 2)
 
 ///////////////
 WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'))
@@ -144,33 +145,35 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize'))
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Add to Cart'))
+WebUI.click(findTestObject('Page_cabi Order Items/span_Add to Cart'))
 
 WebUI.delay(5)
+
 ///////
 WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/inputStyleLookup1'))
 
-WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/inputStyleLookup1'), addOnStyle)
+WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/inputStyleLookup1'), addOnStyle2)
 
 WebUI.delay(3)
 
-String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
+String prod_message2 = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
 
 WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
+
 ///////////////
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize2'))
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Add to Cart'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/addToCart2'))
 
 WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Continue to Shipping'))
 
 WebUI.delay(3)
-//////////////
 
+//////////////
 WebUI.click(findTestObject('Page_cabi Personal Store/nextButtonShipping'))
 
 WebUI.delay(3)
@@ -199,6 +202,8 @@ if (successMsgs.size() > 0) {
 }
 
 assert orderSuccess == true
+
+ WebUI.callTestCase(findTestCase('warehouseShipping'), [('orderId') : GlobalVariable.retailOrderID], FailureHandling.STOP_ON_FAILURE)
 
 not_run: WebUI.closeBrowser()
 

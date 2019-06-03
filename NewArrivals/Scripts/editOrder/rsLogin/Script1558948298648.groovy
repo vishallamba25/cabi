@@ -22,10 +22,7 @@ RSpass = findTestData('credData').getValue('RSpass', 1)
 //WebUI.openBrowser('')
 
 //WebUI.maximizeWindow()
-<<<<<<< HEAD
 
-=======
->>>>>>> 39bdca39180e612f37e0dfea039d96917001d968
 WebUI.navigateToUrl(RSURL)
 
 WebUI.delay(10)

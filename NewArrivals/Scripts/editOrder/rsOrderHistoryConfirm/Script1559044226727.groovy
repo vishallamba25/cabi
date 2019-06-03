@@ -55,6 +55,14 @@ if (editButton.size() > 0) {
 	}
 	else if(editScenarioNumber==5){
 		println "scen = 5"
+		String expectedMessage= "Item Shipped"
+		String actualMessage=  WebUI.getText(findTestObject('Object Repository/ReplicatedSite/itemShipped'))
+		assert actualMessage.equalsIgnoreCase(expectedMessage)
+		List<WebElement> itemRemove = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/itemRemove'),
+			5)
+		
+		assert(itemRemove.size==0)
+		
 	}
 	else{
 		println "editScenarioNumber is should be from 1 to 5"

@@ -20,17 +20,6 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-//for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
-//    if (timeRow > 1) {
-//        while (GlobalVariable.controlParallelism < GlobalVariable.parallelTC) {
-//        }
-//    }
-//    
-//    WebUI.callTestCase(findTestCase('populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
-//
-//    WebUI.callTestCase(findTestCase('newArrivalsSetTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
-//            , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget], 
-//        FailureHandling.STOP_ON_FAILURE)
 WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
@@ -158,8 +147,7 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Add to 
 
 WebUI.delay(5)
 
-if ((editScenarioNumber == 1) || (editScenarioNumber == 2)) {
-	
+if (editScenarioNumber == 1) {
 	
 	
 	
@@ -206,10 +194,11 @@ if ((editScenarioNumber == 1) || (editScenarioNumber == 2)) {
     WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_add_to_cart'))
 	
 } else if (editScenarioNumber == 5) {
-
+	
+	
+	
 } else {
     println('editScenarioNumber is should be from 1 to 5')
-
     assert false
 }
 

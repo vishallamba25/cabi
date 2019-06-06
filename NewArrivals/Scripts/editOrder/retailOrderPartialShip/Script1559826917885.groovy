@@ -125,6 +125,7 @@ if (emptyCart.size() > 0) {
     WebUI.delay(5)
 }
 
+////////////////////////////////////////////add item 1
 addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
 
 addOnStyle2 = findTestData('miscData').getValue('addOnStyle', 2)
@@ -149,7 +150,7 @@ WebUI.click(findTestObject('Page_cabi Order Items/span_Add to Cart'))
 
 WebUI.delay(5)
 
-///////
+/////////////////////////////////////////////////add item 2
 WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/inputStyleLookup1'))
 
 WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/inputStyleLookup1'), addOnStyle2)
@@ -168,6 +169,8 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize2'
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/addToCart2'))
 
 WebUI.delay(5)
+
+//////////////////////////end adding items
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Continue to Shipping'))
 

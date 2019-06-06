@@ -59,7 +59,7 @@ for (int row = 1; row <= findTestData('contactData').getRowNumbers(); row++) {
 
         WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'), address1)
 
-        WebUI.click(findTestObject('Object Repository/Page_cabi Edit Customer Profile/li_Address2'))
+        //WebUI.click(findTestObject('Object Repository/Page_cabi Edit Customer Profile/li_Address2'))
 
         WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'), '')
 

@@ -195,6 +195,7 @@ if ((editScenarioNumber == 1) || (editScenarioNumber == 2)) {
     WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_send_email'), email)
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/a_submit'))
+	
 } else if (editScenarioNumber == 4) {/***************add donation*******************/
     WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_donation'))
 
@@ -203,7 +204,9 @@ if ((editScenarioNumber == 1) || (editScenarioNumber == 2)) {
     WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/select_donation_amount'))
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_add_to_cart'))
+	
 } else if (editScenarioNumber == 5) {
+
 } else {
     println('editScenarioNumber is should be from 1 to 5')
 

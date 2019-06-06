@@ -1,31 +1,24 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.WebDriver
+
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.WebElement as WebElement
 
 WebUI.openBrowser('')
 
-WebUI.maximizeWindow()
-
+WebUI.navigateToUrl('www.google.com')
+String currentPage = WebUI.getUrl()
+int currentTab = WebUI.getWindowIndex()
+WebDriver driver = DriverFactory.getWebDriver()
+JavascriptExecutor js = ((driver) as JavascriptExecutor)
+js.executeScript('window.open();')
+WebUI.switchToWindowIndex(currentTab + 1)
+WebUI.navigateToUrl(currentPage)
+WebUI.navigateToUrl('www.yahoo.com')
+WebUI.switchToWindowIndex(currentTab)
+WebUI.navigateToUrl(currentPage)
 WebUI.delay(3)
-
-String orderID="abcd"
-
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Profile - Cabi Fall 2018 Collection/a_edit_order'))
-
-
-
+WebUI.switchToWindowIndex(currentTab+1)
+WebUI.delay(3)
+WebUI.switchToWindowIndex(currentTab)
 

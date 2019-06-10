@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+MicrositeTestSuite,Chrome 74.0.3729.169,,2019-06-07 12:51:24,2019-06-07 12:51:49,25.028s,FAILED
+,,,,,,
+Test Cases/virtualShowRSVP/createShow,Chrome 74.0.3729.169,,2019-06-07 12:51:25,2019-06-07 12:51:43,18.000s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 74.0.3729.169,,2019-06-07 12:51:25,2019-06-07 12:51:25,0.118s,PASSED
+"openBrowser("""")",Chrome 74.0.3729.169,,2019-06-07 12:51:26,2019-06-07 12:51:29,3.512s,PASSED
+maximizeWindow(),Chrome 74.0.3729.169,,2019-06-07 12:51:29,2019-06-07 12:51:31,1.192s,PASSED
+navigateToUrl(testEnvt),Chrome 74.0.3729.169,,2019-06-07 12:51:31,2019-06-07 12:51:42,11.436s,PASSED
+"setText(findTestObject(""Page_cabi/input_username""), username)",Chrome 74.0.3729.169,,2019-06-07 12:51:42,2019-06-07 12:51:43,0.649s,FAILED
+,,,,,,
+Test Cases/virtualShowRSVP/micrositeRSVPValidUser,Chrome 74.0.3729.169,,2019-06-07 12:51:43,2019-06-07 12:51:49,5.860s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 74.0.3729.169,,2019-06-07 12:51:43,2019-06-07 12:51:43,0.006s,PASSED
+"openBrowser("""")",Chrome 74.0.3729.169,,2019-06-07 12:51:44,2019-06-07 12:51:47,2.920s,PASSED
+maximizeWindow(),Chrome 74.0.3729.169,,2019-06-07 12:51:47,2019-06-07 12:51:48,1.126s,PASSED
+navigateToUrl(micrositeURL),Chrome 74.0.3729.169,,2019-06-07 12:51:48,2019-06-07 12:51:49,0.759s,FAILED

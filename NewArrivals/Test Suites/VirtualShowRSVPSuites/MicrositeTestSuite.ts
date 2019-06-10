@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>4e3ec0a7-8ee0-44f1-b05f-a2cdc6144340</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/virtualShowRSVP/createShow</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>

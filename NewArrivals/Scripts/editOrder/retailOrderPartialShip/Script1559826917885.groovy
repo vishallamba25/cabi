@@ -20,7 +20,7 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
 
@@ -206,7 +206,7 @@ if (successMsgs.size() > 0) {
 
 assert orderSuccess == true
 
- WebUI.callTestCase(findTestCase('warehouseShipping'), [('orderId') : GlobalVariable.retailOrderID], FailureHandling.STOP_ON_FAILURE)
+ WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : GlobalVariable.retailOrderID], FailureHandling.STOP_ON_FAILURE)
 
 not_run: WebUI.closeBrowser()
 

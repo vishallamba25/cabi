@@ -14,7 +14,7 @@
       <guid>1d57cc3d-9dd9-46f8-8b62-128ffcfd2881</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/addOnOrderRetail</testCaseId>
+      <testCaseId>Test Cases/NewArrival/addOnOrderRetail</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

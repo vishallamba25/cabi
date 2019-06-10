@@ -18,11 +18,11 @@ import org.openqa.selenium.WebElement as WebElement
 
 WebUI.openBrowser('')
 
-int i=1;
+int i = 1
+
 for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
-    if(timeRow > i){
-        while(GlobalVariable.controlParallelism < GlobalVariable.parallelTC){
-			
+    if (timeRow > i) {
+        while (GlobalVariable.controlParallelism < GlobalVariable.parallelTC) {
         }
     }
     
@@ -167,8 +167,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.delay(3)
 
     WebUI.click(findTestObject('Page_cabi Personal Store/makeFirstPayment'))
-	
-	WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/select_cash'))
+
+    WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/select_cash'))
 
     WebUI.click(findTestObject('Page_cabi Personal Store/submitPayment'))
 
@@ -291,10 +291,15 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.callTestCase(findTestCase('productVerifyShort'), [('available') : GlobalVariable.BOAddonRetail], FailureHandling.STOP_ON_FAILURE)
 
     GlobalVariable.controlParallelism = (GlobalVariable.controlParallelism + 1)
-	if(GlobalVariable.controlParallelism==GlobalVariable.parallelTC){
-		i++;
-	}
-	println "retail"
-	println GlobalVariable.controlParallelism
-	println GlobalVariable.parallelTC
+
+    if (GlobalVariable.controlParallelism == GlobalVariable.parallelTC) {
+        i++
+    }
+    
+    println('retail')
+
+    println(GlobalVariable.controlParallelism)
+
+    println(GlobalVariable.parallelTC)
 }
+

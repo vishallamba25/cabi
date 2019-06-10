@@ -207,7 +207,7 @@ String rsName = WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR
 
 String cabitTestEnvt = cabiTestEnvt
 
-GlobalVariable.micrositeURL = WriteToExcel.createURL(rsName, cabitTestEnvt, showID)
+GlobalVariable.micrositeURL = UtilityMethods.createURL(rsName, cabitTestEnvt, showID)
 
 println GlobalVariable.micrositeURL
 

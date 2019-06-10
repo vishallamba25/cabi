@@ -135,4 +135,13 @@ public class UtilityMethods {
 		}
 		return result;
 	}
+	
+	@Keyword
+	public static String createURL(String rsName, String cabitTestEnvt, String showID){
+
+		String micrositeURL="https://"+ rsName.toLowerCase()+"."+cabitTestEnvt+".com/show-microsite/"+showID.replaceAll("[^0-9]", "")+"/";
+		//String abc=rsName+cabitTestEnvt+showID;
+
+		return micrositeURL;
+	}
 }

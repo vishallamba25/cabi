@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>h2_Were so glad you can make it. (1)</name>
+   <name>h2_Were so glad you can make it.</name>
    <tag></tag>
-   <elementGuidId>72c4ee24-1c41-4747-a918-f3429cca441d</elementGuidId>
+   <elementGuidId>b8eb2ad7-35e4-4722-8b4f-2e3980d06c26</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='page']/show-microsite/div/div/div[2]/div/div/div/app-rsvp-panel/div/h2</value>
+         <value>//h2[@class='title' and contains(text(), ' so glad ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -44,7 +44,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//div[@id='page']/show-microsite/div/div/div[2]/div/div/div/app-rsvp-panel/div/h2</value>
+      <value>//h2[@class='title' and contains(text(), ' so glad ')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

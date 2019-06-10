@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>h2_Were so glad you can make it.</name>
+   <name>h2_Sorry you cant make it.</name>
    <tag></tag>
-   <elementGuidId>b8eb2ad7-35e4-4722-8b4f-2e3980d06c26</elementGuidId>
+   <elementGuidId>7f3d79ae-62fb-47f9-b9e3-7cbc300edd15</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='page']/show-microsite/div/div/div[2]/div/div/div/app-rsvp-panel/div/h2</value>
+         <value>//h2[@class='title' and contains(text(), ' Sorry ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -31,20 +31,20 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value> We're so glad you can make it. </value>
+      <value> Sorry you can't make it. </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;page&quot;)/show-microsite[1]/div[@class=&quot;show-microsite chat-allowed logged-in&quot;]/div[1]/div[@class=&quot;upper-block centered&quot;]/div[@class=&quot;wide container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-7&quot;]/app-rsvp-panel[1]/div[@class=&quot;rsvp-panel&quot;]/h2[@class=&quot;title&quot;]</value>
+      <value>id(&quot;page&quot;)/show-microsite[1]/div[@class=&quot;show-microsite logged-in&quot;]/div[1]/div[@class=&quot;upper-block centered&quot;]/div[@class=&quot;wide container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-7&quot;]/app-rsvp-panel[1]/div[@class=&quot;rsvp-panel&quot;]/h2[@class=&quot;title&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//div[@id='page']/show-microsite/div/div/div[2]/div/div/div/app-rsvp-panel/div/h2</value>
+      <value>//h2[@class='title' and contains(text(), ' Sorry ')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,13 +62,13 @@
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Things to do'])[1]/preceding::h2[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Watch video'])[1]/preceding::h2[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='to maximize your Virtual Fashion Experience'])[1]/preceding::h2[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Shop'])[3]/preceding::h2[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

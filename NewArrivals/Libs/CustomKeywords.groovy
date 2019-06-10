@@ -81,3 +81,13 @@ def static "commonUtility.UtilityMethods.concat"(
     (new commonUtility.UtilityMethods()).concat(
         	s)
 }
+
+def static "commonUtility.UtilityMethods.createURL"(
+    	String rsName	
+     , 	String cabitTestEnvt	
+     , 	String showID	) {
+    (new commonUtility.UtilityMethods()).createURL(
+        	rsName
+         , 	cabitTestEnvt
+         , 	showID)
+}

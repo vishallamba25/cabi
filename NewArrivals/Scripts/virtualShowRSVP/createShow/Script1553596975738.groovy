@@ -10,7 +10,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import commonUtility.UtilityMethods
 import internal.GlobalVariable as GlobalVariable
-import myPack.WriteExcel as WriteToExcel
 
 WebUI.openBrowser('')
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Classic_check</name>
+   <tag></tag>
+   <elementGuidId>07b10d9e-9fc0-4294-a77a-d4dae61f1715</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//main[@id='mm-0']/div/div/questionnaire-root/app-questionnaire/div/div/app-questionnaire-my-style-rs/div/div/div/div/div[2]/app-my-style-describe-question/div/form/div/div/div[3]/div/label/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>check</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mm-0&quot;)/div[1]/div[@class=&quot;cointainer&quot;]/questionnaire-root[1]/app-questionnaire[@class=&quot;ng-tns-c9-0 ng-star-inserted&quot;]/div[@class=&quot;main-container&quot;]/div[@class=&quot;inner-content ng-trigger ng-trigger-routerAnimations&quot;]/app-questionnaire-my-style-rs[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;questionnaire-page&quot;]/div[@class=&quot;scroll-holder&quot;]/div[@class=&quot;swiper-container scroll-field&quot;]/div[@class=&quot;swiper-wrapper&quot;]/div[@class=&quot;swiper-slide questionnaire-content textToCenter ng-star-inserted&quot;]/app-my-style-describe-question[@class=&quot;questionnaire-style-question&quot;]/div[@class=&quot;swiper-slide questionnaire-content textToCenter&quot;]/form[@class=&quot;ng-untouched ng-pristine ng-valid&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-6 col-xs-6 tallerColumns&quot;]/div[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;radio-button light&quot;]/label[@class=&quot;radio-label&quot;]/div[@class=&quot;check&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <value>//main[@id='mm-0']/div/div/questionnaire-root/app-questionnaire/div/div/app-questionnaire-my-style-rs/div/div/div/div/div[2]/app-my-style-describe-question/div/form/div/div/div[3]/div/label/div[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Classic'])[1]/following::div[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Preppy'])[1]/following::div[5]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Romantic'])[1]/preceding::div[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edgy'])[1]/preceding::div[5]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <value>//div[2]/app-my-style-describe-question/div/form/div/div/div[3]/div/label/div[2]</value>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+MicrositeTestSuite,Chrome 74.0.3729.169,,2019-06-07 20:02:12,2019-06-07 20:03:06,53.646s,FAILED
+,,,,,,
+Test Cases/virtualShowRSVP/micrositeRSVPValidUser,Chrome 74.0.3729.169,,2019-06-07 20:02:13,2019-06-07 20:03:05,52.639s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 74.0.3729.169,,2019-06-07 20:02:13,2019-06-07 20:02:13,0.174s,PASSED
+"openBrowser("""")",Chrome 74.0.3729.169,,2019-06-07 20:02:14,2019-06-07 20:02:17,3.418s,PASSED
+maximizeWindow(),Chrome 74.0.3729.169,,2019-06-07 20:02:17,2019-06-07 20:02:18,1.199s,PASSED
+navigateToUrl(ofbizURL),Chrome 74.0.3729.169,,2019-06-07 20:02:18,2019-06-07 20:02:24,5.776s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_/input_Username_username""), ofbizUser)",Chrome 74.0.3729.169,,2019-06-07 20:02:24,2019-06-07 20:02:24,0.182s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_/input_Password_password""), ofbizPass)",Chrome 74.0.3729.169,,2019-06-07 20:02:24,2019-06-07 20:02:24,0.105s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_/input_Password_Submit""))",Chrome 74.0.3729.169,,2019-06-07 20:02:24,2019-06-07 20:02:30,5.319s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_/a_Set Vhost""))",Chrome 74.0.3729.169,,2019-06-07 20:02:30,2019-06-07 20:02:31,1.081s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/virualShowRSVPOR/Page_/select_cabitestcabitest2cabitest3cabitest4cabitest5virtual_cabitest18virtual_cabitest19virtual_cabitest21virtual_cabitest6virtual_cabitest7virtual_cabitest8virtual_cabitest9""), ""19"", true)",Chrome 74.0.3729.169,,2019-06-07 20:02:31,2019-06-07 20:02:31,0.341s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_/input""))",Chrome 74.0.3729.169,,2019-06-07 20:02:31,2019-06-07 20:02:35,3.973s,PASSED
+"navigateToUrl(""https://mirandakate.cabitest5.com/show-microsite/104595204/"")",Chrome 74.0.3729.169,,2019-06-07 20:02:35,2019-06-07 20:03:05,30.426s,FAILED

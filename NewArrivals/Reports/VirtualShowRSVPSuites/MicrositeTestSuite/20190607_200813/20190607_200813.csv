@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+MicrositeTestSuite,Chrome 74.0.3729.169,,2019-06-07 20:08:16,2019-06-07 20:10:12,1m - 55.311s,FAILED
+,,,,,,
+Test Cases/virtualShowRSVP/micrositeRSVPValidUser,Chrome 74.0.3729.169,,2019-06-07 20:08:17,2019-06-07 20:10:11,1m - 54.285s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 74.0.3729.169,,2019-06-07 20:08:17,2019-06-07 20:08:17,0.148s,PASSED
+"openBrowser("""")",Chrome 74.0.3729.169,,2019-06-07 20:08:17,2019-06-07 20:08:21,3.346s,PASSED
+maximizeWindow(),Chrome 74.0.3729.169,,2019-06-07 20:08:21,2019-06-07 20:08:22,1.208s,PASSED
+navigateToUrl(ofbizURL),Chrome 74.0.3729.169,,2019-06-07 20:08:22,2019-06-07 20:08:24,2.319s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_/input_Username_username""), ofbizUser)",Chrome 74.0.3729.169,,2019-06-07 20:08:24,2019-06-07 20:08:24,0.174s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_/input_Password_password""), ofbizPass)",Chrome 74.0.3729.169,,2019-06-07 20:08:24,2019-06-07 20:08:24,0.109s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_/input_Password_Submit""))",Chrome 74.0.3729.169,,2019-06-07 20:08:24,2019-06-07 20:08:28,3.458s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_/a_Set Vhost""))",Chrome 74.0.3729.169,,2019-06-07 20:08:28,2019-06-07 20:08:28,0.466s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/virualShowRSVPOR/Page_/select_cabitestcabitest2cabitest3cabitest4cabitest5virtual_cabitest18virtual_cabitest19virtual_cabitest21virtual_cabitest6virtual_cabitest7virtual_cabitest8virtual_cabitest9""), ""19"", true)",Chrome 74.0.3729.169,,2019-06-07 20:08:28,2019-06-07 20:08:29,0.317s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_/input""))",Chrome 74.0.3729.169,,2019-06-07 20:08:29,2019-06-07 20:08:31,2.657s,PASSED
+"navigateToUrl(""https://mirandakate.cabitest5.com/show-microsite/104595204/"")",Chrome 74.0.3729.169,,2019-06-07 20:08:31,2019-06-07 20:08:51,19.964s,PASSED
+delay(12),Chrome 74.0.3729.169,,2019-06-07 20:08:51,2019-06-07 20:09:03,12.040s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite - Cabi Fall 2018 Collection/h1_Youre invited""), ""You're invited to Front Row"")",Chrome 74.0.3729.169,,2019-06-07 20:09:03,2019-06-07 20:09:03,0.084s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite - Cabi Fall 2018 Collection/button_Login to RSVP""))",Chrome 74.0.3729.169,,2019-06-07 20:09:03,2019-06-07 20:09:04,0.110s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite - Cabi Fall 2018 Collection/input_Sign in  Create account_email""), guest1Mail)",Chrome 74.0.3729.169,Login with the invited guest,2019-06-07 20:09:04,2019-06-07 20:09:08,4.521s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite - Cabi Fall 2018 Collection/button_Continue""))",Chrome 74.0.3729.169,,2019-06-07 20:09:08,2019-06-07 20:09:08,0.115s,PASSED
+delay(5),Chrome 74.0.3729.169,,2019-06-07 20:09:08,2019-06-07 20:09:13,5.006s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite - Cabi Fall 2018 Collection/input_Welcome_password""), guest1Pass)",Chrome 74.0.3729.169,,2019-06-07 20:09:13,2019-06-07 20:09:13,0.248s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite - Cabi Fall 2018 Collection/button_Continue""))",Chrome 74.0.3729.169,,2019-06-07 20:09:13,2019-06-07 20:09:14,0.094s,PASSED
+delay(5),Chrome 74.0.3729.169,,2019-06-07 20:09:14,2019-06-07 20:09:19,5.005s,PASSED
+"if (verifyElementPresent(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite - Cabi Fall 2018 Collection/complete_my_profile_later""), 0))",Chrome 74.0.3729.169,,2019-06-07 20:09:19,2019-06-07 20:09:28,9.849s,PASSED
+"listElement = findWebElements(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite - Cabi Fall 2018 Collection/div_Update your RSVP""), 5)",Chrome 74.0.3729.169,,2019-06-07 20:09:28,2019-06-07 20:09:34,5.677s,PASSED
+if (empty),Chrome 74.0.3729.169,"Validating invited guest's 'Yes' RSVP
+",2019-06-07 20:09:34,2019-06-07 20:10:11,36.778s,FAILED

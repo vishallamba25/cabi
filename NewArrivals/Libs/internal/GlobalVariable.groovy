@@ -99,6 +99,11 @@ public class GlobalVariable {
      */
     public static Object retailOrderID
      
+    /**
+     * <p></p>
+     */
+    public static Object micrositeURL
+     
 
     static {
         try {
@@ -124,6 +129,7 @@ public class GlobalVariable {
             controlParallelism = selectedVariables['controlParallelism']
             parallelTC = selectedVariables['parallelTC']
             retailOrderID = selectedVariables['retailOrderID']
+            micrositeURL = selectedVariables['micrositeURL']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

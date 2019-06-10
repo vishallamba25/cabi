@@ -32,7 +32,7 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_/input_Passw
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_/a_Set Vhost'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/virualShowRSVPOR/Page_/select_cabitestcabitest2cabitest3cabitest4cabitest5virtual_cabitest18virtual_cabitest19virtual_cabitest21virtual_cabitest6virtual_cabitest7virtual_cabitest8virtual_cabitest9'), 
+WebUI.selectOptionByValue(findTestObject('virualShowRSVPOR/Page_/select_cabitest'), 
     '19', true)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_/input'))

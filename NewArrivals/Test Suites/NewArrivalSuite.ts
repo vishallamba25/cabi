@@ -14,7 +14,7 @@
       <guid>6e1ae002-03ea-4704-a0cb-567eb02cf6e3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/productVerify</testCaseId>
+      <testCaseId>Test Cases/NewArrival/productVerify</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -32,7 +32,7 @@
       <guid>ecf808f0-e73b-4340-82d4-c7f556c8528a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/NewArrivals</testCaseId>
+      <testCaseId>Test Cases/NewArrival/NewArrivals</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>6dcec1de-2abb-4e3f-843e-57d02bdb7284</id>
@@ -83,7 +83,7 @@
       <guid>5031ef34-9ea1-4d1d-9ab5-f449c35978d5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/newArrivalsSetTimezone</testCaseId>
+      <testCaseId>Test Cases/NewArrival/newArrivalsSetTimezone</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -125,7 +125,7 @@
       <guid>2fac2bd6-df2c-4f46-865b-c9e71bffaf14</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/createContact</testCaseId>
+      <testCaseId>Test Cases/NewArrival/createContact</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>6e0cc874-d5d0-4ccb-9130-d4b616ebdd43</id>
@@ -182,7 +182,7 @@
       <guid>7594559b-538d-46bb-9565-02533a30c88a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/NewArrivals</testCaseId>
+      <testCaseId>Test Cases/NewArrival/NewArrivals</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>e732dd81-fb96-477e-82ec-f903bf35b831</id>
@@ -233,7 +233,7 @@
       <guid>31426064-c87d-43a5-a58c-03d4961a120a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/warehouseShipping</testCaseId>
+      <testCaseId>Test Cases/NewArrival/warehouseShipping</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

@@ -26,12 +26,12 @@ WebUI.maximizeWindow()
 //        }
 //    }
 //    
-//    WebUI.callTestCase(findTestCase('populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
+//    WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
 //
-//    WebUI.callTestCase(findTestCase('newArrivalsSetTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
+//    WebUI.callTestCase(findTestCase('NewArrival/newArrivalsSetTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
 //            , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget], 
 //        FailureHandling.STOP_ON_FAILURE)
-WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
 

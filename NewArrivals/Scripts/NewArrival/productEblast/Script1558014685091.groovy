@@ -25,7 +25,7 @@ import org.stringtemplate.v4.compiler.STParser.listElement_return as listElement
 //available= "no"
 //WebUI.openBrowser('')
 
-WebUI.callTestCase(findTestCase('backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_cabi Home/a_Connections'))
 

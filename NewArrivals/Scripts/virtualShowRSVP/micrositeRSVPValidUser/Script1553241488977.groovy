@@ -6,10 +6,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable as GlobalVariable
-<<<<<<< HEAD
 
-=======
->>>>>>> 57806eadc084f8b7d9029c1ee738c7bd56fbfaf4
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 
 WebUI.openBrowser('')

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='page']/show-microsite/div/div/div[2]/div/div/div/app-rsvp-panel/div/h2</value>
+         <value>//h2[@class='title' and contains(text(), ' We hope ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -44,7 +44,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//div[@id='page']/show-microsite/div/div/div[2]/div/div/div/app-rsvp-panel/div/h2</value>
+      <value>//h2[@class='title' and contains(text(), ' We hope ')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

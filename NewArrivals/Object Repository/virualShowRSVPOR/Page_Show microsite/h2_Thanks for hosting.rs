@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>hostess_msg</name>
+   <name>h2_Thanks for hosting</name>
    <tag></tag>
    <elementGuidId>983c4859-e2b7-4b82-9c9d-6df098f9e05f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='page']/show-microsite/div/div/div[2]/div/div/div/app-rsvp-panel/div/h2</value>
+         <value>//h2[@class='title' and contains(text(), 'Thanks for hosting.')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -44,7 +44,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//div[@id='page']/show-microsite/div/div/div[2]/div/div/div/app-rsvp-panel/div/h2</value>
+      <value>//h2[@class='title' and contains(text(), 'Thanks for hosting.')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

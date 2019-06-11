@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+MicrositeTestSuite,Chrome 74.0.3729.169,,2019-06-11 12:53:11,2019-06-11 12:53:59,47.850s,FAILED
+,,,,,,
+Test Cases/virtualShowRSVP/micrositeRSVPValidUser,Chrome 74.0.3729.169,,2019-06-11 12:53:12,2019-06-11 12:53:59,46.594s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 74.0.3729.169,,2019-06-11 12:53:12,2019-06-11 12:53:12,0.178s,PASSED
+"openBrowser("""")",Chrome 74.0.3729.169,,2019-06-11 12:53:13,2019-06-11 12:53:17,4.520s,PASSED
+maximizeWindow(),Chrome 74.0.3729.169,,2019-06-11 12:53:17,2019-06-11 12:53:18,1.156s,PASSED
+navigateToUrl(ofbizURL),Chrome 74.0.3729.169,,2019-06-11 12:53:18,2019-06-11 12:53:20,1.828s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_/input_Username_username""), ofbizUser)",Chrome 74.0.3729.169,,2019-06-11 12:53:20,2019-06-11 12:53:21,0.281s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_/input_Password_password""), ofbizPass)",Chrome 74.0.3729.169,,2019-06-11 12:53:21,2019-06-11 12:53:21,0.193s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_/input_Password_Submit""))",Chrome 74.0.3729.169,,2019-06-11 12:53:21,2019-06-11 12:53:24,3.121s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_/a_Set Vhost""))",Chrome 74.0.3729.169,,2019-06-11 12:53:24,2019-06-11 12:53:24,0.477s,PASSED
+"selectOptionByValue(findTestObject(""virualShowRSVPOR/Page_/select_cabitest""), ""19"", true)",Chrome 74.0.3729.169,,2019-06-11 12:53:24,2019-06-11 12:53:25,0.572s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_/input""))",Chrome 74.0.3729.169,,2019-06-11 12:53:25,2019-06-11 12:53:27,2.322s,PASSED
+"micrositeURL = ""https://mirandakate.cabitest5.com/show-microsite/104595204/""",Chrome 74.0.3729.169,,2019-06-11 12:53:27,2019-06-11 12:53:28,0.698s,PASSED
+navigateToUrl(micrositeURL),Chrome 74.0.3729.169,,2019-06-11 12:53:28,2019-06-11 12:53:59,30.658s,FAILED

@@ -11,6 +11,24 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import commonUtility.UtilityMethods
 import internal.GlobalVariable as GlobalVariable
 
+/**********vaiable initialization********************/
+String dataFile="virtualShowData"
+testEnvt = findTestData(dataFile).getValue('testEnvt', 1)
+username = findTestData(dataFile).getValue('username', 1)
+password = findTestData(dataFile).getValue('password', 1)
+stylist = findTestData(dataFile).getValue('stylist', 1)
+hostess = findTestData(dataFile).getValue('hostess', 1)
+cohostess = findTestData(dataFile).getValue('cohostess', 1)
+guest1 = findTestData(dataFile).getValue('guest1', 1)
+guest2 = findTestData(dataFile).getValue('guest2', 1)
+verifyHostess = findTestData(dataFile).getValue('verifyHostess', 1)
+verifyCohostess = findTestData(dataFile).getValue('verifyCohostess', 1)
+verifyGuestCount = findTestData(dataFile).getValue('verifyGuestCount', 1)
+verifyGuest1 = findTestData(dataFile).getValue('verifyGuest1', 1)
+verifyGuest2 = findTestData(dataFile).getValue('verifyGuest2', 1)
+cabiTestEnvt = findTestData(dataFile).getValue('cabiTestEnvt', 1)
+/****************************************************/
+
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
@@ -155,7 +173,7 @@ WebUI.delay(5)
 
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name'), verifyHostess)
 
-WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name'), verifyCoHostess)
+WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name'), verifyCohostess)
 
 /////////////////////////
 List<WebElement> listElement = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_guest_name_list'), 
@@ -214,5 +232,5 @@ println GlobalVariable.micrositeURL
 /*String micrositeURL = WriteToExcel.createURL(rsName, cabitTestEnvt, showID)
 
 CustomKeywords.'myPack.WriteExcel.demoKey'(micrositeURL)*/
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 

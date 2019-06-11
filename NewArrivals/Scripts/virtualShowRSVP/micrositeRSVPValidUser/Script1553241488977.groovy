@@ -7,6 +7,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable as GlobalVariable
+<<<<<<< HEAD
 
 
 /**********vaiable initialization********************/
@@ -25,6 +26,13 @@ ofbizPass = findTestData(dataFile).getValue('ofbizPass', 1)
 vhostTarget = findTestData(dataFile).getValue('vhostTarget', 1)
 /****************************************************/
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 57806eadc084f8b7d9029c1ee738c7bd56fbfaf4
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+>>>>>>> b0fd4fde1496432c5c988d87efaa9a39c8a7e7d4
 
 WebUI.openBrowser('')
 

@@ -27,14 +27,14 @@ ofbizPass = findTestData(dataFile).getValue('ofbizPass', 1)
 vhostTarget = findTestData(dataFile).getValue('vhostTarget', 1)
 /****************************************************/
 
-=======
-<<<<<<< HEAD
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 57806eadc084f8b7d9029c1ee738c7bd56fbfaf4
 >>>>>>> 7f6a81104721deab5e6af80cd6a470212fbd454e
+>>>>>>> 5dce59c442a4ac3e6e326f7cbd8a360826825b4d
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
->>>>>>> b0fd4fde1496432c5c988d87efaa9a39c8a7e7d4
 
 WebUI.openBrowser('')
 

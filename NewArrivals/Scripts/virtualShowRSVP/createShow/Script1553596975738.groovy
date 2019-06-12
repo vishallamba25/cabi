@@ -234,3 +234,4 @@ println GlobalVariable.micrositeURL
 CustomKeywords.'myPack.WriteExcel.demoKey'(micrositeURL)*/
 //WebUI.closeBrowser()
 
+WebUI.back()

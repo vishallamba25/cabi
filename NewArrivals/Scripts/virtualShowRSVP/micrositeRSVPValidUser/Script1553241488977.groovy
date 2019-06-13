@@ -7,9 +7,8 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 
-<<<<<<< HEAD
-=======
 
 /**********vaiable initialization********************/
 String dataFile="micrositeData"
@@ -28,13 +27,7 @@ vhostTarget = findTestData(dataFile).getValue('vhostTarget', 1)
 /****************************************************/
 
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 57806eadc084f8b7d9029c1ee738c7bd56fbfaf4
->>>>>>> 7f6a81104721deab5e6af80cd6a470212fbd454e
->>>>>>> 5dce59c442a4ac3e6e326f7cbd8a360826825b4d
-import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+
 
 WebUI.openBrowser('')
 

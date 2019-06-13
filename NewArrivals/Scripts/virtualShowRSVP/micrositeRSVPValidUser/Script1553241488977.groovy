@@ -50,7 +50,7 @@ WebUI.selectOptionByValue(findTestObject('virualShowRSVPOR/Page_/select_cabitest
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_/input'))
 
 /*****************End set vhost steps****************/
-//GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104595204/"
+//GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104596896/"
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 //WebUI.navigateToUrl('https://mirandakate.cabitest5.com/show-microsite/104595204/')
 

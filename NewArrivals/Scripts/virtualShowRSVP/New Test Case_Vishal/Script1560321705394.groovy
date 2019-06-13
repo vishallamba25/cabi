@@ -14,33 +14,26 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 
 String dataFile = 'virtualShowData'
-
 stylist = findTestData(dataFile).getValue('stylist', 1)
-
 hostess = findTestData(dataFile).getValue('hostess', 1)
-
 cohostess = findTestData(dataFile).getValue('cohostess', 1)
-
 guest1 = findTestData(dataFile).getValue('guest1', 1)
-
 guest2 = findTestData(dataFile).getValue('guest2', 1)
+
+String dataFile2 = "micrositeData"
+guest1Mail = findTestData(dataFile2).getValue('guest1Mail', 1)
+guest1Pass = findTestData(dataFile2).getValue('guest1Pass', 1)
+
 
 //WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
 //        , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
 //        , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
 WebUI.openBrowser('')
-
 WebUI.maximizeWindow()
-
 WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.navigateToUrl('https://test19.cliotest.com/backoffice/control/VSStylistDashboard?showId=104596896&consultantPartyId=100000042')
 
-WebUI.navigateToUrl('https://test19.cliotest.com/backoffice/control/VSStylistDashboard?showId=104597108&consultantPartyId=100000042')
-
-WebUI.delay(3)
-
-//WebUI.back()
-
-WebUI.click(findTestObject('virualShowRSVPOR/Page_Show microsite/dashboardTab'))
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_dashboard'))
 
 WebUI.delay(5)
 
@@ -97,10 +90,10 @@ WebUI.callTestCase(findTestCase('virtualShowRSVP/setVHost'), [:], FailureHandlin
 GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104596896/"
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
-WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited'),
+/*WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited'),
 	'You\'re invited to Front Row')
 
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP'))
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP'))*/
 
 'Login with the invited guest'
 WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),

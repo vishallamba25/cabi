@@ -1,6 +1,9 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import java.awt.Robot
+import java.awt.event.KeyEvent
+
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
@@ -14,13 +17,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable as GlobalVariable
 
-/*System.setProperty("webdriver.chrome.driver", "C:\\path\\to\\chromedriver.exe")
+
+
+/*System.setProperty("webdriver.chrome.driver", "F:\\Katalon_Studio_Windows_64-6.1.1\\configuration\\resources\\drivers\\chromedriver_win32\\chromedriver.exe")
 Map<String, Object> prefs = new HashMap<String, Object>();
 prefs.put("profile.default_content_setting_values.notifications", 2);
 ChromeOptions options = new ChromeOptions();
 options.setExperimentalOption("prefs", prefs);
 WebDriver driver = new ChromeDriver(options);
-DriverFactory.changeWebDriver(driver)*/
+DriverFactory.changeWebDriver(driver)
+WebDriver driver = DriverFactory.getWebDriver()*/
+
+
 
 
 /*WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
@@ -80,6 +88,8 @@ WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 WebUI.delay(3)
 
 WebUI.switchToWindowIndex(currentTab + 1)
+
+
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
 

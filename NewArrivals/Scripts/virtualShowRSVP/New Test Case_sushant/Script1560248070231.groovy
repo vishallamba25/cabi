@@ -31,15 +31,15 @@ WebDriver driver = DriverFactory.getWebDriver()*/
 
 
 
-/*WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
+WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
         , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
         , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
-*/
-WebUI.openBrowser('')
+
+/*WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 WebUI.navigateToUrl('https://test19.cliotest.com/backoffice/control/VSStylistDashboard?showId=104596896&consultantPartyId=100000042')
-
+*/
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_dashboard'))
 
 WebUI.delay(5)
@@ -63,10 +63,7 @@ if (isShowNotStarted.size() > 0) {
 /////////////////////////
 WebUI.delay(5)
 
-/*WebUI.acceptAlert()
-WebDriver driver = DriverFactory.getWebDriver()
-driver.switchTo().alert().accept();
-*/
+
 /*****************************tab switching****************/
 String currentPage = WebUI.getUrl()
 
@@ -82,7 +79,7 @@ WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.callTestCase(findTestCase('virtualShowRSVP/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104596896/"
+//GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104596896/"
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
 WebUI.delay(3)

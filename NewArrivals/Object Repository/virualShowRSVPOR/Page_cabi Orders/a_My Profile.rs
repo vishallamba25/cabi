@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//ul[@id='my-account-sub-btn']/li/a)[17]</value>
+         <value>//ul/li/a[contains(text(), 'My Profile')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -44,7 +44,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>(//ul[@id='my-account-sub-btn']/li/a)[17]</value>
+      <value>//ul/li/a[contains(text(), 'My Profile')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

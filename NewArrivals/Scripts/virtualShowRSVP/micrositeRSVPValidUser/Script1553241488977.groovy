@@ -7,9 +7,8 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 
-<<<<<<< HEAD
-=======
 
 /**********vaiable initialization********************/
 String dataFile="micrositeData"
@@ -27,14 +26,8 @@ ofbizPass = findTestData(dataFile).getValue('ofbizPass', 1)
 vhostTarget = findTestData(dataFile).getValue('vhostTarget', 1)
 /****************************************************/
 
-=======
-<<<<<<< HEAD
 
-=======
->>>>>>> 57806eadc084f8b7d9029c1ee738c7bd56fbfaf4
->>>>>>> 7f6a81104721deab5e6af80cd6a470212fbd454e
-import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
->>>>>>> b0fd4fde1496432c5c988d87efaa9a39c8a7e7d4
+
 
 WebUI.openBrowser('')
 
@@ -57,7 +50,7 @@ WebUI.selectOptionByValue(findTestObject('virualShowRSVPOR/Page_/select_cabitest
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_/input'))
 
 /*****************End set vhost steps****************/
-//GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104595204/"
+//GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104596896/"
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 //WebUI.navigateToUrl('https://mirandakate.cabitest5.com/show-microsite/104595204/')
 

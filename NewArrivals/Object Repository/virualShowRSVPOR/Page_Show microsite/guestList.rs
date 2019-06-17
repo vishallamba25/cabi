@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>guestList</name>
+   <tag></tag>
+   <elementGuidId>788e635e-25f8-41f6-8ceb-6460892aecf3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//div/div/div[1]/a[not(ancestor::*[contains(@style,'display:none;')])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div/div/div[1]/a[not(ancestor::*[contains(@style,'display:none;')])]</value>
+   </webElementProperties>
+</WebElementEntity>

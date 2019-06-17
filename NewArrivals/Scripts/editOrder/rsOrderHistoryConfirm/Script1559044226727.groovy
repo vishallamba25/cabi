@@ -65,7 +65,7 @@ if (editButton.size() > 0) {
         assert cancelEditButton.size() > 0
         WebUI.click(findTestObject('ReplicatedSite/button_yes_cancel_edit'))
         WebUI.delay(5)
-        WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_update_order'))
+        WebUI.click(to)
         WebUI.delay(5)
         /////cancel order
         WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_cancel_order'))
@@ -73,8 +73,9 @@ if (editButton.size() > 0) {
         assert cancelOrderButton.size() > 0
         WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_yes_cancel_order'))
         WebUI.delay(5)
-        List<WebElement> orderHistory = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/Page_Profile - Cabi Fall 2018 Collection/span_Order History'), 1)
-        assert orderHistory.size() > 0
+		TestObject div_cancelled_order= UtilityMethods.createTestObject("div_cancelled_order", '//span[contains(text(), \'', orderID, '\')]/parent::div/parent::div/div[@class=\'table-row-status\']/span')
+		println WebUI.getText(div_cancelled_order)
+		WebUI.verifyElementText(div_cancelled_order, "Cancelled")
 		
     } else if (editScenarioNumber == 3) {
         println('scen = 3')
@@ -114,7 +115,7 @@ if (editButton.size() > 0) {
         List<WebElement> itemRemove = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/itemRemove'), 
             5)
 
-        assert itemRemove.size == 0
+        assert itemRemove.size() == 0
     } else {
         println('editScenarioNumber is should be from 1 to 5')
 

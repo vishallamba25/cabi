@@ -126,6 +126,7 @@ if (emptyCart.size() > 0) {
 }
 
 addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
+addOnStyle2 = findTestData('miscData').getValue('addOnStyle', 2)
 
 ///////////////
 WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'))
@@ -146,6 +147,27 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize')
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Add to Cart'))
 
 WebUI.delay(5)
+
+/////////////////////////////////////////////////add item 2
+WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/inputStyleLookup1'))
+
+WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/inputStyleLookup1'), addOnStyle2)
+
+WebUI.delay(3)
+
+String prod_message2 = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
+
+WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
+
+///////////////
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize2'))
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/addToCart2'))
+
+WebUI.delay(5)
+/////////////////////////////////////////////////////////////
 
 if (editScenarioNumber == 1) {
 	
@@ -227,9 +249,7 @@ List<WebElement> successMsgs = WebUiCommonHelper.findWebElements(findTestObject(
 
 if (successMsgs.size() > 0) {
     successMsg = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'))
-
     orderSuccess = true
-
     GlobalVariable.retailOrderID = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_order_id'))
 }
 

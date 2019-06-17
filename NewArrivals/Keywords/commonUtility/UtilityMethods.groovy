@@ -131,7 +131,7 @@ public class UtilityMethods {
 		//String abc=rsName+cabitTestEnvt+showID;
 		return micrositeURL;
 	}
-	
+
 	@Keyword
 	public static TestObject createTestObject(String name, String ...s){
 		String xpath = UtilityMethods.concat(s);
@@ -139,7 +139,4 @@ public class UtilityMethods {
 		to.addProperty('xpath', ConditionType.EQUALS, xpath);
 		return to;
 	}
-	
-	
-	
 }

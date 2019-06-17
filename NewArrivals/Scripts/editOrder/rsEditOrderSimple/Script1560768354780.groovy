@@ -13,9 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('editOrder/retailOrderBO'), [('editScenarioNumber') : 4], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('editOrder/retailOrderBO'), [('editScenarioNumber') : 1], FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(10)
-
+WebUI.callTestCase(findTestCase('virtualShowRSVP/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 WebUI.callTestCase(findTestCase('editOrder/rsLogin'), [('RSURL') : '', ('RSuser') : '', ('RSpass') : ''], FailureHandling.STOP_ON_FAILURE)
-WebUI.callTestCase(findTestCase('editOrder/rsOrderHistoryConfirm'), [('orderID') : '', ('editScenarioNumber') : 4], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('editOrder/rsOrderHistoryConfirm'), [('orderID') : '', ('editScenarioNumber') : 1], FailureHandling.STOP_ON_FAILURE)
 

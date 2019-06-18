@@ -32,6 +32,7 @@ WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 WebUI.navigateToUrl('https://test19.cliotest.com/backoffice/control/VSStylistDashboard?showId=104596896&consultantPartyId=100000042')
+//WebUI.navigateToUrl('https://test19.cliotest.com/vsstylistdashboard/?externalLoginKey=EL60408552551&showId=104596896/#/video-conference')
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_dashboard'))
 
@@ -90,10 +91,10 @@ WebUI.callTestCase(findTestCase('virtualShowRSVP/setVHost'), [:], FailureHandlin
 GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104596896/"
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
-/*WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited'),
+WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited'),
 	'You\'re invited to Front Row')
 
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP'))*/
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP'))
 
 'Login with the invited guest'
 WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),

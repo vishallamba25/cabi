@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_donation_amount</name>
+   <name>div_first_item_to_buy</name>
    <tag></tag>
-   <elementGuidId>fa55b3a0-3880-4be7-ac10-2a5ab38ddfa8</elementGuidId>
+   <elementGuidId>7b720aac-1b31-4b43-9b3e-1731c7a0cfac</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='productId_HOCF_DONATION']/option[@value='HOCF_DONATION_5']</value>
+         <value>(//div[@class='entry-content']/div[@class='item_photos']/div[@class='item_image_main'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

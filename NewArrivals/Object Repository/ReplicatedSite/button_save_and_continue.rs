@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_donation_amount</name>
+   <name>button_save_and_continue</name>
    <tag></tag>
-   <elementGuidId>fa55b3a0-3880-4be7-ac10-2a5ab38ddfa8</elementGuidId>
+   <elementGuidId>2f7f2f58-a330-46ad-975f-f7134764f741</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//button/span[contains(text(), 'Save and Continue')])[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//select[@id='productId_HOCF_DONATION']/option[@value='HOCF_DONATION_5']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

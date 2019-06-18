@@ -96,11 +96,11 @@ if (editButton.size() > 0) {
     } else if (editScenarioNumber == 4) {
         println('scen = 4')
 
-        List<WebElement> donationItemPresent = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/div_donation_present'))
+        List<WebElement> donationItemPresent = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/div_donation_present'), 5)
 
         assert donationItemPresent.size() > 0
 
-        List<WebElement> donationRemoveButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/a_donation_cannot_remove'))
+        List<WebElement> donationRemoveButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/a_donation_cannot_remove'), 5)
 
         assert donationRemoveButton.size() == 0
     } else if (editScenarioNumber == 5) {

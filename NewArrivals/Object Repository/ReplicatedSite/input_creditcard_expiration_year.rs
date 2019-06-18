@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_donation_amount</name>
+   <name>input_creditcard_expiration_year</name>
    <tag></tag>
-   <elementGuidId>fa55b3a0-3880-4be7-ac10-2a5ab38ddfa8</elementGuidId>
+   <elementGuidId>126ba5bb-a35d-46ad-b2c3-6379efbde97b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='productId_HOCF_DONATION']/option[@value='HOCF_DONATION_5']</value>
+         <value>//select[@id='creditcard-expiration-year']/option[@value='2024']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_donation_amount</name>
+   <name>button_add_another_card</name>
    <tag></tag>
-   <elementGuidId>fa55b3a0-3880-4be7-ac10-2a5ab38ddfa8</elementGuidId>
+   <elementGuidId>a5f7b084-219e-4ead-a9c0-88c573614670</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='productId_HOCF_DONATION']/option[@value='HOCF_DONATION_5']</value>
+         <value>//button[contains(text(), 'Add another Card')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

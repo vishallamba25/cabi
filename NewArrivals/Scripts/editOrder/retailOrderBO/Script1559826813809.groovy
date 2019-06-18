@@ -1,20 +1,23 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.interactions.Actions as Actions
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.WebElement as WebElement
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 WebUI.openBrowser('')
 
@@ -126,6 +129,7 @@ if (emptyCart.size() > 0) {
 }
 
 addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
+
 addOnStyle2 = findTestData('miscData').getValue('addOnStyle', 2)
 
 ///////////////
@@ -167,13 +171,16 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize2'
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/addToCart2'))
 
 WebUI.delay(5)
-/////////////////////////////////////////////////////////////
 
+/////////////////////////////////////////////////////////////
 if (editScenarioNumber == 1) {
-	
-	
-	
-} else if (editScenarioNumber == 3) {/***************add gift card*******************/
+    //////////
+    //////////
+    /***************add gift card*******************/
+    /***************add donation*******************/
+} else if (editScenarioNumber == 2) {
+    
+} else if (editScenarioNumber == 3) {
     WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_gift_card'))
 
     WebUI.delay(5)
@@ -205,8 +212,9 @@ if (editScenarioNumber == 1) {
     WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_gc_send_email'), email)
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/a_submit'))
-	
-} else if (editScenarioNumber == 4) {/***************add donation*******************/
+} else if (editScenarioNumber == 4) {
+    println('scen = 4')
+
     WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_donation'))
 
     WebUI.delay(5)
@@ -214,13 +222,10 @@ if (editScenarioNumber == 1) {
     WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/select_donation_amount'))
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_add_to_cart'))
-	
 } else if (editScenarioNumber == 5) {
-	
-	
-	
 } else {
     println('editScenarioNumber is should be from 1 to 5')
+
     assert false
 }
 
@@ -249,10 +254,13 @@ List<WebElement> successMsgs = WebUiCommonHelper.findWebElements(findTestObject(
 
 if (successMsgs.size() > 0) {
     successMsg = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'))
+
     orderSuccess = true
+
     GlobalVariable.retailOrderID = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_order_id'))
 }
 
 assert orderSuccess == true
 
 not_run: WebUI.closeBrowser()
+

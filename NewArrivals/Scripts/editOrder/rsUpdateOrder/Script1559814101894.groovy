@@ -42,7 +42,7 @@ Actions actions = new Actions(driver);
 actions.moveToElement(element).click().build().perform();
 //////////
 WebUI.delay(4)
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_save_address_continue'))
+WebUI.click(findTestObject('ReplicatedSite/button_save_and_continue'))
 WebUI.delay(3)
 ////////////////////////////
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_make_donation'))

@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//ul/li/a/span[contains(text(), 'Gift Card')]</value>
+         <value>//ul/li/a/span[contains(text(), 'Donation')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

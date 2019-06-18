@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_save_address_continue</name>
+   <name>a_checkout</name>
    <tag></tag>
-   <elementGuidId>2f7f2f58-a330-46ad-975f-f7134764f741</elementGuidId>
+   <elementGuidId>73e3686d-7fe6-4d12-bef4-348778d8d3e6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button/span[contains(text(), 'Save and Continue')])[1]</value>
+         <value>(//div/a[@id='checkout-btn'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

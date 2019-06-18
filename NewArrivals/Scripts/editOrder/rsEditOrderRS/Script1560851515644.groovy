@@ -14,10 +14,15 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('virtualShowRSVP/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('editOrder/retailOrder'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('editOrder/retailOrderRS'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('editOrder/rsLogin'), [('RSURL') : '', ('RSuser') : '', ('RSpass') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Object Repository/ReplicatedSite/h1_thanks_msg'), 'Thanks for placing your order!')
+List<WebElement> editOrderButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/div_edit_order_rs'), 5)
+assert editOrderButton.size() > 0
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_edit_order_rs'))
+WebUI.delay(10)
 
-WebUI.callTestCase(findTestCase('editOrder/rsOrderHistoryConfirm'), [('orderID') : ''], FailureHandling.STOP_ON_FAILURE)
-
+WebUI.callTestCase(findTestCase('editOrder/rsUpdateOrder'), [:], FailureHandling.STOP_ON_FAILURE)

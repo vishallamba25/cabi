@@ -1,14 +1,9 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import java.awt.Robot
-import java.awt.event.KeyEvent
-
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
-import org.openqa.selenium.chrome.ChromeDriver
-import org.openqa.selenium.chrome.ChromeOptions
 
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
@@ -19,27 +14,24 @@ import internal.GlobalVariable as GlobalVariable
 
 
 
-/*System.setProperty("webdriver.chrome.driver", "F:\\Katalon_Studio_Windows_64-6.1.1\\configuration\\resources\\drivers\\chromedriver_win32\\chromedriver.exe")
-Map<String, Object> prefs = new HashMap<String, Object>();
-prefs.put("profile.default_content_setting_values.notifications", 2);
-ChromeOptions options = new ChromeOptions();
-options.setExperimentalOption("prefs", prefs);
-WebDriver driver = new ChromeDriver(options);
-DriverFactory.changeWebDriver(driver)
-WebDriver driver = DriverFactory.getWebDriver()*/
+/**********vaiable initialization********************/
+String dataFile2 = "micrositeData"
+guest1Mail = findTestData(dataFile2).getValue('guest1Mail', 1)
+guest1Pass = findTestData(dataFile2).getValue('guest1Pass', 1)
+/****************************************************/
 
 
 
 
-/*WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
+WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
         , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
         , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
-*/
-WebUI.openBrowser('')
+
+/*WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 WebUI.navigateToUrl('https://test19.cliotest.com/backoffice/control/VSStylistDashboard?showId=104596896&consultantPartyId=100000042')
-
+*/
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_dashboard'))
 
 WebUI.delay(5)
@@ -63,10 +55,7 @@ if (isShowNotStarted.size() > 0) {
 /////////////////////////
 WebUI.delay(5)
 
-/*WebUI.acceptAlert()
-WebDriver driver = DriverFactory.getWebDriver()
-driver.switchTo().alert().accept();
-*/
+
 /*****************************tab switching****************/
 String currentPage = WebUI.getUrl()
 
@@ -82,17 +71,38 @@ WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.callTestCase(findTestCase('virtualShowRSVP/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104596896/"
+//GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104596896/"
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
+'Login with the invited guest'
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),	guest1Mail)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
+WebUI.delay(5)
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'), guest1Pass)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
+WebUI.delay(5)
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later'), 0)) {
+	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later'))
+}
+List<WebElement> listElement1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'), 5)
+
+'Validating invited guest\'s \'Yes\' RSVP\r\n'
+if (listElement1.empty) {
+	println('RSVP is not updated')
+	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_RSVP'))
+	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_yes'))
+	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND'))
+	WebUI.delay(4)
+	WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Were so glad you can make it.'),
+		'We\'re so glad you can make it.')
+} else {
+	println('RSVP is updated previously')
+}
+
+
 WebUI.delay(3)
-
 WebUI.switchToWindowIndex(currentTab + 1)
-
-
-
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
-
 WebUI.delay(3)
 
 

@@ -91,3 +91,11 @@ def static "commonUtility.UtilityMethods.createURL"(
          , 	cabitTestEnvt
          , 	showID)
 }
+
+def static "commonUtility.UtilityMethods.createTestObject"(
+    	String name	
+     , 	String[] s	) {
+    (new commonUtility.UtilityMethods()).createTestObject(
+        	name
+         , 	s)
+}

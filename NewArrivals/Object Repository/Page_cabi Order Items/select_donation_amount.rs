@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='gc_type']/option[@value='GC-10']</value>
+         <value>//select[@id='productId_HOCF_DONATION']/option[@value='HOCF_DONATION_5']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

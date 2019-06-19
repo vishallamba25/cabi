@@ -112,15 +112,24 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 
 	
 
-	WebUI.delay(5)
+	WebUI.delay(10)
+	
+	/*driver = DriverFactory.getWebDriver()
+	element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[2]'))
+	actions = new Actions(driver)
+	actions.moveToElement(element).click().build().perform()*/
 
 	WebUI.click(findTestObject('ReplicatedSite/button_save_and_continue_2'))
 
-	WebUI.delay(3)
+	WebUI.delay(10)
 
+	/*element = driver.findElement(By.xpath('//span[contains(text(), \'COMPLETE ORDER\')]'))
+	actions = new Actions(driver)
+	actions.moveToElement(element).click().build().perform()*/
+	
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/span_complete_order'))
 
-	WebUI.delay(3)
+	WebUI.delay(5)
 
 	
 	

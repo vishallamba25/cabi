@@ -44,7 +44,7 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_checkout'))
 
-	WebUI.delay(10)
+	WebUI.delay(5)
 
 	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 30)
 WebUI.click(findTestObject('ReplicatedSite/button_save_and_continue'))

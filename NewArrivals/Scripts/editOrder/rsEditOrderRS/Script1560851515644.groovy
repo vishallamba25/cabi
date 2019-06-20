@@ -25,4 +25,10 @@ assert editOrderButton.size() > 0
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_edit_order_rs'))
 WebUI.delay(10)
 
+List<WebElement> updateButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/a_update_order'),1)
+assert updateButton.size() > 0
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_update_order'))
+WebUI.delay(5)
+
 WebUI.callTestCase(findTestCase('editOrder/rsUpdateOrder'), [:], FailureHandling.STOP_ON_FAILURE)

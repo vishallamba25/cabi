@@ -2,6 +2,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.By
+import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.interactions.Actions
@@ -41,8 +42,11 @@ WebElement element = driver.findElement(By.xpath("//button[@type='submit']/span[
 Actions actions = new Actions(driver);
 actions.moveToElement(element).click().build().perform();
 //////////
-WebUI.delay(4)
-WebUI.click(findTestObject('ReplicatedSite/button_save_and_continue'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/ReplicatedSite/button_save_and_continue'), 30)
+element = driver.findElement(By.xpath('(//button[@class=\'btn pull-right\'])[1]'))
+JavascriptExecutor executor = (JavascriptExecutor)driver;
+executor.executeScript("arguments[0].click();", element);
+//WebUI.click(findTestObject('ReplicatedSite/button_save_and_continue'))
 WebUI.delay(3)
 ////////////////////////////
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_make_donation'))
@@ -55,8 +59,7 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_pay_with_cred
 WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_pay_with_credit'))
 /////////////////////////////
-WebUI.delay(3)
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_cart'))
+
 
 
 

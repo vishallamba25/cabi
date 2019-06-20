@@ -1,52 +1,28 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.openqa.selenium.By
+import org.openqa.selenium.By as By
 import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement as WebElement
-import org.openqa.selenium.interactions.Actions
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.interactions.Actions as Actions
 
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-//WebUI.openBrowser('')
+WebUI.openBrowser('')
 
-WebDriver driver = DriverFactory.getWebDriver()
-JavascriptExecutor executor = (JavascriptExecutor)driver;
-Actions actions = new Actions(driver);
-
+WebUI.callTestCase(findTestCase('virtualShowRSVP/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 WebUI.callTestCase(findTestCase('editOrder/rsLogin'), [('RSURL') : '', ('RSuser') : '', ('RSpass') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.navigateToUrl('https://mirandakate.cabitest5.com/account/#!/checkout')
 
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
+WebUI.delay(5)
+WebDriver driver;
+WebElement element;
+Actions actions;
 
-	WebUI.delay(10)
-	
-	//////////WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
-	
-	
-	
-	
-	WebElement firstItemToBuy = driver.findElement(By.xpath("(//div[@class='entry-content']/div[@class='item_photos']/div[@class='item_image_main'])[1]"));
-	actions.moveToElement(firstItemToBuy).click().build().perform()
-	//////////
-
-	
-
-	WebUI.delay(5)
-
-	WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_add_item_to_bag'))
-
-	WebUI.delay(5)
-
-	WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_cart_svg'))
-
-	WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_checkout'))
-
-	WebUI.delay(5)
-
-	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 30)
+WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 30)
 WebUI.click(findTestObject('ReplicatedSite/button_save_and_continue'))
 
 WebUI.delay(3)
@@ -79,6 +55,7 @@ WebUI.delay(10)
 WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue_2'), 60)
 driver = DriverFactory.getWebDriver()
 element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[2]'))
+JavascriptExecutor executor = (JavascriptExecutor)driver;
 executor.executeScript("arguments[0].click();", element);
 
 //WebUI.click(findTestObject('ReplicatedSite/button_save_and_continue_2'))
@@ -87,9 +64,9 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/ReplicatedSite/s
 element = driver.findElement(By.xpath('//span[contains(text(), \'COMPLETE ORDER\')]'))
 executor.executeScript("arguments[0].click();", element);
 
-	WebUI.delay(5)
 
-	
-	
-	
+
+
+//WebUI.click(findTestObject('Object Repository/ReplicatedSite/span_complete_order'))
+WebUI.delay(5)
 

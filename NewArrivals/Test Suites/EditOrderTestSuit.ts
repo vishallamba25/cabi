@@ -11,6 +11,18 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>41f992da-554c-4b18-8e13-3aeb315b05cf</testSuiteGuid>
    <testCaseLink>
+      <guid>ae372238-415d-45d9-9044-a631bb52866f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/editOrder/rsEditOrderSimple</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ff96322f-9065-41b9-8d3c-b5edaa01181e</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>41ec1bdd-e379-48cd-b3b1-e87b1f825e7a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -56,18 +68,6 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>137e9e5c-36d1-42a8-a382-da49a12aab59</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ae372238-415d-45d9-9044-a631bb52866f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/editOrder/rsEditOrderSimple</testCaseId>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>ff96322f-9065-41b9-8d3c-b5edaa01181e</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

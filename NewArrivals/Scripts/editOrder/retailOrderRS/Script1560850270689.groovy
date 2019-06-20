@@ -40,7 +40,7 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_checkout'))
 
-	WebUI.delay(10)
+	WebUI.delay(5)
 
 	/*element = driver.findElement(By.xpath('(//button[@type=\'submit\']/span[contains(text(), \'Save\')])[1]'))
 	actions = new Actions(driver)

@@ -11,8 +11,16 @@
       </entry>
       <entry>
          <key>BASIC</key>
+         <value>//*[@id=&quot;checkout-page&quot;]/div[2]/div/div/div[1]/check-out/check-out-step[1]/div/div/div[2]/div[2]/button</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;checkout-page&quot;]/div[2]/div/div/div[1]/check-out/check-out-step[1]/div/div/div[2]/div[2]/button</value>
+   </webElementProperties>
 </WebElementEntity>

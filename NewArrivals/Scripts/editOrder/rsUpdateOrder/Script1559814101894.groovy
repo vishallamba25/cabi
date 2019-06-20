@@ -13,6 +13,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import commonUtility.UtilityMethods
+import internal.GlobalVariable
 
 
 
@@ -59,7 +60,11 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_pay_with_cred
 WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_pay_with_credit'))
 /////////////////////////////
+WebUI.delay(2)
 
+String RSURL = findTestData('credData').getValue('RSURL', 1)
+String cartURL= UtilityMethods.concat(RSURL, "/cart/")
+WebUI.navigateToUrl(cartURL)
 
 
 

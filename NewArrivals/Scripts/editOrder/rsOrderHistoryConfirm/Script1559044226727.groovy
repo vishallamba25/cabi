@@ -46,8 +46,8 @@ if (editButton.size() > 0) {
 
     WebUI.delay(10)
 
-    if ((editScenarioNumber == 1) || (editScenarioNumber == 2)) {
-        println('scen = 1 or 2')
+    if (editScenarioNumber == 1) {
+        println('scen = 1')
 
         List<WebElement> updateButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/a_update_order'),1)
         assert updateButton.size() > 0

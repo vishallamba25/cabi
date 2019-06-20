@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_cart</name>
+   <name>input_billing_location_add_new</name>
    <tag></tag>
-   <elementGuidId>834ccd09-b1d2-47a4-a702-3887ee09a9e6</elementGuidId>
+   <elementGuidId>31ac2990-4fce-46e0-976e-2b8cde27dbe9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//a[contains(text(), 'Edit')])[2]</value>
+         <value>(//div[@class='name'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

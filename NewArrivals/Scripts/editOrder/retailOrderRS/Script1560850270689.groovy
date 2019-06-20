@@ -70,6 +70,10 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_creditcard_ex
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_billing_address'))
 
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_billing_location_mailing'))
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_billing_location_add_new'))
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_billing_location_mailing'))
+
 driver = DriverFactory.getWebDriver()
 element = driver.findElement(By.xpath('(//button[@type=\'submit\']/span[contains(text(), \'Save\')])[2]'))
 actions = new Actions(driver)

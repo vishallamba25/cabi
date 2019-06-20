@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_save_and_continue</name>
+   <name>div_layout</name>
    <tag></tag>
-   <elementGuidId>2f7f2f58-a330-46ad-975f-f7134764f741</elementGuidId>
+   <elementGuidId>6bb7a812-7925-46ac-a80c-60a408e3684a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@class='btn pull-right'])[1]</value>
+         <value>(//div[@class='row'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

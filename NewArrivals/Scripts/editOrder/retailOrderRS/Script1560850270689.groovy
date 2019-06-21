@@ -30,6 +30,7 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 	
 	WebElement firstItemToBuy = driver.findElement(By.xpath("(//div[@class='entry-content']/div[@class='item_photos']/div[@class='item_image_main'])[1]"));
 	actions.moveToElement(firstItemToBuy).click().build().perform()
+	
 	//////////
 
 	
@@ -42,12 +43,16 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_cart_svg'))
 
+	WebUI.delay(5)
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_checkout'))
 
 	WebUI.delay(5)
 
-	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 30)
-WebUI.click(findTestObject('ReplicatedSite/button_save_and_continue'))
+	WebUI.delay(10)
+	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
+	driver = DriverFactory.getWebDriver()
+	element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[1]'))
+	executor.executeScript("arguments[0].click();", element);
 
 WebUI.delay(3)
 

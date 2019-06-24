@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+MicrositeTestSuite,Chrome 75.0.3770.100,,2019-06-24 18:02:34,2019-06-24 18:03:30,56.423s,FAILED
+,,,,,,
+Test Cases/virtualShowRSVP/createShow,Chrome 75.0.3770.100,,2019-06-24 18:02:34,2019-06-24 18:03:29,54.923s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-24 18:02:34,2019-06-24 18:02:34,0.199s,PASSED
+"dataFile = ""virtualShowData""",Chrome 75.0.3770.100,,2019-06-24 18:02:35,2019-06-24 18:02:35,0.002s,PASSED
+"testEnvt = findTestData(dataFile).getValue(""testEnvt"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:35,2019-06-24 18:02:36,1.361s,PASSED
+"username = findTestData(dataFile).getValue(""username"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:36,2019-06-24 18:02:36,0.132s,PASSED
+"password = findTestData(dataFile).getValue(""password"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:36,2019-06-24 18:02:37,0.106s,PASSED
+"stylist = findTestData(dataFile).getValue(""stylist"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:37,2019-06-24 18:02:37,0.086s,PASSED
+"hostess = findTestData(dataFile).getValue(""hostess"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:37,2019-06-24 18:02:37,0.078s,PASSED
+"cohostess = findTestData(dataFile).getValue(""cohostess"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:37,2019-06-24 18:02:37,0.055s,PASSED
+"guest1 = findTestData(dataFile).getValue(""guest1"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:37,2019-06-24 18:02:37,0.061s,PASSED
+"guest2 = findTestData(dataFile).getValue(""guest2"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:37,2019-06-24 18:02:37,0.076s,PASSED
+"verifyHostess = findTestData(dataFile).getValue(""verifyHostess"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:37,2019-06-24 18:02:37,0.075s,PASSED
+"verifyCohostess = findTestData(dataFile).getValue(""verifyCohostess"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:37,2019-06-24 18:02:37,0.048s,PASSED
+"verifyGuestCount = findTestData(dataFile).getValue(""verifyGuestCount"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:37,2019-06-24 18:02:37,0.060s,PASSED
+"verifyGuest1 = findTestData(dataFile).getValue(""verifyGuest1"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:37,2019-06-24 18:02:37,0.052s,PASSED
+"verifyGuest2 = findTestData(dataFile).getValue(""verifyGuest2"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:37,2019-06-24 18:02:37,0.079s,PASSED
+"cabiTestEnvt = findTestData(dataFile).getValue(""cabiTestEnvt"", 1)",Chrome 75.0.3770.100,,2019-06-24 18:02:37,2019-06-24 18:02:37,0.079s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,2019-06-24 18:02:37,2019-06-24 18:02:42,4.674s,PASSED
+maximizeWindow(),Chrome 75.0.3770.100,,2019-06-24 18:02:42,2019-06-24 18:02:43,1.139s,PASSED
+navigateToUrl(testEnvt),Chrome 75.0.3770.100,,2019-06-24 18:02:43,2019-06-24 18:03:13,30.113s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi/input_username""), username)",Chrome 75.0.3770.100,,2019-06-24 18:03:13,2019-06-24 18:03:14,0.598s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi/input_password""), password)",Chrome 75.0.3770.100,,2019-06-24 18:03:14,2019-06-24 18:03:14,0.324s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi/input_consultantLogin""))",Chrome 75.0.3770.100,,2019-06-24 18:03:14,2019-06-24 18:03:17,2.831s,PASSED
+delay(10),Chrome 75.0.3770.100,,2019-06-24 18:03:17,2019-06-24 18:03:27,10.079s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi/span_username""), stylist)",Chrome 75.0.3770.100,,2019-06-24 18:03:27,2019-06-24 18:03:29,1.844s,FAILED

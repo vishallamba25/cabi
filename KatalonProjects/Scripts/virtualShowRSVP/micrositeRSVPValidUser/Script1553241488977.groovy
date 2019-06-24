@@ -47,7 +47,7 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.callTestCase(findTestCase('virtualShowRSVP/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
 /*****************set vhost steps****************/
 

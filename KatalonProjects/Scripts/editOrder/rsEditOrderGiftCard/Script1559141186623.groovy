@@ -17,9 +17,9 @@ WebUI.callTestCase(findTestCase('editOrder/retailOrderBO'), [('editScenarioNumbe
 
 WebUI.delay(10)
 
-WebUI.callTestCase(findTestCase('virtualShowRSVP/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('editOrder/rsLogin'), [('RSURL') : '', ('RSuser') : '', ('RSpass') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TestCaseUtilities/rsLogin'), [('RSURL') : '', ('RSuser') : '', ('RSpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('editOrder/rsOrderHistoryConfirm'), [('orderID') : '', ('editScenarioNumber') : 3], FailureHandling.STOP_ON_FAILURE)
 

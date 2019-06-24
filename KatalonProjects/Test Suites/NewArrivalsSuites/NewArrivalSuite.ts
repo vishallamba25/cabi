@@ -83,7 +83,7 @@
       <guid>5031ef34-9ea1-4d1d-9ab5-f449c35978d5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/NewArrival/newArrivalsSetTimezone</testCaseId>
+      <testCaseId>Test Cases/NewArrival/setTimezone</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DATA_COLUMN</type>

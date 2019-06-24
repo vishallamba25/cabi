@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_save_and_continue</name>
+   <name>span_rs_orderid</name>
    <tag></tag>
-   <elementGuidId>2f7f2f58-a330-46ad-975f-f7134764f741</elementGuidId>
+   <elementGuidId>ff5c44b7-5e61-4564-823f-6e8e9e6f4ec5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button/span[contains(text(), 'Save and Continue')])[1]</value>
+         <value>//span[@class='order-number ng-binding']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

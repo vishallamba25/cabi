@@ -17,7 +17,7 @@ import org.openqa.selenium.WebElement as WebElement
 
 WebUI.openBrowser('')
 
-WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 for (int row = 1; row <= findTestData('contactData').getRowNumbers(); row++) {
     firstName = findTestData('contactData').getValue('firstName', row)

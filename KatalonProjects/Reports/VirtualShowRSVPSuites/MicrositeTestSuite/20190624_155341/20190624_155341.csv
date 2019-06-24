@@ -1,0 +1,42 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+MicrositeTestSuite,Chrome 75.0.3770.100,,2019-06-24 15:53:45,2019-06-24 15:54:11,25.895s,FAILED
+,,,,,,
+Test Cases/virtualShowRSVP/createShow,Chrome 75.0.3770.100,,2019-06-24 15:53:45,2019-06-24 15:53:54,8.401s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-24 15:53:45,2019-06-24 15:53:46,0.174s,PASSED
+"dataFile = ""virtualShowData""",Chrome 75.0.3770.100,,2019-06-24 15:53:46,2019-06-24 15:53:46,0.016s,PASSED
+"testEnvt = findTestData(dataFile).getValue(""testEnvt"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:46,2019-06-24 15:53:47,1.208s,PASSED
+"username = findTestData(dataFile).getValue(""username"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:47,2019-06-24 15:53:47,0.114s,PASSED
+"password = findTestData(dataFile).getValue(""password"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:47,2019-06-24 15:53:48,0.285s,PASSED
+"stylist = findTestData(dataFile).getValue(""stylist"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:48,2019-06-24 15:53:48,0.108s,PASSED
+"hostess = findTestData(dataFile).getValue(""hostess"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:48,2019-06-24 15:53:48,0.048s,PASSED
+"cohostess = findTestData(dataFile).getValue(""cohostess"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:48,2019-06-24 15:53:48,0.054s,PASSED
+"guest1 = findTestData(dataFile).getValue(""guest1"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:48,2019-06-24 15:53:48,0.078s,PASSED
+"guest2 = findTestData(dataFile).getValue(""guest2"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:48,2019-06-24 15:53:48,0.060s,PASSED
+"verifyHostess = findTestData(dataFile).getValue(""verifyHostess"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:48,2019-06-24 15:53:48,0.136s,PASSED
+"verifyCohostess = findTestData(dataFile).getValue(""verifyCohostess"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:48,2019-06-24 15:53:48,0.049s,PASSED
+"verifyGuestCount = findTestData(dataFile).getValue(""verifyGuestCount"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:48,2019-06-24 15:53:48,0.047s,PASSED
+"verifyGuest1 = findTestData(dataFile).getValue(""verifyGuest1"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:48,2019-06-24 15:53:48,0.043s,PASSED
+"verifyGuest2 = findTestData(dataFile).getValue(""verifyGuest2"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:48,2019-06-24 15:53:48,0.054s,PASSED
+"cabiTestEnvt = findTestData(dataFile).getValue(""cabiTestEnvt"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:48,2019-06-24 15:53:48,0.039s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,2019-06-24 15:53:48,2019-06-24 15:53:52,3.737s,PASSED
+maximizeWindow(),Chrome 75.0.3770.100,,2019-06-24 15:53:52,2019-06-24 15:53:54,1.519s,FAILED
+,,,,,,
+Test Cases/virtualShowRSVP/micrositeRSVPValidUser,Chrome 75.0.3770.100,,2019-06-24 15:53:54,2019-06-24 15:54:10,16.077s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-24 15:53:54,2019-06-24 15:53:54,0.004s,PASSED
+"dataFile = ""micrositeData""",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:55,0.018s,PASSED
+"hostessMail = findTestData(dataFile).getValue(""hostessMail"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:55,0.080s,PASSED
+"hostessPass = findTestData(dataFile).getValue(""hostessPass"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:55,0.048s,PASSED
+"cohostessMail = findTestData(dataFile).getValue(""cohostessMail"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:55,0.088s,PASSED
+"cohostessPass = findTestData(dataFile).getValue(""cohostessPass"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:55,0.065s,PASSED
+"guest1Mail = findTestData(dataFile).getValue(""guest1Mail"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:55,0.044s,PASSED
+"guest1Pass = findTestData(dataFile).getValue(""guest1Pass"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:55,0.074s,PASSED
+"guestUninvitedMail = findTestData(dataFile).getValue(""guestUninvitedMail"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:55,0.062s,PASSED
+"guestUninvitedPass = findTestData(dataFile).getValue(""guestUninvitedPass"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:55,0.060s,PASSED
+"ofbizURL = findTestData(dataFile).getValue(""ofbizURL"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:55,0.057s,PASSED
+"ofbizUser = findTestData(dataFile).getValue(""ofbizUser"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:55,0.052s,PASSED
+"ofbizPass = findTestData(dataFile).getValue(""ofbizPass"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:55,0.071s,PASSED
+"vhostTarget = findTestData(dataFile).getValue(""vhostTarget"", 1)",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:55,0.173s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,2019-06-24 15:53:55,2019-06-24 15:53:58,2.806s,PASSED
+maximizeWindow(),Chrome 75.0.3770.100,,2019-06-24 15:53:58,2019-06-24 15:53:59,1.047s,PASSED
+"callTestCase(findTestCase(""virtualShowRSVP/setVHost""), [:], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-24 15:53:59,2019-06-24 15:54:09,9.550s,PASSED
+navigateToUrl(micrositeURL),Chrome 75.0.3770.100,,2019-06-24 15:54:09,2019-06-24 15:54:10,0.803s,FAILED

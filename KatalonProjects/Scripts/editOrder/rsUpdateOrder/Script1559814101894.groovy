@@ -16,8 +16,15 @@ import commonUtility.UtilityMethods
 import internal.GlobalVariable
 
 
+WebDriver driver = DriverFactory.getWebDriver();
+JavascriptExecutor executor = (JavascriptExecutor)driver;
+WebElement element;
+Actions actions;
 
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/span_shipping_info'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/ReplicatedSite/span_shipping_info'), 30)
+element = driver.findElement(By.xpath('//span[contains(text(), \'1. Shipping information\')]'))
+executor.executeScript("arguments[0].click();", element);
+//WebUI.click(findTestObject('Object Repository/ReplicatedSite/span_shipping_info'))
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_other_address'))
 //////////////////Enter other adress/////////////////////
 int contactNumber = 4 //guest2
@@ -38,14 +45,14 @@ WebUI.setText(findTestObject('Object Repository/ReplicatedSite/input_postal_code
 WebUI.delay(4)
 //WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_save_address'))
 //////////
-WebDriver driver = DriverFactory.getWebDriver()
-WebElement element = driver.findElement(By.xpath("//button[@type='submit']/span[contains(text(), 'Save')]"));
-Actions actions = new Actions(driver);
+driver = DriverFactory.getWebDriver()
+element = driver.findElement(By.xpath("//button[@type='submit']/span[contains(text(), 'Save')]"));
+actions = new Actions(driver);
 actions.moveToElement(element).click().build().perform();
 //////////
 WebUI.waitForElementClickable(findTestObject('Object Repository/ReplicatedSite/button_save_and_continue'), 30)
 element = driver.findElement(By.xpath('(//button[@class=\'btn pull-right\'])[1]'))
-JavascriptExecutor executor = (JavascriptExecutor)driver;
+executor = (JavascriptExecutor)driver;
 executor.executeScript("arguments[0].click();", element);
 //WebUI.click(findTestObject('ReplicatedSite/button_save_and_continue'))
 WebUI.delay(3)

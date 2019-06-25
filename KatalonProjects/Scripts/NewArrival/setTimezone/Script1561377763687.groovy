@@ -2,8 +2,11 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+<<<<<<< HEAD:KatalonProjects/Scripts/NewArrival/newArrivalsSetTimezone/Script1556088493812.groovy
+=======
 
 import commonUtility.UtilityMethods
+>>>>>>> 9065244ac13450ebfce5e098cfbd1cf538b0d153:KatalonProjects/Scripts/NewArrival/setTimezone/Script1561377763687.groovy
 
 not_run: WebUI.openBrowser('')
 

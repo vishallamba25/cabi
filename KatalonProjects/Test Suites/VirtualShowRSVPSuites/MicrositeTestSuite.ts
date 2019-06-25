@@ -103,7 +103,7 @@
    <testCaseLink>
       <guid>fa4c519a-7f1f-4ff5-b8e1-d156c84d61aa</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/virtualShowRSVP/micrositeRSVPValidUser</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

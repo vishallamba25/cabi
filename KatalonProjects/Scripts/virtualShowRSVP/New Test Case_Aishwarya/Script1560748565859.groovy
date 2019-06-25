@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
@@ -28,11 +29,11 @@ WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '
         , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
         , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
 
-/*WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
-WebUI.navigateToUrl('https://test19.cliotest.com/backoffice/control/VSStylistDashboard?showId=104596896&consultantPartyId=100000042')
-*/
+//WebUI.openBrowser('')
+//WebUI.maximizeWindow()
+//WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+//WebUI.navigateToUrl('https://test21.cliotest.com/backoffice/control/VSStylistDashboard?showId=104602773&consultantPartyId=100000042')
+
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_dashboard'))
 
 WebUI.delay(5)
@@ -47,7 +48,7 @@ List<WebElement> isShowNotStarted = WebUiCommonHelper.findWebElements(findTestOb
 
 if (isShowNotStarted.size() > 0) {
     WebUI.click(findTestObject('virualShowRSVPOR/dashboard/button_start_pre_show'))
-    WebUI.delay(5)
+
     WebUI.click(findTestObject('virualShowRSVPOR/dashboard/button_pre_show_sure'))
 } else {
     WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/button_re_join_show'))
@@ -68,16 +69,12 @@ JavascriptExecutor js = ((driver) as JavascriptExecutor)
 
 js.executeScript('window.open();')
 
-
 WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.callTestCase(findTestCase('virtualShowRSVP/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104601342/"
+GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104602773/"
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
-//WebUI.refresh()
-
-WebUI.delay(25)
 
 'Login with the invited guest'
 WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),	guest1Mail)
@@ -120,8 +117,6 @@ String ExpectedInfocus = SD_FocusPersonRole+":"+""+SD_FocusPersonName
 
 
 String ActualInfocus = WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/dashboard/SD_infocus_Screen'))
-
-
 
 
 

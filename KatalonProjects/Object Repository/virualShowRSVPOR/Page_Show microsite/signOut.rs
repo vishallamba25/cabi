@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>signOut</name>
+   <tag></tag>
+   <elementGuidId>41d46df3-c052-47d5-9bd9-55213d932741</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;page-&quot;]/div[3]/div[1]/div/profile-dropdown/div/div/ul/li[2]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;page-&quot;]/div[3]/div[1]/div/profile-dropdown/div/div/ul/li[2]/a</value>
+   </webElementProperties>
+</WebElementEntity>

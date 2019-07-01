@@ -1,6 +1,7 @@
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.openqa.selenium.Keys
 import org.openqa.selenium.WebElement as WebElement
 
 import com.kms.katalon.core.testobject.ConditionType
@@ -41,32 +42,25 @@ WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi/input
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi/input_consultantLogin'))
 
-WebUI.delay(10)
+WebUI.delay(2)
 
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi/span_username'), stylist)
 
-WebUI.rightClick(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders'))
-
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders'))
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show'))
 
 WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'), hostess)
+WebUI.delay(2)
+WebUI.sendKeys(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'), Keys.chord(Keys.ARROW_DOWN))
+WebUI.sendKeys(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'), Keys.chord(Keys.ENTER))
 
-WebUI.rightClick(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'))
-
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/a_select_hostess'))
-
-WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess_Txt'), hostess)
-WebUI.delay(3)
+WebUI.delay(2)
 
 /////////////////////////
-List<WebElement> validateHostessAddressMsg = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg'), 
-    5)
-
+List<WebElement> validateHostessAddressMsg = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg'), 5)
 println(validateHostessAddressMsg.size())
-
 if (validateHostessAddressMsg.isEmpty()) {
     WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_hostess_address'))
-
     WebUI.delay(5)
 }
 
@@ -75,14 +69,13 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/virualShowRSVPOR/Pag
     '3', true)
 
 WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'), cohostess)
+WebUI.delay(2)
+WebUI.sendKeys(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'), Keys.chord(Keys.ARROW_DOWN))
+WebUI.sendKeys(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'), Keys.chord(Keys.ENTER))
 
-WebUI.rightClick(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'))
 
-WebUI.rightClick(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'))
 
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/a_select_cohostess'))
 
-WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'), cohostess)
 WebUI.delay(3)
 /////////////////////////
 validateHostessAddressMsg = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg'), 
@@ -97,11 +90,11 @@ if (validateHostessAddressMsg.size() != 4) {
 /////////////////////////
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next'))
 
-WebUI.delay(5)
+//WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show'))
 
-WebUI.rightClick(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time'))
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time'))
 
 /***********************************Calendar date*****************************/
 int year= (findTestData('virtualShowData').getValue('vsyear', 1)) as Integer
@@ -135,19 +128,37 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite'))
 
+/////////
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'), guest1)
+WebUI.delay(2)
+WebUI.sendKeys(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'), Keys.chord(Keys.ARROW_DOWN))
+WebUI.sendKeys(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'), Keys.chord(Keys.ENTER))
+WebUI.delay(2)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest'))
+/////////
+WebUI.delay(5)
+/////////
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'), guest2)
+WebUI.delay(2)
+WebUI.sendKeys(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'), Keys.chord(Keys.ARROW_DOWN))
+WebUI.sendKeys(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'), Keys.chord(Keys.ENTER))
+WebUI.delay(2)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest'))
+
+/*
 WebUI.rightClick(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'))
 
-WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'), guest1)
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'), guest1)*/
 
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/plus_add_guest'))
+
+
+/*WebUI.rightClick(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/plus_add_guest'))
 
 WebUI.rightClick(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/plus_add_guest'))
 
-WebUI.rightClick(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/plus_add_guest'))
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/plus_add_guest'))*/
 
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/plus_add_guest'))
-
-WebUI.delay(5)
+/*WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/i_span_add_guest'))
 
@@ -167,9 +178,10 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Sh
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/i_span_add_guest'))
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/i_span_add_guest'))*/
 
-WebUI.delay(5)
+
+WebUI.delay(2)
 
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name'), verifyHostess)
 

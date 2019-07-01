@@ -1,20 +1,11 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import commonUtility.UtilityMethods as UtilityMethods
+
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
-import org.openqa.selenium.WebElement as WebElement
 
 WebUI.openBrowser('')
 
@@ -160,14 +151,14 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     /***********5 backoffice productWatchList************/
     WebUI.callTestCase(findTestCase('NewArrival/productWatchlist'), [('available') : GlobalVariable.BOEblast], FailureHandling.STOP_ON_FAILURE)
 
-    /***********5 backoffice eblast************/
+    /***********6 backoffice eblast************/
     WebUI.callTestCase(findTestCase('NewArrival/productEblast'), [('available') : GlobalVariable.BOEblast], FailureHandling.STOP_ON_FAILURE)
 
-    /************6 addOn for personal order RMA *******/
+    /************7 addOn for personal order RMA *******/
     WebUI.callTestCase(findTestCase('NewArrival/addOnOrderPersonal'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
-    /************7 addOn for retail order RMA *******/
+    /************8 addOn for retail order RMA *******/
     WebUI.callTestCase(findTestCase('NewArrival/addOnOrderRetail'), [('addOnStyle') : ''], FailureHandling.STOP_ON_FAILURE)
-    /*****************8 going to CabiCentral: personal order******************/
+    /*****************9 going to CabiCentral: personal order******************/
     WebUI.callTestCase(findTestCase('TestCaseUtilities/cabiCentralLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.delay(3)
@@ -185,7 +176,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.callTestCase(findTestCase('NewArrival/productVerifyShort'), [('available') : GlobalVariable.CCPersonal, ('storeType') : 'CCPersonal'], 
         FailureHandling.STOP_ON_FAILURE)
 
-    /*****************9 going to CabiCentral: retail order******************/
+    /*****************10 going to CabiCentral: retail order******************/
     WebUI.click(findTestObject('Page_cabi Find Order/a_Create Order'))
 
     WebUI.selectOptionByValue(findTestObject('Page_cabi Create Order/select_order_type'), 'RETAIL', true)
@@ -194,7 +185,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     WebUI.callTestCase(findTestCase('NewArrival/productVerifyShort'), [('available') : GlobalVariable.CCRetail], FailureHandling.STOP_ON_FAILURE)
 
-    /*****************10 going to CabiCentral: show order******************/
+    /*****************11 going to CabiCentral: show order******************/
     WebUI.click(findTestObject('Page_cabi Find Order/a_Create Order'))
 
     WebUI.selectOptionByValue(findTestObject('Page_cabi Create Order/select_order_type'), 'SHOW', true)

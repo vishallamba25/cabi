@@ -18,13 +18,14 @@ import org.openqa.selenium.WebElement as WebElement
 
 WebUI.openBrowser('')
 
-int i = 1
+addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
+//int i = 1
 
 for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
-    if (timeRow > i) {
+    /*if (timeRow > i) {
         while (GlobalVariable.controlParallelism < GlobalVariable.parallelTC) {
         }
-    }
+    }*/
     
     WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
 
@@ -125,18 +126,18 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     WebUI.delay(3)
 
-    List<WebElement> emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 
-        5)
+    List<WebElement> emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 5)
 
-    if (emptyCart.size() > 0) {
+   while (emptyCart.size() > 0) {
         WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'))
 
         println('cart not empty')
 
         WebUI.delay(5)
+		emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 5)
     }
     
-    addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
+    
 
     ///////////////
     WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'))
@@ -290,7 +291,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     /****************product Verify Short******************/
     WebUI.callTestCase(findTestCase('NewArrival/productVerifyShort'), [('available') : GlobalVariable.BOAddonRetail], FailureHandling.STOP_ON_FAILURE)
 
-    GlobalVariable.controlParallelism = (GlobalVariable.controlParallelism + 1)
+    /*GlobalVariable.controlParallelism = (GlobalVariable.controlParallelism + 1)
 
     if (GlobalVariable.controlParallelism == GlobalVariable.parallelTC) {
         i++
@@ -300,6 +301,6 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     println(GlobalVariable.controlParallelism)
 
-    println(GlobalVariable.parallelTC)
+    println(GlobalVariable.parallelTC)*/
 }
 

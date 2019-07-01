@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='my-team-sub-btn']/li/a</value>
+         <value>//li[@id='my-team-btn']/ul/li/a[contains(text(), 'Contact Manager')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -44,7 +44,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//ul[@id='my-team-sub-btn']/li/a</value>
+      <value>//li[@id='my-team-btn']/ul/li/a[contains(text(), 'Contact Manager')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@onclick='preventLoadingAndUpdateUrl($(this), event);']</value>
+         <value>//li[@id='products-btn']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -51,7 +51,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
-      <value>//a[@onclick='preventLoadingAndUpdateUrl($(this), event);']</value>
+      <value>//li[@id='products-btn']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

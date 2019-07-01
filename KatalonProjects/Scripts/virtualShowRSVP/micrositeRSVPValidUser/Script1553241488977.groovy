@@ -50,10 +50,8 @@ WebUI.maximizeWindow()
 WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
 /*****************set vhost steps****************/
-
 /*****************End set vhost steps****************/
 //GlobalVariable.micrositeURL = 'https://mirandakate.cabitest5.com/show-microsite/104596896/'
-
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
 //WebUI.navigateToUrl('https://mirandakate.cabitest5.com/show-microsite/104595204/')
@@ -258,7 +256,7 @@ WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show micro
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
 
 if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later'), 
-    0)) {
+    5)) {
     WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' //WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'), 0)
             ))
 }
@@ -274,6 +272,8 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsi
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out'))
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out'))
+
+not_run: WebUI.click(findTestObject('virualShowRSVPOR/Page_Show microsite/signOut'))
 
 WebUI.closeBrowser()
 

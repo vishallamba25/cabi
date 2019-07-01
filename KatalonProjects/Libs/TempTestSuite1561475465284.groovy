@@ -15,9 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
 
-suiteProperties.put('id', 'Test Suites/VirtualShowRSVPSuites/MicrositeTestSuite')
+suiteProperties.put('id', 'Test Suites/EditOrderSuites/EditOrderTestSuit')
 
-suiteProperties.put('name', 'MicrositeTestSuite')
+suiteProperties.put('name', 'EditOrderTestSuit')
 
 suiteProperties.put('description', '')
  
@@ -28,8 +28,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowRSVPSuites\\MicrositeTestSuite\\20190624_180229\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\EditOrderSuites\\EditOrderTestSuit\\20190625_204105\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/VirtualShowRSVPSuites/MicrositeTestSuite', suiteProperties, [new TestCaseBinding('Test Cases/virtualShowRSVP/createShow', 'Test Cases/virtualShowRSVP/createShow',  [ 'verifyCohostess' : null , 'testEnvt' : null , 'password' : null , 'verifyGuest2' : null , 'cabiTestEnvt' : null , 'cohostess' : null , 'verifyGuestCount' : null , 'hostess' : null , 'verifyGuest1' : null , 'stylist' : null , 'guest1' : null , 'verifyHostess' : null , 'username' : null , 'guest2' : null ,  ])])
+TestCaseMain.startTestSuite('Test Suites/EditOrderSuites/EditOrderTestSuit', suiteProperties, [new TestCaseBinding('Test Cases/editOrder/rsEditOrderSimple', 'Test Cases/editOrder/rsEditOrderSimple',  null), new TestCaseBinding('Test Cases/editOrder/rsEditOrderDonation', 'Test Cases/editOrder/rsEditOrderDonation',  null), new TestCaseBinding('Test Cases/editOrder/rsEditOrderGiftCard', 'Test Cases/editOrder/rsEditOrderGiftCard',  null), new TestCaseBinding('Test Cases/editOrder/rsEditOrderPartialShip', 'Test Cases/editOrder/rsEditOrderPartialShip',  null)])

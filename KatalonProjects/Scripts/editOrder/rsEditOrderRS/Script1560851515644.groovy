@@ -40,10 +40,11 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_cancel_edit'))
 List<WebElement> cancelEditButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/h2_sure_to_cancel_edit'),1)
 assert cancelEditButton.size() > 0
 WebUI.click(findTestObject('ReplicatedSite/button_yes_cancel_edit'))
-WebUI.delay(10)
+
 ////////////////span[contains(text(), '${orderID}')]/parent::div/parent::div/div[@class='table-row-edit-order']
+//WebUI.delay(10)
 String xpath = UtilityMethods.concat('//span[contains(text(), \'', orderID, '\')]/parent::div/parent::div/div[@class=\'table-row-edit-order\']')
-TestObject to = new TestObject('a_link_dynamic')
+TestObject to = new TestObject('a_edit_link')
 to.addProperty('xpath', ConditionType.EQUALS, xpath)
 List<WebElement> editButton = WebUiCommonHelper.findWebElements(to, 1)
 assert editButton.size() > 0

@@ -21,17 +21,17 @@ WebUI.openBrowser('')
 addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
 //int i = 1
 
-/*for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
-    if (timeRow > i) {
+for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
+    /*if (timeRow > i) {
         while (GlobalVariable.controlParallelism < GlobalVariable.parallelTC) {
         }
-    }
+    }*/
     
     WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('NewArrival/setTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
             , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget], 
-        FailureHandling.STOP_ON_FAILURE)*/
+        FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -301,6 +301,6 @@ addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
 
     println(GlobalVariable.controlParallelism)
 
-    println(GlobalVariable.parallelTC)
-}*/
+    println(GlobalVariable.parallelTC)*/
+}
 

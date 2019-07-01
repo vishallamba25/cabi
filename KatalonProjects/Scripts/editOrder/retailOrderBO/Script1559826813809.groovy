@@ -117,14 +117,10 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_
 
 WebUI.delay(3)
 
-List<WebElement> emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 
-    5)
-
+List<WebElement> emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 5)
 if (emptyCart.size() > 0) {
     WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'))
-
     println('cart not empty')
-
     WebUI.delay(5)
 }
 

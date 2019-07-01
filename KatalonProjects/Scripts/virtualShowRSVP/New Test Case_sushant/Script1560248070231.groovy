@@ -40,7 +40,7 @@ WebUI.delay(5)
 
 WebUI.switchToFrame(findTestObject('virualShowRSVPOR/dashboard/frame_start_pre_show'), 60)
 
-WebUI.delay(5)
+//WebUI.delay(5)
 
 /////////////////////////
 List<WebElement> isShowNotStarted = WebUiCommonHelper.findWebElements(findTestObject('virualShowRSVPOR/dashboard/button_start_pre_show'), 
@@ -48,7 +48,7 @@ List<WebElement> isShowNotStarted = WebUiCommonHelper.findWebElements(findTestOb
 
 if (isShowNotStarted.size() > 0) {
     WebUI.click(findTestObject('virualShowRSVPOR/dashboard/button_start_pre_show'))
-
+	WebUI.delay(3)
     WebUI.click(findTestObject('virualShowRSVPOR/dashboard/button_pre_show_sure'))
 } else {
     WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/button_re_join_show'))
@@ -73,7 +73,7 @@ WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104602773/"
+//GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104602773/"
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
 'Login with the invited guest'
@@ -100,6 +100,10 @@ if (listElement1.empty) {
 } else {
 	println('RSVP is updated previously')
 }
+WebUI.delay(4)
+WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
+
+
 
 
 WebUI.delay(3)

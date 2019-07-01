@@ -36,11 +36,11 @@ WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_dashboard'))
 
-WebUI.delay(5)
+WebUI.delay(25)
 
 WebUI.switchToFrame(findTestObject('virualShowRSVPOR/dashboard/frame_start_pre_show'), 60)
 
-WebUI.delay(5)
+WebUI.delay(25)
 
 /////////////////////////
 List<WebElement> isShowNotStarted = WebUiCommonHelper.findWebElements(findTestObject('virualShowRSVPOR/dashboard/button_start_pre_show'), 
@@ -71,9 +71,9 @@ js.executeScript('window.open();')
 
 WebUI.switchToWindowIndex(currentTab + 2)
 
-WebUI.callTestCase(findTestCase('virtualShowRSVP/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104602773/"
+//GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104602773/"
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
 'Login with the invited guest'

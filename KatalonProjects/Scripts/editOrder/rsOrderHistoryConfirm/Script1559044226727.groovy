@@ -22,7 +22,7 @@ orderID = GlobalVariable.retailOrderID
 println(orderID)
 
 ////////////////span[contains(text(), '${orderID}')]/parent::div/parent::div/div[@class='table-row-edit-order']
-String xpath = UtilityMethods.concat('//span[contains(text(), \'', orderID, '\')]/parent::div/parent::div/div[@class=\'table-row-edit-order\']')
+String xpath = UtilityMethods.concat('//span[contains(text(), \'', orderID, '\')]/parent::div/parent::div/div[@class=\'table-row-edit-order\']//a')
 
 TestObject to = new TestObject('a_link_dynamic')
 

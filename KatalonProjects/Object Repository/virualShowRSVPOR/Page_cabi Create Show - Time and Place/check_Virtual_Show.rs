@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='show-type-column']/label[2]/span</value>
+         <value>//label[contains(text(),'Virtual Show')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -37,7 +37,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
-      <value>//div[@id='show-type-column']/label[2]/span</value>
+      <value>//label[contains(text(),'Virtual Show')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

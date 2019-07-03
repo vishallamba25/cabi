@@ -15,10 +15,8 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.openqa.selenium.WebElement as WebElement
 
-CCURL = findTestData('credData').getValue('CCURL', 1)
-
+CCURL = findTestData('envtData').getValue('CCURL', 1)
 CCuser = findTestData('credData').getValue('CCuser', 1)
-
 CCpass = findTestData('credData').getValue('CCpass', 1)
 
 WebUI.openBrowser("")

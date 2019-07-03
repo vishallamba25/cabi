@@ -6,10 +6,8 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-BOURL = findTestData('credData').getValue('BOURL', 1)
-
+BOURL = findTestData('envtData').getValue('BOURL', 1)
 BOuser = findTestData('credData').getValue('BOuser', 1)
-
 BOpass = findTestData('credData').getValue('BOpass', 1)
 
 //WebUI.openBrowser('')

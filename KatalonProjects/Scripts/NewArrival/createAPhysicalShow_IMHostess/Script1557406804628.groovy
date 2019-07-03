@@ -19,7 +19,7 @@ import org.openqa.selenium.WebElement as WebElement
 
 //WebUI.maximizeWindow()
 
-BOURL = findTestData('credData').getValue('BOURL', 1)
+BOURL = findTestData('envtData').getValue('BOURL', 1)
 
 BOuser = findTestData('credData').getValue('BOuser', 1)
 

@@ -6,11 +6,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import commonUtility.UtilityMethods
 
 /**********vaiable initialization********************/
-String dataFile="micrositeData"
-ofbizURL = findTestData(dataFile).getValue('ofbizURL', 1)
-ofbizUser = findTestData(dataFile).getValue('ofbizUser', 1)
-ofbizPass = findTestData(dataFile).getValue('ofbizPass', 1)
-vhostTarget = findTestData(dataFile).getValue('vhostTarget', 1)
+ofbizURL = findTestData('envtData').getValue('ofbizURL', 1)
+ofbizUser = findTestData('credData').getValue('ofbizUser', 1)
+ofbizPass = findTestData('credData').getValue('ofbizPass', 1)
+vhostTarget = findTestData('envtData').getValue('vhostTarget', 1)
 /****************************************************/
 //WebUI.openBrowser('')
 WebUI.navigateToUrl(ofbizURL)

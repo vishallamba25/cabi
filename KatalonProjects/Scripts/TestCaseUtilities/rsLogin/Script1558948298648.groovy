@@ -8,13 +8,13 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-RSURL = findTestData('credData').getValue('RSURL', 1)
+RSURL = findTestData('envtData').getValue('RSURL', 1)
 
 RSuser = findTestData('credData').getValue('RSuser', 1)
 
 RSpass = findTestData('credData').getValue('RSpass', 1)
 
-BSURL = findTestData('credData').getValue('BSURL', 1)
+BSURL = findTestData('envtData').getValue('BSURL', 1)
 
 /*WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)*/

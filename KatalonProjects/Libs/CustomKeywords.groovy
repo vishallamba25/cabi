@@ -20,6 +20,12 @@ def static "commonUtility.UtilityMethods.SplitSizes"(
         	Data)
 }
 
+def static "commonUtility.UtilityMethods.splitPersonName"(
+    	String Data	) {
+    (new commonUtility.UtilityMethods()).splitPersonName(
+        	Data)
+}
+
 def static "commonUtility.UtilityMethods.getExpectedRange"(
     	String[] sizeRange	
      , 	String[] arr	) {

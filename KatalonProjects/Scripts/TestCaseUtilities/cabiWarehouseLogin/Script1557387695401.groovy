@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.openqa.selenium.WebElement as WebElement
 
-CWURL = findTestData('credData').getValue('CWURL', 1)
+CWURL = findTestData('envtData').getValue('CWURL', 1)
 
 CWuser = findTestData('credData').getValue('CWuser', 1)
 

@@ -24,7 +24,13 @@ public class UtilityMethods {
 	public static String[] SplitSizes(String Data) {
 
 		String[] sizeRangeSplit = Data.split('[-]')
-		//String sizeRangeFirst = size[0].toString()
+		return sizeRangeSplit;
+	}
+
+	@Keyword
+	public static String[] splitPersonName(String Data) {
+
+		String[] sizeRangeSplit = Data.split(' ')
 		return sizeRangeSplit;
 	}
 

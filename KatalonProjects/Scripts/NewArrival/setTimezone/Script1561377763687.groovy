@@ -26,7 +26,7 @@ WebUI.click(findTestObject('Page_/input_Password_Submit'))
 
 WebUI.click(findTestObject('Object Repository/Page_/a_Clock set'))
 
-WebUI.click(UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", serverTarget, "')]"))
+WebUI.click(UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"))
 
 WebUI.click(findTestObject('Page_/thisDateAndTime'))
 

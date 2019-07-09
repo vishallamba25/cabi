@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@name='email']</value>
+         <value>//div[@class='form-field']/custom-input/div/input[@name='email']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -100,7 +100,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
-      <value>//input[@name='email']</value>
+      <value>//div[@class='form-field']/custom-input/div/input[@name='email']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

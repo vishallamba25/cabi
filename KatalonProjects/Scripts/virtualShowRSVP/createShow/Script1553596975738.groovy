@@ -20,13 +20,21 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 /**********vaiable initialization********************/
 String dataFile = 'virtualShowData'
+
 String stylist = findTestData(dataFile).getValue('stylist', 1)
+
 String hostess = findTestData(dataFile).getValue('hostess', 1)
+
 String cohostess = findTestData(dataFile).getValue('cohostess', 1)
+
 String guest1 = findTestData(dataFile).getValue('guest1', 1)
+
 String guest2 = findTestData(dataFile).getValue('guest2', 1)
+
 String verifyGuestCount = findTestData(dataFile).getValue('verifyGuestCount', 1)
+
 String RSTestEnvt = findTestData('envtData').getValue('RSTestEnvt', 1)
+
 /****************************************************/
 WebUI.openBrowser('')
 
@@ -178,6 +186,7 @@ WebUI.sendKeys(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest'))
+
 WebUI.delay(2)
 
 /*
@@ -210,24 +219,24 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Sh
 WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/i_span_add_guest'))*/
-
 /**************verifying host, cohost, guest1, guest2**************************/
-String[] verifyHostess =  UtilityMethods.splitPersonName(hostess)
-String[] verifyCohostess =  UtilityMethods.splitPersonName(cohostess)
-String[] verifyGuest1 =  UtilityMethods.splitPersonName(guest1)
-String[] verifyGuest2 =  UtilityMethods.splitPersonName(guest2)
+String[] verifyHostess = UtilityMethods.splitPersonName(hostess)
+
+String[] verifyCohostess = UtilityMethods.splitPersonName(cohostess)
+
+String[] verifyGuest1 = UtilityMethods.splitPersonName(guest1)
+
+String[] verifyGuest2 = UtilityMethods.splitPersonName(guest2)
 
 /*findTestData(dataFile).getValue('verifyHostess', 1)
 verifyCohostess = findTestData(dataFile).getValue('verifyCohostess', 1)
 verifyGuest1 = findTestData(dataFile).getValue('verifyGuest1', 1)
 verifyGuest2 = findTestData(dataFile).getValue('verifyGuest2', 1)*/
-
-
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name'), 
-    UtilityMethods.concat(verifyHostess[1], ", ", verifyHostess[0]))
+    UtilityMethods.concat(verifyHostess[1], ', ', verifyHostess[0]))
 
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name'), 
-    UtilityMethods.concat(verifyCohostess[1], ", ", verifyCohostess[0]))
+    UtilityMethods.concat(verifyCohostess[1], ', ', verifyCohostess[0]))
 
 /////////////////////////
 List<WebElement> listElement = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_guest_name_list'), 
@@ -242,11 +251,11 @@ boolean flag = false
 for (int i = 0; i < guestCount; i++) {
     flag = false
 
-    if (listElement.get(i).getText().equals(UtilityMethods.concat(verifyGuest1[1], ", ", verifyGuest1[0]))) {
+    if (listElement.get(i).getText().equals(UtilityMethods.concat(verifyGuest1[1], ', ', verifyGuest1[0]))) {
         flag = true //println(WebUI.getText(we))
     }
     
-    if (listElement.get(i).getText().equals(UtilityMethods.concat(verifyGuest2[1], ", ", verifyGuest2[0]))) {
+    if (listElement.get(i).getText().equals(UtilityMethods.concat(verifyGuest2[1], ', ', verifyGuest2[0]))) {
         flag = true //println(WebUI.getText(we))
         /*for (WebElement we : listElement) {
         println(we.getText())
@@ -258,9 +267,9 @@ for (int i = 0; i < guestCount; i++) {
 }
 
 assert flag == true
+
 ///////////////////////////////////
 /**************verifying host, cohost, guest1, guest2**************************/
-
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next'))
 
 WebUI.delay(5)

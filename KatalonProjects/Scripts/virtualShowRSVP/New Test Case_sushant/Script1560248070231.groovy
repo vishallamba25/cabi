@@ -87,17 +87,20 @@ WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandl
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
 'Login with the invited guest'
-WebElement enterMail = driver.findElement(By.xpath("//input[@name='email']"));
+WebElement enterMail = driver.findElement(By.xpath("//div[@class='form-field']/custom-input/div/input[@name='email']"));
 executor.executeScript("arguments[0].click();", enterMail);
 WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),	guest1Mail)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
 WebUI.delay(5)
 WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'), guest1Pass)
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue_pass'))
 WebUI.delay(5)
 if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later'), 0)) {
 	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later'))
 }
+
+WebUI.navigateToUrl(GlobalVariable.micrositeURL)
+
 List<WebElement> listElement1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'), 5)
 
 'Validating invited guest\'s \'Yes\' RSVP\r\n'
@@ -116,10 +119,6 @@ WebUI.delay(4)
 WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
 WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
-
-WebUI.switchToWindowIndex(currentTab + 1)
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
-WebUI.delay(3)
 
 
 

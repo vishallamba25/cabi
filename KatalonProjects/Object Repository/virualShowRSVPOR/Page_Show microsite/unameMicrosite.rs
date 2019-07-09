@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Sign in  Create account_email (1)</name>
+   <name>unameMicrosite</name>
    <tag></tag>
    <elementGuidId>d7b9b688-8a9f-4b6a-ae0a-e34626c2efcc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
          <value>//input[@name='email']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@type = 'email' and @name = 'email']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -100,7 +104,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
-      <value>//input[@name='email']</value>
+      <value>//*[@id=&quot;page-&quot;]/div[8]/div/div/div/account/div/login-gateway/div/form/div[1]/custom-input/div/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

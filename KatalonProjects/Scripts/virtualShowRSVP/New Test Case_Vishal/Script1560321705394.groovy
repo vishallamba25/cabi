@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -19,7 +20,17 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 /**********vaiable initialization********************/
+<<<<<<< HEAD
 String dataFile2 = 'micrositeData'
+=======
+String dataFile2 = "micrositeData"
+hostessMail = findTestData(dataFile2).getValue('hostessMail', 1)
+hostessPass = findTestData(dataFile2).getValue('hostessPass', 1)
+guest1Mail = findTestData(dataFile2).getValue('guest1Mail', 1)
+guest1Pass = findTestData(dataFile2).getValue('guest1Pass', 1)
+/****************************************************/
+
+>>>>>>> 537d3f46e9b44c7851c9c826b77119f8cfb886d8
 
 guest1Mail = findTestData(dataFile2).getValue('guest1Mail', 1)
 
@@ -30,6 +41,10 @@ WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '
         , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
         , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 537d3f46e9b44c7851c9c826b77119f8cfb886d8
 /*WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
@@ -42,6 +57,10 @@ WebUI.delay(5)
 WebUI.switchToFrame(findTestObject('virualShowRSVPOR/dashboard/frame_start_pre_show'), 60)
 
 //WebUI.delay(5)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 537d3f46e9b44c7851c9c826b77119f8cfb886d8
 /////////////////////////
 List<WebElement> isShowNotStarted = WebUiCommonHelper.findWebElements(findTestObject('virualShowRSVPOR/dashboard/button_start_pre_show'), 
     5)
@@ -50,9 +69,13 @@ if (isShowNotStarted.size() > 0) {
     WebUI.delay(5)
 
     WebUI.click(findTestObject('virualShowRSVPOR/dashboard/button_start_pre_show'))
+<<<<<<< HEAD
 
     WebUI.delay(3)
 
+=======
+	WebUI.delay(3)
+>>>>>>> 537d3f46e9b44c7851c9c826b77119f8cfb886d8
     WebUI.click(findTestObject('virualShowRSVPOR/dashboard/button_pre_show_sure'))
 } else {
     WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/button_re_join_show'))
@@ -77,7 +100,11 @@ WebUI.switchToWindowIndex(currentTab + 2)
 not_run: WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104602773/"
+<<<<<<< HEAD
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
+=======
+/*WebUI.navigateToUrl(GlobalVariable.micrositeURL)
+>>>>>>> 537d3f46e9b44c7851c9c826b77119f8cfb886d8
 
 'Login with the invited guest'
 WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'), 
@@ -118,13 +145,37 @@ if (listElement1.empty) {
 } else {
     println('RSVP is updated previously')
 }
+*/
 
+js.executeScript('window.open();')
+
+WebUI.switchToWindowIndex(currentTab + 3)
+
+WebUI.navigateToUrl(GlobalVariable.micrositeURL)
+
+<<<<<<< HEAD
 WebUI.delay(4)
 
 WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
+=======
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),	hostessMail)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
+WebUI.delay(5)
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'), hostessPass)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
+WebUI.delay(5)
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later'), 0)) {
+	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later'))
+}
+>>>>>>> 537d3f46e9b44c7851c9c826b77119f8cfb886d8
 
+/*WebUI.delay(4)
+WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
 WebUI.delay(3)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 537d3f46e9b44c7851c9c826b77119f8cfb886d8
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
 
 WebUI.switchToWindowIndex(currentTab + 1)
@@ -132,6 +183,7 @@ WebUI.switchToWindowIndex(currentTab + 1)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
 
 WebUI.delay(3)
+*/
 
 WebUI.click(findTestObject('virualShowRSVPOR/dashboard/playVideosButton'))
 

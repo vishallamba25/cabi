@@ -22,8 +22,6 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 /**********vaiable initialization********************/
 
 String dataFile2 = 'micrositeData'
-
-String dataFile2 = "micrositeData"
 hostessMail = findTestData(dataFile2).getValue('hostessMail', 1)
 hostessPass = findTestData(dataFile2).getValue('hostessPass', 1)
 guest1Mail = findTestData(dataFile2).getValue('guest1Mail', 1)
@@ -79,11 +77,11 @@ js.executeScript('window.open();')
 
 WebUI.switchToWindowIndex(currentTab + 2)
 
-WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
-
+/*WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
+*/
 //GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104602773/"
 
-/*WebUI.navigateToUrl(GlobalVariable.micrositeURL)
+WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
 
 'Login with the invited guest'
@@ -125,31 +123,32 @@ if (listElement1.empty) {
 } else {
     println('RSVP is updated previously')
 }
-*/
 
-/*js.executeScript('window.open();')
 
-WebUI.switchToWindowIndex(currentTab + 3)*/
+//js.executeScript('window.open();')
+//
+//WebUI.switchToWindowIndex(currentTab + 3)
 
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
 
 WebUI.delay(4)
 
-WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
-
-WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),	hostessMail)
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
-WebUI.delay(5)
-WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'), hostessPass)
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
-WebUI.delay(5)
-if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later'), 0)) {
-	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later'))
-}
 
 
-/*WebUI.delay(4)
+//WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),	hostessMail)
+//WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
+//WebUI.delay(5)
+//WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'), hostessPass)
+//WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
+//WebUI.delay(5)
+//if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later'), 0)) {
+//	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later'))
+//}
+//
+//WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
+
+WebUI.delay(4)
 WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
 
 WebUI.delay(3)
@@ -161,7 +160,6 @@ WebUI.switchToWindowIndex(currentTab + 1)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
 
 WebUI.delay(3)
-*/
 
 /*WebUI.click(findTestObject('virualShowRSVPOR/dashboard/playVideosButton'))
 

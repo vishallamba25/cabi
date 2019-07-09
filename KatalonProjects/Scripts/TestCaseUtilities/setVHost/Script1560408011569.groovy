@@ -7,8 +7,8 @@ import commonUtility.UtilityMethods
 
 /**********vaiable initialization********************/
 ofbizURL = findTestData('envtData').getValue('ofbizURL', 1)
-ofbizUser = findTestData('credData').getValue('ofbizUser', 1)
-ofbizPass = findTestData('credData').getValue('ofbizPass', 1)
+ofbizUser = findTestData('credData').getValue('ofbizuser', 1)
+ofbizPass = findTestData('credData').getValue('ofbizpass', 1)
 vhostTarget = findTestData('envtData').getValue('vhostTarget', 1)
 /****************************************************/
 //WebUI.openBrowser('')

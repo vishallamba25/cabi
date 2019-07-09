@@ -2,8 +2,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
@@ -16,6 +16,7 @@ import internal.GlobalVariable as GlobalVariable
 
 
 
+
 /**********vaiable initialization********************/
 String dataFile2 = "micrositeData"
 guest1Mail = findTestData(dataFile2).getValue('guest1Mail', 1)
@@ -25,10 +26,14 @@ guest1Pass = findTestData(dataFile2).getValue('guest1Pass', 1)
 
 
 
+
 WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
         , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
         , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
 
+
+WebDriver driver = DriverFactory.getWebDriver()
+JavascriptExecutor executor = (JavascriptExecutor)driver;
 
 /*WebUI.openBrowser('')
 WebUI.maximizeWindow()
@@ -48,11 +53,15 @@ List<WebElement> isShowNotStarted = WebUiCommonHelper.findWebElements(findTestOb
     5)
 
 if (isShowNotStarted.size() > 0) {
-    WebUI.click(findTestObject('virualShowRSVPOR/dashboard/button_start_pre_show'))
+	
+	WebElement button_start_pre_show = driver.findElement(By.xpath("//button[contains(text(), 'Start pre-show')]"));
+	executor.executeScript("arguments[0].click();", button_start_pre_show);
 	WebUI.delay(3)
-    WebUI.click(findTestObject('virualShowRSVPOR/dashboard/button_pre_show_sure'))
+	WebElement button_pre_show_sure = driver.findElement(By.xpath("//button[contains(text(), ' sure')]"));
+	executor.executeScript("arguments[0].click();", button_pre_show_sure);
 } else {
-    WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/button_re_join_show'))
+	WebElement button_re_join_show = driver.findElement(By.xpath("//button[contains(text(), 'Re-join show')]"));
+	executor.executeScript("arguments[0].click();", button_re_join_show);
 }
 
 /////////////////////////
@@ -64,11 +73,11 @@ String currentPage = WebUI.getUrl()
 
 int currentTab = WebUI.getWindowIndex()
 
-WebDriver driver = DriverFactory.getWebDriver()
+driver = DriverFactory.getWebDriver()
 
-JavascriptExecutor js = ((driver) as JavascriptExecutor)
+//JavascriptExecutor js = ((driver) as JavascriptExecutor)
 
-js.executeScript('window.open();')
+executor.executeScript('window.open();')
 
 WebUI.switchToWindowIndex(currentTab + 2)
 
@@ -78,6 +87,8 @@ WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandl
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
 'Login with the invited guest'
+WebElement enterMail = driver.findElement(By.xpath("//input[@name='email']"));
+executor.executeScript("arguments[0].click();", enterMail);
 WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),	guest1Mail)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
 WebUI.delay(5)

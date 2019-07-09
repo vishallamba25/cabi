@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="MicrositeTestSuite" time="94" tests="1" failures="0" errors="1">
+   <testsuite name="MicrositeTestSuite" tests="1" failures="0" errors="1" time="94" timestamp="2019-07-05 11:19:06" hostname="user - 10.0.102.159" id="Test Suites/VirtualShowRSVPSuites/MicrositeTestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowRSVPSuites\\MicrositeTestSuite\\20190705_111900"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowRSVPSuites\\MicrositeTestSuite\\20190705_111900\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 10.0.102.159"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 75.0.3770.100"/>
+         <property name="hostAddress" value="10.0.102.159"/>
+         <property name="sessionId" value="ff58a36814f8553032e69e22049866f3"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/virtualShowRSVP/createShow" classname="Test Cases/virtualShowRSVP/createShow" status="PASSED">
+         <system-out><![CDATA[2019-07-05 11:19:06 - [TEST_CASE][PASSED] - Test Cases/virtualShowRSVP/createShow: Test Cases/virtualShowRSVP/createShow
+
+2019-07-05 11:19:06 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-07-05 11:19:06 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-07-05 11:19:06 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-07-05 11:19:07 - [TEST_STEP][PASSED] - dataFile = "virtualShowData": null
+
+2019-07-05 11:19:07 - [TEST_STEP][PASSED] - stylist = findTestData(dataFile).getValue("stylist", 1): null
+
+2019-07-05 11:19:09 - [TEST_STEP][PASSED] - hostess = findTestData(dataFile).getValue("hostess", 1): null
+
+2019-07-05 11:19:09 - [TEST_STEP][PASSED] - cohostess = findTestData(dataFile).getValue("cohostess", 1): null
+
+2019-07-05 11:19:09 - [TEST_STEP][PASSED] - guest1 = findTestData(dataFile).getValue("guest1", 1): null
+
+2019-07-05 11:19:09 - [TEST_STEP][PASSED] - guest2 = findTestData(dataFile).getValue("guest2", 1): null
+
+2019-07-05 11:19:09 - [TEST_STEP][PASSED] - verifyGuestCount = findTestData(dataFile).getValue("verifyGuestCount", 1): null
+
+2019-07-05 11:19:09 - [TEST_STEP][PASSED] - RSTestEnvt = findTestData("envtData").getValue("RSTestEnvt", 1): null
+
+2019-07-05 11:19:09 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-07-05 11:19:10 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-07-05 11:19:10 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-07-05 11:19:10 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-07-05 11:19:14 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-07-05 11:19:14 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-07-05 11:19:15 - [MESSAGE][PASSED] - Current window maximized
+
+2019-07-05 11:19:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-07-05 11:19:15 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-07-05 11:19:15 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-07-05 11:19:15 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-07-05 11:19:16 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-07-05 11:19:16 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://sandbox.cabiclio.com/backoffice/control/main' successfully
+
+2019-07-05 11:19:25 - [MESSAGE][PASSED] - Navigate to 'https://sandbox.cabiclio.com/backoffice/control/main' successfully
+
+2019-07-05 11:19:25 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-07-05 11:19:26 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-07-05 11:19:26 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-07-05 11:19:26 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-07-05 11:19:26 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-07-05 11:19:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-07-05 11:19:26 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-07-05 11:19:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-07-05 11:19:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-07-05 11:19:38 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-05 11:19:41 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-05 11:19:41 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-07-05 11:19:41 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi/span_username"), stylist): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-07-05 11:19:41 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-07-05 11:19:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-07-05 11:19:41 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-07-05 11:19:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-07-05 11:19:44 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-07-05 11:19:44 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), hostess): Text 'sushanthost abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-07-05 11:19:44 - [MESSAGE][PASSED] - Text 'sushanthost abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-07-05 11:19:44 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:19:46 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:19:46 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-07-05 11:19:47 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-07-05 11:19:47 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-07-05 11:19:47 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-07-05 11:19:47 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:19:49 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:19:49 - [TEST_STEP][PASSED] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5): null
+
+2019-07-05 11:19:49 - [TEST_STEP][PASSED] - println(validateHostessAddressMsg.size()): null
+
+2019-07-05 11:19:49 - [TEST_STEP][PASSED] - if (validateHostessAddressMsg.isEmpty()): null
+
+2019-07-05 11:19:49 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess"), "3", true): All options with value '3' are selected in object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-07-05 11:19:49 - [MESSAGE][PASSED] - All options with value '3' are selected in object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-07-05 11:19:49 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), cohostess): Text 'sushantcohost abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-07-05 11:19:50 - [MESSAGE][PASSED] - Text 'sushantcohost abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-07-05 11:19:50 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:19:52 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:19:52 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-07-05 11:19:52 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-07-05 11:19:52 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-07-05 11:19:52 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-07-05 11:19:52 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-05 11:19:55 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-05 11:19:55 - [TEST_STEP][PASSED] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5): null
+
+2019-07-05 11:19:55 - [TEST_STEP][PASSED] - if (validateHostessAddressMsg.size() != 4): null
+
+2019-07-05 11:19:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-07-05 11:19:57 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-07-05 11:19:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show' is clicked on
+
+2019-07-05 11:19:58 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show' is clicked on
+
+2019-07-05 11:19:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time' is clicked on
+
+2019-07-05 11:19:58 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time' is clicked on
+
+2019-07-05 11:19:58 - [TEST_STEP][PASSED] - year = findTestData("virtualShowData").getValue("vsyear", 1): null
+
+2019-07-05 11:19:58 - [TEST_STEP][PASSED] - month = findTestData("virtualShowData").getValue("vsmonth", 1): null
+
+2019-07-05 11:19:58 - [TEST_STEP][PASSED] - day = findTestData("virtualShowData").getValue("vsday", 1): null
+
+2019-07-05 11:19:58 - [TEST_STEP][PASSED] - xpath = UtilityMethods.concat("//td[@data-month='" + month - 1 + "' and @data-year='" + year + "']/a[contains(text(), '" + day + "')]"): null
+
+2019-07-05 11:19:58 - [TEST_STEP][PASSED] - dateObj = new com.kms.katalon.core.testobject.TestObject(td_month_year_day): null
+
+2019-07-05 11:19:58 - [TEST_STEP][PASSED] - dateObj.addProperty("xpath", EQUALS, xpath): null
+
+2019-07-05 11:19:58 - [TEST_STEP][PASSED] - monthBound = 12: null
+
+2019-07-05 11:19:58 - [TEST_STEP][PASSED] - dateObjList = findWebElements(dateObj, 5): null
+
+2019-07-05 11:19:58 - [TEST_STEP][PASSED] - while (dateObjList.size() == 0 && monthBound > 0): null
+
+2019-07-05 11:19:58 - [TEST_STEP][PASSED] - click(dateObj): Object: 'td_month_year_day' is clicked on
+
+2019-07-05 11:19:58 - [MESSAGE][PASSED] - Object: 'td_month_year_day' is clicked on
+
+2019-07-05 11:19:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time' is clicked on
+
+2019-07-05 11:19:59 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time' is clicked on
+
+2019-07-05 11:19:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next' is clicked on
+
+2019-07-05 11:19:59 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next' is clicked on
+
+2019-07-05 11:19:59 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:20:04 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:20:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite' is clicked on
+
+2019-07-05 11:20:08 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite' is clicked on
+
+2019-07-05 11:20:08 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), guest1): Text 'sushantguest1 abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:20:08 - [MESSAGE][PASSED] - Text 'sushantguest1 abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:20:08 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:20:10 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:20:10 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:20:11 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:20:11 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:20:11 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:20:11 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:20:13 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:20:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-07-05 11:20:13 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-07-05 11:20:13 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:20:18 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:20:18 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), guest2): Text 'sushantguest2 abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:20:19 - [MESSAGE][PASSED] - Text 'sushantguest2 abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:20:19 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:20:21 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:20:21 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:20:21 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:20:21 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:20:21 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:20:21 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:20:23 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:20:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-07-05 11:20:23 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-07-05 11:20:23 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:20:25 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - verifyHostess = UtilityMethods.splitPersonName(hostess): null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - verifyCohostess = UtilityMethods.splitPersonName(cohostess): null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - verifyGuest1 = UtilityMethods.splitPersonName(guest1): null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - verifyGuest2 = UtilityMethods.splitPersonName(guest2): null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name"), UtilityMethods.concat(verifyHostess[1], ", ", verifyHostess[0])): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are matched.
+
+2019-07-05 11:20:25 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are matched.
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name"), UtilityMethods.concat(verifyCohostess[1], ", ", verifyCohostess[0])): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name' are matched.
+
+2019-07-05 11:20:25 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name' are matched.
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - listElement = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_guest_name_list"), 5): null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - guestCount = Integer.parseInt(verifyGuestCount): null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - assert listElement.size() == guestCount: null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - for ([i = 0, i < guestCount, (i++)]): null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest1[1], ", ", verifyGuest1[0]))): null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - flag = true: null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest2[1], ", ", verifyGuest2[0]))): null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-07-05 11:20:25 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest1[1], ", ", verifyGuest1[0]))): null
+
+2019-07-05 11:20:26 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest2[1], ", ", verifyGuest2[0]))): null
+
+2019-07-05 11:20:26 - [TEST_STEP][PASSED] - flag = true: null
+
+2019-07-05 11:20:26 - [TEST_STEP][PASSED] - assert flag == true: null
+
+2019-07-05 11:20:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next' is clicked on
+
+2019-07-05 11:20:28 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next' is clicked on
+
+2019-07-05 11:20:28 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:20:33 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:20:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview' is clicked on
+
+2019-07-05 11:20:35 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview' is clicked on
+
+2019-07-05 11:20:35 - [TEST_STEP][PASSED] - showID = getText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text")): Text of object 'Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text' is: 'Show #: 104611090'
+
+2019-07-05 11:20:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text' is: 'Show #: 104611090'
+
+2019-07-05 11:20:35 - [TEST_STEP][PASSED] - rightClick(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/a_Account")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_Account' is right clicked on
+
+2019-07-05 11:20:35 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_Account' is right clicked on
+
+2019-07-05 11:20:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile' is clicked on
+
+2019-07-05 11:20:37 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile' is clicked on
+
+2019-07-05 11:20:37 - [TEST_STEP][PASSED] - rsName = getText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName")): Text of object 'Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName' is: 'MirandaKate'
+
+2019-07-05 11:20:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName' is: 'MirandaKate'
+
+2019-07-05 11:20:37 - [TEST_STEP][PASSED] - micrositeURL = UtilityMethods.createURL(rsName, RSTestEnvt, showID): null
+
+2019-07-05 11:20:38 - [TEST_STEP][PASSED] - println(micrositeURL): null
+
+2019-07-05 11:20:38 - [TEST_STEP][PASSED] - back(): Navigate back successfully
+
+2019-07-05 11:20:38 - [MESSAGE][PASSED] - Navigate back successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/virtualShowRSVP/micrositeRSVPValidUser" classname="Test Cases/virtualShowRSVP/micrositeRSVPValidUser" status="ERROR">
+         <error type="ERROR" message="Test Cases/virtualShowRSVP/micrositeRSVPValidUser FAILED.
+Reason:
+java.lang.IllegalArgumentException: Invalid column name 'ofbizURL' for test data 'C:\Users\user\Documents\testautomation\KatalonProjects\micrositeData.xlsx'. Possible values are '{hostessMail,hostessPass,cohostessMail,cohostessPass,guest1Mail,guest1Pass,guestUninvitedMail,guestUninvitedPass}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:73)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:131)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:102)
+	at com.kms.katalon.core.testdata.TestData$getValue.call(Unknown Source)
+	at micrositeRSVPValidUser.run(micrositeRSVPValidUser:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1562305740994.run(TempTestSuite1562305740994.groovy:35)
+"/>
+         <system-out><![CDATA[2019-07-05 11:20:38 - [TEST_CASE][ERROR] - Test Cases/virtualShowRSVP/micrositeRSVPValidUser: Test Cases/virtualShowRSVP/micrositeRSVPValidUser FAILED.
+Reason:
+java.lang.IllegalArgumentException: Invalid column name 'ofbizURL' for test data 'C:\Users\user\Documents\testautomation\KatalonProjects\micrositeData.xlsx'. Possible values are '{hostessMail,hostessPass,cohostessMail,cohostessPass,guest1Mail,guest1Pass,guestUninvitedMail,guestUninvitedPass}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:73)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:131)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:102)
+	at com.kms.katalon.core.testdata.TestData$getValue.call(Unknown Source)
+	at micrositeRSVPValidUser.run(micrositeRSVPValidUser:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1562305740994.run(TempTestSuite1562305740994.groovy:35)
+
+
+2019-07-05 11:20:38 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-07-05 11:20:38 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-07-05 11:20:38 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-07-05 11:20:39 - [TEST_STEP][PASSED] - dataFile = "micrositeData": null
+
+2019-07-05 11:20:39 - [TEST_STEP][PASSED] - hostessMail = findTestData(dataFile).getValue("hostessMail", 1): null
+
+2019-07-05 11:20:39 - [TEST_STEP][PASSED] - hostessPass = findTestData(dataFile).getValue("hostessPass", 1): null
+
+2019-07-05 11:20:39 - [TEST_STEP][PASSED] - cohostessMail = findTestData(dataFile).getValue("cohostessMail", 1): null
+
+2019-07-05 11:20:39 - [TEST_STEP][PASSED] - cohostessPass = findTestData(dataFile).getValue("cohostessPass", 1): null
+
+2019-07-05 11:20:39 - [TEST_STEP][PASSED] - guest1Mail = findTestData(dataFile).getValue("guest1Mail", 1): null
+
+2019-07-05 11:20:39 - [TEST_STEP][PASSED] - guest1Pass = findTestData(dataFile).getValue("guest1Pass", 1): null
+
+2019-07-05 11:20:39 - [TEST_STEP][PASSED] - guestUninvitedMail = findTestData(dataFile).getValue("guestUninvitedMail", 1): null
+
+2019-07-05 11:20:39 - [TEST_STEP][PASSED] - guestUninvitedPass = findTestData(dataFile).getValue("guestUninvitedPass", 1): null
+
+2019-07-05 11:20:39 - [TEST_STEP][ERROR] - ofbizURL = findTestData(dataFile).getValue("ofbizURL", 1): ofbizURL = findTestData(dataFile).getValue("ofbizURL", 1) FAILED.
+Reason:
+java.lang.IllegalArgumentException: Invalid column name 'ofbizURL' for test data 'C:\Users\user\Documents\testautomation\KatalonProjects\micrositeData.xlsx'. Possible values are '{hostessMail,hostessPass,cohostessMail,cohostessPass,guest1Mail,guest1Pass,guestUninvitedMail,guestUninvitedPass}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:73)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:131)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:102)
+	at com.kms.katalon.core.testdata.TestData$getValue.call(Unknown Source)
+	at micrositeRSVPValidUser.run(micrositeRSVPValidUser:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1562305740994.run(TempTestSuite1562305740994.groovy:35)
+
+
+2019-07-05 11:20:39 - [MESSAGE][ERROR] - ofbizURL = findTestData(dataFile).getValue("ofbizURL", 1) FAILED.
+Reason:
+java.lang.IllegalArgumentException: Invalid column name 'ofbizURL' for test data 'C:\Users\user\Documents\testautomation\KatalonProjects\micrositeData.xlsx'. Possible values are '{hostessMail,hostessPass,cohostessMail,cohostessPass,guest1Mail,guest1Pass,guestUninvitedMail,guestUninvitedPass}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:73)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:131)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:102)
+	at com.kms.katalon.core.testdata.TestData$getValue.call(Unknown Source)
+	at micrositeRSVPValidUser.run(micrositeRSVPValidUser:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1562305740994.run(TempTestSuite1562305740994.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-07-05 11:20:38 - [TEST_CASE][ERROR] - Test Cases/virtualShowRSVP/micrositeRSVPValidUser: Test Cases/virtualShowRSVP/micrositeRSVPValidUser FAILED.
+Reason:
+java.lang.IllegalArgumentException: Invalid column name 'ofbizURL' for test data 'C:\Users\user\Documents\testautomation\KatalonProjects\micrositeData.xlsx'. Possible values are '{hostessMail,hostessPass,cohostessMail,cohostessPass,guest1Mail,guest1Pass,guestUninvitedMail,guestUninvitedPass}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:73)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:131)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:102)
+	at com.kms.katalon.core.testdata.TestData$getValue.call(Unknown Source)
+	at micrositeRSVPValidUser.run(micrositeRSVPValidUser:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1562305740994.run(TempTestSuite1562305740994.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-07-05 11:19:06 - [TEST_SUITE][ERROR] - MicrositeTestSuite: Test Cases/virtualShowRSVP/micrositeRSVPValidUser FAILED.
+Reason:
+java.lang.IllegalArgumentException: Invalid column name 'ofbizURL' for test data 'C:\Users\user\Documents\testautomation\KatalonProjects\micrositeData.xlsx'. Possible values are '{hostessMail,hostessPass,cohostessMail,cohostessPass,guest1Mail,guest1Pass,guestUninvitedMail,guestUninvitedPass}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:73)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:131)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:102)
+	at com.kms.katalon.core.testdata.TestData$getValue.call(Unknown Source)
+	at micrositeRSVPValidUser.run(micrositeRSVPValidUser:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1562305740994.run(TempTestSuite1562305740994.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-07-05 11:19:06 - [TEST_SUITE][ERROR] - MicrositeTestSuite: Test Cases/virtualShowRSVP/micrositeRSVPValidUser FAILED.
+Reason:
+java.lang.IllegalArgumentException: Invalid column name 'ofbizURL' for test data 'C:\Users\user\Documents\testautomation\KatalonProjects\micrositeData.xlsx'. Possible values are '{hostessMail,hostessPass,cohostessMail,cohostessPass,guest1Mail,guest1Pass,guestUninvitedMail,guestUninvitedPass}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:73)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:131)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:102)
+	at com.kms.katalon.core.testdata.TestData$getValue.call(Unknown Source)
+	at micrositeRSVPValidUser.run(micrositeRSVPValidUser:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1562305740994.run(TempTestSuite1562305740994.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

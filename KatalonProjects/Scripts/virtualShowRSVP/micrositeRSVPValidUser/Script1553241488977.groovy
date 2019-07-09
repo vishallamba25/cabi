@@ -34,13 +34,7 @@ guestUninvitedMail = findTestData(dataFile).getValue('guestUninvitedMail', 1)
 
 guestUninvitedPass = findTestData(dataFile).getValue('guestUninvitedPass', 1)
 
-ofbizURL = findTestData(dataFile).getValue('ofbizURL', 1)
 
-ofbizUser = findTestData(dataFile).getValue('ofbizUser', 1)
-
-ofbizPass = findTestData(dataFile).getValue('ofbizPass', 1)
-
-vhostTarget = findTestData(dataFile).getValue('vhostTarget', 1)
 
 /****************************************************/
 WebUI.openBrowser('')

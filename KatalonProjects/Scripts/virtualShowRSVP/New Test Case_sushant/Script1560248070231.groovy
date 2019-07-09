@@ -12,18 +12,29 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+import commonUtility.VSGuest
 import internal.GlobalVariable as GlobalVariable
 
 
 
 
 /**********vaiable initialization********************/
-String dataFile2 = "micrositeData"
-guest1Mail = findTestData(dataFile2).getValue('guest1Mail', 1)
-guest1Pass = findTestData(dataFile2).getValue('guest1Pass', 1)
+String dataFile = "micrositeData"
+guest1Mail = findTestData(dataFile).getValue('guest1Mail', 1)
+guest1Pass = findTestData(dataFile).getValue('guest1Pass', 1)
+dataFile = 'virtualShowData'
+String hostess = findTestData(dataFile).getValue('hostess', 1)
+String cohostess = findTestData(dataFile).getValue('cohostess', 1)
+String guest1 = findTestData(dataFile).getValue('guest1', 1)
+String guest2 = findTestData(dataFile).getValue('guest2', 1)
 /****************************************************/
-
-
+List<VSGuest> actualGuestList= new ArrayList<>()
+List<VSGuest> yesList= new ArrayList<>()
+List<VSGuest> noList= new ArrayList<>()
+List<VSGuest> maybeList= new ArrayList<>()
+List<VSGuest> noreplyList= new ArrayList<>()
+List<VSGuest> presentList= new ArrayList<>()
+/****************************************************/
 
 
 
@@ -31,6 +42,11 @@ WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '
         , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
         , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
 
+/***********list update: yes, noreply********/
+yesList.add(new VSGuest(hostess));
+yesList.add(new VSGuest(cohostess));
+noreplyList.add(new VSGuest(guest1));
+noreplyList.add(new VSGuest(guest2));
 
 WebDriver driver = DriverFactory.getWebDriver()
 JavascriptExecutor executor = (JavascriptExecutor)driver;
@@ -119,6 +135,11 @@ WebUI.delay(4)
 WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
 WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
+
+WebUI.switchToWindowIndex(currentTab + 1)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
+
+
 
 
 

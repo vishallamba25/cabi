@@ -34,6 +34,7 @@ List<VSGuest> noList= new ArrayList<>()
 List<VSGuest> maybeList= new ArrayList<>()
 List<VSGuest> noreplyList= new ArrayList<>()
 List<VSGuest> presentList= new ArrayList<>()
+List<VSGuest> allList= new ArrayList<>()
 /****************************************************/
 
 
@@ -43,10 +44,16 @@ WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '
         , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
 
 /***********list update: yes, noreply********/
-yesList.add(new VSGuest(hostess));
-yesList.add(new VSGuest(cohostess));
-noreplyList.add(new VSGuest(guest1));
-noreplyList.add(new VSGuest(guest2));
+VSGuest hostessObj= new VSGuest(hostess)
+VSGuest cohostessObj= new VSGuest(cohostess)
+VSGuest guest1Obj= new VSGuest(guest1)
+VSGuest guest2Obj= new VSGuest(guest2)
+
+allList.add(hostessObj); allList.add(cohostessObj); allList.add(guest1Obj); allList.add(guest2Obj)
+yesList.add(hostessObj);
+yesList.add(cohostessObj);
+noreplyList.add(guest1Obj);
+noreplyList.add(guest2Obj);
 
 WebDriver driver = DriverFactory.getWebDriver()
 JavascriptExecutor executor = (JavascriptExecutor)driver;
@@ -131,13 +138,29 @@ if (listElement1.empty) {
 } else {
 	println('RSVP is updated previously')
 }
+/***************updating lists*********************/
+yesList.add(guest1Obj);
+noreplyList.remove(guest1Obj)
 WebUI.delay(4)
 WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
+/***************updating lists*********************/
+guest1Obj.active=true;
+guest1Obj.micStatus
+presentList.add(guest1Obj)
 WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
 
+
+/* --------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Switch to Dashboard---------------------- */
 WebUI.switchToWindowIndex(currentTab + 1)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_all'))
+List<WebElement> actualGuestListWE = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/div_all_guests'), 5)
+for(WebElement we: actualGuestListWE){
+	println(we.getText())
+	
+}
+
 
 
 

@@ -158,7 +158,6 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_
 List<WebElement> actualGuestListWE = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/div_all_guests'), 5)
 for(WebElement we: actualGuestListWE){
 	println(we.getText())
-	
 }
 
 

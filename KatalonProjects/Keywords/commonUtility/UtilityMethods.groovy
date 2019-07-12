@@ -11,6 +11,7 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.driver.DriverFactory
 
+
 public class UtilityMethods {
 	@Keyword
 	public static String SplitData(String Data) {

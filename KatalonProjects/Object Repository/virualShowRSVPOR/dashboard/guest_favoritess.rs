@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_all_guests</name>
+   <name>guest_favoritess</name>
    <tag></tag>
-   <elementGuidId>8f2b4672-131c-47da-8518-9a08d44c3009</elementGuidId>
+   <elementGuidId>2b2dc8d6-f553-46eb-abd1-3c352be15638</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='table-body']/div</value>
+         <value>//div[@class='table-body']/div[@class='table-row']/div[@class='table-row-inner enabled-comm']/div[@class='table-row-favorites']/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -12,6 +12,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+import commonUtility.UtilityMethods
 import commonUtility.VSGuest
 import internal.GlobalVariable as GlobalVariable
 
@@ -155,10 +156,20 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close
 WebUI.switchToWindowIndex(currentTab + 1)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_all'))
-List<WebElement> actualGuestListWE = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/div_all_guests'), 5)
-for(WebElement we: actualGuestListWE){
-	println(we.getText())
+
+List<WebElement> micStatuss = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_micStatuss'), 5)
+List<WebElement> webcamStatuss = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_webcamStatuss'), 5)
+List<WebElement> actives = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_actives'), 5)
+List<WebElement> names = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_names'), 5)
+List<WebElement> favoritess = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_favoritess'), 5)
+List<WebElement> ordereds = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_ordereds'), 5)
+
+actualGuestList= VSGuest.createActualGuestList(names, micStatuss, webcamStatuss, favoritess, ordereds, actives);
+
+for(VSGuest vsg: actualGuestList){
+	println UtilityMethods.concat(vsg.micStatus, "_", vsg.webcamStatus, "_", vsg.active, "_", vsg.name, "_", vsg.favorites, "_", vsg.ordered);SS
 }
+
 
 
 

@@ -24,7 +24,7 @@ public class VSGuest {
 		Collections.sort(actualList, comp)
 		return expectedList.equals(actualList);
 	}
-	
+
 	public static ArrayList<VSGuest> createActualGuestList(List<WebElement> names, List<WebElement> micStatuss, List<WebElement> webcamStatuss, List<WebElement> favoritess, List<WebElement> ordereds, List<WebElement> actives){
 		int elementCount= names.size();
 		ArrayList<VSGuest> resultList= new ArrayList<>()
@@ -38,7 +38,7 @@ public class VSGuest {
 				case "icon black-audio-slash simple-tooltip": guest.micStatus=2; break;
 				case "icon black-audio simple-tooltip": guest.micStatus=3; break;
 			}
-			
+
 			String wstatus= webcamStatuss.get(i).getAttribute("class");
 			switch(wstatus){
 				case "undefined simple-tooltip": guest.webcamStatus=0; break;
@@ -46,23 +46,23 @@ public class VSGuest {
 				case "icon black-video-slash simple-tooltip": guest.webcamStatus=2; break;
 				case "icon black-video simple-tooltip": guest.webcamStatus=3; break;
 			}
-			
-			String fav= favoritess.get(i).getAttribute("class");
+
+			String fav= favoritess.get(i).getText();
 			if(fav.equalsIgnoreCase("...")){
 				guest.favorites=0;
 			}
 			else{
 				guest.favorites=Integer.parseInt(fav);
 			}
-			
-			String ord= ordereds.get(i).getAttribute("class");
+
+			String ord= ordereds.get(i).getText();
 			if(ord.equalsIgnoreCase("...")){
 				guest.ordered=0;
 			}
 			else{
 				guest.ordered=Integer.parseInt(fav);
 			}
-			
+
 			String act= actives.get(i).getAttribute("class");
 			if(act.equalsIgnoreCase("fa fa-circle active")){
 				guest.active=true;
@@ -70,14 +70,14 @@ public class VSGuest {
 			else{
 				guest.active=false;
 			}
-			
+
 			//////////
 			resultList.add(guest);
 		}
 		return resultList;
-	} 
-	
-	
+	}
+
+
 
 	class nameSort implements Comparator<VSGuest>{
 		public int compare(VSGuest g1, VSGuest g2){
@@ -96,6 +96,6 @@ public class VSGuest {
 			return g1.ordered-g2.ordered;
 		}
 	}
-	
-	
+
+
 }

@@ -44,6 +44,9 @@ WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '
         , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
         , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
 
+/*WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.navigateToUrl('https://sandbox.cliotest.com/backoffice/control/VSStylistDashboard?showId=104652101&consultantPartyId=100000042')*/
 /***********list update: yes, noreply********/
 VSGuest hostessObj= new VSGuest(hostess)
 VSGuest cohostessObj= new VSGuest(cohostess)
@@ -59,11 +62,8 @@ noreplyList.add(guest2Obj);
 WebDriver driver = DriverFactory.getWebDriver()
 JavascriptExecutor executor = (JavascriptExecutor)driver;
 
-/*WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
-WebUI.navigateToUrl('https://test21.cliotest.com/backoffice/control/VSStylistDashboard?showId=104602773&consultantPartyId=100000042')
-*/
+
+
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_dashboard'))
 
 WebUI.delay(5)
@@ -107,9 +107,11 @@ WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
-//GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104602773/"
-WebUI.navigateToUrl(GlobalVariable.micrositeURL)
+//GlobalVariable.micrositeURL="https://mirandakate.cabisandbox.com/show-microsite/104652101/"
+//WebUI.navigateToUrl(GlobalVariable.micrositeURL)
+WebUI.navigateToUrl("https://mirandakate.cabitest5.com/?component=account.login-gateway")
 
+/*******************************guest login on microsite****************************/
 'Login with the invited guest'
 WebElement enterMail = driver.findElement(By.xpath("//div[@class='form-field']/custom-input/div/input[@name='email']"));
 executor.executeScript("arguments[0].click();", enterMail);
@@ -125,8 +127,13 @@ if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPO
 
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
-List<WebElement> listElement1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'), 5)
 
+List<WebElement> userLogin = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/i_user_login'), 5)
+if(userLogin.size()==0){
+	WebUI.refresh();
+}
+
+List<WebElement> listElement1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'), 5)
 'Validating invited guest\'s \'Yes\' RSVP\r\n'
 if (listElement1.empty) {
 	println('RSVP is not updated')
@@ -167,8 +174,9 @@ List<WebElement> ordereds = WebUiCommonHelper.findWebElements(findTestObject('Ob
 actualGuestList= VSGuest.createActualGuestList(names, micStatuss, webcamStatuss, favoritess, ordereds, actives);
 
 for(VSGuest vsg: actualGuestList){
-	println UtilityMethods.concat(vsg.micStatus, "_", vsg.webcamStatus, "_", vsg.active, "_", vsg.name, "_", vsg.favorites, "_", vsg.ordered);SS
+	println UtilityMethods.concat(vsg.micStatus.toString(), "_", vsg.webcamStatus.toString(), "_", vsg.active.toString(), "_", vsg.name, "_", vsg.favorites.toString(), "_", vsg.ordered.toString());
 }
+
 
 
 

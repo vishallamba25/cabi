@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>6e1ae002-03ea-4704-a0cb-567eb02cf6e3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NewArrival/productVerify</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -31,7 +31,7 @@
    <testCaseLink>
       <guid>ecf808f0-e73b-4340-82d4-c7f556c8528a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NewArrival/NewArrivals</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -82,8 +82,13 @@
    <testCaseLink>
       <guid>5031ef34-9ea1-4d1d-9ab5-f449c35978d5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+<<<<<<< HEAD
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NewArrival/newArrivalsSetTimezone</testCaseId>
+=======
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/NewArrival/setTimezone</testCaseId>
+>>>>>>> 9065244ac13450ebfce5e098cfbd1cf538b0d153
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -124,7 +129,7 @@
    <testCaseLink>
       <guid>2fac2bd6-df2c-4f46-865b-c9e71bffaf14</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NewArrival/createContact</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -232,7 +237,7 @@
    <testCaseLink>
       <guid>31426064-c87d-43a5-a58c-03d4961a120a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NewArrival/warehouseShipping</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

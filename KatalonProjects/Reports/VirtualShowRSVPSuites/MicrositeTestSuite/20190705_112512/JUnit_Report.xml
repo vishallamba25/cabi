@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="MicrositeTestSuite" time="394" tests="2" failures="0" errors="0">
+   <testsuite name="MicrositeTestSuite" tests="2" failures="0" errors="0" time="394" timestamp="2019-07-05 11:25:17" hostname="user - 10.0.102.159" id="Test Suites/VirtualShowRSVPSuites/MicrositeTestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowRSVPSuites\\MicrositeTestSuite\\20190705_112512"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowRSVPSuites\\MicrositeTestSuite\\20190705_112512\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 10.0.102.159"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 75.0.3770.100"/>
+         <property name="hostAddress" value="10.0.102.159"/>
+         <property name="sessionId" value="6ee8f8f2c1313546decf52f2ea3e603f"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/virtualShowRSVP/createShow" classname="Test Cases/virtualShowRSVP/createShow" status="PASSED">
+         <system-out><![CDATA[2019-07-05 11:25:17 - [TEST_CASE][PASSED] - Test Cases/virtualShowRSVP/createShow: Test Cases/virtualShowRSVP/createShow
+
+2019-07-05 11:25:18 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-07-05 11:25:18 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-07-05 11:25:18 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-07-05 11:25:19 - [TEST_STEP][PASSED] - dataFile = "virtualShowData": null
+
+2019-07-05 11:25:19 - [TEST_STEP][PASSED] - stylist = findTestData(dataFile).getValue("stylist", 1): null
+
+2019-07-05 11:25:20 - [TEST_STEP][PASSED] - hostess = findTestData(dataFile).getValue("hostess", 1): null
+
+2019-07-05 11:25:20 - [TEST_STEP][PASSED] - cohostess = findTestData(dataFile).getValue("cohostess", 1): null
+
+2019-07-05 11:25:20 - [TEST_STEP][PASSED] - guest1 = findTestData(dataFile).getValue("guest1", 1): null
+
+2019-07-05 11:25:21 - [TEST_STEP][PASSED] - guest2 = findTestData(dataFile).getValue("guest2", 1): null
+
+2019-07-05 11:25:21 - [TEST_STEP][PASSED] - verifyGuestCount = findTestData(dataFile).getValue("verifyGuestCount", 1): null
+
+2019-07-05 11:25:21 - [TEST_STEP][PASSED] - RSTestEnvt = findTestData("envtData").getValue("RSTestEnvt", 1): null
+
+2019-07-05 11:25:21 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-07-05 11:25:21 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-07-05 11:25:21 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-07-05 11:25:21 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-07-05 11:25:25 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-07-05 11:25:25 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-07-05 11:25:26 - [MESSAGE][PASSED] - Current window maximized
+
+2019-07-05 11:25:26 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-07-05 11:25:26 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-07-05 11:25:27 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-07-05 11:25:27 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-07-05 11:25:27 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-07-05 11:25:27 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://sandbox.cabiclio.com/backoffice/control/main' successfully
+
+2019-07-05 11:25:36 - [MESSAGE][PASSED] - Navigate to 'https://sandbox.cabiclio.com/backoffice/control/main' successfully
+
+2019-07-05 11:25:36 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-07-05 11:25:37 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-07-05 11:25:37 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-07-05 11:25:37 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-07-05 11:25:37 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-07-05 11:25:37 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-07-05 11:25:37 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-07-05 11:25:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-07-05 11:25:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-07-05 11:25:46 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-05 11:25:49 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-05 11:25:49 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-07-05 11:25:49 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi/span_username"), stylist): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-07-05 11:25:50 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-07-05 11:25:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-07-05 11:25:50 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-07-05 11:25:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-07-05 11:25:53 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-07-05 11:25:53 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), hostess): Text 'sushanthost abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-07-05 11:25:53 - [MESSAGE][PASSED] - Text 'sushanthost abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-07-05 11:25:53 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:25:55 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:25:55 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-07-05 11:25:55 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-07-05 11:25:55 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-07-05 11:25:55 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-07-05 11:25:55 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:25:57 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:25:57 - [TEST_STEP][PASSED] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5): null
+
+2019-07-05 11:25:57 - [TEST_STEP][PASSED] - println(validateHostessAddressMsg.size()): null
+
+2019-07-05 11:25:57 - [TEST_STEP][PASSED] - if (validateHostessAddressMsg.isEmpty()): null
+
+2019-07-05 11:25:57 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess"), "3", true): All options with value '3' are selected in object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-07-05 11:25:58 - [MESSAGE][PASSED] - All options with value '3' are selected in object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-07-05 11:25:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), cohostess): Text 'sushantcohost abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-07-05 11:25:58 - [MESSAGE][PASSED] - Text 'sushantcohost abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-07-05 11:25:58 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:26:00 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:26:00 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-07-05 11:26:00 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-07-05 11:26:00 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-07-05 11:26:00 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-07-05 11:26:00 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-05 11:26:03 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-05 11:26:03 - [TEST_STEP][PASSED] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5): null
+
+2019-07-05 11:26:04 - [TEST_STEP][PASSED] - if (validateHostessAddressMsg.size() != 4): null
+
+2019-07-05 11:26:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-07-05 11:26:06 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-07-05 11:26:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show' is clicked on
+
+2019-07-05 11:26:06 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show' is clicked on
+
+2019-07-05 11:26:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time' is clicked on
+
+2019-07-05 11:26:06 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time' is clicked on
+
+2019-07-05 11:26:06 - [TEST_STEP][PASSED] - year = findTestData("virtualShowData").getValue("vsyear", 1): null
+
+2019-07-05 11:26:06 - [TEST_STEP][PASSED] - month = findTestData("virtualShowData").getValue("vsmonth", 1): null
+
+2019-07-05 11:26:06 - [TEST_STEP][PASSED] - day = findTestData("virtualShowData").getValue("vsday", 1): null
+
+2019-07-05 11:26:06 - [TEST_STEP][PASSED] - xpath = UtilityMethods.concat("//td[@data-month='" + month - 1 + "' and @data-year='" + year + "']/a[contains(text(), '" + day + "')]"): null
+
+2019-07-05 11:26:07 - [TEST_STEP][PASSED] - dateObj = new com.kms.katalon.core.testobject.TestObject(td_month_year_day): null
+
+2019-07-05 11:26:07 - [TEST_STEP][PASSED] - dateObj.addProperty("xpath", EQUALS, xpath): null
+
+2019-07-05 11:26:07 - [TEST_STEP][PASSED] - monthBound = 12: null
+
+2019-07-05 11:26:07 - [TEST_STEP][PASSED] - dateObjList = findWebElements(dateObj, 5): null
+
+2019-07-05 11:26:07 - [TEST_STEP][PASSED] - while (dateObjList.size() == 0 && monthBound > 0): null
+
+2019-07-05 11:26:07 - [TEST_STEP][PASSED] - click(dateObj): Object: 'td_month_year_day' is clicked on
+
+2019-07-05 11:26:07 - [MESSAGE][PASSED] - Object: 'td_month_year_day' is clicked on
+
+2019-07-05 11:26:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time' is clicked on
+
+2019-07-05 11:26:07 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time' is clicked on
+
+2019-07-05 11:26:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next' is clicked on
+
+2019-07-05 11:26:07 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next' is clicked on
+
+2019-07-05 11:26:07 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:26:12 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:26:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite' is clicked on
+
+2019-07-05 11:26:15 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite' is clicked on
+
+2019-07-05 11:26:15 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), guest1): Text 'sushantguest1 abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:26:15 - [MESSAGE][PASSED] - Text 'sushantguest1 abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:26:15 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:26:17 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:26:17 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:26:17 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:26:17 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:26:17 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:26:17 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:26:19 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:26:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-07-05 11:26:20 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-07-05 11:26:20 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:26:25 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:26:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), guest2): Text 'sushantguest2 abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:26:25 - [MESSAGE][PASSED] - Text 'sushantguest2 abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:26:25 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:26:27 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:26:27 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:26:27 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:26:27 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:26:27 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-07-05 11:26:27 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:26:29 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:26:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-07-05 11:26:30 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-07-05 11:26:30 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-05 11:26:32 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - verifyHostess = UtilityMethods.splitPersonName(hostess): null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - verifyCohostess = UtilityMethods.splitPersonName(cohostess): null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - verifyGuest1 = UtilityMethods.splitPersonName(guest1): null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - verifyGuest2 = UtilityMethods.splitPersonName(guest2): null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name"), UtilityMethods.concat(verifyHostess[1], ", ", verifyHostess[0])): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are matched.
+
+2019-07-05 11:26:32 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are matched.
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name"), UtilityMethods.concat(verifyCohostess[1], ", ", verifyCohostess[0])): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name' are matched.
+
+2019-07-05 11:26:32 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name' are matched.
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - listElement = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_guest_name_list"), 5): null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - guestCount = Integer.parseInt(verifyGuestCount): null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - assert listElement.size() == guestCount: null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - for ([i = 0, i < guestCount, (i++)]): null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest1[1], ", ", verifyGuest1[0]))): null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - flag = true: null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest2[1], ", ", verifyGuest2[0]))): null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest1[1], ", ", verifyGuest1[0]))): null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest2[1], ", ", verifyGuest2[0]))): null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - flag = true: null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - assert flag == true: null
+
+2019-07-05 11:26:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next' is clicked on
+
+2019-07-05 11:26:34 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next' is clicked on
+
+2019-07-05 11:26:34 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:26:39 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:26:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview' is clicked on
+
+2019-07-05 11:26:41 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview' is clicked on
+
+2019-07-05 11:26:41 - [TEST_STEP][PASSED] - showID = getText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text")): Text of object 'Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text' is: 'Show #: 104611092'
+
+2019-07-05 11:26:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text' is: 'Show #: 104611092'
+
+2019-07-05 11:26:41 - [TEST_STEP][PASSED] - rightClick(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/a_Account")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_Account' is right clicked on
+
+2019-07-05 11:26:42 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_Account' is right clicked on
+
+2019-07-05 11:26:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile' is clicked on
+
+2019-07-05 11:26:43 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile' is clicked on
+
+2019-07-05 11:26:43 - [TEST_STEP][PASSED] - rsName = getText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName")): Text of object 'Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName' is: 'MirandaKate'
+
+2019-07-05 11:26:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName' is: 'MirandaKate'
+
+2019-07-05 11:26:43 - [TEST_STEP][PASSED] - micrositeURL = UtilityMethods.createURL(rsName, RSTestEnvt, showID): null
+
+2019-07-05 11:26:44 - [TEST_STEP][PASSED] - println(micrositeURL): null
+
+2019-07-05 11:26:44 - [TEST_STEP][PASSED] - back(): Navigate back successfully
+
+2019-07-05 11:26:45 - [MESSAGE][PASSED] - Navigate back successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/virtualShowRSVP/micrositeRSVPValidUser" classname="Test Cases/virtualShowRSVP/micrositeRSVPValidUser" status="PASSED">
+         <system-out><![CDATA[2019-07-05 11:26:45 - [TEST_CASE][PASSED] - Test Cases/virtualShowRSVP/micrositeRSVPValidUser: Test Cases/virtualShowRSVP/micrositeRSVPValidUser
+
+2019-07-05 11:26:45 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-07-05 11:26:45 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-07-05 11:26:45 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-07-05 11:26:46 - [TEST_STEP][PASSED] - dataFile = "micrositeData": null
+
+2019-07-05 11:26:46 - [TEST_STEP][PASSED] - hostessMail = findTestData(dataFile).getValue("hostessMail", 1): null
+
+2019-07-05 11:26:46 - [TEST_STEP][PASSED] - hostessPass = findTestData(dataFile).getValue("hostessPass", 1): null
+
+2019-07-05 11:26:46 - [TEST_STEP][PASSED] - cohostessMail = findTestData(dataFile).getValue("cohostessMail", 1): null
+
+2019-07-05 11:26:46 - [TEST_STEP][PASSED] - cohostessPass = findTestData(dataFile).getValue("cohostessPass", 1): null
+
+2019-07-05 11:26:46 - [TEST_STEP][PASSED] - guest1Mail = findTestData(dataFile).getValue("guest1Mail", 1): null
+
+2019-07-05 11:26:46 - [TEST_STEP][PASSED] - guest1Pass = findTestData(dataFile).getValue("guest1Pass", 1): null
+
+2019-07-05 11:26:46 - [TEST_STEP][PASSED] - guestUninvitedMail = findTestData(dataFile).getValue("guestUninvitedMail", 1): null
+
+2019-07-05 11:26:46 - [TEST_STEP][PASSED] - guestUninvitedPass = findTestData(dataFile).getValue("guestUninvitedPass", 1): null
+
+2019-07-05 11:26:46 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-07-05 11:26:46 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-07-05 11:26:47 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-07-05 11:26:47 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-07-05 11:26:49 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-07-05 11:26:49 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-07-05 11:26:50 - [MESSAGE][PASSED] - Current window maximized
+
+2019-07-05 11:26:50 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/setVHost"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/setVHost' successfully
+
+2019-07-05 11:26:50 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/setVHost: Test Cases/TestCaseUtilities/setVHost
+
+2019-07-05 11:26:50 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-07-05 11:26:50 - [TEST_STEP][PASSED] - ofbizUser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-07-05 11:26:50 - [TEST_STEP][PASSED] - ofbizPass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-07-05 11:26:50 - [TEST_STEP][PASSED] - vhostTarget = findTestData("envtData").getValue("vhostTarget", 1): null
+
+2019-07-05 11:26:50 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-07-05 11:26:52 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-07-05 11:26:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Username_username"), ofbizUser): Text 'automation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Username_username'
+
+2019-07-05 11:26:52 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Username_username'
+
+2019-07-05 11:26:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Password_password"), ofbizPass): Text 'cabiautomation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Password_password'
+
+2019-07-05 11:26:53 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Password_password'
+
+2019-07-05 11:26:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Password_Submit")): Object: 'Object Repository/virualShowRSVPOR/Page_/input_Password_Submit' is clicked on
+
+2019-07-05 11:26:57 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/input_Password_Submit' is clicked on
+
+2019-07-05 11:26:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/a_Set Vhost")): Object: 'Object Repository/virualShowRSVPOR/Page_/a_Set Vhost' is clicked on
+
+2019-07-05 11:26:57 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/a_Set Vhost' is clicked on
+
+2019-07-05 11:26:57 - [TEST_STEP][PASSED] - click(UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", vhostTarget, "')]")): Object: 'select_target' is clicked on
+
+2019-07-05 11:26:58 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-07-05 11:26:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/input")): Object: 'Object Repository/virualShowRSVPOR/Page_/input' is clicked on
+
+2019-07-05 11:27:00 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/input' is clicked on
+
+2019-07-05 11:27:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/setVHost' successfully
+
+2019-07-05 11:27:00 - [TEST_STEP][PASSED] - navigateToUrl(micrositeURL): Navigate to 'https://mirandakate.cabisandbox.com/show-microsite/104611092/' successfully
+
+2019-07-05 11:27:20 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabisandbox.com/show-microsite/104611092/' successfully
+
+2019-07-05 11:27:20 - [TEST_STEP][PASSED] - delay(12): Delayed 12 second(s)
+
+2019-07-05 11:27:32 - [MESSAGE][PASSED] - Delayed 12 second(s)
+
+2019-07-05 11:27:32 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited"), "You're invited to Front Row"): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited' are matched.
+
+2019-07-05 11:27:32 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited' are matched.
+
+2019-07-05 11:27:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP' is clicked on
+
+2019-07-05 11:27:32 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP' is clicked on
+
+2019-07-05 11:27:32 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email"), guest1Mail): Text 'sushantguest1@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-07-05 11:27:36 - [MESSAGE][PASSED] - Text 'sushantguest1@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-07-05 11:27:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:27:36 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:27:36 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:27:41 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:27:41 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password"), guest1Pass): Text 'blackdress19' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'
+
+2019-07-05 11:27:42 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'
+
+2019-07-05 11:27:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:27:42 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:27:42 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:27:47 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:27:47 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later"), 0)): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-07-05 11:27:47 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-07-05 11:27:47 - [MESSAGE][PASSED] - Object 'Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later' is present
+
+2019-07-05 11:27:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-07-05 11:27:57 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-07-05 11:27:57 - [TEST_STEP][PASSED] - listElement = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP"), 5): Unable to find the element located by 'By.xpath: //*[contains(text(), 'Update your RSVP')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-07-05 11:28:03 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(), 'Update your RSVP')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-07-05 11:28:03 - [TEST_STEP][PASSED] - if (empty): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Were so glad you can make it.' are matched.
+
+2019-07-05 11:28:03 - [TEST_STEP][PASSED] - println("list is empty"): null
+
+2019-07-05 11:28:03 - [TEST_STEP][PASSED] - println("RSVP is not updated"): null
+
+2019-07-05 11:28:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_RSVP")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_RSVP' is clicked on
+
+2019-07-05 11:28:03 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_RSVP' is clicked on
+
+2019-07-05 11:28:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_yes")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_yes' is clicked on
+
+2019-07-05 11:28:04 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_yes' is clicked on
+
+2019-07-05 11:28:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND' is clicked on
+
+2019-07-05 11:28:04 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND' is clicked on
+
+2019-07-05 11:28:04 - [TEST_STEP][PASSED] - delay(4): Delayed 4 second(s)
+
+2019-07-05 11:28:08 - [MESSAGE][PASSED] - Delayed 4 second(s)
+
+2019-07-05 11:28:08 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Were so glad you can make it."), "We're so glad you can make it."): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Were so glad you can make it.' are matched.
+
+2019-07-05 11:28:08 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Were so glad you can make it.' are matched.
+
+2019-07-05 11:28:08 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:28:13 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:28:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP' is clicked on
+
+2019-07-05 11:28:13 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP' is clicked on
+
+2019-07-05 11:28:13 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:28:18 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:28:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_maybe")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_maybe' is clicked on
+
+2019-07-05 11:28:18 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_maybe' is clicked on
+
+2019-07-05 11:28:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_no")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_no' is clicked on
+
+2019-07-05 11:28:18 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_no' is clicked on
+
+2019-07-05 11:28:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_maybe")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_maybe' is clicked on
+
+2019-07-05 11:28:18 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_maybe' is clicked on
+
+2019-07-05 11:28:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND' is clicked on
+
+2019-07-05 11:28:19 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND' is clicked on
+
+2019-07-05 11:28:19 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:28:24 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:28:24 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/h2_We hope youll be able to attend."), "We hope you'll be able to attend."): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h2_We hope youll be able to attend.' are matched.
+
+2019-07-05 11:28:24 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h2_We hope youll be able to attend.' are matched.
+
+2019-07-05 11:28:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP' is clicked on
+
+2019-07-05 11:28:24 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP' is clicked on
+
+2019-07-05 11:28:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_no")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_no' is clicked on
+
+2019-07-05 11:28:24 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_no' is clicked on
+
+2019-07-05 11:28:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND' is clicked on
+
+2019-07-05 11:28:24 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND' is clicked on
+
+2019-07-05 11:28:24 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:28:29 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:28:29 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Sorry you cant make it."), "Sorry you can't make it."): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Sorry you cant make it.' are matched.
+
+2019-07-05 11:28:29 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Sorry you cant make it.' are matched.
+
+2019-07-05 11:28:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP' is clicked on
+
+2019-07-05 11:28:29 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP' is clicked on
+
+2019-07-05 11:28:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_yes")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_yes' is clicked on
+
+2019-07-05 11:28:29 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_yes' is clicked on
+
+2019-07-05 11:28:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND' is clicked on
+
+2019-07-05 11:28:30 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND' is clicked on
+
+2019-07-05 11:28:30 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:28:35 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:28:35 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Were so glad you can make it."), "We're so glad you can make it."): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Were so glad you can make it.' are matched.
+
+2019-07-05 11:28:35 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Were so glad you can make it.' are matched.
+
+2019-07-05 11:28:35 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:28:40 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:28:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown' is clicked on
+
+2019-07-05 11:28:40 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown' is clicked on
+
+2019-07-05 11:28:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out' is clicked on
+
+2019-07-05 11:28:40 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out' is clicked on
+
+2019-07-05 11:28:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out' is clicked on
+
+2019-07-05 11:28:40 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out' is clicked on
+
+2019-07-05 11:28:40 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:28:45 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:28:45 - [TEST_STEP][PASSED] - navigateToUrl(micrositeURL): Navigate to 'https://mirandakate.cabisandbox.com/show-microsite/104611092/' successfully
+
+2019-07-05 11:29:05 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabisandbox.com/show-microsite/104611092/' successfully
+
+2019-07-05 11:29:05 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:29:10 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:29:10 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited"), "You're invited to Front Row"): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited' are matched.
+
+2019-07-05 11:29:10 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited' are matched.
+
+2019-07-05 11:29:10 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:29:15 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:29:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP' is clicked on
+
+2019-07-05 11:29:16 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP' is clicked on
+
+2019-07-05 11:29:16 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email"), guestUninvitedMail): Text 'michigan@na.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-07-05 11:29:19 - [MESSAGE][PASSED] - Text 'michigan@na.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-07-05 11:29:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:29:19 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:29:19 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password"), guestUninvitedPass): Text 'blackdress19' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'
+
+2019-07-05 11:29:20 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'
+
+2019-07-05 11:29:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:29:20 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:29:20 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:29:25 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:29:25 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later"), 0)): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-07-05 11:29:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-07-05 11:29:25 - [MESSAGE][PASSED] - Object 'Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later' is present
+
+2019-07-05 11:29:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-07-05 11:29:35 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-07-05 11:29:35 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:29:40 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:29:40 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/uninvited_user_msg"), "Your name doesn't seem to be on the guest list. Contact your Hostess or Stylist for more information."): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/uninvited_user_msg' are matched.
+
+2019-07-05 11:29:40 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/uninvited_user_msg' are matched.
+
+2019-07-05 11:29:40 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:29:45 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:29:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown' is clicked on
+
+2019-07-05 11:29:45 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown' is clicked on
+
+2019-07-05 11:29:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out' is clicked on
+
+2019-07-05 11:29:45 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out' is clicked on
+
+2019-07-05 11:29:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out' is clicked on
+
+2019-07-05 11:29:46 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out' is clicked on
+
+2019-07-05 11:29:46 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:29:51 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:29:51 - [TEST_STEP][PASSED] - navigateToUrl(micrositeURL): Navigate to 'https://mirandakate.cabisandbox.com/show-microsite/104611092/' successfully
+
+2019-07-05 11:30:08 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabisandbox.com/show-microsite/104611092/' successfully
+
+2019-07-05 11:30:08 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:30:13 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:30:13 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited"), "You're invited to Front Row"): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited' are matched.
+
+2019-07-05 11:30:13 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited' are matched.
+
+2019-07-05 11:30:13 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:30:18 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:30:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP' is clicked on
+
+2019-07-05 11:30:18 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP' is clicked on
+
+2019-07-05 11:30:18 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email"), hostessMail): Text 'sushanthost@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-07-05 11:30:21 - [MESSAGE][PASSED] - Text 'sushanthost@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-07-05 11:30:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:30:21 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:30:21 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password"), hostessPass): Text 'blackdress19' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'
+
+2019-07-05 11:30:22 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'
+
+2019-07-05 11:30:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:30:23 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:30:23 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:30:28 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:30:28 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later"), 0)): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-07-05 11:30:28 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-07-05 11:30:28 - [MESSAGE][PASSED] - Object 'Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later' is present
+
+2019-07-05 11:30:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-07-05 11:30:37 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-07-05 11:30:37 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:30:42 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:30:42 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("virualShowRSVPOR/Page_Show microsite/h2_Thanks for hosting"), "Thanks for hosting."): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Thanks for hosting' are matched.
+
+2019-07-05 11:30:43 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Thanks for hosting' are matched.
+
+2019-07-05 11:30:43 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:30:48 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:30:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown' is clicked on
+
+2019-07-05 11:30:48 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown' is clicked on
+
+2019-07-05 11:30:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out' is clicked on
+
+2019-07-05 11:30:48 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out' is clicked on
+
+2019-07-05 11:30:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out' is clicked on
+
+2019-07-05 11:30:48 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out' is clicked on
+
+2019-07-05 11:30:48 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:30:53 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:30:53 - [TEST_STEP][PASSED] - navigateToUrl(micrositeURL): Navigate to 'https://mirandakate.cabisandbox.com/show-microsite/104611092/' successfully
+
+2019-07-05 11:31:14 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabisandbox.com/show-microsite/104611092/' successfully
+
+2019-07-05 11:31:14 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:31:19 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:31:19 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited"), "You're invited to Front Row"): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited' are matched.
+
+2019-07-05 11:31:19 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited' are matched.
+
+2019-07-05 11:31:19 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:31:24 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:31:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP' is clicked on
+
+2019-07-05 11:31:24 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP' is clicked on
+
+2019-07-05 11:31:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email"), cohostessMail): Text 'sushantcohost@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-07-05 11:31:28 - [MESSAGE][PASSED] - Text 'sushantcohost@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-07-05 11:31:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:31:28 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:31:28 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password"), cohostessPass): Text 'blackdress19' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'
+
+2019-07-05 11:31:29 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'
+
+2019-07-05 11:31:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:31:30 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-07-05 11:31:30 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later"), 5)): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-07-05 11:31:31 - [MESSAGE][PASSED] - Object 'Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later' is present
+
+2019-07-05 11:31:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-07-05 11:31:40 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-07-05 11:31:40 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:31:45 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:31:45 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("virualShowRSVPOR/Page_Show microsite/h2_Thanks for hosting"), "Thanks for hosting."): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Thanks for hosting' are matched.
+
+2019-07-05 11:31:45 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Thanks for hosting' are matched.
+
+2019-07-05 11:31:45 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-05 11:31:50 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-05 11:31:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown' is clicked on
+
+2019-07-05 11:31:51 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown' is clicked on
+
+2019-07-05 11:31:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out' is clicked on
+
+2019-07-05 11:31:51 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out' is clicked on
+
+2019-07-05 11:31:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out' is clicked on
+
+2019-07-05 11:31:51 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out' is clicked on
+
+2019-07-05 11:31:51 - [TEST_STEP][NOT_RUN] - click(findTestObject("virualShowRSVPOR/Page_Show microsite/signOut")): NOT_RUN: click(findTestObject("virualShowRSVPOR/Page_Show microsite/signOut"))
+
+2019-07-05 11:31:51 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("virualShowRSVPOR/Page_Show microsite/signOut"))
+
+2019-07-05 11:31:51 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-07-05 11:31:52 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-07-05 11:25:17 - [TEST_SUITE][PASSED] - MicrositeTestSuite: Test Cases/virtualShowRSVP/micrositeRSVPValidUser]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

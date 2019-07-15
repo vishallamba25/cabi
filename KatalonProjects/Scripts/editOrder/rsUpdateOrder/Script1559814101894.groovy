@@ -69,7 +69,7 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_pay_with_cred
 /////////////////////////////
 WebUI.delay(2)
 
-String RSURL = findTestData('credData').getValue('RSURL', 1)
+String RSURL = findTestData('envtData').getValue('RSURL', 1)
 String cartURL= UtilityMethods.concat(RSURL, "/cart/")
 WebUI.navigateToUrl(cartURL)
 

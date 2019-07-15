@@ -1,0 +1,195 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+MicrositeTestSuite,Chrome 75.0.3770.100,,2019-07-05 11:25:17,2019-07-05 11:31:52,6m - 34.767s,PASSED
+,,,,,,
+Test Cases/virtualShowRSVP/createShow,Chrome 75.0.3770.100,,2019-07-05 11:25:17,2019-07-05 11:26:45,1m - 27.402s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-07-05 11:25:18,2019-07-05 11:25:18,0.118s,PASSED
+"dataFile = ""virtualShowData""",Chrome 75.0.3770.100,,2019-07-05 11:25:19,2019-07-05 11:25:19,0.003s,PASSED
+"stylist = findTestData(dataFile).getValue(""stylist"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:25:19,2019-07-05 11:25:20,1.696s,PASSED
+"hostess = findTestData(dataFile).getValue(""hostess"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:25:20,2019-07-05 11:25:20,0.084s,PASSED
+"cohostess = findTestData(dataFile).getValue(""cohostess"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:25:20,2019-07-05 11:25:20,0.110s,PASSED
+"guest1 = findTestData(dataFile).getValue(""guest1"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:25:20,2019-07-05 11:25:21,0.071s,PASSED
+"guest2 = findTestData(dataFile).getValue(""guest2"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:25:21,2019-07-05 11:25:21,0.116s,PASSED
+"verifyGuestCount = findTestData(dataFile).getValue(""verifyGuestCount"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:25:21,2019-07-05 11:25:21,0.144s,PASSED
+"RSTestEnvt = findTestData(""envtData"").getValue(""RSTestEnvt"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:25:21,2019-07-05 11:25:21,0.069s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,2019-07-05 11:25:21,2019-07-05 11:25:25,4.393s,PASSED
+maximizeWindow(),Chrome 75.0.3770.100,,2019-07-05 11:25:25,2019-07-05 11:25:26,1.063s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/backOfficeLogin""), [""BOURL"":"""", ""BOuser"":"""", ""BOpass"":""""], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-07-05 11:25:26,2019-07-05 11:25:49,23.152s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi/span_username""), stylist)",Chrome 75.0.3770.100,,2019-07-05 11:25:49,2019-07-05 11:25:50,0.102s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders""))",Chrome 75.0.3770.100,,2019-07-05 11:25:50,2019-07-05 11:25:50,0.131s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show""))",Chrome 75.0.3770.100,,2019-07-05 11:25:50,2019-07-05 11:25:53,3.064s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess""), hostess)",Chrome 75.0.3770.100,,2019-07-05 11:25:53,2019-07-05 11:25:53,0.407s,PASSED
+delay(2),Chrome 75.0.3770.100,,2019-07-05 11:25:53,2019-07-05 11:25:55,2.004s,PASSED
+"sendKeys(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess""), Keys.chord(ARROW_DOWN))",Chrome 75.0.3770.100,,2019-07-05 11:25:55,2019-07-05 11:25:55,0.101s,PASSED
+"sendKeys(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess""), Keys.chord(ENTER))",Chrome 75.0.3770.100,,2019-07-05 11:25:55,2019-07-05 11:25:55,0.102s,PASSED
+delay(2),Chrome 75.0.3770.100,,2019-07-05 11:25:55,2019-07-05 11:25:57,2.005s,PASSED
+"validateHostessAddressMsg = findWebElements(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg""), 5)",Chrome 75.0.3770.100,,2019-07-05 11:25:57,2019-07-05 11:25:57,0.044s,PASSED
+println(validateHostessAddressMsg.size()),Chrome 75.0.3770.100,,2019-07-05 11:25:57,2019-07-05 11:25:57,0.004s,PASSED
+if (validateHostessAddressMsg.isEmpty()),Chrome 75.0.3770.100,,2019-07-05 11:25:57,2019-07-05 11:25:57,0.001s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess""), ""3"", true)",Chrome 75.0.3770.100,,2019-07-05 11:25:57,2019-07-05 11:25:58,0.328s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess""), cohostess)",Chrome 75.0.3770.100,,2019-07-05 11:25:58,2019-07-05 11:25:58,0.439s,PASSED
+delay(2),Chrome 75.0.3770.100,,2019-07-05 11:25:58,2019-07-05 11:26:00,2.004s,PASSED
+"sendKeys(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess""), Keys.chord(ARROW_DOWN))",Chrome 75.0.3770.100,,2019-07-05 11:26:00,2019-07-05 11:26:00,0.111s,PASSED
+"sendKeys(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess""), Keys.chord(ENTER))",Chrome 75.0.3770.100,,2019-07-05 11:26:00,2019-07-05 11:26:00,0.103s,PASSED
+delay(3),Chrome 75.0.3770.100,,2019-07-05 11:26:00,2019-07-05 11:26:03,3.007s,PASSED
+"validateHostessAddressMsg = findWebElements(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg""), 5)",Chrome 75.0.3770.100,,2019-07-05 11:26:03,2019-07-05 11:26:04,0.039s,PASSED
+if (validateHostessAddressMsg.size() != 4),Chrome 75.0.3770.100,,2019-07-05 11:26:04,2019-07-05 11:26:04,0.001s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next""))",Chrome 75.0.3770.100,,2019-07-05 11:26:04,2019-07-05 11:26:06,2.488s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show""))",Chrome 75.0.3770.100,,2019-07-05 11:26:06,2019-07-05 11:26:06,0.136s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time""))",Chrome 75.0.3770.100,,2019-07-05 11:26:06,2019-07-05 11:26:06,0.176s,PASSED
+"year = findTestData(""virtualShowData"").getValue(""vsyear"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:26:06,2019-07-05 11:26:06,0.058s,PASSED
+"month = findTestData(""virtualShowData"").getValue(""vsmonth"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:26:06,2019-07-05 11:26:06,0.053s,PASSED
+"day = findTestData(""virtualShowData"").getValue(""vsday"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:26:06,2019-07-05 11:26:06,0.061s,PASSED
+"xpath = UtilityMethods.concat(""//td[@data-month='"" + month - 1 + ""' and @data-year='"" + year + ""']/a[contains(text(), '"" + day + ""')]"")",Chrome 75.0.3770.100,,2019-07-05 11:26:06,2019-07-05 11:26:06,0.020s,PASSED
+dateObj = new com.kms.katalon.core.testobject.TestObject(td_month_year_day),Chrome 75.0.3770.100,,2019-07-05 11:26:07,2019-07-05 11:26:07,0.006s,PASSED
+"dateObj.addProperty(""xpath"", EQUALS, xpath)",Chrome 75.0.3770.100,,2019-07-05 11:26:07,2019-07-05 11:26:07,0.011s,PASSED
+monthBound = 12,Chrome 75.0.3770.100,,2019-07-05 11:26:07,2019-07-05 11:26:07,0.001s,PASSED
+"dateObjList = findWebElements(dateObj, 5)",Chrome 75.0.3770.100,,2019-07-05 11:26:07,2019-07-05 11:26:07,0.038s,PASSED
+while (dateObjList.size() == 0 && monthBound > 0),Chrome 75.0.3770.100,,2019-07-05 11:26:07,2019-07-05 11:26:07,0.001s,PASSED
+click(dateObj),Chrome 75.0.3770.100,,2019-07-05 11:26:07,2019-07-05 11:26:07,0.114s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time""))",Chrome 75.0.3770.100,,2019-07-05 11:26:07,2019-07-05 11:26:07,0.434s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next""))",Chrome 75.0.3770.100,,2019-07-05 11:26:07,2019-07-05 11:26:07,0.329s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:26:07,2019-07-05 11:26:12,5.009s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite""))",Chrome 75.0.3770.100,,2019-07-05 11:26:12,2019-07-05 11:26:15,2.161s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box""), guest1)",Chrome 75.0.3770.100,,2019-07-05 11:26:15,2019-07-05 11:26:15,0.596s,PASSED
+delay(2),Chrome 75.0.3770.100,,2019-07-05 11:26:15,2019-07-05 11:26:17,2.006s,PASSED
+"sendKeys(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box""), Keys.chord(ARROW_DOWN))",Chrome 75.0.3770.100,,2019-07-05 11:26:17,2019-07-05 11:26:17,0.098s,PASSED
+"sendKeys(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box""), Keys.chord(ENTER))",Chrome 75.0.3770.100,,2019-07-05 11:26:17,2019-07-05 11:26:17,0.066s,PASSED
+delay(2),Chrome 75.0.3770.100,,2019-07-05 11:26:17,2019-07-05 11:26:19,2.003s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest""))",Chrome 75.0.3770.100,,2019-07-05 11:26:19,2019-07-05 11:26:20,0.492s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:26:20,2019-07-05 11:26:25,5.002s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box""), guest2)",Chrome 75.0.3770.100,,2019-07-05 11:26:25,2019-07-05 11:26:25,0.358s,PASSED
+delay(2),Chrome 75.0.3770.100,,2019-07-05 11:26:25,2019-07-05 11:26:27,2.006s,PASSED
+"sendKeys(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box""), Keys.chord(ARROW_DOWN))",Chrome 75.0.3770.100,,2019-07-05 11:26:27,2019-07-05 11:26:27,0.072s,PASSED
+"sendKeys(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box""), Keys.chord(ENTER))",Chrome 75.0.3770.100,,2019-07-05 11:26:27,2019-07-05 11:26:27,0.072s,PASSED
+delay(2),Chrome 75.0.3770.100,,2019-07-05 11:26:27,2019-07-05 11:26:29,2.008s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest""))",Chrome 75.0.3770.100,,2019-07-05 11:26:29,2019-07-05 11:26:30,0.490s,PASSED
+delay(2),Chrome 75.0.3770.100,,2019-07-05 11:26:30,2019-07-05 11:26:32,2.003s,PASSED
+verifyHostess = UtilityMethods.splitPersonName(hostess),Chrome 75.0.3770.100,,2019-07-05 11:26:32,2019-07-05 11:26:32,0.005s,PASSED
+verifyCohostess = UtilityMethods.splitPersonName(cohostess),Chrome 75.0.3770.100,,2019-07-05 11:26:32,2019-07-05 11:26:32,0.001s,PASSED
+verifyGuest1 = UtilityMethods.splitPersonName(guest1),Chrome 75.0.3770.100,,2019-07-05 11:26:32,2019-07-05 11:26:32,0.001s,PASSED
+verifyGuest2 = UtilityMethods.splitPersonName(guest2),Chrome 75.0.3770.100,,2019-07-05 11:26:32,2019-07-05 11:26:32,0.001s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name""), UtilityMethods.concat(verifyHostess[1], "", "", verifyHostess[0]))",Chrome 75.0.3770.100,,2019-07-05 11:26:32,2019-07-05 11:26:32,0.074s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name""), UtilityMethods.concat(verifyCohostess[1], "", "", verifyCohostess[0]))",Chrome 75.0.3770.100,,2019-07-05 11:26:32,2019-07-05 11:26:32,0.072s,PASSED
+"listElement = findWebElements(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_guest_name_list""), 5)",Chrome 75.0.3770.100,,2019-07-05 11:26:32,2019-07-05 11:26:32,0.029s,PASSED
+guestCount = Integer.parseInt(verifyGuestCount),Chrome 75.0.3770.100,,2019-07-05 11:26:32,2019-07-05 11:26:32,0.004s,PASSED
+assert listElement.size() == guestCount,Chrome 75.0.3770.100,,2019-07-05 11:26:32,2019-07-05 11:26:32,0.004s,PASSED
+flag = false,Chrome 75.0.3770.100,,2019-07-05 11:26:32,2019-07-05 11:26:32,0.002s,PASSED
+"for ([i = 0, i < guestCount, (i++)])",Chrome 75.0.3770.100,,2019-07-05 11:26:32,2019-07-05 11:26:32,0.131s,PASSED
+assert flag == true,Chrome 75.0.3770.100,,2019-07-05 11:26:32,2019-07-05 11:26:32,0.001s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next""))",Chrome 75.0.3770.100,,2019-07-05 11:26:32,2019-07-05 11:26:34,1.953s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:26:34,2019-07-05 11:26:39,5.006s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview""))",Chrome 75.0.3770.100,,2019-07-05 11:26:39,2019-07-05 11:26:41,2.178s,PASSED
+"showID = getText(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text""))",Chrome 75.0.3770.100,,2019-07-05 11:26:41,2019-07-05 11:26:41,0.080s,PASSED
+"rightClick(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Orders/a_Account""))",Chrome 75.0.3770.100,,2019-07-05 11:26:41,2019-07-05 11:26:42,0.179s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile""))",Chrome 75.0.3770.100,,2019-07-05 11:26:42,2019-07-05 11:26:43,1.679s,PASSED
+"rsName = getText(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName""))",Chrome 75.0.3770.100,,2019-07-05 11:26:43,2019-07-05 11:26:43,0.070s,PASSED
+"micrositeURL = UtilityMethods.createURL(rsName, RSTestEnvt, showID)",Chrome 75.0.3770.100,,2019-07-05 11:26:43,2019-07-05 11:26:44,0.701s,PASSED
+println(micrositeURL),Chrome 75.0.3770.100,,2019-07-05 11:26:44,2019-07-05 11:26:44,0.001s,PASSED
+back(),Chrome 75.0.3770.100,,2019-07-05 11:26:44,2019-07-05 11:26:45,0.822s,PASSED
+,,,,,,
+Test Cases/virtualShowRSVP/micrositeRSVPValidUser,Chrome 75.0.3770.100,,2019-07-05 11:26:45,2019-07-05 11:31:52,5m - 6.798s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-07-05 11:26:45,2019-07-05 11:26:45,0.008s,PASSED
+"dataFile = ""micrositeData""",Chrome 75.0.3770.100,,2019-07-05 11:26:46,2019-07-05 11:26:46,0.001s,PASSED
+"hostessMail = findTestData(dataFile).getValue(""hostessMail"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:26:46,2019-07-05 11:26:46,0.063s,PASSED
+"hostessPass = findTestData(dataFile).getValue(""hostessPass"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:26:46,2019-07-05 11:26:46,0.039s,PASSED
+"cohostessMail = findTestData(dataFile).getValue(""cohostessMail"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:26:46,2019-07-05 11:26:46,0.037s,PASSED
+"cohostessPass = findTestData(dataFile).getValue(""cohostessPass"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:26:46,2019-07-05 11:26:46,0.033s,PASSED
+"guest1Mail = findTestData(dataFile).getValue(""guest1Mail"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:26:46,2019-07-05 11:26:46,0.034s,PASSED
+"guest1Pass = findTestData(dataFile).getValue(""guest1Pass"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:26:46,2019-07-05 11:26:46,0.050s,PASSED
+"guestUninvitedMail = findTestData(dataFile).getValue(""guestUninvitedMail"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:26:46,2019-07-05 11:26:46,0.039s,PASSED
+"guestUninvitedPass = findTestData(dataFile).getValue(""guestUninvitedPass"", 1)",Chrome 75.0.3770.100,,2019-07-05 11:26:46,2019-07-05 11:26:46,0.036s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,2019-07-05 11:26:46,2019-07-05 11:26:49,3.038s,PASSED
+maximizeWindow(),Chrome 75.0.3770.100,,2019-07-05 11:26:49,2019-07-05 11:26:50,1.013s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-07-05 11:26:50,2019-07-05 11:27:00,10.097s,PASSED
+navigateToUrl(micrositeURL),Chrome 75.0.3770.100,,2019-07-05 11:27:00,2019-07-05 11:27:20,20.000s,PASSED
+delay(12),Chrome 75.0.3770.100,,2019-07-05 11:27:20,2019-07-05 11:27:32,12.003s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited""), ""You're invited to Front Row"")",Chrome 75.0.3770.100,,2019-07-05 11:27:32,2019-07-05 11:27:32,0.081s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP""))",Chrome 75.0.3770.100,,2019-07-05 11:27:32,2019-07-05 11:27:32,0.222s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email""), guest1Mail)",Chrome 75.0.3770.100,Login with the invited guest,2019-07-05 11:27:32,2019-07-05 11:27:36,3.771s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue""))",Chrome 75.0.3770.100,,2019-07-05 11:27:36,2019-07-05 11:27:36,0.183s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:27:36,2019-07-05 11:27:41,5.004s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password""), guest1Pass)",Chrome 75.0.3770.100,,2019-07-05 11:27:41,2019-07-05 11:27:42,0.440s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue""))",Chrome 75.0.3770.100,,2019-07-05 11:27:42,2019-07-05 11:27:42,0.171s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:27:42,2019-07-05 11:27:47,5.004s,PASSED
+"if (verifyElementPresent(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later""), 0))",Chrome 75.0.3770.100,,2019-07-05 11:27:47,2019-07-05 11:27:57,10.412s,PASSED
+"listElement = findWebElements(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP""), 5)",Chrome 75.0.3770.100,,2019-07-05 11:27:57,2019-07-05 11:28:03,5.532s,PASSED
+if (empty),Chrome 75.0.3770.100,"Validating invited guest's 'Yes' RSVP
+",2019-07-05 11:28:03,2019-07-05 11:28:08,4.873s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:28:08,2019-07-05 11:28:13,5.004s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP""))",Chrome 75.0.3770.100,,2019-07-05 11:28:13,2019-07-05 11:28:13,0.202s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:28:13,2019-07-05 11:28:18,5.005s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_maybe""))",Chrome 75.0.3770.100,,2019-07-05 11:28:18,2019-07-05 11:28:18,0.120s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_no""))",Chrome 75.0.3770.100,,2019-07-05 11:28:18,2019-07-05 11:28:18,0.149s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_maybe""))",Chrome 75.0.3770.100,,2019-07-05 11:28:18,2019-07-05 11:28:18,0.092s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND""))",Chrome 75.0.3770.100,,2019-07-05 11:28:18,2019-07-05 11:28:19,0.161s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:28:19,2019-07-05 11:28:24,5.007s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/h2_We hope youll be able to attend.""), ""We hope you'll be able to attend."")",Chrome 75.0.3770.100,,2019-07-05 11:28:24,2019-07-05 11:28:24,0.072s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP""))",Chrome 75.0.3770.100,,2019-07-05 11:28:24,2019-07-05 11:28:24,0.149s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_no""))",Chrome 75.0.3770.100,,2019-07-05 11:28:24,2019-07-05 11:28:24,0.188s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND""))",Chrome 75.0.3770.100,,2019-07-05 11:28:24,2019-07-05 11:28:24,0.161s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:28:24,2019-07-05 11:28:29,5.004s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Sorry you cant make it.""), ""Sorry you can't make it."")",Chrome 75.0.3770.100,,2019-07-05 11:28:29,2019-07-05 11:28:29,0.076s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP""))",Chrome 75.0.3770.100,,2019-07-05 11:28:29,2019-07-05 11:28:29,0.140s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_yes""))",Chrome 75.0.3770.100,,2019-07-05 11:28:29,2019-07-05 11:28:29,0.138s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND""))",Chrome 75.0.3770.100,,2019-07-05 11:28:29,2019-07-05 11:28:30,0.163s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:28:30,2019-07-05 11:28:35,5.005s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Were so glad you can make it.""), ""We're so glad you can make it."")",Chrome 75.0.3770.100,,2019-07-05 11:28:35,2019-07-05 11:28:35,0.071s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:28:35,2019-07-05 11:28:40,5.005s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown""))",Chrome 75.0.3770.100,,2019-07-05 11:28:40,2019-07-05 11:28:40,0.197s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out""))",Chrome 75.0.3770.100,,2019-07-05 11:28:40,2019-07-05 11:28:40,0.175s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out""))",Chrome 75.0.3770.100,,2019-07-05 11:28:40,2019-07-05 11:28:40,0.167s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:28:40,2019-07-05 11:28:45,5.003s,PASSED
+navigateToUrl(micrositeURL),Chrome 75.0.3770.100,,2019-07-05 11:28:45,2019-07-05 11:29:05,19.992s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:29:05,2019-07-05 11:29:10,5.005s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited""), ""You're invited to Front Row"")",Chrome 75.0.3770.100,,2019-07-05 11:29:10,2019-07-05 11:29:10,0.080s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:29:10,2019-07-05 11:29:15,5.006s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP""))",Chrome 75.0.3770.100,,2019-07-05 11:29:15,2019-07-05 11:29:16,0.192s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email""), guestUninvitedMail)",Chrome 75.0.3770.100,,2019-07-05 11:29:16,2019-07-05 11:29:19,3.357s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue""))",Chrome 75.0.3770.100,,2019-07-05 11:29:19,2019-07-05 11:29:19,0.190s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password""), guestUninvitedPass)",Chrome 75.0.3770.100,,2019-07-05 11:29:19,2019-07-05 11:29:20,0.999s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue""))",Chrome 75.0.3770.100,,2019-07-05 11:29:20,2019-07-05 11:29:20,0.154s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:29:20,2019-07-05 11:29:25,5.004s,PASSED
+"if (verifyElementPresent(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later""), 0))",Chrome 75.0.3770.100,,2019-07-05 11:29:25,2019-07-05 11:29:35,9.818s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:29:35,2019-07-05 11:29:40,5.005s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/uninvited_user_msg""), ""Your name doesn't seem to be on the guest list. Contact your Hostess or Stylist for more information."")",Chrome 75.0.3770.100,,2019-07-05 11:29:40,2019-07-05 11:29:40,0.070s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:29:40,2019-07-05 11:29:45,5.003s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown""))",Chrome 75.0.3770.100,,2019-07-05 11:29:45,2019-07-05 11:29:45,0.150s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out""))",Chrome 75.0.3770.100,,2019-07-05 11:29:45,2019-07-05 11:29:45,0.192s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out""))",Chrome 75.0.3770.100,,2019-07-05 11:29:45,2019-07-05 11:29:46,0.184s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:29:46,2019-07-05 11:29:51,5.005s,PASSED
+navigateToUrl(micrositeURL),Chrome 75.0.3770.100,,2019-07-05 11:29:51,2019-07-05 11:30:08,16.891s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:30:08,2019-07-05 11:30:13,5.005s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited""), ""You're invited to Front Row"")",Chrome 75.0.3770.100,,2019-07-05 11:30:13,2019-07-05 11:30:13,0.079s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:30:13,2019-07-05 11:30:18,5.004s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP""))",Chrome 75.0.3770.100,,2019-07-05 11:30:18,2019-07-05 11:30:18,0.189s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email""), hostessMail)",Chrome 75.0.3770.100,,2019-07-05 11:30:18,2019-07-05 11:30:21,3.330s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue""))",Chrome 75.0.3770.100,,2019-07-05 11:30:21,2019-07-05 11:30:21,0.165s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password""), hostessPass)",Chrome 75.0.3770.100,,2019-07-05 11:30:21,2019-07-05 11:30:22,1.046s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue""))",Chrome 75.0.3770.100,,2019-07-05 11:30:22,2019-07-05 11:30:23,0.167s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:30:23,2019-07-05 11:30:28,5.004s,PASSED
+"if (verifyElementPresent(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later""), 0))",Chrome 75.0.3770.100,,2019-07-05 11:30:28,2019-07-05 11:30:37,9.835s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:30:37,2019-07-05 11:30:42,5.006s,PASSED
+"verifyElementText(findTestObject(""virualShowRSVPOR/Page_Show microsite/h2_Thanks for hosting""), ""Thanks for hosting."")",Chrome 75.0.3770.100,,2019-07-05 11:30:42,2019-07-05 11:30:43,0.247s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:30:43,2019-07-05 11:30:48,5.005s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown""))",Chrome 75.0.3770.100,,2019-07-05 11:30:48,2019-07-05 11:30:48,0.150s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out""))",Chrome 75.0.3770.100,,2019-07-05 11:30:48,2019-07-05 11:30:48,0.156s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out""))",Chrome 75.0.3770.100,,2019-07-05 11:30:48,2019-07-05 11:30:48,0.174s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:30:48,2019-07-05 11:30:53,5.007s,PASSED
+navigateToUrl(micrositeURL),Chrome 75.0.3770.100,,2019-07-05 11:30:53,2019-07-05 11:31:14,20.864s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:31:14,2019-07-05 11:31:19,5.006s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/h1_Youre invited""), ""You're invited to Front Row"")",Chrome 75.0.3770.100,,2019-07-05 11:31:19,2019-07-05 11:31:19,0.085s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:31:19,2019-07-05 11:31:24,5.005s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Login to RSVP""))",Chrome 75.0.3770.100,,2019-07-05 11:31:24,2019-07-05 11:31:24,0.186s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email""), cohostessMail)",Chrome 75.0.3770.100,,2019-07-05 11:31:24,2019-07-05 11:31:28,3.917s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue""))",Chrome 75.0.3770.100,,2019-07-05 11:31:28,2019-07-05 11:31:28,0.184s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password""), cohostessPass)",Chrome 75.0.3770.100,,2019-07-05 11:31:28,2019-07-05 11:31:29,0.986s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue""))",Chrome 75.0.3770.100,,2019-07-05 11:31:29,2019-07-05 11:31:30,0.160s,PASSED
+"if (verifyElementPresent(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later""), 5))",Chrome 75.0.3770.100,,2019-07-05 11:31:30,2019-07-05 11:31:40,10.609s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:31:40,2019-07-05 11:31:45,5.004s,PASSED
+"verifyElementText(findTestObject(""virualShowRSVPOR/Page_Show microsite/h2_Thanks for hosting""), ""Thanks for hosting."")",Chrome 75.0.3770.100,,2019-07-05 11:31:45,2019-07-05 11:31:45,0.286s,PASSED
+delay(5),Chrome 75.0.3770.100,,2019-07-05 11:31:45,2019-07-05 11:31:50,5.003s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/profile_dropdown""))",Chrome 75.0.3770.100,,2019-07-05 11:31:50,2019-07-05 11:31:51,0.151s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/a_Sign Out""))",Chrome 75.0.3770.100,,2019-07-05 11:31:51,2019-07-05 11:31:51,0.168s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Sign out""))",Chrome 75.0.3770.100,,2019-07-05 11:31:51,2019-07-05 11:31:51,0.157s,PASSED
+"click(findTestObject(""virualShowRSVPOR/Page_Show microsite/signOut""))",Chrome 75.0.3770.100,,2019-07-05 11:31:51,2019-07-05 11:31:51,0.004s,NOT_RUN
+closeBrowser(),Chrome 75.0.3770.100,,2019-07-05 11:31:51,2019-07-05 11:31:52,0.762s,PASSED

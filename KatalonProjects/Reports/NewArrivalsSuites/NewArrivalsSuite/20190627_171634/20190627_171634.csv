@@ -1,0 +1,39 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+NewArrivalsSuite,Chrome 75.0.3770.100,,2019-06-27 17:16:38,2019-06-27 18:04:50,48m - 12.252s,FAILED
+,,,,,,
+Test Cases/NewArrival/BOOnline,Chrome 75.0.3770.100,,2019-06-27 17:16:39,2019-06-27 17:21:51,5m - 12.706s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-27 17:16:39,2019-06-27 17:16:39,0.047s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,2019-06-27 17:16:39,2019-06-27 17:16:44,4.571s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 75.0.3770.100,,2019-06-27 17:16:44,2019-06-27 17:21:51,5m - 7.521s,PASSED
+,,,,,,
+Test Cases/NewArrival/BOPersonal,Chrome 75.0.3770.100,,2019-06-27 17:21:51,2019-06-27 17:26:52,5m - 0.272s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-27 17:21:51,2019-06-27 17:21:51,0.001s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,2019-06-27 17:21:52,2019-06-27 17:21:55,3.103s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 75.0.3770.100,,2019-06-27 17:21:55,2019-06-27 17:26:52,4m - 56.812s,PASSED
+,,,,,,
+Test Cases/NewArrival/BORetail,Chrome 75.0.3770.100,,2019-06-27 17:26:52,2019-06-27 17:29:24,2m - 32.194s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-27 17:26:52,2019-06-27 17:26:52,0.002s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,2019-06-27 17:26:52,2019-06-27 17:26:55,2.996s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 75.0.3770.100,,2019-06-27 17:26:55,2019-06-27 17:29:24,2m - 28.842s,FAILED
+,,,,,,
+Test Cases/NewArrival/BOShowOrder,Chrome 75.0.3770.100,,2019-06-27 17:29:24,2019-06-27 17:30:29,1m - 4.902s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-27 17:29:24,2019-06-27 17:29:24,0.005s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,2019-06-27 17:29:24,2019-06-27 17:29:27,3.064s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 75.0.3770.100,,2019-06-27 17:29:27,2019-06-27 17:30:29,1m - 1.440s,FAILED
+,,,,,,
+Test Cases/NewArrival/CCOrders,Chrome 75.0.3770.100,,2019-06-27 17:30:29,2019-06-27 17:41:40,11m - 11.428s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-27 17:30:29,2019-06-27 17:30:29,0.001s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,2019-06-27 17:30:29,2019-06-27 17:30:32,3.141s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 75.0.3770.100,,2019-06-27 17:30:32,2019-06-27 17:41:40,11m - 8.026s,PASSED
+,,,,,,
+Test Cases/NewArrival/addOnOrderRetail,Chrome 75.0.3770.100,,2019-06-27 17:41:40,2019-06-27 17:53:06,11m - 26.068s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-27 17:41:40,2019-06-27 17:41:40,0.002s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,2019-06-27 17:41:41,2019-06-27 17:41:44,2.990s,PASSED
+"addOnStyle = findTestData(""miscData"").getValue(""addOnStyle"", 1)",Chrome 75.0.3770.100,,2019-06-27 17:41:44,2019-06-27 17:41:44,0.033s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 75.0.3770.100,,2019-06-27 17:41:44,2019-06-27 17:53:06,11m - 22.647s,FAILED
+,,,,,,
+Test Cases/NewArrival/addOnOrderPersonal,Chrome 75.0.3770.100,,2019-06-27 17:53:06,2019-06-27 18:04:50,11m - 43.421s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-27 17:53:06,2019-06-27 17:53:06,0.003s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.100,,2019-06-27 17:53:07,2019-06-27 17:53:10,3.406s,PASSED
+"addOnStyle = findTestData(""miscData"").getValue(""addOnStyle"", 1)",Chrome 75.0.3770.100,,2019-06-27 17:53:10,2019-06-27 17:53:10,0.012s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 75.0.3770.100,,2019-06-27 17:53:10,2019-06-27 18:04:50,11m - 39.542s,FAILED

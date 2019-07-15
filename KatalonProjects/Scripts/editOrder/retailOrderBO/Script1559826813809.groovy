@@ -1,29 +1,26 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import org.openqa.selenium.By as By
+import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
-import org.openqa.selenium.interactions.Actions as Actions
+
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 WebUI.openBrowser('')
 
-WebUI.maximizeWindow()
 
-WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+WebDriver driver = DriverFactory.getWebDriver()
+JavascriptExecutor executor = (JavascriptExecutor)driver;
+
+WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
 
@@ -106,9 +103,12 @@ WebUI.delay(5)
 
 WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
-WebUI.delay(10)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_cabi Retail Store/span_next_1'))
+WebElement nextButton = driver.findElement(By.xpath("//li/a/span[@id='returnToActionLabel']"));
+executor.executeScript("arguments[0].click();", nextButton);
+
+//WebUI.click(findTestObject('Page_cabi Retail Store/span_next_1'))
 
 WebUI.delay(3)
 
@@ -117,14 +117,10 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_
 
 WebUI.delay(3)
 
-List<WebElement> emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 
-    5)
-
+List<WebElement> emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 5)
 if (emptyCart.size() > 0) {
     WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'))
-
     println('cart not empty')
-
     WebUI.delay(5)
 }
 

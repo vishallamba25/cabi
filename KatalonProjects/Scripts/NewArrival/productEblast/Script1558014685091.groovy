@@ -23,60 +23,71 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.stringtemplate.v4.compiler.STParser.listElement_return as listElement_return
 
 //available= "no"
-//WebUI.openBrowser('')
+WebUI.openBrowser('')
+for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
+    WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('NewArrival/setTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
+            , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget], 
+        FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_cabi Home/a_Connections'))
+    WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], 
+        FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_cabi Home/a_Contact Manager'))
+    WebUI.click(findTestObject('Page_cabi Home/a_Connections'))
 
-WebUI.click(findTestObject('Page_cabi/span_SEND eBLAST'))
+    WebUI.click(findTestObject('Page_cabi Home/a_Contact Manager'))
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/a_Stylist Picks'))
+    WebUI.click(findTestObject('Page_cabi/span_SEND eBLAST'))
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST'))
+    WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/a_Stylist Picks'))
 
+    WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST'))
 
-for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
-	
-	WebUI.delay(2)
-	WebUI.setText(findTestObject('Page_cabi Eblast/eBlastStyleSearch'), findTestData(
-			'productData').getValue('Style', row))
-	WebUI.delay(2)
-	
-	if(available.toString().equalsIgnoreCase('no')){
-		
-		List<WebElement> style_notfound = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/styleNotFound'), 5)
-		println(style_notfound.size())
-		assert style_notfound.size()>0
-		WebUI.verifyElementText(findTestObject('Page_cabi Eblast/styleNotFound'), "No matching product")
-	}
-	
-	else{
-		
-		String space= ' '
-		String openbrace= '('
-		String closebrace=')'
-		String style_id = WebUI.getText(findTestObject('Page_cabi Eblast/style_id'))
-		String style_name = WebUI.getText(findTestObject('Page_cabi Eblast/style_name'))
-		String style_color = WebUI.getText(findTestObject('Page_cabi Eblast/style_color'))
-		style_web = "$style_id$space$style_name$space$style_color"
-		
-		String styleid_data = findTestData('productData').getValue('Style',row)
-		String styleid_name = findTestData('productData').getValue('Description',row)
-		String styleid_color = findTestData('productData').getValue('Color',row)
-		style_data = "$styleid_data$space$styleid_name$space$openbrace$styleid_color$closebrace"
-		
-		println(style_web)
-		println(style_data)
-		
-		assert style_data.equalsIgnoreCase(style_web)
-		
-	}
-				
-	
+    for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
+        WebUI.delay(2)
+
+        WebUI.setText(findTestObject('Page_cabi Eblast/eBlastStyleSearch'), findTestData('productData').getValue('Style', 
+                row))
+
+        WebUI.delay(4)
+
+        if (available.toString().equalsIgnoreCase('no')) {
+            List<WebElement> style_notfound = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/styleNotFound'), 5)
+
+            println(style_notfound.size())
+
+            assert style_notfound.size() > 0
+
+            WebUI.verifyElementText(findTestObject('Page_cabi Eblast/styleNotFound'), 'No matching product')
+        } else {
+            String space = ' '
+
+            String openbrace = '('
+
+            String closebrace = ')'
+
+            String style_id = WebUI.getText(findTestObject('Page_cabi Eblast/style_id'))
+
+            String style_name = WebUI.getText(findTestObject('Page_cabi Eblast/style_name'))
+
+            String style_color = WebUI.getText(findTestObject('Page_cabi Eblast/style_color'))
+
+            style_web = "$style_id$space$style_name$space$style_color"
+
+            String styleid_data = findTestData('productData').getValue('Style', row)
+
+            String styleid_name = findTestData('productData').getValue('Description', row)
+
+            String styleid_color = findTestData('productData').getValue('Color', row)
+
+            style_data = "$styleid_data$space$styleid_name$space$openbrace$styleid_color$closebrace"
+
+            println(style_web)
+
+            println(style_data)
+
+            assert style_data.equalsIgnoreCase(style_web)
+        }
+    }
 }
-
-
-

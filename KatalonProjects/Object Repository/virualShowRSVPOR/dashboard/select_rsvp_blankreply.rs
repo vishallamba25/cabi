@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_rsvp_blankreply</name>
+   <tag></tag>
+   <elementGuidId>996b449b-a783-4676-a8f0-a78bd91a483b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//div[@class='guest-list']/div[@class='guest-list-filter-header']/div[@class='dropdown-container']/app-dropdown/div/div/div/div/div/div/div/div[@class='drop-text'])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

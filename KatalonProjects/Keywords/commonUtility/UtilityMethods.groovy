@@ -11,6 +11,7 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.driver.DriverFactory
 
+
 public class UtilityMethods {
 	@Keyword
 	public static String SplitData(String Data) {
@@ -24,7 +25,13 @@ public class UtilityMethods {
 	public static String[] SplitSizes(String Data) {
 
 		String[] sizeRangeSplit = Data.split('[-]')
-		//String sizeRangeFirst = size[0].toString()
+		return sizeRangeSplit;
+	}
+
+	@Keyword
+	public static String[] splitPersonName(String Data) {
+
+		String[] sizeRangeSplit = Data.split(' ')
 		return sizeRangeSplit;
 	}
 

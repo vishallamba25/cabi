@@ -6,8 +6,11 @@ import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.interactions.Actions
+import org.openqa.selenium.support.ui.ExpectedConditions
+import org.openqa.selenium.support.ui.WebDriverWait
 
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -17,27 +20,48 @@ WebDriver driver = DriverFactory.getWebDriver()
 JavascriptExecutor executor = (JavascriptExecutor)driver;
 Actions actions = new Actions(driver);
 
-WebUI.callTestCase(findTestCase('editOrder/rsLogin'), [('RSURL') : '', ('RSuser') : '', ('RSpass') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TestCaseUtilities/rsLogin'), [('RSURL') : '', ('RSuser') : '', ('RSpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 
-	WebUI.delay(10)
+	
 	
 	//////////WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
 	
+	/*List<WebElement> firstItem = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'), 5)
+	if (firstItem.size() > 0) {
+		println('firstItem is present')
+		WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
+	}*/
+
+	WebDriverWait wait2 = new WebDriverWait(driver, 10);
+	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Flaunt Scarf')]")));
+	WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
 	
-	
-	
+<<<<<<< HEAD
 	WebElement firstItemToBuy = driver.findElement(By.xpath("(//div[@class='entry-content']/div[@class='item_photos']/div[@class='item_image_main'])[1]"));
 	//actions.moveToElement(firstItemToBuy).click().build().perform()
 	executor.executeScript("arguments[0].click();", firstItemToBuy);
+=======
+	/*WebUI.waitForElementClickable(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'), 30)
+	WebElement firstItemToBuy = driver.findElement(By.xpath("(//div[@class='item_photos']/div[@class='product-info'])[1]"));
+	//actions.moveToElement(firstItemToBuy).click().build().perform()
+	executor.executeScript("arguments[0].click();", firstItemToBuy);*/
+>>>>>>> db55fec49305c04cbf0552a136b957d7c28f7b12
 	
 	//////////
 
 	
 
 	WebUI.delay(5)
-
+	List<WebElement> button_add_item_to_bag = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/button_add_item_to_bag'), 5)
+	if (button_add_item_to_bag.size() == 0) {
+		WebUI.refresh()
+	}
+	button_add_item_to_bag = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/button_add_item_to_bag'), 5)
+	if (button_add_item_to_bag.size() == 0) {
+		WebUI.refresh()
+	}
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_add_item_to_bag'))
 
 	WebUI.delay(5)

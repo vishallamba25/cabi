@@ -22,16 +22,16 @@ orderID = GlobalVariable.retailOrderID
 println(orderID)
 
 ////////////////span[contains(text(), '${orderID}')]/parent::div/parent::div/div[@class='table-row-edit-order']
-String xpath = UtilityMethods.concat('//span[contains(text(), \'', orderID, '\')]/parent::div/parent::div/div[@class=\'table-row-edit-order\']')
+String xpath = UtilityMethods.concat('//span[contains(text(), \'', orderID, '\')]/parent::div/parent::div/div[@class=\'table-row-edit-order\']//a')
 
 TestObject to = new TestObject('a_link_dynamic')
 
 to.addProperty('xpath', ConditionType.EQUALS, xpath)
 
 //////////////
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/i_Michigan_fa fa-caret-down'))
+WebUI.click(findTestObject('ReplicatedSite/rs_Page_Trendy/i_Michigan_fa fa-caret-down'))
 
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Trendy Womens Fashion and Outfits  Cabi Clothing/a_My Profile'))
+WebUI.click(findTestObject('ReplicatedSite/rs_Page_Trendy/a_My Profile'))
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/Page_Profile - Cabi Fall 2018 Collection/span_Order History'))
 

@@ -15,54 +15,62 @@ import commonUtility.UtilityMethods as UtilityMethods
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.openqa.selenium.WebElement as WebElement
+
 //available="no"
+WebUI.openBrowser('')
+for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
+    WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
 
-//WebUI.openBrowser('')
+    WebUI.callTestCase(findTestCase('NewArrival/setTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
+            , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget], 
+        FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], 
+        FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
+    WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Product Watch List'))
+    WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Product Watch List'))
 
-if (available.toString().equalsIgnoreCase('no')) {
-    List<WebElement> noResultFound = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)'), 
-        5)
-    assert noResultFound.size() == 0
-} else {
+    if (available.toString().equalsIgnoreCase('no')) {
+        List<WebElement> noResultFound = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)'), 
+            5)
 
-    WebUI.click(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)'))
+        assert noResultFound.size() == 0
+    } else {
+        WebUI.click(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)'))
 
-    WebUI.verifyElementText(findTestObject('Page_cabi Product Watch list/span_(New Arrivals 2)'), '(New Arrivals 2)')
+        WebUI.verifyElementText(findTestObject('Page_cabi Product Watch list/span_(New Arrivals 2)'), '(New Arrivals 2)')
 
-    List<WebElement> actualProductList = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Product Watch list/div_product_list'), 
-        5)
+        List<WebElement> actualProductList = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Product Watch list/div_product_list'), 
+            5)
 
-    println(actualProductList.size())
+        println(actualProductList.size())
 
-    ArrayList<String> actualList = new ArrayList<String>()
+        ArrayList<String> actualList = new ArrayList<String>()
 
-    ArrayList<String> expectedList = new ArrayList<String>()
+        ArrayList<String> expectedList = new ArrayList<String>()
 
-    for (WebElement product : actualProductList) {
-        actualList.add(product.getText())
+        for (WebElement product : actualProductList) {
+            actualList.add(product.getText())
 
-        println(product.getText())
+            println(product.getText())
+        }
+        
+        for (int row = 1; row <= findTestData('productData1').getRowNumbers(); row++) {
+            String productStyle = findTestData('productData1').getValue('Style', row)
+
+            String productDescription = findTestData('productData1').getValue('Description', row)
+
+            String productColor = findTestData('productData1').getValue('Color', row)
+
+            String expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor)
+
+            println(expectedString)
+
+            expectedList.add(expectedString)
+        }
+        
+        assert UtilityMethods.listEquals(expectedList, actualList) == true
     }
-    
-    for (int row = 1; row <= findTestData('productData1').getRowNumbers(); row++) {
-        String productStyle = findTestData('productData1').getValue('Style', row)
-
-        String productDescription = findTestData('productData1').getValue('Description', row)
-
-        String productColor = findTestData('productData1').getValue('Color', row)
-
-        String expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor)
-
-        println(expectedString)
-
-        expectedList.add(expectedString)
-    }
-    
-    assert UtilityMethods.listEquals(expectedList, actualList) == true
 }

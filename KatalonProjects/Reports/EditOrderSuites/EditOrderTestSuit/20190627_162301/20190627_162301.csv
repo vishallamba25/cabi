@@ -1,0 +1,35 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+EditOrderTestSuit,Chrome 75.0.3770.100,,2019-06-27 16:23:09,2019-06-27 16:40:21,17m - 12.068s,FAILED
+,,,,,,
+Test Cases/editOrder/rsEditOrderSimple,Chrome 75.0.3770.100,,2019-06-27 16:23:09,2019-06-27 16:27:18,4m - 8.166s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-27 16:23:10,2019-06-27 16:23:10,0.129s,PASSED
+"callTestCase(findTestCase(""editOrder/retailOrderBO""), [""editScenarioNumber"":1], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:23:10,2019-06-27 16:25:26,2m - 15.435s,PASSED
+delay(10),Chrome 75.0.3770.100,,2019-06-27 16:25:26,2019-06-27 16:25:36,10.002s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:25:36,2019-06-27 16:25:47,10.693s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/rsLogin""), [""RSURL"":"""", ""RSuser"":"""", ""RSpass"":""""], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:25:47,2019-06-27 16:26:42,54.946s,PASSED
+"callTestCase(findTestCase(""editOrder/rsOrderHistoryConfirm""), [""orderID"":"""", ""editScenarioNumber"":1], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:26:42,2019-06-27 16:27:18,36.033s,FAILED
+,,,,,,
+Test Cases/editOrder/rsEditOrderDonation,Chrome 75.0.3770.100,,2019-06-27 16:27:18,2019-06-27 16:31:26,4m - 8.253s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-27 16:27:18,2019-06-27 16:27:18,0.005s,PASSED
+"callTestCase(findTestCase(""editOrder/retailOrderBO""), [""editScenarioNumber"":4], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:27:18,2019-06-27 16:29:25,2m - 6.856s,PASSED
+delay(10),Chrome 75.0.3770.100,,2019-06-27 16:29:25,2019-06-27 16:29:35,10.006s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:29:35,2019-06-27 16:29:46,10.792s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/rsLogin""), [""RSURL"":"""", ""RSuser"":"""", ""RSpass"":""""], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:29:46,2019-06-27 16:30:43,57.376s,PASSED
+"callTestCase(findTestCase(""editOrder/rsOrderHistoryConfirm""), [""orderID"":"""", ""editScenarioNumber"":4], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:30:43,2019-06-27 16:31:26,42.600s,FAILED
+,,,,,,
+Test Cases/editOrder/rsEditOrderGiftCard,Chrome 75.0.3770.100,,2019-06-27 16:31:26,2019-06-27 16:35:57,4m - 30.913s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-27 16:31:26,2019-06-27 16:31:26,0.003s,PASSED
+"callTestCase(findTestCase(""editOrder/retailOrderBO""), [""editScenarioNumber"":3], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:31:26,2019-06-27 16:33:37,2m - 10.462s,PASSED
+delay(10),Chrome 75.0.3770.100,,2019-06-27 16:33:37,2019-06-27 16:33:47,10.004s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:33:47,2019-06-27 16:33:57,10.461s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/rsLogin""), [""RSURL"":"""", ""RSuser"":"""", ""RSpass"":""""], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:33:57,2019-06-27 16:35:12,1m - 14.191s,PASSED
+"callTestCase(findTestCase(""editOrder/rsOrderHistoryConfirm""), [""orderID"":"""", ""editScenarioNumber"":3], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:35:12,2019-06-27 16:35:57,45.209s,PASSED
+,,,,,,
+Test Cases/editOrder/rsEditOrderPartialShip,Chrome 75.0.3770.100,,2019-06-27 16:35:57,2019-06-27 16:40:19,4m - 22.569s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.100,,2019-06-27 16:35:57,2019-06-27 16:35:57,0.004s,PASSED
+"callTestCase(findTestCase(""editOrder/retailOrderBO""), [""editScenarioNumber"":5], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:35:57,2019-06-27 16:37:59,2m - 1.631s,PASSED
+delay(10),Chrome 75.0.3770.100,,2019-06-27 16:37:59,2019-06-27 16:38:09,10.005s,PASSED
+"callTestCase(findTestCase(""NewArrival/warehouseShipping""), [""orderId"":retailOrderID], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:38:09,2019-06-27 16:38:57,47.631s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:38:57,2019-06-27 16:39:07,9.978s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/rsLogin""), [""RSURL"":"""", ""RSuser"":"""", ""RSpass"":""""], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:39:07,2019-06-27 16:39:57,50.769s,PASSED
+"callTestCase(findTestCase(""editOrder/rsOrderHistoryConfirm""), [""orderID"":"""", ""editScenarioNumber"":5], STOP_ON_FAILURE)",Chrome 75.0.3770.100,,2019-06-27 16:39:57,2019-06-27 16:40:19,21.996s,FAILED

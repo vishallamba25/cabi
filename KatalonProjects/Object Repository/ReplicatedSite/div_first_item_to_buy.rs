@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//div[@class='entry-content']/div[@class='item_photos']/div[@class='item_image_main'])[1]</value>
+         <value>//div/h2/a/span[contains(text(), 'Flaunt Scarf')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

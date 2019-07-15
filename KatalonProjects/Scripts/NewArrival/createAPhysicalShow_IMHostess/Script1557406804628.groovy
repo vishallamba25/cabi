@@ -19,7 +19,7 @@ import org.openqa.selenium.WebElement as WebElement
 
 //WebUI.maximizeWindow()
 
-BOURL = findTestData('credData').getValue('BOURL', 1)
+BOURL = findTestData('envtData').getValue('BOURL', 1)
 
 BOuser = findTestData('credData').getValue('BOuser', 1)
 
@@ -27,7 +27,7 @@ BOpass = findTestData('credData').getValue('BOpass', 1)
 
 
 
-WebUI.callTestCase(findTestCase('NewArrival/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(3)
 

@@ -21,11 +21,11 @@ JavascriptExecutor executor = (JavascriptExecutor)driver;
 WebElement element;
 Actions actions;
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/ReplicatedSite/span_shipping_info'), 30)
+/*WebUI.waitForElementClickable(findTestObject('Object Repository/ReplicatedSite/span_shipping_info'), 30)
 element = driver.findElement(By.xpath('//span[contains(text(), \'1. Shipping information\')]'))
 executor.executeScript("arguments[0].click();", element);
 //WebUI.click(findTestObject('Object Repository/ReplicatedSite/span_shipping_info'))
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_other_address'))
+*/WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_other_address'))
 //////////////////Enter other adress/////////////////////
 int contactNumber = 4 //guest2
 String address1 = findTestData('contactData').getValue('address1', contactNumber)

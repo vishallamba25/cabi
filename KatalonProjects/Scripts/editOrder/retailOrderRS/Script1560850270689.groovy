@@ -29,7 +29,8 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 	
 	
 	WebElement firstItemToBuy = driver.findElement(By.xpath("(//div[@class='entry-content']/div[@class='item_photos']/div[@class='item_image_main'])[1]"));
-	actions.moveToElement(firstItemToBuy).click().build().perform()
+	//actions.moveToElement(firstItemToBuy).click().build().perform()
+	executor.executeScript("arguments[0].click();", firstItemToBuy);
 	
 	//////////
 

@@ -1,23 +1,17 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 /**********vaiable initialization********************/
 
@@ -94,7 +88,7 @@ WebUI.delay(5)
 
 WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'), guest1Pass)
 
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue_pass'))
 
 WebUI.delay(5)
 
@@ -103,6 +97,8 @@ if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPO
     WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later'))
 }
 
+WebUI.navigateToUrl(GlobalVariable.micrositeURL)
+	
 List<WebElement> listElement1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'), 
     5)
 
@@ -148,18 +144,12 @@ WebUI.delay(4)
 //
 //WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
 
-WebUI.delay(4)
 WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
 
 WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
 
-WebUI.switchToWindowIndex(currentTab + 1)
-
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
-
-WebUI.delay(3)
 
 /*WebUI.click(findTestObject('virualShowRSVPOR/dashboard/playVideosButton'))
 

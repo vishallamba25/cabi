@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_all_guests</name>
+   <name>input_text</name>
    <tag></tag>
-   <elementGuidId>8f2b4672-131c-47da-8518-9a08d44c3009</elementGuidId>
+   <elementGuidId>815d7c4b-1e25-4cfa-a1a8-4ddadd25f3ce</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='table-body']/div</value>
+         <value>//app-chat-input-panel/form/app-autosize-textarea/textarea</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

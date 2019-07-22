@@ -9,7 +9,10 @@ import org.openqa.selenium.WebElement
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 
 public class UtilityMethods {
@@ -145,5 +148,19 @@ public class UtilityMethods {
 		TestObject to = new TestObject(name);
 		to.addProperty('xpath', ConditionType.EQUALS, xpath);
 		return to;
+	}
+
+	@Keyword
+	public static int getFavCount(String guest){
+		WebUI.setText(findTestObject('Page_cabi Edit Customer Profile/input_check_contact'), guest)
+		Thread.sleep(1000)
+		WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Customer Profile/a_contact_search_first_result'))
+		Thread.sleep(3000)
+		WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Customer Profile/a_contact_details'))
+		Thread.sleep(1000)
+		List<WebElement> favs = WebUiCommonHelper.findWebElements(findTestObject('virualShowRSVPOR/dashboard/button_start_pre_show'), 1)
+		Thread.sleep(1000)
+		WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Customer Profile/a_back_to_contact_manager'))
+		return favs.size();
 	}
 }

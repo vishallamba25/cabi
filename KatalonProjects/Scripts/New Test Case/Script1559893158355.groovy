@@ -20,7 +20,7 @@ guest1Mail = findTestData(dataFile2).getValue('guest1Mail', 1)
 guest1Pass = findTestData(dataFile2).getValue('guest1Pass', 1)
 /****************************************************/
 WebUI.openBrowser('')
-WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 WebUI.navigateToUrl('https://mirandakate.cabisandbox.com/show-microsite/104611400')
 
 

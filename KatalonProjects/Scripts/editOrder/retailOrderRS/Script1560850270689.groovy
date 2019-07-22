@@ -38,10 +38,16 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Flaunt Scarf')]")));
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
 	
+<<<<<<< HEAD
+	WebElement firstItemToBuy = driver.findElement(By.xpath("(//div[@class='entry-content']/div[@class='item_photos']/div[@class='item_image_main'])[1]"));
+	//actions.moveToElement(firstItemToBuy).click().build().perform()
+	executor.executeScript("arguments[0].click();", firstItemToBuy);
+=======
 	/*WebUI.waitForElementClickable(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'), 30)
 	WebElement firstItemToBuy = driver.findElement(By.xpath("(//div[@class='item_photos']/div[@class='product-info'])[1]"));
 	//actions.moveToElement(firstItemToBuy).click().build().perform()
 	executor.executeScript("arguments[0].click();", firstItemToBuy);*/
+>>>>>>> db55fec49305c04cbf0552a136b957d7c28f7b12
 	
 	//////////
 

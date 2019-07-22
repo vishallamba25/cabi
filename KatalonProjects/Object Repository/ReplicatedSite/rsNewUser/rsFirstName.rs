@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>rsFirstName</name>
+   <tag></tag>
+   <elementGuidId>1efe47be-4352-4246-b4b8-903607a4d14f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;page-&quot;]/div[8]/div/div/div/account/div/new-customer-registration/div/form/div[3]/custom-input/div/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>firstName</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;page-&quot;]/div[8]/div/div/div/account/div/new-customer-registration/div/form/div[3]/custom-input/div/input</value>
+   </webElementProperties>
+</WebElementEntity>

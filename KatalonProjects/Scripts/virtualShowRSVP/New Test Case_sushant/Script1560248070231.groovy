@@ -2,6 +2,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.junit.After
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.WebDriver as WebDriver
@@ -28,6 +29,9 @@ String hostess = findTestData(dataFile).getValue('hostess', 1)
 String cohostess = findTestData(dataFile).getValue('cohostess', 1)
 String guest1 = findTestData(dataFile).getValue('guest1', 1)
 String guest2 = findTestData(dataFile).getValue('guest2', 1)
+String RSTestEnvt= findTestData('envtData').getValue('RSTestEnvt', 1)
+
+BOURL = findTestData('envtData').getValue('BOURL', 1)
 /****************************************************/
 List<VSGuest> actualGuestList= new ArrayList<>()
 List<VSGuest> yesList= new ArrayList<>()
@@ -47,20 +51,37 @@ WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '
 /*WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 WebUI.navigateToUrl('https://sandbox.cliotest.com/backoffice/control/VSStylistDashboard?showId=104652101&consultantPartyId=100000042')*/
-/***********list update: yes, noreply********/
+
+/***************updating lists***-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->creating show-->***/
 VSGuest hostessObj= new VSGuest(hostess)
 VSGuest cohostessObj= new VSGuest(cohostess)
 VSGuest guest1Obj= new VSGuest(guest1)
 VSGuest guest2Obj= new VSGuest(guest2)
-
-allList.add(hostessObj); allList.add(cohostessObj); allList.add(guest1Obj); allList.add(guest2Obj)
-yesList.add(hostessObj);
-yesList.add(cohostessObj);
-noreplyList.add(guest1Obj);
-noreplyList.add(guest2Obj);
-
+//getting fav count from backoffice cust customer profile
+/*****************************tab switching****************/
 WebDriver driver = DriverFactory.getWebDriver()
 JavascriptExecutor executor = (JavascriptExecutor)driver;
+String currentPage = WebUI.getUrl()
+int currentTab = WebUI.getWindowIndex()
+driver = DriverFactory.getWebDriver()
+executor.executeScript('window.open();')
+WebUI.switchToWindowIndex(currentTab + 1)
+WebUI.navigateToUrl(BOURL)
+WebUI.click(findTestObject('Page_cabi Home/a_Connections'))
+WebUI.click(findTestObject('Page_cabi Home/a_Contact Manager'))
+
+hostessObj.favorites=UtilityMethods.getFavCount(hostess);
+cohostessObj.favorites=UtilityMethods.getFavCount(cohostess);
+guest1Obj.favorites=UtilityMethods.getFavCount(guest1);
+guest2Obj.favorites=UtilityMethods.getFavCount(guest2);
+WebUI.closeWindowIndex(currentTab+1);
+WebUI.switchToWindowIndex(currentTab)
+
+allList.add(hostessObj); allList.add(cohostessObj); allList.add(guest1Obj); allList.add(guest2Obj)
+yesList.add(hostessObj); yesList.add(cohostessObj);
+noreplyList.add(guest1Obj); noreplyList.add(guest2Obj);
+
+
 
 
 
@@ -90,26 +111,35 @@ if (isShowNotStarted.size() > 0) {
 
 /////////////////////////
 WebUI.delay(5)
+//_________________________________
+WebUI.switchToWindowIndex(currentTab + 1)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+WebUI.delay(2)
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+//_________________________________
 
 
-/*****************************tab switching****************/
-String currentPage = WebUI.getUrl()
 
-int currentTab = WebUI.getWindowIndex()
-
-driver = DriverFactory.getWebDriver()
-
-//JavascriptExecutor js = ((driver) as JavascriptExecutor)
-
+println WebUI.getWindowIndex()
 executor.executeScript('window.open();')
-
 WebUI.switchToWindowIndex(currentTab + 2)
+println WebUI.getWindowIndex()
 
 WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //GlobalVariable.micrositeURL="https://mirandakate.cabisandbox.com/show-microsite/104652101/"
 //WebUI.navigateToUrl(GlobalVariable.micrositeURL)
-WebUI.navigateToUrl("https://mirandakate.cabitest5.com/?component=account.login-gateway")
+String loginURL= UtilityMethods.concat("https://mirandakate.", RSTestEnvt, ".com/?component=account.login-gateway")
+WebUI.navigateToUrl(loginURL)
 
 /*******************************guest login on microsite****************************/
 'Login with the invited guest'
@@ -146,36 +176,71 @@ if (listElement1.empty) {
 } else {
 	println('RSVP is updated previously')
 }
-/***************updating lists*********************/
+/***************updating lists***-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->***/
 yesList.add(guest1Obj);
 noreplyList.remove(guest1Obj)
+
+
+//_________________________________
+WebUI.switchToWindowIndex(currentTab + 1)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
+
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+WebUI.delay(2)
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+//_________________________________
+
+WebUI.switchToWindowIndex(currentTab + 2)
 WebUI.delay(4)
 WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
-/***************updating lists*********************/
-guest1Obj.active=true;
-guest1Obj.micStatus
-presentList.add(guest1Obj)
 WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
+/***************updating lists***-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->***/
+guest1Obj.active=true;
+guest1Obj.micStatus=2;
+guest1Obj.webcamStatus=2;
+presentList.add(guest1Obj)
+
+
+
 
 
 /* --------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Switch to Dashboard---------------------- */
 WebUI.switchToWindowIndex(currentTab + 1)
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_all'))
+//_________________________________
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+WebUI.delay(2)
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
 
-List<WebElement> micStatuss = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_micStatuss'), 5)
-List<WebElement> webcamStatuss = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_webcamStatuss'), 5)
-List<WebElement> actives = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_actives'), 5)
-List<WebElement> names = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_names'), 5)
-List<WebElement> favoritess = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_favoritess'), 5)
-List<WebElement> ordereds = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_ordereds'), 5)
 
-actualGuestList= VSGuest.createActualGuestList(names, micStatuss, webcamStatuss, favoritess, ordereds, actives);
+
+
 
 for(VSGuest vsg: actualGuestList){
 	println UtilityMethods.concat(vsg.micStatus.toString(), "_", vsg.webcamStatus.toString(), "_", vsg.active.toString(), "_", vsg.name, "_", vsg.favorites.toString(), "_", vsg.ordered.toString());
 }
+
+
+
+
 
 
 

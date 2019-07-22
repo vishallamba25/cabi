@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>guest_favoritess</name>
+   <name>i_sort_asc_desc</name>
    <tag></tag>
-   <elementGuidId>2b2dc8d6-f553-46eb-abd1-3c352be15638</elementGuidId>
+   <elementGuidId>0d901b51-776e-49aa-b5e6-4a7d8cce0bc7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='table-body']/div[@class='table-row']/div[@class='table-row-inner enabled-comm']/div[@class='table-row-favorites']</value>
+         <value>//div[@class='table guest-list-table']/div/div/div/span/app-sort/span/i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

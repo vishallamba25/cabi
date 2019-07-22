@@ -105,3 +105,9 @@ def static "commonUtility.UtilityMethods.createTestObject"(
         	name
          , 	s)
 }
+
+def static "commonUtility.UtilityMethods.getFavCount"(
+    	String guest	) {
+    (new commonUtility.UtilityMethods()).getFavCount(
+        	guest)
+}

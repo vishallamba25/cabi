@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>guest_favoritess</name>
+   <name>a_contact_search_first_result</name>
    <tag></tag>
-   <elementGuidId>2b2dc8d6-f553-46eb-abd1-3c352be15638</elementGuidId>
+   <elementGuidId>f7c6d2e3-ad57-431e-9306-4467565530c3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='table-body']/div[@class='table-row']/div[@class='table-row-inner enabled-comm']/div[@class='table-row-favorites']</value>
+         <value>(//div[@class='contact-list ']/table/tbody/tr/td/div[@class='names'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

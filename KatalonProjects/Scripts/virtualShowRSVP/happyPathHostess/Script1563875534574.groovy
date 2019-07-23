@@ -58,8 +58,8 @@ List<VSGuest> allList = new ArrayList()
 
 /****************************************************/
 WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
-        , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
-        , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
+		, ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
+		, ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
 
 /***********list update: yes, noreply********/
 VSGuest hostessObj = new VSGuest(hostess)
@@ -103,23 +103,23 @@ WebUI.switchToFrame(findTestObject('virualShowRSVPOR/dashboard/frame_start_pre_s
 
 //WebUI.delay(5)
 /////////////////////////
-List<VSGuest> isShowNotStarted = WebUiCommonHelper.findWebElements(findTestObject('virualShowRSVPOR/dashboard/button_start_pre_show'), 
-    5)
+List<VSGuest> isShowNotStarted = WebUiCommonHelper.findWebElements(findTestObject('virualShowRSVPOR/dashboard/button_start_pre_show'),
+	5)
 
 if (isShowNotStarted.size() > 0) {
-    WebElement button_start_pre_show = driver.findElement(By.xpath('//button[contains(text(), \'Start pre-show\')]'))
+	WebElement button_start_pre_show = driver.findElement(By.xpath('//button[contains(text(), \'Start pre-show\')]'))
 
-    executor.executeScript('arguments[0].click();', button_start_pre_show)
+	executor.executeScript('arguments[0].click();', button_start_pre_show)
 
-    WebUI.delay(3)
+	WebUI.delay(3)
 
-    WebElement button_pre_show_sure = driver.findElement(By.xpath('//button[contains(text(), \' sure\')]'))
+	WebElement button_pre_show_sure = driver.findElement(By.xpath('//button[contains(text(), \' sure\')]'))
 
-    executor.executeScript('arguments[0].click();', button_pre_show_sure)
+	executor.executeScript('arguments[0].click();', button_pre_show_sure)
 } else {
-    WebElement button_re_join_show = driver.findElement(By.xpath('//button[contains(text(), \'Re-join show\')]'))
+	WebElement button_re_join_show = driver.findElement(By.xpath('//button[contains(text(), \'Re-join show\')]'))
 
-    executor.executeScript('arguments[0].click();', button_re_join_show)
+	executor.executeScript('arguments[0].click();', button_re_join_show)
 }
 
 /////////////////////////
@@ -143,48 +143,47 @@ WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
 //WebElement enterMail = driver.findElement(By.xpath("//div[@class='form-field']/custom-input/div/input[@name='email']"));
 //executor.executeScript("arguments[0].click();", enterMail);
-'Login with the invited guest'
-WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'), 
-    guest1Mail)
+
+'Login with the hostess'
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),
+	hostessMail)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
 
 WebUI.delay(5)
 
-WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'), guest1Pass)
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'), hostessPass)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue_pass'))
 
 WebUI.delay(5)
 
-if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later'), 
-    0)) {
-    WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later'))
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later'),
+	0)) {
+	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later'))
 }
 
-WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
-
-List<VSGuest> listElement1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'), 
-    5)
-
-'Validating invited guest\'s \'Yes\' RSVP\r\n'
-if (listElement1.empty) {
-    println('RSVP is not updated')
-
-    WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_RSVP'))
-
-    WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_yes'))
-
-    WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND'))
-
-    WebUI.delay(4)
-
-    WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Were so glad you can make it.'), 
-        'We\'re so glad you can make it.')
-} else {
-    println('RSVP is updated previously')
-}
+//List<VSGuest> listElement1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'),
+//	5)
+//
+//'Validating invited guest\'s \'Yes\' RSVP\r\n'
+//if (listElement1.empty) {
+//	println('RSVP is not updated')
+//
+//	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_RSVP'))
+//
+//	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_yes'))
+//
+//	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND'))
+//
+//	WebUI.delay(4)
+//
+//	WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Were so glad you can make it.'),
+//		'We\'re so glad you can make it.')
+//} else {
+//	println('RSVP is updated previously')
+//}
 
 /***************updating lists*********************/
 yesList.add(guest1Obj)
@@ -193,7 +192,7 @@ noreplyList.remove(guest1Obj)
 
 WebUI.delay(4)
 
-WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
+//WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
 
 /***************updating lists*********************/
 guest1Obj.active = true
@@ -213,7 +212,7 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_all'))
 
-//List<VSGuest> actualGuestListWE = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/div_all_guests'), 
+//List<VSGuest> actualGuestListWE = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/dashboard/div_all_guests'),
 //    5)
 //
 //for (WebElement we : actualGuestListWE) {

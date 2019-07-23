@@ -2,17 +2,19 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.junit.After
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.chrome.ChromeOptions
+import org.openqa.selenium.remote.DesiredCapabilities
 
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+import commonUtility.ChatMessage
 import commonUtility.UtilityMethods
 import commonUtility.VSGuest
 import internal.GlobalVariable as GlobalVariable
@@ -149,6 +151,37 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close
 
 WebUI.switchToWindowIndex(currentTab + 1)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
+
+/****************chatting******************/
+String iMStylist="Hi I am stylist"
+String iMGuest1="Hi I am guest 1"
+String iMGuest2="Hi I am guest 2"
+ChatMessage expectedMessage;
+ChatMessage actualMessage;
+String stylstName= WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/my_sender_name'))
+
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/input_text'), iMStylist)
+WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/last_sender'))
+expectedMessage= new ChatMessage(stylstName, iMStylist)
+
+WebUI.switchToWindowIndex(currentTab + 2)
+WebUI.delay(3)
+actualMessage= new ChatMessage(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/last_sender')), WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/last_message')))
+assert actualMessage.equals(expectedMessage)
+
+DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+ChromeOptions options = new ChromeOptions();
+options.addArguments("incognito");
+capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+
+executor.executeScript('window.open();')
+WebUI.switchToWindowIndex(currentTab + 3)
+
+
+
+
+
+
 
 
 

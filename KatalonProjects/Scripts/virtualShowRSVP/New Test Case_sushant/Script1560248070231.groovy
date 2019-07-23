@@ -92,6 +92,23 @@ executor.executeScript("arguments[0].click();", button_re_join_show);
 /////////////////////////
 WebUI.delay(5)
 WebUI.switchToWindowIndex(currentTab + 1)
+<<<<<<< HEAD
+=======
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+WebUI.delay(2)
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+//_________________________________
+>>>>>>> 86bf6e4916d4a2c8cde3f7af260e389e932bf4fd
 
 
 
@@ -142,14 +159,57 @@ WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_
 } else {
 println('RSVP is updated previously')
 }
+<<<<<<< HEAD
+=======
+/***************updating lists***-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->***/
+yesList.add(guest1Obj);
+noreplyList.remove(guest1Obj)
+
+
+//_________________________________
+WebUI.switchToWindowIndex(currentTab + 1)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
+
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+WebUI.delay(2)
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+//_________________________________
+>>>>>>> 86bf6e4916d4a2c8cde3f7af260e389e932bf4fd
 
 WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))*/
 WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
 
 WebUI.switchToWindowIndex(currentTab + 1)
+<<<<<<< HEAD
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
 
+=======
+//_________________________________
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+WebUI.delay(2)
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+WebUI.delay(2)
+VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+>>>>>>> 86bf6e4916d4a2c8cde3f7af260e389e932bf4fd
 
 
 

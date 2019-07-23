@@ -99,7 +99,7 @@ public class VSGuest {
 		WebDriver driver = DriverFactory.getWebDriver()
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(action, 5));
-		
+
 		//WebUI.click(action);
 		ArrayList<VSGuest> actualGuestList= VSGuest.createActualGuestList();
 		TestObject sortArrow= findTestObject('Object Repository/virualShowRSVPOR/dashboard/i_sort_asc_desc');

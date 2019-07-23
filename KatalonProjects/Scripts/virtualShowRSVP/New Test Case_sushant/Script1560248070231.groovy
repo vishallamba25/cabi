@@ -116,6 +116,7 @@ WebUI.switchToWindowIndex(currentTab + 1)
 VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 WebUI.delay(2)
 executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
+WebUI.delay(2)
 VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
 WebUI.delay(2)
 VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
@@ -188,6 +189,7 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close
 VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 WebUI.delay(2)
 executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
+WebUI.delay(2)
 VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
 WebUI.delay(2)
 VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
@@ -220,6 +222,7 @@ WebUI.switchToWindowIndex(currentTab + 1)
 VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 WebUI.delay(2)
 executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
+WebUI.delay(2)
 VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
 WebUI.delay(2)
 VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);

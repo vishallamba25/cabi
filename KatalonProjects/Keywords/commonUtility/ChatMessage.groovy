@@ -26,29 +26,7 @@ public class ChatMessage {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		ChatMessage other = (ChatMessage) obj;
-		if (contentText == null) {
-			if (other.contentText != null)
-				return false;
-		} else if (!contentText.equals(other.contentText))
-			return false;
-		if (messageSender == null) {
-			if (other.messageSender != null)
-				return false;
-		} else if (!messageSender.equals(other.messageSender))
-			return false;
-		return true;
+		ChatMessage cm= (ChatMessage)obj;
+		return cm.contentText.equalsIgnoreCase(contentText) && cm.messageSender.equalsIgnoreCase(messageSender)
 	}
-
-	
-	
-	
-	
-	
 }

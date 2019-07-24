@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_first_item_to_buy</name>
+   <name>button_got_it</name>
    <tag></tag>
-   <elementGuidId>7b720aac-1b31-4b43-9b3e-1731c7a0cfac</elementGuidId>
+   <elementGuidId>ece7bb57-80d1-4b9f-a7d0-9b1fe6c5ee70</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/h2/a/span[contains(text(), 'Beast Belt')]</value>
+         <value>//div[@class='align-center']/button[contains(text(), 'got it')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

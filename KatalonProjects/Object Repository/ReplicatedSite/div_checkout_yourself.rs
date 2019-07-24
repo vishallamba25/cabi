@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_first_item_to_buy</name>
+   <name>div_checkout_yourself</name>
    <tag></tag>
-   <elementGuidId>7b720aac-1b31-4b43-9b3e-1731c7a0cfac</elementGuidId>
+   <elementGuidId>2b437482-cade-4edc-9372-dbee12e9e9c5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/h2/a/span[contains(text(), 'Beast Belt')]</value>
+         <value>(//div[@id='checkout-right']/div/p/a/span[contains(text(), 'check yourself')])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

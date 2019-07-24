@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_first_item_to_buy</name>
+   <name>button_lookbook</name>
    <tag></tag>
-   <elementGuidId>7b720aac-1b31-4b43-9b3e-1731c7a0cfac</elementGuidId>
+   <elementGuidId>03d0af10-7f85-4790-84a2-55d741f98dbe</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/h2/a/span[contains(text(), 'Beast Belt')]</value>
+         <value>//div[@class='microsite-left-frame']/div/app-black-buttons-panel/div[@class='black-buttons-panel']/button[@class='show-microsite-btn' and contains(text(), ' Look Book ')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

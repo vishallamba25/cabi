@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>hostessLiveMessage</name>
+   <tag></tag>
+   <elementGuidId>c0d75526-0304-4d24-aee2-d517bc7c79a6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;page&quot;]/show-microsite/div/div[2]/div[1]/app-countdown-block/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;page&quot;]/show-microsite/div/div[2]/div[1]/app-countdown-block/div/div</value>
+   </webElementProperties>
+</WebElementEntity>

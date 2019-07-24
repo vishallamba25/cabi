@@ -45,8 +45,13 @@ List<VSGuest> allList= new ArrayList<>()
 
 
 WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
+<<<<<<< HEAD
+, ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
+, ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
+=======
         , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
         , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
+>>>>>>> 3677f4a6f5d8cce98b182905510444f23d03429f
 
 /*WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
@@ -69,6 +74,7 @@ WebUI.switchToWindowIndex(currentTab + 1)
 WebUI.navigateToUrl(BOURL)
 WebUI.click(findTestObject('Page_cabi Home/a_Connections'))
 WebUI.click(findTestObject('Page_cabi Home/a_Contact Manager'))
+<<<<<<< HEAD
 
 hostessObj.favorites=UtilityMethods.getFavCount(hostess);
 cohostessObj.favorites=UtilityMethods.getFavCount(cohostess);
@@ -77,6 +83,16 @@ guest2Obj.favorites=UtilityMethods.getFavCount(guest2);
 WebUI.closeWindowIndex(currentTab+1);
 WebUI.switchToWindowIndex(currentTab)
 
+=======
+
+hostessObj.favorites=UtilityMethods.getFavCount(hostess);
+cohostessObj.favorites=UtilityMethods.getFavCount(cohostess);
+guest1Obj.favorites=UtilityMethods.getFavCount(guest1);
+guest2Obj.favorites=UtilityMethods.getFavCount(guest2);
+WebUI.closeWindowIndex(currentTab+1);
+WebUI.switchToWindowIndex(currentTab)
+
+>>>>>>> 3677f4a6f5d8cce98b182905510444f23d03429f
 allList.add(hostessObj); allList.add(cohostessObj); allList.add(guest1Obj); allList.add(guest2Obj)
 yesList.add(hostessObj); yesList.add(cohostessObj);
 noreplyList.add(guest1Obj); noreplyList.add(guest2Obj);
@@ -211,12 +227,21 @@ guest1Obj.active=true;
 guest1Obj.micStatus=2;
 guest1Obj.webcamStatus=2;
 presentList.add(guest1Obj)
+<<<<<<< HEAD
+
+
+
+
+
+/ --------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Switch to Dashboard---------------------- /
+=======
 
 
 
 
 
 /* --------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Switch to Dashboard---------------------- */
+>>>>>>> 3677f4a6f5d8cce98b182905510444f23d03429f
 WebUI.switchToWindowIndex(currentTab + 1)
 //_________________________________
 VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
@@ -232,7 +257,10 @@ WebUI.delay(2)
 VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
 WebUI.delay(2)
 VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+<<<<<<< HEAD
+=======
 
+>>>>>>> 3677f4a6f5d8cce98b182905510444f23d03429f
 
 
 
@@ -241,6 +269,9 @@ for(VSGuest vsg: actualGuestList){
 	println UtilityMethods.concat(vsg.micStatus.toString(), "_", vsg.webcamStatus.toString(), "_", vsg.active.toString(), "_", vsg.name, "_", vsg.favorites.toString(), "_", vsg.ordered.toString());
 }
 
+for(VSGuest vsg: actualGuestList){
+println UtilityMethods.concat(vsg.micStatus.toString(), "_", vsg.webcamStatus.toString(), "_", vsg.active.toString(), "_", vsg.name, "_", vsg.favorites.toString(), "_", vsg.ordered.toString());
+}
 
 
 

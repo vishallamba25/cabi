@@ -14,9 +14,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\user\\AppData\\Local\\Temp\\Katalon\\Test Cases\\virtualShowRSVP\\vsChat\\20190724_163536\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\user\\AppData\\Local\\Temp\\Katalon\\Test Cases\\editOrder\\New Test Case_chat\\20190724_165349\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/virtualShowRSVP/vsChat', new TestCaseBinding('Test Cases/virtualShowRSVP/vsChat',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/editOrder/New Test Case_chat', new TestCaseBinding('Test Cases/editOrder/New Test Case_chat',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

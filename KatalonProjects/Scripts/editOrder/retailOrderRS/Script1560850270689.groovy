@@ -117,8 +117,7 @@ WebUI.delay(5)
 WebUI.waitForElementClickable(findTestObject('Object Repository/ReplicatedSite/span_complete_order'), 30)
 element = driver.findElement(By.xpath('//span[contains(text(), \'COMPLETE ORDER\')]'))
 executor.executeScript("arguments[0].click();", element);
-
-	WebUI.delay(5)
+WebUI.delay(5)
 
 	
 	

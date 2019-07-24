@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_first_item_to_buy</name>
+   <name>button_collection_save_to_fav</name>
    <tag></tag>
-   <elementGuidId>7b720aac-1b31-4b43-9b3e-1731c7a0cfac</elementGuidId>
+   <elementGuidId>496ab01f-a5af-4f8e-a112-decdf661b634</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/h2/a/span[contains(text(), 'Beast Belt')]</value>
+         <value>//a[@class='quicklook-favorites-btn ng-scope']/span[@class='ng-scope']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

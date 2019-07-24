@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_first_item_to_buy</name>
+   <name>select_item_size</name>
    <tag></tag>
-   <elementGuidId>7b720aac-1b31-4b43-9b3e-1731c7a0cfac</elementGuidId>
+   <elementGuidId>8ce8ba33-6558-4f83-8f42-f432eb768912</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/h2/a/span[contains(text(), 'Beast Belt')]</value>
+         <value>//div[@class='add-to-bag-wrapper-section']/add-to-cart/div/div/div/div/select/option[@label='L']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rsPassword</name>
+   <name>setUpMyProfile</name>
    <tag></tag>
-   <elementGuidId>28877228-0a55-4612-9f90-d96fc6080cbd</elementGuidId>
+   <elementGuidId>82622934-e875-45bb-b548-ff412fac49db</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@name='password']</value>
+         <value> //*[@id=&quot;mm-0&quot;]/div/div/questionnaire-root/app-questionnaire/div/div[1]/app-questionnaire-welcome/div/div/div[1]/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@name='password']</value>
+      <value> //*[@id=&quot;mm-0&quot;]/div/div/questionnaire-root/app-questionnaire/div/div[1]/app-questionnaire-welcome/div/div/div[1]/button</value>
    </webElementProperties>
 </WebElementEntity>

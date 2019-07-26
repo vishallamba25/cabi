@@ -10,7 +10,7 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.github.javafaker.Faker
+import com.github.javafaker.Faker as Faker
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
@@ -18,34 +18,48 @@ RSURL = findTestData('envtData').getValue('RSURL', 1)
 
 RSuser = findTestData('credData').getValue('RSuser', 1)
 
-Faker faker = new Faker();
+Faker faker = new Faker()
 
-String name = faker.name().fullName();
+String name = faker.name().fullName()
 
-String firstName = faker.name.firstName();
+String firstName = faker.name.firstName()
 
-String lastName = faker.name().lastName();
+String lastName = faker.name().lastName()
 
-String lastName = faker.internet.emailAddress()
+String email = faker.internet.emailAddress()
 
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
+WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.navigateToUrl(RSURL)
 
 WebUI.click(findTestObject('ReplicatedSite/rs_Page_Trendy/i_user_login'))
 
-WebUI.setText(findTestObject('ReplicatedSite/rs_Page_Trendy/input_Sign in  Create account_email'), RSuser)
+WebUI.setText(findTestObject('ReplicatedSite/rs_Page_Trendy/input_Sign in  Create account_email'), email)
 
 WebUI.click(findTestObject('ReplicatedSite/rs_Page_Trendy/button_Continue'))
 
+WebUI.delay(3)
+
+//WebUI.click(findTestObject('ReplicatedSite/rsNewUser/rsFirstName'))
 WebUI.setText(findTestObject('ReplicatedSite/rsNewUser/rsFirstName'), firstName)
 
 WebUI.setText(findTestObject('ReplicatedSite/rsNewUser/rsLastName'), lastName)
 
+WebUI.setText(findTestObject('ReplicatedSite/rsNewUser/rsPassword'), 'blackdress19')
 
-//WebUI.setText(findTestObject('ReplicatedSite/rsNewUser/rsPassword'), '')
-//
-//WebUI.setText(findTestObject('ReplicatedSite/rsNewUser/rsConfirmPassword'), '')
+WebUI.setText(findTestObject('ReplicatedSite/rsNewUser/rsConfirmPassword'), 'blackdress19')
+
+WebUI.click(findTestObject('ReplicatedSite/rsNewUser/noThanksLabel'))
+
+WebUI.click(findTestObject('ReplicatedSite/rsNewUser/continueButton'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('ReplicatedSite/rsNewUser/gotItThanks'))
+
+WebUI.click(findTestObject('ReplicatedSite/rsNewUser/setUpMyProfile'))
 

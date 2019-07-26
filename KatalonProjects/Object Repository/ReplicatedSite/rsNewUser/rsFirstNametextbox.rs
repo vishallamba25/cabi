@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rsPassword</name>
+   <name>rsFirstNametextbox</name>
    <tag></tag>
-   <elementGuidId>28877228-0a55-4612-9f90-d96fc6080cbd</elementGuidId>
+   <elementGuidId>21dc6787-ce35-49c2-8799-0da8aea7c0f1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@name='password']</value>
+         <value>//custom-input[@name='firstName']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@name='password']</value>
+      <value>//custom-input[@name='firstName']</value>
    </webElementProperties>
 </WebElementEntity>

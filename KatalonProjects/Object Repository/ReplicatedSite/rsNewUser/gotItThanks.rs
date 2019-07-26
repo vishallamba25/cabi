@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rsPassword</name>
+   <name>gotItThanks</name>
    <tag></tag>
-   <elementGuidId>28877228-0a55-4612-9f90-d96fc6080cbd</elementGuidId>
+   <elementGuidId>f3a02885-e253-4497-a28c-1743a8dbdd67</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@name='password']</value>
+         <value>//*[@id=&quot;page-&quot;]/div[8]/div/div/div/find-my-stylist/div/meet-stylist/div/form/div[3]/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@name='password']</value>
+      <value>//*[@id=&quot;page-&quot;]/div[8]/div/div/div/find-my-stylist/div/meet-stylist/div/form/div[3]/button</value>
    </webElementProperties>
 </WebElementEntity>

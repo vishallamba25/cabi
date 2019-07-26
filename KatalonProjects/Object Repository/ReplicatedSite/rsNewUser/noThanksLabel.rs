@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rsPassword</name>
+   <name>noThanksLabel</name>
    <tag></tag>
-   <elementGuidId>28877228-0a55-4612-9f90-d96fc6080cbd</elementGuidId>
+   <elementGuidId>69718aaa-4b4b-43fe-a0a9-d94ead2c2309</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@name='password']</value>
+         <value>//*[@id=&quot;page-&quot;]/div[8]/div/div/div/account/div/new-customer-registration/div/form/div[8]/div/div/div[4]/span/label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@name='password']</value>
+      <value>//*[@id=&quot;page-&quot;]/div[8]/div/div/div/account/div/new-customer-registration/div/form/div[8]/div/div/div[4]/span/label</value>
    </webElementProperties>
 </WebElementEntity>

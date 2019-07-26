@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;page-&quot;]/div[8]/div/div/div/account/div/new-customer-registration/div/form/div[3]/custom-input/div/input</value>
+         <value>//input[@name='lastName']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -24,6 +24,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;page-&quot;]/div[8]/div/div/div/account/div/new-customer-registration/div/form/div[3]/custom-input/div/input</value>
+      <value>//input[@name='lastName']</value>
    </webElementProperties>
 </WebElementEntity>

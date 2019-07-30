@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rsPassword</name>
+   <name>continueButton</name>
    <tag></tag>
-   <elementGuidId>28877228-0a55-4612-9f90-d96fc6080cbd</elementGuidId>
+   <elementGuidId>7a9627a4-f2af-4351-8fd7-0af011ef1708</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//input[@name='password']</value>
+         <value>//*[@id=&quot;page-&quot;]/div[8]/div/div/div/account/div/new-customer-registration/div/form/div[10]/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@name='password']</value>
+      <value>//*[@id=&quot;page-&quot;]/div[8]/div/div/div/account/div/new-customer-registration/div/form/div[10]/button</value>
    </webElementProperties>
 </WebElementEntity>

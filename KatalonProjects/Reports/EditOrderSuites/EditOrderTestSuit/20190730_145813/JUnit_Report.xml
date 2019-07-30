@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="EditOrderTestSuit" time="410" tests="0" failures="1" errors="0">
+   <testsuite name="EditOrderTestSuit" tests="0" failures="1" errors="0" time="410" timestamp="2019-07-30 14:58:26" hostname="user - Tester-pc" id="Test Suites/EditOrderSuites/EditOrderTestSuit">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation_new\\KatalonProjects\\Reports\\EditOrderSuites\\EditOrderTestSuit\\20190730_145813"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation_new\\KatalonProjects\\Reports\\EditOrderSuites\\EditOrderTestSuit\\20190730_145813\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - Tester-pc"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 75.0.3770.142"/>
+         <property name="hostAddress" value="10.0.60.38"/>
+         <property name="sessionId" value="fe7122d3745ef77907f8755ecbba398d"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/editOrder/rsEditOrderRS" classname="Test Cases/editOrder/rsEditOrderRS" status="FAILED">
+         <failure type="FAILED" message="Test Cases/editOrder/rsEditOrderRS FAILED.
+Reason:
+Assertion failed: 
+
+assert editButton.size() > 0
+       |          |      |
+       []         0      false
+
+	at rsEditOrderRS.run(rsEditOrderRS:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1564478893417.run(TempTestSuite1564478893417.groovy:35)
+"/>
+         <system-out><![CDATA[2019-07-30 14:58:28 - [TEST_CASE][FAILED] - Test Cases/editOrder/rsEditOrderRS: Test Cases/editOrder/rsEditOrderRS FAILED.
+Reason:
+Assertion failed: 
+
+assert editButton.size() > 0
+       |          |      |
+       []         0      false
+
+	at rsEditOrderRS.run(rsEditOrderRS:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1564478893417.run(TempTestSuite1564478893417.groovy:35)
+
+
+2019-07-30 14:58:29 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-07-30 14:58:30 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-07-30 14:58:30 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-07-30 14:58:31 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-07-30 14:58:33 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-07-30 14:58:33 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-07-30 14:58:33 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-07-30 14:58:41 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-07-30 14:58:41 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/setVHost"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/setVHost' successfully
+
+2019-07-30 14:58:41 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/setVHost: Test Cases/TestCaseUtilities/setVHost
+
+2019-07-30 14:58:42 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-07-30 14:58:46 - [TEST_STEP][PASSED] - ofbizUser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-07-30 14:58:46 - [TEST_STEP][PASSED] - ofbizPass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-07-30 14:58:46 - [TEST_STEP][PASSED] - vhostTarget = findTestData("envtData").getValue("vhostTarget", 1): null
+
+2019-07-30 14:58:46 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-07-30 14:58:49 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-07-30 14:58:49 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Username_username"), ofbizUser): Text 'automation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Username_username'
+
+2019-07-30 14:58:50 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Username_username'
+
+2019-07-30 14:58:50 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Password_password"), ofbizPass): Text 'cabiautomation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Password_password'
+
+2019-07-30 14:58:50 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Password_password'
+
+2019-07-30 14:58:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Password_Submit")): Object: 'Object Repository/virualShowRSVPOR/Page_/input_Password_Submit' is clicked on
+
+2019-07-30 14:58:56 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/input_Password_Submit' is clicked on
+
+2019-07-30 14:58:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/a_Set Vhost")): Object: 'Object Repository/virualShowRSVPOR/Page_/a_Set Vhost' is clicked on
+
+2019-07-30 14:58:57 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/a_Set Vhost' is clicked on
+
+2019-07-30 14:58:57 - [TEST_STEP][PASSED] - click(UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", vhostTarget, "')]")): Object: 'select_target' is clicked on
+
+2019-07-30 14:58:57 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-07-30 14:58:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/input")): Object: 'Object Repository/virualShowRSVPOR/Page_/input' is clicked on
+
+2019-07-30 14:59:00 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/input' is clicked on
+
+2019-07-30 14:59:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/setVHost' successfully
+
+2019-07-30 14:59:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("editOrder/retailOrderRS"), ["addOnStyle":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/editOrder/retailOrderRS' successfully
+
+2019-07-30 14:59:00 - [TEST_CASE][PASSED] - Test Cases/editOrder/retailOrderRS: Test Cases/editOrder/retailOrderRS
+
+2019-07-30 14:59:02 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-07-30 14:59:02 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-07-30 14:59:02 - [TEST_STEP][PASSED] - actions = new org.openqa.selenium.interactions.Actions(driver): null
+
+2019-07-30 14:59:02 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/rsLogin"), ["RSURL":"", "RSuser":"", "RSpass":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/rsLogin' successfully
+
+2019-07-30 14:59:02 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/rsLogin: Test Cases/TestCaseUtilities/rsLogin
+
+2019-07-30 14:59:03 - [TEST_STEP][PASSED] - RSURL = findTestData("envtData").getValue("RSURL", 1): null
+
+2019-07-30 14:59:04 - [TEST_STEP][PASSED] - RSuser = findTestData("credData").getValue("RSuser", 1): null
+
+2019-07-30 14:59:04 - [TEST_STEP][PASSED] - RSpass = findTestData("credData").getValue("RSpass", 1): null
+
+2019-07-30 14:59:04 - [TEST_STEP][PASSED] - BSURL = findTestData("envtData").getValue("BSURL", 1): null
+
+2019-07-30 14:59:04 - [TEST_STEP][PASSED] - navigateToUrl(RSURL): Navigate to 'https://mirandakate.cabitest5.com' successfully
+
+2019-07-30 14:59:44 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabitest5.com' successfully
+
+2019-07-30 14:59:44 - [TEST_STEP][PASSED] - click(findTestObject("ReplicatedSite/rs_Page_Trendy/i_user_login")): Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/i_user_login' is clicked on
+
+2019-07-30 14:59:45 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/i_user_login' is clicked on
+
+2019-07-30 14:59:45 - [TEST_STEP][PASSED] - setText(findTestObject("ReplicatedSite/rs_Page_Trendy/input_Sign in  Create account_email"), RSuser): Text 'sushantguest1@test.com' is set on object 'Object Repository/ReplicatedSite/rs_Page_Trendy/input_Sign in  Create account_email'
+
+2019-07-30 14:59:48 - [MESSAGE][PASSED] - Text 'sushantguest1@test.com' is set on object 'Object Repository/ReplicatedSite/rs_Page_Trendy/input_Sign in  Create account_email'
+
+2019-07-30 14:59:48 - [TEST_STEP][PASSED] - click(findTestObject("ReplicatedSite/rs_Page_Trendy/button_Continue")): Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/button_Continue' is clicked on
+
+2019-07-30 14:59:49 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/button_Continue' is clicked on
+
+2019-07-30 14:59:49 - [TEST_STEP][PASSED] - setText(findTestObject("ReplicatedSite/rs_Page_Trendy/input_Welcome_password"), RSpass): Text 'blackdress19' is set on object 'Object Repository/ReplicatedSite/rs_Page_Trendy/input_Welcome_password'
+
+2019-07-30 14:59:51 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/ReplicatedSite/rs_Page_Trendy/input_Welcome_password'
+
+2019-07-30 14:59:51 - [TEST_STEP][PASSED] - click(findTestObject("ReplicatedSite/rs_Page_Trendy/button_Continue")): Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/button_Continue' is clicked on
+
+2019-07-30 14:59:52 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/button_Continue' is clicked on
+
+2019-07-30 14:59:52 - [TEST_STEP][PASSED] - completeProfileLater = findWebElements(findTestObject("ReplicatedSite/rs_Page_Trendy/completeProfileLater"), 5): null
+
+2019-07-30 14:59:53 - [TEST_STEP][PASSED] - if (completeProfileLater.size() > 0): Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/completeProfileLater' is clicked on
+
+2019-07-30 14:59:53 - [TEST_STEP][PASSED] - click(findTestObject("ReplicatedSite/rs_Page_Trendy/completeProfileLater")): Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/completeProfileLater' is clicked on
+
+2019-07-30 15:00:16 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/completeProfileLater' is clicked on
+
+2019-07-30 15:00:16 - [TEST_STEP][PASSED] - if (getUrl() == BSURL): Current window's url is: 'https://mirandakate.cabitest5.com/'
+
+2019-07-30 15:00:17 - [MESSAGE][PASSED] - Current window's url is: 'https://mirandakate.cabitest5.com/'
+
+2019-07-30 15:00:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/rsLogin' successfully
+
+2019-07-30 15:00:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/a_shop")): Object: 'Object Repository/ReplicatedSite/a_shop' is clicked on
+
+2019-07-30 15:01:00 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/a_shop' is clicked on
+
+2019-07-30 15:01:00 - [TEST_STEP][PASSED] - wait2 = new org.openqa.selenium.support.ui.WebDriverWait(driver, 10): null
+
+2019-07-30 15:01:00 - [TEST_STEP][PASSED] - wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Delight Scarf')]"))): null
+
+2019-07-30 15:01:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/div_first_item_to_buy")): Object: 'Object Repository/ReplicatedSite/div_first_item_to_buy' is clicked on
+
+2019-07-30 15:01:35 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/div_first_item_to_buy' is clicked on
+
+2019-07-30 15:01:35 - [TEST_STEP][PASSED] - firstItemToBuy = driver.findElement(By.xpath("(//div[@class='entry-content']/div[@class='item_photos']/div[@class='item_image_main'])[1]")): null
+
+2019-07-30 15:01:35 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", firstItemToBuy): null
+
+2019-07-30 15:01:35 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 15:01:40 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 15:01:40 - [TEST_STEP][PASSED] - button_add_item_to_bag = findWebElements(findTestObject("Object Repository/ReplicatedSite/button_add_item_to_bag"), 5): null
+
+2019-07-30 15:01:41 - [TEST_STEP][PASSED] - if (button_add_item_to_bag.size() == 0): null
+
+2019-07-30 15:01:41 - [TEST_STEP][PASSED] - button_add_item_to_bag = findWebElements(findTestObject("Object Repository/ReplicatedSite/button_add_item_to_bag"), 5): null
+
+2019-07-30 15:01:41 - [TEST_STEP][PASSED] - if (button_add_item_to_bag.size() == 0): null
+
+2019-07-30 15:01:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/button_add_item_to_bag")): Object: 'Object Repository/ReplicatedSite/button_add_item_to_bag' is clicked on
+
+2019-07-30 15:01:41 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/button_add_item_to_bag' is clicked on
+
+2019-07-30 15:01:41 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 15:01:46 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 15:01:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/a_cart_svg")): Object: 'Object Repository/ReplicatedSite/a_cart_svg' is clicked on
+
+2019-07-30 15:02:10 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/a_cart_svg' is clicked on
+
+2019-07-30 15:02:10 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 15:02:15 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 15:02:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/a_checkout")): Object: 'Object Repository/ReplicatedSite/a_checkout' is clicked on
+
+2019-07-30 15:02:15 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/a_checkout' is clicked on
+
+2019-07-30 15:02:15 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 15:02:20 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 15:02:20 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-07-30 15:02:30 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-07-30 15:02:30 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("ReplicatedSite/button_save_and_continue"), 60): Object 'Object Repository/ReplicatedSite/button_save_and_continue' is clickable
+
+2019-07-30 15:02:41 - [MESSAGE][PASSED] - Object 'Object Repository/ReplicatedSite/button_save_and_continue' is clickable
+
+2019-07-30 15:02:41 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-07-30 15:02:41 - [TEST_STEP][PASSED] - element = driver.findElement(By.xpath("(//button/span[contains(text(), 'Save and Continue')])[1]")): null
+
+2019-07-30 15:02:41 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", element): null
+
+2019-07-30 15:02:42 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-30 15:02:45 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-30 15:02:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_pay_with_credit")): Object: 'Object Repository/ReplicatedSite/input_pay_with_credit' is clicked on
+
+2019-07-30 15:02:45 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_pay_with_credit' is clicked on
+
+2019-07-30 15:02:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/button_add_another_card")): Object: 'Object Repository/ReplicatedSite/button_add_another_card' is clicked on
+
+2019-07-30 15:02:46 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/button_add_another_card' is clicked on
+
+2019-07-30 15:02:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/select_credit_card_type")): Object: 'Object Repository/ReplicatedSite/select_credit_card_type' is clicked on
+
+2019-07-30 15:02:46 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/select_credit_card_type' is clicked on
+
+2019-07-30 15:02:46 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/ReplicatedSite/input_creditcard_first_name"), "abcd"): Text 'abcd' is set on object 'Object Repository/ReplicatedSite/input_creditcard_first_name'
+
+2019-07-30 15:02:47 - [MESSAGE][PASSED] - Text 'abcd' is set on object 'Object Repository/ReplicatedSite/input_creditcard_first_name'
+
+2019-07-30 15:02:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/ReplicatedSite/input_creditcard_last_name"), "efgh"): Text 'efgh' is set on object 'Object Repository/ReplicatedSite/input_creditcard_last_name'
+
+2019-07-30 15:02:48 - [MESSAGE][PASSED] - Text 'efgh' is set on object 'Object Repository/ReplicatedSite/input_creditcard_last_name'
+
+2019-07-30 15:02:48 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/ReplicatedSite/input_creditcard_card_number"), "4111111111111111"): Text '4111111111111111' is set on object 'Object Repository/ReplicatedSite/input_creditcard_card_number'
+
+2019-07-30 15:02:49 - [MESSAGE][PASSED] - Text '4111111111111111' is set on object 'Object Repository/ReplicatedSite/input_creditcard_card_number'
+
+2019-07-30 15:02:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_creditcard_expiration_month")): Object: 'Object Repository/ReplicatedSite/input_creditcard_expiration_month' is clicked on
+
+2019-07-30 15:02:49 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_creditcard_expiration_month' is clicked on
+
+2019-07-30 15:02:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_creditcard_expiration_year")): Object: 'Object Repository/ReplicatedSite/input_creditcard_expiration_year' is clicked on
+
+2019-07-30 15:02:49 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_creditcard_expiration_year' is clicked on
+
+2019-07-30 15:02:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_billing_address")): Object: 'Object Repository/ReplicatedSite/input_billing_address' is clicked on
+
+2019-07-30 15:02:50 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_billing_address' is clicked on
+
+2019-07-30 15:02:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_billing_location_mailing")): Object: 'Object Repository/ReplicatedSite/input_billing_location_mailing' is clicked on
+
+2019-07-30 15:02:50 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_billing_location_mailing' is clicked on
+
+2019-07-30 15:02:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_billing_location_add_new")): Object: 'Object Repository/ReplicatedSite/input_billing_location_add_new' is clicked on
+
+2019-07-30 15:02:51 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_billing_location_add_new' is clicked on
+
+2019-07-30 15:02:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_billing_location_mailing")): Object: 'Object Repository/ReplicatedSite/input_billing_location_mailing' is clicked on
+
+2019-07-30 15:02:51 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_billing_location_mailing' is clicked on
+
+2019-07-30 15:02:51 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-07-30 15:02:51 - [TEST_STEP][PASSED] - element = driver.findElement(By.xpath("(//button[@type='submit']/span[contains(text(), 'Save')])[2]")): null
+
+2019-07-30 15:02:52 - [TEST_STEP][PASSED] - actions = new org.openqa.selenium.interactions.Actions(driver): null
+
+2019-07-30 15:02:52 - [TEST_STEP][PASSED] - build().perform(): null
+
+2019-07-30 15:02:52 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-07-30 15:03:02 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-07-30 15:03:02 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("ReplicatedSite/button_save_and_continue_2"), 60): Object 'Object Repository/ReplicatedSite/button_save_and_continue_2' is clickable
+
+2019-07-30 15:03:02 - [MESSAGE][PASSED] - Object 'Object Repository/ReplicatedSite/button_save_and_continue_2' is clickable
+
+2019-07-30 15:03:02 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-07-30 15:03:02 - [TEST_STEP][PASSED] - element = driver.findElement(By.xpath("(//button/span[contains(text(), 'Save and Continue')])[2]")): null
+
+2019-07-30 15:03:02 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", element): null
+
+2019-07-30 15:03:02 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 15:03:07 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 15:03:07 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/ReplicatedSite/span_complete_order"), 30): Object 'Object Repository/ReplicatedSite/span_complete_order' is clickable
+
+2019-07-30 15:03:08 - [MESSAGE][PASSED] - Object 'Object Repository/ReplicatedSite/span_complete_order' is clickable
+
+2019-07-30 15:03:08 - [TEST_STEP][PASSED] - element = driver.findElement(By.xpath("//span[contains(text(), 'COMPLETE ORDER')]")): null
+
+2019-07-30 15:03:08 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", element): null
+
+2019-07-30 15:03:08 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 15:03:13 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 15:03:13 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/editOrder/retailOrderRS' successfully
+
+2019-07-30 15:03:13 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/ReplicatedSite/h1_thanks_msg"), "Thanks for placing your order!"): Actual text and expected text of test object 'Object Repository/ReplicatedSite/h1_thanks_msg' are matched.
+
+2019-07-30 15:03:13 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ReplicatedSite/h1_thanks_msg' are matched.
+
+2019-07-30 15:03:13 - [TEST_STEP][PASSED] - orderID = getText(findTestObject("Object Repository/ReplicatedSite/span_rs_orderid")): Text of object 'Object Repository/ReplicatedSite/span_rs_orderid' is: 'RP708089702'
+
+2019-07-30 15:03:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/ReplicatedSite/span_rs_orderid' is: 'RP708089702'
+
+2019-07-30 15:03:13 - [TEST_STEP][PASSED] - editOrderButton = findWebElements(findTestObject("Object Repository/ReplicatedSite/div_edit_order_rs"), 5): null
+
+2019-07-30 15:03:13 - [TEST_STEP][PASSED] - assert editOrderButton.size() > 0: null
+
+2019-07-30 15:03:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/div_edit_order_rs")): Object: 'Object Repository/ReplicatedSite/div_edit_order_rs' is clicked on
+
+2019-07-30 15:03:14 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/div_edit_order_rs' is clicked on
+
+2019-07-30 15:03:14 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-07-30 15:03:24 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-07-30 15:03:24 - [TEST_STEP][PASSED] - updateButton = findWebElements(findTestObject("Object Repository/ReplicatedSite/a_update_order"), 1): null
+
+2019-07-30 15:03:35 - [TEST_STEP][PASSED] - assert updateButton.size() > 0: null
+
+2019-07-30 15:03:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/a_update_order")): Object: 'Object Repository/ReplicatedSite/a_update_order' is clicked on
+
+2019-07-30 15:03:36 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/a_update_order' is clicked on
+
+2019-07-30 15:03:36 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 15:03:41 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 15:03:41 - [TEST_STEP][PASSED] - callTestCase(findTestCase("editOrder/rsUpdateOrder"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/editOrder/rsUpdateOrder' successfully
+
+2019-07-30 15:03:41 - [TEST_CASE][PASSED] - Test Cases/editOrder/rsUpdateOrder: Test Cases/editOrder/rsUpdateOrder
+
+2019-07-30 15:03:43 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-07-30 15:03:43 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-07-30 15:03:43 - [TEST_STEP][PASSED] - element = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+2019-07-30 15:03:43 - [TEST_STEP][PASSED] - actions = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+2019-07-30 15:03:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_other_address")): Object: 'Object Repository/ReplicatedSite/input_other_address' is clicked on
+
+2019-07-30 15:04:02 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_other_address' is clicked on
+
+2019-07-30 15:04:02 - [TEST_STEP][PASSED] - contactNumber = 4: null
+
+2019-07-30 15:04:02 - [TEST_STEP][PASSED] - address1 = findTestData("contactData").getValue("address1", contactNumber): null
+
+2019-07-30 15:04:02 - [TEST_STEP][PASSED] - city = findTestData("contactData").getValue("city", contactNumber): null
+
+2019-07-30 15:04:03 - [TEST_STEP][PASSED] - state = findTestData("contactData").getValue("state", contactNumber): null
+
+2019-07-30 15:04:03 - [TEST_STEP][PASSED] - zip = findTestData("contactData").getValue("zip", contactNumber): null
+
+2019-07-30 15:04:03 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/ReplicatedSite/input_address1_update"), address1): Text '3218 S MACDILL AVE' is set on object 'Object Repository/ReplicatedSite/input_address1_update'
+
+2019-07-30 15:04:05 - [MESSAGE][PASSED] - Text '3218 S MACDILL AVE' is set on object 'Object Repository/ReplicatedSite/input_address1_update'
+
+2019-07-30 15:04:05 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/ReplicatedSite/input_city_update"), city): Text 'TAMPA' is set on object 'Object Repository/ReplicatedSite/input_city_update'
+
+2019-07-30 15:04:05 - [MESSAGE][PASSED] - Text 'TAMPA' is set on object 'Object Repository/ReplicatedSite/input_city_update'
+
+2019-07-30 15:04:05 - [TEST_STEP][PASSED] - xpath = UtilityMethods.concat("//select[@id='stateProvince']/option[@label='", state, "']"): null
+
+2019-07-30 15:04:05 - [TEST_STEP][PASSED] - addressState = new com.kms.katalon.core.testobject.TestObject(select_state_dynamic): null
+
+2019-07-30 15:04:05 - [TEST_STEP][PASSED] - addressState.addProperty("xpath", EQUALS, xpath): null
+
+2019-07-30 15:04:05 - [TEST_STEP][PASSED] - click(addressState): Object: 'select_state_dynamic' is clicked on
+
+2019-07-30 15:04:06 - [MESSAGE][PASSED] - Object: 'select_state_dynamic' is clicked on
+
+2019-07-30 15:04:06 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/ReplicatedSite/input_postal_code_update"), zip): Text '33629' is set on object 'Object Repository/ReplicatedSite/input_postal_code_update'
+
+2019-07-30 15:04:06 - [MESSAGE][PASSED] - Text '33629' is set on object 'Object Repository/ReplicatedSite/input_postal_code_update'
+
+2019-07-30 15:04:06 - [TEST_STEP][PASSED] - delay(4): Delayed 4 second(s)
+
+2019-07-30 15:04:10 - [MESSAGE][PASSED] - Delayed 4 second(s)
+
+2019-07-30 15:04:10 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-07-30 15:04:10 - [TEST_STEP][PASSED] - element = driver.findElement(By.xpath("//button[@type='submit']/span[contains(text(), 'Save')]")): null
+
+2019-07-30 15:04:10 - [TEST_STEP][PASSED] - actions = new org.openqa.selenium.interactions.Actions(driver): null
+
+2019-07-30 15:04:10 - [TEST_STEP][PASSED] - build().perform(): null
+
+2019-07-30 15:04:11 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/ReplicatedSite/button_save_and_continue"), 30): Object 'Object Repository/ReplicatedSite/button_save_and_continue' is clickable
+
+2019-07-30 15:04:11 - [MESSAGE][PASSED] - Object 'Object Repository/ReplicatedSite/button_save_and_continue' is clickable
+
+2019-07-30 15:04:11 - [TEST_STEP][PASSED] - element = driver.findElement(By.xpath("(//button[@class='btn pull-right'])[1]")): null
+
+2019-07-30 15:04:11 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-07-30 15:04:11 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", element): null
+
+2019-07-30 15:04:11 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-30 15:04:14 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-30 15:04:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_make_donation")): Object: 'Object Repository/ReplicatedSite/input_make_donation' is clicked on
+
+2019-07-30 15:04:15 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_make_donation' is clicked on
+
+2019-07-30 15:04:15 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-30 15:04:17 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-30 15:04:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_make_donation")): Object: 'Object Repository/ReplicatedSite/input_make_donation' is clicked on
+
+2019-07-30 15:04:17 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_make_donation' is clicked on
+
+2019-07-30 15:04:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_pay_with_gc")): Object: 'Object Repository/ReplicatedSite/input_pay_with_gc' is clicked on
+
+2019-07-30 15:04:17 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_pay_with_gc' is clicked on
+
+2019-07-30 15:04:17 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-30 15:04:19 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-30 15:04:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_pay_with_gc")): Object: 'Object Repository/ReplicatedSite/input_pay_with_gc' is clicked on
+
+2019-07-30 15:04:20 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_pay_with_gc' is clicked on
+
+2019-07-30 15:04:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_pay_with_credit")): Object: 'Object Repository/ReplicatedSite/input_pay_with_credit' is clicked on
+
+2019-07-30 15:04:20 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_pay_with_credit' is clicked on
+
+2019-07-30 15:04:20 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-30 15:04:22 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-30 15:04:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_pay_with_credit")): Object: 'Object Repository/ReplicatedSite/input_pay_with_credit' is clicked on
+
+2019-07-30 15:04:22 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_pay_with_credit' is clicked on
+
+2019-07-30 15:04:22 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-30 15:04:24 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-30 15:04:24 - [TEST_STEP][PASSED] - RSURL = findTestData("envtData").getValue("RSURL", 1): null
+
+2019-07-30 15:04:24 - [TEST_STEP][PASSED] - cartURL = UtilityMethods.concat(RSURL, "/cart/"): null
+
+2019-07-30 15:04:24 - [TEST_STEP][PASSED] - navigateToUrl(cartURL): Navigate to 'https://mirandakate.cabitest5.com/cart/' successfully
+
+2019-07-30 15:04:49 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabitest5.com/cart/' successfully
+
+2019-07-30 15:04:49 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/editOrder/rsUpdateOrder' successfully
+
+2019-07-30 15:04:49 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-30 15:04:52 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-30 15:04:52 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/a_cancel_edit")): Object: 'Object Repository/ReplicatedSite/a_cancel_edit' is clicked on
+
+2019-07-30 15:04:53 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/a_cancel_edit' is clicked on
+
+2019-07-30 15:04:53 - [TEST_STEP][PASSED] - cancelEditButton = findWebElements(findTestObject("Object Repository/ReplicatedSite/h2_sure_to_cancel_edit"), 1): null
+
+2019-07-30 15:04:53 - [TEST_STEP][PASSED] - assert cancelEditButton.size() > 0: null
+
+2019-07-30 15:04:53 - [TEST_STEP][PASSED] - click(findTestObject("ReplicatedSite/button_yes_cancel_edit")): Object: 'Object Repository/ReplicatedSite/button_yes_cancel_edit' is clicked on
+
+2019-07-30 15:04:53 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/button_yes_cancel_edit' is clicked on
+
+2019-07-30 15:04:53 - [TEST_STEP][PASSED] - xpath = UtilityMethods.concat("//span[contains(text(), '", orderID, "')]/parent::div/parent::div/div[@class='table-row-edit-order']"): null
+
+2019-07-30 15:04:53 - [TEST_STEP][PASSED] - to = new com.kms.katalon.core.testobject.TestObject(a_edit_link): null
+
+2019-07-30 15:04:53 - [TEST_STEP][PASSED] - to.addProperty("xpath", EQUALS, xpath): null
+
+2019-07-30 15:04:53 - [TEST_STEP][PASSED] - editButton = findWebElements(to, 1): Unable to find the element located by 'By.xpath: //span[contains(text(), 'RP708089702')]/parent::div/parent::div/div[@class='table-row-edit-order']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-07-30 15:05:15 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //span[contains(text(), 'RP708089702')]/parent::div/parent::div/div[@class='table-row-edit-order']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-07-30 15:05:15 - [TEST_STEP][FAILED] - assert editButton.size() > 0: assert editButton.size() > 0 FAILED.
+Reason:
+Assertion failed: 
+
+assert editButton.size() > 0
+       |          |      |
+       []         0      false
+
+	at rsEditOrderRS.run(rsEditOrderRS:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1564478893417.run(TempTestSuite1564478893417.groovy:35)
+
+
+2019-07-30 15:05:15 - [MESSAGE][FAILED] - assert editButton.size() > 0 FAILED.
+Reason:
+Assertion failed: 
+
+assert editButton.size() > 0
+       |          |      |
+       []         0      false
+
+	at rsEditOrderRS.run(rsEditOrderRS:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1564478893417.run(TempTestSuite1564478893417.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-07-30 14:58:28 - [TEST_CASE][FAILED] - Test Cases/editOrder/rsEditOrderRS: Test Cases/editOrder/rsEditOrderRS FAILED.
+Reason:
+Assertion failed: 
+
+assert editButton.size() > 0
+       |          |      |
+       []         0      false
+
+	at rsEditOrderRS.run(rsEditOrderRS:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1564478893417.run(TempTestSuite1564478893417.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-07-30 14:58:26 - [TEST_SUITE][FAILED] - EditOrderTestSuit: Test Cases/editOrder/rsEditOrderRS FAILED.
+Reason:
+Assertion failed: 
+
+assert editButton.size() > 0
+       |          |      |
+       []         0      false
+
+	at rsEditOrderRS.run(rsEditOrderRS:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1564478893417.run(TempTestSuite1564478893417.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-07-30 14:58:26 - [TEST_SUITE][FAILED] - EditOrderTestSuit: Test Cases/editOrder/rsEditOrderRS FAILED.
+Reason:
+Assertion failed: 
+
+assert editButton.size() > 0
+       |          |      |
+       []         0      false
+
+	at rsEditOrderRS.run(rsEditOrderRS:50)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1564478893417.run(TempTestSuite1564478893417.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

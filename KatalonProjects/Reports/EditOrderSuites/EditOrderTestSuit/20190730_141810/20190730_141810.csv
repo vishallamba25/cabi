@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+EditOrderTestSuit,Chrome 75.0.3770.142,,2019-07-30 14:18:19,2019-07-30 14:22:09,3m - 50.245s,FAILED
+,,,,,,
+Test Cases/editOrder/rsEditOrderPartialShip,Chrome 75.0.3770.142,,2019-07-30 14:18:20,2019-07-30 14:22:08,3m - 48.122s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.142,,2019-07-30 14:18:20,2019-07-30 14:18:20,0.142s,PASSED
+"callTestCase(findTestCase(""editOrder/retailOrderBO""), [""editScenarioNumber"":5], STOP_ON_FAILURE)",Chrome 75.0.3770.142,,2019-07-30 14:18:21,2019-07-30 14:20:40,2m - 18.809s,PASSED
+delay(10),Chrome 75.0.3770.142,,2019-07-30 14:20:40,2019-07-30 14:20:50,10.004s,PASSED
+"callTestCase(findTestCase(""NewArrival/warehouseShipping""), [""orderId"":retailOrderID], STOP_ON_FAILURE)",Chrome 75.0.3770.142,,2019-07-30 14:20:50,2019-07-30 14:22:08,1m - 17.614s,FAILED

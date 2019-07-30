@@ -7,16 +7,20 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//select[@id='sizeSelect_1']/option[@value='L']</value>
+         <value>//select[@id='sizeSelect_1']/option[@value='M/L']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='sizeSelect_1']/option[@value='M/L']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//select[@id='sizeSelect_1']/option[@value='L']</value>
+      <value>//select[@id='sizeSelect_1']/option[@value='M/L']</value>
    </webElementProperties>
 </WebElementEntity>

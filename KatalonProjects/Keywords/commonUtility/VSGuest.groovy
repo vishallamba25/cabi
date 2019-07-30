@@ -25,13 +25,32 @@ public class VSGuest {
 	public VSGuest(String name){
 		this.name=name;
 	}
+	
+	public boolean equals(VSGuest v) {
+		return this.micStatus==v.micStatus && this.webcamStatus== v.webcamStatus && this.active==v.active && this.name.equalsIgnoreCase(v.name) &&this.favorites==v.favorites && this.ordered==v.ordered;
+	}
 
 	public static boolean listEquals(ArrayList<VSGuest> actualList, ArrayList<VSGuest> expectedList, Comparator<VSGuest> comp){
 		if(expectedList.size()!=actualList.size())
 			return false;
 
-		Collections.sort(actualList, comp)
-		return expectedList.equals(actualList);
+		//Collections.sort(actualList, comp)
+
+		for(VSGuest el: actualList){
+			println UtilityMethods.concat(el.micStatus.toString(), ", ", el.webcamStatus.toString(), ", ", el.active.toString(), ", ", el.name, ", ", el.favorites.toString(), ", ", el.ordered.toString());
+		}
+		println "-----------------------------"
+		for(VSGuest el: expectedList){
+			println UtilityMethods.concat(el.micStatus.toString(), ", ", el.webcamStatus.toString(), ", ", el.active.toString(), ", ", el.name, ", ", el.favorites.toString(), ", ", el.ordered.toString());
+		}
+		
+		for(int i=0; i<actualList.size(); i++) {
+			if(!(actualList.get(i).equals(expectedList.get(i)))){
+				return false;
+			}
+		}
+		//return expectedList.equals(actualList);
+		return true;
 	}
 
 	public static ArrayList<VSGuest> createActualGuestList(){

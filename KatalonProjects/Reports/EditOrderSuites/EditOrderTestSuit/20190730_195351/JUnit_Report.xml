@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="EditOrderTestSuit" time="210" tests="1" failures="0" errors="0">
+   <testsuite name="EditOrderTestSuit" tests="1" failures="0" errors="0" time="210" timestamp="2019-07-30 19:53:59" hostname="user - Tester-pc" id="Test Suites/EditOrderSuites/EditOrderTestSuit">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation_new\\KatalonProjects\\Reports\\EditOrderSuites\\EditOrderTestSuit\\20190730_195351"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation_new\\KatalonProjects\\Reports\\EditOrderSuites\\EditOrderTestSuit\\20190730_195351\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - Tester-pc"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 75.0.3770.142"/>
+         <property name="hostAddress" value="10.0.60.38"/>
+         <property name="sessionId" value="f1c9dca303a0bab3ef3fa05f3a8a25d4"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/editOrder/rsEditOrderGiftCard" classname="Test Cases/editOrder/rsEditOrderGiftCard" status="PASSED">
+         <system-out><![CDATA[2019-07-30 19:53:59 - [TEST_CASE][PASSED] - Test Cases/editOrder/rsEditOrderGiftCard: Test Cases/editOrder/rsEditOrderGiftCard
+
+2019-07-30 19:54:00 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-07-30 19:54:00 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-07-30 19:54:00 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-07-30 19:54:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("editOrder/retailOrderBO"), ["editScenarioNumber":3], STOP_ON_FAILURE): Call Test Case 'Test Cases/editOrder/retailOrderBO' successfully
+
+2019-07-30 19:54:01 - [TEST_CASE][PASSED] - Test Cases/editOrder/retailOrderBO: Test Cases/editOrder/retailOrderBO
+
+2019-07-30 19:54:02 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-07-30 19:54:02 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-07-30 19:54:02 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-07-30 19:54:02 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-07-30 19:54:07 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-07-30 19:54:07 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-07-30 19:54:07 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-07-30 19:54:07 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-07-30 19:54:07 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-07-30 19:54:08 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-07-30 19:54:10 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-07-30 19:54:10 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-07-30 19:54:10 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test19.cliotest.com/backoffice/control/main' successfully
+
+2019-07-30 19:54:20 - [MESSAGE][PASSED] - Navigate to 'https://test19.cliotest.com/backoffice/control/main' successfully
+
+2019-07-30 19:54:20 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-07-30 19:54:21 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-07-30 19:54:21 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-07-30 19:54:21 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-07-30 19:54:21 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-07-30 19:54:21 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-07-30 19:54:22 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-07-30 19:54:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-07-30 19:54:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-07-30 19:54:34 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-30 19:54:37 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-30 19:54:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-07-30 19:54:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-07-30 19:54:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-07-30 19:54:37 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-07-30 19:54:38 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-07-30 19:54:38 - [TEST_STEP][PASSED] - rightClick(findTestObject("Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is right clicked on
+
+2019-07-30 19:54:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is right clicked on
+
+2019-07-30 19:54:39 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Home/a_retail_purchases")): Object: 'Object Repository/Page_cabi Home/a_retail_purchases' is clicked on
+
+2019-07-30 19:54:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_retail_purchases' is clicked on
+
+2019-07-30 19:54:43 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-30 19:54:46 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-30 19:54:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/existingCustomer")): Object: 'Object Repository/Page_cabi Home/existingCustomer' is clicked on
+
+2019-07-30 19:54:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/existingCustomer' is clicked on
+
+2019-07-30 19:54:46 - [TEST_STEP][PASSED] - contactNumber = 10: null
+
+2019-07-30 19:54:46 - [TEST_STEP][PASSED] - firstName = findTestData("contactData").getValue("firstName", contactNumber): null
+
+2019-07-30 19:54:46 - [TEST_STEP][PASSED] - lastName = findTestData("contactData").getValue("lastName", contactNumber): null
+
+2019-07-30 19:54:46 - [TEST_STEP][PASSED] - email = findTestData("contactData").getValue("email", contactNumber): null
+
+2019-07-30 19:54:46 - [TEST_STEP][PASSED] - address1 = findTestData("contactData").getValue("address1", contactNumber): null
+
+2019-07-30 19:54:46 - [TEST_STEP][PASSED] - city = findTestData("contactData").getValue("city", contactNumber): null
+
+2019-07-30 19:54:47 - [TEST_STEP][PASSED] - state = findTestData("contactData").getValue("state", contactNumber): null
+
+2019-07-30 19:54:47 - [TEST_STEP][PASSED] - zip = findTestData("contactData").getValue("zip", contactNumber): null
+
+2019-07-30 19:54:47 - [TEST_STEP][PASSED] - existingCustFName = firstName: null
+
+2019-07-30 19:54:47 - [TEST_STEP][PASSED] - existingCustLName = lastName: null
+
+2019-07-30 19:54:47 - [TEST_STEP][PASSED] - space = " ": null
+
+2019-07-30 19:54:47 - [TEST_STEP][PASSED] - existingCust = $existingCustFName$space$existingCustLName: null
+
+2019-07-30 19:54:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Home/input_existing_guest"), existingCust): Text 'sushantguest1 abc' is set on object 'Object Repository/Page_cabi Home/input_existing_guest'
+
+2019-07-30 19:54:47 - [MESSAGE][PASSED] - Text 'sushantguest1 abc' is set on object 'Object Repository/Page_cabi Home/input_existing_guest'
+
+2019-07-30 19:54:47 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-30 19:54:50 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-30 19:54:50 - [TEST_STEP][PASSED] - rightClick(findTestObject("Object Repository/Page_cabi Home/input_existing_guest")): Object: 'Object Repository/Page_cabi Home/input_existing_guest' is right clicked on
+
+2019-07-30 19:54:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/input_existing_guest' is right clicked on
+
+2019-07-30 19:54:50 - [TEST_STEP][PASSED] - rightClick(findTestObject("Object Repository/Page_cabi Home/input_existing_guest")): Object: 'Object Repository/Page_cabi Home/input_existing_guest' is right clicked on
+
+2019-07-30 19:54:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/input_existing_guest' is right clicked on
+
+2019-07-30 19:54:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Create Show - Set Hostess/a_select_customer")): Object: 'Object Repository/Page_cabi Create Show - Set Hostess/a_select_customer' is clicked on
+
+2019-07-30 19:54:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Create Show - Set Hostess/a_select_customer' is clicked on
+
+2019-07-30 19:54:51 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Home/input_existing_guest"), existingCust): Text 'sushantguest1 abc' is set on object 'Object Repository/Page_cabi Home/input_existing_guest'
+
+2019-07-30 19:54:51 - [MESSAGE][PASSED] - Text 'sushantguest1 abc' is set on object 'Object Repository/Page_cabi Home/input_existing_guest'
+
+2019-07-30 19:54:51 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Retail Store/input_email"), email): Text 'sushantguest1@test.com' is set on object 'Object Repository/Page_cabi Retail Store/input_email'
+
+2019-07-30 19:54:52 - [MESSAGE][PASSED] - Text 'sushantguest1@test.com' is set on object 'Object Repository/Page_cabi Retail Store/input_email'
+
+2019-07-30 19:54:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1"), address1): Text '972 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-07-30 19:54:52 - [MESSAGE][PASSED] - Text '972 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-07-30 19:54:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2"), ""): Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-07-30 19:54:52 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-07-30 19:54:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_City_city"), city): Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-07-30 19:54:52 - [MESSAGE][PASSED] - Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-07-30 19:54:52 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_select_a_state")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-07-30 19:54:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-07-30 19:54:52 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-07-30 19:54:53 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-07-30 19:54:53 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_state_1"), state): Text 'Michigan' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_1'
+
+2019-07-30 19:54:54 - [MESSAGE][PASSED] - Text 'Michigan' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_1'
+
+2019-07-30 19:54:54 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-07-30 19:54:56 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-07-30 19:54:56 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_state")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_state' is clicked on
+
+2019-07-30 19:54:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_state' is clicked on
+
+2019-07-30 19:54:56 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_state_postalCode"), zip): Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-07-30 19:54:56 - [MESSAGE][PASSED] - Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-07-30 19:54:56 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 19:55:01 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 19:55:01 - [TEST_STEP][PASSED] - check(findTestObject("Object Repository/Page_cabi Home/a_same_shipping_address")): Object 'Object Repository/Page_cabi Home/a_same_shipping_address' is checked
+
+2019-07-30 19:55:01 - [MESSAGE][PASSED] - Object 'Object Repository/Page_cabi Home/a_same_shipping_address' is checked
+
+2019-07-30 19:55:01 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 19:55:06 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 19:55:06 - [TEST_STEP][PASSED] - check(findTestObject("Object Repository/Page_cabi Home/a_same_shipping_address")): Object 'Object Repository/Page_cabi Home/a_same_shipping_address' is checked
+
+2019-07-30 19:55:06 - [MESSAGE][PASSED] - Object 'Object Repository/Page_cabi Home/a_same_shipping_address' is checked
+
+2019-07-30 19:55:06 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 19:55:11 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 19:55:11 - [TEST_STEP][PASSED] - nextButton = driver.findElement(By.xpath("//li/a/span[@id='returnToActionLabel']")): null
+
+2019-07-30 19:55:11 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", nextButton): null
+
+2019-07-30 19:55:11 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-30 19:55:14 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-30 19:55:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Retail Store/span_quick_entry")): Object: 'Object Repository/Page_cabi Retail Store/span_quick_entry' is clicked on
+
+2019-07-30 19:55:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Retail Store/span_quick_entry' is clicked on
+
+2019-07-30 19:55:18 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-30 19:55:21 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-30 19:55:21 - [TEST_STEP][PASSED] - emptyCart = findWebElements(findTestObject("Object Repository/Page_cabi Personal Store/removeFromCart"), 5): Unable to find the element located by 'By.xpath: //*[@id="removeFromCart_0"]/span'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-07-30 19:55:26 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="removeFromCart_0"]/span'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-07-30 19:55:26 - [TEST_STEP][PASSED] - if (emptyCart.size() > 0): null
+
+2019-07-30 19:55:26 - [TEST_STEP][PASSED] - addOnStyle = findTestData("miscData").getValue("addOnStyle", 1): null
+
+2019-07-30 19:55:26 - [TEST_STEP][PASSED] - addOnStyle2 = findTestData("miscData").getValue("addOnStyle", 2): null
+
+2019-07-30 19:55:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0")): Object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0' is clicked on
+
+2019-07-30 19:55:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0' is clicked on
+
+2019-07-30 19:55:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0"), addOnStyle): Text '3701' is set on object 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-07-30 19:55:27 - [MESSAGE][PASSED] - Text '3701' is set on object 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-07-30 19:55:27 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-30 19:55:30 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-30 19:55:30 - [TEST_STEP][PASSED] - prod_message = getText(findTestObject("Page_cabi Create Order/first_option")): Text of object 'Object Repository/Page_cabi Create Order/first_option' is: '3701 Shetland Sweater'
+
+2019-07-30 19:55:30 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Create Order/first_option' is: '3701 Shetland Sweater'
+
+2019-07-30 19:55:30 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Create Order/first_option")): Object: 'Object Repository/Page_cabi Create Order/first_option' is clicked on
+
+2019-07-30 19:55:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Create Order/first_option' is clicked on
+
+2019-07-30 19:55:30 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 19:55:35 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 19:55:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/selectSize")): Object: 'Object Repository/Page_cabi Order Items/selectSize' is clicked on
+
+2019-07-30 19:55:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/selectSize' is clicked on
+
+2019-07-30 19:55:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/span_Add to Cart")): Object: 'Object Repository/Page_cabi Order Items/span_Add to Cart' is clicked on
+
+2019-07-30 19:55:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/span_Add to Cart' is clicked on
+
+2019-07-30 19:55:35 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 19:55:40 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 19:55:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Create Order/inputStyleLookup1")): Object: 'Object Repository/Page_cabi Create Order/inputStyleLookup1' is clicked on
+
+2019-07-30 19:55:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Create Order/inputStyleLookup1' is clicked on
+
+2019-07-30 19:55:40 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Create Order/inputStyleLookup1"), addOnStyle2): Text '3702' is set on object 'Object Repository/Page_cabi Create Order/inputStyleLookup1'
+
+2019-07-30 19:55:40 - [MESSAGE][PASSED] - Text '3702' is set on object 'Object Repository/Page_cabi Create Order/inputStyleLookup1'
+
+2019-07-30 19:55:40 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-30 19:55:43 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-30 19:55:43 - [TEST_STEP][PASSED] - prod_message2 = getText(findTestObject("Page_cabi Create Order/first_option")): Text of object 'Object Repository/Page_cabi Create Order/first_option' is: '3702 Repose Cape'
+
+2019-07-30 19:55:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Create Order/first_option' is: '3702 Repose Cape'
+
+2019-07-30 19:55:43 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Create Order/first_option")): Object: 'Object Repository/Page_cabi Create Order/first_option' is clicked on
+
+2019-07-30 19:55:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Create Order/first_option' is clicked on
+
+2019-07-30 19:55:43 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 19:55:48 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 19:55:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/selectSize2")): Object: 'Object Repository/Page_cabi Order Items/selectSize2' is clicked on
+
+2019-07-30 19:55:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/selectSize2' is clicked on
+
+2019-07-30 19:55:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/addToCart2")): Object: 'Object Repository/Page_cabi Order Items/addToCart2' is clicked on
+
+2019-07-30 19:55:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/addToCart2' is clicked on
+
+2019-07-30 19:55:48 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 19:55:53 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 19:55:53 - [TEST_STEP][PASSED] - if (editScenarioNumber == 1): null
+
+2019-07-30 19:55:53 - [TEST_STEP][PASSED] - else if (editScenarioNumber == 2): null
+
+2019-07-30 19:55:53 - [TEST_STEP][PASSED] - else if (editScenarioNumber == 3): Object: 'Object Repository/Page_cabi Order Items/a_submit' is clicked on
+
+2019-07-30 19:55:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Retail Store/span_gift_card")): Object: 'Object Repository/Page_cabi Retail Store/span_gift_card' is clicked on
+
+2019-07-30 19:55:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Retail Store/span_gift_card' is clicked on
+
+2019-07-30 19:55:55 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 19:56:00 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 19:56:00 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Order Items/select_gc_amount")): Object: 'Object Repository/Page_cabi Order Items/select_gc_amount' is clicked on
+
+2019-07-30 19:56:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/select_gc_amount' is clicked on
+
+2019-07-30 19:56:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/select_delivery_method")): Object: 'Object Repository/Page_cabi Order Items/select_delivery_method' is clicked on
+
+2019-07-30 19:56:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/select_delivery_method' is clicked on
+
+2019-07-30 19:56:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/input_gc_type")): Object: 'Object Repository/Page_cabi Order Items/input_gc_type' is clicked on
+
+2019-07-30 19:56:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/input_gc_type' is clicked on
+
+2019-07-30 19:56:01 - [TEST_STEP][PASSED] - recContactNumber = 3: null
+
+2019-07-30 19:56:01 - [TEST_STEP][PASSED] - recFName = findTestData("contactData").getValue("firstName", recContactNumber): null
+
+2019-07-30 19:56:01 - [TEST_STEP][PASSED] - recLName = findTestData("contactData").getValue("lastName", recContactNumber): null
+
+2019-07-30 19:56:01 - [TEST_STEP][PASSED] - recEmail = findTestData("contactData").getValue("email", recContactNumber): null
+
+2019-07-30 19:56:01 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_gc_rec_fname"), recFName): Text 'neocohost1' is set on object 'Object Repository/Page_cabi Order Items/input_gc_rec_fname'
+
+2019-07-30 19:56:01 - [MESSAGE][PASSED] - Text 'neocohost1' is set on object 'Object Repository/Page_cabi Order Items/input_gc_rec_fname'
+
+2019-07-30 19:56:01 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_gc_rec_lname"), recLName): Text 'abc' is set on object 'Object Repository/Page_cabi Order Items/input_gc_rec_lname'
+
+2019-07-30 19:56:01 - [MESSAGE][PASSED] - Text 'abc' is set on object 'Object Repository/Page_cabi Order Items/input_gc_rec_lname'
+
+2019-07-30 19:56:01 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_gc_rec_email"), recEmail): Text 'neocohost1a@test.com' is set on object 'Object Repository/Page_cabi Order Items/input_gc_rec_email'
+
+2019-07-30 19:56:01 - [MESSAGE][PASSED] - Text 'neocohost1a@test.com' is set on object 'Object Repository/Page_cabi Order Items/input_gc_rec_email'
+
+2019-07-30 19:56:01 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_gc_send_fname"), firstName): Text 'sushantguest1' is set on object 'Object Repository/Page_cabi Order Items/input_gc_send_fname'
+
+2019-07-30 19:56:01 - [MESSAGE][PASSED] - Text 'sushantguest1' is set on object 'Object Repository/Page_cabi Order Items/input_gc_send_fname'
+
+2019-07-30 19:56:01 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_gc_send_lname"), lastName): Text 'abc' is set on object 'Object Repository/Page_cabi Order Items/input_gc_send_lname'
+
+2019-07-30 19:56:01 - [MESSAGE][PASSED] - Text 'abc' is set on object 'Object Repository/Page_cabi Order Items/input_gc_send_lname'
+
+2019-07-30 19:56:01 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Order Items/input_gc_send_email"), email): Text 'sushantguest1@test.com' is set on object 'Object Repository/Page_cabi Order Items/input_gc_send_email'
+
+2019-07-30 19:56:02 - [MESSAGE][PASSED] - Text 'sushantguest1@test.com' is set on object 'Object Repository/Page_cabi Order Items/input_gc_send_email'
+
+2019-07-30 19:56:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/a_submit")): Object: 'Object Repository/Page_cabi Order Items/a_submit' is clicked on
+
+2019-07-30 19:56:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/a_submit' is clicked on
+
+2019-07-30 19:56:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/a_checkout")): Object: 'Object Repository/Page_cabi Order Items/a_checkout' is clicked on
+
+2019-07-30 19:56:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/a_checkout' is clicked on
+
+2019-07-30 19:56:02 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-30 19:56:05 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-30 19:56:05 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Personal Store/nextButtonShipping")): Object: 'Object Repository/Page_cabi Personal Store/nextButtonShipping' is clicked on
+
+2019-07-30 19:56:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Personal Store/nextButtonShipping' is clicked on
+
+2019-07-30 19:56:05 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-07-30 19:56:08 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-07-30 19:56:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Personal Store/makeFirstPayment")): Object: 'Object Repository/Page_cabi Personal Store/makeFirstPayment' is clicked on
+
+2019-07-30 19:56:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Personal Store/makeFirstPayment' is clicked on
+
+2019-07-30 19:56:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Personal Store/select_cash")): Object: 'Object Repository/Page_cabi Personal Store/select_cash' is clicked on
+
+2019-07-30 19:56:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Personal Store/select_cash' is clicked on
+
+2019-07-30 19:56:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Personal Store/submitPayment")): Object: 'Object Repository/Page_cabi Personal Store/submitPayment' is clicked on
+
+2019-07-30 19:56:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Personal Store/submitPayment' is clicked on
+
+2019-07-30 19:56:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Personal Store/submitOrderId")): Object: 'Object Repository/Page_cabi Personal Store/submitOrderId' is clicked on
+
+2019-07-30 19:56:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Personal Store/submitOrderId' is clicked on
+
+2019-07-30 19:56:12 - [TEST_STEP][PASSED] - successMsg = "": null
+
+2019-07-30 19:56:12 - [TEST_STEP][PASSED] - orderSuccess = false: null
+
+2019-07-30 19:56:12 - [TEST_STEP][PASSED] - successMsgs = findWebElements(findTestObject("Object Repository/Page_cabi Personal Store/p_success_msg"), 5): null
+
+2019-07-30 19:56:12 - [TEST_STEP][PASSED] - if (successMsgs.size() > 0): Text of object 'Object Repository/Page_cabi Personal Store/p_order_id' is: 'RT708089807'
+
+2019-07-30 19:56:12 - [TEST_STEP][PASSED] - successMsg = getText(findTestObject("Object Repository/Page_cabi Personal Store/p_success_msg")): Text of object 'Object Repository/Page_cabi Personal Store/p_success_msg' is: 'Order Created Successfully!!
+Order #:  RT708089807
+
+CONTINUE SHOPPING'
+
+2019-07-30 19:56:12 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Personal Store/p_success_msg' is: 'Order Created Successfully!!
+Order #:  RT708089807
+
+CONTINUE SHOPPING'
+
+2019-07-30 19:56:12 - [TEST_STEP][PASSED] - orderSuccess = true: null
+
+2019-07-30 19:56:12 - [TEST_STEP][PASSED] - retailOrderID = getText(findTestObject("Object Repository/Page_cabi Personal Store/p_order_id")): Text of object 'Object Repository/Page_cabi Personal Store/p_order_id' is: 'RT708089807'
+
+2019-07-30 19:56:12 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Personal Store/p_order_id' is: 'RT708089807'
+
+2019-07-30 19:56:12 - [TEST_STEP][PASSED] - assert orderSuccess == true: null
+
+2019-07-30 19:56:12 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-07-30 19:56:12 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-07-30 19:56:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/editOrder/retailOrderBO' successfully
+
+2019-07-30 19:56:12 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-07-30 19:56:22 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-07-30 19:56:22 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/setVHost"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/setVHost' successfully
+
+2019-07-30 19:56:22 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/setVHost: Test Cases/TestCaseUtilities/setVHost
+
+2019-07-30 19:56:23 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-07-30 19:56:23 - [TEST_STEP][PASSED] - ofbizUser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-07-30 19:56:23 - [TEST_STEP][PASSED] - ofbizPass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-07-30 19:56:23 - [TEST_STEP][PASSED] - vhostTarget = findTestData("envtData").getValue("vhostTarget", 1): null
+
+2019-07-30 19:56:23 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-07-30 19:56:25 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-07-30 19:56:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Username_username"), ofbizUser): Text 'automation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Username_username'
+
+2019-07-30 19:56:26 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Username_username'
+
+2019-07-30 19:56:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Password_password"), ofbizPass): Text 'cabiautomation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Password_password'
+
+2019-07-30 19:56:26 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Password_password'
+
+2019-07-30 19:56:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Password_Submit")): Object: 'Object Repository/virualShowRSVPOR/Page_/input_Password_Submit' is clicked on
+
+2019-07-30 19:56:30 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/input_Password_Submit' is clicked on
+
+2019-07-30 19:56:30 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/a_Set Vhost")): Object: 'Object Repository/virualShowRSVPOR/Page_/a_Set Vhost' is clicked on
+
+2019-07-30 19:56:31 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/a_Set Vhost' is clicked on
+
+2019-07-30 19:56:31 - [TEST_STEP][PASSED] - click(UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", vhostTarget, "')]")): Object: 'select_target' is clicked on
+
+2019-07-30 19:56:31 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-07-30 19:56:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/input")): Object: 'Object Repository/virualShowRSVPOR/Page_/input' is clicked on
+
+2019-07-30 19:56:34 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/input' is clicked on
+
+2019-07-30 19:56:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/setVHost' successfully
+
+2019-07-30 19:56:34 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/rsLogin"), ["RSURL":"", "RSuser":"", "RSpass":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/rsLogin' successfully
+
+2019-07-30 19:56:34 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/rsLogin: Test Cases/TestCaseUtilities/rsLogin
+
+2019-07-30 19:56:35 - [TEST_STEP][PASSED] - RSURL = findTestData("envtData").getValue("RSURL", 1): null
+
+2019-07-30 19:56:35 - [TEST_STEP][PASSED] - RSuser = findTestData("credData").getValue("RSuser", 1): null
+
+2019-07-30 19:56:35 - [TEST_STEP][PASSED] - RSpass = findTestData("credData").getValue("RSpass", 1): null
+
+2019-07-30 19:56:35 - [TEST_STEP][PASSED] - BSURL = findTestData("envtData").getValue("BSURL", 1): null
+
+2019-07-30 19:56:35 - [TEST_STEP][PASSED] - navigateToUrl(RSURL): Navigate to 'https://mirandakate.cabitest5.com' successfully
+
+2019-07-30 19:56:53 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabitest5.com' successfully
+
+2019-07-30 19:56:53 - [TEST_STEP][PASSED] - click(findTestObject("ReplicatedSite/rs_Page_Trendy/i_user_login")): Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/i_user_login' is clicked on
+
+2019-07-30 19:56:54 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/i_user_login' is clicked on
+
+2019-07-30 19:56:54 - [TEST_STEP][PASSED] - setText(findTestObject("ReplicatedSite/rs_Page_Trendy/input_Sign in  Create account_email"), RSuser): Text 'sushantguest1@test.com' is set on object 'Object Repository/ReplicatedSite/rs_Page_Trendy/input_Sign in  Create account_email'
+
+2019-07-30 19:56:56 - [MESSAGE][PASSED] - Text 'sushantguest1@test.com' is set on object 'Object Repository/ReplicatedSite/rs_Page_Trendy/input_Sign in  Create account_email'
+
+2019-07-30 19:56:56 - [TEST_STEP][PASSED] - click(findTestObject("ReplicatedSite/rs_Page_Trendy/button_Continue")): Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/button_Continue' is clicked on
+
+2019-07-30 19:56:56 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/button_Continue' is clicked on
+
+2019-07-30 19:56:56 - [TEST_STEP][PASSED] - setText(findTestObject("ReplicatedSite/rs_Page_Trendy/input_Welcome_password"), RSpass): Text 'blackdress19' is set on object 'Object Repository/ReplicatedSite/rs_Page_Trendy/input_Welcome_password'
+
+2019-07-30 19:56:57 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/ReplicatedSite/rs_Page_Trendy/input_Welcome_password'
+
+2019-07-30 19:56:57 - [TEST_STEP][PASSED] - click(findTestObject("ReplicatedSite/rs_Page_Trendy/button_Continue")): Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/button_Continue' is clicked on
+
+2019-07-30 19:56:57 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/button_Continue' is clicked on
+
+2019-07-30 19:56:57 - [TEST_STEP][PASSED] - completeProfileLater = findWebElements(findTestObject("ReplicatedSite/rs_Page_Trendy/completeProfileLater"), 5): null
+
+2019-07-30 19:56:58 - [TEST_STEP][PASSED] - if (completeProfileLater.size() > 0): Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/completeProfileLater' is clicked on
+
+2019-07-30 19:56:58 - [TEST_STEP][PASSED] - click(findTestObject("ReplicatedSite/rs_Page_Trendy/completeProfileLater")): Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/completeProfileLater' is clicked on
+
+2019-07-30 19:57:05 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/completeProfileLater' is clicked on
+
+2019-07-30 19:57:05 - [TEST_STEP][PASSED] - if (getUrl() == BSURL): Current window's url is: 'https://mirandakate.cabitest5.com/'
+
+2019-07-30 19:57:06 - [MESSAGE][PASSED] - Current window's url is: 'https://mirandakate.cabitest5.com/'
+
+2019-07-30 19:57:06 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/rsLogin' successfully
+
+2019-07-30 19:57:06 - [TEST_STEP][PASSED] - callTestCase(findTestCase("editOrder/rsOrderHistoryConfirm"), ["orderID":"", "editScenarioNumber":3], STOP_ON_FAILURE): Call Test Case 'Test Cases/editOrder/rsOrderHistoryConfirm' successfully
+
+2019-07-30 19:57:06 - [TEST_CASE][PASSED] - Test Cases/editOrder/rsOrderHistoryConfirm: Test Cases/editOrder/rsOrderHistoryConfirm
+
+2019-07-30 19:57:06 - [TEST_STEP][PASSED] - orderID = retailOrderID: null
+
+2019-07-30 19:57:06 - [TEST_STEP][PASSED] - println(orderID): null
+
+2019-07-30 19:57:06 - [TEST_STEP][PASSED] - xpath = UtilityMethods.concat("//span[contains(text(), '", orderID, "')]/parent::div/parent::div/div[@class='table-row-edit-order']//a"): null
+
+2019-07-30 19:57:06 - [TEST_STEP][PASSED] - to = new com.kms.katalon.core.testobject.TestObject(a_link_dynamic): null
+
+2019-07-30 19:57:06 - [TEST_STEP][PASSED] - to.addProperty("xpath", EQUALS, xpath): null
+
+2019-07-30 19:57:06 - [TEST_STEP][PASSED] - click(findTestObject("ReplicatedSite/rs_Page_Trendy/i_Michigan_fa fa-caret-down")): Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/i_Michigan_fa fa-caret-down' is clicked on
+
+2019-07-30 19:57:06 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/i_Michigan_fa fa-caret-down' is clicked on
+
+2019-07-30 19:57:06 - [TEST_STEP][PASSED] - click(findTestObject("ReplicatedSite/rs_Page_Trendy/a_My Profile")): Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/a_My Profile' is clicked on
+
+2019-07-30 19:57:13 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/rs_Page_Trendy/a_My Profile' is clicked on
+
+2019-07-30 19:57:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/Page_Profile - Cabi Fall 2018 Collection/span_Order History")): Object: 'Object Repository/ReplicatedSite/Page_Profile - Cabi Fall 2018 Collection/span_Order History' is clicked on
+
+2019-07-30 19:57:13 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/Page_Profile - Cabi Fall 2018 Collection/span_Order History' is clicked on
+
+2019-07-30 19:57:13 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-07-30 19:57:18 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-07-30 19:57:18 - [TEST_STEP][PASSED] - editButton = findWebElements(to, 1): null
+
+2019-07-30 19:57:18 - [TEST_STEP][PASSED] - assert editButton.size() > 0: null
+
+2019-07-30 19:57:18 - [TEST_STEP][PASSED] - if (editButton.size() > 0): Object: 'Object Repository/ReplicatedSite/button_accept_msg' is clicked on
+
+2019-07-30 19:57:18 - [TEST_STEP][PASSED] - click(to): Object: 'a_link_dynamic' is clicked on
+
+2019-07-30 19:57:18 - [MESSAGE][PASSED] - Object: 'a_link_dynamic' is clicked on
+
+2019-07-30 19:57:18 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-07-30 19:57:28 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-07-30 19:57:28 - [TEST_STEP][PASSED] - if (editScenarioNumber == 1): null
+
+2019-07-30 19:57:28 - [TEST_STEP][PASSED] - else if (editScenarioNumber == 3): Object: 'Object Repository/ReplicatedSite/button_accept_msg' is clicked on
+
+2019-07-30 19:57:28 - [TEST_STEP][PASSED] - println("scen = 3"): null
+
+2019-07-30 19:57:28 - [TEST_STEP][PASSED] - expectedNoEditMsg1 = "We're Sorry.": null
+
+2019-07-30 19:57:28 - [TEST_STEP][PASSED] - expectedNoEditMsg2 = "Your order has gift card items and cannot be edited.": null
+
+2019-07-30 19:57:28 - [TEST_STEP][PASSED] - actualNoEditMsg1 = getText(findTestObject("Object Repository/ReplicatedSite/div_no_edit_msg1")): Text of object 'Object Repository/ReplicatedSite/div_no_edit_msg1' is: 'We're Sorry.'
+
+2019-07-30 19:57:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/ReplicatedSite/div_no_edit_msg1' is: 'We're Sorry.'
+
+2019-07-30 19:57:28 - [TEST_STEP][PASSED] - actualNoEditMsg2 = getText(findTestObject("Object Repository/ReplicatedSite/div_no_edit_msg2")): Text of object 'Object Repository/ReplicatedSite/div_no_edit_msg2' is: 'Your order has gift card items and cannot be edited.'
+
+2019-07-30 19:57:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/ReplicatedSite/div_no_edit_msg2' is: 'Your order has gift card items and cannot be edited.'
+
+2019-07-30 19:57:28 - [TEST_STEP][PASSED] - assert actualNoEditMsg1.equalsIgnoreCase(expectedNoEditMsg1): null
+
+2019-07-30 19:57:28 - [TEST_STEP][PASSED] - assert actualNoEditMsg2.equalsIgnoreCase(expectedNoEditMsg2): null
+
+2019-07-30 19:57:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/button_accept_msg")): Object: 'Object Repository/ReplicatedSite/button_accept_msg' is clicked on
+
+2019-07-30 19:57:28 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/button_accept_msg' is clicked on
+
+2019-07-30 19:57:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/editOrder/rsOrderHistoryConfirm' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-07-30 19:53:59 - [TEST_SUITE][PASSED] - EditOrderTestSuit: Test Cases/editOrder/rsEditOrderGiftCard]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

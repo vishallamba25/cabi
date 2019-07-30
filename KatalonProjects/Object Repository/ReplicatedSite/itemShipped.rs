@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//cart[@show-options='true']//span[text()='Item #5447']/parent::div/parent::div/div[last()]/p</value>
+         <value>//cart[@show-options='true']//span[text()='Item #3701']/parent::div/parent::div/div[last()]/p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//cart[@show-options='true']//span[text()='Item #5447']/parent::div/parent::div/div[last()]/p</value>
+      <value>//cart[@show-options='true']//span[text()='Item #3701']/parent::div/parent::div/div[last()]/p</value>
    </webElementProperties>
 </WebElementEntity>

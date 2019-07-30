@@ -20,13 +20,14 @@ WebUI.verifyElementText(findTestObject('Object Repository/ReplicatedSite/h1_than
 String orderID=WebUI.getText(findTestObject('Object Repository/ReplicatedSite/span_rs_orderid'))
 
 /********************order completed*************/
+WebUI.delay(5)
 List<WebElement> editOrderButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/div_edit_order_rs'), 5)
 assert editOrderButton.size() > 0
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_edit_order_rs'))
 WebUI.delay(10)
 
-List<WebElement> updateButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/a_update_order'),1)
-assert updateButton.size() > 0
+//List<WebElement> updateButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/a_update_order'),1)
+//assert updateButton.size() > 0
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_update_order'))
 WebUI.delay(5)

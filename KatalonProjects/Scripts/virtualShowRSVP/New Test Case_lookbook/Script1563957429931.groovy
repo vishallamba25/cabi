@@ -1,17 +1,20 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import org.openqa.selenium.By as By
-import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
-import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.interactions.Actions as Actions
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 import commonUtility.UtilityMethods as UtilityMethods
 import commonUtility.VSGuest as VSGuest
 import internal.GlobalVariable as GlobalVariable
@@ -53,17 +56,18 @@ List<VSGuest> presentList = new ArrayList()
 List<VSGuest> allList = new ArrayList()
 
 /****************************************************/
-/*WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
+WebUI.callTestCase(findTestCase('virtualShowRSVP/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
         , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
         , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
-*/
-WebUI.openBrowser('')
+
+/*WebUI.openBrowser('')
+
 
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://test21.cliotest.com/backoffice/control/VSStylistDashboard?showId=104658241&consultantPartyId=100000042')
-
+WebUI.navigateToUrl('https://test21.cliotest.com/backoffice/control/VSStylistDashboard?showId=104658676&consultantPartyId=100000042')
+*/
 /*****************************tab switching****************/
 WebDriver driver = DriverFactory.getWebDriver()
 
@@ -117,7 +121,7 @@ println(WebUI.getWindowIndex())
 
 WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.micrositeURL = 'https://mirandakate.cabitest5.com/show-microsite/104658241/'
+//GlobalVariable.micrositeURL = 'https://mirandakate.cabitest5.com/show-microsite/104658676/'
 
 //WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 String loginURL = UtilityMethods.concat('https://mirandakate.', RSTestEnvt, '.com/?component=account.login-gateway')
@@ -157,7 +161,7 @@ if (userLogin.size() == 0) {
     WebUI.refresh()
 }
 
-/*
+
 List<WebElement> listElement1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'), 5)
 'Validating invited guest\'s \'Yes\' RSVP\r\n'
 if (listElement1.empty) {
@@ -172,13 +176,13 @@ if (listElement1.empty) {
 	println('RSVP is updated previously')
 }
 
-WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))*/
-WebUI.delay(3)
+WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
+WebUI.delay(4)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
 
 WebUI.switchToWindowIndex(currentTab + 1)
-
+WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
 
 /****************lookbook collection******************/
@@ -249,7 +253,7 @@ WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.delay(3)
 
-/////collection checkout
+/////collection checkout..............................IMPORTANT.......................
 WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_add_item_to_bag'))
 
@@ -265,12 +269,19 @@ if (okGotIt.size() > 0) {
 	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_got_it'))
 }
 
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_checkout_yourself'))
+List<WebElement> chkOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/button_checkout'), 5)
+if (chkOut.size() > 0) {
+	WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_checkout'))
+}
+else{
+	WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_checkout_yourself'))
+	WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_checkout_yourself_yes'))
+}
 
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_checkout_yourself_yes'))
 
 WebUI.delay(10)
-
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_other_address'))
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_my_address'))
 WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
 
 driver = DriverFactory.getWebDriver()
@@ -324,7 +335,6 @@ element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save an
 
 executor.executeScript('arguments[0].click();', element)
 
-//WebUI.click(findTestObject('ReplicatedSite/button_save_and_continue_2'))
 WebUI.delay(5)
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/ReplicatedSite/span_complete_order'), 30)

@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 	}*/
 
 	WebDriverWait wait2 = new WebDriverWait(driver, 10);
-	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Flaunt Scarf')]")));
+	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Delight Scarf')]")));
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
 	
 
@@ -68,15 +68,23 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 	WebUI.delay(5)
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_checkout'))
 
-	WebUI.delay(5)
-
 	WebUI.delay(10)
+//	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
+//	driver = DriverFactory.getWebDriver()
+//	element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[1]'))
+//	executor.executeScript("arguments[0].click();", element);
+//	
 	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
+	
 	driver = DriverFactory.getWebDriver()
+	
 	element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[1]'))
-	executor.executeScript("arguments[0].click();", element);
+	
+	executor.executeScript('arguments[0].click();', element)
+	
+	
 
-WebUI.delay(3)
+WebUI.delay(5)
 
 /////////////////credit card
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_pay_with_credit'))

@@ -75,7 +75,7 @@ WebUI.click(findTestObject('Page_cabi Home/a_Contact Manager'))*/
 
 hostessObj.favorites=0//UtilityMethods.getFavCount(hostess);
 cohostessObj.favorites=0//UtilityMethods.getFavCount(cohostess);
-guest1Obj.favorites=7//UtilityMethods.getFavCount(guest1);
+guest1Obj.favorites=2//UtilityMethods.getFavCount(guest1);
 guest2Obj.favorites=0//UtilityMethods.getFavCount(guest2);
 /*WebUI.closeWindowIndex(currentTab+1);
 WebUI.switchToWindowIndex(currentTab)*/
@@ -135,35 +135,35 @@ catch(org.openqa.selenium.StaleElementReferenceException ex)
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
 }
 //_________________________________
 
@@ -184,9 +184,10 @@ WebUI.navigateToUrl(loginURL)
 /*******************************guest login on microsite****************************/
 'Login with the invited guest'
 'Login with the invited guest'
-WebElement enterMail = driver.findElement(By.xpath("//div[@class='form-field']/custom-input/div/input[@name='email']"));
-executor.executeScript("arguments[0].click();", enterMail);
-WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),	"sushantguest1@test.com")
+WebUI.delay(3)
+/*WebElement enterMail = driver.findElement(By.xpath("//div[@class='form-field']/custom-input/div/input[@name='email']"));
+executor.executeScript("arguments[0].click();", enterMail);*/
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),	guest1Mail)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
 WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'), guest1Pass)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue_pass'))
@@ -224,53 +225,53 @@ WebUI.switchToWindowIndex(currentTab + 1)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
 
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 WebUI.delay(2)
 executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
 }
 //_________________________________
 
@@ -288,53 +289,53 @@ maybeList.remove(guest1Obj)
 //_________________________________
 WebUI.switchToWindowIndex(currentTab + 1)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 WebUI.delay(2)
 executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
 }
 //_________________________________
 
@@ -362,64 +363,64 @@ noList.remove(guest1Obj)
 //_________________________________
 WebUI.switchToWindowIndex(currentTab + 1)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 WebUI.delay(2)
 executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
 }
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
 }
 //_________________________________
 
 /*****************************************Check All*************************/
 WebUI.delay(2)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 WebUI.delay(2)
 executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_micStatuss'), 5));
@@ -434,27 +435,56 @@ WebUI.switchToWindowIndex(currentTab + 2)
 WebUI.delay(2)
 List<WebElement> guestWebcamBB = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/guest_webcam_brady_bunch'), 5)
 assert guestWebcamBB.size()==0;
-/*****************************************Check All*************************/
+/*****************************************End Check All*************************/
 /**************************************************************************************************************/
-/*****************************************fav from carousel***********************************************************/
+/*****************************************Chat***********************************************************/
+/****************chatting******************/
 WebUI.switchToWindowIndex(currentTab + 1)
 WebUI.delay(4)
+String iMStylist="Hi I am stylistA"
+String iMGuest1="Hi I am guest 1A"
+String iMGuest2="Hi I am guest 2"
+ChatMessage expectedMessage;
+ChatMessage actualMessage;
+String stylstName= WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/my_sender_name'))
+String g1= (UtilityMethods.splitPersonName(guest1))[0]
+
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/input_text'), iMStylist)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/chatboard/send_text'))
+expectedMessage= new ChatMessage(stylstName, iMStylist)
+
+WebUI.switchToWindowIndex(currentTab + 2)
+WebUI.delay(3)
+actualMessage= new ChatMessage(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/last_sender')), WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/last_message')))
+assert actualMessage.equals(expectedMessage)
+WebUI.delay(2)
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/input_text'), iMGuest1)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/chatboard/send_text'))
+
+expectedMessage= new ChatMessage(g1, iMGuest1)
+
+WebUI.switchToWindowIndex(currentTab + 1)
+WebUI.delay(3)
+actualMessage= new ChatMessage(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/last_sender_stylist')), WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/last_message_stylist')))
+assert actualMessage.equals(expectedMessage)
+/**************************************************************************************************************/
+/*****************************************save outfit from carousel***********************************************************/
 WebUI.click(findTestObject('virualShowRSVPOR/dashboard/playVideosButton'))
 WebUI.delay(3)
 WebUI.click(findTestObject('virualShowRSVPOR/dashboard/playButton'))
 WebUI.delay(3)
 WebUI.switchToWindowIndex(currentTab + 2)
 WebUI.delay(6)
-WebUI.click(findTestObject('virualShowRSVPOR/carouselTestObjects/carouselFav'))
-guest1Obj.favorites= guest1Obj.favorites+1;
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/carouselTestObjects/carouselSaveOutfit'))
+guest1Obj.favorites= guest1Obj.favorites+3;
 WebUI.switchToWindowIndex(currentTab + 1)
-WebUI.delay(3)
+WebUI.delay(8)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 WebUI.delay(2)
 /**************************************************************************************************************/
@@ -475,11 +505,11 @@ guest1Obj.favorites= guest1Obj.favorites+1;
 WebUI.switchToWindowIndex(currentTab + 1)
 WebUI.delay(3)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 WebUI.delay(2)
 /**************************************************************************************************************/
@@ -490,23 +520,22 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsi
 WebUI.delay(3)
 WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
 ////////////iframe
+
+
 WebDriverWait wait2 = new WebDriverWait(driver, 10);
 wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Beast Belt')]")));
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
-WebUI.delay(3)
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/select_item_size'))
-WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_collection_save_to_fav'))
 WebUI.delay(3)
+
 guest1Obj.favorites= guest1Obj.favorites+1;
 WebUI.switchToWindowIndex(currentTab + 1)
 WebUI.delay(3)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 WebUI.delay(2)
 /**************************************************************************************************************/
@@ -517,6 +546,11 @@ WebUI.delay(3)
 
 /////collection checkout..............................IMPORTANT.......................
 WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
+WebUI.delay(3)
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
+WebUI.delay(3)
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/select_item_size'))
+WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_add_item_to_bag'))
 
 WebUI.delay(3)
@@ -611,45 +645,18 @@ WebUI.verifyElementText(findTestObject('Object Repository/ReplicatedSite/h1_than
 
 WebUI.delay(2)
 guest1Obj.ordered= guest1Obj.ordered+1;
+guest1Obj.favorites= guest1Obj.favorites-1;
 WebUI.switchToWindowIndex(currentTab + 1)
 WebUI.delay(3)
 try {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
-	VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
 WebUI.delay(2)
-/**************************************************************************************************************/
-/*****************************************Chat***********************************************************/
-/****************chatting******************/
-String iMStylist="Hi I am stylistA"
-String iMGuest1="Hi I am guest 1A"
-String iMGuest2="Hi I am guest 2"
-ChatMessage expectedMessage;
-ChatMessage actualMessage;
-String stylstName= WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/my_sender_name'))
-String g1= (UtilityMethods.splitPersonName(guest1))[0]
 
-WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/input_text'), iMStylist)
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/chatboard/send_text'))
-expectedMessage= new ChatMessage(stylstName, iMStylist)
-
-WebUI.switchToWindowIndex(currentTab + 2)
-WebUI.delay(3)
-actualMessage= new ChatMessage(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/last_sender')), WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/last_message')))
-assert actualMessage.equals(expectedMessage)
-WebUI.delay(2)
-WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/input_text'), iMGuest1)
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/chatboard/send_text'))
-
-expectedMessage= new ChatMessage(g1, iMGuest1)
-
-WebUI.switchToWindowIndex(currentTab + 1)
-WebUI.delay(3)
-actualMessage= new ChatMessage(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/last_sender_stylist')), WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/chatboard/last_message_stylist')))
-assert actualMessage.equals(expectedMessage)
 
 
 

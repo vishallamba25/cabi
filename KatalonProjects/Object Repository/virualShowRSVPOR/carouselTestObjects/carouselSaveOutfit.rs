@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_collection_save_to_fav</name>
+   <name>carouselSaveOutfit</name>
    <tag></tag>
-   <elementGuidId>496ab01f-a5af-4f8e-a112-decdf661b634</elementGuidId>
+   <elementGuidId>31d893e4-0df5-4afb-a84c-a08351140fd0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//collection-item/article/div/div/a[@class='collection-item__add-to-favorites'])[1]</value>
+         <value>//div[@class='corporate-video-main']/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

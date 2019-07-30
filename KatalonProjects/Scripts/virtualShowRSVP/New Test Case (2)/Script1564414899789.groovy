@@ -75,7 +75,7 @@ WebUI.click(findTestObject('Page_cabi Home/a_Contact Manager'))*/
 
 hostessObj.favorites=0//UtilityMethods.getFavCount(hostess);
 cohostessObj.favorites=0//UtilityMethods.getFavCount(cohostess);
-guest1Obj.favorites=7//UtilityMethods.getFavCount(guest1);
+guest1Obj.favorites=2//UtilityMethods.getFavCount(guest1);
 guest2Obj.favorites=0//UtilityMethods.getFavCount(guest2);
 /*WebUI.closeWindowIndex(currentTab+1);
 WebUI.switchToWindowIndex(currentTab)*/
@@ -185,11 +185,11 @@ WebUI.navigateToUrl(loginURL)
 /*******************************guest login on microsite****************************/
 'Login with the invited guest'
 'Login with the invited guest'
-WebElement enterMail = driver.findElement(By.xpath("//div[@class='form-field']/custom-input/div/input[@name='email']"));
-executor.executeScript("arguments[0].click();", enterMail);
+/*WebElement enterMail = driver.findElement(By.xpath("//div[@class='form-field']/custom-input/div/input[@name='email']"));
+executor.executeScript("arguments[0].click();", enterMail);*/
 WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),	hostessMail)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
-WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'), hos)
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'), hostessPass)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue_pass'))
 WebUI.delay(5)
 if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later'), 0)) {
@@ -199,10 +199,7 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsi
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
 
-List<WebElement> userLogin = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/i_user_login'), 5)
-if(userLogin.size()==0){
-WebUI.refresh();
-}
+
 
 List<WebElement> listElement1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'), 5)
 'Validating invited guest\'s \'Yes\' RSVP\r\n'

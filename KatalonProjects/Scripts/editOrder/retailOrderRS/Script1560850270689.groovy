@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 	}*/
 
 	WebDriverWait wait2 = new WebDriverWait(driver, 10);
-	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Flaunt Scarf')]")));
+	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Beast Belt')]")));
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
 	
 

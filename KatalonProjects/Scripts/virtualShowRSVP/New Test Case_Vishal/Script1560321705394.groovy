@@ -137,7 +137,7 @@ executor.executeScript('window.open();')
 
 WebUI.switchToWindowIndex(currentTab + 2)
 
-WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 //GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104602773/"
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 

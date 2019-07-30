@@ -37,7 +37,7 @@
    <testCaseLink>
       <guid>c5cbe559-c827-4fd0-90fa-62181b1acd86</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/editOrder/rsEditOrderGiftCard</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

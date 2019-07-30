@@ -30,20 +30,33 @@ public class VSGuest {
 		return this.micStatus==v.micStatus && this.webcamStatus== v.webcamStatus && this.active==v.active && this.name.equalsIgnoreCase(v.name) &&this.favorites==v.favorites && this.ordered==v.ordered;
 	}
 
+	public boolean equals(VSGuest v) {
+		return this.micStatus==v.micStatus && this.webcamStatus== v.webcamStatus && this.active==v.active && this.name.equalsIgnoreCase(v.name) &&this.favorites==v.favorites && this.ordered==v.ordered;
+	}
+
 	public static boolean listEquals(ArrayList<VSGuest> actualList, ArrayList<VSGuest> expectedList, Comparator<VSGuest> comp){
 		if(expectedList.size()!=actualList.size())
 			return false;
 
 		//Collections.sort(actualList, comp)
 
+<<<<<<< HEAD
 		for(VSGuest el: actualList){
+=======
+		/*for(VSGuest el: actualList){
+>>>>>>> 33b6a603b51634a8932cd4cc62091811211a22a4
 			println UtilityMethods.concat(el.micStatus.toString(), ", ", el.webcamStatus.toString(), ", ", el.active.toString(), ", ", el.name, ", ", el.favorites.toString(), ", ", el.ordered.toString());
 		}
 		println "-----------------------------"
 		for(VSGuest el: expectedList){
 			println UtilityMethods.concat(el.micStatus.toString(), ", ", el.webcamStatus.toString(), ", ", el.active.toString(), ", ", el.name, ", ", el.favorites.toString(), ", ", el.ordered.toString());
+<<<<<<< HEAD
 		}
 		
+=======
+		}*/
+
+>>>>>>> 33b6a603b51634a8932cd4cc62091811211a22a4
 		for(int i=0; i<actualList.size(); i++) {
 			if(!(actualList.get(i).equals(expectedList.get(i)))){
 				return false;
@@ -126,7 +139,18 @@ public class VSGuest {
 		if(guestOrder.equalsIgnoreCase("fa fa-sort-asc")){
 			WebUI.click(sortArrow);
 		}
-		return VSGuest.listEquals(actualGuestList, expectedList, new NameSort())
+		
+		boolean result=VSGuest.listEquals(actualGuestList, expectedList, new NameSort())
+		if(result==false){
+			for(VSGuest el: actualGuestList){
+			 println UtilityMethods.concat(el.micStatus.toString(), ", ", el.webcamStatus.toString(), ", ", el.active.toString(), ", ", el.name, ", ", el.favorites.toString(), ", ", el.ordered.toString());
+			 }
+			 println "-----------------------------"
+			 for(VSGuest el: expectedList){
+				 println UtilityMethods.concat(el.micStatus.toString(), ", ", el.webcamStatus.toString(), ", ", el.active.toString(), ", ", el.name, ", ", el.favorites.toString(), ", ", el.ordered.toString());
+			 }
+		}
+		return result
 
 	}
 

@@ -20,6 +20,9 @@ WebDriver driver = DriverFactory.getWebDriver()
 JavascriptExecutor executor = (JavascriptExecutor)driver;
 Actions actions = new Actions(driver);
 
+WebUI.delay(10)
+
+
 WebUI.callTestCase(findTestCase('TestCaseUtilities/rsLogin'), [('RSURL') : '', ('RSuser') : '', ('RSpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
@@ -35,11 +38,11 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 	}*/
 
 	WebDriverWait wait2 = new WebDriverWait(driver, 10);
-<<<<<<< HEAD
+
 	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Delight Scarf')]")));
-=======
+
 	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Beast Belt')]")));
->>>>>>> 33b6a603b51634a8932cd4cc62091811211a22a4
+
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
 	
 
@@ -73,11 +76,11 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_checkout'))
 
 	WebUI.delay(10)
-//	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
-//	driver = DriverFactory.getWebDriver()
-//	element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[1]'))
-//	executor.executeScript("arguments[0].click();", element);
-//	
+	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
+	driver = DriverFactory.getWebDriver()
+	element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[1]'))
+	executor.executeScript("arguments[0].click();", element);
+	
 	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
 	
 	driver = DriverFactory.getWebDriver()

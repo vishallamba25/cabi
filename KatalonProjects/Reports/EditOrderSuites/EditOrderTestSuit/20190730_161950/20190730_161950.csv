@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+EditOrderTestSuit,Chrome 75.0.3770.142,,2019-07-30 16:20:00,2019-07-30 16:21:01,1m - 1.160s,FAILED
+,,,,,,
+Test Cases/editOrder/rsEditOrderRS,Chrome 75.0.3770.142,,2019-07-30 16:20:01,2019-07-30 16:21:00,58.966s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 75.0.3770.142,,2019-07-30 16:20:01,2019-07-30 16:20:02,0.106s,PASSED
+"openBrowser("""")",Chrome 75.0.3770.142,,2019-07-30 16:20:03,2019-07-30 16:20:10,7.208s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 75.0.3770.142,,2019-07-30 16:20:10,2019-07-30 16:20:26,15.866s,PASSED
+"callTestCase(findTestCase(""editOrder/retailOrderRS""), [""addOnStyle"":""""], STOP_ON_FAILURE)",Chrome 75.0.3770.142,,2019-07-30 16:20:26,2019-07-30 16:21:00,33.946s,FAILED

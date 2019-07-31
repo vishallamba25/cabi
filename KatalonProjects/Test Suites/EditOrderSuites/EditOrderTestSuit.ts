@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>ae372238-415d-45d9-9044-a631bb52866f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/editOrder/rsEditOrderSimple</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

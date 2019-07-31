@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button/span[contains(text(), 'Save and Continue')])[1]</value>
+         <value>//*[@id=&quot;checkout-page&quot;]/div[2]/div/div/div[1]/check-out/check-out-step[1]/div/div/div[2]/div[2]/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

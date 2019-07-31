@@ -16,8 +16,8 @@ RSpass = findTestData('credData').getValue('RSpass', 1)
 
 BSURL = findTestData('envtData').getValue('BSURL', 1)
 
-/*WebUI.openBrowser('')
-WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)*/
+WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //WebUI.maximizeWindow()
 WebUI.navigateToUrl(RSURL)

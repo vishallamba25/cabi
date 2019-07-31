@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='table-body']/div[@class='table-row']/div[@class='table-row-inner enabled-comm']/div[@class='table-row-name']/a/i</value>
+         <value>//div[@class='table-body']/div[@class='table-row']/div/div[@class='table-row-name']/a/i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

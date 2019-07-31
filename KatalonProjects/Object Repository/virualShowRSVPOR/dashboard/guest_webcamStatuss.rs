@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='table-body']/div[@class='table-row']/div[@class='table-row-inner enabled-comm']/div[@class='table-row-status']/i[position()='2']</value>
+         <value>//div[@class='table-body']/div[@class='table-row']/div/div[@class='table-row-status']/i[position()='2']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

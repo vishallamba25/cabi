@@ -75,7 +75,7 @@ WebUI.click(findTestObject('Page_cabi Home/a_Contact Manager'))*/
 
 hostessObj.favorites=0//UtilityMethods.getFavCount(hostess);
 cohostessObj.favorites=0//UtilityMethods.getFavCount(cohostess);
-guest1Obj.favorites=2//UtilityMethods.getFavCount(guest1);
+guest1Obj.favorites=0//UtilityMethods.getFavCount(guest1);
 guest2Obj.favorites=0//UtilityMethods.getFavCount(guest2);
 /*WebUI.closeWindowIndex(currentTab+1);
 WebUI.switchToWindowIndex(currentTab)*/
@@ -222,6 +222,7 @@ maybeList.add(guest1Obj);
 noreplyList.remove(guest1Obj)
 //_________________________________
 WebUI.switchToWindowIndex(currentTab + 1)
+WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
 
 try {
@@ -424,6 +425,8 @@ catch(org.openqa.selenium.StaleElementReferenceException ex)
 }
 WebUI.delay(2)
 executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_micStatuss'), 5));
+guest1Obj.micStatus=1;
+
 WebUI.switchToWindowIndex(currentTab + 2)
 WebUI.delay(2)
 List<WebElement> guestMicBB = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/guest_mic_brady_bunch'), 5)
@@ -431,6 +434,7 @@ assert guestMicBB.size()==0;
 WebUI.switchToWindowIndex(currentTab + 1)
 WebUI.delay(2)
 executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/guest_webcamStatuss_disable'), 5));
+guest1Obj.webcamStatus=1;
 WebUI.switchToWindowIndex(currentTab + 2)
 WebUI.delay(2)
 List<WebElement> guestWebcamBB = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/guest_webcam_brady_bunch'), 5)
@@ -474,11 +478,11 @@ WebUI.delay(3)
 WebUI.click(findTestObject('virualShowRSVPOR/dashboard/playButton'))
 WebUI.delay(3)
 WebUI.switchToWindowIndex(currentTab + 2)
-WebUI.delay(6)
+WebUI.delay(10)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/carouselTestObjects/carouselSaveOutfit'))
 guest1Obj.favorites= guest1Obj.favorites+3;
 WebUI.switchToWindowIndex(currentTab + 1)
-WebUI.delay(8)
+WebUI.delay(10)
 try {
 	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
@@ -490,6 +494,8 @@ WebUI.delay(2)
 /**************************************************************************************************************/
 /*****************************************fav from lookbook***********************************************************/
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/button_shopping'))
+guest1Obj.webcamStatus=2;
+guest1Obj.micStatus=2;
 WebUI.switchToWindowIndex(currentTab + 2)
 WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_lookbook'))
@@ -503,7 +509,7 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_look_save_to_fav'))
 guest1Obj.favorites= guest1Obj.favorites+1;
 WebUI.switchToWindowIndex(currentTab + 1)
-WebUI.delay(3)
+WebUI.delay(10)
 try {
 	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }

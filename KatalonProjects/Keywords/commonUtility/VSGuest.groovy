@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 public class VSGuest {
-	int micStatus=0; //0: undefined, 1: disabled-audio, 2: black-audio-slash, 3: black-audio
+	int micStatus=0;     //0: undefined, 1: disabled-audio, 2: black-audio-slash, 3: black-audio
 	int webcamStatus=0;
 	boolean active=false;
 	String name;
@@ -69,7 +69,7 @@ public class VSGuest {
 			guest= new VSGuest(names.get(i).getText());
 			String mstatus= micStatuss.get(i).getAttribute("class");
 			switch(mstatus){
-				case "undefined simple-tooltip": guest.micStatus =0; break;
+				case "undefined simple-tooltip": guest.micStatus  =0; break;
 				case "icon disabled-audio simple-tooltip": guest.micStatus=1; break;
 				case "icon black-audio-slash simple-tooltip": guest.micStatus=2; break;
 				case "icon black-audio simple-tooltip": guest.micStatus=3; break;
@@ -129,10 +129,13 @@ public class VSGuest {
 
 		boolean result=VSGuest.listEquals(actualGuestList, expectedList, new NameSort())
 		if(result==false){
+			println "----------actualList-------------------"
+			println actualGuestList.size();
 			for(VSGuest el: actualGuestList){
 				println UtilityMethods.concat(el.micStatus.toString(), ", ", el.webcamStatus.toString(), ", ", el.active.toString(), ", ", el.name, ", ", el.favorites.toString(), ", ", el.ordered.toString());
 			}
-			println "-----------------------------"
+			println "----------expectedList-----------------"
+			println expectedList.size();
 			for(VSGuest el: expectedList){
 				println UtilityMethods.concat(el.micStatus.toString(), ", ", el.webcamStatus.toString(), ", ", el.active.toString(), ", ", el.name, ", ", el.favorites.toString(), ", ", el.ordered.toString());
 			}

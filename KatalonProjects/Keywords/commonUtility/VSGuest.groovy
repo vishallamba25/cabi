@@ -96,7 +96,7 @@ public class VSGuest {
 				guest.ordered=0;
 			}
 			else{
-				guest.ordered=Integer.parseInt(fav);
+				guest.ordered=Integer.parseInt(ord);
 			}
 
 			String act= actives.get(i).getAttribute("class");

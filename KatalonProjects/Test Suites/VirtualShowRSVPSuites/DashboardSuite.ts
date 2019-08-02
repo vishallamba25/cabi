@@ -14,6 +14,6 @@
       <guid>ab7ea912-da91-48cb-844c-c579540fd545</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/virtualShowRSVP/New Test Case_sushant</testCaseId>
+      <testCaseId>Test Cases/virtualShowRSVP/VS_Automation</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

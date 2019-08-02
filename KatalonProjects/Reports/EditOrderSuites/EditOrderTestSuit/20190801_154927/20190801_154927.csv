@@ -1,0 +1,31 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+EditOrderTestSuit,Chrome 76.0.3809.87,,2019-08-01 15:49:36,2019-08-01 16:08:09,18m - 32.286s,FAILED
+,,,,,,
+Test Cases/editOrder/rsEditOrderSimple,Chrome 76.0.3809.87,,2019-08-01 15:49:37,2019-08-01 15:56:21,6m - 44.348s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.87,,2019-08-01 15:49:37,2019-08-01 15:49:37,0.079s,PASSED
+"callTestCase(findTestCase(""editOrder/retailOrderBO""), [""editScenarioNumber"":1], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 15:49:38,2019-08-01 15:52:16,2m - 37.499s,PASSED
+delay(10),Chrome 76.0.3809.87,,2019-08-01 15:52:16,2019-08-01 15:52:26,10.007s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 15:52:26,2019-08-01 15:52:40,14.761s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/rsLogin""), [""RSURL"":"""", ""RSuser"":"""", ""RSpass"":""""], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 15:52:40,2019-08-01 15:53:54,1m - 13.806s,PASSED
+"callTestCase(findTestCase(""editOrder/rsOrderHistoryConfirm""), [""orderID"":"""", ""editScenarioNumber"":1], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 15:53:54,2019-08-01 15:56:21,2m - 27.171s,PASSED
+,,,,,,
+Test Cases/editOrder/rsEditOrderDonation,Chrome 76.0.3809.87,,2019-08-01 15:56:21,2019-08-01 16:00:46,4m - 24.241s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.87,,2019-08-01 15:56:22,2019-08-01 15:56:22,0.003s,PASSED
+"callTestCase(findTestCase(""editOrder/retailOrderBO""), [""editScenarioNumber"":4], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 15:56:22,2019-08-01 15:58:36,2m - 13.616s,PASSED
+delay(10),Chrome 76.0.3809.87,,2019-08-01 15:58:36,2019-08-01 15:58:46,10.005s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 15:58:46,2019-08-01 15:58:57,11.060s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/rsLogin""), [""RSURL"":"""", ""RSuser"":"""", ""RSpass"":""""], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 15:58:57,2019-08-01 16:00:07,1m - 9.936s,PASSED
+"callTestCase(findTestCase(""editOrder/rsOrderHistoryConfirm""), [""orderID"":"""", ""editScenarioNumber"":4], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 16:00:07,2019-08-01 16:00:46,38.929s,FAILED
+,,,,,,
+Test Cases/editOrder/rsEditOrderGiftCard,Chrome 76.0.3809.87,,2019-08-01 16:00:46,2019-08-01 16:02:19,1m - 32.804s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.87,,2019-08-01 16:00:46,2019-08-01 16:00:46,0.007s,PASSED
+"callTestCase(findTestCase(""editOrder/retailOrderBO""), [""editScenarioNumber"":3], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 16:00:47,2019-08-01 16:02:19,1m - 31.594s,FAILED
+,,,,,,
+Test Cases/editOrder/rsEditOrderPartialShip,Chrome 76.0.3809.87,,2019-08-01 16:02:19,2019-08-01 16:08:07,5m - 48.781s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.87,,2019-08-01 16:02:19,2019-08-01 16:02:19,0.004s,PASSED
+"callTestCase(findTestCase(""editOrder/retailOrderBO""), [""editScenarioNumber"":5], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 16:02:20,2019-08-01 16:04:48,2m - 28.232s,PASSED
+delay(10),Chrome 76.0.3809.87,,2019-08-01 16:04:48,2019-08-01 16:04:58,10.006s,PASSED
+"callTestCase(findTestCase(""NewArrival/warehouseShipping""), [""orderId"":retailOrderID], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 16:04:58,2019-08-01 16:05:53,54.745s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 16:05:53,2019-08-01 16:06:05,12.761s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/rsLogin""), [""RSURL"":"""", ""RSuser"":"""", ""RSpass"":""""], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 16:06:05,2019-08-01 16:07:23,1m - 17.243s,PASSED
+"callTestCase(findTestCase(""editOrder/rsOrderHistoryConfirm""), [""orderID"":"""", ""editScenarioNumber"":5], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-01 16:07:23,2019-08-01 16:08:07,44.764s,PASSED

@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-//WebUI.openBrowser('')
+WebUI.openBrowser('')
 
 WebDriver driver = DriverFactory.getWebDriver()
 JavascriptExecutor executor = (JavascriptExecutor)driver;
@@ -38,10 +38,12 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 	}*/
 
 	WebDriverWait wait2 = new WebDriverWait(driver, 10);
-
+	
+	WebUI.delay(10);
+	
 	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Delight Scarf')]")));
 
-	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Beast Belt')]")));
+//	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Beast Belt')]")));
 
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
 	

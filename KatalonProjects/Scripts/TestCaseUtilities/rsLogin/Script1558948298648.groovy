@@ -2,43 +2,38 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.openqa.selenium.WebElement
-
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-RSURL = findTestData('envtData').getValue('RSURL', 1)
+import commonUtility.UtilityMethods
 
-RSuser = findTestData('credData').getValue('RSuser', 1)
 
-RSpass = findTestData('credData').getValue('RSpass', 1)
 
-BSURL = findTestData('envtData').getValue('BSURL', 1)
+String dataFile = "micrositeData"
+guest1Mail = findTestData(dataFile).getValue('guest1Mail', 1)
+guest1Pass = findTestData(dataFile).getValue('guest1Pass', 1)
 
-WebUI.openBrowser('')
-WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
+String RSTestEnvt= findTestData('envtData').getValue('RSTestEnvt', 1)
 
-//WebUI.maximizeWindow()
-WebUI.navigateToUrl(RSURL)
+//WebUI.openBrowser('')
+//WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
-//WebUI.delay(10)
-WebUI.click(findTestObject('ReplicatedSite/rs_Page_Trendy/i_user_login'))
+//GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104653490/"
+//WebUI.navigateToUrl(GlobalVariable.micrositeURL)
+String loginURL= UtilityMethods.concat("https://mirandakate.", RSTestEnvt, ".com/?component=account.login-gateway")
+WebUI.navigateToUrl(loginURL)
 
-WebUI.setText(findTestObject('ReplicatedSite/rs_Page_Trendy/input_Sign in  Create account_email'), RSuser)
-
-WebUI.click(findTestObject('ReplicatedSite/rs_Page_Trendy/button_Continue'))
-
-WebUI.setText(findTestObject('ReplicatedSite/rs_Page_Trendy/input_Welcome_password'), RSpass)
-
-WebUI.click(findTestObject('ReplicatedSite/rs_Page_Trendy/button_Continue'))
-
-List<WebElement> completeProfileLater = WebUiCommonHelper.findWebElements(findTestObject('ReplicatedSite/rs_Page_Trendy/completeProfileLater'), 5)
-if (completeProfileLater.size() > 0) {
-    WebUI.click(findTestObject('ReplicatedSite/rs_Page_Trendy/completeProfileLater'))
+/*******************************guest login on microsite****************************/
+'Login with the invited guest'
+'Login with the invited guest'
+WebUI.delay(3)
+/*WebElement enterMail = driver.findElement(By.xpath("//div[@class='form-field']/custom-input/div/input[@name='email']"));
+executor.executeScript("arguments[0].click();", enterMail);*/
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'),	guest1Mail)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue'))
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'), guest1Pass)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue_pass'))
+WebUI.delay(5)
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later'), 0)) {
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later'))
 }
-
-if(WebUI.getUrl() == BSURL){
-	WebUI.back()
-}
-

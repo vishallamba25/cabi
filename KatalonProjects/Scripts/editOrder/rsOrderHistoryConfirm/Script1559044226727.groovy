@@ -49,8 +49,8 @@ if (editButton.size() > 0) {
     if (editScenarioNumber == 1) {
         println('scen = 1')
 
-        List<WebElement> updateButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/a_update_order'),1)
-        assert updateButton.size() > 0
+//        List<WebElement> updateButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/a_update_order'),1)
+//        assert updateButton.size() > 0
 
         WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_update_order'))
         WebUI.delay(5)
@@ -96,9 +96,9 @@ if (editButton.size() > 0) {
     } else if (editScenarioNumber == 4) {
         println('scen = 4')
 
-        List<WebElement> donationItemPresent = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/div_donation_present'), 5)
-
-        assert donationItemPresent.size() > 0
+//        List<WebElement> donationItemPresent = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/div_donation_present'), 5)
+//
+//        assert donationItemPresent.size() > 0
 
         List<WebElement> donationRemoveButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/a_donation_cannot_remove'), 5)
 

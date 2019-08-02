@@ -36,7 +36,7 @@ WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
 
 ///////////////////////
-int contactNumber = 10
+int contactNumber = 14
 
 String firstName = findTestData('contactData').getValue('firstName', contactNumber)
 

@@ -1,18 +1,13 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+
 import com.github.javafaker.Faker as Faker
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import internal.GlobalVariable as GlobalVariable
+
+import commonUtility.UtilityMethods
 
 RSURL = findTestData('envtData').getValue('RSURL', 1)
 
@@ -42,9 +37,10 @@ WebUI.setText(findTestObject('ReplicatedSite/rs_Page_Trendy/input_Sign in  Creat
 
 WebUI.click(findTestObject('ReplicatedSite/rs_Page_Trendy/button_Continue'))
 
-WebUI.delay(3)
+WebUI.delay(5)
 
-//WebUI.click(findTestObject('ReplicatedSite/rsNewUser/rsFirstName'))
+WebUI.click(findTestObject('ReplicatedSite/rsNewUser/rsFirstName'))
+
 WebUI.setText(findTestObject('ReplicatedSite/rsNewUser/rsFirstName'), firstName)
 
 WebUI.setText(findTestObject('ReplicatedSite/rsNewUser/rsLastName'), lastName)
@@ -61,5 +57,11 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/gotItThanks'))
 
+TestObject profileOptions= UtilityMethods.createTestObject("profileOptions", '//div[@class=\'check\' and preceding-sibling::div[text()=\'',Casual,'\']]')
+
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/setUpMyProfile'))
+
+WebUI.waitForElementClickable(findTestObject('ReplicatedSite/rsNewUser/dressOftenOption'), 5)
+
+WebUI.click(findTestObject('ReplicatedSite/rsNewUser/dressOftenOption'))
 

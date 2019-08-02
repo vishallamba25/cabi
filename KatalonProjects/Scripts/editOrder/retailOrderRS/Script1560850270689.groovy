@@ -14,11 +14,14 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-//WebUI.openBrowser('')
+WebUI.openBrowser('')
 
 WebDriver driver = DriverFactory.getWebDriver()
 JavascriptExecutor executor = (JavascriptExecutor)driver;
 Actions actions = new Actions(driver);
+
+WebUI.delay(10)
+
 
 WebUI.callTestCase(findTestCase('TestCaseUtilities/rsLogin'), [('RSURL') : '', ('RSuser') : '', ('RSpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -35,8 +38,18 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 	}*/
 
 	WebDriverWait wait2 = new WebDriverWait(driver, 10);
+<<<<<<< HEAD
 	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Delight Scarf')]")));
 
+=======
+	
+	WebUI.delay(10);
+	
+	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Delight Scarf')]")));
+
+//	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Beast Belt')]")));
+
+>>>>>>> 3d0956ac89ee693217fa5bcb974f9f6965db589c
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
 	
 
@@ -70,11 +83,11 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_checkout'))
 
 	WebUI.delay(10)
-//	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
-//	driver = DriverFactory.getWebDriver()
-//	element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[1]'))
-//	executor.executeScript("arguments[0].click();", element);
-//	
+	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
+	driver = DriverFactory.getWebDriver()
+	element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[1]'))
+	executor.executeScript("arguments[0].click();", element);
+	
 	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
 	
 	driver = DriverFactory.getWebDriver()

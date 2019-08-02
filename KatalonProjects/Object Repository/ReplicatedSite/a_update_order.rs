@@ -6,12 +6,11 @@
    <elementGuidId>9f0c22a5-3e4e-4947-872f-6e86181a9510</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[contains(text(), 'Update Order') and not(ancestor::cart-count) and ancestor::*[@id='page-body_content']]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div/a[contains(text(), 'Update Order')])[3]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

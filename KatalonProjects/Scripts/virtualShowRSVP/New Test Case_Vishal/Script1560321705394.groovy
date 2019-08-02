@@ -75,7 +75,7 @@ WebUI.click(findTestObject('Page_cabi Home/a_Contact Manager'))*/
 
 hostessObj.favorites=0//UtilityMethods.getFavCount(hostess);
 cohostessObj.favorites=0//UtilityMethods.getFavCount(cohostess);
-guest1Obj.favorites=2//UtilityMethods.getFavCount(guest1);
+guest1Obj.favorites=0//UtilityMethods.getFavCount(guest1);
 guest2Obj.favorites=0//UtilityMethods.getFavCount(guest2);
 /*WebUI.closeWindowIndex(currentTab+1);
 WebUI.switchToWindowIndex(currentTab)*/
@@ -123,7 +123,7 @@ catch(org.openqa.selenium.StaleElementReferenceException ex)
 {
 	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 }
-WebUI.delay(2)
+WebUI.delay(5)
 executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
 WebUI.delay(2)
 try {

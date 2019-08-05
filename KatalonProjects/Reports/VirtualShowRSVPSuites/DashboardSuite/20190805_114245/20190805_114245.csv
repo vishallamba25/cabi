@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+DashboardSuite,,,2019-08-05 11:42:51,2019-08-05 11:43:02,11.226s,FAILED
+,,,,,,
+Test Cases/VirtualShow/VS_Automation,,,2019-08-05 11:42:51,2019-08-05 11:43:02,10.593s,FAILED
+Start listener action : sampleBeforeTestCase,,,2019-08-05 11:42:52,2019-08-05 11:42:52,0.077s,PASSED
+"dataFile = ""micrositeData""",,,2019-08-05 11:42:53,2019-08-05 11:42:53,0.002s,PASSED
+"guest1Mail = findTestData(dataFile).getValue(""guest1Mail"", 1)",,,2019-08-05 11:42:53,2019-08-05 11:42:55,1.959s,PASSED
+"guest1Pass = findTestData(dataFile).getValue(""guest1Pass"", 1)",,,2019-08-05 11:42:55,2019-08-05 11:42:55,0.079s,PASSED
+"dataFile = ""virtualShowData""",,,2019-08-05 11:42:55,2019-08-05 11:42:55,0.003s,PASSED
+"hostess = findTestData(dataFile).getValue(""hostess"", 1)",,,2019-08-05 11:42:55,2019-08-05 11:42:55,0.153s,PASSED
+"cohostess = findTestData(dataFile).getValue(""cohostess"", 1)",,,2019-08-05 11:42:55,2019-08-05 11:42:55,0.088s,PASSED
+"guest1 = findTestData(dataFile).getValue(""guest1"", 1)",,,2019-08-05 11:42:55,2019-08-05 11:42:55,0.065s,PASSED
+"guest2 = findTestData(dataFile).getValue(""guest2"", 1)",,,2019-08-05 11:42:55,2019-08-05 11:42:55,0.072s,PASSED
+"RSTestEnvt = findTestData(""envtData"").getValue(""RSTestEnvt"", 1)",,,2019-08-05 11:42:55,2019-08-05 11:42:56,0.071s,PASSED
+"BOURL = findTestData(""envtData"").getValue(""BOURL"", 1)",,,2019-08-05 11:42:56,2019-08-05 11:42:56,0.070s,PASSED
+actualGuestList = new java.util.ArrayList(),,,2019-08-05 11:42:56,2019-08-05 11:42:56,0.002s,PASSED
+yesList = new java.util.ArrayList(),,,2019-08-05 11:42:56,2019-08-05 11:42:56,0.002s,PASSED
+noList = new java.util.ArrayList(),,,2019-08-05 11:42:56,2019-08-05 11:42:56,0.010s,PASSED
+maybeList = new java.util.ArrayList(),,,2019-08-05 11:42:56,2019-08-05 11:42:56,0.008s,PASSED
+noreplyList = new java.util.ArrayList(),,,2019-08-05 11:42:56,2019-08-05 11:42:56,0.003s,PASSED
+presentList = new java.util.ArrayList(),,,2019-08-05 11:42:56,2019-08-05 11:42:56,0.003s,PASSED
+allList = new java.util.ArrayList(),,,2019-08-05 11:42:56,2019-08-05 11:42:56,0.001s,PASSED
+"callTestCase(findTestCase(""VirtualShow/createShow""), [""testEnvt"":"""", ""username"":"""", ""password"":"""", ""stylist"":"""", ""hostess"":"""", ""cohostess"":"""", ""guest1"":"""", ""guest2"":"""", ""verifyHostess"":"""", ... ], STOP_ON_FAILURE)",,,2019-08-05 11:42:56,2019-08-05 11:43:02,6.399s,FAILED

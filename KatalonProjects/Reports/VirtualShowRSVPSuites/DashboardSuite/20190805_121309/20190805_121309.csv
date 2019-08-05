@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+DashboardSuite,Chrome 76.0.3809.87,,2019-08-05 12:13:13,2019-08-05 12:14:20,1m - 7.286s,FAILED
+,,,,,,
+Test Cases/VirtualShow/VS_Automation,Chrome 76.0.3809.87,,2019-08-05 12:13:13,2019-08-05 12:14:19,1m - 5.963s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.87,,2019-08-05 12:13:14,2019-08-05 12:13:14,0.107s,PASSED
+"dataFile = ""micrositeData""",Chrome 76.0.3809.87,,2019-08-05 12:13:15,2019-08-05 12:13:15,0.001s,PASSED
+"guest1Mail = findTestData(dataFile).getValue(""guest1Mail"", 1)",Chrome 76.0.3809.87,,2019-08-05 12:13:15,2019-08-05 12:13:16,1.126s,PASSED
+"guest1Pass = findTestData(dataFile).getValue(""guest1Pass"", 1)",Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.074s,PASSED
+"dataFile = ""virtualShowData""",Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.002s,PASSED
+"hostess = findTestData(dataFile).getValue(""hostess"", 1)",Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.109s,PASSED
+"cohostess = findTestData(dataFile).getValue(""cohostess"", 1)",Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.076s,PASSED
+"guest1 = findTestData(dataFile).getValue(""guest1"", 1)",Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.058s,PASSED
+"guest2 = findTestData(dataFile).getValue(""guest2"", 1)",Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.120s,PASSED
+"RSTestEnvt = findTestData(""envtData"").getValue(""RSTestEnvt"", 1)",Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.081s,PASSED
+"BOURL = findTestData(""envtData"").getValue(""BOURL"", 1)",Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.067s,PASSED
+actualGuestList = new java.util.ArrayList(),Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.000s,PASSED
+yesList = new java.util.ArrayList(),Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.001s,PASSED
+noList = new java.util.ArrayList(),Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.002s,PASSED
+maybeList = new java.util.ArrayList(),Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.014s,PASSED
+noreplyList = new java.util.ArrayList(),Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.001s,PASSED
+presentList = new java.util.ArrayList(),Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.008s,PASSED
+allList = new java.util.ArrayList(),Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:13:16,0.001s,PASSED
+"callTestCase(findTestCase(""VirtualShow/createShow""), [""testEnvt"":"""", ""username"":"""", ""password"":"""", ""stylist"":"""", ""hostess"":"""", ""cohostess"":"""", ""guest1"":"""", ""guest2"":"""", ""verifyHostess"":"""", ... ], STOP_ON_FAILURE)",Chrome 76.0.3809.87,,2019-08-05 12:13:16,2019-08-05 12:14:19,1m - 2.768s,FAILED

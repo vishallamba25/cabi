@@ -14,13 +14,13 @@
       <guid>4e3ec0a7-8ee0-44f1-b05f-a2cdc6144340</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/virtualShowRSVP/createShow</testCaseId>
+      <testCaseId>Test Cases/VirtualShow/createShow</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>fa4c519a-7f1f-4ff5-b8e1-d156c84d61aa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/virtualShowRSVP/micrositeRSVPValidUser</testCaseId>
+      <testCaseId>Test Cases/VirtualShow/micrositeRSVPValidUser</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>SCRIPT_VARIABLE</type>

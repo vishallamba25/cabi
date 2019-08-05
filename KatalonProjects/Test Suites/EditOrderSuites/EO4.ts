@@ -14,7 +14,7 @@
       <guid>4dd5bc61-2cdb-4bbc-9dfc-9bcb8a3ec101</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/editOrder/rsEditOrderPartialShip</testCaseId>
+      <testCaseId>Test Cases/EditOrder/rsEditOrderPartialShip</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

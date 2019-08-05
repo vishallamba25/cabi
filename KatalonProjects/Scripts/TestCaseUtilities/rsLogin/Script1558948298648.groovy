@@ -15,13 +15,9 @@ guest1Pass = findTestData(dataFile).getValue('guest1Pass', 1)
 
 String RSTestEnvt= findTestData('envtData').getValue('RSTestEnvt', 1)
 
-<<<<<<< HEAD
-WebUI.openBrowser('')
-WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
-=======
+
 //WebUI.openBrowser('')
 //WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
->>>>>>> 3d0956ac89ee693217fa5bcb974f9f6965db589c
 
 //GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104653490/"
 //WebUI.navigateToUrl(GlobalVariable.micrositeURL)
@@ -41,8 +37,4 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsi
 WebUI.delay(5)
 if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later'), 0)) {
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later'))
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 3d0956ac89ee693217fa5bcb974f9f6965db589c

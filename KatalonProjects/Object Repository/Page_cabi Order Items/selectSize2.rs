@@ -6,11 +6,11 @@
    <elementGuidId>89f5874b-e38f-408d-94b2-d0bdef647b19</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//select[@id='sizeSelect_1']/option[@value='M/L']</value>
+         <key>XPATH</key>
+         <value>//select[@id='sizeSelect_1']/option[@value='L']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>BASIC</key>
          <value>//select[@id='sizeSelect_1']/option[@value='M/L']</value>
       </entry>
    </selectorCollection>

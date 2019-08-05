@@ -6,12 +6,11 @@
    <elementGuidId>fd09c305-65b0-4564-9e39-66f1745d3ef9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//app-look-book/div/accordion/div/accordion-group/div/div/div/div/div[@class='collection-name'])[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//app-look-book/div/accordion/div/accordion-group/div/div/div/div/div[@class='collection-name'])[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

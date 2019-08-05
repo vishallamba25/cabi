@@ -74,3 +74,8 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/dressOftenOption'))
 
+//div[@class='check' and preceding-sibling::div[text()='Bold']] dressStyle
+
+//div[@class='check' and preceding-sibling::div[text()='Inverted Triangle']] dressShape
+
+//div[@class='check' and preceding-sibling::div[text()='Rear']] dressAccentuate

@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/h2/a/span[contains(text(), 'Delight Scarf')]</value>
+         <value>//div/h2/a/span[contains(text(), 'Flaunt Scarf')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

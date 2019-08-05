@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='sizeSelect_1']/option[@value='M/L']</value>
+         <value>//select[@id='sizeSelect_1']/option[@value='L']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

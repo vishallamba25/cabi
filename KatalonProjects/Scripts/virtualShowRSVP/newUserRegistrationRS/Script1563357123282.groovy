@@ -13,6 +13,8 @@ RSURL = findTestData('envtData').getValue('RSURL', 1)
 
 RSuser = findTestData('credData').getValue('RSuser', 1)
 
+String RSTestEnvt= findTestData('envtData').getValue('RSTestEnvt', 1)
+
 Faker faker = new Faker()
 
 String name = faker.name().fullName()
@@ -31,7 +33,12 @@ WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandl
 
 WebUI.navigateToUrl(RSURL)
 
-WebUI.click(findTestObject('ReplicatedSite/rs_Page_Trendy/i_user_login'))
+//WebUI.click(findTestObject('ReplicatedSite/rs_Page_Trendy/i_user_login'))
+
+String loginURL= UtilityMethods.concat("https://mirandakate.", RSTestEnvt, ".com/?component=account.login-gateway")
+
+WebUI.navigateToUrl(loginURL)
+
 
 WebUI.setText(findTestObject('ReplicatedSite/rs_Page_Trendy/input_Sign in  Create account_email'), email)
 
@@ -57,11 +64,13 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/gotItThanks'))
 
-TestObject profileOptions= UtilityMethods.createTestObject("profileOptions", '//div[@class=\'check\' and preceding-sibling::div[text()=\'',Casual,'\']]')
+//TestObject profileOptions= UtilityMethods.createTestObject("profileOptions", '//div[@class=\'check\' and preceding-sibling::div[text()=\'',Casual,'\']]')
 
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/setUpMyProfile'))
 
 WebUI.waitForElementClickable(findTestObject('ReplicatedSite/rsNewUser/dressOftenOption'), 5)
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/dressOftenOption'))
 

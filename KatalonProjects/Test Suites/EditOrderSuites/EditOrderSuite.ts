@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>EditOrderSuite</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>c3825cdf-bbd9-4f5b-8eec-503fc8af5efd</testSuiteGuid>
+   <testCaseLink>
+      <guid>d2d1fc21-36cc-4bd9-a27b-74c62863f754</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/EditOrder/rsEditOrderDonation</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>aeaeeed0-c611-41bc-bd38-d860cb378d2d</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a1fc125e-c0e4-46ad-b8c8-159077dab9e5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/EditOrder/rsEditOrderGiftCard</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f83a9981-7707-4104-aad1-101986952818</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8b9c7737-d960-4fcc-b471-f49499f9e85f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/EditOrder/rsEditOrderPartialShip</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ef585920-c073-4a47-89e3-5359fbc25c12</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bd7f0a79-ee09-4bff-ac0f-025b58e8e7a3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/EditOrder/rsEditOrderRS</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>137e9e5c-36d1-42a8-a382-da49a12aab59</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9197cdf2-caf2-4338-873b-14f0eaf780af</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/EditOrder/rsEditOrderSimple</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ff96322f-9065-41b9-8d3c-b5edaa01181e</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

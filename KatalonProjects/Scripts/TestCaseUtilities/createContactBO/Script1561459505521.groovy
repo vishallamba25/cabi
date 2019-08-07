@@ -19,7 +19,7 @@ WebUI.openBrowser('')
 
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
-for (int row = 8; row <= findTestData('contactData').getRowNumbers(); row++) {
+for (int row = 1; row <= findTestData('contactData').getRowNumbers(); row++) {
     firstName = findTestData('contactData').getValue('firstName', row)
 
     lastName = findTestData('contactData').getValue('lastName', row)

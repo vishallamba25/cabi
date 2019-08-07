@@ -73,19 +73,22 @@ if (editButton.size() > 0) {
 		
 		
         /////cancel edit
-		executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/a_cancel_edit'), 5));
+		executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/a_cancel_edit'), 10));
 		//WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_cancel_edit'))
         List<WebElement> cancelEditButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/h2_sure_to_cancel_edit'),1)
         assert cancelEditButton.size() > 0
-        WebUI.click(findTestObject('ReplicatedSite/button_yes_cancel_edit'))
+		executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/button_yes_cancel_edit'), 10));
+        //WebUI.click(findTestObject('ReplicatedSite/button_yes_cancel_edit'))
         WebUI.delay(5)
         WebUI.click(to)
         WebUI.delay(5)
         /////cancel order
-        WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_cancel_order'))
-        List<WebElement> cancelOrderButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/h2_sure_to_cancel_order'), 1)
+		executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/a_cancel_order'), 10));
+        //WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_cancel_order'))
+        List<WebElement> cancelOrderButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/h2_sure_to_cancel_order'), 10)
         assert cancelOrderButton.size() > 0
-        WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_yes_cancel_order'))
+		executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/button_yes_cancel_order'), 10));
+        //WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_yes_cancel_order'))
         WebUI.delay(5)
 		TestObject div_cancelled_order= UtilityMethods.createTestObject("div_cancelled_order", '//span[contains(text(), \'', orderID, '\')]/parent::div/parent::div/div[@class=\'table-row-status\']/span')
 		println WebUI.getText(div_cancelled_order)

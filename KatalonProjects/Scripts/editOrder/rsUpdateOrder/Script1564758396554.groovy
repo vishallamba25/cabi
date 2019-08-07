@@ -27,7 +27,7 @@ executor.executeScript("arguments[0].click();", element);
 //WebUI.click(findTestObject('Object Repository/ReplicatedSite/span_shipping_info'))
 */WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_other_address'))
 //////////////////Enter other adress/////////////////////
-int contactNumber = 4 //guest2
+int contactNumber = 3 //guest2
 String address1 = findTestData('contactData').getValue('address1', contactNumber)
 String city = findTestData('contactData').getValue('city', contactNumber)
 String state = findTestData('contactData').getValue('state', contactNumber)

@@ -6,11 +6,11 @@
    <elementGuidId>c2b7327a-cffe-463a-8e60-c2bb4c0ec058</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div/h2/a/span[contains(text(), 'Breeze Dress')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div/h2/a/span[contains(text(), 'Beast Belt')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

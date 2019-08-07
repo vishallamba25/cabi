@@ -17,16 +17,23 @@ String RSTestEnvt= findTestData('envtData').getValue('RSTestEnvt', 1)
 
 
 
+<<<<<<< HEAD
+
+=======
 
 WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
 
+>>>>>>> 14f75636cf711fd2399d4b884f4ce3116d3f2e31
 
 //WebUI.openBrowser('')
 //WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 14f75636cf711fd2399d4b884f4ce3116d3f2e31
 
 //GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104653490/"
 //WebUI.navigateToUrl(GlobalVariable.micrositeURL)
@@ -51,9 +58,12 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsi
 }
 
 
+<<<<<<< HEAD
+=======
 
 
 
 
 
 
+>>>>>>> 14f75636cf711fd2399d4b884f4ce3116d3f2e31

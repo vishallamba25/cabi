@@ -494,6 +494,8 @@ catch(org.openqa.selenium.StaleElementReferenceException ex)
 }
 WebUI.delay(2)
 /**************************************************************************************************************/
+/*****************************************add an item to bag from collection***********************************************************/
+/**************************************************************************************************************/
 /*****************************************fav from lookbook***********************************************************/
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/button_shopping'))
 guest1Obj.webcamStatus=2;

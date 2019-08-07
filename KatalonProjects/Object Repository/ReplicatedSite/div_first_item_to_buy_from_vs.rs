@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div/h2/a/span[contains(text(), 'Delight Scarf')]</value>
+         <value>//div/h2/a/span[contains(text(), 'Beast Belt')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

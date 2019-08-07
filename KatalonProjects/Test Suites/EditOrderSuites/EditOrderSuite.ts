@@ -25,7 +25,7 @@
    <testCaseLink>
       <guid>d2d1fc21-36cc-4bd9-a27b-74c62863f754</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/EditOrder/rsEditOrderDonation</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -37,7 +37,7 @@
    <testCaseLink>
       <guid>a1fc125e-c0e4-46ad-b8c8-159077dab9e5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/EditOrder/rsEditOrderGiftCard</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -49,7 +49,7 @@
    <testCaseLink>
       <guid>8b9c7737-d960-4fcc-b471-f49499f9e85f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/EditOrder/rsEditOrderPartialShip</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

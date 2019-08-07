@@ -37,9 +37,9 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 		WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
 	}*/
 
-	WebDriverWait wait2 = new WebDriverWait(driver, 10);
+//	WebDriverWait wait2 = new WebDriverWait(driver, 10);
 
-	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Flaunt Scarf')]")));
+//	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Flaunt Scarf')]")));
 
 
 	
@@ -47,15 +47,12 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 	
 //	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Delight Scarf')]")));
 
-//	wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Beast Belt')]")));
-
-
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'))
 	
 
-	WebElement firstItemToBuy = driver.findElement(By.xpath("(//div[@class='entry-content']/div[@class='item_photos']/div[@class='item_image_main'])[1]"));
+//	WebElement firstItemToBuy = driver.findElement(By.xpath("(//div[@class='entry-content']/div[@class='item_photos']/div[@class='item_image_main'])[1]"));
 	//actions.moveToElement(firstItemToBuy).click().build().perform()
-	executor.executeScript("arguments[0].click();", firstItemToBuy);
+//	executor.executeScript("arguments[0].click();", firstItemToBuy);
 
 	/*WebUI.waitForElementClickable(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy'), 30)
 	WebElement firstItemToBuy = driver.findElement(By.xpath("(//div[@class='item_photos']/div[@class='product-info'])[1]"));
@@ -83,18 +80,18 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_shop'))
 	WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_checkout'))
 
 	WebUI.delay(10)
-	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
-	driver = DriverFactory.getWebDriver()
-	element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[1]'))
-	executor.executeScript("arguments[0].click();", element);
-	
-	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
-	
-	driver = DriverFactory.getWebDriver()
-	
-	element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[1]'))
-	
-	executor.executeScript('arguments[0].click();', element)
+	WebUI.click(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
+//	driver = DriverFactory.getWebDriver()
+//	element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[1]'))
+//	executor.executeScript("arguments[0].click();", element);
+//	
+//	WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
+//	
+//	driver = DriverFactory.getWebDriver()
+//	
+//	element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[1]'))
+//	
+//	executor.executeScript('arguments[0].click();', element)
 	
 	
 

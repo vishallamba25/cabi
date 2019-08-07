@@ -10,13 +10,8 @@
          <value>//select[@id='sizeSelect_1']/option[@value='L']</value>
       </entry>
       <entry>
-<<<<<<< HEAD
-         <key>BASIC</key>
-         <value>//select[@id='sizeSelect_1']/option[@value='M/L']</value>
-=======
          <key>XPATH</key>
          <value>//select[@id='sizeSelect_1']/option[@value='L']</value>
->>>>>>> 5a6aa1683b712146af30fecd5a0cb78450c53929
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

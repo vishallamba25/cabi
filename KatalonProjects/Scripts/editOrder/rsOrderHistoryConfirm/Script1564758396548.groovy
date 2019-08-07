@@ -1,21 +1,22 @@
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement as WebElement
+
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 import commonUtility.UtilityMethods as UtilityMethods
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+
+WebDriver driver = DriverFactory.getWebDriver()
+JavascriptExecutor executor = (JavascriptExecutor)driver;
 
 orderID = GlobalVariable.retailOrderID
 
@@ -58,9 +59,22 @@ if (editButton.size() > 0) {
 		WebUI.callTestCase(findTestCase('EditOrder/rsUpdateOrder'), [:], FailureHandling.STOP_ON_FAILURE)
 		////end rsUpdateOrder
         WebUI.delay(3)
-
+		//editing individual order
+		WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_edit_first_individual_product'))
+		WebUI.delay(5)
+		WebUI.click(findTestObject('Object Repository/ReplicatedSite/select_new_size'))
+		WebUI.delay(5)
+		WebUI.setText(findTestObject('Object Repository/ReplicatedSite/input_new_qty'), "2")
+		WebUI.delay(3)
+		WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_update_individual_item'))
+		WebUI.delay(3)
+		//end editing individual order
+		
+		
+		
         /////cancel edit
-        WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_cancel_edit'))
+		executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/a_cancel_edit'), 5));
+		//WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_cancel_edit'))
         List<WebElement> cancelEditButton = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/h2_sure_to_cancel_edit'),1)
         assert cancelEditButton.size() > 0
         WebUI.click(findTestObject('ReplicatedSite/button_yes_cancel_edit'))

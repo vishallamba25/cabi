@@ -4,6 +4,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.By as By
 import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
@@ -26,7 +27,7 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
 
 WebUI.delay(1)
 
-WebUI.rightClick(findTestObject('Page_cabi Home/a_Shows  Orders'))
+WebUI.click(findTestObject('Page_cabi Home/a_Shows  Orders'))
 
 WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
 
@@ -36,7 +37,7 @@ WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
 
 ///////////////////////
-int contactNumber = 14
+int contactNumber = 10
 
 String firstName = findTestData('contactData').getValue('firstName', contactNumber)
 
@@ -61,7 +62,18 @@ String space = ' '
 String existingCust = "$existingCustFName$space$existingCustLName"
 
 ///////////////////////
+///////////////
 WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
+
+WebUI.delay(2)
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), Keys.chord(
+		Keys.ARROW_DOWN))
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), Keys.chord(
+		Keys.ENTER))
+////////////////
+/*WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
 
 WebUI.delay(3)
 
@@ -71,7 +83,7 @@ WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Create Show - Set Hostess/a_select_customer'))
 
-WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
+WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)*/
 
 WebUI.setText(findTestObject('Object Repository/Page_cabi Retail Store/input_email'), email)
 

@@ -196,7 +196,7 @@ WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_lookbook'))
+WebUI.click(findTestObject('virualShowRSVPOR/Page_Show microsite/button_looks'))
 
 WebUI.delay(2)
 

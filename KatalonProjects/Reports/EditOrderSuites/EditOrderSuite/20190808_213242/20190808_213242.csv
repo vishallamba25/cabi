@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+EditOrderSuite,Chrome 76.0.3809.100,,8/8/2019 21:32,8/8/2019 21:36,3m - 51.548s,PASSED
+,,,,,,
+Test Cases/EditOrder/rsEditOrderGiftCard,Chrome 76.0.3809.100,,8/8/2019 21:32,8/8/2019 21:36,3m - 50.217s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,8/8/2019 21:32,8/8/2019 21:32,0.041s,PASSED
+"callTestCase(findTestCase(""EditOrder/retailOrderBO""), [""editScenarioNumber"":3], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,8/8/2019 21:32,8/8/2019 21:34,2m - 8.788s,PASSED
+delay(10),Chrome 76.0.3809.100,,8/8/2019 21:34,8/8/2019 21:35,10.003s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,8/8/2019 21:35,8/8/2019 21:35,9.504s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/rsLogin""), [""RSURL"":"""", ""RSuser"":"""", ""RSpass"":""""], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,8/8/2019 21:35,8/8/2019 21:36,58.291s,PASSED
+"callTestCase(findTestCase(""EditOrder/rsOrderHistoryConfirm""), [""orderID"":"""", ""editScenarioNumber"":3], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,8/8/2019 21:36,8/8/2019 21:36,23.107s,PASSED

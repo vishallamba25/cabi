@@ -14,6 +14,7 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.testobject.TestObject as TestObject
 
 import commonUtility.ChatMessage
 import commonUtility.UtilityMethods
@@ -494,17 +495,45 @@ catch(org.openqa.selenium.StaleElementReferenceException ex)
 }
 WebUI.delay(2)
 /**************************************************************************************************************/
-/*****************************************fav from lookbook***********************************************************/
+/*****************************************add an item to bag from favorites***********************************************************/
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/button_shopping'))
 guest1Obj.webcamStatus=2;
 guest1Obj.micStatus=2;
-
-
-
-
 WebUI.switchToWindowIndex(currentTab + 2)
+WebUI.delay(3)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_view_my_fav'))
+WebUI.delay(3)
+WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_add_to_bag_from_fav'))
+WebUI.delay(3)
+List<WebElement> noOfOptions = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_no_of_options_for_add_to_bag_item'), 5)
+for(int i=1; i<=noOfOptions.size(); i++){
+	TestObject dropDown= UtilityMethods.createTestObject("div_drop_down", '(//div[@class=\'dropdown-toggle\']/div[@class=\'dropdown-button\']/div[@class=\'drop-caret\'])[', Integer.toString(i), ']')
+	WebUI.click(dropDown)
+	WebUI.delay(3)
+	TestObject selectSecondOption= UtilityMethods.createTestObject("div_select_second_option", '(//div/div[@class=\'item-options\']/app-dropdown)[', Integer.toString(i), ']/div/div/div/div/div/div/div[@class=\'dropdown-item\' and position()=\'2\']')
+	WebUI.click(selectSecondOption)
+	WebUI.delay(3)
+}
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_add_to_bag_from_fav_option_selected'))
+guest1Obj.favorites= guest1Obj.favorites-1;
+WebUI.delay(5)
+WebUI.switchToDefaultContent()
+WebUI.switchToWindowIndex(currentTab + 1)
+WebUI.delay(15)
+try {
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+}
+catch(org.openqa.selenium.StaleElementReferenceException ex)
+{
+	assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+}
 WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_lookbook'))
+
+/**************************************************************************************************************/
+/*****************************************fav from lookbook***********************************************************/
+WebUI.switchToWindowIndex(currentTab + 2)
+WebUI.click(findTestObject('virualShowRSVPOR/Page_Show microsite/button_looks'))
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_first_look'))
 WebUI.delay(5)
@@ -535,7 +564,7 @@ WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show
 
 
 WebDriverWait wait2 = new WebDriverWait(driver, 10);
-wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Beast Belt')]")));
+//wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Beast Belt')]")));
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_collection_save_to_fav'))
 WebUI.delay(3)
 guest1Obj.favorites= guest1Obj.favorites+1;
@@ -676,7 +705,7 @@ executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement
 WebUI.verifyElementText(findTestObject('Object Repository/ReplicatedSite/h1_thanks_msg'), 'Thanks for placing your order!')
 
 WebUI.delay(2)
-guest1Obj.ordered= guest1Obj.ordered+1;
+guest1Obj.ordered= guest1Obj.ordered+3;
 guest1Obj.favorites= guest1Obj.favorites-1;
 WebUI.switchToWindowIndex(currentTab + 1)
 WebUI.delay(15)

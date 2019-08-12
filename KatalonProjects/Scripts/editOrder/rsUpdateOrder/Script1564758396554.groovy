@@ -9,11 +9,11 @@ import org.openqa.selenium.interactions.Actions
 
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import commonUtility.UtilityMethods
-import internal.GlobalVariable
 
 
 WebDriver driver = DriverFactory.getWebDriver();
@@ -57,15 +57,15 @@ executor.executeScript("arguments[0].click();", element);
 //WebUI.click(findTestObject('ReplicatedSite/button_save_and_continue'))
 WebUI.delay(3)
 ////////////////////////////
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_make_donation'))
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_make_donation'), 5));
 WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_make_donation'))
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_pay_with_gc'))
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_make_donation'), 5));
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_pay_with_gc'), 5));
 WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_pay_with_gc'))
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_pay_with_credit'))
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_pay_with_gc'), 5));
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_pay_with_credit'), 5));
 WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_pay_with_credit'))
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_pay_with_credit'), 5));
 /////////////////////////////
 WebUI.delay(2)
 

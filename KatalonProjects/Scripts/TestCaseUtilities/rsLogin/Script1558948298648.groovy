@@ -15,25 +15,10 @@ guest1Pass = findTestData(dataFile).getValue('guest1Pass', 1)
 
 String RSTestEnvt= findTestData('envtData').getValue('RSTestEnvt', 1)
 
-
-
-<<<<<<< HEAD
-
-=======
-
-WebUI.openBrowser('')
+//WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
 
->>>>>>> 14f75636cf711fd2399d4b884f4ce3116d3f2e31
-
-//WebUI.openBrowser('')
-//WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 14f75636cf711fd2399d4b884f4ce3116d3f2e31
 
 //GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104653490/"
 //WebUI.navigateToUrl(GlobalVariable.micrositeURL)
@@ -41,7 +26,6 @@ String loginURL= UtilityMethods.concat("https://mirandakate.", RSTestEnvt, ".com
 WebUI.navigateToUrl(loginURL)
 
 /*******************************guest login on microsite****************************/
-'Login with the invited guest'
 'Login with the invited guest'
 WebUI.delay(3)
 /*WebElement enterMail = driver.findElement(By.xpath("//div[@class='form-field']/custom-input/div/input[@name='email']"));
@@ -58,12 +42,3 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsi
 }
 
 
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
->>>>>>> 14f75636cf711fd2399d4b884f4ce3116d3f2e31

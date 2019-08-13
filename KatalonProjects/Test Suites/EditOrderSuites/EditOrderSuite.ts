@@ -49,7 +49,7 @@
    <testCaseLink>
       <guid>8b9c7737-d960-4fcc-b471-f49499f9e85f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/EditOrder/rsEditOrderPartialShip</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

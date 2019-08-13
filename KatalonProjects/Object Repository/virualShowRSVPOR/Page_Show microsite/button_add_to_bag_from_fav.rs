@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_lookbook</name>
+   <name>button_add_to_bag_from_fav</name>
    <tag></tag>
-   <elementGuidId>03d0af10-7f85-4790-84a2-55d741f98dbe</elementGuidId>
+   <elementGuidId>86d86833-6f00-4806-8f65-47e2d7d682e8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='microsite-left-frame']/div/app-black-buttons-panel/div[@class='black-buttons-panel']/button[@class='show-microsite-btn' and contains(text(), ' Look Book ')]</value>
+         <value>(//div[@class='add-to-bag']/span[contains(text(), 'add to bag')])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

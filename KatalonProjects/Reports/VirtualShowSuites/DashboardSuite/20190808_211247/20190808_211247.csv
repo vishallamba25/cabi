@@ -1,0 +1,313 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+DashboardSuite,Chrome 76.0.3809.100,,2019-08-08 21:12:50,2019-08-08 21:23:34,10m - 43.945s,PASSED
+,,,,,,
+Test Cases/VirtualShow/VS_Automation,Chrome 76.0.3809.100,,2019-08-08 21:12:50,2019-08-08 21:23:33,10m - 42.540s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,2019-08-08 21:12:50,2019-08-08 21:12:50,0.057s,PASSED
+"dataFile = ""micrositeData""",Chrome 76.0.3809.100,,2019-08-08 21:12:51,2019-08-08 21:12:51,0.001s,PASSED
+"guest1Mail = findTestData(dataFile).getValue(""guest1Mail"", 1)",Chrome 76.0.3809.100,,2019-08-08 21:12:51,2019-08-08 21:12:53,1.300s,PASSED
+"guest1Pass = findTestData(dataFile).getValue(""guest1Pass"", 1)",Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.050s,PASSED
+"dataFile = ""virtualShowData""",Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.001s,PASSED
+"hostess = findTestData(dataFile).getValue(""hostess"", 1)",Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.070s,PASSED
+"cohostess = findTestData(dataFile).getValue(""cohostess"", 1)",Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.057s,PASSED
+"guest1 = findTestData(dataFile).getValue(""guest1"", 1)",Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.049s,PASSED
+"guest2 = findTestData(dataFile).getValue(""guest2"", 1)",Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.073s,PASSED
+"RSTestEnvt = findTestData(""envtData"").getValue(""RSTestEnvt"", 1)",Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.063s,PASSED
+"BOURL = findTestData(""envtData"").getValue(""BOURL"", 1)",Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.067s,PASSED
+actualGuestList = new java.util.ArrayList(),Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.007s,PASSED
+yesList = new java.util.ArrayList(),Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.002s,PASSED
+noList = new java.util.ArrayList(),Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.004s,PASSED
+maybeList = new java.util.ArrayList(),Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.005s,PASSED
+noreplyList = new java.util.ArrayList(),Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.007s,PASSED
+presentList = new java.util.ArrayList(),Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.005s,PASSED
+allList = new java.util.ArrayList(),Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:12:53,0.001s,PASSED
+"callTestCase(findTestCase(""VirtualShow/createShow""), [""testEnvt"":"""", ""username"":"""", ""password"":"""", ""stylist"":"""", ""hostess"":"""", ""cohostess"":"""", ""guest1"":"""", ""guest2"":"""", ""verifyHostess"":"""", ... ], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,2019-08-08 21:12:53,2019-08-08 21:14:20,1m - 26.432s,PASSED
+hostessObj = new commonUtility.VSGuest(hostess),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.008s,PASSED
+cohostessObj = new commonUtility.VSGuest(cohostess),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.001s,PASSED
+guest1Obj = new commonUtility.VSGuest(guest1),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.001s,PASSED
+guest2Obj = new commonUtility.VSGuest(guest2),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.001s,PASSED
+driver = getWebDriver(),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.015s,PASSED
+executor = driver,Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.001s,PASSED
+currentPage = getUrl(),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.032s,PASSED
+currentTab = getWindowIndex(),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.048s,PASSED
+driver = getWebDriver(),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.000s,PASSED
+favorites = 0,Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.000s,PASSED
+favorites = 0,Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.000s,PASSED
+favorites = 0,Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.001s,PASSED
+favorites = 0,Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.000s,PASSED
+allList.add(hostessObj),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.003s,PASSED
+allList.add(cohostessObj),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.001s,PASSED
+allList.add(guest1Obj),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.001s,PASSED
+allList.add(guest2Obj),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.001s,PASSED
+yesList.add(hostessObj),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.002s,PASSED
+yesList.add(cohostessObj),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.000s,PASSED
+noreplyList.add(guest1Obj),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.000s,PASSED
+noreplyList.add(guest2Obj),Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:20,0.001s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_dashboard""))",Chrome 76.0.3809.100,,2019-08-08 21:14:20,2019-08-08 21:14:28,8.244s,PASSED
+delay(5),Chrome 76.0.3809.100,,2019-08-08 21:14:28,2019-08-08 21:14:33,5.006s,PASSED
+"switchToFrame(findTestObject(""virualShowRSVPOR/dashboard/frame_start_pre_show""), 60)",Chrome 76.0.3809.100,,2019-08-08 21:14:33,2019-08-08 21:14:33,0.129s,PASSED
+"isShowNotStarted = findWebElements(findTestObject(""virualShowRSVPOR/dashboard/button_start_pre_show""), 5)",Chrome 76.0.3809.100,,2019-08-08 21:14:33,2019-08-08 21:14:33,0.034s,PASSED
+if (isShowNotStarted.size() > 0),Chrome 76.0.3809.100,,2019-08-08 21:14:33,2019-08-08 21:14:36,3.099s,PASSED
+delay(5),Chrome 76.0.3809.100,,2019-08-08 21:14:36,2019-08-08 21:14:41,5.002s,PASSED
+switchToWindowIndex(currentTab + 1),Chrome 76.0.3809.100,,2019-08-08 21:14:41,2019-08-08 21:14:41,0.026s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:14:41,2019-08-08 21:14:49,7.310s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:14:49,2019-08-08 21:14:51,2.003s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:14:51,2019-08-08 21:14:51,0.042s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:14:51,2019-08-08 21:14:53,2.005s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:14:53,2019-08-08 21:14:53,0.580s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:14:53,2019-08-08 21:14:55,2.003s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:14:55,2019-08-08 21:14:56,0.387s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:14:56,2019-08-08 21:14:58,2.003s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:14:58,2019-08-08 21:15:04,6.380s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:15:04,2019-08-08 21:15:06,2.003s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:15:06,2019-08-08 21:15:12,6.212s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:15:12,2019-08-08 21:15:14,2.004s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:15:14,2019-08-08 21:15:15,0.353s,PASSED
+println(getWindowIndex()),Chrome 76.0.3809.100,,2019-08-08 21:15:15,2019-08-08 21:15:15,0.011s,PASSED
+"executor.executeScript(""window.open();"")",Chrome 76.0.3809.100,,2019-08-08 21:15:15,2019-08-08 21:15:15,0.069s,PASSED
+switchToWindowIndex(currentTab + 2),Chrome 76.0.3809.100,,2019-08-08 21:15:15,2019-08-08 21:15:15,0.056s,PASSED
+println(getWindowIndex()),Chrome 76.0.3809.100,,2019-08-08 21:15:15,2019-08-08 21:15:16,1.029s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,2019-08-08 21:15:16,2019-08-08 21:15:25,9.007s,PASSED
+"loginURL = UtilityMethods.concat(""https://mirandakate."", RSTestEnvt, "".com/?component=account.login-gateway"")",Chrome 76.0.3809.100,,2019-08-08 21:15:25,2019-08-08 21:15:25,0.002s,PASSED
+navigateToUrl(loginURL),Chrome 76.0.3809.100,,2019-08-08 21:15:25,2019-08-08 21:16:06,41.645s,PASSED
+"""Login with the invited guest""",Chrome 76.0.3809.100,,2019-08-08 21:16:06,2019-08-08 21:16:06,0.002s,PASSED
+delay(3),Chrome 76.0.3809.100,Login with the invited guest,2019-08-08 21:16:06,2019-08-08 21:16:09,3.003s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email""), guest1Mail)",Chrome 76.0.3809.100,,2019-08-08 21:16:09,2019-08-08 21:16:10,0.523s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue""))",Chrome 76.0.3809.100,,2019-08-08 21:16:10,2019-08-08 21:16:10,0.150s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password""), guest1Pass)",Chrome 76.0.3809.100,,2019-08-08 21:16:10,2019-08-08 21:16:11,0.887s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue_pass""))",Chrome 76.0.3809.100,,2019-08-08 21:16:11,2019-08-08 21:16:11,0.094s,PASSED
+delay(5),Chrome 76.0.3809.100,,2019-08-08 21:16:11,2019-08-08 21:16:16,5.003s,PASSED
+"if (verifyElementPresent(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later""), 0))",Chrome 76.0.3809.100,,2019-08-08 21:16:16,2019-08-08 21:16:25,9.032s,PASSED
+navigateToUrl(micrositeURL),Chrome 76.0.3809.100,,2019-08-08 21:16:25,2019-08-08 21:16:32,6.388s,PASSED
+"userLogin = findWebElements(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/i_user_login""), 5)",Chrome 76.0.3809.100,,2019-08-08 21:16:32,2019-08-08 21:16:32,0.117s,PASSED
+if (userLogin.size() == 0),Chrome 76.0.3809.100,,2019-08-08 21:16:32,2019-08-08 21:16:32,0.001s,PASSED
+"listElement1 = findWebElements(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP""), 5)",Chrome 76.0.3809.100,,2019-08-08 21:16:32,2019-08-08 21:16:37,5.387s,PASSED
+if (empty),Chrome 76.0.3809.100,"Validating invited guest's 'Yes' RSVP
+",2019-08-08 21:16:37,2019-08-08 21:16:42,4.681s,PASSED
+maybeList.add(guest1Obj),Chrome 76.0.3809.100,,2019-08-08 21:16:42,2019-08-08 21:16:42,0.000s,PASSED
+noreplyList.remove(guest1Obj),Chrome 76.0.3809.100,,2019-08-08 21:16:42,2019-08-08 21:16:42,0.001s,PASSED
+switchToWindowIndex(currentTab + 1),Chrome 76.0.3809.100,,2019-08-08 21:16:42,2019-08-08 21:16:42,0.044s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:16:42,2019-08-08 21:16:44,2.003s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:16:44,2019-08-08 21:16:44,0.043s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:16:44,2019-08-08 21:16:50,6.327s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:16:50,2019-08-08 21:16:52,2.005s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:16:52,2019-08-08 21:16:52,0.046s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:16:52,2019-08-08 21:16:54,2.005s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:16:54,2019-08-08 21:16:55,0.534s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:16:55,2019-08-08 21:16:57,2.005s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:16:57,2019-08-08 21:16:57,0.360s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:16:57,2019-08-08 21:16:59,2.003s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:16:59,2019-08-08 21:17:05,6.199s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:17:05,2019-08-08 21:17:07,2.002s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:17:07,2019-08-08 21:17:08,0.251s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:17:08,2019-08-08 21:17:10,2.004s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:17:10,2019-08-08 21:17:10,0.255s,PASSED
+switchToWindowIndex(currentTab + 2),Chrome 76.0.3809.100,,2019-08-08 21:17:10,2019-08-08 21:17:10,0.036s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:17:10,2019-08-08 21:17:12,2.002s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP""))",Chrome 76.0.3809.100,,2019-08-08 21:17:12,2019-08-08 21:17:12,0.142s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_no""))",Chrome 76.0.3809.100,,2019-08-08 21:17:12,2019-08-08 21:17:12,0.136s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND""))",Chrome 76.0.3809.100,,2019-08-08 21:17:12,2019-08-08 21:17:12,0.161s,PASSED
+delay(4),Chrome 76.0.3809.100,,2019-08-08 21:17:12,2019-08-08 21:17:16,4.001s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Sorry you cant make it.""), ""Sorry you can't make it."")",Chrome 76.0.3809.100,,2019-08-08 21:17:16,2019-08-08 21:17:16,0.047s,PASSED
+noList.add(guest1Obj),Chrome 76.0.3809.100,,2019-08-08 21:17:16,2019-08-08 21:17:16,0.001s,PASSED
+maybeList.remove(guest1Obj),Chrome 76.0.3809.100,,2019-08-08 21:17:16,2019-08-08 21:17:16,0.000s,PASSED
+switchToWindowIndex(currentTab + 1),Chrome 76.0.3809.100,,2019-08-08 21:17:16,2019-08-08 21:17:16,0.025s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:17:16,2019-08-08 21:17:23,6.210s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:17:23,2019-08-08 21:17:25,2.002s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:17:25,2019-08-08 21:17:25,0.021s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:17:25,2019-08-08 21:17:27,2.002s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:17:27,2019-08-08 21:17:27,0.577s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:17:27,2019-08-08 21:17:29,2.003s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:17:29,2019-08-08 21:17:29,0.298s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:17:29,2019-08-08 21:17:31,2.003s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:17:31,2019-08-08 21:17:32,0.287s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:17:32,2019-08-08 21:17:34,2.002s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:17:34,2019-08-08 21:17:40,6.183s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:17:40,2019-08-08 21:17:42,2.006s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:17:42,2019-08-08 21:17:42,0.246s,PASSED
+switchToWindowIndex(currentTab + 2),Chrome 76.0.3809.100,,2019-08-08 21:17:42,2019-08-08 21:17:42,0.031s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:17:42,2019-08-08 21:17:44,2.004s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP""))",Chrome 76.0.3809.100,,2019-08-08 21:17:44,2019-08-08 21:17:44,0.100s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/select_rsvp_yes""))",Chrome 76.0.3809.100,,2019-08-08 21:17:44,2019-08-08 21:17:44,0.127s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_SEND""))",Chrome 76.0.3809.100,,2019-08-08 21:17:44,2019-08-08 21:17:45,0.180s,PASSED
+delay(4),Chrome 76.0.3809.100,,2019-08-08 21:17:45,2019-08-08 21:17:49,4.004s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Were so glad you can make it.""), ""We're so glad you can make it."")",Chrome 76.0.3809.100,,2019-08-08 21:17:49,2019-08-08 21:17:49,0.046s,PASSED
+delay(4),Chrome 76.0.3809.100,,2019-08-08 21:17:49,2019-08-08 21:17:53,4.003s,PASSED
+"click(findTestObject(""Object Repository/showMicrosite/button_join_the_show""))",Chrome 76.0.3809.100,,2019-08-08 21:17:53,2019-08-08 21:17:53,0.316s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:17:53,2019-08-08 21:17:56,3.004s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:17:56,2019-08-08 21:17:56,0.053s,PASSED
+active = true,Chrome 76.0.3809.100,,2019-08-08 21:17:56,2019-08-08 21:17:56,0.000s,PASSED
+micStatus = 2,Chrome 76.0.3809.100,,2019-08-08 21:17:56,2019-08-08 21:17:56,0.000s,PASSED
+webcamStatus = 2,Chrome 76.0.3809.100,,2019-08-08 21:17:56,2019-08-08 21:17:56,0.000s,PASSED
+presentList.add(guest1Obj),Chrome 76.0.3809.100,,2019-08-08 21:17:56,2019-08-08 21:17:56,0.000s,PASSED
+yesList.add(guest1Obj),Chrome 76.0.3809.100,,2019-08-08 21:17:56,2019-08-08 21:17:56,0.000s,PASSED
+noList.remove(guest1Obj),Chrome 76.0.3809.100,,2019-08-08 21:17:56,2019-08-08 21:17:56,0.001s,PASSED
+switchToWindowIndex(currentTab + 1),Chrome 76.0.3809.100,,2019-08-08 21:17:56,2019-08-08 21:17:56,0.042s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:17:56,2019-08-08 21:17:57,0.471s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:17:57,2019-08-08 21:17:59,2.003s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:17:59,2019-08-08 21:17:59,0.034s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:17:59,2019-08-08 21:18:01,2.002s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:18:01,2019-08-08 21:18:01,0.534s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:18:01,2019-08-08 21:18:03,2.003s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:18:03,2019-08-08 21:18:04,0.464s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:18:04,2019-08-08 21:18:06,2.001s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:18:06,2019-08-08 21:18:12,6.216s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:18:12,2019-08-08 21:18:14,2.003s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:18:14,2019-08-08 21:18:20,6.217s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:18:20,2019-08-08 21:18:22,2.003s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:18:22,2019-08-08 21:18:22,0.305s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:18:22,2019-08-08 21:18:24,2.003s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:18:24,2019-08-08 21:18:25,0.272s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:18:25,2019-08-08 21:18:27,2.002s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/virualShowRSVPOR/dashboard/guest_micStatuss""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:18:27,2019-08-08 21:18:27,0.044s,PASSED
+micStatus = 1,Chrome 76.0.3809.100,,2019-08-08 21:18:27,2019-08-08 21:18:27,0.001s,PASSED
+switchToWindowIndex(currentTab + 2),Chrome 76.0.3809.100,,2019-08-08 21:18:27,2019-08-08 21:18:27,0.024s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:18:27,2019-08-08 21:18:29,2.003s,PASSED
+"guestMicBB = findWebElements(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/guest_mic_brady_bunch""), 5)",Chrome 76.0.3809.100,,2019-08-08 21:18:29,2019-08-08 21:18:34,5.142s,PASSED
+assert guestMicBB.size() == 0,Chrome 76.0.3809.100,,2019-08-08 21:18:34,2019-08-08 21:18:34,0.000s,PASSED
+switchToWindowIndex(currentTab + 1),Chrome 76.0.3809.100,,2019-08-08 21:18:34,2019-08-08 21:18:34,0.040s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:18:34,2019-08-08 21:18:36,2.005s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/virualShowRSVPOR/dashboard/guest_webcamStatuss_disable""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:18:36,2019-08-08 21:18:36,0.034s,PASSED
+webcamStatus = 1,Chrome 76.0.3809.100,,2019-08-08 21:18:36,2019-08-08 21:18:36,0.001s,PASSED
+switchToWindowIndex(currentTab + 2),Chrome 76.0.3809.100,,2019-08-08 21:18:36,2019-08-08 21:18:36,0.029s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:18:36,2019-08-08 21:18:38,2.003s,PASSED
+"guestWebcamBB = findWebElements(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/guest_webcam_brady_bunch""), 5)",Chrome 76.0.3809.100,,2019-08-08 21:18:38,2019-08-08 21:18:43,5.129s,PASSED
+assert guestWebcamBB.size() == 0,Chrome 76.0.3809.100,,2019-08-08 21:18:43,2019-08-08 21:18:43,0.000s,PASSED
+switchToWindowIndex(currentTab + 1),Chrome 76.0.3809.100,,2019-08-08 21:18:43,2019-08-08 21:18:43,0.037s,PASSED
+delay(4),Chrome 76.0.3809.100,,2019-08-08 21:18:43,2019-08-08 21:18:47,4.002s,PASSED
+"iMStylist = ""Hi I am stylistA""",Chrome 76.0.3809.100,,2019-08-08 21:18:47,2019-08-08 21:18:47,0.000s,PASSED
+"iMGuest1 = ""Hi I am guest 1A""",Chrome 76.0.3809.100,,2019-08-08 21:18:47,2019-08-08 21:18:47,0.000s,PASSED
+"iMGuest2 = ""Hi I am guest 2""",Chrome 76.0.3809.100,,2019-08-08 21:18:47,2019-08-08 21:18:47,0.000s,PASSED
+expectedMessage = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 76.0.3809.100,,2019-08-08 21:18:47,2019-08-08 21:18:47,0.000s,PASSED
+actualMessage = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 76.0.3809.100,,2019-08-08 21:18:47,2019-08-08 21:18:47,0.001s,PASSED
+"stylstName = getText(findTestObject(""Object Repository/virualShowRSVPOR/chatboard/my_sender_name""))",Chrome 76.0.3809.100,,2019-08-08 21:18:47,2019-08-08 21:18:47,0.054s,PASSED
+g1 = UtilityMethods.splitPersonName(guest1)[0],Chrome 76.0.3809.100,,2019-08-08 21:18:47,2019-08-08 21:18:47,0.003s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/chatboard/input_text""), iMStylist)",Chrome 76.0.3809.100,,2019-08-08 21:18:47,2019-08-08 21:18:47,0.309s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/chatboard/send_text""))",Chrome 76.0.3809.100,,2019-08-08 21:18:47,2019-08-08 21:18:48,0.149s,PASSED
+"expectedMessage = new commonUtility.ChatMessage(stylstName, iMStylist)",Chrome 76.0.3809.100,,2019-08-08 21:18:48,2019-08-08 21:18:48,0.004s,PASSED
+switchToWindowIndex(currentTab + 2),Chrome 76.0.3809.100,,2019-08-08 21:18:48,2019-08-08 21:18:48,0.088s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:18:48,2019-08-08 21:18:51,3.002s,PASSED
+"actualMessage = new commonUtility.ChatMessage(com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/virualShowRSVPOR/chatboard/last_sender)), com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/virualShowRSVPOR/chatboard/last_message)))",Chrome 76.0.3809.100,,2019-08-08 21:18:51,2019-08-08 21:18:51,0.111s,PASSED
+assert actualMessage.equals(expectedMessage),Chrome 76.0.3809.100,,2019-08-08 21:18:51,2019-08-08 21:18:51,0.003s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:18:51,2019-08-08 21:18:53,2.002s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/chatboard/input_text""), iMGuest1)",Chrome 76.0.3809.100,,2019-08-08 21:18:53,2019-08-08 21:18:53,0.352s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/chatboard/send_text""))",Chrome 76.0.3809.100,,2019-08-08 21:18:53,2019-08-08 21:18:53,0.104s,PASSED
+"expectedMessage = new commonUtility.ChatMessage(g1, iMGuest1)",Chrome 76.0.3809.100,,2019-08-08 21:18:53,2019-08-08 21:18:53,0.000s,PASSED
+switchToWindowIndex(currentTab + 1),Chrome 76.0.3809.100,,2019-08-08 21:18:53,2019-08-08 21:18:53,0.038s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:18:53,2019-08-08 21:18:56,3.004s,PASSED
+"actualMessage = new commonUtility.ChatMessage(com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/virualShowRSVPOR/chatboard/last_sender_stylist)), com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Object Repository/virualShowRSVPOR/chatboard/last_message_stylist)))",Chrome 76.0.3809.100,,2019-08-08 21:18:56,2019-08-08 21:18:56,0.095s,PASSED
+assert actualMessage.equals(expectedMessage),Chrome 76.0.3809.100,,2019-08-08 21:18:56,2019-08-08 21:18:56,0.000s,PASSED
+"click(findTestObject(""virualShowRSVPOR/dashboard/playVideosButton""))",Chrome 76.0.3809.100,,2019-08-08 21:18:56,2019-08-08 21:18:57,0.097s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:18:57,2019-08-08 21:19:00,3.002s,PASSED
+"click(findTestObject(""virualShowRSVPOR/dashboard/playButton""))",Chrome 76.0.3809.100,,2019-08-08 21:19:00,2019-08-08 21:19:00,0.100s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:19:00,2019-08-08 21:19:03,3.002s,PASSED
+switchToWindowIndex(currentTab + 2),Chrome 76.0.3809.100,,2019-08-08 21:19:03,2019-08-08 21:19:03,0.053s,PASSED
+delay(10),Chrome 76.0.3809.100,,2019-08-08 21:19:03,2019-08-08 21:19:13,10.002s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/carouselTestObjects/carouselSaveOutfit""))",Chrome 76.0.3809.100,,2019-08-08 21:19:13,2019-08-08 21:19:14,1.748s,PASSED
+favorites = favorites + 3,Chrome 76.0.3809.100,,2019-08-08 21:19:14,2019-08-08 21:19:14,0.001s,PASSED
+switchToWindowIndex(currentTab + 1),Chrome 76.0.3809.100,,2019-08-08 21:19:14,2019-08-08 21:19:15,0.063s,PASSED
+delay(15),Chrome 76.0.3809.100,,2019-08-08 21:19:15,2019-08-08 21:19:30,15.003s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:19:30,2019-08-08 21:19:30,0.443s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:19:30,2019-08-08 21:19:32,2.002s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/dashboard/button_shopping""))",Chrome 76.0.3809.100,,2019-08-08 21:19:32,2019-08-08 21:19:32,0.125s,PASSED
+webcamStatus = 2,Chrome 76.0.3809.100,,2019-08-08 21:19:32,2019-08-08 21:19:32,0.000s,PASSED
+micStatus = 2,Chrome 76.0.3809.100,,2019-08-08 21:19:32,2019-08-08 21:19:32,0.000s,PASSED
+switchToWindowIndex(currentTab + 2),Chrome 76.0.3809.100,,2019-08-08 21:19:32,2019-08-08 21:19:32,0.057s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:19:32,2019-08-08 21:19:34,2.004s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_lookbook""))",Chrome 76.0.3809.100,,2019-08-08 21:19:34,2019-08-08 21:19:34,0.322s,PASSED
+delay(5),Chrome 76.0.3809.100,,2019-08-08 21:19:34,2019-08-08 21:19:39,5.005s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/div_first_look""))",Chrome 76.0.3809.100,,2019-08-08 21:19:39,2019-08-08 21:19:40,0.206s,PASSED
+delay(5),Chrome 76.0.3809.100,,2019-08-08 21:19:40,2019-08-08 21:19:45,5.004s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/div_first_look_img""))",Chrome 76.0.3809.100,,2019-08-08 21:19:45,2019-08-08 21:19:45,0.262s,PASSED
+delay(5),Chrome 76.0.3809.100,,2019-08-08 21:19:45,2019-08-08 21:19:50,5.003s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/div_first_look_item""))",Chrome 76.0.3809.100,,2019-08-08 21:19:50,2019-08-08 21:19:50,0.158s,PASSED
+delay(5),Chrome 76.0.3809.100,,2019-08-08 21:19:50,2019-08-08 21:19:55,5.004s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_look_save_to_fav""))",Chrome 76.0.3809.100,,2019-08-08 21:19:55,2019-08-08 21:19:55,0.153s,PASSED
+favorites = favorites + 1,Chrome 76.0.3809.100,,2019-08-08 21:19:55,2019-08-08 21:19:55,0.000s,PASSED
+switchToWindowIndex(currentTab + 1),Chrome 76.0.3809.100,,2019-08-08 21:19:55,2019-08-08 21:19:55,0.090s,PASSED
+delay(15),Chrome 76.0.3809.100,,2019-08-08 21:19:55,2019-08-08 21:20:10,15.002s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:20:10,2019-08-08 21:20:11,0.259s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:20:11,2019-08-08 21:20:13,2.002s,PASSED
+switchToWindowIndex(currentTab + 2),Chrome 76.0.3809.100,,2019-08-08 21:20:13,2019-08-08 21:20:13,0.029s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:20:13,2019-08-08 21:20:15,2.004s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/div_collection""))",Chrome 76.0.3809.100,,2019-08-08 21:20:15,2019-08-08 21:20:59,44.209s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:20:59,2019-08-08 21:21:02,3.003s,PASSED
+"switchToFrame(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs""), 60)",Chrome 76.0.3809.100,,2019-08-08 21:21:02,2019-08-08 21:21:02,0.089s,PASSED
+"wait2 = new org.openqa.selenium.support.ui.WebDriverWait(driver, 10)",Chrome 76.0.3809.100,,2019-08-08 21:21:02,2019-08-08 21:21:02,0.015s,PASSED
+"wait2.until(ExpectedConditions.elementToBeClickable(By.xpath(""//div/h2/a/span[contains(text(), 'Beast Belt')]"")))",Chrome 76.0.3809.100,,2019-08-08 21:21:02,2019-08-08 21:21:02,0.181s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/button_collection_save_to_fav""))",Chrome 76.0.3809.100,,2019-08-08 21:21:02,2019-08-08 21:21:03,0.536s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:21:03,2019-08-08 21:21:06,3.002s,PASSED
+favorites = favorites + 1,Chrome 76.0.3809.100,,2019-08-08 21:21:06,2019-08-08 21:21:06,0.001s,PASSED
+switchToWindowIndex(currentTab + 1),Chrome 76.0.3809.100,,2019-08-08 21:21:06,2019-08-08 21:21:06,0.090s,PASSED
+delay(15),Chrome 76.0.3809.100,,2019-08-08 21:21:06,2019-08-08 21:21:21,15.004s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:21:21,2019-08-08 21:21:21,0.287s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:21:21,2019-08-08 21:21:23,2.003s,PASSED
+switchToWindowIndex(currentTab + 2),Chrome 76.0.3809.100,,2019-08-08 21:21:23,2019-08-08 21:21:23,0.034s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:21:23,2019-08-08 21:21:26,3.039s,PASSED
+"switchToFrame(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs""), 60)",Chrome 76.0.3809.100,,2019-08-08 21:21:26,2019-08-08 21:21:26,0.121s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:21:26,2019-08-08 21:21:29,3.011s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/div_first_item_to_buy_from_vs""))",Chrome 76.0.3809.100,,2019-08-08 21:21:29,2019-08-08 21:21:54,25.076s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:21:54,2019-08-08 21:21:57,3.002s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/select_item_size""))",Chrome 76.0.3809.100,,2019-08-08 21:21:57,2019-08-08 21:21:57,0.132s,PASSED
+delay(5),Chrome 76.0.3809.100,,2019-08-08 21:21:57,2019-08-08 21:22:03,5.004s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/button_add_item_to_bag""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:03,2019-08-08 21:22:03,0.084s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:22:03,2019-08-08 21:22:06,3.005s,PASSED
+switchToDefaultContent(),Chrome 76.0.3809.100,,2019-08-08 21:22:06,2019-08-08 21:22:06,0.053s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/div_checkout""))",Chrome 76.0.3809.100,,2019-08-08 21:22:06,2019-08-08 21:22:06,0.236s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:22:06,2019-08-08 21:22:09,3.003s,PASSED
+"switchToFrame(findTestObject(""Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs""), 60)",Chrome 76.0.3809.100,,2019-08-08 21:22:09,2019-08-08 21:22:15,6.610s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:22:15,2019-08-08 21:22:18,3.003s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/a_checkout_and_add_to_show""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:18,2019-08-08 21:22:19,0.076s,PASSED
+delay(10),Chrome 76.0.3809.100,,2019-08-08 21:22:19,2019-08-08 21:22:29,10.002s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/input_other_address""))",Chrome 76.0.3809.100,,2019-08-08 21:22:29,2019-08-08 21:22:30,1.549s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/input_my_address""))",Chrome 76.0.3809.100,,2019-08-08 21:22:30,2019-08-08 21:22:31,0.489s,PASSED
+"waitForElementClickable(findTestObject(""ReplicatedSite/button_save_and_continue""), 60)",Chrome 76.0.3809.100,,2019-08-08 21:22:31,2019-08-08 21:22:31,0.186s,PASSED
+driver = getWebDriver(),Chrome 76.0.3809.100,,2019-08-08 21:22:31,2019-08-08 21:22:31,0.000s,PASSED
+"element = driver.findElement(By.xpath(""(//button/span[contains(text(), 'Save and Continue')])[1]""))",Chrome 76.0.3809.100,,2019-08-08 21:22:31,2019-08-08 21:22:31,0.058s,PASSED
+"executor.executeScript(""arguments[0].click();"", element)",Chrome 76.0.3809.100,,2019-08-08 21:22:31,2019-08-08 21:22:31,0.045s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:22:31,2019-08-08 21:22:34,3.004s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/input_pay_with_credit""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:34,2019-08-08 21:22:34,0.174s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/button_add_another_card""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:34,2019-08-08 21:22:34,0.223s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/select_credit_card_type""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:34,2019-08-08 21:22:34,0.106s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/select_credit_card_type""))",Chrome 76.0.3809.100,,2019-08-08 21:22:34,2019-08-08 21:22:35,0.197s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/input_creditcard_first_name""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:35,2019-08-08 21:22:35,0.061s,PASSED
+"setText(findTestObject(""Object Repository/ReplicatedSite/input_creditcard_first_name""), ""abcd"")",Chrome 76.0.3809.100,,2019-08-08 21:22:35,2019-08-08 21:22:35,0.427s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/input_creditcard_last_name""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:35,2019-08-08 21:22:35,0.133s,PASSED
+"setText(findTestObject(""Object Repository/ReplicatedSite/input_creditcard_last_name""), ""efgh"")",Chrome 76.0.3809.100,,2019-08-08 21:22:35,2019-08-08 21:22:36,0.396s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/input_creditcard_card_number""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:36,2019-08-08 21:22:36,0.103s,PASSED
+"setText(findTestObject(""Object Repository/ReplicatedSite/input_creditcard_card_number""), ""4111111111111111"")",Chrome 76.0.3809.100,,2019-08-08 21:22:36,2019-08-08 21:22:36,0.749s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/input_creditcard_expiration_month""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:36,2019-08-08 21:22:37,0.131s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/input_creditcard_expiration_month""))",Chrome 76.0.3809.100,,2019-08-08 21:22:37,2019-08-08 21:22:37,0.193s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/input_creditcard_expiration_year""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:37,2019-08-08 21:22:37,0.130s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/input_creditcard_expiration_year""))",Chrome 76.0.3809.100,,2019-08-08 21:22:37,2019-08-08 21:22:37,0.306s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/input_billing_address""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:37,2019-08-08 21:22:37,0.153s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/input_billing_location_mailing""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:37,2019-08-08 21:22:38,0.127s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/input_billing_location_add_new""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:38,2019-08-08 21:22:38,0.213s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/input_billing_location_mailing""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:38,2019-08-08 21:22:38,0.153s,PASSED
+driver = getWebDriver(),Chrome 76.0.3809.100,,2019-08-08 21:22:38,2019-08-08 21:22:38,0.000s,PASSED
+"element = driver.findElement(By.xpath(""(//button[@type='submit']/span[contains(text(), 'Save')])[2]""))",Chrome 76.0.3809.100,,2019-08-08 21:22:38,2019-08-08 21:22:38,0.055s,PASSED
+actions = new org.openqa.selenium.interactions.Actions(driver),Chrome 76.0.3809.100,,2019-08-08 21:22:38,2019-08-08 21:22:38,0.010s,PASSED
+build().perform(),Chrome 76.0.3809.100,,2019-08-08 21:22:38,2019-08-08 21:22:38,0.396s,PASSED
+delay(10),Chrome 76.0.3809.100,,2019-08-08 21:22:38,2019-08-08 21:22:48,10.008s,PASSED
+"waitForElementClickable(findTestObject(""ReplicatedSite/button_save_and_continue_2""), 60)",Chrome 76.0.3809.100,,2019-08-08 21:22:48,2019-08-08 21:22:48,0.092s,PASSED
+driver = getWebDriver(),Chrome 76.0.3809.100,,2019-08-08 21:22:48,2019-08-08 21:22:48,0.001s,PASSED
+"element = driver.findElement(By.xpath(""(//button/span[contains(text(), 'Save and Continue')])[2]""))",Chrome 76.0.3809.100,,2019-08-08 21:22:48,2019-08-08 21:22:48,0.039s,PASSED
+"executor.executeScript(""arguments[0].click();"", element)",Chrome 76.0.3809.100,,2019-08-08 21:22:48,2019-08-08 21:22:49,0.058s,PASSED
+delay(5),Chrome 76.0.3809.100,,2019-08-08 21:22:49,2019-08-08 21:22:54,5.006s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/ReplicatedSite/span_complete_order""), 30)",Chrome 76.0.3809.100,,2019-08-08 21:22:54,2019-08-08 21:22:54,0.189s,PASSED
+"element = driver.findElement(By.xpath(""//span[contains(text(), 'COMPLETE ORDER')]""))",Chrome 76.0.3809.100,,2019-08-08 21:22:54,2019-08-08 21:22:54,0.097s,PASSED
+"executor.executeScript(""arguments[0].click();"", element)",Chrome 76.0.3809.100,,2019-08-08 21:22:54,2019-08-08 21:22:54,0.044s,PASSED
+delay(5),Chrome 76.0.3809.100,,2019-08-08 21:22:54,2019-08-08 21:22:59,5.002s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/ReplicatedSite/h1_thanks_msg""), 5))",Chrome 76.0.3809.100,,2019-08-08 21:22:59,2019-08-08 21:22:59,0.046s,PASSED
+"verifyElementText(findTestObject(""Object Repository/ReplicatedSite/h1_thanks_msg""), ""Thanks for placing your order!"")",Chrome 76.0.3809.100,,2019-08-08 21:22:59,2019-08-08 21:22:59,0.070s,PASSED
+delay(2),Chrome 76.0.3809.100,,2019-08-08 21:22:59,2019-08-08 21:23:01,2.003s,PASSED
+ordered = ordered + 1,Chrome 76.0.3809.100,,2019-08-08 21:23:01,2019-08-08 21:23:01,0.000s,PASSED
+favorites = favorites - 1,Chrome 76.0.3809.100,,2019-08-08 21:23:01,2019-08-08 21:23:01,0.005s,PASSED
+switchToWindowIndex(currentTab + 1),Chrome 76.0.3809.100,,2019-08-08 21:23:01,2019-08-08 21:23:01,0.043s,PASSED
+delay(15),Chrome 76.0.3809.100,,2019-08-08 21:23:01,2019-08-08 21:23:16,15.003s,PASSED
+try,Chrome 76.0.3809.100,,2019-08-08 21:23:16,2019-08-08 21:23:16,0.278s,PASSED
+delay(10),Chrome 76.0.3809.100,,2019-08-08 21:23:16,2019-08-08 21:23:26,10.002s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/dashboard/button_end_session""))",Chrome 76.0.3809.100,,2019-08-08 21:23:26,2019-08-08 21:23:26,0.120s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:23:26,2019-08-08 21:23:29,3.002s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/dashboard/button_end_session_sure""))",Chrome 76.0.3809.100,,2019-08-08 21:23:29,2019-08-08 21:23:30,0.095s,PASSED
+delay(3),Chrome 76.0.3809.100,,2019-08-08 21:23:30,2019-08-08 21:23:33,3.002s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/dashboard/p_show_is_over""), ""This show is not active."")",Chrome 76.0.3809.100,,2019-08-08 21:23:33,2019-08-08 21:23:33,0.055s,PASSED

@@ -16,4 +16,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/VirtualShow/VS_Automation</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>263189cf-d9de-4bc9-80a5-5dd4211b92b6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/VirtualShow/VS_hostess</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

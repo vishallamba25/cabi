@@ -500,7 +500,7 @@ guest1Obj.webcamStatus=2;
 guest1Obj.micStatus=2;
 WebUI.switchToWindowIndex(currentTab + 2)
 WebUI.delay(2)
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_lookbook'))
+WebUI.click(findTestObject('virualShowRSVPOR/Page_Show microsite/button_looks'))
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_first_look'))
 WebUI.delay(5)

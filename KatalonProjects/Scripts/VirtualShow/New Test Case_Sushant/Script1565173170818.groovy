@@ -417,6 +417,17 @@ catch(org.openqa.selenium.StaleElementReferenceException ex)
 }
 //_________________________________
 
+/*****************************************************************************/
+/*****************************************camInfocus Screenshot*************************/
+WebUI.delay(2)
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/i_start_webcam'), 5));
+WebUI.delay(5)
+UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/dashboard/div_infocus_both_images'));
+WebUI.switchToWindowIndex(currentTab + 2)
+WebUI.delay(5)
+UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_infocus_both_images_microsite'));
+WebUI.delay(2)
+WebUI.switchToWindowIndex(currentTab + 1)
 /*****************************************Check All*************************/
 WebUI.delay(2)
 try {
@@ -502,6 +513,10 @@ guest1Obj.micStatus=2;
 WebUI.switchToWindowIndex(currentTab + 2)
 WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_view_my_fav'))
+WebUI.delay(3)
+WebUI.click(findTestObject('virualShowRSVPOR/Page_Show microsite/div_chat_opened'))
+WebUI.delay(3)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_chat_closed'))
 WebUI.delay(3)
 WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_add_to_bag_from_fav'))
@@ -589,14 +604,29 @@ WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show
 WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_first_item_to_buy_from_vs'))
 WebUI.delay(3)
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/select_item_size'))
-WebUI.delay(5)
+////////////
+noOfOptions = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_no_of_options_for_checkout'), 5)
+for(int i=1; i<=noOfOptions.size(); i++){
+	TestObject dropDown= UtilityMethods.createTestObject("div_drop_down", '(//div[@class=\'add-to-cart-form\']/div[@class=\'attribute ng-scope\']/div[@class=\'input-select ng-scope\']/select)[', String.valueOf(i), ']')
+	WebUI.click(dropDown)
+	//WebUI.delay(3)
+	TestObject selectLastOption= UtilityMethods.createTestObject("div_select_last_option", '(//div[@class=\'add-to-cart-form\']/div[@class=\'attribute ng-scope\']/div[@class=\'input-select ng-scope\']/select)[', String.valueOf(i), ']/option[last()]')
+	WebUI.click(selectLastOption)
+	WebUI.delay(3)
+}
+WebUI.delay(3)
 executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/button_add_item_to_bag'), 5));
 WebUI.delay(3)
+////////////
+/*WebUI.click(findTestObject('Object Repository/ReplicatedSite/select_item_size'))
+WebUI.delay(5)
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/button_add_item_to_bag'), 5));
+WebUI.delay(3)*/
 
 WebUI.switchToDefaultContent()
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/div_checkout'))
+
 
 WebUI.delay(3)
 WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)

@@ -74,8 +74,85 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/dressOftenOption'))
 
-//div[@class='check' and preceding-sibling::div[text()='Bold']] dressStyle
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/dressStyle'))
 
-//div[@class='check' and preceding-sibling::div[text()='Inverted Triangle']] dressShape
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/dressShape'))
 
-//div[@class='check' and preceding-sibling::div[text()='Rear']] dressAccentuate
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/dressAccentuate'))
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/dislikeColors'))
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/dislikePatterns'))
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/continueButtonStyleForm'))
+
+WebUI.waitForElementClickable(findTestObject('Object Repository/ReplicatedSite/rsNewUser/topsRadiobutton'), 5)
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/sweatersRadioButton'))
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/bottomsRadioButton'))
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/bottomsRadioButton'))
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/skirtsRadioButton'))
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/dressessRadioButton'))
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/jacketsRadioButton'))	
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/continueButtonStyleForm'))
+
+WebUI.delay(5)
+
+List<String> titleList = new ArrayList<>();
+titleList.add("Bust")
+titleList.add("Band Size")
+titleList.add("Cup Size")
+titleList.add("Waist")
+titleList.add("Hips")
+titleList.add("Inseam")
+titleList.add("Tops")
+titleList.add("Trouser")
+titleList.add("Trouser Length")
+titleList.add("Jacket")
+titleList.add("Skirts")
+titleList.add("Dresses")
+titleList.add("Shoes")
+
+
+
+
+List<String> sizeList = new ArrayList<>();
+sizeList.add("35")
+sizeList.add("30")
+sizeList.add("B")
+sizeList.add("28")
+sizeList.add("34")
+sizeList.add("30")
+sizeList.add("L")
+sizeList.add("L")
+sizeList.add("L")
+sizeList.add("L")
+sizeList.add("L")
+sizeList.add("L")
+sizeList.add("9")
+
+
+for(int i=0;i<titleList.size();i++){
+
+	TestObject fitForm= UtilityMethods.createTestObject("fitForm", '//h3[text()=\'',titleList.get(i),'\']/parent::div//span[@class=\'dressText dressTextNonSelected\' and text()=\'',sizeList.get(i),'\']')
+
+	WebUI.click(fitForm)
+	
+	WebUI.delay(2)
+	
+	}
+
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/continueButtonStyleForm'))
+
+WebUI.delay(5)
+
+

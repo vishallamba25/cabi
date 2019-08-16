@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>9197cdf2-caf2-4338-873b-14f0eaf780af</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/EditOrder/rsEditOrderSimple</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -49,7 +49,7 @@
    <testCaseLink>
       <guid>8b9c7737-d960-4fcc-b471-f49499f9e85f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/EditOrder/rsEditOrderPartialShip</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

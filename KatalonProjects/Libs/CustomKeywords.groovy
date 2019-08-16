@@ -7,6 +7,8 @@ import java.lang.String
 
 import java.util.ArrayList
 
+import com.kms.katalon.core.testobject.TestObject
+
 
 def static "commonUtility.UtilityMethods.SplitData"(
     	String Data	) {
@@ -110,4 +112,10 @@ def static "commonUtility.UtilityMethods.getFavCount"(
     	String guest	) {
     (new commonUtility.UtilityMethods()).getFavCount(
         	guest)
+}
+
+def static "commonUtility.UtilityMethods.takeWebElementScreenshot"(
+    	TestObject tobj	) {
+    (new commonUtility.UtilityMethods()).takeWebElementScreenshot(
+        	tobj)
 }

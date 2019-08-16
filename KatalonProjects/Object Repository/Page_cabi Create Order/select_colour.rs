@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//select[@id='colorSelect_0']</value>
+         <value>//div[@class='order-item-color']/select/option[last()]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -58,7 +58,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
-      <value>//select[@id='colorSelect_0']</value>
+      <value>//div[@class='order-item-color']/select/option[last()]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

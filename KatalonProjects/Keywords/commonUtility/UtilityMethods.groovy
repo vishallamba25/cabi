@@ -1,6 +1,12 @@
 package commonUtility
 
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import java.text.DateFormat
+import java.text.SimpleDateFormat
+
+import javax.imageio.ImageIO
 
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
@@ -12,7 +18,9 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import ru.yandex.qatools.ashot.AShot
+import ru.yandex.qatools.ashot.Screenshot
 
 
 public class UtilityMethods {
@@ -163,4 +171,18 @@ public class UtilityMethods {
 		WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Customer Profile/a_back_to_contact_manager'))
 		return favs.size();
 	}
+	
+	@Keyword
+	public static void takeWebElementScreenshot(TestObject tobj){
+		WebElement we= WebUiCommonHelper.findWebElement(tobj, 20);
+		WebDriver driver= DriverFactory.getWebDriver();
+		
+		DateFormat dateFormat = new SimpleDateFormat("yyyy_mm_dd__hh_mm_ss_");
+		String strDate = dateFormat.format(Calendar.getInstance().getTime());
+		
+		Screenshot screenshot=new AShot().takeScreenshot(driver, we);
+		ImageIO.write(screenshot.getImage(), "PNG", new File(System.getProperty("user.dir")+"/screenshots/camInfocus/"+strDate+"SS.png"));
+	}
+	
+	
 }

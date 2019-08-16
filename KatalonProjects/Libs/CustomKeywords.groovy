@@ -9,6 +9,8 @@ import java.util.ArrayList
 
 import com.kms.katalon.core.testobject.TestObject
 
+import java.util.List
+
 
 def static "commonUtility.UtilityMethods.SplitData"(
     	String Data	) {
@@ -118,4 +120,20 @@ def static "commonUtility.UtilityMethods.takeWebElementScreenshot"(
     	TestObject tobj	) {
     (new commonUtility.UtilityMethods()).takeWebElementScreenshot(
         	tobj)
+}
+
+def static "commonUtility.UtilityMethods.validateGuestsListDashboard"(
+    	java.util.List<commonUtility.VSGuest> yesList	
+     , 	java.util.List<commonUtility.VSGuest> noList	
+     , 	java.util.List<commonUtility.VSGuest> maybeList	
+     , 	java.util.List<commonUtility.VSGuest> noreplyList	
+     , 	java.util.List<commonUtility.VSGuest> presentList	
+     , 	java.util.List<commonUtility.VSGuest> allList	) {
+    (new commonUtility.UtilityMethods()).validateGuestsListDashboard(
+        	yesList
+         , 	noList
+         , 	maybeList
+         , 	noreplyList
+         , 	presentList
+         , 	allList)
 }

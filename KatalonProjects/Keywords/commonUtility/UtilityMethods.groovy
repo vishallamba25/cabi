@@ -9,6 +9,7 @@ import java.text.SimpleDateFormat
 import javax.imageio.ImageIO
 
 import org.openqa.selenium.By
+import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 
@@ -171,18 +172,66 @@ public class UtilityMethods {
 		WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Customer Profile/a_back_to_contact_manager'))
 		return favs.size();
 	}
-	
+
 	@Keyword
 	public static void takeWebElementScreenshot(TestObject tobj){
 		WebElement we= WebUiCommonHelper.findWebElement(tobj, 20);
 		WebDriver driver= DriverFactory.getWebDriver();
-		
+
 		DateFormat dateFormat = new SimpleDateFormat("yyyy_mm_dd__hh_mm_ss_");
 		String strDate = dateFormat.format(Calendar.getInstance().getTime());
-		
+
 		Screenshot screenshot=new AShot().takeScreenshot(driver, we);
 		ImageIO.write(screenshot.getImage(), "PNG", new File(System.getProperty("user.dir")+"/screenshots/camInfocus/"+strDate+"SS.png"));
 	}
-	
-	
+
+	@Keyword
+	public static void validateGuestsListDashboard(List<VSGuest> yesList, List<VSGuest> noList ,List<VSGuest> maybeList, List<VSGuest> noreplyList, List<VSGuest> presentList, List<VSGuest> allList){
+		WebDriver driver = DriverFactory.getWebDriver()
+		JavascriptExecutor executor = ((driver) as JavascriptExecutor)
+		
+		try {
+			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+		}
+		catch(org.openqa.selenium.StaleElementReferenceException ex) {
+			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
+		}
+		WebUI.delay(2)
+		executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply_1'), 5));
+		WebUI.delay(2)
+		try {
+			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+		}
+		catch(org.openqa.selenium.StaleElementReferenceException ex) {
+			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_blankreply'), allList);
+		}
+		WebUI.delay(2)
+		try {
+			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+		}
+		catch(org.openqa.selenium.StaleElementReferenceException ex) {
+			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_yes'), yesList);
+		}
+		WebUI.delay(2)
+		try {
+			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+		}
+		catch(org.openqa.selenium.StaleElementReferenceException ex) {
+			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_no'), noList);
+		}
+		WebUI.delay(2)
+		try {
+			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+		}
+		catch(org.openqa.selenium.StaleElementReferenceException ex) {
+			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_maybe'), maybeList);
+		}
+		WebUI.delay(2)
+		try {
+			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+		}
+		catch(org.openqa.selenium.StaleElementReferenceException ex) {
+			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
+		}
+	}
 }

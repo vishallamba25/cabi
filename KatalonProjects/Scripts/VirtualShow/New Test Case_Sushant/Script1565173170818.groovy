@@ -309,13 +309,13 @@ executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement
 
 WebUI.delay(5)
 
-UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/dashboard/div_infocus_both_images'))
+UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/dashboard/div_infocus_both_images'), "infocus")
 
 WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.delay(5)
 
-UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_infocus_both_images_microsite'))
+UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_infocus_both_images_microsite'), "infocus")
 
 WebUI.delay(2)
 

@@ -174,7 +174,7 @@ public class UtilityMethods {
 	}
 
 	@Keyword
-	public static void takeWebElementScreenshot(TestObject tobj){
+	public static void takeWebElementScreenshot(TestObject tobj, String name){
 		WebElement we= WebUiCommonHelper.findWebElement(tobj, 20);
 		WebDriver driver= DriverFactory.getWebDriver();
 
@@ -182,14 +182,14 @@ public class UtilityMethods {
 		String strDate = dateFormat.format(Calendar.getInstance().getTime());
 
 		Screenshot screenshot=new AShot().takeScreenshot(driver, we);
-		ImageIO.write(screenshot.getImage(), "PNG", new File(System.getProperty("user.dir")+"/screenshots/camInfocus/"+strDate+"SS.png"));
+		ImageIO.write(screenshot.getImage(), "PNG", new File(System.getProperty("user.dir")+"/screenshots/camInfocus/"+strDate+"_"+name+"_SS.png"));
 	}
 
 	@Keyword
 	public static void validateGuestsListDashboard(List<VSGuest> yesList, List<VSGuest> noList ,List<VSGuest> maybeList, List<VSGuest> noreplyList, List<VSGuest> presentList, List<VSGuest> allList){
 		WebDriver driver = DriverFactory.getWebDriver()
 		JavascriptExecutor executor = ((driver) as JavascriptExecutor)
-		
+
 		try {
 			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList);
 		}

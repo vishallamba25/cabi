@@ -117,9 +117,11 @@ def static "commonUtility.UtilityMethods.getFavCount"(
 }
 
 def static "commonUtility.UtilityMethods.takeWebElementScreenshot"(
-    	TestObject tobj	) {
+    	TestObject tobj	
+     , 	String name	) {
     (new commonUtility.UtilityMethods()).takeWebElementScreenshot(
-        	tobj)
+        	tobj
+         , 	name)
 }
 
 def static "commonUtility.UtilityMethods.validateGuestsListDashboard"(

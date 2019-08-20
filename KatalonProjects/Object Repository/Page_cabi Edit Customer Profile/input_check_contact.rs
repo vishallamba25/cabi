@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@type='text'])[7]</value>
+         <value>//div[@class='contacts-manager']/div/div/div/input[@placeholder='Search Contacts']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

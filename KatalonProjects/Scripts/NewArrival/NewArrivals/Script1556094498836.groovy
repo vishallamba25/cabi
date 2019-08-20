@@ -2,6 +2,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.openqa.selenium.Keys
+
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -32,8 +34,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
         FailureHandling.STOP_ON_FAILURE)
 
     /*****************2 going to backoffice: retail******************/
-    WebUI.rightClick(findTestObject('Page_cabi Home/a_Shows  Orders'))
-
+    WebUI.click(findTestObject('Page_cabi Home/a_Shows  Orders'))
+	WebUI.delay(1)
     WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
 
     WebUI.delay(3)
@@ -67,19 +69,13 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     String existingCust = "$existingCustFName$space$existingCustLName"
 
     ///////////////////////
-    WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
+	
+	WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
+	WebUI.delay(2)
+	WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), Keys.chord(Keys.ARROW_DOWN))
+	WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), Keys.chord(Keys.ENTER))
 
-    WebUI.delay(3)
-
-    WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
-
-    WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
-
-    WebUI.click(findTestObject('Object Repository/Page_cabi Create Show - Set Hostess/a_select_customer'))
-
-    WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
-
-    WebUI.setText(findTestObject('Object Repository/Page_cabi Retail Store/input_email'), email)
+	WebUI.setText(findTestObject('Object Repository/Page_cabi Retail Store/input_email'), email)
 
     WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'), address1)
 

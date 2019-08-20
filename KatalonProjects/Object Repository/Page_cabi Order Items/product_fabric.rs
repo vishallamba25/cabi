@@ -6,11 +6,11 @@
    <elementGuidId>61873cc8-41de-4d08-92fe-36d9a7ddbc69</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//li[@class='product-prices']/em)[2]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//li/label[contains(text(), 'Fabric:')]/parent::li/following-sibling::li/em)[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

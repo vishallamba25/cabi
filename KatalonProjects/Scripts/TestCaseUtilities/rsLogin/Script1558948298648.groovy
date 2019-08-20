@@ -15,18 +15,10 @@ guest1Pass = findTestData(dataFile).getValue('guest1Pass', 1)
 
 String RSTestEnvt= findTestData('envtData').getValue('RSTestEnvt', 1)
 
-
-<<<<<<< HEAD
 //WebUI.openBrowser('')
-//WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
-=======
-WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
-//WebUI.openBrowser('')
-//WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
 
->>>>>>> 5a6aa1683b712146af30fecd5a0cb78450c53929
 
 //GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104653490/"
 //WebUI.navigateToUrl(GlobalVariable.micrositeURL)
@@ -34,7 +26,6 @@ String loginURL= UtilityMethods.concat("https://mirandakate.", RSTestEnvt, ".com
 WebUI.navigateToUrl(loginURL)
 
 /*******************************guest login on microsite****************************/
-'Login with the invited guest'
 'Login with the invited guest'
 WebUI.delay(3)
 /*WebElement enterMail = driver.findElement(By.xpath("//div[@class='form-field']/custom-input/div/input[@name='email']"));
@@ -46,12 +37,8 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsi
 WebUI.delay(5)
 if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later'), 0)) {
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later'))
-<<<<<<< HEAD
-}
-=======
+
 
 }
 
 
-
->>>>>>> 5a6aa1683b712146af30fecd5a0cb78450c53929

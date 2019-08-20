@@ -7,10 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div/h2/a/span[contains(text(), 'Breeze Dress')]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
+         <value>(//collection-item/article/div/div/h2/a/span)[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

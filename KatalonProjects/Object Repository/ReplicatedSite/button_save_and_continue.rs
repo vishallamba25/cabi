@@ -6,11 +6,11 @@
    <elementGuidId>2f7f2f58-a330-46ad-975f-f7134764f741</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//*[text()='Save and Continue'])[1]/preceding-sibling::div/parent::button</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;checkout-page&quot;]/div[2]/div/div/div[1]/check-out/check-out-step[1]/div/div/div[2]/div[2]/button</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_click_near_address</name>
+   <name>select_ach_payment</name>
    <tag></tag>
-   <elementGuidId>a9b06b82-5056-4bbf-b12c-ce93154e6d0c</elementGuidId>
+   <elementGuidId>3794dfa9-6ffd-4ed8-91b3-d1e0efec91b4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//li/span[contains(text(), 'City:')])[1]</value>
+         <value>//ul/li/select[@class='payment-select']/option[contains(text(), 'ACH')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

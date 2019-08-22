@@ -29,7 +29,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('NewArrival/setTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
-            , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget], 
+            , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget, ('clockServerTarget') : GlobalVariable.clockServerTarget], 
         FailureHandling.STOP_ON_FAILURE)
 	
 	WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''],
@@ -40,7 +40,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 	WebUI.delay(1)
 
 	WebUI.click(findTestObject('Page_cabi Home/a_personal_purchases'))
-
+	WebUI.delay(3)
 	WebUI.click(findTestObject('Page_cabi Personal Store/span_Continue to Order'))
 
 	WebUI.delay(5)
@@ -86,6 +86,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 	WebUI.delay(3)
 
 	WebUI.click(findTestObject('Page_cabi Personal Store/makeFirstPayment'))
+	
+	WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/select_ach_payment'))
 
 	WebUI.click(findTestObject('Page_cabi Personal Store/submitPayment'))
 

@@ -18,8 +18,10 @@ import org.openqa.selenium.WebElement as WebElement
 WebUI.openBrowser('')
 
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
-
-for (int row = 1; row <= findTestData('contactData').getRowNumbers(); row++) {
+int noOfContacts= findTestData('contactData').getRowNumbers()
+for (int row = 1; row <= noOfContacts; row++) {
+	println noOfContacts
+	
     firstName = findTestData('contactData').getValue('firstName', row)
 
     lastName = findTestData('contactData').getValue('lastName', row)
@@ -43,6 +45,8 @@ for (int row = 1; row <= findTestData('contactData').getRowNumbers(); row++) {
     String fNameLName = "$firstName$space$lastName"
 
     WebUI.setText(findTestObject('Page_cabi Edit Customer Profile/input_check_contact'), fNameLName)
+	
+	WebUI.delay(2)
 
     List<WebElement> contactNotFound = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi/div_contact_not_found'), 
         5)
@@ -78,6 +82,14 @@ for (int row = 1; row <= findTestData('contactData').getRowNumbers(); row++) {
         WebUI.click(findTestObject('Page_cabi Edit Customer Profile/span_click_near_address'))
 
         WebUI.delay(3)
+		
+		List<WebElement> addSuggest = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Edit Customer Profile/check_address_suggestion'),
+			5)
+		
+		if(addSuggest.size()>0){
+			WebUI.click(findTestObject('Object Repository/Page_cabi Edit Customer Profile/check_address_suggestion'))
+		}
+		WebUI.delay(3)
 
         WebUI.verifyElementText(findTestObject('Page_cabi Edit Customer Profile/address_validator_check'), '  Address validated by cabi.', 
             FailureHandling.STOP_ON_FAILURE)

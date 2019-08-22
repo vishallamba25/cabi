@@ -117,7 +117,7 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 
         if (sizeType.equalsIgnoreCase('Select')) {
             for (int i = 1; i < sizeOptions.size(); i++) {
-                actualRange.add(sizeOptions.get(i).getText())
+                actualRange.add(sizeOptions.get(i).getAttribute("value"))
             }
             
             if (actualRange.get(0).toString().equalsIgnoreCase('XS') || actualRange.get(0).toString().equalsIgnoreCase('XXS')) {

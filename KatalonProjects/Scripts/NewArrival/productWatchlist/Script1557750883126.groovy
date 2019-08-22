@@ -20,6 +20,7 @@ import org.openqa.selenium.WebElement as WebElement
 WebUI.openBrowser('')
 for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
     WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
+	available= GlobalVariable.BOEblast;
 
     WebUI.callTestCase(findTestCase('NewArrival/setTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
             , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('clockServerTarget') : GlobalVariable.clockServerTarget], 
@@ -33,16 +34,16 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Product Watch List'))
 
     if (available.toString().equalsIgnoreCase('no')) {
-        List<WebElement> noResultFound = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)'), 
+        List<WebElement> noResultFound = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'), 
             5)
 
         assert noResultFound.size() == 0
     } else {
-        WebUI.click(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)'))
+        WebUI.click(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'))
 
-        WebUI.verifyElementText(findTestObject('Page_cabi Product Watch list/span_(New Arrivals 2)'), '(New Arrivals 2)')
+        WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'), '(New Arrivals 1)')
 
-        List<WebElement> actualProductList = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Product Watch list/div_product_list'), 
+        List<WebElement> actualProductList = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Product Watch list/div_product_list_na1'), 
             5)
 
         println(actualProductList.size())
@@ -57,7 +58,9 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
             println(product.getText())
         }
         
-        for (int row = 1; row <= findTestData('productData1').getRowNumbers(); row++) {
+		int p1Rows= findTestData('productData1').getRowNumbers();
+		println p1Rows
+        for (int row = 1; row <= p1Rows; row++) {
             String productStyle = findTestData('productData1').getValue('Style', row)
 
             String productDescription = findTestData('productData1').getValue('Description', row)
@@ -70,7 +73,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
             expectedList.add(expectedString)
         }
-        
+        println expectedList.size();
         assert UtilityMethods.listEquals(expectedList, actualList) == true
     }
 }

@@ -57,10 +57,10 @@ List<VSGuest> allList = new ArrayList()
 /****************************************************/
 WebUI.callTestCase(findTestCase('VirtualShow/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
         , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
-        , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.STOP_ON_FAILURE)
+        , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.)
 
 /*WebUI.openBrowser('')
-WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.)
 WebUI.navigateToUrl('https://test21.cliotest.com/backoffice/control/VSStylistDashboard?showId=104653490&consultantPartyId=100000042')
 */
 /***************updating lists***-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->creating show-->***/
@@ -158,7 +158,7 @@ WebUI.switchToWindowIndex(currentTab + 2)
 
 println(WebUI.getWindowIndex())
 
-WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.)
 
 //GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104653490/"
 //WebUI.navigateToUrl(GlobalVariable.micrositeURL)

@@ -16,14 +16,14 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.openBrowser('')
 
 for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
-    WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('NewArrival/setTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
             , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget
-            , ('clockServerTarget') : GlobalVariable.clockServerTarget], FailureHandling.STOP_ON_FAILURE)
+            , ('clockServerTarget') : GlobalVariable.clockServerTarget], FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('NewArrival/createAPhysicalShow_IMHostess'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], 
-        FailureHandling.STOP_ON_FAILURE)
+        FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.delay(2)
 
@@ -37,6 +37,6 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     WebUI.delay(2)
 
-    WebUI.callTestCase(findTestCase('NewArrival/productVerifyShort'), [('available') : GlobalVariable.BOShow], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('NewArrival/productVerifyShort'), [('available') : GlobalVariable.BOShow], FailureHandling.CONTINUE_ON_FAILURE)
 }
 

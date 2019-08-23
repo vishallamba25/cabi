@@ -15,14 +15,14 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.openBrowser('')
 
 for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
-    WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('NewArrival/setTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
-            , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget], 
-        FailureHandling.STOP_ON_FAILURE)
+            , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget, ('clockServerTarget') : GlobalVariable.clockServerTarget], 
+        FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], 
-        FailureHandling.STOP_ON_FAILURE)
+        FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
 
@@ -35,5 +35,5 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.click(findTestObject('Object Repository/Page_cabi Online Outlet Store/span_Continue to Order'))
 
     WebUI.callTestCase(findTestCase('NewArrival/productVerify'), [('available') : GlobalVariable.BOOnlineoutlet, ('storeType') : 'BOOnlineoutlet'], 
-        FailureHandling.STOP_ON_FAILURE)
+        FailureHandling.CONTINUE_ON_FAILURE)
 }

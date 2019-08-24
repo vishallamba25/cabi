@@ -320,7 +320,7 @@ UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virual
 WebUI.delay(2)
 
 WebUI.switchToWindowIndex(currentTab + 1)
-
+/*****************************************end camInfocus Screenshot*************************/
 /*****************************************Check All*************************/
 WebUI.delay(2)
 
@@ -427,11 +427,20 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('virualShowRSVPOR/dashboard/playButton'))
 
-WebUI.delay(3)
+WebUI.delay(5)
+/*****************************************video1 Screenshot*************************/
+UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/dashboard/div_infocus_both_images'), "video1")
+
+/*****************************************end video1 Screenshot*************************/
 
 WebUI.switchToWindowIndex(currentTab + 2)
 
-WebUI.delay(10)
+WebUI.delay(5)
+/*****************************************video2 Screenshot*************************/
+UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_infocus_both_images_microsite'), "video2")
+
+/*****************************************end video2 Screenshot*************************/
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/carouselTestObjects/carouselSaveOutfit'))
 
@@ -484,6 +493,7 @@ List<VSGuest> noOfOptions = WebUiCommonHelper.findWebElements(findTestObject('Ob
     5)
 
 for (int i = 1; i <= noOfOptions.size(); i++) {
+	WebUI.delay(3)
     TestObject dropDown = UtilityMethods.createTestObject('div_drop_down', '(//div[@class=\'dropdown-toggle\']/div[@class=\'dropdown-button\']/div[@class=\'drop-caret\'])[', 
         Integer.toString(i), ']')
 

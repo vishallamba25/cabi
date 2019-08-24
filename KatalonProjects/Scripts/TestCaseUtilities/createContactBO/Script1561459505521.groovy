@@ -37,7 +37,7 @@ for (int row = 1; row <= noOfContacts; row++) {
     zip = findTestData('contactData').getValue('zip', row)
 
     WebUI.click(findTestObject('Page_cabi Home/a_Connections'))
-
+	WebUI.delay(2)
     WebUI.click(findTestObject('Page_cabi Home/a_Contact Manager'))
 
     String space = ' '

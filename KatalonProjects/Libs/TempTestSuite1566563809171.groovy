@@ -28,7 +28,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowSuites\\DashboardSuite\\20190823_150129\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowSuites\\DashboardSuite\\20190823_180649\\execution.properties")
 
 TestCaseMain.beforeStart()
 

@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//li[@class='product-prices']/em)[3]</value>
+         <value>(//li/label[contains(text(), 'Fabric:')]/parent::li/following-sibling::li/em)[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

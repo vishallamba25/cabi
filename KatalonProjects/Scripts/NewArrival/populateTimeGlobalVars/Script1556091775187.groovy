@@ -17,9 +17,11 @@ import internal.GlobalVariable as GlobalVariable
 
 String dataFile="timezoneData"
 
-GlobalVariable.clockServerTarget= UtilityMethods.getTestData(dataFile, 'clockServerTarget', row)
+GlobalVariable.clockServerTarget= UtilityMethods.getTestData('envtData', 'clockServerTarget', 1) 
+println GlobalVariable.clockServerTarget
 GlobalVariable.orderType= UtilityMethods.getTestData(dataFile, 'orderType', row)
 GlobalVariable.timeZone= UtilityMethods.getTestData(dataFile, 'timeZone', row)
+
 
 GlobalVariable.BOPersonal= UtilityMethods.getTestData(dataFile, 'BOPersonal', row)
 GlobalVariable.BOAddonPersonal= UtilityMethods.getTestData(dataFile, 'BOAddonPersonal', row)

@@ -6,12 +6,11 @@
    <elementGuidId>a9b06b82-5056-4bbf-b12c-ce93154e6d0c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//li/span[contains(text(), 'State/Zip:')])[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//li/span[contains(text(), 'City:')])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

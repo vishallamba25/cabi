@@ -1,0 +1,41 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+NewArrivalsSuite,Chrome 76.0.3809.100,,2019-08-22 20:34:49,2019-08-22 21:02:34,27m - 44.683s,FAILED
+,,,,,,
+Test Cases/NewArrival/productWatchlist,Chrome 76.0.3809.100,,2019-08-22 20:34:50,2019-08-22 20:40:32,5m - 42.149s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,2019-08-22 20:34:50,2019-08-22 20:34:50,0.065s,PASSED
+"openBrowser("""")",Chrome 76.0.3809.100,,2019-08-22 20:34:51,2019-08-22 20:34:56,4.774s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 76.0.3809.100,,2019-08-22 20:34:56,2019-08-22 20:40:32,5m - 36.307s,PASSED
+,,,,,,
+Test Cases/NewArrival/productEblast,Chrome 76.0.3809.100,,2019-08-22 20:40:32,2019-08-22 20:47:32,6m - 59.714s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,2019-08-22 20:40:32,2019-08-22 20:40:32,0.001s,PASSED
+"openBrowser("""")",Chrome 76.0.3809.100,,2019-08-22 20:40:33,2019-08-22 20:40:37,3.433s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 76.0.3809.100,,2019-08-22 20:40:37,2019-08-22 20:47:32,6m - 55.291s,PASSED
+,,,,,,
+Test Cases/NewArrival/BOOnline,Chrome 76.0.3809.100,,2019-08-22 20:47:32,2019-08-22 20:53:28,5m - 56.007s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,2019-08-22 20:47:32,2019-08-22 20:47:32,0.000s,PASSED
+"openBrowser("""")",Chrome 76.0.3809.100,,2019-08-22 20:47:32,2019-08-22 20:47:35,2.957s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 76.0.3809.100,,2019-08-22 20:47:35,2019-08-22 20:53:28,5m - 52.709s,PASSED
+,,,,,,
+Test Cases/NewArrival/BOPersonal,Chrome 76.0.3809.100,,2019-08-22 20:53:28,2019-08-22 20:54:31,1m - 2.911s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,2019-08-22 20:53:28,2019-08-22 20:53:28,0.002s,PASSED
+"openBrowser("""")",Chrome 76.0.3809.100,,2019-08-22 20:53:28,2019-08-22 20:53:31,2.988s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 76.0.3809.100,,2019-08-22 20:53:31,2019-08-22 20:54:31,59.610s,FAILED
+,,,,,,
+Test Cases/NewArrival/BORetail,Chrome 76.0.3809.100,,2019-08-22 20:54:31,2019-08-22 20:54:31,0.352s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,2019-08-22 20:54:31,2019-08-22 20:54:31,0.001s,PASSED
+,,,,,,
+Test Cases/NewArrival/BOShowOrder,Chrome 76.0.3809.100,,2019-08-22 20:54:31,2019-08-22 20:56:17,1m - 46.228s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,2019-08-22 20:54:31,2019-08-22 20:54:31,0.001s,PASSED
+"openBrowser("""")",Chrome 76.0.3809.100,,2019-08-22 20:54:31,2019-08-22 20:54:34,2.984s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 76.0.3809.100,,2019-08-22 20:54:34,2019-08-22 20:56:17,1m - 42.974s,FAILED
+,,,,,,
+Test Cases/NewArrival/CCOrders,Chrome 76.0.3809.100,,2019-08-22 20:56:17,2019-08-22 20:57:43,1m - 25.603s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,2019-08-22 20:56:17,2019-08-22 20:56:17,0.003s,PASSED
+"openBrowser("""")",Chrome 76.0.3809.100,,2019-08-22 20:56:18,2019-08-22 20:56:21,2.933s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 76.0.3809.100,,2019-08-22 20:56:21,2019-08-22 20:57:43,1m - 22.246s,FAILED
+,,,,,,
+Test Cases/NewArrival/addOnOrderPersonal,Chrome 76.0.3809.100,,2019-08-22 20:57:43,2019-08-22 21:02:33,4m - 50.140s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.100,,2019-08-22 20:57:43,2019-08-22 20:57:43,0.001s,PASSED
+"openBrowser("""")",Chrome 76.0.3809.100,,2019-08-22 20:57:43,2019-08-22 20:57:46,2.871s,PASSED
+"addOnStyle = findTestData(""miscData"").getValue(""addOnStyle"", 1)",Chrome 76.0.3809.100,,2019-08-22 20:57:46,2019-08-22 20:57:46,0.014s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 76.0.3809.100,,2019-08-22 20:57:46,2019-08-22 21:02:33,4m - 46.762s,FAILED

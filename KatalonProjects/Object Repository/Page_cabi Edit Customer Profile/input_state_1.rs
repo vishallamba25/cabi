@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@type='text'])[9]</value>
+         <value>//body/div/div[@class='select2-search']/input[@class='select2-input']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -58,7 +58,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
-      <value>(//input[@type='text'])[9]</value>
+      <value>//body/div/div[@class='select2-search']/input[@class='select2-input']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

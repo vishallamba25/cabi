@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>4b58421a-4db4-452d-93d5-25791994aabd</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NewArrival/productWatchlist</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -25,7 +25,7 @@
    <testCaseLink>
       <guid>ff43b699-bf45-40ca-9278-046ce1b205b0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NewArrival/productEblast</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -65,18 +65,6 @@
       <testCaseId>Test Cases/NewArrival/CCOrders</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>690c307a-910e-4010-98c6-de07f3eb9dc8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/NewArrival/addOnOrderRetail</testCaseId>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>713c142a-5bce-460d-b562-99779a503058</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
       <guid>5c18c7c3-9e43-4386-8319-290330d8ffc0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -86,6 +74,18 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>04c93884-6cbe-4174-a75a-51ee8b7e0fec</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>690c307a-910e-4010-98c6-de07f3eb9dc8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/NewArrival/addOnOrderRetail</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>713c142a-5bce-460d-b562-99779a503058</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

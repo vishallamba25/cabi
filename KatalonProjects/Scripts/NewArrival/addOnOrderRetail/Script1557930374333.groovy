@@ -1,22 +1,22 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
-import internal.GlobalVariable as GlobalVariable
+
+import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+import internal.GlobalVariable as GlobalVariable
+
 WebUI.openBrowser('')
+WebDriver driver;
+JavascriptExecutor executor;
 
 addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
 //int i = 1
@@ -27,29 +27,27 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
         }
     }*/
     
-    WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('NewArrival/setTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
-            , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget], 
-        FailureHandling.STOP_ON_FAILURE)
+            , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget, ('clockServerTarget') : GlobalVariable.clockServerTarget], 
+        FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Shows  Orders'))
-
-    WebUI.delay(1)
-
-    WebUI.rightClick(findTestObject('Page_cabi Home/a_Shows  Orders'))
-
+    driver = DriverFactory.getWebDriver()
+	executor = ((driver) as JavascriptExecutor)
+	
+    WebUI.click(findTestObject('Page_cabi Home/a_Shows  Orders'))
+	WebUI.delay(1)
     WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
 
     WebUI.delay(3)
 
-    //WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_guest_info'))
     WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
 
     ///////////////////////
-    int contactNumber = 4
+    int contactNumber = 3
 
     String firstName = findTestData('contactData').getValue('firstName', contactNumber)
 
@@ -74,51 +72,42 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     String existingCust = "$existingCustFName$space$existingCustLName"
 
     ///////////////////////
-    WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
+	
+	WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
+	WebUI.delay(2)
+	WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), Keys.chord(Keys.ARROW_DOWN))
+	WebUI.delay(2)
+	WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), Keys.chord(Keys.ENTER))
 
-    WebUI.delay(3)
-
-    WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
-
-    WebUI.rightClick(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'))
-
-    WebUI.click(findTestObject('Object Repository/Page_cabi Create Show - Set Hostess/a_select_customer'))
-
-    WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
-
-    WebUI.setText(findTestObject('Object Repository/Page_cabi Retail Store/input_email'), email)
+	WebUI.setText(findTestObject('Object Repository/Page_cabi Retail Store/input_email'), email)
 
     WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'), address1)
 
-    //WebUI.click(findTestObject('Object Repository/Page_cabi Edit Customer Profile/li_Address2'))
     WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'), '')
 
     WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_City_city'), city)
 
-    WebUI.click(findTestObject('Page_cabi Edit Customer Profile/span_select_a_state'))
-
-    WebUI.delay(1)
-
-    WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_state_1'), state)
-
-    WebUI.delay(2)
-
-    WebUI.click(findTestObject('Page_cabi Edit Customer Profile/span_state'))
-
     WebUI.setText(findTestObject('Page_cabi Edit Customer Profile/input_state_postalCode'), zip)
 
-    //WebUI.click(findTestObject('Page_cabi Edit Customer Profile/span_click_near_address_1'))
+	executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Page_cabi Edit Customer Profile/span_click_near_address_1'), 5))
+    WebUI.delay(5)
+	
+	List<WebElement> addSuggest = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Edit Customer Profile/check_address_suggestion'),
+		5)
+	
+	if(addSuggest.size()>0){
+		executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Edit Customer Profile/check_address_suggestion'), 5))
+	}
+	WebUI.delay(5)
+
+	executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 5))
+
+  
     WebUI.delay(5)
 
-    WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+	executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Page_cabi Retail Store/span_next_1'), 5))
 
-    WebUI.delay(5)
-
-    WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
-
-    WebUI.delay(10)
-
-    WebUI.click(findTestObject('Page_cabi Retail Store/span_next_1'))
+    WebUI.delay(3)
 
     WebUI.delay(3)
 
@@ -193,10 +182,10 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     assert orderSuccess == true
 
     /***************************warehouse shipping***************************/
-    WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : GlobalVariable.addOnOrderId], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : GlobalVariable.addOnOrderId], FailureHandling.CONTINUE_ON_FAILURE)
 
     /***********************************************************************/
-    WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Home/a_Shows  Orders'))
 
@@ -289,7 +278,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.delay(2)
 
     /****************product Verify Short******************/
-    WebUI.callTestCase(findTestCase('NewArrival/productVerifyShort'), [('available') : GlobalVariable.BOAddonRetail], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('NewArrival/productVerifyShort'), [('available') : GlobalVariable.BOAddonRetail], FailureHandling.CONTINUE_ON_FAILURE)
 
     /*GlobalVariable.controlParallelism = (GlobalVariable.controlParallelism + 1)
 

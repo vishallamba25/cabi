@@ -5,9 +5,11 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import org.openqa.selenium.By as By
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement
 import org.openqa.selenium.interactions.Actions as Actions
 
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 

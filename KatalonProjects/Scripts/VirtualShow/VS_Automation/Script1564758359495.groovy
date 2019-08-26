@@ -662,6 +662,19 @@ if (okGotIt.size() > 0) {
 }*/
 WebUI.delay(3)
 
+//editing individual order
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_edit_first_individual_product'))
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/select_new_size'))
+WebUI.delay(5)
+WebUI.setText(findTestObject('Object Repository/ReplicatedSite/input_new_qty'), "2")
+WebUI.delay(3)
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_update_individual_item'))
+WebUI.delay(3)
+//end editing individual order
+
+
+
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/a_checkout_and_add_to_show'), 
         5))
 

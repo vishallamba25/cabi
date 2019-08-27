@@ -46,7 +46,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
 
     ///////////////////////
-    int contactNumber = 3
+    int contactNumber = 1
 
     String firstName = findTestData('contactData').getValue('firstName', contactNumber)
 
@@ -77,7 +77,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 	WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), Keys.chord(Keys.ARROW_DOWN))
 	WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), Keys.chord(Keys.ENTER))
 
-	WebUI.setText(findTestObject('Object Repository/Page_cabi Retail Store/input_email'), email)
+	/*WebUI.setText(findTestObject('Object Repository/Page_cabi Retail Store/input_email'), email)
 
     WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'), address1)
 
@@ -86,7 +86,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_City_city'), city)
 
     WebUI.setText(findTestObject('Page_cabi Edit Customer Profile/input_state_postalCode'), zip)
-
+	WebUI.delay(2)
 	executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Page_cabi Edit Customer Profile/span_click_near_address_1'), 5))
     WebUI.delay(5)
 	
@@ -95,7 +95,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 	
 	if(addSuggest.size()>0){
 		executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Edit Customer Profile/check_address_suggestion'), 5))
-	}
+	}*/
 	WebUI.delay(5)
 
 	executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 5))

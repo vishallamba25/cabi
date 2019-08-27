@@ -38,7 +38,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
 
     ///////////////////////
-    int contactNumber = 3
+    int contactNumber = 1
 
     String firstName = findTestData('contactData').getValue('firstName', contactNumber)
 

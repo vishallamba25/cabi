@@ -57,7 +57,7 @@ List<VSGuest> allList = new ArrayList()
 /****************************************************/
 WebUI.callTestCase(findTestCase('VirtualShow/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
         , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
-        , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.)
+        , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.CONTINUE_ON_FAILURE)
 
 /*WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.)
@@ -158,7 +158,7 @@ WebUI.switchToWindowIndex(currentTab + 2)
 
 println(WebUI.getWindowIndex())
 
-WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.)
+WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 //GlobalVariable.micrositeURL="https://mirandakate.cabitest5.com/show-microsite/104653490/"
 //WebUI.navigateToUrl(GlobalVariable.micrositeURL)

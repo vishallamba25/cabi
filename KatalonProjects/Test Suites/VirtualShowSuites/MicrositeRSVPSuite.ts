@@ -13,13 +13,13 @@
    <testCaseLink>
       <guid>4e3ec0a7-8ee0-44f1-b05f-a2cdc6144340</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/VirtualShow/createShow</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>fa4c519a-7f1f-4ff5-b8e1-d156c84d61aa</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/VirtualShow/micrositeRSVPValidUser</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -92,6 +92,18 @@
          <type>SCRIPT_VARIABLE</type>
          <value>null</value>
          <variableId>4be21a07-59c3-49e2-b211-678de633bf0c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>96e7fb6a-5bdd-4ca1-bf74-dd3057c3e66d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/VirtualShow/newUserRegistrationRS</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b3c64562-b960-41ee-a136-8e30e4dd4fb0</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

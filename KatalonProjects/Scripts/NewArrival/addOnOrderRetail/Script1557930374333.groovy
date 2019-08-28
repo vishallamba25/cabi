@@ -38,16 +38,15 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     driver = DriverFactory.getWebDriver()
 	executor = ((driver) as JavascriptExecutor)
 	
-    WebUI.click(findTestObject('Page_cabi Home/a_Shows  Orders'))
-	WebUI.delay(1)
-    WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
+	executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Page_cabi Home/a_retail_purchases'), 5))
+    //WebUI.click(findTestObject('Page_cabi Home/a_retail_purchases'))
 
     WebUI.delay(3)
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Home/existingCustomer'))
 
     ///////////////////////
-    int contactNumber = 3
+    int contactNumber = 1
 
     String firstName = findTestData('contactData').getValue('firstName', contactNumber)
 
@@ -76,10 +75,9 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 	WebUI.setText(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), existingCust)
 	WebUI.delay(2)
 	WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), Keys.chord(Keys.ARROW_DOWN))
-	WebUI.delay(2)
 	WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Home/input_existing_guest'), Keys.chord(Keys.ENTER))
 
-	WebUI.setText(findTestObject('Object Repository/Page_cabi Retail Store/input_email'), email)
+	/*WebUI.setText(findTestObject('Object Repository/Page_cabi Retail Store/input_email'), email)
 
     WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'), address1)
 
@@ -88,7 +86,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_City_city'), city)
 
     WebUI.setText(findTestObject('Page_cabi Edit Customer Profile/input_state_postalCode'), zip)
-
+	WebUI.delay(2)
 	executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Page_cabi Edit Customer Profile/span_click_near_address_1'), 5))
     WebUI.delay(5)
 	
@@ -97,7 +95,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 	
 	if(addSuggest.size()>0){
 		executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Edit Customer Profile/check_address_suggestion'), 5))
-	}
+	}*/
 	WebUI.delay(5)
 
 	executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 5))
@@ -108,6 +106,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 	executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Page_cabi Retail Store/span_next_1'), 5))
 
     WebUI.delay(3)
+
+    /////////////////////////
 
     WebUI.delay(3)
 
@@ -238,13 +238,11 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_Next'))
 
-    //////////////////////////////
-    WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_edit_address'))
+/*    WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_edit_address'))
 
-    ////////////////////////////////
     WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/select_address'))
 
-    WebUI.delay(3)
+    WebUI.delay(3)*/
 
     WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/inputPostalService'))
 

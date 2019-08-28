@@ -18,8 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.openBrowser('')
 
 
-WebDriver driver = DriverFactory.getWebDriver()
-JavascriptExecutor executor = (JavascriptExecutor)driver;
+
 
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.STOP_ON_FAILURE)
 
@@ -98,11 +97,11 @@ WebUI.click(findTestObject('Page_cabi Edit Customer Profile/span_select_a_state'
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_state_1'), state)
+/*WebUI.setText(findTestObject('Object Repository/Page_cabi Edit Customer Profile/input_state_1'), state)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_cabi Edit Customer Profile/span_state'))
+WebUI.click(findTestObject('Page_cabi Edit Customer Profile/span_state'))*/
 
 WebUI.setText(findTestObject('Page_cabi Edit Customer Profile/input_state_postalCode'), zip)
 
@@ -116,7 +115,8 @@ WebUI.delay(5)
 WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
 WebUI.delay(5)
-
+WebDriver driver = DriverFactory.getWebDriver()
+JavascriptExecutor executor = (JavascriptExecutor)driver;
 WebElement nextButton = driver.findElement(By.xpath("//li/a/span[@id='returnToActionLabel']"));
 executor.executeScript("arguments[0].click();", nextButton);
 

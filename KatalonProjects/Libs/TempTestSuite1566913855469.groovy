@@ -15,9 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
 
-suiteProperties.put('id', 'Test Suites/VirtualShowSuites/DashboardSuite')
+suiteProperties.put('id', 'Test Suites/NewArrivalsSuites/NewArrivalsSuite')
 
-suiteProperties.put('name', 'DashboardSuite')
+suiteProperties.put('name', 'NewArrivalsSuite')
 
 suiteProperties.put('description', '')
  
@@ -28,8 +28,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowSuites\\DashboardSuite\\20190826_131152\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20190827_192055\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/VirtualShowSuites/DashboardSuite', suiteProperties, [new TestCaseBinding('Test Cases/VirtualShow/VS_Automation', 'Test Cases/VirtualShow/VS_Automation',  null)])
+TestCaseMain.startTestSuite('Test Suites/NewArrivalsSuites/NewArrivalsSuite', suiteProperties, [new TestCaseBinding('Test Cases/NewArrival/productWatchlist', 'Test Cases/NewArrival/productWatchlist',  null), new TestCaseBinding('Test Cases/NewArrival/productEblast', 'Test Cases/NewArrival/productEblast',  null), new TestCaseBinding('Test Cases/NewArrival/BOPersonal', 'Test Cases/NewArrival/BOPersonal',  null), new TestCaseBinding('Test Cases/NewArrival/BORetail', 'Test Cases/NewArrival/BORetail',  null), new TestCaseBinding('Test Cases/NewArrival/BOShowOrder', 'Test Cases/NewArrival/BOShowOrder',  null), new TestCaseBinding('Test Cases/NewArrival/CCOrders', 'Test Cases/NewArrival/CCOrders',  null), new TestCaseBinding('Test Cases/NewArrival/addOnOrderPersonal', 'Test Cases/NewArrival/addOnOrderPersonal',  null), new TestCaseBinding('Test Cases/NewArrival/addOnOrderRetail', 'Test Cases/NewArrival/addOnOrderRetail',  null)])

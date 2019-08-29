@@ -115,10 +115,12 @@ WebUI.delay(5)
 WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
 WebUI.delay(5)
+
+
 WebDriver driver = DriverFactory.getWebDriver()
-JavascriptExecutor executor = (JavascriptExecutor)driver;
-WebElement nextButton = driver.findElement(By.xpath("//li/a/span[@id='returnToActionLabel']"));
-executor.executeScript("arguments[0].click();", nextButton);
+JavascriptExecutor executor = ((driver) as JavascriptExecutor)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 5))
+
 
 //WebUI.click(findTestObject('Page_cabi Retail Store/span_next_1'))
 
@@ -250,7 +252,7 @@ if (editScenarioNumber == 1) {
     WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_add_to_cart'))
 } else if (editScenarioNumber == 5) {
 } else {
-    println('editScenarioNumber is should be from 1 to 5')
+    println('editScenarioNumber should be from 1 to 5')
 
     assert false
 }

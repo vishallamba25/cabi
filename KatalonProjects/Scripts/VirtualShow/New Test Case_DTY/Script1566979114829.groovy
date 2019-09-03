@@ -24,7 +24,7 @@ String guest1 = findTestData(dataFile).getValue('guest1', 1)
         , ('cohostess') : ''], FailureHandling.STOP_ON_FAILURE)*/
 WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.navigateToUrl('https://test18.cliotest.com/backoffice/control/ShowOverview?showId=104710223')
+WebUI.navigateToUrl('https://test18.cliotest.com/backoffice/control/ShowOverview?showId=104711815')
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders'))
 String[] g1Vars= UtilityMethods.splitPersonName(guest1)
@@ -69,18 +69,7 @@ WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Ma
 
 WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
 		Keys.ENTER))
-////////////////
-/*WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'))
 
-WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
-
-WebUI.delay(3)
-
-String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
-
-WebUI.click(findTestObject('Page_cabi Create Order/first_option'))*/
-
-///////////////
 WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize'))
@@ -90,6 +79,21 @@ WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Add to Cart'))
 
 WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/a_next'))
+WebUI.delay(3)
+WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg1'), 'This order is eligible for "Direct to You" shipping.', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.delay(1)
+WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg2'), '"Direct to You" order must be paid by credit card or cabi Gift Card.', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.delay(1)
+WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg3'), '"Direct to You" order can start being placed 2 days before the show date.', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.delay(1)
+WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 'disabled', 20, FailureHandling.CONTINUE_ON_FAILURE)
+println WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 5).getAttribute("disabled")
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 5))
+WebUI.delay(5)
+WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 'disabled', 'true', 20)
+println WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 5).getAttribute("disabled")
 
 
 

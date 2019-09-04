@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/div[@class='item-options']/app-dropdown</value>
+         <value>//div/div[@class='item-options bootstrap']/app-dropdown</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@class='form-list payment-list']/li/select/option[@value='Visa']</value>
+         <value>//ul[@class='form-list payment-list']/li/select[@name='expYear']/option[@value='2024']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import org.testng.asserts.SoftAssert
 
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testobject.TestObject as TestObject
@@ -24,7 +25,7 @@ String guest1 = findTestData(dataFile).getValue('guest1', 1)
         , ('cohostess') : ''], FailureHandling.STOP_ON_FAILURE)*/
 WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.navigateToUrl('https://test18.cliotest.com/backoffice/control/ShowOverview?showId=104711815')
+WebUI.navigateToUrl('https://test21.cliotest.com/backoffice/control/ShowOverview?showId=104715492')
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders'))
 String[] g1Vars= UtilityMethods.splitPersonName(guest1)
@@ -94,7 +95,36 @@ executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement
 WebUI.delay(5)
 WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 'disabled', 'true', 20)
 println WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 5).getAttribute("disabled")
-
+WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc_label'), 'style', 'color: rgb(211, 211, 211);', 20)
+WebUI.delay(1)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 5))
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_show_order_checkout_next'))
+WebUI.delay(1)
+println WebUI.getText(findTestObject('Object Repository/Page_cabi Shipping/div_DTY-warning_popup'))
+WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/div_DTY-warning_popup'), 'This order is eligible for "Direct to You" shipping.\nDo you want to change this order to "Direct to You" and ship immediately?')
+WebUI.delay(1)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/button_DTY_warning_popup_ship_DTY'))
+WebUI.delay(1)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'))
+WebUI.delay(3)
+List<WebElement> paymentOptions= WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Shipping/select_payment_options'), 20);
+paymentOptions.get(0).getAttribute(addOnStyle)
+boolean validPayOption=true;
+for(WebElement we: paymentOptions){
+	String option= we.getText();
+	if(!(option.matches('.*[^\\d]\\d{4}$') || option.equalsIgnoreCase('Gift Card') || option.equalsIgnoreCase('Add New Credit Card'))){
+		validPayOption=false;
+		break;
+	}
+}
+SoftAssert sa= new SoftAssert();
+sa.assertTrue(validPayOption)
+WebUI.delay(3)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_select'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_new_cc'))
+WebUI.delay(3)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/select_payment_visa'), 10))
 
 
 /*

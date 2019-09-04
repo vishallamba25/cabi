@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>changesSaved</name>
+   <tag></tag>
+   <elementGuidId>e8217812-8192-49d3-8b03-e6b8146d8c35</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;profile-page&quot;]/div/div/div[2]/app-my-style/div[3]/div/div/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;profile-page&quot;]/div/div/div[2]/app-my-style/div[3]/div/div/span</value>
+   </webElementProperties>
+</WebElementEntity>

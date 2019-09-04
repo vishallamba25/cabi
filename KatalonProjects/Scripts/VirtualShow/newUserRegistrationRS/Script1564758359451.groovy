@@ -1,19 +1,15 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
+import org.openqa.selenium.WebDriver as WebDriver
 import com.github.javafaker.Faker as Faker
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import commonUtility.UtilityMethods as UtilityMethods
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import internal.GlobalVariable as GlobalVariable
 
 '/**********Faker initialization for Random Names********************/'
 RSURL = findTestData('envtData').getValue('RSURL', 1)
@@ -41,8 +37,8 @@ WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandl
 
 WebUI.navigateToUrl(RSURL)
 
-'/**********Creating login on RS for new user********************/'
 //WebUI.click(findTestObject('ReplicatedSite/rs_Page_Trendy/i_user_login'))
+'/**********Creating login on RS for new user********************/'
 String loginURL = UtilityMethods.concat('https://mirandakate.', RSTestEnvt, '.com/?component=account.login-gateway')
 
 WebUI.navigateToUrl(loginURL)
@@ -69,8 +65,14 @@ WebUI.click(findTestObject('ReplicatedSite/rsNewUser/continueButton'))
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('ReplicatedSite/rsNewUser/gotItThanks'))
+WebDriver driver = DriverFactory.getWebDriver()
 
+JavascriptExecutor executor = ((driver) as JavascriptExecutor)
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('ReplicatedSite/rsNewUser/gotItThanks'), 
+        5))
+
+//WebUI.click(findTestObject('ReplicatedSite/rsNewUser/gotItThanks'))
 //TestObject profileOptions= UtilityMethods.createTestObject("profileOptions", '//div[@class=\'check\' and preceding-sibling::div[text()=\'',Casual,'\']]')
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/setUpMyProfile'))
 
@@ -175,8 +177,10 @@ for (int i = 0; i < titleList.size(); i++) {
 
     WebUI.click(fitForm)
 
-    WebUI.delay(2)
+    WebUI.delay(3)
 }
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/continueButtonStyleForm'))
 
@@ -211,5 +215,21 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/continueB
 
 WebUI.delay(5)
 
-//WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/profileDropdownButton'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/myProfileLink'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('ReplicatedSite/rsNewUser/styleSiderbarMenu'))
+
+WebUI.click(findTestObject('ReplicatedSite/rsNewUser/dressOftenOption2'))
+
+WebUI.click(findTestObject('ReplicatedSite/rsNewUser/dressStyle2'))
+
+WebUI.click(findTestObject('ReplicatedSite/rsNewUser/saveButton'))
+
+WebUI.verifyElementText(findTestObject('ReplicatedSite/rsNewUser/changesSaved'), 'Your changes have been saved.')
 

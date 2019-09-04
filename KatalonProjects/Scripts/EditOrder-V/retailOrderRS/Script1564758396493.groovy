@@ -54,10 +54,9 @@ for (int i = 1; i <= noOfOptions.size(); i++) {
 
     WebUI.click(selectLastOption)
 
-    WebUI.delay(3)
+    WebUI.delay(5)
 }
 
-WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_add_item_to_bag'))
 WebUI.delay(3)
 
@@ -70,11 +69,10 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_checkout'))
 WebUI.delay(10)
 
 /**********************************************************************88Delete************************************************************************/
-WebUI.delay(10)
 
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_other_address'))
-
-WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_my_address_edit_order'))
+//WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_other_address'))
+//
+//WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_my_address_edit_order'))
 
 WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
 

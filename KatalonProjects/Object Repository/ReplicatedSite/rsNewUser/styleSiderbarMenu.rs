@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>styleSiderbarMenu</name>
+   <tag></tag>
+   <elementGuidId>6dd8cce5-9977-42a6-abc1-393f6d3d0dc9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;profile-page&quot;]/div/div/div[1]/div/ul/li[6]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;profile-page&quot;]/div/div/div[1]/div/ul/li[6]/span</value>
+   </webElementProperties>
+</WebElementEntity>

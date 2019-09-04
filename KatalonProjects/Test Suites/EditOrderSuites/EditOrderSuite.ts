@@ -11,10 +11,10 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>c3825cdf-bbd9-4f5b-8eec-503fc8af5efd</testSuiteGuid>
    <testCaseLink>
-      <guid>9197cdf2-caf2-4338-873b-14f0eaf780af</guid>
+      <guid>8683407e-edc5-4ff7-ae2c-dd0b7fe7aa6c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/EditOrder/rsEditOrderSimple</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/EditOrder-V/rsEditOrderSimple</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -23,10 +23,10 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>d2d1fc21-36cc-4bd9-a27b-74c62863f754</guid>
+      <guid>5d38d882-3cac-4d95-85d5-609dd641fac6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/EditOrder/rsEditOrderDonation</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/EditOrder-V/rsEditOrderDonation</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -35,10 +35,10 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>a1fc125e-c0e4-46ad-b8c8-159077dab9e5</guid>
+      <guid>4f180958-7c6c-4edf-9a9d-fdf6bb21c766</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/EditOrder/rsEditOrderGiftCard</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/EditOrder-V/rsEditOrderGiftCard</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -47,10 +47,10 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>8b9c7737-d960-4fcc-b471-f49499f9e85f</guid>
+      <guid>87125a85-7ff1-4727-9d1d-05ea01830a1c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/EditOrder/rsEditOrderPartialShip</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/EditOrder-V/rsEditOrderPartialShip</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -59,10 +59,10 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>bd7f0a79-ee09-4bff-ac0f-025b58e8e7a3</guid>
+      <guid>2420ec8c-ac1c-4b2d-a197-3cb740ab489d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/EditOrder/rsEditOrderRS</testCaseId>
+      <testCaseId>Test Cases/EditOrder-V/rsEditOrderRS</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="NewArrivalsSuite" time="415" tests="0" failures="1" errors="0">
+   <testsuite name="NewArrivalsSuite" tests="0" failures="1" errors="0" time="415" timestamp="2019-08-25 02:28:51" hostname="user - Nivedita" id="Test Suites/NewArrivalsSuites/NewArrivalsSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20190825_022846"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20190825_022846\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20190825_022846\\1566680745759.png"/>
+         <property name="hostName" value="user - Nivedita"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 76.0.3809.100"/>
+         <property name="hostAddress" value="192.168.43.31"/>
+         <property name="sessionId" value="0287d60fe173c5ada399b0cb4794d90f"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/NewArrival/productWatchlist" classname="Test Cases/NewArrival/productWatchlist" status="FAILED">
+         <failure type="FAILED" message="Test Cases/NewArrival/productWatchlist FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at productWatchlist.run(productWatchlist:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566680326321.run(TempTestSuite1566680326321.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)' located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1557750883126.run(Script1557750883126.groovy:42)
+	... 13 more
+"/>
+         <system-out><![CDATA[2019-08-25 02:28:51 - [TEST_CASE][FAILED] - Test Cases/NewArrival/productWatchlist: Test Cases/NewArrival/productWatchlist FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at productWatchlist.run(productWatchlist:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566680326321.run(TempTestSuite1566680326321.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)' located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1557750883126.run(Script1557750883126.groovy:42)
+	... 13 more
+
+
+2019-08-25 02:28:51 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-08-25 02:28:51 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-08-25 02:28:51 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-08-25 02:28:52 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-08-25 02:28:52 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-08-25 02:28:52 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-08-25 02:28:52 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-08-25 02:28:56 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-08-25 02:28:56 - [TEST_STEP][FAILED] - for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]): for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at productWatchlist.run(productWatchlist:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566680326321.run(TempTestSuite1566680326321.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)' located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1557750883126.run(Script1557750883126.groovy:42)
+	... 13 more
+
+
+2019-08-25 02:28:57 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-08-25 02:28:57 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-08-25 02:28:58 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-08-25 02:28:58 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-08-25 02:28:59 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-08-25 02:28:59 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-08-25 02:28:59 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-08-25 02:28:59 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-08-25 02:29:01 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-08-25 02:29:01 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-08-25 02:29:03 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-08-25 02:29:03 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-08-25 02:29:03 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-08-25 02:29:03 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-08-25 02:29:03 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-08-25 02:29:03 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-08-25 02:29:03 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-08-25 02:29:05 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-08-25 02:29:05 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-08-25 02:29:05 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-08-25 02:29:05 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-08-25 02:29:05 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-08-25 02:29:05 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-08-25 02:29:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-08-25 02:29:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-08-25 02:29:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-08-25 02:29:11 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-08-25 02:29:11 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-08-25 02:29:11 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-08-25 02:29:12 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-08-25 02:29:12 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-08-25 02:29:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-08-25 02:29:12 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 09/06/2019 7:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-08-25 02:29:12 - [MESSAGE][PASSED] - Text ' 09/06/2019 7:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-08-25 02:29:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-08-25 02:29:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-08-25 02:29:13 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-08-25 02:29:23 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-08-25 02:29:23 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-08-25 02:29:23 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-08-25 02:29:23 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-08-25 02:29:23 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-08-25 02:29:23 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-08-25 02:29:23 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-08-25 02:29:23 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-08-25 02:29:23 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-08-25 02:29:23 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-08-25 02:29:23 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-08-25 02:29:24 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-08-25 02:29:24 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-08-25 02:29:26 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-08-25 02:29:26 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-08-25 02:29:34 - [MESSAGE][PASSED] - Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-08-25 02:29:34 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-08-25 02:29:35 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-08-25 02:29:35 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-08-25 02:29:35 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-08-25 02:29:35 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-08-25 02:29:35 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-08-25 02:29:35 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-08-25 02:29:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-08-25 02:30:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-08-25 02:30:02 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-08-25 02:30:05 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-08-25 02:30:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-08-25 02:30:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-08-25 02:30:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-08-25 02:30:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Product Watch List")): Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-08-25 02:30:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-08-25 02:30:09 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-08-25 02:30:09 - [TEST_STEP][PASSED] - noResultFound = findWebElements(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)"), 5): Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-08-25 02:30:15 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - assert noResultFound.size() == 0: null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-08-25 02:30:15 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-08-25 02:30:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-08-25 02:30:15 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-08-25 02:30:15 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-08-25 02:30:15 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-08-25 02:30:16 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-08-25 02:30:16 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-08-25 02:30:18 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-08-25 02:30:18 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-08-25 02:30:18 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-08-25 02:30:18 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-08-25 02:30:19 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-08-25 02:30:19 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-08-25 02:30:19 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-08-25 02:30:20 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-08-25 02:30:20 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-08-25 02:30:20 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-08-25 02:30:20 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-08-25 02:30:20 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-08-25 02:30:20 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-08-25 02:30:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-08-25 02:30:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-08-25 02:30:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-08-25 02:30:26 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-08-25 02:30:26 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-08-25 02:30:26 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-08-25 02:30:26 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-08-25 02:30:26 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-08-25 02:30:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-08-25 02:30:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 09/12/2019 00:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-08-25 02:30:26 - [MESSAGE][PASSED] - Text ' 09/12/2019 00:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-08-25 02:30:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-08-25 02:30:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-08-25 02:30:27 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-08-25 02:30:37 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-08-25 02:30:37 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-08-25 02:30:37 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-08-25 02:30:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-08-25 02:30:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-08-25 02:30:37 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-08-25 02:30:37 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-08-25 02:30:38 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-08-25 02:30:38 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-08-25 02:30:38 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-08-25 02:30:38 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-08-25 02:30:38 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-08-25 02:30:38 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-08-25 02:30:40 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-08-25 02:30:40 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-08-25 02:31:45 - [MESSAGE][PASSED] - Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-08-25 02:31:45 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-08-25 02:31:47 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-08-25 02:31:47 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-08-25 02:31:47 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-08-25 02:31:47 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-08-25 02:31:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-08-25 02:31:47 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-08-25 02:31:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-08-25 02:33:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-08-25 02:33:42 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-08-25 02:33:45 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-08-25 02:33:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-08-25 02:33:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-08-25 02:33:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-08-25 02:33:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Product Watch List")): Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-08-25 02:33:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-08-25 02:33:54 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-08-25 02:33:54 - [TEST_STEP][PASSED] - noResultFound = findWebElements(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)"), 5): Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-08-25 02:33:59 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - assert noResultFound.size() == 0: null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-08-25 02:33:59 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-08-25 02:33:59 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-08-25 02:33:59 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-08-25 02:34:00 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-08-25 02:34:00 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-08-25 02:34:00 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-08-25 02:34:00 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-08-25 02:34:00 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-08-25 02:34:03 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-08-25 02:34:03 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-08-25 02:34:03 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-08-25 02:34:03 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-08-25 02:34:03 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-08-25 02:34:03 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-08-25 02:34:03 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-08-25 02:34:04 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-08-25 02:34:04 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-08-25 02:34:05 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-08-25 02:34:05 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-08-25 02:34:05 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-08-25 02:34:05 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-08-25 02:34:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-08-25 02:34:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-08-25 02:34:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-08-25 02:34:10 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-08-25 02:34:10 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-08-25 02:34:10 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-08-25 02:34:10 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-08-25 02:34:10 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-08-25 02:34:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-08-25 02:34:11 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 09/20/2019 12:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-08-25 02:34:11 - [MESSAGE][PASSED] - Text ' 09/20/2019 12:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-08-25 02:34:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-08-25 02:34:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-08-25 02:34:12 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-08-25 02:34:22 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-08-25 02:34:22 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-08-25 02:34:22 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-08-25 02:34:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-08-25 02:34:22 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-08-25 02:34:22 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-08-25 02:34:22 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-08-25 02:34:22 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-08-25 02:34:22 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-08-25 02:34:22 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-08-25 02:34:22 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-08-25 02:34:22 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-08-25 02:34:22 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-08-25 02:34:25 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-08-25 02:34:25 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-08-25 02:34:33 - [MESSAGE][PASSED] - Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-08-25 02:34:33 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-08-25 02:34:34 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-08-25 02:34:34 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-08-25 02:34:34 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-08-25 02:34:34 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-08-25 02:34:34 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-08-25 02:34:34 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-08-25 02:34:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-08-25 02:34:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-08-25 02:34:58 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-08-25 02:35:01 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-08-25 02:35:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-08-25 02:35:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-08-25 02:35:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-08-25 02:35:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Product Watch List")): Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-08-25 02:35:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-08-25 02:35:14 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-08-25 02:35:14 - [TEST_STEP][FAILED] - else: for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at productWatchlist.run(productWatchlist:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566680326321.run(TempTestSuite1566680326321.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)' located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1557750883126.run(Script1557750883126.groovy:42)
+	... 13 more
+
+
+2019-08-25 02:35:14 - [TEST_STEP][FAILED] - click(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)")): for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at productWatchlist.run(productWatchlist:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566680326321.run(TempTestSuite1566680326321.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)' located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1557750883126.run(Script1557750883126.groovy:42)
+	... 13 more
+
+
+2019-08-25 02:35:45 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-08-25 02:35:46 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at productWatchlist.run(productWatchlist:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566680326321.run(TempTestSuite1566680326321.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)' located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1557750883126.run(Script1557750883126.groovy:42)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20190825_022846\\1566680745759.png]]
+
+2019-08-25 02:35:46 - [MESSAGE][FAILED] - for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at productWatchlist.run(productWatchlist:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566680326321.run(TempTestSuite1566680326321.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)' located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1557750883126.run(Script1557750883126.groovy:42)
+	... 13 more]]></system-out>
+         <system-err><![CDATA[2019-08-25 02:28:51 - [TEST_CASE][FAILED] - Test Cases/NewArrival/productWatchlist: Test Cases/NewArrival/productWatchlist FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at productWatchlist.run(productWatchlist:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566680326321.run(TempTestSuite1566680326321.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)' located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1557750883126.run(Script1557750883126.groovy:42)
+	... 13 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-08-25 02:28:51 - [TEST_SUITE][FAILED] - NewArrivalsSuite: Test Cases/NewArrival/productWatchlist FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at productWatchlist.run(productWatchlist:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566680326321.run(TempTestSuite1566680326321.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)' located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1557750883126.run(Script1557750883126.groovy:42)
+	... 13 more]]></system-out>
+      <system-err><![CDATA[2019-08-25 02:28:51 - [TEST_SUITE][FAILED] - NewArrivalsSuite: Test Cases/NewArrival/productWatchlist FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at productWatchlist.run(productWatchlist:42)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1566680326321.run(TempTestSuite1566680326321.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)' located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 1)')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:77)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1557750883126.run(Script1557750883126.groovy:42)
+	... 13 more]]></system-err>
+   </testsuite>
+</testsuites>

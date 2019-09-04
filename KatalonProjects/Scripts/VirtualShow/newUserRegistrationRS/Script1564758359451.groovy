@@ -15,6 +15,7 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
+'/**********Faker initialization for Random Names********************/'
 RSURL = findTestData('envtData').getValue('RSURL', 1)
 
 RSuser = findTestData('credData').getValue('RSuser', 1)
@@ -35,10 +36,12 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.STOP_ON_FAILURE)
+'/**********Setting Vhost********************/'
+WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.navigateToUrl(RSURL)
 
+'/**********Creating login on RS for new user********************/'
 //WebUI.click(findTestObject('ReplicatedSite/rs_Page_Trendy/i_user_login'))
 String loginURL = UtilityMethods.concat('https://mirandakate.', RSTestEnvt, '.com/?component=account.login-gateway')
 
@@ -109,6 +112,7 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/continueB
 
 WebUI.delay(5)
 
+'/**********Profile Completion Forms for Size,Types of Dresses etc********************/'
 List<String> titleList = new ArrayList<String>()
 
 titleList.add('Bust')
@@ -178,6 +182,7 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/continueB
 
 WebUI.delay(5)
 
+'/**********Adding email and contact info********************/'
 int contactNumber = 3 //guest2
 
 String address1 = findTestData('contactData').getValue('address1', contactNumber)
@@ -206,5 +211,5 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/continueB
 
 WebUI.delay(5)
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 

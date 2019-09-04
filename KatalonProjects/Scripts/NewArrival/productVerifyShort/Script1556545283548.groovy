@@ -23,46 +23,45 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.stringtemplate.v4.compiler.STParser.listElement_return as listElement_return
 
 //WebUI.openBrowser('')
-
 for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
-	WebUI.delay(2)
-	
+    WebUI.delay(2)
+
     WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), findTestData(
             'productData').getValue('Style', row))
 
     WebUI.delay(2)
 
-	String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
-	
-	WebUI.delay(1)
-	
+    String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
+
+    WebUI.delay(1)
+
     WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
 
-
-
     if (available.toString().equalsIgnoreCase('no')) {
-		assert prod_message.equalsIgnoreCase("No matching result found")
-        /*******retail***********************************/
+        assert prod_message.equalsIgnoreCase('No matching result found') /*******retail***********************************/
         /*******Size***********************************/
         /*******Description***********************************/
         /*******Fabric***********************************/
         /*******care instr***********************************/
         /*******retail***********************************/
+        /*********to remove extra chars like '(' ********/
     } else {
         WebUI.delay(3)
-		
-		String s1= findTestData('productData').getValue('Style', row).toString();
-		String s2= " ";
-		String s3= findTestData('productData').getValue('Description', row).toString();
-		
-		
+
+        String s1 = findTestData('productData').getValue('Style', row).toString()
+
+        String s2 = ' '
+
+        String s3 = findTestData('productData').getValue('Description', row).toString()
+
         String expectedStyleDescription = "$s1$s2$s3"
-		
-		/*********to remove extra chars like '(' ********/
-		prod_message= UtilityMethods.splitStyle(prod_message); println prod_message;
-		
-		assert prod_message.equalsIgnoreCase(expectedStyleDescription)
-		
+
+        prod_message = UtilityMethods.splitStyle(prod_message)
+
+        println(prod_message)
+
+        assert prod_message.equalsIgnoreCase(expectedStyleDescription)
+
         WebUI.delay(3)
 
         List<WebElement> colorOptions = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Order Items/GetAttribute_Color'), 
@@ -94,7 +93,7 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 
         String Split_Data = UtilityMethods.SplitData(getPrice)
 
-        WebUI.verifyMatch(Split_Data, findTestData('productData').getValue('Retail', row), true)
+        WebUI.verifyMatch(Split_Data, findTestData('productData').getValue('Retail', row), true, FailureHandling.CONTINUE_ON_FAILURE)
 
         String[] sizeRange1 = ['XXS', 'XS', 'S', 'M', 'L', 'XL']
 
@@ -117,7 +116,7 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 
         if (sizeType.equalsIgnoreCase('Select')) {
             for (int i = 1; i < sizeOptions.size(); i++) {
-                actualRange.add(sizeOptions.get(i).getText())
+                actualRange.add(sizeOptions.get(i).getAttribute('value'))
             }
             
             if (actualRange.get(0).toString().equalsIgnoreCase('XS') || actualRange.get(0).toString().equalsIgnoreCase('XXS')) {

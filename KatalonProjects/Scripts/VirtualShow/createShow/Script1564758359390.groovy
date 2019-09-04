@@ -41,7 +41,7 @@ WebUI.openBrowser('')
 WebUI.maximizeWindow()
 
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], 
-    FailureHandling.STOP_ON_FAILURE)
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi/span_username'), stylist)
 

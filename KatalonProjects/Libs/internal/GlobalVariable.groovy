@@ -97,11 +97,6 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object clockServerTarget
-     
-    /**
-     * <p></p>
-     */
     public static Object retailOrderID
      
     /**
@@ -133,7 +128,6 @@ public class GlobalVariable {
             BOEblast = selectedVariables['BOEblast']
             controlParallelism = selectedVariables['controlParallelism']
             parallelTC = selectedVariables['parallelTC']
-            clockServerTarget = selectedVariables['clockServerTarget']
             retailOrderID = selectedVariables['retailOrderID']
             micrositeURL = selectedVariables['micrositeURL']
             

@@ -444,7 +444,7 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/carouselTestObjects/carouselSaveOutfit'))
 
-guest1Obj.favorites = (guest1Obj.favorites + 3)
+guest1Obj.favorites = (guest1Obj.favorites + 4)
 
 WebUI.switchToWindowIndex(currentTab + 1)
 
@@ -483,7 +483,7 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsi
 
 WebUI.delay(3)
 
-WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
+//WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_add_to_bag_from_fav'))
 
@@ -501,7 +501,7 @@ for (int i = 1; i <= noOfOptions.size(); i++) {
 
     WebUI.delay(3)
 
-    TestObject selectSecondOption = UtilityMethods.createTestObject('div_select_second_option', '(//div/div[@class=\'item-options\']/app-dropdown)[', 
+    TestObject selectSecondOption = UtilityMethods.createTestObject('div_select_second_option', '(//div/div[@class=\'item-options bootstrap\']/app-dropdown)[', 
         Integer.toString(i), ']/div/div/div/div/div/div/div[@class=\'dropdown-item\' and position()=\'2\']')
 
     WebUI.click(selectSecondOption)
@@ -667,7 +667,7 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_edit_first_indivi
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/select_new_size'))
 WebUI.delay(5)
-WebUI.setText(findTestObject('Object Repository/ReplicatedSite/input_new_qty'), "2")
+WebUI.setText(findTestObject('Object Repository/ReplicatedSite/input_new_qty'), "3")
 WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_update_individual_item'))
 WebUI.delay(3)

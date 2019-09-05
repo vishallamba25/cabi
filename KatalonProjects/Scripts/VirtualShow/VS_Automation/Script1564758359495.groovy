@@ -483,7 +483,7 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsi
 
 WebUI.delay(3)
 
-WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
+//WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_add_to_bag_from_fav'))
 
@@ -501,7 +501,7 @@ for (int i = 1; i <= noOfOptions.size(); i++) {
 
     WebUI.delay(3)
 
-    TestObject selectSecondOption = UtilityMethods.createTestObject('div_select_second_option', '(//div/div[@class=\'item-options\']/app-dropdown)[', 
+    TestObject selectSecondOption = UtilityMethods.createTestObject('div_select_second_option', '(//div/div[@class=\'item-options bootstrap\']/app-dropdown)[', 
         Integer.toString(i), ']/div/div/div/div/div/div/div[@class=\'dropdown-item\' and position()=\'2\']')
 
     WebUI.click(selectSecondOption)

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_no_of_options_for_add_to_bag_item</name>
+   <name>select_payment_lname</name>
    <tag></tag>
-   <elementGuidId>8aa4bf8a-b407-4d87-9041-35db54a2e66c</elementGuidId>
+   <elementGuidId>2a675015-af9f-4fe7-8aae-37a717968807</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/div[@class='item-options bootstrap']/app-dropdown</value>
+         <value>//ul[@class='form-list payment-list']/li/input[@name='lastNameOnCard']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

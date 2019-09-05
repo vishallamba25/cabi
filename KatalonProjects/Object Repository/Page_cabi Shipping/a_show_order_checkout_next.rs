@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_no_of_options_for_add_to_bag_item</name>
+   <name>a_show_order_checkout_next</name>
    <tag></tag>
-   <elementGuidId>8aa4bf8a-b407-4d87-9041-35db54a2e66c</elementGuidId>
+   <elementGuidId>3c6e9dae-80b5-4e91-8928-640d0620d6aa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/div[@class='item-options bootstrap']/app-dropdown</value>
+         <value>//div[@id='checkoutActionRow']/ul/li/a/span[contains(text(), 'Next')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

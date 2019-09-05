@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_no_of_options_for_add_to_bag_item</name>
+   <name>a_make_first_payment</name>
    <tag></tag>
-   <elementGuidId>8aa4bf8a-b407-4d87-9041-35db54a2e66c</elementGuidId>
+   <elementGuidId>7f9a3d61-df27-4e97-baa8-1becdd7eaf16</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/div[@class='item-options bootstrap']/app-dropdown</value>
+         <value>//ul[@class='payment-row']/li/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

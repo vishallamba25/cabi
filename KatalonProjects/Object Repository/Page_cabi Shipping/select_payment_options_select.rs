@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>div_no_of_options_for_add_to_bag_item</name>
+   <name>select_payment_options_select</name>
    <tag></tag>
-   <elementGuidId>8aa4bf8a-b407-4d87-9041-35db54a2e66c</elementGuidId>
+   <elementGuidId>791ea1d9-f757-48cc-83c1-cfa899f4b6c3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/div[@class='item-options bootstrap']/app-dropdown</value>
+         <value>//form[@id='checkoutpaymentform']/div/div[@class='payment-method']/ul/li/select[@name='payment-first']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

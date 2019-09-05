@@ -21,12 +21,12 @@ String dataFile = 'virtualShowData'
 String guest1 = findTestData(dataFile).getValue('guest1', 1)
 /****************************************************/
 
-/*WebUI.callTestCase(findTestCase('VirtualShow/createAPhysicalShow'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : '', ('hostess') : ''
-        , ('cohostess') : ''], FailureHandling.STOP_ON_FAILURE)*/
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('VirtualShow/createAPhysicalShow'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : '', ('hostess') : ''
+        , ('cohostess') : ''], FailureHandling.STOP_ON_FAILURE)
+/*WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.navigateToUrl('https://test21.cliotest.com/backoffice/control/ShowOverview?showId=104715492')
-
+*/
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders'))
 String[] g1Vars= UtilityMethods.splitPersonName(guest1)
 String g1Var= UtilityMethods.concat(g1Vars[1], ", ", g1Vars[0])
@@ -120,12 +120,22 @@ for(WebElement we: paymentOptions){
 }
 SoftAssert sa= new SoftAssert();
 sa.assertTrue(validPayOption)
+WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/li_DTY_payment_info'), '"Direct to You" orders require payment via credit card or cabi Gift Card.', FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_select'))
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_new_cc'))
 WebUI.delay(3)
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/select_payment_visa'), 10))
 
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_fname'), 'abcd')
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_lname'), 'fghi')
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_card_number'), '4111111111111111')
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_exp_date_month'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_exp_date_year'))
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/input_select_billing_add_same_as_mailing_add'), 10))
+WebUI.delay(3)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_save_shipping_info'), 10))
 
 /*
 

@@ -136,6 +136,10 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/input_select_billing_add_same_as_mailing_add'), 10))
 WebUI.delay(3)
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_save_shipping_info'), 10))
+WebUI.delay(2)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_review_order'), 10))
+WebUI.delay(2)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_submit_order'), 10))
 
 /*
 

@@ -234,4 +234,22 @@ public class UtilityMethods {
 			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
 		}
 	}
+
+	//extract 'test18' from whole backoffice url string provided
+	@Keyword
+	public static String getEnvt(String BOURL){
+		String user=""
+		for(int i=0; i<BOURL.length(); i++){
+			if(BOURL.charAt(i)=='/'){
+				i+=2;
+				while(BOURL.charAt(i)!='.'){
+					user=UtilityMethods.concat(user, (BOURL.charAt(i)).toString());
+					i++;
+				}
+				break;
+			}
+		}
+		println user
+		return user;
+	}
 }

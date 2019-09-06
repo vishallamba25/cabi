@@ -798,9 +798,21 @@ WebUI.verifyElementText(findTestObject('Object Repository/ReplicatedSite/h1_than
 
 WebUI.delay(2)
 
-guest1Obj.ordered = (guest1Obj.ordered + 4)
+guest1Obj.ordered = (guest1Obj.ordered + 5)
 
 guest1Obj.favorites = (guest1Obj.favorites - 1)
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/addItemsLink'))
+
+WebUI.delay(5)
+
+//WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
+
+title = WebUI.getWindowTitle()
+
+println (title)
+
+WebUI.verifyMatch(title, 'Show microsite - Cabi Fall 2019 Collection', true, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.switchToWindowIndex(currentTab + 1)
 

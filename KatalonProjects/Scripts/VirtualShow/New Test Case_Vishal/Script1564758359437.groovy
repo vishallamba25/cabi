@@ -483,7 +483,7 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsi
 
 WebUI.delay(3)
 
-WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
+//WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_add_to_bag_from_fav'))
 
@@ -501,7 +501,7 @@ for (int i = 1; i <= noOfOptions.size(); i++) {
 
     WebUI.delay(3)
 
-    TestObject selectSecondOption = UtilityMethods.createTestObject('div_select_second_option', '(//div/div[@class=\'item-options\']/app-dropdown)[', 
+    TestObject selectSecondOption = UtilityMethods.createTestObject('div_select_second_option', '(//div/div[@class=\'item-options bootstrap\']/app-dropdown)[', 
         Integer.toString(i), ']/div/div/div/div/div/div/div[@class=\'dropdown-item\' and position()=\'2\']')
 
     WebUI.click(selectSecondOption)
@@ -656,10 +656,10 @@ WebUI.delay(3)
 
 WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
 
-/*List<WebElement> okGotIt = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_got_it'), 5)
+List<WebElement> okGotIt = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_got_it'), 5)
 if (okGotIt.size() > 0) {
 	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_got_it'))
-}*/
+}
 WebUI.delay(3)
 
 //editing individual order
@@ -667,7 +667,7 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_edit_first_indivi
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/select_new_size'))
 WebUI.delay(5)
-WebUI.setText(findTestObject('Object Repository/ReplicatedSite/input_new_qty'), "2")
+WebUI.setText(findTestObject('Object Repository/ReplicatedSite/input_new_qty'), "3")
 WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_update_individual_item'))
 WebUI.delay(3)
@@ -678,11 +678,13 @@ WebUI.delay(3)
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/a_checkout_and_add_to_show'), 
         5))
 
-/*List<WebElement> chkOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/a_checkout_and_add_to_show'), 15)
+List<WebElement> chkOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/a_checkout_and_add_to_show'), 15)
 if (chkOut.size() > 0) {
-	//WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_checkout_and_add_to_show'))
 	executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/a_checkout_and_add_to_show'), 5));
 }
+
+/*
+
 else{
 	WebUI.switchToDefaultContent()
 	executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/div_checkout'), 5));
@@ -796,9 +798,21 @@ WebUI.verifyElementText(findTestObject('Object Repository/ReplicatedSite/h1_than
 
 WebUI.delay(2)
 
-guest1Obj.ordered = (guest1Obj.ordered + 3)
+guest1Obj.ordered = (guest1Obj.ordered + 5)
 
 guest1Obj.favorites = (guest1Obj.favorites - 1)
+
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/addItemsLink'))
+
+WebUI.delay(5)
+
+//WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
+
+title = WebUI.getWindowTitle()
+
+println (title)
+
+WebUI.verifyMatch(title, 'Show microsite - Cabi Fall 2019 Collection', true, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.switchToWindowIndex(currentTab + 1)
 

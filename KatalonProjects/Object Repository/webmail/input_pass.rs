@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_order_status</name>
+   <name>input_pass</name>
    <tag></tag>
-   <elementGuidId>eae22ed9-a865-45db-bb18-9f033c1afd54</elementGuidId>
+   <elementGuidId>b3118e7e-c254-43a8-970f-ae93672abb14</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='add-guests-content']/ul/li/div</value>
+         <value>//form/table/tbody/tr/td/input[@name='_pass']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

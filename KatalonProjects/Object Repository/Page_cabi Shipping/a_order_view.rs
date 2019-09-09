@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_order_status</name>
+   <name>a_order_view</name>
    <tag></tag>
-   <elementGuidId>eae22ed9-a865-45db-bb18-9f033c1afd54</elementGuidId>
+   <elementGuidId>fae4957c-458e-4ff7-a86f-238048771373</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='add-guests-content']/ul/li/div</value>
+         <value>//div[@class='product-search-content']/div/p/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

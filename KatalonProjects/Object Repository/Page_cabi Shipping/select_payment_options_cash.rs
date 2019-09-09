@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_order_status</name>
+   <name>select_payment_options_cash</name>
    <tag></tag>
-   <elementGuidId>eae22ed9-a865-45db-bb18-9f033c1afd54</elementGuidId>
+   <elementGuidId>5bd41b7b-6080-44eb-9d90-b2c90a580b25</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='add-guests-content']/ul/li/div</value>
+         <value>//form[@id='checkoutpaymentform']/div/div[@class='payment-method']/ul/li/select[@name='payment-first']/option[@value='CUST_DEPOSIT_PMT_Cash']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

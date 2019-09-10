@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_order_status</name>
+   <name>log_out</name>
    <tag></tag>
-   <elementGuidId>eae22ed9-a865-45db-bb18-9f033c1afd54</elementGuidId>
+   <elementGuidId>42cfe55a-c816-469d-a56a-2b283806d466</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='add-guests-content']/ul/li/div</value>
+         <value>//div[@id='topline']/div[@class='topright']/a[@class='button-logout']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

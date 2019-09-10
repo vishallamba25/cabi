@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_new_size</name>
+   <name>a_edit_order_shipping</name>
    <tag></tag>
-   <elementGuidId>feaf5e7f-18fc-4daf-836d-3a5af9bd1d29</elementGuidId>
+   <elementGuidId>ec6e988a-ce2f-4e17-92ff-c720423e3cb3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='quick-look-inner']/div/div/add-to-cart/div/div[@class='add-to-cart-form']/div[@id='attribute-size']/div/select/option[last()]</value>
+         <value>//div[@class='progressCheck']/li[@tabname='Shipping']/a/p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

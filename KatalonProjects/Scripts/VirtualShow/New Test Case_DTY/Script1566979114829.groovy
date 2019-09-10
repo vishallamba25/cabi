@@ -27,7 +27,7 @@ WebUI.callTestCase(findTestCase('VirtualShow/createAPhysicalShow'), [('BOURL') :
 /*WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.navigateToUrl('https://test18.cliotest.com/backoffice/control/ShowOverview?showId=104723620')*/
-/***********************palce show order with DTY check******************/
+/***********************place show order with DTY check******************/
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders'))
 String[] g1Vars= UtilityMethods.splitPersonName(guest1)
 String g1Var= UtilityMethods.concat(g1Vars[1], ", ", g1Vars[0])
@@ -149,7 +149,7 @@ println actualOrderStatus
 /***********************end palce show order with DTY check******************/
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_back_to_orders'))
 WebUI.delay(2)
-/***********************palce show order without DTY check******************/
+/***********************place show order without DTY check******************/
 String[] g2Vars= UtilityMethods.splitPersonName(guest2)
 String g2Var= UtilityMethods.concat(g2Vars[1], ", ", g2Vars[0])
 buttonPlaceOrder = UtilityMethods.createTestObject('buttoPlaceOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'', g2Var, '\')]/parent::td/following-sibling::td[1]/button')
@@ -236,14 +236,55 @@ actualOrderStatus= WebUI.getText(findTestObject('Object Repository/Page_cabi Shi
 expectedOrderStatus= 'OPEN'
 sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus))
 println actualOrderStatus
-/***********************end palce show order without DTY check******************/
+/***********************end place show order without DTY check******************/
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_back_to_orders'))
 WebUI.delay(2)
-String DTYOptedOrderStatus = UtilityMethods.createTestObject('DTYOptedOrderStatus', '//table[@class='show-order-table']/tbody/tr/td/span[contains(text(),'abc, guest1-test')]/parent::td/following-sibling::td[@class='order-status']')
+String ActualDTYOptedOrderStatus = WebUI.getText(UtilityMethods.createTestObject('DTYOptedOrderStatus', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'', g1Var, '\')]/parent::td/following-sibling::td[@class=\'order-status\']'))
+String ActualDTYNonOptedOrderStatus = WebUI.getText(UtilityMethods.createTestObject('DTYOptedOrderStatus', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'', g2Var, '\')]/parent::td/following-sibling::td[@class=\'order-status\']'))
+sa.assertEquals(ActualDTYOptedOrderStatus, 'PENDING SHIPMENT')
+sa.assertEquals(ActualDTYNonOptedOrderStatus, 'Completed')
 /******************************Editing DTY opted order*********************/
-
-
-
+TestObject buttonEditDTYOptedOrder = UtilityMethods.createTestObject('buttonEditDTYOptedOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'', g1Var, '\')]/parent::td/following-sibling::td[@class=\'column-order\']/a')
+WebUI.click(buttonEditDTYOptedOrder)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order_shipping'))
+boolean checkDisabled=WebUI.verifyElementHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'disabled', 20, FailureHandling.CONTINUE_ON_FAILURE)
+boolean checkChecked=WebUI.verifyElementHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'checked', 20, FailureHandling.CONTINUE_ON_FAILURE)
+if(checkDisabled && checkChecked){
+	WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'disabled', 'true', 20)
+	WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'checked', 'true', 20)
+}
+WebUI.delay(2)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order_cancel'))
+WebUI.delay(1)
+/******************************end Editing DTY opted order*********************/
+//adding third guest: michigan
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_invitaions'))
+/////////
+String guest3 = findTestData(dataFile).getValue('guest2', 1)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guests'))
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'),	guest1)
+WebUI.delay(2)
+WebUI.sendKeys(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'), Keys.chord(Keys.ARROW_DOWN))
+WebUI.sendKeys(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'), Keys.chord(Keys.ENTER))
+WebUI.delay(2)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest'))
+/////////
+/******************************Editing DTY non opted order*********************/
+TestObject buttonEditDTYNonOptedOrder = UtilityMethods.createTestObject('buttonEditDTYNonOptedOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'', g2Var, '\')]/parent::td/following-sibling::td[@class=\'column-order\']/a')
+WebUI.click(buttonEditDTYNonOptedOrder)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order_shipping'))
+WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'disabled', 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'))
+/*boolean checkDisabled=WebUI.verifyElementHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'disabled', 20, FailureHandling.CONTINUE_ON_FAILURE)
+boolean checkChecked=WebUI.verifyElementHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'checked', 20, FailureHandling.CONTINUE_ON_FAILURE)
+if(checkDisabled && checkChecked){
+	WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'disabled', 'true', 20)
+	WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'checked', 'true', 20)
+}*/
+WebUI.delay(2)
+/******************************end Editing DTY non opted order*********************/
 
 
 

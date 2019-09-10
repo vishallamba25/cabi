@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='quick-look-inner']/div/div/add-to-cart/div/div[@class='add-to-cart-form']/div[@id='attribute-size']/div/select/option[@label='XL']</value>
+         <value>//div[@id='quick-look-inner']/div/div/add-to-cart/div/div[@class='add-to-cart-form']/div[@id='attribute-size']/div/select/option[last()-1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

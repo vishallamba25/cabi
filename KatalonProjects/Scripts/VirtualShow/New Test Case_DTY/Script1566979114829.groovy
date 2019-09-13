@@ -20,6 +20,8 @@ import commonUtility.UtilityMethods as UtilityMethods
 String dataFile = 'virtualShowData'
 String guest1 = findTestData(dataFile).getValue('guest1', 1)
 String guest2 = findTestData(dataFile).getValue('guest2', 1)
+String hostess = findTestData(dataFile).getValue('hostess', 1)
+String cohostess = findTestData(dataFile).getValue('cohostess', 1)
 /****************************************************/
 
 WebUI.callTestCase(findTestCase('VirtualShow/createAPhysicalShow'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : '', ('hostess') : ''
@@ -149,7 +151,7 @@ println actualOrderStatus
 /***********************end palce show order with DTY check******************/
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_back_to_orders'))
 WebUI.delay(2)
-/***********************place show order without DTY check******************/
+/***********************place show order without DTY check: cash******************/
 String[] g2Vars= UtilityMethods.splitPersonName(guest2)
 String g2Var= UtilityMethods.concat(g2Vars[1], ", ", g2Vars[0])
 buttonPlaceOrder = UtilityMethods.createTestObject('buttoPlaceOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'', g2Var, '\')]/parent::td/following-sibling::td[1]/button')
@@ -261,30 +263,378 @@ WebUI.delay(1)
 //adding third guest: michigan
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_invitaions'))
 /////////
-String guest3 = findTestData(dataFile).getValue('guest2', 1)
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guests'))
-WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'),	guest1)
+String guest3 = findTestData(dataFile).getValue('guest3', 1)
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guests'), 10))
+//WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guests'))
+WebUI.setText(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'),	guest3)
 WebUI.delay(2)
 WebUI.sendKeys(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'), Keys.chord(Keys.ARROW_DOWN))
 WebUI.sendKeys(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'), Keys.chord(Keys.ENTER))
 WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest'))
+WebUI.delay(2)
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next'))
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview'))
+WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders'))
 /////////
-/******************************Editing DTY non opted order*********************/
+/******************************Editing DTY non opted order: cash*********************/
 TestObject buttonEditDTYNonOptedOrder = UtilityMethods.createTestObject('buttonEditDTYNonOptedOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'', g2Var, '\')]/parent::td/following-sibling::td[@class=\'column-order\']/a')
 WebUI.click(buttonEditDTYNonOptedOrder)
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order'))
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order_shipping'))
 WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'disabled', 20, FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'))
-/*boolean checkDisabled=WebUI.verifyElementHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'disabled', 20, FailureHandling.CONTINUE_ON_FAILURE)
-boolean checkChecked=WebUI.verifyElementHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'checked', 20, FailureHandling.CONTINUE_ON_FAILURE)
-if(checkDisabled && checkChecked){
-	WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'disabled', 'true', 20)
-	WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'checked', 'true', 20)
-}*/
+//WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'))
 WebUI.delay(2)
-/******************************end Editing DTY non opted order*********************/
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order_payments'))
+WebUI.delay(3)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_select'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_new_cc'))
+WebUI.delay(3)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/select_payment_visa'), 10))
+
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_fname'), 'abcd')
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_lname'), 'fghi')
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_card_number'), '4111111111111111')
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_exp_date_month'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_exp_date_year'))
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/input_select_billing_add_same_as_mailing_add'), 10))
+WebUI.delay(3)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_save_shipping_info'), 10))
+WebUI.delay(2)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_review_order'), 10))
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order_save_changes'), 10))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order_shipping'))
+WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'disabled', 20, FailureHandling.CONTINUE_ON_FAILURE)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 5))
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_show_order_checkout_next'))
+WebUI.delay(1)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_review_order'), 10))
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order_save_changes'), 10))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_back_to_orders'))
+WebUI.delay(2)
+/******************************end Editing DTY non opted order: cash*********************/
+/***********************place show order without DTY check: CC******************/
+String[] g3Vars= UtilityMethods.splitPersonName(guest3)
+String g3Var= UtilityMethods.concat(g3Vars[1], ", ", g3Vars[0])
+buttonPlaceOrder = UtilityMethods.createTestObject('buttoPlaceOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'', g3Var, '\')]/parent::td/following-sibling::td[1]/button')
+WebUI.click(buttonPlaceOrder)
+WebUI.delay(3)
+DTYMsg= 'Hooray! This order is eligible for "Direct to You" shipping.'
+println  WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'))
+WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), DTYMsg, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+WebUI.delay(3)
+driver = DriverFactory.getWebDriver()
+executor = ((driver) as JavascriptExecutor)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 5))
+/////////////////////////////////////////////////
+WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_entry'))
+
+WebUI.delay(3)
+
+emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 5)
+if (emptyCart.size() > 0) {
+	WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'))
+	println('cart not empty')
+	WebUI.delay(5)
+}
+
+addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
+
+///////////////
+WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
+
+WebUI.delay(2)
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
+		Keys.ARROW_DOWN))
+WebUI.delay(2)
+WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
+	Keys.ARROW_DOWN))
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
+		Keys.ENTER))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Add to Cart'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/a_next'))
+WebUI.delay(3)
+WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg1'), 'This order is eligible for "Direct to You" shipping.', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.delay(1)
+WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg2'), '"Direct to You" order must be paid by credit card or cabi Gift Card.', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.delay(1)
+WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg3'), '"Direct to You" order can start being placed 2 days before the show date.', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.delay(1)
+WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 'disabled', 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_guest_add'))
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_show_order_checkout_next'))
+WebUI.delay(1)
+println WebUI.getText(findTestObject('Object Repository/Page_cabi Shipping/div_DTY-warning_popup'))
+WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/div_DTY-warning_popup'), 'This order is eligible for "Direct to You" shipping.\nDo you want to change this order to "Direct to You" and ship immediately?')
+WebUI.delay(1)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/button_DTY_warning_popup_no_ship_DTY'))
+WebUI.delay(1)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'))
+WebUI.delay(3)
+DTYMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Shipping/li_DTY_payment_info'), 5)
+if (DTYMsgs.size() > 0) {
+	sa.assertTrue(false)
+}
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_select'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_new_cc'))
+WebUI.delay(3)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/select_payment_visa'), 10))
+
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_fname'), 'abcd')
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_lname'), 'fghi')
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_card_number'), '4111111111111111')
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_exp_date_month'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_exp_date_year'))
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/input_select_billing_add_same_as_mailing_add'), 10))
+WebUI.delay(3)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_save_shipping_info'), 10))
+WebUI.delay(2)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_review_order'), 10))
+WebUI.delay(2)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_submit_order'), 10))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_order_view'))
+actualOrderStatus= WebUI.getText(findTestObject('Object Repository/Page_cabi Shipping/span_order_status'))
+expectedOrderStatus= 'OPEN'
+sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus))
+println actualOrderStatus
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_back_to_orders'))
+WebUI.delay(2)
+/***********************end place show order without DTY check: CC******************/
+/******************************Editing DTY non opted order: CC*********************/
+TestObject buttonEditDTYNonOptedOrderCC = UtilityMethods.createTestObject('buttonEditDTYNonOptedOrderCC', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'', g3Var, '\')]/parent::td/following-sibling::td[@class=\'column-order\']/a')
+WebUI.click(buttonEditDTYNonOptedOrderCC)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order_shipping'))
+WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'disabled', 20, FailureHandling.CONTINUE_ON_FAILURE)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 10))
+WebUI.delay(2)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order_payments'))
+WebUI.delay(3)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_review_order'), 10))
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order_save_changes'), 10))
+WebUI.delay(2)
+actualOrderStatus= WebUI.getText(findTestObject('Object Repository/Page_cabi Shipping/span_order_status'))
+expectedOrderStatus= 'PENDING SHIPMENT'
+sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus))
+println actualOrderStatus
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_back_to_orders'))
+WebUI.delay(2)
+/******************************end Editing DTY non opted order: CC*********************/
+/******************************place order for hostess*********************/
+String[] hVars= UtilityMethods.splitPersonName(hostess)
+String hVar= UtilityMethods.concat(hVars[1], ", ", hVars[0])
+buttonPlaceOrder = UtilityMethods.createTestObject('buttoPlaceOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'', hVar, '\')]/parent::td/following-sibling::td[1]/button')
+WebUI.click(buttonPlaceOrder)
+WebUI.delay(3)
+List<WebElement> noDTYMsg = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), 5)
+if (noDTYMsg.size() > 0) {
+	sa.assertTrue(false)
+}
+WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+WebUI.delay(3)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 5))
+/////////////////////////////////////////////////
+WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_entry'))
+
+WebUI.delay(3)
+
+emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 5)
+if (emptyCart.size() > 0) {
+	WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'))
+	println('cart not empty')
+	WebUI.delay(5)
+}
+
+addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
+
+addOnStyle2 = findTestData('miscData').getValue('addOnStyle', 2)
+
+///////////////
+WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
+
+WebUI.delay(2)
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
+		Keys.ARROW_DOWN))
+WebUI.delay(2)
+WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
+	Keys.ARROW_DOWN))
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
+		Keys.ENTER))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Add to Cart'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/a_next'))
+WebUI.delay(3)
+noDTYMsg = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg1'), 5)
+if (noDTYMsg.size() > 0) {
+	sa.assertTrue(false)
+}
+List<WebElement> noDTYCheck = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 5)
+if (noDTYCheck.size() > 0) {
+	sa.assertTrue(false)
+}
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_show_order_checkout_next'))
+WebUI.delay(1)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'))
+WebUI.delay(3)
+DTYMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Shipping/li_DTY_payment_info'), 5)
+if (DTYMsgs.size() > 0) {
+	sa.assertTrue(false)
+}
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_select'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_new_cc'))
+WebUI.delay(3)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/select_payment_visa'), 10))
+
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_fname'), 'abcd')
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_lname'), 'fghi')
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_card_number'), '4111111111111111')
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_exp_date_month'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_exp_date_year'))
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/input_select_billing_add_same_as_mailing_add'), 10))
+WebUI.delay(3)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_save_shipping_info'), 10))
+WebUI.delay(2)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_review_order'), 10))
+WebUI.delay(2)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_submit_order'), 10))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_order_view'))
+actualOrderStatus= WebUI.getText(findTestObject('Object Repository/Page_cabi Shipping/span_order_status'))
+expectedOrderStatus= 'OPEN'
+sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus))
+println actualOrderStatus
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_back_to_orders'))
+WebUI.delay(2)
+/******************************end place order for hostess*********************/
+/******************************place order for cohostess***********************/
+String[] chVars= UtilityMethods.splitPersonName(cohostess)
+String chVar= UtilityMethods.concat(chVars[1], ", ", chVars[0])
+buttonPlaceOrder = UtilityMethods.createTestObject('buttoPlaceOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'', chVar, '\')]/parent::td/following-sibling::td[1]/button')
+WebUI.click(buttonPlaceOrder)
+WebUI.delay(3)
+noDTYMsg = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), 5)
+if (noDTYMsg.size() > 0) {
+	sa.assertTrue(false)
+}
+WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+WebUI.delay(3)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 5))
+/////////////////////////////////////////////////
+WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_entry'))
+
+WebUI.delay(3)
+
+emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 5)
+if (emptyCart.size() > 0) {
+	WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'))
+	println('cart not empty')
+	WebUI.delay(5)
+}
+
+addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
+
+addOnStyle2 = findTestData('miscData').getValue('addOnStyle', 2)
+
+///////////////
+WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
+
+WebUI.delay(2)
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
+		Keys.ARROW_DOWN))
+WebUI.delay(2)
+WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
+	Keys.ARROW_DOWN))
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
+		Keys.ENTER))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Add to Cart'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/a_next'))
+WebUI.delay(3)
+noDTYMsg = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg1'), 5)
+if (noDTYMsg.size() > 0) {
+	sa.assertTrue(false)
+}
+noDTYCheck = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 5)
+if (noDTYCheck.size() > 0) {
+	sa.assertTrue(false)
+}
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_show_order_checkout_next'))
+WebUI.delay(1)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'))
+WebUI.delay(3)
+DTYMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Shipping/li_DTY_payment_info'), 5)
+if (DTYMsgs.size() > 0) {
+	sa.assertTrue(false)
+}
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_select'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_new_cc'))
+WebUI.delay(3)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/select_payment_visa'), 10))
+
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_fname'), 'abcd')
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_lname'), 'fghi')
+WebUI.setText(findTestObject('Object Repository/Page_cabi Shipping/select_payment_card_number'), '4111111111111111')
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_exp_date_month'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_exp_date_year'))
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/input_select_billing_add_same_as_mailing_add'), 10))
+WebUI.delay(3)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_save_shipping_info'), 10))
+WebUI.delay(2)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_review_order'), 10))
+WebUI.delay(2)
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_submit_order'), 10))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_order_view'))
+actualOrderStatus= WebUI.getText(findTestObject('Object Repository/Page_cabi Shipping/span_order_status'))
+expectedOrderStatus= 'OPEN'
+sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus))
+println actualOrderStatus
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_back_to_orders'))
+WebUI.delay(2)
+/******************************end place order for cohostess*********************/
 
 
 

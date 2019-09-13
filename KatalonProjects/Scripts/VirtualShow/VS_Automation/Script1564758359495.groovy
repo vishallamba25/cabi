@@ -442,10 +442,9 @@ UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virual
 /*****************************************end video2 Screenshot*************************/
 WebUI.delay(5)
 
-WebUI.wai
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/carouselTestObjects/carouselSaveOutfit'))
 
-guest1Obj.favorites = (guest1Obj.favorites + 5)
+guest1Obj.favorites = (guest1Obj.favorites + 3)
 
 WebUI.switchToWindowIndex(currentTab + 1)
 

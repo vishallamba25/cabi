@@ -40,19 +40,19 @@ String RSTestEnvt = findTestData('envtData').getValue('RSTestEnvt', 1)
 BOURL = findTestData('envtData').getValue('BOURL', 1)
 
 /****************************************************/
-List<VSGuest> actualGuestList = new ArrayList()
+List<WebElement> actualGuestList = new ArrayList()
 
-List<VSGuest> yesList = new ArrayList()
+List<WebElement> yesList = new ArrayList()
 
-List<VSGuest> noList = new ArrayList()
+List<WebElement> noList = new ArrayList()
 
-List<VSGuest> maybeList = new ArrayList()
+List<WebElement> maybeList = new ArrayList()
 
-List<VSGuest> noreplyList = new ArrayList()
+List<WebElement> noreplyList = new ArrayList()
 
-List<VSGuest> presentList = new ArrayList()
+List<WebElement> presentList = new ArrayList()
 
-List<VSGuest> allList = new ArrayList()
+List<WebElement> allList = new ArrayList()
 
 /****************************************************/
 WebUI.callTestCase(findTestCase('VirtualShow/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
@@ -123,7 +123,7 @@ WebUI.switchToFrame(findTestObject('virualShowRSVPOR/dashboard/frame_start_pre_s
 
 //WebUI.delay(5)
 /////////////////////////
-List<VSGuest> isShowNotStarted = WebUiCommonHelper.findWebElements(findTestObject('virualShowRSVPOR/dashboard/button_start_pre_show'), 
+List<WebElement> isShowNotStarted = WebUiCommonHelper.findWebElements(findTestObject('virualShowRSVPOR/dashboard/button_start_pre_show'), 
     5)
 
 if (isShowNotStarted.size() > 0) {
@@ -190,14 +190,14 @@ if (WebUI.verifyElementPresent(findTestObject('Object Repository/virualShowRSVPO
 
 WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
-List<VSGuest> userLogin = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/i_user_login'), 
+List<WebElement> userLogin = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/i_user_login'), 
     5)
 
 if (userLogin.size() == 0) {
     WebUI.refresh()
 }
 
-List<VSGuest> listElement1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'), 
+List<WebElement> listElement1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'), 
     5)
 
 'Validating invited guest\'s \'Yes\' RSVP\r\n'
@@ -232,6 +232,7 @@ executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement
         5))
 
 UtilityMethods.validateGuestsListDashboard(yesList, noList, maybeList, noreplyList, presentList, allList)
+
 WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.delay(2)
@@ -256,6 +257,7 @@ maybeList.remove(guest1Obj)
 WebUI.switchToWindowIndex(currentTab + 1)
 
 UtilityMethods.validateGuestsListDashboard(yesList, noList, maybeList, noreplyList, presentList, allList)
+
 /********************************YES and JOIN************************/
 WebUI.switchToWindowIndex(currentTab + 2)
 
@@ -300,6 +302,7 @@ noList.remove(guest1Obj)
 WebUI.switchToWindowIndex(currentTab + 1)
 
 UtilityMethods.validateGuestsListDashboard(yesList, noList, maybeList, noreplyList, presentList, allList)
+
 /*****************************************************************************/
 /*****************************************camInfocus Screenshot*************************/
 WebUI.delay(2)
@@ -309,17 +312,20 @@ executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement
 
 WebUI.delay(5)
 
-UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/dashboard/div_infocus_both_images'), "infocus")
+UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/dashboard/div_infocus_both_images'), 
+    'infocus')
 
 WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.delay(5)
 
-UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_infocus_both_images_microsite'), "infocus")
+UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_infocus_both_images_microsite'), 
+    'infocus')
 
 WebUI.delay(2)
 
 WebUI.switchToWindowIndex(currentTab + 1)
+
 /*****************************************end camInfocus Screenshot*************************/
 /*****************************************Check All*************************/
 WebUI.delay(2)
@@ -342,7 +348,7 @@ WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.delay(2)
 
-List<VSGuest> guestMicBB = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/guest_mic_brady_bunch'), 
+List<WebElement> guestMicBB = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/guest_mic_brady_bunch'), 
     5)
 
 assert guestMicBB.size() == 0
@@ -360,7 +366,7 @@ WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.delay(2)
 
-List<VSGuest> guestWebcamBB = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/guest_webcam_brady_bunch'), 
+List<WebElement> guestWebcamBB = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/guest_webcam_brady_bunch'), 
     5)
 
 assert guestWebcamBB.size() == 0
@@ -428,21 +434,26 @@ WebUI.delay(3)
 WebUI.click(findTestObject('virualShowRSVPOR/dashboard/playButton'))
 
 WebUI.delay(5)
+
 /*****************************************video1 Screenshot*************************/
-UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/dashboard/div_infocus_both_images'), "video1")
+UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/dashboard/div_infocus_both_images'), 
+    'video1')
 
 /*****************************************end video1 Screenshot*************************/
-
 WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.delay(5)
+
 /*****************************************video2 Screenshot*************************/
-UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_infocus_both_images_microsite'), "video2")
+UtilityMethods.takeWebElementScreenshot(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_infocus_both_images_microsite'), 
+    'video2')
 
 /*****************************************end video2 Screenshot*************************/
-WebUI.delay(5)
+not_run: WebUI.delay(5)
 
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/carouselTestObjects/carouselSaveOutfit'))
+WebUI.waitForElementClickable(findTestObject('virualShowRSVPOR/carouselTestObjects/carouselSaveOutfit'), 5)
+
+WebUI.click(findTestObject('virualShowRSVPOR/carouselTestObjects/carouselSaveOutfit'))
 
 guest1Obj.favorites = (guest1Obj.favorites + 3)
 
@@ -484,16 +495,16 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsi
 WebUI.delay(3)
 
 //WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
-
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_add_to_bag_from_fav'))
 
 WebUI.delay(3)
 
-List<VSGuest> noOfOptions = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_no_of_options_for_add_to_bag_item'), 
+List<WebElement> noOfOptions = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_no_of_options_for_add_to_bag_item'), 
     5)
 
 for (int i = 1; i <= noOfOptions.size(); i++) {
-	WebUI.delay(3)
+    WebUI.delay(3)
+
     TestObject dropDown = UtilityMethods.createTestObject('div_drop_down', '(//div[@class=\'dropdown-toggle\']/div[@class=\'dropdown-button\']/div[@class=\'drop-caret\'])[', 
         Integer.toString(i), ']')
 
@@ -656,31 +667,42 @@ WebUI.delay(3)
 
 WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
 
-List<WebElement> okGotIt = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_got_it'), 5)
+List<WebElement> okGotIt = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_got_it'), 
+    5)
+
 if (okGotIt.size() > 0) {
-	WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_got_it'))
+    WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_got_it'))
 }
+
 WebUI.delay(3)
 
 //editing individual order
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/a_edit_first_individual_product'))
+
 WebUI.delay(5)
+
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/select_new_size'))
+
 WebUI.delay(5)
-WebUI.setText(findTestObject('Object Repository/ReplicatedSite/input_new_qty'), "3")
+
+WebUI.setText(findTestObject('Object Repository/ReplicatedSite/input_new_qty'), '3')
+
 WebUI.delay(3)
+
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_update_individual_item'))
+
 WebUI.delay(3)
+
 //end editing individual order
-
-
-
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/a_checkout_and_add_to_show'), 
         5))
 
-List<WebElement> chkOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/a_checkout_and_add_to_show'), 15)
+List<WebElement> chkOut = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/a_checkout_and_add_to_show'), 
+    15)
+
 if (chkOut.size() > 0) {
-	executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/a_checkout_and_add_to_show'), 5));
+    executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/a_checkout_and_add_to_show'), 
+            5))
 }
 
 /*
@@ -798,7 +820,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/ReplicatedSite/h1_than
 
 WebUI.delay(2)
 
-guest1Obj.ordered = (guest1Obj.ordered + 5)
+guest1Obj.ordered = (guest1Obj.ordered + 3)
 
 guest1Obj.favorites = (guest1Obj.favorites - 1)
 
@@ -807,10 +829,9 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/addItemsLink'))
 WebUI.delay(5)
 
 //WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
-
 title = WebUI.getWindowTitle()
 
-println (title)
+println(title)
 
 WebUI.verifyMatch(title, 'Show microsite - Cabi Fall 2019 Collection', true, FailureHandling.CONTINUE_ON_FAILURE)
 

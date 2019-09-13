@@ -1,6 +1,18 @@
-import commonUtility.UtilityMethods
+import java.text.DateFormat
+import java.text.SimpleDateFormat
 
-String s= "ORDER STATUS : PENDING SHIPMENT ORDER # SH708207504 "
-String user="PENDING"
+//String pattern = "MM/dd/yyyy HH:mm:ss";
 
-println s.contains('completed')
+//String pattern = "MM";
+
+DateFormat df = new SimpleDateFormat("yyyy");
+
+Date today = Calendar.getInstance().getTime();  
+Calendar c = Calendar.getInstance();
+c.setTime(today);
+c.add(Calendar.DATE, 27);
+Date currentDatePlusOne = c.getTime();
+String todayAsString = df.format(currentDatePlusOne);
+
+int MM= todayAsString as Integer
+println MM

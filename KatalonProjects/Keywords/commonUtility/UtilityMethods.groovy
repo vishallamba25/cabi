@@ -235,7 +235,7 @@ public class UtilityMethods {
 		}
 	}
 
-	//extract 'test18' from whole backoffice url string provided
+	//extracts 'test18' from whole backoffice url string provided
 	@Keyword
 	public static String getEnvt(String BOURL){
 		String user=""

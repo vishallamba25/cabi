@@ -63,7 +63,7 @@ WebUI.click(findTestObject('ReplicatedSite/rsNewUser/noThanksLabel'))
 
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/continueButton'))
 
-WebUI.delay(3)
+WebUI.delay(5)
 
 WebDriver driver = DriverFactory.getWebDriver()
 

@@ -495,6 +495,9 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsi
 WebUI.delay(3)
 
 //WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
+
+WebUI.delay(3)
+
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_add_to_bag_from_fav'))
 
 WebUI.delay(3)

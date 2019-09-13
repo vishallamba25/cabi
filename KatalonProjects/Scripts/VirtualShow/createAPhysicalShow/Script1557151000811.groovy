@@ -249,7 +249,7 @@ assert flag == true
 /**************verifying host, cohost, guest1, guest2**************************/
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next'))
 
-WebUI.delay(5)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview'))
 

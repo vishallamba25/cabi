@@ -823,7 +823,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/ReplicatedSite/h1_than
 
 WebUI.delay(2)
 
-guest1Obj.ordered = (guest1Obj.ordered + 3)
+guest1Obj.ordered = (guest1Obj.ordered + 5)
 
 guest1Obj.favorites = (guest1Obj.favorites - 1)
 

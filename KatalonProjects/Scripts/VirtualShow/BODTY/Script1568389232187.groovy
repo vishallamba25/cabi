@@ -37,7 +37,7 @@ String cohostess = findTestData(dataFile).getValue('cohostess', 1)
 /***************getting DTY eleigible date: Two days after today*************/
 DateFormat dfMM = new SimpleDateFormat('MM')
 
-DateFormat dfDD = new SimpleDateFormat('DD')
+DateFormat dfDD = new SimpleDateFormat('dd')
 
 DateFormat dfYYYY = new SimpleDateFormat('yyyy')
 
@@ -57,7 +57,7 @@ String vsyear = dfYYYY.format(newShowDate)
 String vsmonth = dfMM.format(newShowDate)
 
 String vsday = dfDD.format(newShowDate)
-
+println UtilityMethods.concat("from DTY: ", vsday, " ", vsmonth, " ", vsyear)
 /***************end getting DTY eleigible date*********/
 /****************************************************/
 WebUI.callTestCase(findTestCase('VirtualShow/createAPhysicalShow'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : '', ('hostess') : ''

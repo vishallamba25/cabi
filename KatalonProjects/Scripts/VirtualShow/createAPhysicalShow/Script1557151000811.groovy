@@ -108,7 +108,7 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time'))
 
 /***********************************Calendar date*****************************/
-println UtilityMethods.concat(vsday, " ", vsmonth, " ", vsyear)
+println UtilityMethods.concat(" ", vsday, " ", vsmonth, " ", vsyear)
 int year = vsyear as Integer //((findTestData('virtualShowData').getValue('vsyear', 1)) as Integer)
 
 int month = vsmonth as Integer//((findTestData('virtualShowData').getValue('vsmonth', 1)) as Integer)

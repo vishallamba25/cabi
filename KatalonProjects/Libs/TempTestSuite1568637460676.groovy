@@ -28,8 +28,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowSuites\\DashboardSuite\\20190916_114001\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowSuites\\DashboardSuite\\20190916_180740\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/VirtualShowSuites/DashboardSuite', suiteProperties, [new TestCaseBinding('Test Cases/VirtualShow/VS_Automation', 'Test Cases/VirtualShow/VS_Automation',  null), new TestCaseBinding('Test Cases/VirtualShow/BODTY', 'Test Cases/VirtualShow/BODTY',  null)])
+TestCaseMain.startTestSuite('Test Suites/VirtualShowSuites/DashboardSuite', suiteProperties, [new TestCaseBinding('Test Cases/VirtualShow/VS_Automation', 'Test Cases/VirtualShow/VS_Automation',  null)])

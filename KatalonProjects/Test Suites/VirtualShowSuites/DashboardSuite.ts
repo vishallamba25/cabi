@@ -25,7 +25,7 @@
    <testCaseLink>
       <guid>ceb6c14c-d712-41bb-af9c-021694a2fc74</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/VirtualShow/BODTY</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

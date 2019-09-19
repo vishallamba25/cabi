@@ -1,6 +1,9 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import java.util.List
+
 import org.openqa.selenium.By as By
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.WebDriver as WebDriver
@@ -738,8 +741,13 @@ executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement
         5))
 
 //WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_pay_with_credit'))
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/button_add_another_card'), 
-        5))
+
+
+List<WebElement> addAnotherCards= WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/button_add_another_card'), 5)
+if(!addAnotherCards.isEmpty()){
+	executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/button_add_another_card'), 5))
+}
+
 
 //WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_add_another_card'))
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/select_credit_card_type'), 

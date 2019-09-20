@@ -75,7 +75,7 @@ WebUI.callTestCase(findTestCase('VirtualShow/createAPhysicalShow'), [('BOURL') :
 /*WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.navigateToUrl('https://test18.cliotest.com/backoffice/control/ShowOverview?showId=104723620')*/
-/***********************place show order with DTY check******************/
+/***********************place show order******************/
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders'))
 
 String[] g1Vars = UtilityMethods.splitPersonName(guest1)
@@ -212,6 +212,7 @@ for (WebElement we : paymentOptions) {
         validPayOption = true
     }
 }
+sa.assertTrue(validPayOption)
 
 WebUI.delay(3)
 
@@ -246,8 +247,64 @@ sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus))
 
 println(actualOrderStatus)
 
-/***********************end palce show order with DTY check******************/
+/***********************end palce show order *****************************************/
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_back_to_orders'))
+WebUI.delay(2)
+String ActualDTYNonOptedOrderStatus = WebUI.getText(UtilityMethods.createTestObject('DTYOptedOrderStatus', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'',
+	g1Var, '\')]/parent::td/following-sibling::td[@class=\'order-status\']'))
 
+sa.assertEquals(ActualDTYNonOptedOrderStatus, 'Completed')
+/******************************Editing order*********************/
+TestObject buttonEditDTYOptedOrder = UtilityMethods.createTestObject('buttonEditDTYOptedOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'',
+	g1Var, '\')]/parent::td/following-sibling::td[@class=\'column-order\']/a')
+
+WebUI.click(buttonEditDTYOptedOrder)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order'))
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order_shipping'))
+
+/******************************DTY msgs verification***************************************/
+WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg1'), 'This order is not yet eligible for "Direct to You" shipping.', 
+    FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.delay(1)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg2'), '"Direct to You" order must be paid by credit card or cabi Gift Card.', 
+    FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.delay(1)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg3'), '"Direct to You" order can start being placed 2 days before the show date.', 
+    FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.delay(1)
+
+hasAtributeDisabled= WebUI.verifyElementHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'disabled', 
+    20, FailureHandling.CONTINUE_ON_FAILURE)
+if(hasAtributeDisabled){
+	WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 'disabled',
+		'true', 20)
+}
+
+span_place_dty_order_greys = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Shipping/span_place_dty_order_grey'),
+	20)
+if (span_place_dty_order_greys.size() !=1) {
+	sa.fail()
+}
+
+WebUI.verifyElementHasAttribute(findTestObject('Page_cabi Shipping/span_dty_checkmark_grey'), 'style', 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/span_dty_checkmark_grey'), 'style', 'background-color: rgb(211, 211, 211); cursor: default;', 20)
+
+/******************************end DTY msgs verification***************************************/
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_edit_order_cancel'))
+
+WebUI.delay(1)
+
+/******************************end Editing order*********************/
 
 
 

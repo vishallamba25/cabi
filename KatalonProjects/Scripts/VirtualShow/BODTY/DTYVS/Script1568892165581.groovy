@@ -59,13 +59,16 @@ String vsmonth = dfMM.format(newShowDate)
 String vsday = dfDD.format(newShowDate)
 println UtilityMethods.concat("from DTY: ", vsday, " ", vsmonth, " ", vsyear)
 /***************end getting DTY eleigible date*********/
-/******************************************************/
-WebUI.callTestCase(findTestCase('VirtualShow/createAPhysicalShow'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : '', ('hostess') : ''
-        , ('cohostess') : '', ('vsday') : vsday, ('vsmonth') : vsmonth, ('vsyear') : vsyear], FailureHandling.STOP_ON_FAILURE)
+/****************************************************/
+WebUI.callTestCase(findTestCase('VirtualShow/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
+        , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
+        , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : '', ('vsday') : vsday
+        , ('vsmonth') : vsmonth, ('vsyear') : vsyear], FailureHandling.CONTINUE_ON_FAILURE)
 
 /*WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.navigateToUrl('https://test18.cliotest.com/backoffice/control/ShowOverview?showId=104723620')*/
+WebUI.navigateToUrl('https://test21.cliotest.com/backoffice/control/VSStylistDashboard?showId=104653490&consultantPartyId=100000042')
+*/
 /***********************place show order with DTY check******************/
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders'))
 
@@ -162,32 +165,10 @@ WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/lab
 
 WebUI.delay(1)
 
-WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 'disabled', 
-    20, FailureHandling.CONTINUE_ON_FAILURE)
 
-println(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 
-        5).getAttribute('disabled'))
 
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 
-        5))
 
-WebUI.delay(5)
 
-WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 'disabled', 
-    'true', 20)
-
-println(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 
-        5).getAttribute('disabled'))
-
-WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc_label'), 
-    'style', 'color: rgb(211, 211, 211);', 20)
-
-WebUI.delay(1)
-
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 
-        5))
-
-WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_show_order_checkout_next'))
 
@@ -344,9 +325,6 @@ WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/lab
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(1)
-
-WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 'disabled', 
-    20, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_guest_add'))
 

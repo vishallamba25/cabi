@@ -13,19 +13,19 @@
    <testCaseLink>
       <guid>ab7ea912-da91-48cb-844c-c579540fd545</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/VirtualShow/VS_Automation</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>263189cf-d9de-4bc9-80a5-5dd4211b92b6</guid>
+      <guid>dbabc8f6-8cfc-4160-af76-3bb0cf703386</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/VirtualShow/VS_hostess</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ceb6c14c-d712-41bb-af9c-021694a2fc74</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/VirtualShow/BODTY</testCaseId>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/VirtualShow/newUserRegistrationRS</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b3c64562-b960-41ee-a136-8e30e4dd4fb0</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

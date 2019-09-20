@@ -1,9 +1,7 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import java.util.List
-
+import java.util.List as List
 import org.openqa.selenium.By as By
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.WebDriver as WebDriver
@@ -58,9 +56,16 @@ List<WebElement> presentList = new ArrayList()
 List<WebElement> allList = new ArrayList()
 
 /****************************************************/
+String vsyear = (findTestData('virtualShowData').getValue('vsyear', 1)) 
+
+String vsmonth = (findTestData('virtualShowData').getValue('vsmonth', 1)) 
+
+String vsday = (findTestData('virtualShowData').getValue('vsday', 1)) 
+
 WebUI.callTestCase(findTestCase('VirtualShow/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
         , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
-        , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : ''], FailureHandling.CONTINUE_ON_FAILURE)
+        , ('verifyGuestCount') : '', ('verifyGuest1') : '', ('verifyGuest2') : '', ('cabiTestEnvt') : '', ('vsday') : vsday
+        , ('vsmonth') : vsmonth, ('vsyear') : vsyear], FailureHandling.CONTINUE_ON_FAILURE)
 
 /*WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.CONTINUE_ON_FAILURE)
@@ -498,7 +503,6 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsi
 WebUI.delay(3)
 
 //WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/frame_collection_rs'), 60)
-
 WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_add_to_bag_from_fav'))
@@ -741,13 +745,13 @@ executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement
         5))
 
 //WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_pay_with_credit'))
+List<WebElement> addAnotherCards = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/button_add_another_card'), 
+    5)
 
-
-List<WebElement> addAnotherCards= WebUiCommonHelper.findWebElements(findTestObject('Object Repository/ReplicatedSite/button_add_another_card'), 5)
-if(!addAnotherCards.isEmpty()){
-	executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/button_add_another_card'), 5))
+if (!(addAnotherCards.isEmpty())) {
+    executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/button_add_another_card'), 
+            5))
 }
-
 
 //WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_add_another_card'))
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/select_credit_card_type'), 
@@ -870,4 +874,3 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/button_
 WebUI.delay(3)
 
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/dashboard/p_show_is_over'), 'This show is not active.')
-

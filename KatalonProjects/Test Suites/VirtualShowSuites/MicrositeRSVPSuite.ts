@@ -15,6 +15,24 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/VirtualShow/createShow</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e887828d-a671-439c-9809-fe644b9a44e1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7b94033b-27cf-4a03-866c-4879dd8138f4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e1e9a6d9-471b-4964-a59d-948ba2a1e377</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>fa4c519a-7f1f-4ff5-b8e1-d156c84d61aa</guid>

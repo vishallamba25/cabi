@@ -979,11 +979,35 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_back_to_order
 
 WebUI.delay(2)
 
-/*************getting DTY order number for warehouse shipping*****************/
+/*************DTY order warehouse shipping*****************/
 buttonEditDTYOptedOrder = UtilityMethods.createTestObject('buttonEditDTYOptedOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'',
 	g1Var, '\')]/parent::td/following-sibling::td[@class=\'column-order\']/a')
 
-GlobalVariable.retailOrderID = WebUI.getText(buttonEditDTYOptedOrder)
-println GlobalVariable.retailOrderID
+String DTYOrderID = WebUI.getText(buttonEditDTYOptedOrder)
+println DTYOrderID
 println WebUI.getText(buttonEditDTYOptedOrder)
+
+int currentTab = WebUI.getWindowIndex()
+executor.executeScript('window.open();')
+WebUI.switchToWindowIndex(currentTab + 1)
+
+
+WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : DTYOrderID], FailureHandling.STOP_ON_FAILURE)
+/*************Non-DTY order warehouse shipping*****************/
+
+/*WebUI.switchToWindowIndex(currentTab)
+WebUI.delay(2)
+buttonEditDTYNonOptedOrder = UtilityMethods.createTestObject('buttonEditDTYNonOptedOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'', 
+    g2Var, '\')]/parent::td/following-sibling::td[@class=\'column-order\']/a')
+
+String NonDTYOrderID = WebUI.getText(buttonEditDTYNonOptedOrder)
+println NonDTYOrderID
+println WebUI.getText(buttonEditDTYNonOptedOrder)
+///////////////Close the Show
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/input_close_show'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/input_close_show_confirm'))*/
+
+
+
+
 

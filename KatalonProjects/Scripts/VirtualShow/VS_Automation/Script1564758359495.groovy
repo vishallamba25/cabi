@@ -603,7 +603,6 @@ WebUI.switchToFrame(findTestObject('Object Repository/virualShowRSVPOR/Page_Show
 ////////////iframe
 WebDriverWait wait2 = new WebDriverWait(driver, 10)
 
-//wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div/h2/a/span[contains(text(), 'Beast Belt')]")));
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/button_collection_save_to_fav'))
 
 WebUI.delay(3)

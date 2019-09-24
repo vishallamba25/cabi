@@ -1,0 +1,55 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+DashboardSuite,Chrome 76.0.3809.132,,2019-09-24 11:52:12,2019-09-24 11:54:01,1m - 48.469s,FAILED
+,,,,,,
+Test Cases/VirtualShow/VS_Automation,Chrome 76.0.3809.132,,2019-09-24 11:52:13,2019-09-24 11:54:00,1m - 47.355s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 76.0.3809.132,,2019-09-24 11:52:13,2019-09-24 11:52:13,0.137s,PASSED
+"dataFile = ""micrositeData""",Chrome 76.0.3809.132,,2019-09-24 11:52:14,2019-09-24 11:52:14,0.001s,PASSED
+"guest1Mail = findTestData(dataFile).getValue(""guest1Mail"", 1)",Chrome 76.0.3809.132,,2019-09-24 11:52:14,2019-09-24 11:52:15,1.098s,PASSED
+"guest1Pass = findTestData(dataFile).getValue(""guest1Pass"", 1)",Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.084s,PASSED
+"dataFile = ""virtualShowData""",Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.001s,PASSED
+"hostess = findTestData(dataFile).getValue(""hostess"", 1)",Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.121s,PASSED
+"cohostess = findTestData(dataFile).getValue(""cohostess"", 1)",Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.131s,PASSED
+"guest1 = findTestData(dataFile).getValue(""guest1"", 1)",Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.045s,PASSED
+"guest2 = findTestData(dataFile).getValue(""guest2"", 1)",Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.051s,PASSED
+"RSTestEnvt = findTestData(""envtData"").getValue(""RSTestEnvt"", 1)",Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.073s,PASSED
+"BOURL = findTestData(""envtData"").getValue(""BOURL"", 1)",Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.066s,PASSED
+actualGuestList = new java.util.ArrayList(),Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.004s,PASSED
+yesList = new java.util.ArrayList(),Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.001s,PASSED
+noList = new java.util.ArrayList(),Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.003s,PASSED
+maybeList = new java.util.ArrayList(),Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.004s,PASSED
+noreplyList = new java.util.ArrayList(),Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.002s,PASSED
+presentList = new java.util.ArrayList(),Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.001s,PASSED
+allList = new java.util.ArrayList(),Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:15,0.001s,PASSED
+"vsyear = findTestData(""virtualShowData"").getValue(""vsyear"", 1)",Chrome 76.0.3809.132,,2019-09-24 11:52:15,2019-09-24 11:52:16,0.106s,PASSED
+"vsmonth = findTestData(""virtualShowData"").getValue(""vsmonth"", 1)",Chrome 76.0.3809.132,,2019-09-24 11:52:16,2019-09-24 11:52:16,0.072s,PASSED
+"vsday = findTestData(""virtualShowData"").getValue(""vsday"", 1)",Chrome 76.0.3809.132,,2019-09-24 11:52:16,2019-09-24 11:52:16,0.042s,PASSED
+"callTestCase(findTestCase(""VirtualShow/createShow""), [""testEnvt"":"""", ""username"":"""", ""password"":"""", ""stylist"":"""", ""hostess"":"""", ""cohostess"":"""", ""guest1"":"""", ""guest2"":"""", ""verifyHostess"":"""", ... ], CONTINUE_ON_FAILURE)",Chrome 76.0.3809.132,,2019-09-24 11:52:16,2019-09-24 11:53:27,1m - 11.779s,FAILED
+hostessObj = new commonUtility.VSGuest(hostess),Chrome 76.0.3809.132,,2019-09-24 11:53:27,2019-09-24 11:53:27,0.007s,PASSED
+cohostessObj = new commonUtility.VSGuest(cohostess),Chrome 76.0.3809.132,,2019-09-24 11:53:27,2019-09-24 11:53:27,0.001s,PASSED
+guest1Obj = new commonUtility.VSGuest(guest1),Chrome 76.0.3809.132,,2019-09-24 11:53:27,2019-09-24 11:53:27,0.006s,PASSED
+guest2Obj = new commonUtility.VSGuest(guest2),Chrome 76.0.3809.132,,2019-09-24 11:53:27,2019-09-24 11:53:27,0.002s,PASSED
+driver = getWebDriver(),Chrome 76.0.3809.132,,2019-09-24 11:53:27,2019-09-24 11:53:27,0.044s,PASSED
+executor = driver,Chrome 76.0.3809.132,,2019-09-24 11:53:27,2019-09-24 11:53:28,0.118s,PASSED
+currentPage = getUrl(),Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.041s,PASSED
+currentTab = getWindowIndex(),Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.028s,PASSED
+driver = getWebDriver(),Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.000s,PASSED
+favorites = 0,Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.000s,PASSED
+favorites = 0,Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.001s,PASSED
+favorites = 0,Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.001s,PASSED
+favorites = 0,Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.000s,PASSED
+allList.add(hostessObj),Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.000s,PASSED
+allList.add(cohostessObj),Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.001s,PASSED
+allList.add(guest1Obj),Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.001s,PASSED
+allList.add(guest2Obj),Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.000s,PASSED
+yesList.add(hostessObj),Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.000s,PASSED
+yesList.add(cohostessObj),Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.001s,PASSED
+noreplyList.add(guest1Obj),Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.001s,PASSED
+noreplyList.add(guest2Obj),Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:28,0.004s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_dashboard""))",Chrome 76.0.3809.132,,2019-09-24 11:53:28,2019-09-24 11:53:34,6.075s,PASSED
+delay(5),Chrome 76.0.3809.132,,2019-09-24 11:53:34,2019-09-24 11:53:39,5.009s,PASSED
+"switchToFrame(findTestObject(""virualShowRSVPOR/dashboard/frame_start_pre_show""), 60)",Chrome 76.0.3809.132,,2019-09-24 11:53:39,2019-09-24 11:53:39,0.196s,PASSED
+"isShowNotStarted = findWebElements(findTestObject(""virualShowRSVPOR/dashboard/button_start_pre_show""), 5)",Chrome 76.0.3809.132,,2019-09-24 11:53:39,2019-09-24 11:53:39,0.111s,PASSED
+if (isShowNotStarted.size() > 0),Chrome 76.0.3809.132,,2019-09-24 11:53:39,2019-09-24 11:53:42,3.147s,PASSED
+delay(5),Chrome 76.0.3809.132,,2019-09-24 11:53:42,2019-09-24 11:53:47,5.003s,PASSED
+switchToWindowIndex(currentTab + 1),Chrome 76.0.3809.132,,2019-09-24 11:53:47,2019-09-24 11:53:47,0.038s,PASSED
+"UtilityMethods.validateGuestsListDashboard(yesList, noList, maybeList, noreplyList, presentList, allList)",Chrome 76.0.3809.132,,2019-09-24 11:53:47,2019-09-24 11:54:00,12.662s,FAILED

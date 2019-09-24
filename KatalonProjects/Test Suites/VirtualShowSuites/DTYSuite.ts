@@ -17,9 +17,21 @@
       <testCaseId>Test Cases/VirtualShow/BODTY/DTY</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c1bd1e89-fb02-4a4e-8775-8ded814e7609</guid>
+      <guid>b95d0ba7-b5db-43e7-a9b7-83f93d682cca</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
+      <testCaseId>Test Cases/NewArrival/warehouseShipping</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0b0eafcb-4f79-4490-a114-219634a06ffe</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c1bd1e89-fb02-4a4e-8775-8ded814e7609</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/VirtualShow/BODTY/DTYNotEligible</testCaseId>
    </testCaseLink>
    <testCaseLink>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//select[@name='sizeSelect']/option[@value='L']</value>
+         <value>//select[@name='sizeSelect']/option[last()]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

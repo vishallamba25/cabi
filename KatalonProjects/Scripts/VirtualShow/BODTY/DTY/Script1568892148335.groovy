@@ -1,27 +1,25 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import java.text.DateFormat as DateFormat
 import java.text.SimpleDateFormat as SimpleDateFormat
+
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.testng.asserts.SoftAssert as SoftAssert
+
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 import commonUtility.UtilityMethods as UtilityMethods
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
+
 
 /**********vaiable initialization********************/
 String dataFile = 'virtualShowData'
@@ -66,6 +64,10 @@ WebUI.callTestCase(findTestCase('VirtualShow/createAPhysicalShow'), [('BOURL') :
 /*WebUI.openBrowser('')
 WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.navigateToUrl('https://test18.cliotest.com/backoffice/control/ShowOverview?showId=104723620')*/
+
+WebDriver driver = DriverFactory.getWebDriver()
+JavascriptExecutor executor = ((driver) as JavascriptExecutor)
+
 /***********************place show order with DTY check******************/
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders'))
 
@@ -86,13 +88,12 @@ println(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/lab
 
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), DTYMsg, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
+//WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
 WebUI.delay(3)
 
-WebDriver driver = DriverFactory.getWebDriver()
 
-JavascriptExecutor executor = ((driver) as JavascriptExecutor)
 
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
         5))
@@ -271,7 +272,7 @@ println(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/lab
 
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), DTYMsg, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
 
 WebUI.delay(3)
 
@@ -551,7 +552,7 @@ println(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/lab
 
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), DTYMsg, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
 
 WebUI.delay(3)
 
@@ -742,7 +743,7 @@ if (noDTYMsg.size() > 0) {
     sa.assertTrue(false)
 }
 
-WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
 
 WebUI.delay(3)
 
@@ -871,7 +872,7 @@ if (noDTYMsg.size() > 0) {
     sa.assertTrue(false)
 }
 
-WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
 
 WebUI.delay(3)
 
@@ -977,4 +978,12 @@ println(actualOrderStatus)
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_back_to_orders'))
 
 WebUI.delay(2)
+
+/*************getting DTY order number for warehouse shipping*****************/
+buttonEditDTYOptedOrder = UtilityMethods.createTestObject('buttonEditDTYOptedOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'',
+	g1Var, '\')]/parent::td/following-sibling::td[@class=\'column-order\']/a')
+
+GlobalVariable.retailOrderID = WebUI.getText(buttonEditDTYOptedOrder)
+println GlobalVariable.retailOrderID
+println WebUI.getText(buttonEditDTYOptedOrder)
 

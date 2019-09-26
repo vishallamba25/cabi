@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='custom-input password']/input[@name='password']</value>
+         <value>//div[@class='custom-input password']/input[@name='password']/parent::div</value>
       </entry>
       <entry>
          <key>BASIC</key>

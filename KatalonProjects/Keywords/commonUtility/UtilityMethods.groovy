@@ -12,6 +12,7 @@ import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
+import org.w3c.dom.xpath.XPathResult
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.ConditionType
@@ -252,4 +253,5 @@ public class UtilityMethods {
 		println user
 		return user;
 	}
+	
 }

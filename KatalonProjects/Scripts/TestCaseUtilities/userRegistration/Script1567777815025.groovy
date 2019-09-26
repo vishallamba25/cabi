@@ -68,7 +68,8 @@ for (int row = 1; row <= noOfContacts; row++) {
 	
 	WebUI.delay(3)
 	WebElement element1 = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/User_Registration/input_fname'),30)
-	WebUI.executeJavaScript("arguments[0].value='Your Value'", Arrays.asList(element1))
+	//WebUI.executeJavaScript("arguments[0].value='Your Value'", Arrays.asList(element1))
+	WebUI.executeJavaScript("arguments[0].click", Arrays.asList(element1))
 	WebUI.click(findTestObject('User_Registration/input_fname_div'))
 	WebUI.setText(findTestObject('Object Repository/User_Registration/input_fname'), firstName)
 	
@@ -79,15 +80,15 @@ for (int row = 1; row <= noOfContacts; row++) {
 	WebUI.click(findTestObject('User_Registration/input_lname_div'))
 	WebUI.setText(findTestObject('Object Repository/User_Registration/input_lname'), lastName)
 	
-	element1 = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/User_Registration/input_lname'),30)
+	element1 = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/User_Registration/input_pass'),30)
 	WebUI.executeJavaScript("arguments[0].value='gfkfdkhj'", Arrays.asList(element1))
-	WebUI.click(findTestObject('User_Registration/input_lname_div'))
-	WebUI.setText(findTestObject('Object Repository/User_Registration/input_lname'), lastName)
+	WebUI.click(findTestObject('Object Repository/User_Registration/input_pass_div'))
+	WebUI.setText(findTestObject('Object Repository/User_Registration/input_pass'), pass)
 	
-	element1 = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/User_Registration/input_lname'),30)
+	element1 = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/User_Registration/input_confirm-pass'),30)
 	WebUI.executeJavaScript("arguments[0].value='gfkfdkhj'", Arrays.asList(element1))
-	WebUI.click(findTestObject('User_Registration/input_lname_div'))
-	WebUI.setText(findTestObject('Object Repository/User_Registration/input_lname'), lastName)
+	WebUI.click(findTestObject('Object Repository/User_Registration/input_confirm-pass_div'))
+	WebUI.setText(findTestObject('Object Repository/User_Registration/input_confirm-pass'), pass)
 	
 	//div[@class='custom-input']/input[@name='firstName']/following-sibling::span
 	

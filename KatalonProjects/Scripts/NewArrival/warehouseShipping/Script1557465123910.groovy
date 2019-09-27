@@ -10,7 +10,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 //orderId="PR707945104"
 //WebUI.openBrowser("")
-orderId= GlobalVariable.retailOrderID
+//orderId= GlobalVariable.retailOrderID
 println orderId
 WebUI.callTestCase(findTestCase('TestCaseUtilities/cabiWarehouseLogin'), [('CWURL') : '', ('CWuser') : '', ('CWpass') : ''], FailureHandling.CONTINUE_ON_FAILURE)
 

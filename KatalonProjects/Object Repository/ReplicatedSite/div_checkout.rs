@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='iframe-header-links']/div[@class='iframe-header-link' and contains(text(), ' CHECK OUT ')]</value>
+         <value>//app-minimalized-header/div/div/span/a[@href='/cart']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

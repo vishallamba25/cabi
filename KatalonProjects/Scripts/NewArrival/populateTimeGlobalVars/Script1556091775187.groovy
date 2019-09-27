@@ -35,3 +35,6 @@ GlobalVariable.CCRetail= UtilityMethods.getTestData(dataFile, 'CCRetail', row)
 GlobalVariable.CCShow= UtilityMethods.getTestData(dataFile, 'CCShow', row)
 
 GlobalVariable.BOEblast= UtilityMethods.getTestData(dataFile, 'BOEblast', row)
+
+println row
+println GlobalVariable.BOPersonal

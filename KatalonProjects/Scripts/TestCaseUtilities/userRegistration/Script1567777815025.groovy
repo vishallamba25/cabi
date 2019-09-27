@@ -76,19 +76,25 @@ for (int row = 1; row <= noOfContacts; row++) {
 	//WebUI.executeJavaScript("arguments[0].value='Your Value'", Arrays.asList(element1))
 	
 	element1 = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/User_Registration/input_lname'),30)
-	WebUI.executeJavaScript("arguments[0].value='gfkfdkhj'", Arrays.asList(element1))
+	WebUI.executeJavaScript("arguments[0].click", Arrays.asList(element1))
 	WebUI.click(findTestObject('User_Registration/input_lname_div'))
 	WebUI.setText(findTestObject('Object Repository/User_Registration/input_lname'), lastName)
 	
 	element1 = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/User_Registration/input_pass'),30)
-	WebUI.executeJavaScript("arguments[0].value='gfkfdkhj'", Arrays.asList(element1))
+	WebUI.executeJavaScript("arguments[0].click", Arrays.asList(element1))
 	WebUI.click(findTestObject('Object Repository/User_Registration/input_pass_div'))
 	WebUI.setText(findTestObject('Object Repository/User_Registration/input_pass'), pass)
 	
 	element1 = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/User_Registration/input_confirm-pass'),30)
-	WebUI.executeJavaScript("arguments[0].value='gfkfdkhj'", Arrays.asList(element1))
+	WebUI.executeJavaScript("arguments[0].click", Arrays.asList(element1))
 	WebUI.click(findTestObject('Object Repository/User_Registration/input_confirm-pass_div'))
 	WebUI.setText(findTestObject('Object Repository/User_Registration/input_confirm-pass'), pass)
+	
+	WebUI.executeJavaScript("arguments[0].click", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/User_Registration/check_email_div'),30)))
+	WebUI.click(findTestObject('Object Repository/User_Registration/check_email_div'))
+	
+	WebUI.executeJavaScript("arguments[0].click", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/User_Registration/button_submit'),30)))
+	WebUI.click(findTestObject('Object Repository/User_Registration/button_submit'))
 	
 	//div[@class='custom-input']/input[@name='firstName']/following-sibling::span
 	
@@ -107,8 +113,7 @@ for (int row = 1; row <= noOfContacts; row++) {
 	executor.executeScript("document.evaluate('//div[@class=\\'custom-input password\\']/input[@name=\\'password\\']', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.value='ABCD';")
 	executor.executeScript("document.evaluate('//div[@class=\\'custom-input password\\']/input[@name=\\'confirmPassword\\']', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.value='ABCD';")
 	
-	WebUI.click(findTestObject('Object Repository/User_Registration/check_email'))
-	WebUI.click(findTestObject('Object Repository/User_Registration/button_submit'))
+	
 	
 	/*//executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/User_Registration/input_fname'), 10))
 	WebUI.sendKeys(findTestObject('Object Repository/User_Registration/input_fname'), firstName)

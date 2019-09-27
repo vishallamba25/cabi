@@ -1,0 +1,1743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="NewArrivalsSuite" time="300" tests="0" failures="2" errors="0">
+   <testsuite name="NewArrivalsSuite" tests="0" failures="2" errors="0" time="300" timestamp="2019-09-27 17:55:24" hostname="user - 10.0.102.244" id="Test Suites/NewArrivalsSuites/NewArrivalsSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20190927_175520"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20190927_175520\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 10.0.102.244"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 77.0.3865.90"/>
+         <property name="hostAddress" value="10.0.102.244"/>
+         <property name="sessionId" value="369f907a6a827388a122154463464c07"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/NewArrival/productWatchlist" classname="Test Cases/NewArrival/productWatchlist" status="FAILED">
+         <failure type="FAILED" message="Test Cases/NewArrival/productWatchlist FAILED.
+Reason:
+Assertion failed: 
+
+assert UtilityMethods.listEquals(expectedList, actualList) == true
+                      |          |             |           |
+                      false      |             |           false
+                                 |             [3843
+                                 |             Dressed-Up Shrug Black, 3846
+                                 |             Windchill Wrap Winter Stripe, 3850
+                                 |             Holiday Blazer Holiday Plaid, 3857
+                                 |             M'Leggings Deep Forest, 3861
+                                 |             Victoria Blouse Flourish Print, 3863
+                                 |             Purr Blouse Emerald Skin Print, 3864
+                                 |             Snap Blouse White, 3865
+                                 |             Going Out Top Party Plaid, 3869
+                                 |             Cozy Cowl Midnight And Black, 3870
+                                 |             Fireside Hoodie Deep Forest, 3871
+                                 |             Snap Cowl Storm, 3875
+                                 |             Decked Out Dress Twinkle Print]
+                                 [3875
+                                 Decked Out Dress Twinkle Print, 3869
+                                 Cozy Cowl Midnight and Black, 3870
+                                 Fireside Hoodie Deep Forest, 3871
+                                 Snap Cowl Storm, 3857
+                                 M'Leggings Deep Forest, 3864
+                                 Snap Blouse White, 3865
+                                 Going Out Top Party Plaid, 3843
+                                 Dressed-Up Shrug Black, 3846
+                                 Windchill Wrap Winter Stripe, 3861
+                                 Victoria Blouse Flourish Print, 3863
+                                 Purr Blouse Emerald Skin Print, 3850
+                                 Holiday Blazer Holiday Plaid]
+
+	at productWatchlist.run(productWatchlist:77)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)
+"/>
+         <system-out><![CDATA[2019-09-27 17:55:24 - [TEST_CASE][FAILED] - Test Cases/NewArrival/productWatchlist: Test Cases/NewArrival/productWatchlist FAILED.
+Reason:
+Assertion failed: 
+
+assert UtilityMethods.listEquals(expectedList, actualList) == true
+                      |          |             |           |
+                      false      |             |           false
+                                 |             [3843
+                                 |             Dressed-Up Shrug Black, 3846
+                                 |             Windchill Wrap Winter Stripe, 3850
+                                 |             Holiday Blazer Holiday Plaid, 3857
+                                 |             M'Leggings Deep Forest, 3861
+                                 |             Victoria Blouse Flourish Print, 3863
+                                 |             Purr Blouse Emerald Skin Print, 3864
+                                 |             Snap Blouse White, 3865
+                                 |             Going Out Top Party Plaid, 3869
+                                 |             Cozy Cowl Midnight And Black, 3870
+                                 |             Fireside Hoodie Deep Forest, 3871
+                                 |             Snap Cowl Storm, 3875
+                                 |             Decked Out Dress Twinkle Print]
+                                 [3875
+                                 Decked Out Dress Twinkle Print, 3869
+                                 Cozy Cowl Midnight and Black, 3870
+                                 Fireside Hoodie Deep Forest, 3871
+                                 Snap Cowl Storm, 3857
+                                 M'Leggings Deep Forest, 3864
+                                 Snap Blouse White, 3865
+                                 Going Out Top Party Plaid, 3843
+                                 Dressed-Up Shrug Black, 3846
+                                 Windchill Wrap Winter Stripe, 3861
+                                 Victoria Blouse Flourish Print, 3863
+                                 Purr Blouse Emerald Skin Print, 3850
+                                 Holiday Blazer Holiday Plaid]
+
+	at productWatchlist.run(productWatchlist:77)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)
+
+
+2019-09-27 17:55:24 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-09-27 17:55:24 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-09-27 17:55:24 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-09-27 17:55:25 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-27 17:55:25 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-27 17:55:25 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-27 17:55:25 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-09-27 17:55:29 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-27 17:55:29 - [TEST_STEP][FAILED] - for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]): for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert UtilityMethods.listEquals(expectedList, actualList) == true
+                      |          |             |           |
+                      false      |             |           false
+                                 |             [3843
+                                 |             Dressed-Up Shrug Black, 3846
+                                 |             Windchill Wrap Winter Stripe, 3850
+                                 |             Holiday Blazer Holiday Plaid, 3857
+                                 |             M'Leggings Deep Forest, 3861
+                                 |             Victoria Blouse Flourish Print, 3863
+                                 |             Purr Blouse Emerald Skin Print, 3864
+                                 |             Snap Blouse White, 3865
+                                 |             Going Out Top Party Plaid, 3869
+                                 |             Cozy Cowl Midnight And Black, 3870
+                                 |             Fireside Hoodie Deep Forest, 3871
+                                 |             Snap Cowl Storm, 3875
+                                 |             Decked Out Dress Twinkle Print]
+                                 [3875
+                                 Decked Out Dress Twinkle Print, 3869
+                                 Cozy Cowl Midnight and Black, 3870
+                                 Fireside Hoodie Deep Forest, 3871
+                                 Snap Cowl Storm, 3857
+                                 M'Leggings Deep Forest, 3864
+                                 Snap Blouse White, 3865
+                                 Going Out Top Party Plaid, 3843
+                                 Dressed-Up Shrug Black, 3846
+                                 Windchill Wrap Winter Stripe, 3861
+                                 Victoria Blouse Flourish Print, 3863
+                                 Purr Blouse Emerald Skin Print, 3850
+                                 Holiday Blazer Holiday Plaid]
+
+	at productWatchlist.run(productWatchlist:77)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)
+
+
+2019-09-27 17:55:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-27 17:55:30 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-09-27 17:55:31 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-09-27 17:55:31 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-09-27 17:55:31 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-27 17:55:31 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-09-27 17:55:31 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-09-27 17:55:31 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-09-27 17:55:31 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - println(row): null
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - println(BOPersonal): null
+
+2019-09-27 17:55:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-27 17:55:32 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-09-27 17:55:32 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-27 17:55:32 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-27 17:55:33 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-27 17:55:33 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-27 17:55:35 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-27 17:55:35 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-09-27 17:55:35 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-09-27 17:55:35 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-27 17:55:35 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-27 17:55:36 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-27 17:55:36 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-27 17:55:38 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-27 17:55:38 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-27 17:55:38 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-27 17:55:38 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-27 17:55:38 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-27 17:55:38 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-27 17:55:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-27 17:55:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-27 17:55:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-27 17:55:43 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-09-27 17:55:43 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-27 17:55:43 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-09-27 17:55:43 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-27 17:55:43 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-27 17:55:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-27 17:55:43 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 10/16/2019 7:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-27 17:55:43 - [MESSAGE][PASSED] - Text ' 10/16/2019 7:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-27 17:55:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-27 17:55:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-27 17:55:44 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-27 17:55:54 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-27 17:55:54 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-09-27 17:55:54 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-09-27 17:55:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-27 17:55:54 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-27 17:55:54 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-09-27 17:55:54 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-09-27 17:55:55 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-09-27 17:55:55 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-09-27 17:55:55 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-27 17:55:55 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-27 17:55:55 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-27 17:55:55 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-27 17:55:58 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-27 17:55:58 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-27 17:56:05 - [MESSAGE][PASSED] - Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-27 17:56:05 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 17:56:06 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 17:56:06 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-27 17:56:06 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-27 17:56:06 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-27 17:56:06 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-27 17:56:06 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-27 17:56:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-27 17:56:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-27 17:56:17 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-27 17:56:20 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-27 17:56:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-27 17:56:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-27 17:56:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-27 17:56:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Product Watch List")): Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-27 17:56:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-27 17:56:23 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-09-27 17:56:23 - [TEST_STEP][PASSED] - noResultFound = findWebElements(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)"), 5): Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 2)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 17:56:29 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 2)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 17:56:29 - [TEST_STEP][PASSED] - assert noResultFound.size() == 0: null
+
+2019-09-27 17:56:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-27 17:56:29 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-09-27 17:56:29 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-09-27 17:56:29 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-09-27 17:56:29 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-27 17:56:29 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-09-27 17:56:29 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-09-27 17:56:29 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-09-27 17:56:29 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - println(row): null
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - println(BOPersonal): null
+
+2019-09-27 17:56:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-27 17:56:30 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-09-27 17:56:30 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-27 17:56:30 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-27 17:56:31 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-27 17:56:31 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-27 17:56:33 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-27 17:56:33 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-09-27 17:56:33 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-09-27 17:56:33 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-27 17:56:33 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-27 17:56:33 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-27 17:56:33 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-27 17:56:35 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-27 17:56:35 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-27 17:56:35 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-27 17:56:35 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-27 17:56:35 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-27 17:56:35 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-27 17:56:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-27 17:56:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-27 17:56:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-27 17:56:50 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-09-27 17:56:50 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-27 17:56:50 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-09-27 17:56:50 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-27 17:56:50 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-27 17:56:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-27 17:56:55 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 10/24/2019 00:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-27 17:56:55 - [MESSAGE][PASSED] - Text ' 10/24/2019 00:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-27 17:56:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-27 17:57:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-27 17:57:02 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-27 17:57:12 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-27 17:57:12 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-09-27 17:57:12 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-09-27 17:57:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-27 17:57:12 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-27 17:57:12 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-09-27 17:57:12 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-09-27 17:57:12 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-09-27 17:57:12 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-09-27 17:57:12 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-27 17:57:12 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-27 17:57:13 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-27 17:57:13 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-27 17:57:15 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-27 17:57:15 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-27 17:57:22 - [MESSAGE][PASSED] - Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-27 17:57:22 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 17:57:23 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 17:57:23 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-27 17:57:23 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-27 17:57:24 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-27 17:57:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-27 17:57:24 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-27 17:57:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-27 17:57:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-27 17:57:32 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-27 17:57:35 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-27 17:57:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-27 17:57:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-27 17:57:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-27 17:57:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Product Watch List")): Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-27 17:57:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-27 17:57:38 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-09-27 17:57:38 - [TEST_STEP][PASSED] - noResultFound = findWebElements(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)"), 5): Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 2)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 17:57:44 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 2)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 17:57:44 - [TEST_STEP][PASSED] - assert noResultFound.size() == 0: null
+
+2019-09-27 17:57:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-27 17:57:44 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-09-27 17:57:44 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-09-27 17:57:44 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-09-27 17:57:44 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-27 17:57:44 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-09-27 17:57:44 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - println(row): null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - println(BOPersonal): null
+
+2019-09-27 17:57:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-27 17:57:45 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-09-27 17:57:45 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-27 17:57:45 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-27 17:57:46 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-27 17:57:46 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-27 17:57:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-27 17:57:48 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-09-27 17:57:48 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-09-27 17:57:48 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-27 17:57:48 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-27 17:57:48 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-27 17:57:48 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-27 17:57:50 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-27 17:57:50 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-27 17:57:50 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-27 17:57:50 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-27 17:57:50 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-27 17:57:50 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-27 17:57:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-27 17:57:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-27 17:57:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-27 17:57:55 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-09-27 17:57:55 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-27 17:57:55 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-09-27 17:57:55 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-27 17:57:55 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-27 17:57:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-27 17:57:55 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 11/01/2019 12:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-27 17:57:55 - [MESSAGE][PASSED] - Text ' 11/01/2019 12:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-27 17:57:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-27 17:57:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-27 17:57:56 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-27 17:58:06 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-27 17:58:06 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-09-27 17:58:06 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-09-27 17:58:06 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-27 17:58:06 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-27 17:58:06 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-09-27 17:58:06 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-09-27 17:58:06 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-09-27 17:58:06 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-09-27 17:58:06 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-27 17:58:06 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-27 17:58:07 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-27 17:58:07 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-27 17:58:09 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-27 17:58:09 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-27 17:58:16 - [MESSAGE][PASSED] - Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-27 17:58:16 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 17:58:17 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 17:58:17 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-27 17:58:17 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-27 17:58:17 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-27 17:58:17 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-27 17:58:18 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-27 17:58:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-27 17:58:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-27 17:58:29 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-27 17:58:32 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-27 17:58:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-27 17:58:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-27 17:58:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-27 17:58:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Product Watch List")): Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-27 17:58:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-27 17:58:35 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-09-27 17:58:35 - [TEST_STEP][FAILED] - else: for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert UtilityMethods.listEquals(expectedList, actualList) == true
+                      |          |             |           |
+                      false      |             |           false
+                                 |             [3843
+                                 |             Dressed-Up Shrug Black, 3846
+                                 |             Windchill Wrap Winter Stripe, 3850
+                                 |             Holiday Blazer Holiday Plaid, 3857
+                                 |             M'Leggings Deep Forest, 3861
+                                 |             Victoria Blouse Flourish Print, 3863
+                                 |             Purr Blouse Emerald Skin Print, 3864
+                                 |             Snap Blouse White, 3865
+                                 |             Going Out Top Party Plaid, 3869
+                                 |             Cozy Cowl Midnight And Black, 3870
+                                 |             Fireside Hoodie Deep Forest, 3871
+                                 |             Snap Cowl Storm, 3875
+                                 |             Decked Out Dress Twinkle Print]
+                                 [3875
+                                 Decked Out Dress Twinkle Print, 3869
+                                 Cozy Cowl Midnight and Black, 3870
+                                 Fireside Hoodie Deep Forest, 3871
+                                 Snap Cowl Storm, 3857
+                                 M'Leggings Deep Forest, 3864
+                                 Snap Blouse White, 3865
+                                 Going Out Top Party Plaid, 3843
+                                 Dressed-Up Shrug Black, 3846
+                                 Windchill Wrap Winter Stripe, 3861
+                                 Victoria Blouse Flourish Print, 3863
+                                 Purr Blouse Emerald Skin Print, 3850
+                                 Holiday Blazer Holiday Plaid]
+
+	at productWatchlist.run(productWatchlist:77)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)
+
+
+2019-09-27 17:58:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)")): Object: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' is clicked on
+
+2019-09-27 17:58:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' is clicked on
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)"), "(New Arrivals 2)"): Actual text and expected text of test object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' are matched.
+
+2019-09-27 17:58:37 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' are matched.
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - actualProductList = findWebElements(findTestObject("Page_cabi Product Watch list/div_product_list_na2"), 5): null
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - println(actualProductList.size()): null
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - actualList = new java.util.ArrayList(): null
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - expectedList = new java.util.ArrayList(): null
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - for (org.openqa.selenium.WebElement product : actualProductList): null
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-27 17:58:37 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - p1Rows = findTestData("productData1").getRowNumbers(): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - println(p1Rows): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - for ([row = 1, row <= p1Rows, (row++)]): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-27 17:58:38 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-27 17:58:39 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-27 17:58:40 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-27 17:58:40 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-27 17:58:40 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-27 17:58:40 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-27 17:58:40 - [TEST_STEP][PASSED] - println(expectedList.size()): null
+
+2019-09-27 17:58:40 - [TEST_STEP][FAILED] - assert UtilityMethods.listEquals(expectedList, actualList) == true: for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert UtilityMethods.listEquals(expectedList, actualList) == true
+                      |          |             |           |
+                      false      |             |           false
+                                 |             [3843
+                                 |             Dressed-Up Shrug Black, 3846
+                                 |             Windchill Wrap Winter Stripe, 3850
+                                 |             Holiday Blazer Holiday Plaid, 3857
+                                 |             M'Leggings Deep Forest, 3861
+                                 |             Victoria Blouse Flourish Print, 3863
+                                 |             Purr Blouse Emerald Skin Print, 3864
+                                 |             Snap Blouse White, 3865
+                                 |             Going Out Top Party Plaid, 3869
+                                 |             Cozy Cowl Midnight And Black, 3870
+                                 |             Fireside Hoodie Deep Forest, 3871
+                                 |             Snap Cowl Storm, 3875
+                                 |             Decked Out Dress Twinkle Print]
+                                 [3875
+                                 Decked Out Dress Twinkle Print, 3869
+                                 Cozy Cowl Midnight and Black, 3870
+                                 Fireside Hoodie Deep Forest, 3871
+                                 Snap Cowl Storm, 3857
+                                 M'Leggings Deep Forest, 3864
+                                 Snap Blouse White, 3865
+                                 Going Out Top Party Plaid, 3843
+                                 Dressed-Up Shrug Black, 3846
+                                 Windchill Wrap Winter Stripe, 3861
+                                 Victoria Blouse Flourish Print, 3863
+                                 Purr Blouse Emerald Skin Print, 3850
+                                 Holiday Blazer Holiday Plaid]
+
+	at productWatchlist.run(productWatchlist:77)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)
+
+
+2019-09-27 17:58:40 - [MESSAGE][FAILED] - for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert UtilityMethods.listEquals(expectedList, actualList) == true
+                      |          |             |           |
+                      false      |             |           false
+                                 |             [3843
+                                 |             Dressed-Up Shrug Black, 3846
+                                 |             Windchill Wrap Winter Stripe, 3850
+                                 |             Holiday Blazer Holiday Plaid, 3857
+                                 |             M'Leggings Deep Forest, 3861
+                                 |             Victoria Blouse Flourish Print, 3863
+                                 |             Purr Blouse Emerald Skin Print, 3864
+                                 |             Snap Blouse White, 3865
+                                 |             Going Out Top Party Plaid, 3869
+                                 |             Cozy Cowl Midnight And Black, 3870
+                                 |             Fireside Hoodie Deep Forest, 3871
+                                 |             Snap Cowl Storm, 3875
+                                 |             Decked Out Dress Twinkle Print]
+                                 [3875
+                                 Decked Out Dress Twinkle Print, 3869
+                                 Cozy Cowl Midnight and Black, 3870
+                                 Fireside Hoodie Deep Forest, 3871
+                                 Snap Cowl Storm, 3857
+                                 M'Leggings Deep Forest, 3864
+                                 Snap Blouse White, 3865
+                                 Going Out Top Party Plaid, 3843
+                                 Dressed-Up Shrug Black, 3846
+                                 Windchill Wrap Winter Stripe, 3861
+                                 Victoria Blouse Flourish Print, 3863
+                                 Purr Blouse Emerald Skin Print, 3850
+                                 Holiday Blazer Holiday Plaid]
+
+	at productWatchlist.run(productWatchlist:77)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-09-27 17:55:24 - [TEST_CASE][FAILED] - Test Cases/NewArrival/productWatchlist: Test Cases/NewArrival/productWatchlist FAILED.
+Reason:
+Assertion failed: 
+
+assert UtilityMethods.listEquals(expectedList, actualList) == true
+                      |          |             |           |
+                      false      |             |           false
+                                 |             [3843
+                                 |             Dressed-Up Shrug Black, 3846
+                                 |             Windchill Wrap Winter Stripe, 3850
+                                 |             Holiday Blazer Holiday Plaid, 3857
+                                 |             M'Leggings Deep Forest, 3861
+                                 |             Victoria Blouse Flourish Print, 3863
+                                 |             Purr Blouse Emerald Skin Print, 3864
+                                 |             Snap Blouse White, 3865
+                                 |             Going Out Top Party Plaid, 3869
+                                 |             Cozy Cowl Midnight And Black, 3870
+                                 |             Fireside Hoodie Deep Forest, 3871
+                                 |             Snap Cowl Storm, 3875
+                                 |             Decked Out Dress Twinkle Print]
+                                 [3875
+                                 Decked Out Dress Twinkle Print, 3869
+                                 Cozy Cowl Midnight and Black, 3870
+                                 Fireside Hoodie Deep Forest, 3871
+                                 Snap Cowl Storm, 3857
+                                 M'Leggings Deep Forest, 3864
+                                 Snap Blouse White, 3865
+                                 Going Out Top Party Plaid, 3843
+                                 Dressed-Up Shrug Black, 3846
+                                 Windchill Wrap Winter Stripe, 3861
+                                 Victoria Blouse Flourish Print, 3863
+                                 Purr Blouse Emerald Skin Print, 3850
+                                 Holiday Blazer Holiday Plaid]
+
+	at productWatchlist.run(productWatchlist:77)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/NewArrival/productEblast" classname="Test Cases/NewArrival/productEblast" status="FAILED">
+         <failure type="FAILED" message="Test Cases/NewArrival/productEblast FAILED.
+Reason:
+Assertion failed: 
+
+assert style_notfound.size() > 0
+       |              |      |
+       []             0      false
+
+	at productEblast.run(productEblast:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)
+"/>
+         <system-out><![CDATA[2019-09-27 17:58:40 - [TEST_CASE][FAILED] - Test Cases/NewArrival/productEblast: Test Cases/NewArrival/productEblast FAILED.
+Reason:
+Assertion failed: 
+
+assert style_notfound.size() > 0
+       |              |      |
+       []             0      false
+
+	at productEblast.run(productEblast:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)
+
+
+2019-09-27 17:58:40 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-09-27 17:58:40 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-09-27 17:58:40 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-09-27 17:58:40 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-27 17:58:40 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-27 17:58:41 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-27 17:58:41 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-27 17:58:43 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-27 17:58:43 - [TEST_STEP][FAILED] - for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]): for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert style_notfound.size() > 0
+       |              |      |
+       []             0      false
+
+	at productEblast.run(productEblast:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)
+
+
+2019-09-27 17:58:43 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], STOP_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-27 17:58:43 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-09-27 17:58:43 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - println(row): null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - println(BOPersonal): null
+
+2019-09-27 17:58:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], STOP_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-27 17:58:44 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-09-27 17:58:44 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-27 17:58:44 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-27 17:58:45 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-27 17:58:45 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-27 17:58:47 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-27 17:58:47 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-09-27 17:58:47 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-09-27 17:58:47 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-27 17:58:47 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-27 17:58:47 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-27 17:58:47 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-27 17:58:49 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-27 17:58:49 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-27 17:58:49 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-27 17:58:49 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-27 17:58:49 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-27 17:58:49 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-27 17:58:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-27 17:58:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-27 17:58:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-27 17:58:54 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-09-27 17:58:54 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-27 17:58:54 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-09-27 17:58:54 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-27 17:58:54 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-27 17:58:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-27 17:58:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 10/16/2019 7:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-27 17:58:54 - [MESSAGE][PASSED] - Text ' 10/16/2019 7:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-27 17:58:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-27 17:58:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-27 17:58:55 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-27 17:59:05 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-27 17:59:05 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-09-27 17:59:05 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-09-27 17:59:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-27 17:59:05 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-27 17:59:05 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-09-27 17:59:05 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-09-27 17:59:05 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-09-27 17:59:05 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-09-27 17:59:05 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-27 17:59:05 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-27 17:59:06 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-27 17:59:06 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-27 17:59:08 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-27 17:59:08 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-27 17:59:16 - [MESSAGE][PASSED] - Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-27 17:59:16 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 17:59:17 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 17:59:17 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-27 17:59:17 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-27 17:59:17 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-27 17:59:17 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-27 17:59:17 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-27 17:59:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-27 17:59:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-27 17:59:29 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-27 17:59:32 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-27 17:59:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-27 17:59:32 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Home/a_Connections")): Object: 'Object Repository/Page_cabi Home/a_Connections' is clicked on
+
+2019-09-27 17:59:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Connections' is clicked on
+
+2019-09-27 17:59:32 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Home/a_Contact Manager")): Object: 'Object Repository/Page_cabi Home/a_Contact Manager' is clicked on
+
+2019-09-27 17:59:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Contact Manager' is clicked on
+
+2019-09-27 17:59:36 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi/span_SEND eBLAST")): Object: 'Object Repository/Page_cabi/span_SEND eBLAST' is clicked on
+
+2019-09-27 17:59:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/span_SEND eBLAST' is clicked on
+
+2019-09-27 17:59:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/a_Stylist Picks")): Object: 'Object Repository/Page_cabi Eblast/a_Stylist Picks' is clicked on
+
+2019-09-27 17:59:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/a_Stylist Picks' is clicked on
+
+2019-09-27 17:59:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST")): Object: 'Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST' is clicked on
+
+2019-09-27 17:59:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST' is clicked on
+
+2019-09-27 17:59:47 - [TEST_STEP][FAILED] - for ([row = 1, row <= findTestData("productData").getRowNumbers(), (row++)]): for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert style_notfound.size() > 0
+       |              |      |
+       []             0      false
+
+	at productEblast.run(productEblast:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)
+
+
+2019-09-27 17:59:47 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-27 17:59:49 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-27 17:59:49 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3875' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-27 17:59:49 - [MESSAGE][PASSED] - Text '3875' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-27 17:59:49 - [TEST_STEP][PASSED] - delay(4): Delayed 4 second(s)
+
+2019-09-27 17:59:54 - [MESSAGE][PASSED] - Delayed 4 second(s)
+
+2019-09-27 17:59:54 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-27 17:59:54 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-27 17:59:54 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-27 17:59:54 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-27 17:59:54 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-27 17:59:54 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-27 17:59:54 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-27 17:59:56 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-27 17:59:56 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3869' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-27 17:59:56 - [MESSAGE][PASSED] - Text '3869' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-27 17:59:56 - [TEST_STEP][PASSED] - delay(4): Delayed 4 second(s)
+
+2019-09-27 18:00:00 - [MESSAGE][PASSED] - Delayed 4 second(s)
+
+2019-09-27 18:00:00 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-27 18:00:00 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-27 18:00:00 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-27 18:00:00 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-27 18:00:00 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-27 18:00:00 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-27 18:00:00 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-27 18:00:02 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-27 18:00:02 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3870' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-27 18:00:02 - [MESSAGE][PASSED] - Text '3870' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-27 18:00:02 - [TEST_STEP][PASSED] - delay(4): Delayed 4 second(s)
+
+2019-09-27 18:00:06 - [MESSAGE][PASSED] - Delayed 4 second(s)
+
+2019-09-27 18:00:06 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-27 18:00:06 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-27 18:00:06 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-27 18:00:06 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-27 18:00:06 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-27 18:00:06 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-27 18:00:06 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-27 18:00:08 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-27 18:00:08 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3871' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-27 18:00:08 - [MESSAGE][PASSED] - Text '3871' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-27 18:00:08 - [TEST_STEP][PASSED] - delay(4): Delayed 4 second(s)
+
+2019-09-27 18:00:12 - [MESSAGE][PASSED] - Delayed 4 second(s)
+
+2019-09-27 18:00:12 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-27 18:00:12 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-27 18:00:12 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-27 18:00:12 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-27 18:00:12 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-27 18:00:12 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-27 18:00:12 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-27 18:00:14 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-27 18:00:14 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3857' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-27 18:00:14 - [MESSAGE][PASSED] - Text '3857' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-27 18:00:14 - [TEST_STEP][PASSED] - delay(4): Delayed 4 second(s)
+
+2019-09-27 18:00:18 - [MESSAGE][PASSED] - Delayed 4 second(s)
+
+2019-09-27 18:00:18 - [TEST_STEP][FAILED] - if (toString().equalsIgnoreCase("no")): for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert style_notfound.size() > 0
+       |              |      |
+       []             0      false
+
+	at productEblast.run(productEblast:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)
+
+
+2019-09-27 18:00:18 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): Unable to find the element located by 'By.xpath: //*[@id="product"]/span'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 18:00:23 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="product"]/span'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-27 18:00:23 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-27 18:00:23 - [TEST_STEP][FAILED] - assert style_notfound.size() > 0: for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert style_notfound.size() > 0
+       |              |      |
+       []             0      false
+
+	at productEblast.run(productEblast:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)
+
+
+2019-09-27 18:00:23 - [MESSAGE][FAILED] - for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert style_notfound.size() > 0
+       |              |      |
+       []             0      false
+
+	at productEblast.run(productEblast:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-09-27 17:58:40 - [TEST_CASE][FAILED] - Test Cases/NewArrival/productEblast: Test Cases/NewArrival/productEblast FAILED.
+Reason:
+Assertion failed: 
+
+assert style_notfound.size() > 0
+       |              |      |
+       []             0      false
+
+	at productEblast.run(productEblast:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-09-27 17:55:24 - [TEST_SUITE][FAILED] - NewArrivalsSuite: Test Cases/NewArrival/productWatchlist FAILED.
+Reason:
+Assertion failed: 
+
+assert UtilityMethods.listEquals(expectedList, actualList) == true
+                      |          |             |           |
+                      false      |             |           false
+                                 |             [3843
+                                 |             Dressed-Up Shrug Black, 3846
+                                 |             Windchill Wrap Winter Stripe, 3850
+                                 |             Holiday Blazer Holiday Plaid, 3857
+                                 |             M'Leggings Deep Forest, 3861
+                                 |             Victoria Blouse Flourish Print, 3863
+                                 |             Purr Blouse Emerald Skin Print, 3864
+                                 |             Snap Blouse White, 3865
+                                 |             Going Out Top Party Plaid, 3869
+                                 |             Cozy Cowl Midnight And Black, 3870
+                                 |             Fireside Hoodie Deep Forest, 3871
+                                 |             Snap Cowl Storm, 3875
+                                 |             Decked Out Dress Twinkle Print]
+                                 [3875
+                                 Decked Out Dress Twinkle Print, 3869
+                                 Cozy Cowl Midnight and Black, 3870
+                                 Fireside Hoodie Deep Forest, 3871
+                                 Snap Cowl Storm, 3857
+                                 M'Leggings Deep Forest, 3864
+                                 Snap Blouse White, 3865
+                                 Going Out Top Party Plaid, 3843
+                                 Dressed-Up Shrug Black, 3846
+                                 Windchill Wrap Winter Stripe, 3861
+                                 Victoria Blouse Flourish Print, 3863
+                                 Purr Blouse Emerald Skin Print, 3850
+                                 Holiday Blazer Holiday Plaid]
+
+	at productWatchlist.run(productWatchlist:77)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-09-27 17:55:24 - [TEST_SUITE][FAILED] - NewArrivalsSuite: Test Cases/NewArrival/productWatchlist FAILED.
+Reason:
+Assertion failed: 
+
+assert UtilityMethods.listEquals(expectedList, actualList) == true
+                      |          |             |           |
+                      false      |             |           false
+                                 |             [3843
+                                 |             Dressed-Up Shrug Black, 3846
+                                 |             Windchill Wrap Winter Stripe, 3850
+                                 |             Holiday Blazer Holiday Plaid, 3857
+                                 |             M'Leggings Deep Forest, 3861
+                                 |             Victoria Blouse Flourish Print, 3863
+                                 |             Purr Blouse Emerald Skin Print, 3864
+                                 |             Snap Blouse White, 3865
+                                 |             Going Out Top Party Plaid, 3869
+                                 |             Cozy Cowl Midnight And Black, 3870
+                                 |             Fireside Hoodie Deep Forest, 3871
+                                 |             Snap Cowl Storm, 3875
+                                 |             Decked Out Dress Twinkle Print]
+                                 [3875
+                                 Decked Out Dress Twinkle Print, 3869
+                                 Cozy Cowl Midnight and Black, 3870
+                                 Fireside Hoodie Deep Forest, 3871
+                                 Snap Cowl Storm, 3857
+                                 M'Leggings Deep Forest, 3864
+                                 Snap Blouse White, 3865
+                                 Going Out Top Party Plaid, 3843
+                                 Dressed-Up Shrug Black, 3846
+                                 Windchill Wrap Winter Stripe, 3861
+                                 Victoria Blouse Flourish Print, 3863
+                                 Purr Blouse Emerald Skin Print, 3850
+                                 Holiday Blazer Holiday Plaid]
+
+	at productWatchlist.run(productWatchlist:77)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569587120537.run(TempTestSuite1569587120537.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

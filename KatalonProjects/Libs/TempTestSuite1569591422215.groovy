@@ -28,8 +28,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20190927_173514\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20190927_190702\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/NewArrivalsSuites/NewArrivalsSuite', suiteProperties, [new TestCaseBinding('Test Cases/NewArrival/BOPersonal', 'Test Cases/NewArrival/BOPersonal',  null)])
+TestCaseMain.startTestSuite('Test Suites/NewArrivalsSuites/NewArrivalsSuite', suiteProperties, [new TestCaseBinding('Test Cases/NewArrival/BOOnline', 'Test Cases/NewArrival/BOOnline',  null), new TestCaseBinding('Test Cases/NewArrival/CCOrders', 'Test Cases/NewArrival/CCOrders',  null)])

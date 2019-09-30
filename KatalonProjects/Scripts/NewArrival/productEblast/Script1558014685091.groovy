@@ -51,14 +51,21 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
         WebUI.setText(findTestObject('Page_cabi Eblast/eBlastStyleSearch'), findTestData('productData').getValue('Style', 
                 row))
 
-        WebUI.delay(4)
+        //WebUI.delay(4)
 
         if (available.toString().equalsIgnoreCase('no')) {
+			WebUI.delay(5)
             List<WebElement> style_notfound = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/styleNotFound'), 5)
+<<<<<<< HEAD
 
 			WebUI.delay(4)	
       
 			println(style_notfound.size())
+=======
+			
+			
+            println(style_notfound.size())
+>>>>>>> ee6b80c3a6c1dbbda90c4fba21f0c3bfff03f623
 
             assert style_notfound.size() > 0
 

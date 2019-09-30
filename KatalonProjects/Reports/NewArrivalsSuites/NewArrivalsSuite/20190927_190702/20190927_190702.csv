@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+NewArrivalsSuite,Chrome 77.0.3865.90,,2019-09-27 19:07:05,2019-09-27 19:33:11,26m - 5.817s,FAILED
+,,,,,,
+Test Cases/NewArrival/BOOnline,Chrome 77.0.3865.90,,2019-09-27 19:07:06,2019-09-27 19:22:29,15m - 22.927s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 77.0.3865.90,,2019-09-27 19:07:06,2019-09-27 19:07:06,0.062s,PASSED
+"openBrowser("""")",Chrome 77.0.3865.90,,2019-09-27 19:07:06,2019-09-27 19:07:10,3.601s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 77.0.3865.90,,2019-09-27 19:07:10,2019-09-27 19:22:29,15m - 18.805s,PASSED
+,,,,,,
+Test Cases/NewArrival/CCOrders,Chrome 77.0.3865.90,,2019-09-27 19:22:29,2019-09-27 19:33:10,10m - 41.789s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 77.0.3865.90,,2019-09-27 19:22:29,2019-09-27 19:22:29,0.001s,PASSED
+"openBrowser("""")",Chrome 77.0.3865.90,,2019-09-27 19:22:29,2019-09-27 19:22:32,3.127s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 77.0.3865.90,,2019-09-27 19:22:32,2019-09-27 19:33:10,10m - 38.493s,FAILED

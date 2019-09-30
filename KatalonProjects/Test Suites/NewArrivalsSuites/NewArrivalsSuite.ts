@@ -25,7 +25,7 @@
    <testCaseLink>
       <guid>ff43b699-bf45-40ca-9278-046ce1b205b0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NewArrival/productEblast</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

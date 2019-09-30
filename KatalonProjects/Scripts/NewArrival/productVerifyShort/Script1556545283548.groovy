@@ -21,9 +21,13 @@ import com.kms.katalon.core.annotation.Keyword as Keyword
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import org.stringtemplate.v4.compiler.STParser.listElement_return as listElement_return
+import org.testng.asserts.SoftAssert
 
 //WebUI.openBrowser('')
 for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
+	SoftAssert sa= new SoftAssert();
+	
+	
     WebUI.delay(2)
 
     WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), findTestData(
@@ -38,7 +42,8 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
     WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
 
     if (available.toString().equalsIgnoreCase('no')) {
-        assert prod_message.equalsIgnoreCase('No matching result found') /*******retail***********************************/
+		sa.assertTrue(prod_message.equalsIgnoreCase('No matching result found'))
+        //assert prod_message.equalsIgnoreCase('No matching result found') /*******retail***********************************/
         /*******Size***********************************/
         /*******Description***********************************/
         /*******Fabric***********************************/
@@ -60,7 +65,8 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 
         println(prod_message)
 
-        assert prod_message.equalsIgnoreCase(expectedStyleDescription)
+		sa.assertTrue(prod_message.equalsIgnoreCase(expectedStyleDescription))
+        //assert prod_message.equalsIgnoreCase(expectedStyleDescription)
 
         WebUI.delay(3)
 
@@ -87,7 +93,8 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
             }
         }
         
-        assert colourVerified == true
+		sa.assertTrue(colourVerified)
+        //assert colourVerified == true
 
         String getPrice = WebUI.getText(findTestObject('Page_cabi Create Order/retail_price'))
 
@@ -144,9 +151,11 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
             
             println(expectedRange.toString())
 
-            assert UtilityMethods.listEquals(expectedRange, actualRange) == true
+			sa.assertTrue(UtilityMethods.listEquals(expectedRange, actualRange))
+            //assert UtilityMethods.listEquals(expectedRange, actualRange) == true
         } else {
-            assert sizeType.equalsIgnoreCase('N/A') || sizeType.equalsIgnoreCase(sizeRangeSplit[0])
+			sa.assertTrue(sizeType.equalsIgnoreCase('N/A') || sizeType.equalsIgnoreCase(sizeRangeSplit[0]))
+            //assert sizeType.equalsIgnoreCase('N/A') || sizeType.equalsIgnoreCase(sizeRangeSplit[0])
         }
         
         WebUI.delay(3)

@@ -1,42 +1,29 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import org.testng.asserts.SoftAssert
+
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import commonUtility.UtilityMethods as UtilityMethods
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.By as By
-import org.openqa.selenium.WebDriver as WebDriver
-import com.kms.katalon.core.annotation.Keyword as Keyword
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
-import org.stringtemplate.v4.compiler.STParser.listElement_return as listElement_return
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+import commonUtility.UtilityMethods as UtilityMethods
 
 //WebUI.openBrowser('')
 for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
-    WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), findTestData(
-            'productData').getValue('Style', row))
+	SoftAssert sa= new SoftAssert();
+	
+	String styleid_data = findTestData('productData').getValue('Style', row)
+    WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), styleid_data)
 
     WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), 
         Keys.chord(Keys.ENTER))
-
+	
     WebUI.delay(2)
-
-    WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), findTestData(
-            'productData').getValue('Style', row))
-
-    WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), 
-        Keys.chord(Keys.ENTER))
+	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'),30)))
+    
 
     WebUI.delay(2)
 
@@ -48,7 +35,8 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 
         println(noResultMessages.size())
 
-        assert noResultMessages.size() > 0
+		sa.assertTrue(noResultMessages.size() > 0)
+        //assert noResultMessages.size() > 0
 
         WebUI.verifyElementText(findTestObject('Page_cabi Order Items/no_result_found'), 'No Results Found!', FailureHandling.CONTINUE_ON_FAILURE /*******screenshot***********************************/ ) /*******Style***********************************/
         //WebUI.delay(3)
@@ -63,16 +51,13 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 
         WebUI.delay(5)
 
-        String imgString1 = findTestData('productData').getValue('Style', row).toString()
-
-        String imagePath = UtilityMethods.createScreenshotImagePath(storeType, imgString1)
+        String imagePath = UtilityMethods.createScreenshotImagePath(storeType, styleid_data)
 
         println(imagePath)
 
         WebUI.takeScreenshot(imagePath)
 
-        WebUI.verifyElementText(findTestObject('Page_cabi Order Items/GetAttribute_getID'), findTestData('productData').getValue(
-                'Style', row), FailureHandling.CONTINUE_ON_FAILURE)
+        WebUI.verifyElementText(findTestObject('Page_cabi Order Items/GetAttribute_getID'), styleid_data, FailureHandling.CONTINUE_ON_FAILURE)
 
         List<WebElement> colorOptions = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Order Items/GetAttribute_Color'), 
             5)
@@ -97,7 +82,8 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
             }
         }
         
-        assert colourVerified == true
+		sa.assertTrue(colourVerified)
+        //assert colourVerified == true
 
         String getPrice = WebUI.getText(findTestObject('Page_cabi Order Items/GetAttribute_Price'))
 
@@ -160,9 +146,11 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
             
             println(expectedRange.toString())
 
-            assert UtilityMethods.listEquals(expectedRange, actualRange) == true
+			sa.assertTrue(UtilityMethods.listEquals(expectedRange, actualRange))
+            //assert UtilityMethods.listEquals(expectedRange, actualRange) == true
         } else {
-            assert sizeType.equalsIgnoreCase('N/A') || sizeType.equalsIgnoreCase(sizeRangeSplit[0])
+			sa.assertTrue(sizeType.equalsIgnoreCase('N/A') || sizeType.equalsIgnoreCase(sizeRangeSplit[0]))
+            //assert sizeType.equalsIgnoreCase('N/A') || sizeType.equalsIgnoreCase(sizeRangeSplit[0])
         }
         
         WebUI.delay(2)
@@ -176,6 +164,7 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
         String actualCasreIntrn = ('<div>' + WebUI.getText(findTestObject('Page_cabi Order Items/care_instruction'))) + 
         '</div>'
 
-        assert actualCasreIntrn.equals(findTestData('productData').getValue('CareInstr', row))
+		sa.assertTrue(actualCasreIntrn.equals(findTestData('productData').getValue('CareInstr', row)))
+        //assert actualCasreIntrn.equals(findTestData('productData').getValue('CareInstr', row))
     }
 }

@@ -1,0 +1,2046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="NewArrivalsSuite" time="451" tests="0" failures="1" errors="0">
+   <testsuite name="NewArrivalsSuite" tests="0" failures="1" errors="0" time="451" timestamp="2019-09-30 13:10:23" hostname="user - 10.0.102.244" id="Test Suites/NewArrivalsSuites/NewArrivalsSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20190930_131020"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20190930_131020\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 10.0.102.244"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 77.0.3865.90"/>
+         <property name="hostAddress" value="10.0.102.244"/>
+         <property name="sessionId" value="5ad2dd287defabe25dad73544a62128b"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/NewArrival/productEblast" classname="Test Cases/NewArrival/productEblast" status="FAILED">
+         <failure type="FAILED" message="Test Cases/NewArrival/productEblast FAILED.
+Reason:
+Assertion failed: 
+
+assert style_data.equalsIgnoreCase(style_web)
+       |          |                |
+       |          false            3850 Holiday Blazer (Holiday Plaid)
+       3857 M'Leggings (Deep Forest)
+
+	at productEblast.run(productEblast:97)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569829220710.run(TempTestSuite1569829220710.groovy:35)
+"/>
+         <system-out><![CDATA[2019-09-30 13:10:24 - [TEST_CASE][FAILED] - Test Cases/NewArrival/productEblast: Test Cases/NewArrival/productEblast FAILED.
+Reason:
+Assertion failed: 
+
+assert style_data.equalsIgnoreCase(style_web)
+       |          |                |
+       |          false            3850 Holiday Blazer (Holiday Plaid)
+       3857 M'Leggings (Deep Forest)
+
+	at productEblast.run(productEblast:97)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569829220710.run(TempTestSuite1569829220710.groovy:35)
+
+
+2019-09-30 13:10:24 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-09-30 13:10:24 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-09-30 13:10:24 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-09-30 13:10:24 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 13:10:25 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 13:10:25 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 13:10:25 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-09-30 13:10:28 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 13:10:28 - [TEST_STEP][FAILED] - for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]): for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert style_data.equalsIgnoreCase(style_web)
+       |          |                |
+       |          false            3850 Holiday Blazer (Holiday Plaid)
+       3857 M'Leggings (Deep Forest)
+
+	at productEblast.run(productEblast:97)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569829220710.run(TempTestSuite1569829220710.groovy:35)
+
+
+2019-09-30 13:10:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], STOP_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 13:10:29 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-09-30 13:10:29 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-09-30 13:10:29 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - println(row): null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - println(BOPersonal): null
+
+2019-09-30 13:10:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], STOP_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 13:10:30 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-09-30 13:10:30 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 13:10:30 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 13:10:31 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 13:10:31 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 13:10:33 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 13:10:33 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-09-30 13:10:33 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-09-30 13:10:33 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-30 13:10:33 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-30 13:10:33 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-30 13:10:33 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 13:10:35 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 13:10:35 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 13:10:36 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 13:10:36 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 13:10:36 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 13:10:36 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 13:10:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 13:10:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 13:10:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 13:10:40 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-09-30 13:10:40 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 13:10:40 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-09-30 13:10:40 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-30 13:10:40 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 13:10:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 13:10:40 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 10/16/2019 7:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 13:10:41 - [MESSAGE][PASSED] - Text ' 10/16/2019 7:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 13:10:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 13:10:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 13:10:41 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-30 13:10:51 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-30 13:10:51 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-09-30 13:10:51 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-09-30 13:10:51 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 13:10:51 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 13:10:51 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-09-30 13:10:51 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-09-30 13:10:51 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-09-30 13:10:52 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-09-30 13:10:52 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 13:10:52 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 13:10:52 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 13:10:52 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 13:10:55 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 13:10:55 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 13:11:01 - [MESSAGE][PASSED] - Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 13:11:01 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 13:11:02 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 13:11:02 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 13:11:02 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 13:11:03 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 13:11:03 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 13:11:03 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 13:11:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 13:11:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 13:11:10 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-30 13:11:13 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-30 13:11:13 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 13:11:13 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Home/a_Connections")): Object: 'Object Repository/Page_cabi Home/a_Connections' is clicked on
+
+2019-09-30 13:11:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Connections' is clicked on
+
+2019-09-30 13:11:14 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Home/a_Contact Manager")): Object: 'Object Repository/Page_cabi Home/a_Contact Manager' is clicked on
+
+2019-09-30 13:11:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Contact Manager' is clicked on
+
+2019-09-30 13:11:18 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi/span_SEND eBLAST")): Object: 'Object Repository/Page_cabi/span_SEND eBLAST' is clicked on
+
+2019-09-30 13:11:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/span_SEND eBLAST' is clicked on
+
+2019-09-30 13:11:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/a_Stylist Picks")): Object: 'Object Repository/Page_cabi Eblast/a_Stylist Picks' is clicked on
+
+2019-09-30 13:11:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/a_Stylist Picks' is clicked on
+
+2019-09-30 13:11:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST")): Object: 'Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST' is clicked on
+
+2019-09-30 13:11:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST' is clicked on
+
+2019-09-30 13:11:27 - [TEST_STEP][PASSED] - for ([row = 1, row <= findTestData("productData").getRowNumbers(), (row++)]): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:11:27 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:11:29 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:11:29 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3843' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:11:29 - [MESSAGE][PASSED] - Text '3843' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:11:29 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:11:31 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:11:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:11:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:11:31 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:11:32 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:11:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:11:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:11:32 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:11:32 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:11:37 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:11:37 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:11:37 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:11:37 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:11:37 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:11:37 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:11:37 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:11:39 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:11:39 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3846' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:11:39 - [MESSAGE][PASSED] - Text '3846' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:11:39 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:11:41 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:11:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:11:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:11:42 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:11:43 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:11:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:11:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:11:43 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:11:43 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:11:48 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:11:48 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:11:48 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:11:48 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:11:48 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:11:48 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:11:48 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:11:50 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:11:50 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3850' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:11:50 - [MESSAGE][PASSED] - Text '3850' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:11:50 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:11:52 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:11:52 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:11:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:11:52 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:11:53 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:11:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:11:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:11:53 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:11:53 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:11:58 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:11:58 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:11:58 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:11:58 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:11:58 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:11:58 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:11:58 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:12:00 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:12:00 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3857' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:12:00 - [MESSAGE][PASSED] - Text '3857' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:12:00 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:12:02 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:12:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:02 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:12:03 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:12:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:03 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:03 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:12:08 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:12:08 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:12:08 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:12:08 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:12:08 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:08 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:08 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:12:10 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:12:10 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3861' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:12:11 - [MESSAGE][PASSED] - Text '3861' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:12:11 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:12:13 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:12:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:13 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:12:14 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:12:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:14 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:14 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:12:19 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:12:19 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:12:19 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:12:19 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:12:19 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:19 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:19 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:12:21 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:12:21 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3863' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:12:21 - [MESSAGE][PASSED] - Text '3863' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:12:21 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:12:23 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:12:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:23 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:12:24 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:12:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:24 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:24 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:12:29 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:12:29 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:12:29 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:12:29 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:12:29 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:29 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:29 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:12:31 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:12:31 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3864' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:12:32 - [MESSAGE][PASSED] - Text '3864' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:12:32 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:12:34 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:12:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:34 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:12:35 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:12:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:35 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:35 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:12:40 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:12:40 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:12:40 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:12:40 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:12:40 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:40 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:40 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:12:42 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:12:42 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3865' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:12:42 - [MESSAGE][PASSED] - Text '3865' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:12:42 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:12:44 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:12:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:44 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:12:45 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:12:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:45 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:45 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:12:50 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:12:50 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:12:50 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:12:50 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:12:50 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:50 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:50 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:12:52 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:12:52 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3869' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:12:52 - [MESSAGE][PASSED] - Text '3869' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:12:52 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:12:54 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:12:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:54 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:12:55 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:12:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:12:56 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:12:56 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:13:01 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:13:01 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:13:01 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:13:01 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:13:01 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:13:01 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:13:01 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:13:03 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:13:03 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3870' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:13:03 - [MESSAGE][PASSED] - Text '3870' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:13:03 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:13:05 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:13:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:13:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:13:05 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:13:06 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:13:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:13:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:13:06 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:13:06 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:13:11 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:13:11 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:13:11 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:13:11 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:13:11 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:13:11 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:13:11 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:13:13 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:13:13 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3871' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:13:13 - [MESSAGE][PASSED] - Text '3871' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:13:13 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:13:15 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:13:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:13:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:13:15 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:13:16 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:13:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:13:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:13:16 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:13:16 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:13:21 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:13:21 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:13:21 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:13:21 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:13:21 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:13:21 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:13:21 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:13:23 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:13:23 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3875' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:13:24 - [MESSAGE][PASSED] - Text '3875' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:13:24 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:13:26 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:13:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:13:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:13:26 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:13:27 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:13:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:13:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:13:27 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:13:27 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:13:32 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:13:32 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], STOP_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 13:13:32 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - println(row): null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - println(BOPersonal): null
+
+2019-09-30 13:13:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], STOP_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 13:13:32 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-09-30 13:13:32 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 13:13:32 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 13:13:33 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 13:13:33 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 13:13:36 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 13:13:36 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-09-30 13:13:36 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-09-30 13:13:36 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-30 13:13:36 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-30 13:13:36 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-30 13:13:36 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 13:13:38 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 13:13:38 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 13:13:38 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 13:13:38 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 13:13:38 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 13:13:38 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 13:13:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 13:13:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 13:13:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 13:13:42 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-09-30 13:13:42 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 13:13:42 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-09-30 13:13:42 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-30 13:13:42 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 13:13:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 13:13:42 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 10/24/2019 00:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 13:13:42 - [MESSAGE][PASSED] - Text ' 10/24/2019 00:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 13:13:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 13:13:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 13:13:43 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-30 13:13:53 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-30 13:13:53 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-09-30 13:13:53 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-09-30 13:13:53 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 13:13:53 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 13:13:53 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-09-30 13:13:53 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-09-30 13:13:53 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-09-30 13:13:53 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-09-30 13:13:53 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 13:13:53 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 13:13:54 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 13:13:54 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 13:13:56 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 13:13:56 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 13:14:03 - [MESSAGE][PASSED] - Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 13:14:03 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 13:14:04 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 13:14:04 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 13:14:04 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 13:14:04 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 13:14:04 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 13:14:04 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 13:14:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 13:14:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 13:14:12 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-30 13:14:15 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-30 13:14:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 13:14:15 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Home/a_Connections")): Object: 'Object Repository/Page_cabi Home/a_Connections' is clicked on
+
+2019-09-30 13:14:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Connections' is clicked on
+
+2019-09-30 13:14:15 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Home/a_Contact Manager")): Object: 'Object Repository/Page_cabi Home/a_Contact Manager' is clicked on
+
+2019-09-30 13:14:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Contact Manager' is clicked on
+
+2019-09-30 13:14:19 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi/span_SEND eBLAST")): Object: 'Object Repository/Page_cabi/span_SEND eBLAST' is clicked on
+
+2019-09-30 13:14:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/span_SEND eBLAST' is clicked on
+
+2019-09-30 13:14:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/a_Stylist Picks")): Object: 'Object Repository/Page_cabi Eblast/a_Stylist Picks' is clicked on
+
+2019-09-30 13:14:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/a_Stylist Picks' is clicked on
+
+2019-09-30 13:14:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST")): Object: 'Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST' is clicked on
+
+2019-09-30 13:14:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST' is clicked on
+
+2019-09-30 13:14:28 - [TEST_STEP][PASSED] - for ([row = 1, row <= findTestData("productData").getRowNumbers(), (row++)]): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:14:28 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:14:30 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:14:30 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3843' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:14:30 - [MESSAGE][PASSED] - Text '3843' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:14:30 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:14:32 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:14:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:14:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:14:32 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:14:33 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:14:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:14:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:14:34 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:14:34 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:14:39 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:14:39 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:14:39 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:14:39 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:14:39 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:14:39 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:14:39 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:14:41 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:14:41 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3846' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:14:41 - [MESSAGE][PASSED] - Text '3846' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:14:41 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:14:43 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:14:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:14:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:14:43 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:14:44 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:14:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:14:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:14:44 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:14:44 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:14:49 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:14:49 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:14:49 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:14:49 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:14:49 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:14:49 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:14:49 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:14:51 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:14:51 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3850' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:14:51 - [MESSAGE][PASSED] - Text '3850' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:14:51 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:14:53 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:14:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:14:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:14:53 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:14:54 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:14:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:14:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:14:54 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:14:54 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:14:59 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:14:59 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:14:59 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:14:59 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:14:59 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:14:59 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:14:59 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:15:01 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:15:01 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3857' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:15:02 - [MESSAGE][PASSED] - Text '3857' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:15:02 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:15:04 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:15:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:04 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:15:05 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:15:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:05 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:05 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:15:10 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:15:10 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:15:10 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:15:10 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:15:10 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:10 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:10 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:15:12 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:15:12 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3861' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:15:12 - [MESSAGE][PASSED] - Text '3861' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:15:12 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:15:14 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:15:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:14 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:15:15 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:15:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:15 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:15 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:15:20 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:15:20 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:15:20 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:15:20 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:15:20 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:20 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:20 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:15:22 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:15:22 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3863' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:15:22 - [MESSAGE][PASSED] - Text '3863' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:15:22 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:15:24 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:15:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:24 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:15:25 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:15:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:26 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:26 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:15:31 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:15:31 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:15:31 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:15:31 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:15:31 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:31 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:31 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:15:33 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:15:33 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3864' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:15:33 - [MESSAGE][PASSED] - Text '3864' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:15:33 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:15:35 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:15:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:35 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:15:36 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:15:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:36 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:36 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:15:41 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:15:41 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:15:41 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:15:41 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:15:41 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:41 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:41 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:15:43 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:15:43 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3865' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:15:43 - [MESSAGE][PASSED] - Text '3865' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:15:43 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:15:45 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:15:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:45 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:15:46 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:15:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:46 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:46 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:15:51 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:15:51 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:15:51 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:15:51 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:15:51 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:51 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:51 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:15:53 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:15:53 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3869' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:15:54 - [MESSAGE][PASSED] - Text '3869' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:15:54 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:15:56 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:15:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:56 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:15:57 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:15:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:15:57 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:15:57 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:16:02 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:16:02 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:16:02 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:16:02 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:16:02 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:16:02 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:16:02 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:16:04 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:16:04 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3870' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:16:04 - [MESSAGE][PASSED] - Text '3870' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:16:04 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:16:06 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:16:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:16:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:16:06 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:16:07 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:16:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:16:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:16:07 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:16:07 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:16:12 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:16:12 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:16:12 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:16:12 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:16:12 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:16:12 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:16:12 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:16:14 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:16:14 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3871' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:16:14 - [MESSAGE][PASSED] - Text '3871' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:16:14 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:16:16 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:16:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:16:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:16:16 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:16:17 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:16:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:16:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:16:18 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:16:18 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:16:23 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:16:23 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:16:23 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:16:23 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:16:23 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:16:23 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:16:23 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:16:25 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:16:25 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3875' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:16:25 - [MESSAGE][PASSED] - Text '3875' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:16:25 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:16:27 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:16:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:16:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:16:27 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:16:28 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:16:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:16:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:16:28 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:16:28 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-30 13:16:33 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - style_notfound = findWebElements(findTestObject("Page_cabi Eblast/styleNotFound"), 5): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - println(style_notfound.size()): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - assert style_notfound.size() > 0: null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Eblast/styleNotFound"), "No matching product"): Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:16:33 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Eblast/styleNotFound' are matched.
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], STOP_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 13:16:33 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - println(row): null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - println(BOPersonal): null
+
+2019-09-30 13:16:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-09-30 13:16:33 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], STOP_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 13:16:33 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-09-30 13:16:34 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 13:16:34 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 13:16:34 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 13:16:34 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 13:16:36 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 13:16:36 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-09-30 13:16:36 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-09-30 13:16:36 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-30 13:16:36 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-30 13:16:36 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-30 13:16:36 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 13:16:38 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 13:16:38 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 13:16:38 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 13:16:38 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 13:16:39 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 13:16:39 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 13:16:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 13:16:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 13:16:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 13:16:43 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-09-30 13:16:43 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 13:16:43 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-09-30 13:16:43 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-30 13:16:43 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 13:16:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 13:16:43 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 11/01/2019 12:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 13:16:43 - [MESSAGE][PASSED] - Text ' 11/01/2019 12:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 13:16:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 13:16:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 13:16:44 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-30 13:16:54 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-30 13:16:54 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-09-30 13:16:54 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-09-30 13:16:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 13:16:54 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 13:16:54 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-09-30 13:16:54 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-09-30 13:16:54 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-09-30 13:16:54 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-09-30 13:16:54 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 13:16:54 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 13:16:55 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 13:16:55 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 13:16:57 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 13:16:57 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 13:17:04 - [MESSAGE][PASSED] - Navigate to 'https://test4.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 13:17:04 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 13:17:05 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 13:17:05 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 13:17:05 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 13:17:05 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 13:17:05 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 13:17:05 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 13:17:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 13:17:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 13:17:14 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-30 13:17:17 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-30 13:17:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 13:17:17 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Home/a_Connections")): Object: 'Object Repository/Page_cabi Home/a_Connections' is clicked on
+
+2019-09-30 13:17:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Connections' is clicked on
+
+2019-09-30 13:17:17 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Home/a_Contact Manager")): Object: 'Object Repository/Page_cabi Home/a_Contact Manager' is clicked on
+
+2019-09-30 13:17:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Contact Manager' is clicked on
+
+2019-09-30 13:17:22 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi/span_SEND eBLAST")): Object: 'Object Repository/Page_cabi/span_SEND eBLAST' is clicked on
+
+2019-09-30 13:17:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/span_SEND eBLAST' is clicked on
+
+2019-09-30 13:17:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/a_Stylist Picks")): Object: 'Object Repository/Page_cabi Eblast/a_Stylist Picks' is clicked on
+
+2019-09-30 13:17:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/a_Stylist Picks' is clicked on
+
+2019-09-30 13:17:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST")): Object: 'Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST' is clicked on
+
+2019-09-30 13:17:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/button_ADD PRODUCTS TO EBLAST' is clicked on
+
+2019-09-30 13:17:32 - [TEST_STEP][FAILED] - for ([row = 1, row <= findTestData("productData").getRowNumbers(), (row++)]): for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert style_data.equalsIgnoreCase(style_web)
+       |          |                |
+       |          false            3850 Holiday Blazer (Holiday Plaid)
+       3857 M'Leggings (Deep Forest)
+
+	at productEblast.run(productEblast:97)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569829220710.run(TempTestSuite1569829220710.groovy:35)
+
+
+2019-09-30 13:17:32 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:17:34 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:17:34 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3843' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:17:34 - [MESSAGE][PASSED] - Text '3843' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:17:34 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:17:36 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:17:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:36 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:17:37 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:17:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:37 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-09-30 13:17:37 - [TEST_STEP][PASSED] - else: null
+
+2019-09-30 13:17:37 - [TEST_STEP][PASSED] - space = " ": null
+
+2019-09-30 13:17:37 - [TEST_STEP][PASSED] - openbrace = "(": null
+
+2019-09-30 13:17:37 - [TEST_STEP][PASSED] - closebrace = ")": null
+
+2019-09-30 13:17:37 - [TEST_STEP][PASSED] - style_id = getText(findTestObject("Page_cabi Eblast/style_id")): Text of object 'Object Repository/Page_cabi Eblast/style_id' is: '3843'
+
+2019-09-30 13:17:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Eblast/style_id' is: '3843'
+
+2019-09-30 13:17:37 - [TEST_STEP][PASSED] - style_name = getText(findTestObject("Page_cabi Eblast/style_name")): Text of object 'Object Repository/Page_cabi Eblast/style_name' is: 'Dressed-Up Shrug'
+
+2019-09-30 13:17:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Eblast/style_name' is: 'Dressed-Up Shrug'
+
+2019-09-30 13:17:37 - [TEST_STEP][PASSED] - style_color = getText(findTestObject("Page_cabi Eblast/style_color")): Text of object 'Object Repository/Page_cabi Eblast/style_color' is: '(Black)'
+
+2019-09-30 13:17:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Eblast/style_color' is: '(Black)'
+
+2019-09-30 13:17:37 - [TEST_STEP][PASSED] - style_web = $style_id$space$style_name$space$style_color: null
+
+2019-09-30 13:17:37 - [TEST_STEP][PASSED] - styleid_data = findTestData("productData").getValue("Style", row): null
+
+2019-09-30 13:17:37 - [TEST_STEP][PASSED] - styleid_name = findTestData("productData").getValue("Description", row): null
+
+2019-09-30 13:17:37 - [TEST_STEP][PASSED] - styleid_color = findTestData("productData").getValue("Color", row): null
+
+2019-09-30 13:17:38 - [TEST_STEP][PASSED] - style_data = $styleid_data$space$styleid_name$space$openbrace$styleid_color$closebrace: null
+
+2019-09-30 13:17:38 - [TEST_STEP][PASSED] - println(style_web): null
+
+2019-09-30 13:17:38 - [TEST_STEP][PASSED] - println(style_data): null
+
+2019-09-30 13:17:38 - [TEST_STEP][PASSED] - assert style_data.equalsIgnoreCase(style_web): null
+
+2019-09-30 13:17:38 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:17:40 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:17:40 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3846' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:17:40 - [MESSAGE][PASSED] - Text '3846' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:17:40 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:17:42 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:17:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:42 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:17:43 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - else: null
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - space = " ": null
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - openbrace = "(": null
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - closebrace = ")": null
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - style_id = getText(findTestObject("Page_cabi Eblast/style_id")): Text of object 'Object Repository/Page_cabi Eblast/style_id' is: '3846'
+
+2019-09-30 13:17:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Eblast/style_id' is: '3846'
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - style_name = getText(findTestObject("Page_cabi Eblast/style_name")): Text of object 'Object Repository/Page_cabi Eblast/style_name' is: 'Windchill Wrap'
+
+2019-09-30 13:17:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Eblast/style_name' is: 'Windchill Wrap'
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - style_color = getText(findTestObject("Page_cabi Eblast/style_color")): Text of object 'Object Repository/Page_cabi Eblast/style_color' is: '(Winter Stripe)'
+
+2019-09-30 13:17:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Eblast/style_color' is: '(Winter Stripe)'
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - style_web = $style_id$space$style_name$space$style_color: null
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - styleid_data = findTestData("productData").getValue("Style", row): null
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - styleid_name = findTestData("productData").getValue("Description", row): null
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - styleid_color = findTestData("productData").getValue("Color", row): null
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - style_data = $styleid_data$space$styleid_name$space$openbrace$styleid_color$closebrace: null
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - println(style_web): null
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - println(style_data): null
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - assert style_data.equalsIgnoreCase(style_web): null
+
+2019-09-30 13:17:43 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:17:45 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:17:45 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3850' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:17:45 - [MESSAGE][PASSED] - Text '3850' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:17:45 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:17:47 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:17:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:47 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:17:48 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:17:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:48 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-09-30 13:17:48 - [TEST_STEP][PASSED] - else: null
+
+2019-09-30 13:17:48 - [TEST_STEP][PASSED] - space = " ": null
+
+2019-09-30 13:17:48 - [TEST_STEP][PASSED] - openbrace = "(": null
+
+2019-09-30 13:17:48 - [TEST_STEP][PASSED] - closebrace = ")": null
+
+2019-09-30 13:17:48 - [TEST_STEP][PASSED] - style_id = getText(findTestObject("Page_cabi Eblast/style_id")): Text of object 'Object Repository/Page_cabi Eblast/style_id' is: '3850'
+
+2019-09-30 13:17:48 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Eblast/style_id' is: '3850'
+
+2019-09-30 13:17:48 - [TEST_STEP][PASSED] - style_name = getText(findTestObject("Page_cabi Eblast/style_name")): Text of object 'Object Repository/Page_cabi Eblast/style_name' is: 'Holiday Blazer'
+
+2019-09-30 13:17:48 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Eblast/style_name' is: 'Holiday Blazer'
+
+2019-09-30 13:17:48 - [TEST_STEP][PASSED] - style_color = getText(findTestObject("Page_cabi Eblast/style_color")): Text of object 'Object Repository/Page_cabi Eblast/style_color' is: '(Holiday Plaid)'
+
+2019-09-30 13:17:48 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Eblast/style_color' is: '(Holiday Plaid)'
+
+2019-09-30 13:17:49 - [TEST_STEP][PASSED] - style_web = $style_id$space$style_name$space$style_color: null
+
+2019-09-30 13:17:49 - [TEST_STEP][PASSED] - styleid_data = findTestData("productData").getValue("Style", row): null
+
+2019-09-30 13:17:49 - [TEST_STEP][PASSED] - styleid_name = findTestData("productData").getValue("Description", row): null
+
+2019-09-30 13:17:49 - [TEST_STEP][PASSED] - styleid_color = findTestData("productData").getValue("Color", row): null
+
+2019-09-30 13:17:49 - [TEST_STEP][PASSED] - style_data = $styleid_data$space$styleid_name$space$openbrace$styleid_color$closebrace: null
+
+2019-09-30 13:17:49 - [TEST_STEP][PASSED] - println(style_web): null
+
+2019-09-30 13:17:49 - [TEST_STEP][PASSED] - println(style_data): null
+
+2019-09-30 13:17:49 - [TEST_STEP][PASSED] - assert style_data.equalsIgnoreCase(style_web): null
+
+2019-09-30 13:17:49 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:17:51 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:17:51 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Eblast/eBlastStyleSearch"), findTestData("productData").getValue("Style", row)): Text '3857' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:17:51 - [MESSAGE][PASSED] - Text '3857' is set on object 'Object Repository/Page_cabi Eblast/eBlastStyleSearch'
+
+2019-09-30 13:17:51 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-09-30 13:17:53 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-09-30 13:17:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:53 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-09-30 13:17:54 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Eblast/div_add_product")): Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Eblast/div_add_product' is clicked on
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-09-30 13:17:54 - [TEST_STEP][FAILED] - else: for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert style_data.equalsIgnoreCase(style_web)
+       |          |                |
+       |          false            3850 Holiday Blazer (Holiday Plaid)
+       3857 M'Leggings (Deep Forest)
+
+	at productEblast.run(productEblast:97)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569829220710.run(TempTestSuite1569829220710.groovy:35)
+
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - space = " ": null
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - openbrace = "(": null
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - closebrace = ")": null
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - style_id = getText(findTestObject("Page_cabi Eblast/style_id")): Text of object 'Object Repository/Page_cabi Eblast/style_id' is: '3850'
+
+2019-09-30 13:17:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Eblast/style_id' is: '3850'
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - style_name = getText(findTestObject("Page_cabi Eblast/style_name")): Text of object 'Object Repository/Page_cabi Eblast/style_name' is: 'Holiday Blazer'
+
+2019-09-30 13:17:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Eblast/style_name' is: 'Holiday Blazer'
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - style_color = getText(findTestObject("Page_cabi Eblast/style_color")): Text of object 'Object Repository/Page_cabi Eblast/style_color' is: '(Holiday Plaid)'
+
+2019-09-30 13:17:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Eblast/style_color' is: '(Holiday Plaid)'
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - style_web = $style_id$space$style_name$space$style_color: null
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - styleid_data = findTestData("productData").getValue("Style", row): null
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - styleid_name = findTestData("productData").getValue("Description", row): null
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - styleid_color = findTestData("productData").getValue("Color", row): null
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - style_data = $styleid_data$space$styleid_name$space$openbrace$styleid_color$closebrace: null
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - println(style_web): null
+
+2019-09-30 13:17:54 - [TEST_STEP][PASSED] - println(style_data): null
+
+2019-09-30 13:17:54 - [TEST_STEP][FAILED] - assert style_data.equalsIgnoreCase(style_web): for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert style_data.equalsIgnoreCase(style_web)
+       |          |                |
+       |          false            3850 Holiday Blazer (Holiday Plaid)
+       3857 M'Leggings (Deep Forest)
+
+	at productEblast.run(productEblast:97)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569829220710.run(TempTestSuite1569829220710.groovy:35)
+
+
+2019-09-30 13:17:54 - [MESSAGE][FAILED] - for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]) FAILED.
+Reason:
+Assertion failed: 
+
+assert style_data.equalsIgnoreCase(style_web)
+       |          |                |
+       |          false            3850 Holiday Blazer (Holiday Plaid)
+       3857 M'Leggings (Deep Forest)
+
+	at productEblast.run(productEblast:97)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569829220710.run(TempTestSuite1569829220710.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-09-30 13:10:24 - [TEST_CASE][FAILED] - Test Cases/NewArrival/productEblast: Test Cases/NewArrival/productEblast FAILED.
+Reason:
+Assertion failed: 
+
+assert style_data.equalsIgnoreCase(style_web)
+       |          |                |
+       |          false            3850 Holiday Blazer (Holiday Plaid)
+       3857 M'Leggings (Deep Forest)
+
+	at productEblast.run(productEblast:97)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569829220710.run(TempTestSuite1569829220710.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-09-30 13:10:23 - [TEST_SUITE][FAILED] - NewArrivalsSuite: Test Cases/NewArrival/productEblast FAILED.
+Reason:
+Assertion failed: 
+
+assert style_data.equalsIgnoreCase(style_web)
+       |          |                |
+       |          false            3850 Holiday Blazer (Holiday Plaid)
+       3857 M'Leggings (Deep Forest)
+
+	at productEblast.run(productEblast:97)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569829220710.run(TempTestSuite1569829220710.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-09-30 13:10:23 - [TEST_SUITE][FAILED] - NewArrivalsSuite: Test Cases/NewArrival/productEblast FAILED.
+Reason:
+Assertion failed: 
+
+assert style_data.equalsIgnoreCase(style_web)
+       |          |                |
+       |          false            3850 Holiday Blazer (Holiday Plaid)
+       3857 M'Leggings (Deep Forest)
+
+	at productEblast.run(productEblast:97)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1569829220710.run(TempTestSuite1569829220710.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

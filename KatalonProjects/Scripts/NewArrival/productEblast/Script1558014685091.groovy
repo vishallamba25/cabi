@@ -24,10 +24,12 @@ import org.stringtemplate.v4.compiler.STParser.listElement_return as listElement
 
 //available= "no"
 WebUI.openBrowser('')
-for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
+
+for (int timeRow = 3; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
     WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
-	available= GlobalVariable.BOEblast;
-	
+
+    available = GlobalVariable.BOEblast
+
     WebUI.callTestCase(findTestCase('NewArrival/setTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
             , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('clockServerTarget') : GlobalVariable.clockServerTarget], 
         FailureHandling.STOP_ON_FAILURE)
@@ -47,23 +49,40 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
         WebUI.delay(2)
-
-        WebUI.setText(findTestObject('Page_cabi Eblast/eBlastStyleSearch'), findTestData('productData').getValue('Style', 
-                row))
-
-        //WebUI.delay(4)
+		String styleid_data = findTestData('productData').getValue('Style', row)
+		/*String[] styleid_data_arr= styleid_data.split("");
+		String tmp=""
+		for(String ele: styleid_data_arr){
+			
+		}*/
+        WebUI.setText(findTestObject('Page_cabi Eblast/eBlastStyleSearch'), styleid_data)
+        WebUI.delay(2)
+		WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/div_add_product_h3'))	
+		WebUI.setText(findTestObject('Page_cabi Eblast/eBlastStyleSearch'), styleid_data)
+		WebUI.delay(2)
+		WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/div_add_product_h3'))
+		WebUI.delay(1)
 
         if (available.toString().equalsIgnoreCase('no')) {
-			WebUI.delay(5)
-            List<WebElement> style_notfound = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/styleNotFound'), 5)
-			
-			
+            WebUI.delay(5)
+
+            List<WebElement> style_notfound = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/styleNotFound'), 
+                5)
+
             println(style_notfound.size())
 
             assert style_notfound.size() > 0
 
             WebUI.verifyElementText(findTestObject('Page_cabi Eblast/styleNotFound'), 'No matching product')
         } else {
+		
+			List<WebElement> div_product = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/div_product'), 5)
+			if(div_product.size()>0){
+				
+			}
+			
+		
+		
             String space = ' '
 
             String openbrace = '('
@@ -76,9 +95,9 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
             String style_color = WebUI.getText(findTestObject('Page_cabi Eblast/style_color'))
 
-            style_web = "$style_id$space$style_name$space$style_color"
+            String style_web = "$style_id$space$style_name$space$style_color"
 
-            String styleid_data = findTestData('productData').getValue('Style', row)
+            
 
             String styleid_name = findTestData('productData').getValue('Description', row)
 

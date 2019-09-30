@@ -56,7 +56,9 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
         if (available.toString().equalsIgnoreCase('no')) {
             List<WebElement> style_notfound = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/styleNotFound'), 5)
 
-            println(style_notfound.size())
+			WebUI.delay(4)	
+      
+			println(style_notfound.size())
 
             assert style_notfound.size() > 0
 

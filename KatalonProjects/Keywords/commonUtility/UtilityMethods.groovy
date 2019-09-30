@@ -86,10 +86,17 @@ public class UtilityMethods {
 
 	@Keyword
 	public static boolean listEquals(ArrayList<String> expectedRange, ArrayList<String> actualRange){
+		
+		
+		println expectedRange.size()
+		println actualRange.size()
+		
+		
+		
 		if(expectedRange.size()!=actualRange.size())
 			return false;
 		for(int i=0; i<expectedRange.size(); i++){
-			if(expectedRange.get(i)!=actualRange.get(i)){
+			if(!(expectedRange.get(i).equalsIgnoreCase(actualRange.get(i)))){
 				return false;
 			}
 		}

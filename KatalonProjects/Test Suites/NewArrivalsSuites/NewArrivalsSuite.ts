@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>4b58421a-4db4-452d-93d5-25791994aabd</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NewArrival/productWatchlist</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -61,7 +61,7 @@
    <testCaseLink>
       <guid>855ab3a9-5c44-483b-b22c-01872883d7da</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NewArrival/CCOrders</testCaseId>
    </testCaseLink>
    <testCaseLink>

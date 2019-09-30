@@ -30,19 +30,27 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
     WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), 
         Keys.chord(Keys.ENTER))
 
-    WebUI.delay(5)
+    WebUI.delay(2)
 
-	
+    WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), findTestData(
+            'productData').getValue('Style', row))
+
+    WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), 
+        Keys.chord(Keys.ENTER))
+
+    WebUI.delay(2)
+
     if (available.toString().equalsIgnoreCase('no')) {
-		WebUI.delay(2)
+        WebUI.delay(2)
+
         List<WebElement> noResultMessages = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Order Items/no_result_found'), 
             5)
 
-		println noResultMessages.size()
+        println(noResultMessages.size())
+
         assert noResultMessages.size() > 0
 
-        WebUI.verifyElementText(findTestObject('Page_cabi Order Items/no_result_found'), 'No Results Found!', FailureHandling.CONTINUE_ON_FAILURE) /*******screenshot***********************************/
-        /*******Style***********************************/
+        WebUI.verifyElementText(findTestObject('Page_cabi Order Items/no_result_found'), 'No Results Found!', FailureHandling.CONTINUE_ON_FAILURE /*******screenshot***********************************/ ) /*******Style***********************************/
         //WebUI.delay(3)
         /*******Colour***********************************/
         /*******retail***********************************/
@@ -104,8 +112,8 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
         String[] sizeRange3 = ['Long', 'Regular', 'Short']
 
         String[] sizeRange4 = ['5', '6', '6.5', '7', '7.5', '8', '8.5', '9', '9.5', '10', '11']
-		
-		String[] sizeRange5 = ['XS/S', 'M/L']
+
+        String[] sizeRange5 = ['XS/S', 'M/L']
 
         String[] sizeRangeSplit = UtilityMethods.SplitSizes(findTestData('productData').getValue('SzRange', row))
 
@@ -171,4 +179,3 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
         assert actualCasreIntrn.equals(findTestData('productData').getValue('CareInstr', row))
     }
 }
-

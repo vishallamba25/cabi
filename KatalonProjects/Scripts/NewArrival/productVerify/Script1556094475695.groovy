@@ -36,7 +36,7 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
             'productData').getValue('Style', row))
 
     WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), 
-        Keys.chord(Keys.ENTER))
+        Keys.chord(Keys.ENTER))	
 
     WebUI.delay(2)
 
@@ -175,6 +175,8 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 
         String actualCasreIntrn = ('<div>' + WebUI.getText(findTestObject('Page_cabi Order Items/care_instruction'))) + 
         '</div>'
+		
+		println actualCasreIntrn
 
         assert actualCasreIntrn.equals(findTestData('productData').getValue('CareInstr', row))
     }

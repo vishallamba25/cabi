@@ -16,6 +16,8 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 	SoftAssert sa= new SoftAssert();
 	
 	String styleid_data = findTestData('productData').getValue('Style', row)
+	println "******************+++++++++++++++++++**********************************************"
+	println styleid_data
     WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), styleid_data)
 
     WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), 

@@ -1,0 +1,1785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="NewArrivalsSuite" time="425" tests="1" failures="0" errors="0">
+   <testsuite name="NewArrivalsSuite" tests="1" failures="0" errors="0" time="425" timestamp="2019-09-30 16:28:49" hostname="user - Tester-pc" id="Test Suites/NewArrivalsSuites/NewArrivalsSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20190930_162842"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20190930_162842\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - Tester-pc"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 77.0.3865.90"/>
+         <property name="hostAddress" value="10.0.61.219"/>
+         <property name="sessionId" value="991edcddf2c7cd20078d15a609f9eb4a"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/NewArrival/productWatchlist" classname="Test Cases/NewArrival/productWatchlist" status="PASSED">
+         <system-out><![CDATA[2019-09-30 16:28:50 - [TEST_CASE][PASSED] - Test Cases/NewArrival/productWatchlist: Test Cases/NewArrival/productWatchlist
+
+2019-09-30 16:28:50 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-09-30 16:28:51 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-09-30 16:28:51 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-09-30 16:28:51 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 16:28:52 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 16:28:52 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 16:28:52 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-09-30 16:28:56 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 16:28:56 - [TEST_STEP][PASSED] - for ([timeRow = 1, timeRow <= findTestData("timezoneData").getRowNumbers(), (timeRow++)]): null
+
+2019-09-30 16:28:58 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 16:28:58 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-09-30 16:28:59 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-09-30 16:28:59 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-09-30 16:28:59 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 16:28:59 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - println(row): null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - println(BOPersonal): null
+
+2019-09-30 16:29:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 16:29:00 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-09-30 16:29:00 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 16:29:00 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 16:29:01 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 16:29:01 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 16:29:04 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 16:29:04 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-09-30 16:29:04 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-09-30 16:29:04 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-30 16:29:04 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-30 16:29:04 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-30 16:29:04 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 16:29:07 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 16:29:07 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 16:29:07 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 16:29:07 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 16:29:08 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 16:29:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 16:29:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 16:29:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 16:29:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 16:29:13 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-09-30 16:29:13 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 16:29:13 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-09-30 16:29:13 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-30 16:29:13 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 16:29:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 16:29:13 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 10/16/2019 7:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 16:29:13 - [MESSAGE][PASSED] - Text ' 10/16/2019 7:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 16:29:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 16:29:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 16:29:14 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-30 16:29:24 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-30 16:29:24 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-09-30 16:29:24 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-09-30 16:29:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 16:29:24 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 16:29:24 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-09-30 16:29:25 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-09-30 16:29:25 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-09-30 16:29:25 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-09-30 16:29:25 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 16:29:25 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 16:29:26 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 16:29:26 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 16:29:28 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 16:29:28 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4ca.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 16:29:36 - [MESSAGE][PASSED] - Navigate to 'https://test4ca.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 16:29:36 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:29:37 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:29:37 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:29:37 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text 'ca1402' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 16:29:37 - [MESSAGE][PASSED] - Text 'ca1402' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 16:29:37 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 16:29:37 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 16:29:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:29:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:29:52 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-30 16:29:55 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-30 16:29:55 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 16:29:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-30 16:29:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-30 16:29:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Product Watch List")): Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-30 16:29:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-30 16:29:59 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-09-30 16:29:59 - [TEST_STEP][PASSED] - noResultFound = findWebElements(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)"), 5): Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 2)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:30:05 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 2)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - assert noResultFound.size() == 0: null
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 16:30:05 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-09-30 16:30:05 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-09-30 16:30:06 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-09-30 16:30:06 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-09-30 16:30:06 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-09-30 16:30:06 - [TEST_STEP][PASSED] - println(row): null
+
+2019-09-30 16:30:06 - [TEST_STEP][PASSED] - println(BOPersonal): null
+
+2019-09-30 16:30:06 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 16:30:06 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-09-30 16:30:06 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 16:30:06 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-09-30 16:30:06 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 16:30:06 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 16:30:07 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 16:30:07 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 16:30:09 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 16:30:09 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-09-30 16:30:09 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-09-30 16:30:09 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-30 16:30:09 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-30 16:30:09 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-30 16:30:10 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 16:30:12 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 16:30:12 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 16:30:12 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 16:30:12 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 16:30:12 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 16:30:12 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 16:30:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 16:30:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 16:30:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 16:30:17 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-09-30 16:30:17 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 16:30:17 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-09-30 16:30:17 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-30 16:30:17 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 16:30:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 16:30:18 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 10/24/2019 00:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 16:30:18 - [MESSAGE][PASSED] - Text ' 10/24/2019 00:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 16:30:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 16:30:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 16:30:19 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-30 16:30:29 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-30 16:30:29 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-09-30 16:30:29 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-09-30 16:30:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 16:30:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 16:30:29 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-09-30 16:30:29 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-09-30 16:30:29 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-09-30 16:30:29 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-09-30 16:30:29 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 16:30:29 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 16:30:30 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 16:30:30 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 16:30:32 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 16:30:32 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4ca.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 16:30:40 - [MESSAGE][PASSED] - Navigate to 'https://test4ca.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 16:30:40 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:30:41 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:30:41 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:30:41 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text 'ca1402' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 16:30:41 - [MESSAGE][PASSED] - Text 'ca1402' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 16:30:41 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 16:30:42 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 16:30:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:30:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:30:51 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-30 16:30:54 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-30 16:30:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 16:30:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-30 16:30:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-30 16:30:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Product Watch List")): Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-30 16:31:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-30 16:31:01 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-09-30 16:31:01 - [TEST_STEP][PASSED] - noResultFound = findWebElements(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)"), 5): Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 2)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:31:06 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 2)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:31:06 - [TEST_STEP][PASSED] - assert noResultFound.size() == 0: null
+
+2019-09-30 16:31:06 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 16:31:06 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-09-30 16:31:06 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - println(row): null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - println(BOPersonal): null
+
+2019-09-30 16:31:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 16:31:07 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-09-30 16:31:07 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 16:31:07 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 16:31:08 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 16:31:08 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 16:31:11 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 16:31:11 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-09-30 16:31:11 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-09-30 16:31:11 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-30 16:31:11 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-30 16:31:11 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-30 16:31:11 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 16:31:13 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 16:31:13 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 16:31:14 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 16:31:14 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 16:31:14 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 16:31:14 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 16:31:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 16:31:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 16:31:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 16:31:18 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-09-30 16:31:18 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 16:31:18 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-09-30 16:31:18 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-30 16:31:18 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 16:31:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 16:31:18 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 11/01/2019 12:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 16:31:19 - [MESSAGE][PASSED] - Text ' 11/01/2019 12:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 16:31:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 16:31:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 16:31:20 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-30 16:31:30 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-30 16:31:30 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-09-30 16:31:30 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-09-30 16:31:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 16:31:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 16:31:30 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-09-30 16:31:30 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-09-30 16:31:30 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-09-30 16:31:30 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-09-30 16:31:30 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 16:31:30 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 16:31:31 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 16:31:31 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 16:31:33 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 16:31:33 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4ca.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 16:31:43 - [MESSAGE][PASSED] - Navigate to 'https://test4ca.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 16:31:43 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:31:44 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:31:44 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:31:44 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text 'ca1402' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 16:31:44 - [MESSAGE][PASSED] - Text 'ca1402' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 16:31:45 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 16:31:45 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 16:31:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:31:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:31:55 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-30 16:31:58 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-30 16:31:58 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 16:31:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-30 16:31:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-30 16:31:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Product Watch List")): Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-30 16:32:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-30 16:32:41 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-09-30 16:32:41 - [TEST_STEP][PASSED] - else: null
+
+2019-09-30 16:32:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)")): Object: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' is clicked on
+
+2019-09-30 16:32:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' is clicked on
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)"), "(New Arrivals 2)"): Actual text and expected text of test object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' are matched.
+
+2019-09-30 16:32:42 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' are matched.
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - actualProductList = findWebElements(findTestObject("Page_cabi Product Watch list/div_product_list_na2"), 5): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - println(actualProductList.size()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - actualList = new java.util.ArrayList(): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - expectedList = new java.util.ArrayList(): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - for (org.openqa.selenium.WebElement product : actualProductList): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:32:42 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - p1Rows = findTestData("productData1").getRowNumbers(): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - println(p1Rows): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - for ([row = 1, row <= p1Rows, (row++)]): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:32:43 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - println(expectedList.size()): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - assert UtilityMethods.listEquals(expectedList, actualList) == true: null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 16:32:44 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-09-30 16:32:44 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-09-30 16:32:45 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-09-30 16:32:45 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-09-30 16:32:45 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-09-30 16:32:45 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-09-30 16:32:45 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-09-30 16:32:45 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-09-30 16:32:45 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-09-30 16:32:45 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-09-30 16:32:45 - [TEST_STEP][PASSED] - println(row): null
+
+2019-09-30 16:32:45 - [TEST_STEP][PASSED] - println(BOPersonal): null
+
+2019-09-30 16:32:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 16:32:45 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-09-30 16:32:45 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 16:32:45 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-09-30 16:32:45 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 16:32:45 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 16:32:46 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 16:32:46 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 16:32:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 16:32:48 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-09-30 16:32:48 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-09-30 16:32:48 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-30 16:32:48 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-30 16:32:48 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-30 16:32:48 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 16:32:55 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 16:32:55 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 16:32:55 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 16:32:55 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 16:32:55 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 16:32:55 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 16:33:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 16:33:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 16:33:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 16:33:01 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-09-30 16:33:01 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 16:33:01 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-09-30 16:33:01 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-30 16:33:01 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 16:33:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 16:33:01 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 11/05/2019 00:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 16:33:01 - [MESSAGE][PASSED] - Text ' 11/05/2019 00:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 16:33:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 16:33:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 16:33:03 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-30 16:33:13 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-30 16:33:13 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-09-30 16:33:13 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-09-30 16:33:13 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 16:33:13 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 16:33:13 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-09-30 16:33:13 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-09-30 16:33:13 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-09-30 16:33:13 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-09-30 16:33:13 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 16:33:13 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 16:33:14 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 16:33:14 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 16:33:16 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 16:33:16 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4ca.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 16:33:27 - [MESSAGE][PASSED] - Navigate to 'https://test4ca.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 16:33:27 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:33:28 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:33:28 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:33:28 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text 'ca1402' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 16:33:28 - [MESSAGE][PASSED] - Text 'ca1402' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 16:33:28 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 16:33:29 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 16:33:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:33:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:33:39 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-30 16:33:42 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-30 16:33:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 16:33:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-30 16:33:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-30 16:33:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Product Watch List")): Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-30 16:33:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-30 16:33:50 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-09-30 16:33:50 - [TEST_STEP][PASSED] - noResultFound = findWebElements(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)"), 5): Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 2)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:33:55 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //table[@ng-if='products']/thead/tr[@class='table-header-description']/th/span[contains(text(), ' (New Arrivals 2)')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:33:55 - [TEST_STEP][PASSED] - assert noResultFound.size() == 0: null
+
+2019-09-30 16:33:55 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 16:33:55 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-09-30 16:33:55 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-09-30 16:33:55 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-09-30 16:33:55 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 16:33:55 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-09-30 16:33:55 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - println(row): null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - println(BOPersonal): null
+
+2019-09-30 16:33:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 16:33:56 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-09-30 16:33:56 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 16:33:56 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 16:33:57 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 16:33:57 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 16:34:00 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 16:34:00 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-09-30 16:34:00 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-09-30 16:34:00 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-30 16:34:00 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-30 16:34:00 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-30 16:34:00 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 16:34:03 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 16:34:03 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 16:34:03 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 16:34:03 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 16:34:03 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 16:34:03 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 16:34:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 16:34:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 16:34:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 16:34:08 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-09-30 16:34:08 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 16:34:08 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-09-30 16:34:08 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-30 16:34:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 16:34:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 16:34:08 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 11/06/2019 7:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 16:34:09 - [MESSAGE][PASSED] - Text ' 11/06/2019 7:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 16:34:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 16:34:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 16:34:09 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-30 16:34:19 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-30 16:34:19 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-09-30 16:34:19 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-09-30 16:34:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 16:34:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 16:34:19 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-09-30 16:34:19 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-09-30 16:34:19 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-09-30 16:34:20 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-09-30 16:34:20 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 16:34:20 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 16:34:21 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 16:34:21 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 16:34:23 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 16:34:23 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4ca.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 16:34:30 - [MESSAGE][PASSED] - Navigate to 'https://test4ca.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 16:34:30 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:34:31 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:34:31 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:34:31 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text 'ca1402' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 16:34:31 - [MESSAGE][PASSED] - Text 'ca1402' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 16:34:31 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 16:34:32 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 16:34:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:34:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:34:42 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-30 16:34:45 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-30 16:34:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 16:34:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-30 16:34:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-30 16:34:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Product Watch List")): Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-30 16:34:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-30 16:34:49 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-09-30 16:34:49 - [TEST_STEP][PASSED] - else: null
+
+2019-09-30 16:34:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)")): Object: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' is clicked on
+
+2019-09-30 16:34:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' is clicked on
+
+2019-09-30 16:34:52 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)"), "(New Arrivals 2)"): Actual text and expected text of test object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' are matched.
+
+2019-09-30 16:34:52 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' are matched.
+
+2019-09-30 16:34:52 - [TEST_STEP][PASSED] - actualProductList = findWebElements(findTestObject("Page_cabi Product Watch list/div_product_list_na2"), 5): null
+
+2019-09-30 16:34:52 - [TEST_STEP][PASSED] - println(actualProductList.size()): null
+
+2019-09-30 16:34:52 - [TEST_STEP][PASSED] - actualList = new java.util.ArrayList(): null
+
+2019-09-30 16:34:52 - [TEST_STEP][PASSED] - expectedList = new java.util.ArrayList(): null
+
+2019-09-30 16:34:52 - [TEST_STEP][PASSED] - for (org.openqa.selenium.WebElement product : actualProductList): null
+
+2019-09-30 16:34:52 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:34:52 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:34:52 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - p1Rows = findTestData("productData1").getRowNumbers(): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - println(p1Rows): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - for ([row = 1, row <= p1Rows, (row++)]): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:34:53 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:34:54 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - println(expectedList.size()): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - assert UtilityMethods.listEquals(expectedList, actualList) == true: null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/populateTimeGlobalVars"), ["row":timeRow], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 16:34:55 - [TEST_CASE][PASSED] - Test Cases/NewArrival/populateTimeGlobalVars: Test Cases/NewArrival/populateTimeGlobalVars
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - dataFile = "timezoneData": null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - clockServerTarget = UtilityMethods.getTestData("envtData", "clockServerTarget", 1): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - orderType = UtilityMethods.getTestData(dataFile, "orderType", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - timeZone = UtilityMethods.getTestData(dataFile, "timeZone", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - BOPersonal = UtilityMethods.getTestData(dataFile, "BOPersonal", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - BOAddonPersonal = UtilityMethods.getTestData(dataFile, "BOAddonPersonal", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - BOAddonRetail = UtilityMethods.getTestData(dataFile, "BOAddonRetail", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - BORetail = UtilityMethods.getTestData(dataFile, "BORetail", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - BOShow = UtilityMethods.getTestData(dataFile, "BOShow", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - BOOnlineoutlet = UtilityMethods.getTestData(dataFile, "BOOnlineoutlet", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - BOEmployee = UtilityMethods.getTestData(dataFile, "BOEmployee", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - CCPersonal = UtilityMethods.getTestData(dataFile, "CCPersonal", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - CCRetail = UtilityMethods.getTestData(dataFile, "CCRetail", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - CCShow = UtilityMethods.getTestData(dataFile, "CCShow", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - BOEblast = UtilityMethods.getTestData(dataFile, "BOEblast", row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - println(row): null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - println(BOPersonal): null
+
+2019-09-30 16:34:55 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/populateTimeGlobalVars' successfully
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - available = BOEblast: null
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - callTestCase(findTestCase("NewArrival/setTimezone"), ["ofbizURL":"", "ofbizuser":"", "ofbizpass":"", "orderType":orderType, "timeZone":timeZone, "clockServerTarget":clockServerTarget], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 16:34:55 - [TEST_CASE][PASSED] - Test Cases/NewArrival/setTimezone: Test Cases/NewArrival/setTimezone
+
+2019-09-30 16:34:55 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 16:34:55 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 16:34:56 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 16:34:56 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 16:34:59 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 16:34:59 - [TEST_STEP][NOT_RUN] - maximizeWindow(): NOT_RUN: maximizeWindow()
+
+2019-09-30 16:34:59 - [MESSAGE][NOT_RUN] - NOT_RUN: maximizeWindow()
+
+2019-09-30 16:34:59 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-30 16:34:59 - [TEST_STEP][PASSED] - ofbizuser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-30 16:34:59 - [TEST_STEP][PASSED] - ofbizpass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-30 16:34:59 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 16:35:01 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-30 16:35:01 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Username_username"), ofbizuser): Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 16:35:01 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/Page_/input_Username_username'
+
+2019-09-30 16:35:01 - [TEST_STEP][PASSED] - setText(findTestObject("Page_/input_Password_password"), ofbizpass): Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 16:35:02 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/Page_/input_Password_password'
+
+2019-09-30 16:35:02 - [TEST_STEP][PASSED] - click(findTestObject("Page_/input_Password_Submit")): Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 16:35:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input_Password_Submit' is clicked on
+
+2019-09-30 16:35:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/a_Clock set")): Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 16:35:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/a_Clock set' is clicked on
+
+2019-09-30 16:35:06 - [TEST_STEP][PASSED] - cst = UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", clockServerTarget, "')]"): null
+
+2019-09-30 16:35:06 - [TEST_STEP][PASSED] - println(clockServerTarget): null
+
+2019-09-30 16:35:06 - [TEST_STEP][PASSED] - click(cst): Object: 'select_target' is clicked on
+
+2019-09-30 16:35:06 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-30 16:35:06 - [TEST_STEP][PASSED] - click(findTestObject("Page_/thisDateAndTime")): Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 16:35:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/thisDateAndTime' is clicked on
+
+2019-09-30 16:35:07 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_/setTargetTime"), timeZone): Text ' 11/20/2019 00:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 16:35:07 - [MESSAGE][PASSED] - Text ' 11/20/2019 00:00' is set on object 'Object Repository/Page_/setTargetTime'
+
+2019-09-30 16:35:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_/input")): Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 16:35:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_/input' is clicked on
+
+2019-09-30 16:35:08 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-30 16:35:18 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-30 16:35:18 - [TEST_STEP][NOT_RUN] - closeBrowser(): NOT_RUN: closeBrowser()
+
+2019-09-30 16:35:18 - [MESSAGE][NOT_RUN] - NOT_RUN: closeBrowser()
+
+2019-09-30 16:35:18 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/NewArrival/setTimezone' successfully
+
+2019-09-30 16:35:18 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 16:35:18 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-09-30 16:35:18 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-09-30 16:35:18 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-09-30 16:35:18 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-09-30 16:35:18 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-30 16:35:18 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-30 16:35:19 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-30 16:35:19 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-30 16:35:21 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-30 16:35:21 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test4ca.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 16:35:30 - [MESSAGE][PASSED] - Navigate to 'https://test4ca.cliotest.com/backoffice/control/main' successfully
+
+2019-09-30 16:35:30 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:35:31 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-30 16:35:31 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:35:31 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text 'ca1402' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 16:35:31 - [MESSAGE][PASSED] - Text 'ca1402' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-09-30 16:35:31 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 16:35:31 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-09-30 16:35:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:35:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-09-30 16:35:41 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-30 16:35:44 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-30 16:35:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-09-30 16:35:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-30 16:35:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-09-30 16:35:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Product Watch List")): Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-30 16:35:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Product Watch List' is clicked on
+
+2019-09-30 16:35:51 - [TEST_STEP][PASSED] - if (toString().equalsIgnoreCase("no")): null
+
+2019-09-30 16:35:51 - [TEST_STEP][PASSED] - else: null
+
+2019-09-30 16:35:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)")): Object: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' is clicked on
+
+2019-09-30 16:35:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' is clicked on
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)"), "(New Arrivals 2)"): Actual text and expected text of test object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' are matched.
+
+2019-09-30 16:35:52 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)' are matched.
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - actualProductList = findWebElements(findTestObject("Page_cabi Product Watch list/div_product_list_na2"), 5): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - println(actualProductList.size()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - actualList = new java.util.ArrayList(): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - expectedList = new java.util.ArrayList(): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - for (org.openqa.selenium.WebElement product : actualProductList): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:35:52 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - actualList.add(product.getText()): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - println(product.getText()): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - p1Rows = findTestData("productData1").getRowNumbers(): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - println(p1Rows): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - for ([row = 1, row <= p1Rows, (row++)]): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:35:53 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productStyle = findTestData("productData1").getValue("Style", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productDescription = findTestData("productData1").getValue("Description", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - productColor = findTestData("productData1").getValue("Color", row): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - expectedString = UtilityMethods.createSkuForPWL(productStyle, productDescription, productColor): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - println(expectedString): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - expectedList.add(expectedString): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - println(expectedList.size()): null
+
+2019-09-30 16:35:54 - [TEST_STEP][PASSED] - assert UtilityMethods.listEquals(expectedList, actualList) == true: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-09-30 16:28:49 - [TEST_SUITE][PASSED] - NewArrivalsSuite: Test Cases/NewArrival/productWatchlist]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

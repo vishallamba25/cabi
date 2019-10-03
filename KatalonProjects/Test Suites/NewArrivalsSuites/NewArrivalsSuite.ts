@@ -49,7 +49,7 @@
    <testCaseLink>
       <guid>237fb932-afd3-432e-9706-e052e1d24231</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NewArrival/BORetail</testCaseId>
    </testCaseLink>
    <testCaseLink>

@@ -24,17 +24,17 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
         Keys.chord(Keys.ENTER))
 	
     WebUI.delay(2)
-<<<<<<< HEAD
+
 
     WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), findTestData(
             'productData').getValue('Style', row))
 
     WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), 
         Keys.chord(Keys.ENTER))	
-=======
+
 	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'),30)))
     
->>>>>>> af642dbe392c8b551bcba296d0feb13ca81f4c97
+
 
     WebUI.delay(2)
 

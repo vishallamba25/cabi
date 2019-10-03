@@ -2,28 +2,49 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.By
 import org.testng.asserts.SoftAssert
 
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 
 import commonUtility.UtilityMethods as UtilityMethods
 
 //WebUI.openBrowser('')
+SoftAssert sa;
+String styleid_data;
+By by;
+WebElement styleWe;
+TestObject to;
+
+
+WebDriver driver = DriverFactory.getWebDriver()
 for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
-	SoftAssert sa= new SoftAssert();
+	WebUI.delay(3)
+	sa= new SoftAssert();
 	
-	String styleid_data = findTestData('productData').getValue('Style', row)
+	styleid_data = findTestData('productData').getValue('Style', row)
 	println "******************+++++++++++++++++++**********************************************"
 	println styleid_data
-    WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), styleid_data)
+	/*****************solving stale element exception problem*******************/
+	by= By.xpath("//input[@name='style']")
+	styleWe= UtilityMethods.getElementByLocator(by, driver)
+	to= UtilityMethods.fromElement(styleWe)
+	
+	//findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style')
+	/*****************solving stale element exception problem*******************/
+    WebUI.setText(to, styleid_data)
 
-    WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), 
-        Keys.chord(Keys.ENTER))
+    WebUI.sendKeys(to, Keys.chord(Keys.ENTER))
 	
     WebUI.delay(2)
+<<<<<<< HEAD
 
 
     WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), findTestData(
@@ -35,8 +56,12 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'),30)))
     
 
+=======
+	//WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'),30)))
+    
+>>>>>>> 50e3efada38a05d1f1ef23f3a9abf5e43be223e2
 
-    WebUI.delay(2)
+    //WebUI.delay(2)
 
     if (available.toString().equalsIgnoreCase('no')) {
         WebUI.delay(2)
@@ -174,8 +199,6 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 
         String actualCasreIntrn = ('<div>' + WebUI.getText(findTestObject('Page_cabi Order Items/care_instruction'))) + 
         '</div>'
-		
-		println actualCasreIntrn
 
 		sa.assertTrue(actualCasreIntrn.equals(findTestData('productData').getValue('CareInstr', row)))
         //assert actualCasreIntrn.equals(findTestData('productData').getValue('CareInstr', row))

@@ -270,34 +270,45 @@ public class UtilityMethods {
 	// also be effective.  With this method, a wait timeout occurs 3
 	// times within the 90 second limit.  So, the method will run
 	// between 15-90 seconds, depending on the situation of failure.
-	/*public static WebElement getElementByLocator( final By locator ) {
-		LOGGER.info( "Get element by locator: " + locator.toString() );
-		final long startTime = System.currentTimeMillis();
-		Wait<WebDriver> wait = new FluentWait<WebDriver>( driver )
-				.withTimeout(30, TimeUnit.SECONDS)
-				.pollingEvery(5, TimeUnit.SECONDS)
-				.ignoring( StaleElementReferenceException.class ) ;
-		int tries = 0;
-		boolean found = false;
-		WebElement we = null;
-		while ( (System.currentTimeMillis() - startTime) < 91000 ) {
-			LOGGER.info( "Searching for element. Try number " + (tries++) );
-			try {
-				we = wait.until( ExpectedConditions.presenceOfElementLocated( locator ) );
-				found = true;
-				break;
-			} catch ( StaleElementReferenceException e ) {
-				LOGGER.info( "Stale element: \n" + e.getMessage() + "\n");
-			}
-		}
-		long endTime = System.currentTimeMillis();
-		long totalTime = endTime - startTime;
-		if ( found ) {
-			LOGGER.info("Found element after waiting for " + totalTime + " milliseconds." );
-		} else {
-			LOGGER.info( "Failed to find element after " + totalTime + " milliseconds." );
-		}
-		return we;
-	}*/
+	public static WebElement getElementByLocator( final By locator, WebDriver driver ) {
+	 //LOGGER.info( "Get element by locator: " + locator.toString() );
+	 final long startTime = System.currentTimeMillis();
+	 Wait<WebDriver> wait = new FluentWait<WebDriver>( driver )
+	 .withTimeout(30, TimeUnit.SECONDS)
+	 .pollingEvery(5, TimeUnit.SECONDS)
+	 .ignoring( StaleElementReferenceException.class ) ;
+	 int tries = 0;
+	 boolean found = false;
+	 WebElement we = null;
+	 while ( (System.currentTimeMillis() - startTime) < 91000 ) {
+	 //LOGGER.info( "Searching for element. Try number " + (tries++) );
+	 try {
+	 we = wait.until( ExpectedConditions.presenceOfElementLocated( locator ) );
+	 found = true;
+	 break;
+	 } catch ( StaleElementReferenceException e ) {
+	 //LOGGER.info( "Stale element: \n" + e.getMessage() + "\n");
+	 }
+	 }
+	 long endTime = System.currentTimeMillis();
+	 long totalTime = endTime - startTime;
+	 if ( found ) {
+	 //LOGGER.info("Found element after waiting for " + totalTime + " milliseconds." );
+	 } else {
+	 //LOGGER.info( "Failed to find element after " + totalTime + " milliseconds." );
+	 }
+	 return we;
+	 }
+	
+	public static String getXPathFromElement(WebElement element) {
+		String elementDescription = element.toString();
+		return elementDescription.substring(elementDescription.lastIndexOf("-> xpath: ") + 10, elementDescription.lastIndexOf("]"));
+	}
+	
+	public static TestObject fromElement(WebElement element) {
+		TestObject testObject = new TestObject();
+		testObject.addProperty("xpath", ConditionType.EQUALS, getXPathFromElement(element));
+		return testObject;
+	}
 
 }

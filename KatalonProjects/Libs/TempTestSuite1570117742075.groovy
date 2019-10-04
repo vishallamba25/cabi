@@ -15,9 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
 
-suiteProperties.put('id', 'Test Suites/NewArrivalsSuites/NewArrivalsSuite1')
+suiteProperties.put('id', 'Test Suites/NewArrivalsSuites/NewArrivalsSuite')
 
-suiteProperties.put('name', 'NewArrivalsSuite1')
+suiteProperties.put('name', 'NewArrivalsSuite')
 
 suiteProperties.put('description', '')
  
@@ -28,8 +28,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite1\\20191003_172819\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20191003_211902\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/NewArrivalsSuites/NewArrivalsSuite1', suiteProperties, [new TestCaseBinding('Test Cases/NA_Timezone_Separated/BORetail1', 'Test Cases/NA_Timezone_Separated/BORetail1',  null), new TestCaseBinding('Test Cases/NA_Timezone_Separated/BORetail2', 'Test Cases/NA_Timezone_Separated/BORetail2',  null), new TestCaseBinding('Test Cases/NA_Timezone_Separated/BORetail3', 'Test Cases/NA_Timezone_Separated/BORetail3',  null), new TestCaseBinding('Test Cases/NA_Timezone_Separated/BORetail4', 'Test Cases/NA_Timezone_Separated/BORetail4',  null), new TestCaseBinding('Test Cases/NA_Timezone_Separated/BORetail5', 'Test Cases/NA_Timezone_Separated/BORetail5',  null), new TestCaseBinding('Test Cases/NA_Timezone_Separated/BORetail6', 'Test Cases/NA_Timezone_Separated/BORetail6',  null)])
+TestCaseMain.startTestSuite('Test Suites/NewArrivalsSuites/NewArrivalsSuite', suiteProperties, [new TestCaseBinding('Test Cases/NewArrival/BOShowOrder', 'Test Cases/NewArrival/BOShowOrder',  null)])

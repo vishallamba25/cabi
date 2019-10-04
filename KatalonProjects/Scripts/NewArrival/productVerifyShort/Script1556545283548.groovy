@@ -24,8 +24,16 @@ import org.stringtemplate.v4.compiler.STParser.listElement_return as listElement
 import org.testng.asserts.SoftAssert
 
 //WebUI.openBrowser('')
+SoftAssert sa;
+String styleid_data;
+By by;
+WebElement styleWe;
+TestObject to;
+
+
 for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
-	SoftAssert sa= new SoftAssert();
+	WebUI.delay(4)
+	sa= new SoftAssert();
 	
 	
     WebUI.delay(2)

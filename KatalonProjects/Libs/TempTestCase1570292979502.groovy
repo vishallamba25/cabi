@@ -14,9 +14,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\user\\AppData\\Local\\Temp\\Katalon\\Test Cases\\TestCaseUtilities\\createContactBO\\20191005_212747\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\user\\AppData\\Local\\Temp\\Katalon\\Test Cases\\EditOrder-V\\retailOrderBO\\20191005_215939\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/TestCaseUtilities/createContactBO', new TestCaseBinding('Test Cases/TestCaseUtilities/createContactBO',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/EditOrder-V/retailOrderBO', new TestCaseBinding('Test Cases/EditOrder-V/retailOrderBO',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

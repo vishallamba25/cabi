@@ -15,9 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
 
-suiteProperties.put('id', 'Test Suites/NewArrivalsSuites/NewArrivalsSuite')
+suiteProperties.put('id', 'Test Suites/ShowOrderTestSuite')
 
-suiteProperties.put('name', 'NewArrivalsSuite')
+suiteProperties.put('name', 'ShowOrderTestSuite')
 
 suiteProperties.put('description', '')
  
@@ -28,8 +28,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\NewArrivalsSuites\\NewArrivalsSuite\\20191004_180145\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\ShowOrderTestSuite\\20191005_214040\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/NewArrivalsSuites/NewArrivalsSuite', suiteProperties, [new TestCaseBinding('Test Cases/NewArrival/CCOrders', 'Test Cases/NewArrival/CCOrders',  null)])
+TestCaseMain.startTestSuite('Test Suites/ShowOrderTestSuite', suiteProperties, [new TestCaseBinding('Test Cases/StressTests/ShowOrder', 'Test Cases/StressTests/ShowOrder',  null)])

@@ -117,6 +117,8 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
         String[] sizeRange3 = ['Long', 'Regular', 'Short']
 
         String[] sizeRange4 = ['5', '6', '6.5', '7', '7.5', '8', '8.5', '9', '9.5', '10', '11']
+		
+		String[] sizeRange5 = ['XS/S', 'M/L']
 
         String[] sizeRangeSplit = UtilityMethods.SplitSizes(findTestData('productData').getValue('SzRange', row))
 
@@ -151,6 +153,10 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
                 expectedRange = UtilityMethods.getExpectedRange(sizeRange4, sizeRangeSplit)
 
                 println('S')
+            } else if (actualRange.get(0).toString().equalsIgnoreCase('XS/S')) {
+                expectedRange = UtilityMethods.getExpectedRange(sizeRange5, sizeRangeSplit)
+
+                println('XS/S')
             } else {
                 println('else')
 

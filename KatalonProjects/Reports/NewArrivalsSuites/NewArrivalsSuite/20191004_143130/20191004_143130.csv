@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+NewArrivalsSuite,Chrome 77.0.3865.90,,2019-10-04 14:31:33,2019-10-04 14:43:11,11m - 37.810s,FAILED
+,,,,,,
+Test Cases/NewArrival/addOnOrderPersonal,Chrome 77.0.3865.90,,2019-10-04 14:31:34,2019-10-04 14:41:25,9m - 51.257s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 77.0.3865.90,,2019-10-04 14:31:34,2019-10-04 14:31:34,0.127s,PASSED
+"openBrowser("""")",Chrome 77.0.3865.90,,2019-10-04 14:31:35,2019-10-04 14:31:38,3.616s,PASSED
+"addOnStyle = findTestData(""miscData"").getValue(""addOnStyle"", 1)",Chrome 77.0.3865.90,,2019-10-04 14:31:38,2019-10-04 14:31:40,1.454s,PASSED
+rmaNumber = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 77.0.3865.90,,2019-10-04 14:31:40,2019-10-04 14:31:40,0.003s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 77.0.3865.90,,2019-10-04 14:31:40,2019-10-04 14:41:25,9m - 45.410s,FAILED
+,,,,,,
+Test Cases/NewArrival/addOnOrderRetail,Chrome 77.0.3865.90,,2019-10-04 14:41:25,2019-10-04 14:43:10,1m - 45.339s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 77.0.3865.90,,2019-10-04 14:41:25,2019-10-04 14:41:25,0.002s,PASSED
+"openBrowser("""")",Chrome 77.0.3865.90,,2019-10-04 14:41:26,2019-10-04 14:41:29,3.343s,PASSED
+driver = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 77.0.3865.90,,2019-10-04 14:41:29,2019-10-04 14:41:29,0.000s,PASSED
+executor = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,Chrome 77.0.3865.90,,2019-10-04 14:41:29,2019-10-04 14:41:29,0.001s,PASSED
+"addOnStyle = findTestData(""miscData"").getValue(""addOnStyle"", 1)",Chrome 77.0.3865.90,,2019-10-04 14:41:29,2019-10-04 14:41:29,0.015s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 77.0.3865.90,,2019-10-04 14:41:29,2019-10-04 14:43:10,1m - 41.536s,FAILED

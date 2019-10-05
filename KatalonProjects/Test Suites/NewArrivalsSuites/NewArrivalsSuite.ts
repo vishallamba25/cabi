@@ -55,13 +55,13 @@
    <testCaseLink>
       <guid>8b803076-f22c-4aec-bfc2-575e664a1c35</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NewArrival/BOShowOrder</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>855ab3a9-5c44-483b-b22c-01872883d7da</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NewArrival/CCOrders</testCaseId>
    </testCaseLink>
    <testCaseLink>

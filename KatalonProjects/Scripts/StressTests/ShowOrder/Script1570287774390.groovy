@@ -167,7 +167,8 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/button_DTY_warn
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'))
+WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'),30)))
+//WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'))
 
 WebUI.delay(3)
 
@@ -321,7 +322,8 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/button_DTY_warn
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'))
+WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'),30)))
+//WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'))
 
 WebUI.delay(3)
 
@@ -775,7 +777,8 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_show_order_ch
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'))
+WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'),30)))
+//WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'))
 
 WebUI.delay(3)
 
@@ -906,7 +909,8 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_show_order_ch
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'))
+WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'),30)))
+//WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_payment'))
 
 WebUI.delay(3)
 

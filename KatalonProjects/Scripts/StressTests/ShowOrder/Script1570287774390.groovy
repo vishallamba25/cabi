@@ -82,14 +82,15 @@ WebUI.click(buttonPlaceOrder)
 
 WebUI.delay(3)
 
-String DTYMsg = 'Hooray! This order is eligible for "Direct to You" shipping.'
+/*String DTYMsg = 'Hooray! This order is eligible for "Direct to You" shipping.'
 
 println(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility')))
-
+*/
 //WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), DTYMsg, FailureHandling.CONTINUE_ON_FAILURE)
 
 executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
-//WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+WebUI.delay(3)
+WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
 WebUI.delay(3)
 
@@ -148,45 +149,7 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/a_next'))
 
 WebUI.delay(3)
 
-/*WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg1'), 'This order is eligible for "Direct to You" shipping.', 
-    FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.delay(1)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg2'), '"Direct to You" order must be paid by credit card or cabi Gift Card.', 
-    FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.delay(1)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/label_DTYMsg3'), '"Direct to You" order can start being placed 2 days before the show date.', 
-    FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.delay(1)
-
-WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 'disabled', 
-    20, FailureHandling.CONTINUE_ON_FAILURE)*/
-
-println(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 
-        5).getAttribute('disabled'))
-
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 
-        5))
-
-WebUI.delay(5)
-
-/*WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 'disabled', 
-    'true', 20)
-
-println(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc'), 
-        5).getAttribute('disabled'))
-
-WebUI.verifyElementAttributeValue(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_show_loc_label'), 
-    'style', 'color: rgb(211, 211, 211);', 20)*/
-
-WebUI.delay(1)
-
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/check_as_dty_order'), 
-        5))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_ship_to_guest_add'))
 
 WebUI.delay(5)
 
@@ -194,13 +157,13 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_show_order_ch
 
 WebUI.delay(1)
 
-println(WebUI.getText(findTestObject('Object Repository/Page_cabi Shipping/div_DTY-warning_popup')))
+//println(WebUI.getText(findTestObject('Object Repository/Page_cabi Shipping/div_DTY-warning_popup')))
 
 //WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/div_DTY-warning_popup'), 'This order is eligible for "Direct to You" shipping.\nDo you want to change this order to "Direct to You" and ship immediately?')
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/button_DTY_warning_popup_ship_DTY'))
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/button_DTY_warning_popup_no_ship_DTY'))
 
 WebUI.delay(1)
 
@@ -208,46 +171,36 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_make_first_pa
 
 WebUI.delay(3)
 
-/*List<WebElement> paymentOptions = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Shipping/select_payment_options'), 
-    20)
+/*List<WebElement> DTYMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Shipping/li_DTY_payment_info'), 
+    5)
 
-paymentOptions.get(0).getAttribute(addOnStyle)
+if (DTYMsgs.size() > 0) {
+    sa.assertTrue(false)
+}*/
 
-boolean validPayOption = true
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_select'))
 
-for (WebElement we : paymentOptions) {
-    String option = we.getText()
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_cash'))
 
-    if (!((option.matches('.*[^\\d]\\d{4}$') || option.equalsIgnoreCase('Gift Card')) || option.equalsIgnoreCase('Add New Credit Card'))) {
-        validPayOption = false
+WebUI.delay(5)
 
-        break
-    }
-}
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_review_order'), 
+        10))
 
-SoftAssert sa = new SoftAssert()
+WebUI.delay(2)
 
-sa.assertTrue(validPayOption)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/li_DTY_payment_info'), '"Direct to You" orders require payment via credit card or cabi Gift Card.', 
-    FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.delay(3)*/
-
-/**************------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>******************/
-WebUI.callTestCase(findTestCase('TestCaseUtilities/showOrderPaeymentCC'), [:], FailureHandling.STOP_ON_FAILURE)
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_submit_order'),
-		10))
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_submit_order'), 
+        10))
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_order_view'))
 
-String actualOrderStatus = WebUI.getText(findTestObject('Object Repository/Page_cabi Shipping/span_order_status'))
+/*String actualOrderStatus = WebUI.getText(findTestObject('Object Repository/Page_cabi Shipping/span_order_status'))
 
 String expectedOrderStatus = 'PENDING SHIPMENT'
 
 //sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus))
 
-println(actualOrderStatus)
+println(actualOrderStatus)*/
 
 /***********************end palce show order with DTY check******************/
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_back_to_orders'))
@@ -266,13 +219,15 @@ WebUI.click(buttonPlaceOrder)
 
 WebUI.delay(3)
 
-DTYMsg = 'Hooray! This order is eligible for "Direct to You" shipping.'
+//DTYMsg = 'Hooray! This order is eligible for "Direct to You" shipping.'
 
-println(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility')))
+//println(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility')))
 
 //WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), DTYMsg, FailureHandling.CONTINUE_ON_FAILURE)
 
 executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
+WebUI.delay(3)
+WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
 WebUI.delay(3)
 
@@ -357,7 +312,7 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_show_order_ch
 
 WebUI.delay(1)
 
-println(WebUI.getText(findTestObject('Object Repository/Page_cabi Shipping/div_DTY-warning_popup')))
+//println(WebUI.getText(findTestObject('Object Repository/Page_cabi Shipping/div_DTY-warning_popup')))
 
 //WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Shipping/div_DTY-warning_popup'), 'This order is eligible for "Direct to You" shipping.\nDo you want to change this order to "Direct to You" and ship immediately?')
 
@@ -382,7 +337,7 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_cash'))
 
-WebUI.delay(1)
+WebUI.delay(5)
 
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_review_order'), 
         10))
@@ -744,6 +699,8 @@ if (noDTYMsg.size() > 0) {
 }*/
 
 executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
+WebUI.delay(3)
+WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
 WebUI.delay(3)
 
@@ -873,6 +830,8 @@ if (noDTYMsg.size() > 0) {
 }*/
 
 executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
+WebUI.delay(3)
+WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
 WebUI.delay(3)
 

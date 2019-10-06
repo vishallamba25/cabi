@@ -227,8 +227,7 @@ WebUI.delay(3)
 
 executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
 WebUI.delay(3)
-WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
-
+WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 WebUI.delay(3)
 
 driver = DriverFactory.getWebDriver()

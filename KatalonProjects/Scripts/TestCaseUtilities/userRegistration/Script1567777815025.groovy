@@ -17,9 +17,6 @@ import commonUtility.UtilityMethods
 
 WebUI.openBrowser('')
 
-
-
-
 String RSTestEnvt = findTestData('envtData').getValue('RSTestEnvt', 1)
 
 WebUI.callTestCase(findTestCase('TestCaseUtilities/setVHost'), [:], FailureHandling.CONTINUE_ON_FAILURE)

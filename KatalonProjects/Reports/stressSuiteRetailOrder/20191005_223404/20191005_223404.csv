@@ -1,0 +1,64 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+stressSuiteRetailOrder,Chrome 77.0.3865.90,,2019-10-05 22:37:32,2019-10-05 22:52:36,15m - 4.212s,FAILED
+,,,,,,
+Test Cases/EditOrder-V/retailOrderBO,Chrome 77.0.3865.90,,2019-10-05 22:37:41,2019-10-05 22:51:59,14m - 18.099s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 77.0.3865.90,,2019-10-05 22:37:44,2019-10-05 22:37:45,0.619s,PASSED
+"openBrowser("""")",Chrome 77.0.3865.90,,2019-10-05 22:38:02,2019-10-05 22:40:59,2m - 57.168s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/backOfficeLogin""), [""BOURL"":"""", ""BOuser"":"""", ""BOpass"":""""], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,2019-10-05 22:40:59,2019-10-05 22:47:45,6m - 46.485s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Home/a_Shows  Orders""))",Chrome 77.0.3865.90,,2019-10-05 22:47:45,2019-10-05 22:47:54,8.787s,PASSED
+delay(1),Chrome 77.0.3865.90,,2019-10-05 22:47:54,2019-10-05 22:47:55,1.031s,PASSED
+"click(findTestObject(""Page_cabi Home/a_Shows  Orders""))",Chrome 77.0.3865.90,,2019-10-05 22:47:55,2019-10-05 22:48:05,9.413s,PASSED
+"click(findTestObject(""Page_cabi Home/a_retail_purchases""))",Chrome 77.0.3865.90,,2019-10-05 22:48:05,2019-10-05 22:48:41,36.932s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-05 22:48:42,2019-10-05 22:48:45,3.012s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Home/existingCustomer""))",Chrome 77.0.3865.90,,2019-10-05 22:48:45,2019-10-05 22:48:54,9.757s,PASSED
+contactNumber = 3,Chrome 77.0.3865.90,,2019-10-05 22:48:54,2019-10-05 22:48:54,0.004s,PASSED
+"firstName = findTestData(""contactData"").getValue(""firstName"", contactNumber)",Chrome 77.0.3865.90,,2019-10-05 22:48:54,2019-10-05 22:48:55,0.792s,PASSED
+"lastName = findTestData(""contactData"").getValue(""lastName"", contactNumber)",Chrome 77.0.3865.90,,2019-10-05 22:48:55,2019-10-05 22:48:56,0.655s,PASSED
+"email = findTestData(""contactData"").getValue(""email"", contactNumber)",Chrome 77.0.3865.90,,2019-10-05 22:48:56,2019-10-05 22:48:56,0.675s,PASSED
+"address1 = findTestData(""contactData"").getValue(""address1"", contactNumber)",Chrome 77.0.3865.90,,2019-10-05 22:48:56,2019-10-05 22:48:57,0.601s,PASSED
+"city = findTestData(""contactData"").getValue(""city"", contactNumber)",Chrome 77.0.3865.90,,2019-10-05 22:48:57,2019-10-05 22:48:58,0.500s,PASSED
+"state = findTestData(""contactData"").getValue(""state"", contactNumber)",Chrome 77.0.3865.90,,2019-10-05 22:48:58,2019-10-05 22:48:58,0.614s,PASSED
+"zip = findTestData(""contactData"").getValue(""zip"", contactNumber)",Chrome 77.0.3865.90,,2019-10-05 22:48:58,2019-10-05 22:48:59,1.230s,PASSED
+existingCustFName = firstName,Chrome 77.0.3865.90,,2019-10-05 22:48:59,2019-10-05 22:48:59,0.004s,PASSED
+existingCustLName = lastName,Chrome 77.0.3865.90,,2019-10-05 22:48:59,2019-10-05 22:48:59,0.006s,PASSED
+"space = "" """,Chrome 77.0.3865.90,,2019-10-05 22:48:59,2019-10-05 22:48:59,0.005s,PASSED
+existingCust = $existingCustFName$space$existingCustLName,Chrome 77.0.3865.90,,2019-10-05 22:48:59,2019-10-05 22:49:00,0.617s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Home/input_existing_guest""), existingCust)",Chrome 77.0.3865.90,,2019-10-05 22:49:00,2019-10-05 22:49:17,16.544s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-05 22:49:17,2019-10-05 22:49:19,2.020s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Home/input_existing_guest""), Keys.chord(ARROW_DOWN))",Chrome 77.0.3865.90,,2019-10-05 22:49:19,2019-10-05 22:49:22,3.732s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Home/input_existing_guest""), Keys.chord(ENTER))",Chrome 77.0.3865.90,,2019-10-05 22:49:22,2019-10-05 22:49:26,3.833s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Retail Store/input_email""), email)",Chrome 77.0.3865.90,,2019-10-05 22:49:26,2019-10-05 22:49:38,11.430s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1""), address1)",Chrome 77.0.3865.90,,2019-10-05 22:49:38,2019-10-05 22:49:55,17.253s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2""), """")",Chrome 77.0.3865.90,,2019-10-05 22:49:55,2019-10-05 22:49:59,3.641s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Edit Customer Profile/input_City_city""), city)",Chrome 77.0.3865.90,,2019-10-05 22:49:59,2019-10-05 22:50:02,3.416s,PASSED
+"click(findTestObject(""Page_cabi Edit Customer Profile/span_select_a_state""))",Chrome 77.0.3865.90,,2019-10-05 22:50:02,2019-10-05 22:50:09,7.430s,PASSED
+delay(1),Chrome 77.0.3865.90,,2019-10-05 22:50:09,2019-10-05 22:50:10,1.045s,PASSED
+"setText(findTestObject(""Page_cabi Edit Customer Profile/input_state_postalCode""), zip)",Chrome 77.0.3865.90,,2019-10-05 22:50:10,2019-10-05 22:50:13,2.468s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-05 22:50:13,2019-10-05 22:50:18,5.016s,PASSED
+"check(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""))",Chrome 77.0.3865.90,,2019-10-05 22:50:18,2019-10-05 22:50:29,11.075s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-05 22:50:29,2019-10-05 22:50:34,5.012s,PASSED
+"check(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""))",Chrome 77.0.3865.90,,2019-10-05 22:50:34,2019-10-05 22:50:41,6.567s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-05 22:50:41,2019-10-05 22:50:46,5.016s,PASSED
+driver = getWebDriver(),Chrome 77.0.3865.90,,2019-10-05 22:50:46,2019-10-05 22:50:46,0.187s,PASSED
+executor = driver,Chrome 77.0.3865.90,,2019-10-05 22:50:46,2019-10-05 22:50:46,0.002s,PASSED
+"nextButton = driver.findElement(By.xpath(""//li/a/span[@id='returnToActionLabel']""))",Chrome 77.0.3865.90,,2019-10-05 22:50:46,2019-10-05 22:50:47,1.633s,PASSED
+"executor.executeScript(""arguments[0].click();"", nextButton)",Chrome 77.0.3865.90,,2019-10-05 22:50:47,2019-10-05 22:50:49,1.360s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-05 22:50:49,2019-10-05 22:50:52,3.012s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Retail Store/span_quick_entry""))",Chrome 77.0.3865.90,,2019-10-05 22:50:52,2019-10-05 22:51:05,12.837s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-05 22:51:05,2019-10-05 22:51:08,3.012s,PASSED
+"emptyCart = findWebElements(findTestObject(""Object Repository/Page_cabi Personal Store/removeFromCart""), 5)",Chrome 77.0.3865.90,,2019-10-05 22:51:08,2019-10-05 22:51:15,7.563s,PASSED
+if (emptyCart.size() > 0),Chrome 77.0.3865.90,,2019-10-05 22:51:15,2019-10-05 22:51:15,0.002s,PASSED
+"addOnStyle = ""2158""",Chrome 77.0.3865.90,,2019-10-05 22:51:15,2019-10-05 22:51:15,0.002s,PASSED
+"addOnStyle2 = ""3709""",Chrome 77.0.3865.90,,2019-10-05 22:51:15,2019-10-05 22:51:15,0.003s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), addOnStyle)",Chrome 77.0.3865.90,,2019-10-05 22:51:15,2019-10-05 22:51:21,5.323s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-05 22:51:21,2019-10-05 22:51:23,2.011s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 77.0.3865.90,,2019-10-05 22:51:23,2019-10-05 22:51:24,1.392s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-05 22:51:24,2019-10-05 22:51:26,2.010s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 77.0.3865.90,,2019-10-05 22:51:26,2019-10-05 22:51:30,4.344s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ENTER))",Chrome 77.0.3865.90,,2019-10-05 22:51:30,2019-10-05 22:51:34,3.162s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-05 22:51:34,2019-10-05 22:51:39,5.012s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/selectSize""))",Chrome 77.0.3865.90,,2019-10-05 22:51:39,2019-10-05 22:51:41,2.391s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-05 22:51:41,2019-10-05 22:51:44,3.011s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/span_Add to Cart""))",Chrome 77.0.3865.90,,2019-10-05 22:51:44,2019-10-05 22:51:47,2.932s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-05 22:51:47,2019-10-05 22:51:52,5.010s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Create Order/inputStyleLookup1""))",Chrome 77.0.3865.90,,2019-10-05 22:51:52,2019-10-05 22:51:59,7.325s,FAILED

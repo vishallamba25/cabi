@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ShowOrderTestSuite,Chrome 77.0.3865.90,,2019-10-05 22:34:40,2019-10-05 22:43:25,8m - 45.009s,FAILED
+,,,,,,
+Test Cases/StressTests/ShowOrder,Chrome 77.0.3865.90,,2019-10-05 22:34:44,2019-10-05 22:42:22,7m - 37.940s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 77.0.3865.90,,2019-10-05 22:34:46,2019-10-05 22:34:46,0.350s,PASSED
+"dataFile = ""virtualShowData""",Chrome 77.0.3865.90,,2019-10-05 22:34:57,2019-10-05 22:34:57,0.003s,PASSED
+"guest1 = findTestData(dataFile).getValue(""guest1"", 1)",Chrome 77.0.3865.90,,2019-10-05 22:34:57,2019-10-05 22:35:14,17.683s,PASSED
+"guest2 = findTestData(dataFile).getValue(""guest2"", 1)",Chrome 77.0.3865.90,,2019-10-05 22:35:14,2019-10-05 22:35:15,0.559s,PASSED
+"hostess = findTestData(dataFile).getValue(""hostess"", 1)",Chrome 77.0.3865.90,,2019-10-05 22:35:15,2019-10-05 22:35:16,0.716s,PASSED
+"cohostess = findTestData(dataFile).getValue(""cohostess"", 1)",Chrome 77.0.3865.90,,2019-10-05 22:35:16,2019-10-05 22:35:16,0.660s,PASSED
+dfMM = new java.text.SimpleDateFormat(MM),Chrome 77.0.3865.90,,2019-10-05 22:35:16,2019-10-05 22:35:16,0.078s,PASSED
+dfDD = new java.text.SimpleDateFormat(dd),Chrome 77.0.3865.90,,2019-10-05 22:35:16,2019-10-05 22:35:16,0.010s,PASSED
+dfYYYY = new java.text.SimpleDateFormat(yyyy),Chrome 77.0.3865.90,,2019-10-05 22:35:16,2019-10-05 22:35:16,0.003s,PASSED
+today = getInstance().getTime(),Chrome 77.0.3865.90,,2019-10-05 22:35:16,2019-10-05 22:35:17,0.298s,PASSED
+c = Calendar.getInstance(),Chrome 77.0.3865.90,,2019-10-05 22:35:17,2019-10-05 22:35:17,0.002s,PASSED
+c.setTime(today),Chrome 77.0.3865.90,,2019-10-05 22:35:17,2019-10-05 22:35:17,0.003s,PASSED
+"c.add(DATE, 0)",Chrome 77.0.3865.90,,2019-10-05 22:35:17,2019-10-05 22:35:17,0.006s,PASSED
+newShowDate = c.getTime(),Chrome 77.0.3865.90,,2019-10-05 22:35:17,2019-10-05 22:35:17,0.007s,PASSED
+vsyear = dfYYYY.format(newShowDate),Chrome 77.0.3865.90,,2019-10-05 22:35:17,2019-10-05 22:35:17,0.007s,PASSED
+vsmonth = dfMM.format(newShowDate),Chrome 77.0.3865.90,,2019-10-05 22:35:17,2019-10-05 22:35:17,0.002s,PASSED
+vsday = dfDD.format(newShowDate),Chrome 77.0.3865.90,,2019-10-05 22:35:17,2019-10-05 22:35:17,0.003s,PASSED
+"println(UtilityMethods.concat(""from DTY: "", vsday, "" "", vsmonth, "" "", vsyear))",Chrome 77.0.3865.90,,2019-10-05 22:35:17,2019-10-05 22:35:18,0.958s,PASSED
+"callTestCase(findTestCase(""VirtualShow/createAPhysicalShow""), [""BOURL"":"""", ""BOuser"":"""", ""BOpass"":"""", ""hostess"":"""", ""cohostess"":"""", ""vsday"":vsday, ""vsmonth"":vsmonth, ""vsyear"":vsyear], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,2019-10-05 22:35:18,2019-10-05 22:42:22,7m - 4.333s,FAILED

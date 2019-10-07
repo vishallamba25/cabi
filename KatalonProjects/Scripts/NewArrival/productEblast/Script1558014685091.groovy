@@ -1,29 +1,19 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import org.openqa.selenium.Keys as Keys
+
 import org.openqa.selenium.WebElement as WebElement
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import org.testng.asserts.SoftAssert
+
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import commonUtility.UtilityMethods as UtilityMethods
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.By as By
-import org.openqa.selenium.WebDriver as WebDriver
-import com.kms.katalon.core.annotation.Keyword as Keyword
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
-import org.stringtemplate.v4.compiler.STParser.listElement_return as listElement_return
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+import internal.GlobalVariable as GlobalVariable
 
 //available= "no"
 WebUI.openBrowser('')
+SoftAssert sa;
 
 for (int timeRow = 3; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
     WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.STOP_ON_FAILURE)
@@ -49,19 +39,28 @@ for (int timeRow = 3; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
         WebUI.delay(2)
-		String styleid_data = findTestData('productData').getValue('Style', row)
-		/*String[] styleid_data_arr= styleid_data.split("");
+
+        String styleid_data = findTestData('productData').getValue('Style', row)
+
+        /*String[] styleid_data_arr= styleid_data.split("");
 		String tmp=""
 		for(String ele: styleid_data_arr){
 			
 		}*/
         WebUI.setText(findTestObject('Page_cabi Eblast/eBlastStyleSearch'), styleid_data)
+
         WebUI.delay(2)
-		WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/div_add_product_h3'))	
-		WebUI.setText(findTestObject('Page_cabi Eblast/eBlastStyleSearch'), styleid_data)
-		WebUI.delay(2)
-		WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/div_add_product_h3'))
-		WebUI.delay(1)
+
+        WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/div_add_product_h3'))
+
+        WebUI.setText(findTestObject('Page_cabi Eblast/eBlastStyleSearch'), styleid_data)
+
+        WebUI.delay(2)
+
+        WebUI.click(findTestObject('Object Repository/Page_cabi Eblast/div_add_product_h3'))
+
+        WebUI.delay(1)
+		sa=new SoftAssert()
 
         if (available.toString().equalsIgnoreCase('no')) {
             WebUI.delay(5)
@@ -69,32 +68,21 @@ for (int timeRow = 3; timeRow <= findTestData('timezoneData').getRowNumbers(); t
             List<WebElement> style_notfound = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/styleNotFound'), 
                 5)
 
-<<<<<<< HEAD
-        if (available.toString().equalsIgnoreCase('no')) {
-			WebUI.delay(5)
-            List<WebElement> style_notfound = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/styleNotFound'), 5)
+            WebUI.delay(4)
 
-
-			WebUI.delay(4)	
-      
-			println(style_notfound.size())
-
-=======
             println(style_notfound.size())
->>>>>>> af642dbe392c8b551bcba296d0feb13ca81f4c97
 
-            assert style_notfound.size() > 0
+			sa.assertTrue(style_notfound.size() > 0)
+            //assert style_notfound.size() > 0
 
             WebUI.verifyElementText(findTestObject('Page_cabi Eblast/styleNotFound'), 'No matching product')
         } else {
-		
-			List<WebElement> div_product = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/div_product'), 5)
-			if(div_product.size()>0){
-				
-			}
-			
-		
-		
+            List<WebElement> div_product = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Eblast/div_product'), 
+                5)
+
+            if (div_product.size() > 0) {
+            }
+            
             String space = ' '
 
             String openbrace = '('
@@ -109,8 +97,6 @@ for (int timeRow = 3; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
             String style_web = "$style_id$space$style_name$space$style_color"
 
-            
-
             String styleid_name = findTestData('productData').getValue('Description', row)
 
             String styleid_color = findTestData('productData').getValue('Color', row)
@@ -121,7 +107,8 @@ for (int timeRow = 3; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
             println(style_data)
 
-            assert style_data.equalsIgnoreCase(style_web)
+			sa.assertTrue(style_data.equalsIgnoreCase(style_web))
+            //assert style_data.equalsIgnoreCase(style_web)
         }
     }
 }

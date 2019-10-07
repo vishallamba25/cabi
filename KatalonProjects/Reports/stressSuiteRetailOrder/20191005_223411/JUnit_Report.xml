@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="stressSuiteRetailOrder" time="822" tests="0" failures="1" errors="0">
+   <testsuite name="stressSuiteRetailOrder" tests="0" failures="1" errors="0" time="822" timestamp="2019-10-05 22:38:58" hostname="user - Nivedita" id="Test Suites/stressSuiteRetailOrder">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\stressSuiteRetailOrder\\20191005_223411"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\stressSuiteRetailOrder\\20191005_223411\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - Nivedita"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 77.0.3865.90"/>
+         <property name="hostAddress" value="192.168.43.31"/>
+         <property name="sessionId" value="3517c9f72b7638c103ec67be98500cec"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/EditOrder-V/retailOrderBO" classname="Test Cases/EditOrder-V/retailOrderBO" status="FAILED">
+         <failure type="FAILED" message="Test Cases/EditOrder-V/retailOrderBO FAILED.
+Reason:
+Assertion failed: 
+
+assert orderSuccess == true
+       |            |
+       false        false
+
+	at retailOrderBO.run(retailOrderBO:290)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570295051410.run(TempTestSuite1570295051410.groovy:35)
+"/>
+         <system-out><![CDATA[2019-10-05 22:39:12 - [TEST_CASE][FAILED] - Test Cases/EditOrder-V/retailOrderBO: Test Cases/EditOrder-V/retailOrderBO FAILED.
+Reason:
+Assertion failed: 
+
+assert orderSuccess == true
+       |            |
+       false        false
+
+	at retailOrderBO.run(retailOrderBO:290)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570295051410.run(TempTestSuite1570295051410.groovy:35)
+
+
+2019-10-05 22:39:19 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-10-05 22:39:20 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-10-05 22:39:21 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-10-05 22:39:39 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-10-05 22:39:45 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-10-05 22:39:46 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-10-05 22:39:46 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-10-05 22:41:58 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-10-05 22:41:59 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-10-05 22:42:02 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-10-05 22:42:10 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-10-05 22:42:29 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-10-05 22:42:30 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-10-05 22:42:30 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-10-05 22:42:30 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-10-05 22:43:33 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-10-05 22:43:33 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-10-05 22:44:32 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-10-05 22:44:32 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test9.cliotest.com/backoffice/control/main' successfully
+
+2019-10-05 22:45:21 - [MESSAGE][PASSED] - Navigate to 'https://test9.cliotest.com/backoffice/control/main' successfully
+
+2019-10-05 22:45:21 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-05 22:45:24 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-05 22:45:24 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-10-05 22:45:25 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-10-05 22:45:38 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-10-05 22:45:38 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-10-05 22:45:46 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-10-05 22:45:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-10-05 22:46:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-10-05 22:46:32 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-05 22:46:35 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-05 22:46:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-10-05 22:46:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-10-05 22:46:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-10-05 22:46:43 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-10-05 22:46:44 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-10-05 22:46:44 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Home/a_Shows  Orders")): Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-10-05 22:46:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_Shows  Orders' is clicked on
+
+2019-10-05 22:46:50 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Home/a_retail_purchases")): Object: 'Object Repository/Page_cabi Home/a_retail_purchases' is clicked on
+
+2019-10-05 22:47:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/a_retail_purchases' is clicked on
+
+2019-10-05 22:47:21 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-05 22:47:24 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-05 22:47:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Home/existingCustomer")): Object: 'Object Repository/Page_cabi Home/existingCustomer' is clicked on
+
+2019-10-05 22:47:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Home/existingCustomer' is clicked on
+
+2019-10-05 22:47:38 - [TEST_STEP][PASSED] - contactNumber = 3: null
+
+2019-10-05 22:47:38 - [TEST_STEP][PASSED] - firstName = findTestData("contactData").getValue("firstName", contactNumber): null
+
+2019-10-05 22:47:40 - [TEST_STEP][PASSED] - lastName = findTestData("contactData").getValue("lastName", contactNumber): null
+
+2019-10-05 22:47:41 - [TEST_STEP][PASSED] - email = findTestData("contactData").getValue("email", contactNumber): null
+
+2019-10-05 22:47:42 - [TEST_STEP][PASSED] - address1 = findTestData("contactData").getValue("address1", contactNumber): null
+
+2019-10-05 22:47:42 - [TEST_STEP][PASSED] - city = findTestData("contactData").getValue("city", contactNumber): null
+
+2019-10-05 22:47:43 - [TEST_STEP][PASSED] - state = findTestData("contactData").getValue("state", contactNumber): null
+
+2019-10-05 22:47:43 - [TEST_STEP][PASSED] - zip = findTestData("contactData").getValue("zip", contactNumber): null
+
+2019-10-05 22:47:44 - [TEST_STEP][PASSED] - existingCustFName = firstName: null
+
+2019-10-05 22:47:44 - [TEST_STEP][PASSED] - existingCustLName = lastName: null
+
+2019-10-05 22:47:44 - [TEST_STEP][PASSED] - space = " ": null
+
+2019-10-05 22:47:44 - [TEST_STEP][PASSED] - existingCust = $existingCustFName$space$existingCustLName: null
+
+2019-10-05 22:47:45 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Home/input_existing_guest"), existingCust): Text 'guest1-test abc' is set on object 'Object Repository/Page_cabi Home/input_existing_guest'
+
+2019-10-05 22:48:06 - [MESSAGE][PASSED] - Text 'guest1-test abc' is set on object 'Object Repository/Page_cabi Home/input_existing_guest'
+
+2019-10-05 22:48:06 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 22:48:08 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 22:48:08 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Home/input_existing_guest"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Home/input_existing_guest'
+
+2019-10-05 22:48:14 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Home/input_existing_guest'
+
+2019-10-05 22:48:14 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Home/input_existing_guest"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Home/input_existing_guest'
+
+2019-10-05 22:48:16 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Home/input_existing_guest'
+
+2019-10-05 22:48:16 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Retail Store/input_email"), email): Text 'guest1-test@test.com' is set on object 'Object Repository/Page_cabi Retail Store/input_email'
+
+2019-10-05 22:48:20 - [MESSAGE][PASSED] - Text 'guest1-test@test.com' is set on object 'Object Repository/Page_cabi Retail Store/input_email'
+
+2019-10-05 22:48:20 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1"), address1): Text '975 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-10-05 22:48:23 - [MESSAGE][PASSED] - Text '975 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-10-05 22:48:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2"), ""): Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-10-05 22:48:24 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-10-05 22:48:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_City_city"), city): Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-10-05 22:48:25 - [MESSAGE][PASSED] - Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-10-05 22:48:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_select_a_state")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-10-05 22:48:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-10-05 22:48:35 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-10-05 22:48:36 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-10-05 22:48:36 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_state_postalCode"), zip): Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-10-05 22:48:46 - [MESSAGE][PASSED] - Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-10-05 22:48:46 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-05 22:48:51 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-05 22:48:51 - [TEST_STEP][PASSED] - check(findTestObject("Object Repository/Page_cabi Home/a_same_shipping_address")): Object 'Object Repository/Page_cabi Home/a_same_shipping_address' is checked
+
+2019-10-05 22:49:01 - [MESSAGE][PASSED] - Object 'Object Repository/Page_cabi Home/a_same_shipping_address' is checked
+
+2019-10-05 22:49:01 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-05 22:49:06 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-05 22:49:06 - [TEST_STEP][PASSED] - check(findTestObject("Object Repository/Page_cabi Home/a_same_shipping_address")): Object 'Object Repository/Page_cabi Home/a_same_shipping_address' is checked
+
+2019-10-05 22:49:10 - [MESSAGE][PASSED] - Object 'Object Repository/Page_cabi Home/a_same_shipping_address' is checked
+
+2019-10-05 22:49:10 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-05 22:49:15 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-05 22:49:15 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-10-05 22:49:15 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-10-05 22:49:15 - [TEST_STEP][PASSED] - nextButton = driver.findElement(By.xpath("//li/a/span[@id='returnToActionLabel']")): null
+
+2019-10-05 22:49:16 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", nextButton): null
+
+2019-10-05 22:49:18 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-05 22:49:21 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-05 22:49:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Retail Store/span_quick_entry")): Object: 'Object Repository/Page_cabi Retail Store/span_quick_entry' is clicked on
+
+2019-10-05 22:49:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Retail Store/span_quick_entry' is clicked on
+
+2019-10-05 22:49:34 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-05 22:49:37 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-05 22:49:37 - [TEST_STEP][PASSED] - emptyCart = findWebElements(findTestObject("Object Repository/Page_cabi Personal Store/removeFromCart"), 5): Unable to find the element located by 'By.xpath: //*[@id="removeFromCart_0"]/span'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-05 22:49:45 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="removeFromCart_0"]/span'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-05 22:49:45 - [TEST_STEP][PASSED] - if (emptyCart.size() > 0): null
+
+2019-10-05 22:49:45 - [TEST_STEP][PASSED] - addOnStyle = "2158": null
+
+2019-10-05 22:49:45 - [TEST_STEP][PASSED] - addOnStyle2 = "3709": null
+
+2019-10-05 22:49:45 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0"), addOnStyle): Text '2158' is set on object 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-05 22:49:53 - [MESSAGE][PASSED] - Text '2158' is set on object 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-05 22:49:53 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 22:49:55 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 22:49:55 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-05 22:49:57 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-05 22:49:57 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 22:50:00 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 22:50:00 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-05 22:50:01 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-05 22:50:01 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-05 22:50:02 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-05 22:50:02 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-05 22:50:07 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-05 22:50:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/selectSize")): Object: 'Object Repository/Page_cabi Order Items/selectSize' is clicked on
+
+2019-10-05 22:50:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/selectSize' is clicked on
+
+2019-10-05 22:50:09 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-05 22:50:12 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-05 22:50:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/span_Add to Cart")): Object: 'Object Repository/Page_cabi Order Items/span_Add to Cart' is clicked on
+
+2019-10-05 22:50:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/span_Add to Cart' is clicked on
+
+2019-10-05 22:50:20 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-05 22:50:25 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-05 22:50:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Create Order/inputStyleLookup1")): Object: 'Object Repository/Page_cabi Create Order/inputStyleLookup1' is clicked on
+
+2019-10-05 22:50:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Create Order/inputStyleLookup1' is clicked on
+
+2019-10-05 22:50:33 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Create Order/inputStyleLookup1"), addOnStyle2): Text '3709' is set on object 'Object Repository/Page_cabi Create Order/inputStyleLookup1'
+
+2019-10-05 22:50:43 - [MESSAGE][PASSED] - Text '3709' is set on object 'Object Repository/Page_cabi Create Order/inputStyleLookup1'
+
+2019-10-05 22:50:43 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-05 22:50:46 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-05 22:50:46 - [TEST_STEP][PASSED] - prod_message2 = getText(findTestObject("Page_cabi Create Order/first_option")): Text of object 'Object Repository/Page_cabi Create Order/first_option' is: '3709 Lucky Cardigan'
+
+2019-10-05 22:50:49 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Create Order/first_option' is: '3709 Lucky Cardigan'
+
+2019-10-05 22:50:49 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Create Order/first_option")): Object: 'Object Repository/Page_cabi Create Order/first_option' is clicked on
+
+2019-10-05 22:50:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Create Order/first_option' is clicked on
+
+2019-10-05 22:50:53 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-05 22:50:58 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-05 22:50:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/selectSize2")): Object: 'Object Repository/Page_cabi Order Items/selectSize2' is clicked on
+
+2019-10-05 22:51:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/selectSize2' is clicked on
+
+2019-10-05 22:51:02 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-05 22:51:05 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-05 22:51:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/addToCart2")): Object: 'Object Repository/Page_cabi Order Items/addToCart2' is clicked on
+
+2019-10-05 22:51:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/addToCart2' is clicked on
+
+2019-10-05 22:51:12 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-05 22:51:17 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-05 22:51:17 - [TEST_STEP][PASSED] - editScenarioNumber = 1: null
+
+2019-10-05 22:51:17 - [TEST_STEP][PASSED] - if (editScenarioNumber == 1): null
+
+2019-10-05 22:51:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/a_checkout")): Object: 'Object Repository/Page_cabi Order Items/a_checkout' is clicked on
+
+2019-10-05 22:51:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/a_checkout' is clicked on
+
+2019-10-05 22:51:28 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-05 22:51:31 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-05 22:51:32 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Personal Store/nextButtonShipping")): Object: 'Object Repository/Page_cabi Personal Store/nextButtonShipping' is clicked on
+
+2019-10-05 22:51:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Personal Store/nextButtonShipping' is clicked on
+
+2019-10-05 22:51:36 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-05 22:51:40 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-05 22:51:40 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Personal Store/makeFirstPayment")): Object: 'Object Repository/Page_cabi Personal Store/makeFirstPayment' is clicked on
+
+2019-10-05 22:51:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Personal Store/makeFirstPayment' is clicked on
+
+2019-10-05 22:51:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Personal Store/select_cash")): Object: 'Object Repository/Page_cabi Personal Store/select_cash' is clicked on
+
+2019-10-05 22:51:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Personal Store/select_cash' is clicked on
+
+2019-10-05 22:51:45 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Personal Store/submitPayment")): Object: 'Object Repository/Page_cabi Personal Store/submitPayment' is clicked on
+
+2019-10-05 22:51:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Personal Store/submitPayment' is clicked on
+
+2019-10-05 22:51:50 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Personal Store/submitOrderId")): Object: 'Object Repository/Page_cabi Personal Store/submitOrderId' is clicked on
+
+2019-10-05 22:51:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Personal Store/submitOrderId' is clicked on
+
+2019-10-05 22:51:54 - [TEST_STEP][PASSED] - successMsg = "": null
+
+2019-10-05 22:51:54 - [TEST_STEP][PASSED] - orderSuccess = false: null
+
+2019-10-05 22:51:54 - [TEST_STEP][PASSED] - successMsgs = findWebElements(findTestObject("Object Repository/Page_cabi Personal Store/p_success_msg"), 5): Unable to find the element located by 'By.xpath: //div/p[contains(text(), 'Order Created Successfully')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-05 22:52:02 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div/p[contains(text(), 'Order Created Successfully')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-05 22:52:02 - [TEST_STEP][PASSED] - if (successMsgs.size() > 0): null
+
+2019-10-05 22:52:02 - [TEST_STEP][FAILED] - assert orderSuccess == true: assert orderSuccess == true FAILED.
+Reason:
+Assertion failed: 
+
+assert orderSuccess == true
+       |            |
+       false        false
+
+	at retailOrderBO.run(retailOrderBO:290)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570295051410.run(TempTestSuite1570295051410.groovy:35)
+
+
+2019-10-05 22:52:02 - [MESSAGE][FAILED] - assert orderSuccess == true FAILED.
+Reason:
+Assertion failed: 
+
+assert orderSuccess == true
+       |            |
+       false        false
+
+	at retailOrderBO.run(retailOrderBO:290)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570295051410.run(TempTestSuite1570295051410.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-10-05 22:39:12 - [TEST_CASE][FAILED] - Test Cases/EditOrder-V/retailOrderBO: Test Cases/EditOrder-V/retailOrderBO FAILED.
+Reason:
+Assertion failed: 
+
+assert orderSuccess == true
+       |            |
+       false        false
+
+	at retailOrderBO.run(retailOrderBO:290)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570295051410.run(TempTestSuite1570295051410.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-10-05 22:38:58 - [TEST_SUITE][FAILED] - stressSuiteRetailOrder: Test Cases/EditOrder-V/retailOrderBO FAILED.
+Reason:
+Assertion failed: 
+
+assert orderSuccess == true
+       |            |
+       false        false
+
+	at retailOrderBO.run(retailOrderBO:290)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570295051410.run(TempTestSuite1570295051410.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-10-05 22:38:58 - [TEST_SUITE][FAILED] - stressSuiteRetailOrder: Test Cases/EditOrder-V/retailOrderBO FAILED.
+Reason:
+Assertion failed: 
+
+assert orderSuccess == true
+       |            |
+       false        false
+
+	at retailOrderBO.run(retailOrderBO:290)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570295051410.run(TempTestSuite1570295051410.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

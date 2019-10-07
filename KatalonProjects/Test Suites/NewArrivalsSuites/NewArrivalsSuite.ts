@@ -49,7 +49,7 @@
    <testCaseLink>
       <guid>237fb932-afd3-432e-9706-e052e1d24231</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NewArrival/BORetail</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -61,7 +61,7 @@
    <testCaseLink>
       <guid>855ab3a9-5c44-483b-b22c-01872883d7da</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NewArrival/CCOrders</testCaseId>
    </testCaseLink>
    <testCaseLink>

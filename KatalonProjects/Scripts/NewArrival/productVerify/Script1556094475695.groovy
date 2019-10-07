@@ -26,7 +26,7 @@ TestObject to;
 
 WebDriver driver = DriverFactory.getWebDriver()
 for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
-	WebUI.delay(3)
+	WebUI.delay(5)
 	sa= new SoftAssert();
 	
 	styleid_data = findTestData('productData').getValue('Style', row)
@@ -43,8 +43,8 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 
     WebUI.sendKeys(to, Keys.chord(Keys.ENTER))
 	
-    WebUI.delay(2)
-<<<<<<< HEAD
+    WebUI.delay(5)
+
 
 
     WebUI.setText(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), findTestData(
@@ -56,10 +56,9 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'),30)))
     
 
-=======
+
 	//WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'),30)))
     
->>>>>>> 50e3efada38a05d1f1ef23f3a9abf5e43be223e2
 
     //WebUI.delay(2)
 

@@ -90,8 +90,8 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 	}*/
 	WebUI.delay(5)
 
-	executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 5))
-
+//	executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 5))
+	WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
   
     WebUI.delay(5)
 

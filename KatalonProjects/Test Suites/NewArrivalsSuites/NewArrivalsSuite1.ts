@@ -79,7 +79,7 @@
    <testCaseLink>
       <guid>670c0c4a-3744-4758-9628-3919870a610f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NA_Timezone_Separated/BORetail6</testCaseId>
    </testCaseLink>
    <testCaseLink>

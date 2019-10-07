@@ -1,0 +1,157 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+ShowOrderTestSuite,Chrome 77.0.3865.90,,2019-10-06 16:54:22,2019-10-06 17:00:40,6m - 18.489s,ERROR
+,,,,,,
+Test Cases/StressTests/ShowOrder,Chrome 77.0.3865.90,,2019-10-06 16:54:24,2019-10-06 17:00:40,6m - 15.693s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 77.0.3865.90,,2019-10-06 16:54:27,2019-10-06 16:54:27,0.407s,PASSED
+"dataFile = ""virtualShowData""",Chrome 77.0.3865.90,,2019-10-06 16:54:31,2019-10-06 16:54:31,0.005s,PASSED
+"guest1 = findTestData(dataFile).getValue(""guest1"", 1)",Chrome 77.0.3865.90,,2019-10-06 16:54:31,2019-10-06 16:54:36,4.522s,PASSED
+"guest2 = findTestData(dataFile).getValue(""guest2"", 1)",Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.162s,PASSED
+"hostess = findTestData(dataFile).getValue(""hostess"", 1)",Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.119s,PASSED
+"cohostess = findTestData(dataFile).getValue(""cohostess"", 1)",Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.106s,PASSED
+dfMM = new java.text.SimpleDateFormat(MM),Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.093s,PASSED
+dfDD = new java.text.SimpleDateFormat(dd),Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.008s,PASSED
+dfYYYY = new java.text.SimpleDateFormat(yyyy),Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.001s,PASSED
+today = getInstance().getTime(),Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.061s,PASSED
+c = Calendar.getInstance(),Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.002s,PASSED
+c.setTime(today),Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.002s,PASSED
+"c.add(DATE, 0)",Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.034s,PASSED
+newShowDate = c.getTime(),Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.002s,PASSED
+vsyear = dfYYYY.format(newShowDate),Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.003s,PASSED
+vsmonth = dfMM.format(newShowDate),Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.002s,PASSED
+vsday = dfDD.format(newShowDate),Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.001s,PASSED
+"println(UtilityMethods.concat(""from DTY: "", vsday, "" "", vsmonth, "" "", vsyear))",Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:54:36,0.085s,PASSED
+"callTestCase(findTestCase(""VirtualShow/createAPhysicalShow""), [""BOURL"":"""", ""BOuser"":"""", ""BOpass"":"""", ""hostess"":"""", ""cohostess"":"""", ""vsday"":vsday, ""vsmonth"":vsmonth, ""vsyear"":vsyear], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,2019-10-06 16:54:36,2019-10-06 16:56:38,2m - 1.601s,PASSED
+driver = getWebDriver(),Chrome 77.0.3865.90,,2019-10-06 16:56:38,2019-10-06 16:56:38,0.001s,PASSED
+executor = driver,Chrome 77.0.3865.90,,2019-10-06 16:56:38,2019-10-06 16:56:38,0.001s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders""))",Chrome 77.0.3865.90,,2019-10-06 16:56:38,2019-10-06 16:56:41,3.028s,PASSED
+g1Vars = UtilityMethods.splitPersonName(guest1),Chrome 77.0.3865.90,,2019-10-06 16:56:41,2019-10-06 16:56:41,0.001s,PASSED
+"g1Var = UtilityMethods.concat(g1Vars[1], "", "", g1Vars[0])",Chrome 77.0.3865.90,,2019-10-06 16:56:41,2019-10-06 16:56:41,0.001s,PASSED
+"buttonPlaceOrder = UtilityMethods.createTestObject(""buttoPlaceOrder"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", g1Var, ""')]/parent::td/following-sibling::td[1]/button"")",Chrome 77.0.3865.90,,2019-10-06 16:56:41,2019-10-06 16:56:41,0.002s,PASSED
+click(buttonPlaceOrder),Chrome 77.0.3865.90,,2019-10-06 16:56:41,2019-10-06 16:56:45,3.899s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:56:45,2019-10-06 16:56:48,3.003s,PASSED
+"executor.executeScript(""arguments[0].checked=true;"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""), 10))",Chrome 77.0.3865.90,,2019-10-06 16:56:48,2019-10-06 16:56:48,0.057s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:56:48,2019-10-06 16:56:51,3.003s,PASSED
+"check(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""))",Chrome 77.0.3865.90,,2019-10-06 16:56:51,2019-10-06 16:56:51,0.042s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:56:51,2019-10-06 16:56:54,3.002s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_order_items""), 5))",Chrome 77.0.3865.90,,2019-10-06 16:56:54,2019-10-06 16:56:54,0.043s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Retail Store/span_quick_entry""))",Chrome 77.0.3865.90,,2019-10-06 16:56:54,2019-10-06 16:56:57,3.372s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:56:57,2019-10-06 16:57:00,3.004s,PASSED
+"emptyCart = findWebElements(findTestObject(""Object Repository/Page_cabi Personal Store/removeFromCart""), 5)",Chrome 77.0.3865.90,,2019-10-06 16:57:00,2019-10-06 16:57:06,5.255s,PASSED
+if (emptyCart.size() > 0),Chrome 77.0.3865.90,,2019-10-06 16:57:06,2019-10-06 16:57:06,0.001s,PASSED
+"addOnStyle = ""2158""",Chrome 77.0.3865.90,,2019-10-06 16:57:06,2019-10-06 16:57:06,0.001s,PASSED
+"addOnStyle2 = ""3709""",Chrome 77.0.3865.90,,2019-10-06 16:57:06,2019-10-06 16:57:06,0.000s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), addOnStyle)",Chrome 77.0.3865.90,,2019-10-06 16:57:06,2019-10-06 16:57:06,0.155s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-06 16:57:06,2019-10-06 16:57:08,2.004s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 77.0.3865.90,,2019-10-06 16:57:08,2019-10-06 16:57:08,0.064s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-06 16:57:08,2019-10-06 16:57:10,2.003s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 77.0.3865.90,,2019-10-06 16:57:10,2019-10-06 16:57:10,0.068s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ENTER))",Chrome 77.0.3865.90,,2019-10-06 16:57:10,2019-10-06 16:57:10,0.056s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-06 16:57:10,2019-10-06 16:57:15,5.002s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/selectSize""))",Chrome 77.0.3865.90,,2019-10-06 16:57:15,2019-10-06 16:57:15,0.110s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:57:15,2019-10-06 16:57:18,3.004s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/span_Add to Cart""))",Chrome 77.0.3865.90,,2019-10-06 16:57:18,2019-10-06 16:57:18,0.107s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-06 16:57:18,2019-10-06 16:57:23,5.004s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/a_next""))",Chrome 77.0.3865.90,,2019-10-06 16:57:23,2019-10-06 16:57:23,0.130s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:57:23,2019-10-06 16:57:26,3.004s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/select_ship_to_guest_add""))",Chrome 77.0.3865.90,,2019-10-06 16:57:26,2019-10-06 16:57:26,0.113s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-06 16:57:26,2019-10-06 16:57:31,5.007s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_show_order_checkout_next""))",Chrome 77.0.3865.90,,2019-10-06 16:57:31,2019-10-06 16:57:32,0.471s,PASSED
+delay(1),Chrome 77.0.3865.90,,2019-10-06 16:57:32,2019-10-06 16:57:33,1.003s,PASSED
+delay(1),Chrome 77.0.3865.90,,2019-10-06 16:57:33,2019-10-06 16:57:34,1.005s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/button_DTY_warning_popup_no_ship_DTY""))",Chrome 77.0.3865.90,,2019-10-06 16:57:34,2019-10-06 16:57:34,0.140s,PASSED
+delay(1),Chrome 77.0.3865.90,,2019-10-06 16:57:34,2019-10-06 16:57:35,1.003s,PASSED
+"executeJavaScript(""arguments[0].click()"", Arrays.asList(findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_make_first_payment""), 30)))",Chrome 77.0.3865.90,,2019-10-06 16:57:35,2019-10-06 16:57:36,0.901s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:57:36,2019-10-06 16:57:39,3.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/select_payment_options_select""))",Chrome 77.0.3865.90,,2019-10-06 16:57:39,2019-10-06 16:57:39,0.132s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/select_payment_options_cash""))",Chrome 77.0.3865.90,,2019-10-06 16:57:39,2019-10-06 16:57:39,0.080s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-06 16:57:39,2019-10-06 16:57:44,5.003s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_review_order""), 10))",Chrome 77.0.3865.90,,2019-10-06 16:57:44,2019-10-06 16:57:44,0.088s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-06 16:57:44,2019-10-06 16:57:46,2.011s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_submit_order""), 10))",Chrome 77.0.3865.90,,2019-10-06 16:57:46,2019-10-06 16:57:49,2.363s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_order_view""))",Chrome 77.0.3865.90,,2019-10-06 16:57:49,2019-10-06 16:57:54,4.940s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_back_to_orders""))",Chrome 77.0.3865.90,,2019-10-06 16:57:54,2019-10-06 16:57:56,2.424s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-06 16:57:56,2019-10-06 16:57:58,2.004s,PASSED
+g2Vars = UtilityMethods.splitPersonName(guest2),Chrome 77.0.3865.90,,2019-10-06 16:57:58,2019-10-06 16:57:58,0.000s,PASSED
+"g2Var = UtilityMethods.concat(g2Vars[1], "", "", g2Vars[0])",Chrome 77.0.3865.90,,2019-10-06 16:57:58,2019-10-06 16:57:58,0.001s,PASSED
+"buttonPlaceOrder = UtilityMethods.createTestObject(""buttoPlaceOrder"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", g2Var, ""')]/parent::td/following-sibling::td[1]/button"")",Chrome 77.0.3865.90,,2019-10-06 16:57:58,2019-10-06 16:57:58,0.001s,PASSED
+click(buttonPlaceOrder),Chrome 77.0.3865.90,,2019-10-06 16:57:58,2019-10-06 16:58:01,2.822s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:58:01,2019-10-06 16:58:04,3.003s,PASSED
+"executor.executeScript(""arguments[0].checked=true;"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""), 10))",Chrome 77.0.3865.90,,2019-10-06 16:58:04,2019-10-06 16:58:04,0.043s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:58:04,2019-10-06 16:58:07,3.002s,PASSED
+"check(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""))",Chrome 77.0.3865.90,,2019-10-06 16:58:07,2019-10-06 16:58:07,0.033s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:58:07,2019-10-06 16:58:10,3.002s,PASSED
+driver = getWebDriver(),Chrome 77.0.3865.90,,2019-10-06 16:58:10,2019-10-06 16:58:10,0.001s,PASSED
+executor = driver,Chrome 77.0.3865.90,,2019-10-06 16:58:10,2019-10-06 16:58:10,0.000s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_order_items""), 5))",Chrome 77.0.3865.90,,2019-10-06 16:58:10,2019-10-06 16:58:10,0.045s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Retail Store/span_quick_entry""))",Chrome 77.0.3865.90,,2019-10-06 16:58:10,2019-10-06 16:58:13,3.444s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:58:13,2019-10-06 16:58:16,3.006s,PASSED
+"emptyCart = findWebElements(findTestObject(""Object Repository/Page_cabi Personal Store/removeFromCart""), 5)",Chrome 77.0.3865.90,,2019-10-06 16:58:16,2019-10-06 16:58:22,5.169s,PASSED
+if (emptyCart.size() > 0),Chrome 77.0.3865.90,,2019-10-06 16:58:22,2019-10-06 16:58:22,0.001s,PASSED
+"addOnStyle = ""3852""",Chrome 77.0.3865.90,,2019-10-06 16:58:22,2019-10-06 16:58:22,0.001s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), addOnStyle)",Chrome 77.0.3865.90,,2019-10-06 16:58:22,2019-10-06 16:58:22,0.190s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-06 16:58:22,2019-10-06 16:58:24,2.004s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 77.0.3865.90,,2019-10-06 16:58:24,2019-10-06 16:58:24,0.061s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-06 16:58:24,2019-10-06 16:58:26,2.004s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 77.0.3865.90,,2019-10-06 16:58:26,2019-10-06 16:58:26,0.052s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ENTER))",Chrome 77.0.3865.90,,2019-10-06 16:58:26,2019-10-06 16:58:26,0.055s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-06 16:58:26,2019-10-06 16:58:31,5.002s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/selectSize""))",Chrome 77.0.3865.90,,2019-10-06 16:58:31,2019-10-06 16:58:31,0.074s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:58:31,2019-10-06 16:58:34,3.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/span_Add to Cart""))",Chrome 77.0.3865.90,,2019-10-06 16:58:34,2019-10-06 16:58:34,0.135s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-06 16:58:34,2019-10-06 16:58:39,5.005s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/a_next""))",Chrome 77.0.3865.90,,2019-10-06 16:58:39,2019-10-06 16:58:39,0.139s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:58:39,2019-10-06 16:58:42,3.002s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/select_ship_to_guest_add""))",Chrome 77.0.3865.90,,2019-10-06 16:58:42,2019-10-06 16:58:42,0.171s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-06 16:58:42,2019-10-06 16:58:47,5.006s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_show_order_checkout_next""))",Chrome 77.0.3865.90,,2019-10-06 16:58:47,2019-10-06 16:58:48,0.173s,PASSED
+delay(1),Chrome 77.0.3865.90,,2019-10-06 16:58:48,2019-10-06 16:58:49,1.003s,PASSED
+delay(1),Chrome 77.0.3865.90,,2019-10-06 16:58:49,2019-10-06 16:58:50,1.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/button_DTY_warning_popup_no_ship_DTY""))",Chrome 77.0.3865.90,,2019-10-06 16:58:50,2019-10-06 16:58:50,0.169s,PASSED
+delay(1),Chrome 77.0.3865.90,,2019-10-06 16:58:50,2019-10-06 16:58:51,1.003s,PASSED
+"executeJavaScript(""arguments[0].click()"", Arrays.asList(findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_make_first_payment""), 30)))",Chrome 77.0.3865.90,,2019-10-06 16:58:51,2019-10-06 16:58:52,1.209s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:58:52,2019-10-06 16:58:55,3.002s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/select_payment_options_select""))",Chrome 77.0.3865.90,,2019-10-06 16:58:55,2019-10-06 16:58:55,0.170s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/select_payment_options_cash""))",Chrome 77.0.3865.90,,2019-10-06 16:58:55,2019-10-06 16:58:55,0.084s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-06 16:58:55,2019-10-06 16:59:00,5.002s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_review_order""), 10))",Chrome 77.0.3865.90,,2019-10-06 16:59:00,2019-10-06 16:59:00,0.219s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-06 16:59:00,2019-10-06 16:59:02,2.003s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_submit_order""), 10))",Chrome 77.0.3865.90,,2019-10-06 16:59:02,2019-10-06 16:59:05,2.282s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_order_view""))",Chrome 77.0.3865.90,,2019-10-06 16:59:05,2019-10-06 16:59:08,3.114s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_back_to_orders""))",Chrome 77.0.3865.90,,2019-10-06 16:59:08,2019-10-06 16:59:10,2.070s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-06 16:59:10,2019-10-06 16:59:12,2.002s,PASSED
+hVars = UtilityMethods.splitPersonName(hostess),Chrome 77.0.3865.90,,2019-10-06 16:59:12,2019-10-06 16:59:12,0.001s,PASSED
+"hVar = UtilityMethods.concat(hVars[1], "", "", hVars[0])",Chrome 77.0.3865.90,,2019-10-06 16:59:12,2019-10-06 16:59:12,0.000s,PASSED
+"buttonPlaceOrder = UtilityMethods.createTestObject(""buttoPlaceOrder"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", hVar, ""')]/parent::td/following-sibling::td[1]/button"")",Chrome 77.0.3865.90,,2019-10-06 16:59:12,2019-10-06 16:59:12,0.001s,PASSED
+click(buttonPlaceOrder),Chrome 77.0.3865.90,,2019-10-06 16:59:12,2019-10-06 16:59:15,3.322s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:59:15,2019-10-06 16:59:18,3.002s,PASSED
+"executor.executeScript(""arguments[0].checked=true;"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""), 10))",Chrome 77.0.3865.90,,2019-10-06 16:59:18,2019-10-06 16:59:18,0.044s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:59:18,2019-10-06 16:59:21,3.002s,PASSED
+"check(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""))",Chrome 77.0.3865.90,,2019-10-06 16:59:21,2019-10-06 16:59:21,0.031s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:59:21,2019-10-06 16:59:24,3.003s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_order_items""), 5))",Chrome 77.0.3865.90,,2019-10-06 16:59:24,2019-10-06 16:59:24,0.091s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Retail Store/span_quick_entry""))",Chrome 77.0.3865.90,,2019-10-06 16:59:24,2019-10-06 16:59:28,3.979s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:59:28,2019-10-06 16:59:31,3.002s,PASSED
+"emptyCart = findWebElements(findTestObject(""Object Repository/Page_cabi Personal Store/removeFromCart""), 5)",Chrome 77.0.3865.90,,2019-10-06 16:59:31,2019-10-06 16:59:37,5.202s,PASSED
+if (emptyCart.size() > 0),Chrome 77.0.3865.90,,2019-10-06 16:59:37,2019-10-06 16:59:37,0.001s,PASSED
+"addOnStyle = ""2158""",Chrome 77.0.3865.90,,2019-10-06 16:59:37,2019-10-06 16:59:37,0.000s,PASSED
+"addOnStyle2 = ""3709""",Chrome 77.0.3865.90,,2019-10-06 16:59:37,2019-10-06 16:59:37,0.000s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), addOnStyle)",Chrome 77.0.3865.90,,2019-10-06 16:59:37,2019-10-06 16:59:37,0.173s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-06 16:59:37,2019-10-06 16:59:39,2.005s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 77.0.3865.90,,2019-10-06 16:59:39,2019-10-06 16:59:39,0.075s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-06 16:59:39,2019-10-06 16:59:41,2.003s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 77.0.3865.90,,2019-10-06 16:59:41,2019-10-06 16:59:41,0.098s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ENTER))",Chrome 77.0.3865.90,,2019-10-06 16:59:41,2019-10-06 16:59:41,0.057s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-06 16:59:41,2019-10-06 16:59:46,5.004s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/selectSize""))",Chrome 77.0.3865.90,,2019-10-06 16:59:46,2019-10-06 16:59:46,0.138s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:59:46,2019-10-06 16:59:49,3.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/span_Add to Cart""))",Chrome 77.0.3865.90,,2019-10-06 16:59:49,2019-10-06 16:59:49,0.100s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-06 16:59:49,2019-10-06 16:59:54,5.005s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/a_next""))",Chrome 77.0.3865.90,,2019-10-06 16:59:54,2019-10-06 16:59:54,0.169s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:59:54,2019-10-06 16:59:57,3.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_show_order_checkout_next""))",Chrome 77.0.3865.90,,2019-10-06 16:59:57,2019-10-06 16:59:58,0.130s,PASSED
+delay(1),Chrome 77.0.3865.90,,2019-10-06 16:59:58,2019-10-06 16:59:59,1.001s,PASSED
+"executeJavaScript(""arguments[0].click()"", Arrays.asList(findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_make_first_payment""), 30)))",Chrome 77.0.3865.90,,2019-10-06 16:59:59,2019-10-06 16:59:59,0.372s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-06 16:59:59,2019-10-06 17:00:02,3.002s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/showOrderPaeymentCC""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,2019-10-06 17:00:02,2019-10-06 17:00:27,25.211s,PASSED
+delay(2),Chrome 77.0.3865.90,,2019-10-06 17:00:27,2019-10-06 17:00:29,2.004s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_submit_order""), 10))",Chrome 77.0.3865.90,,2019-10-06 17:00:29,2019-10-06 17:00:40,10.392s,ERROR

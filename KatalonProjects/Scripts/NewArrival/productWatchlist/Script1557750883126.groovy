@@ -34,16 +34,16 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
     WebUI.click(findTestObject('Object Repository/Page_cabi Home/a_Product Watch List'))
 
     if (available.toString().equalsIgnoreCase('no')) {
-        List<WebElement> noResultFound = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'), 
+        List<WebElement> noResultFound = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)'), 
             5)
 
         assert noResultFound.size() == 0
     } else {
-        WebUI.click(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'))
+        WebUI.click(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)'))
 
-        WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 1)'), '(New Arrivals 1)')
+        WebUI.verifyElementText(findTestObject('Object Repository/Page_cabi Product Watch list/span_(New Arrivals 2)'), '(New Arrivals 2)')
 
-        List<WebElement> actualProductList = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Product Watch list/div_product_list_na1'), 
+        List<WebElement> actualProductList = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Product Watch list/div_product_list_na2'), 
             5)
 
         println(actualProductList.size())

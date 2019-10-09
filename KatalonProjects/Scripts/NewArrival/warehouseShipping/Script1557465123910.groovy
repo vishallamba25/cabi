@@ -6,8 +6,12 @@ import org.openqa.selenium.WebElement
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+import internal.GlobalVariable
 //orderId="PR707945104"
 //WebUI.openBrowser("")
+//orderId= GlobalVariable.retailOrderID
+println orderId
 WebUI.callTestCase(findTestCase('TestCaseUtilities/cabiWarehouseLogin'), [('CWURL') : '', ('CWuser') : '', ('CWpass') : ''], FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_cabi Manage PickLists/a_Create PickLists'))

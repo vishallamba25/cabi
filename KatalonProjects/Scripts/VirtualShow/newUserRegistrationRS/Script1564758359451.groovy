@@ -10,6 +10,14 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import commonUtility.UtilityMethods as UtilityMethods
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import internal.GlobalVariable as GlobalVariable
 
 '/**********Faker initialization for Random Names********************/'
 RSURL = findTestData('envtData').getValue('RSURL', 1)
@@ -63,16 +71,17 @@ WebUI.click(findTestObject('ReplicatedSite/rsNewUser/noThanksLabel'))
 
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/continueButton'))
 
-WebUI.delay(3)
+WebUI.delay(5)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
 JavascriptExecutor executor = ((driver) as JavascriptExecutor)
 
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('ReplicatedSite/rsNewUser/gotItThanks'), 
-        5))
+//
+//executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('ReplicatedSite/rsNewUser/gotItThanks'), 
+//        5))
+WebUI.click(findTestObject('ReplicatedSite/rsNewUser/gotItThanks'))
 
-//WebUI.click(findTestObject('ReplicatedSite/rsNewUser/gotItThanks'))
 //TestObject profileOptions= UtilityMethods.createTestObject("profileOptions", '//div[@class=\'check\' and preceding-sibling::div[text()=\'',Casual,'\']]')
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/setUpMyProfile'))
 
@@ -115,7 +124,7 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/continueB
 WebUI.delay(5)
 
 '/**********Profile Completion Forms for Size,Types of Dresses etc********************/'
-List<String> titleList = new ArrayList<String>()
+List<String> titleList = new ArrayList()
 
 titleList.add('Bust')
 
@@ -143,7 +152,7 @@ titleList.add('Dresses')
 
 titleList.add('Shoes')
 
-List<String> sizeList = new ArrayList<String>()
+List<String> sizeList = new ArrayList()
 
 sizeList.add('35')
 
@@ -180,7 +189,7 @@ for (int i = 0; i < titleList.size(); i++) {
     WebUI.delay(3)
 }
 
-WebUI.delay(3)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/continueButtonStyleForm'))
 
@@ -233,3 +242,67 @@ WebUI.click(findTestObject('ReplicatedSite/rsNewUser/saveButton'))
 
 WebUI.verifyElementText(findTestObject('ReplicatedSite/rsNewUser/changesSaved'), 'Your changes have been saved.')
 
+//executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('ReplicatedSite/rsNewUser/sizeAndMeasurementsTab'), 
+//        5))
+
+//WebUI.click(findTestObject('ReplicatedSite/rsNewUser/sizeAndMeasurementsTab'))
+
+//executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('ReplicatedSite/rsNewUser/editBustSize'),
+//	5))
+
+//WebUI.click(findTestObject('ReplicatedSite/rsNewUser/editBustSize'))
+
+//List<String> editSizeList = new ArrayList()
+//
+//editSizeList.add('35')
+//
+//editSizeList.add('30')
+//
+//editSizeList.add('36')
+//
+//editSizeList.add('32')
+//
+//editSizeList.add('Extra Large')
+//
+//editSizeList.add('Medium')
+//
+//editSizeList.add('Regular')
+//
+//editSizeList.add('Extra Large')
+//
+//editSizeList.add('10')
+//
+//List<String> editStyleList = new ArrayList()
+//
+//editStyleList.add('Bust Sizes:')
+//
+//editStyleList.add('Waist Sizes:')
+//
+//editStyleList.add('Hip Sizes:')
+//
+//editStyleList.add('Inseam Sizes:')
+//
+//editStyleList.add('Top Sizes:')
+//
+//editStyleList.add('Trouser Sizes:')
+//
+//editStyleList.add('Trouser Length:')
+//
+//editStyleList.add('Skirt Sizes:')
+//
+//editStyleList.add('Dress Sizes:')
+//
+//editStyleList.add('Shoe Sizes:')
+//
+//
+//for (int i = 0; i < editStyleList.size(); i++) {
+//	TestObject editStyleForm = UtilityMethods.createTestObject('editStyleForm','//span[text()=\'',editStyleList.get(i),'\']/parent::div/following-sibling::div//div[@class=\'drop-text\' and text()=\'',editSizeList.get(i),'\']')
+//	
+//	WebUI.click(editStyleForm)
+//
+//	WebUI.delay(3)
+//}
+//
+//WebUI.click(findTestObject('ReplicatedSite/rsNewUser/saveButton'))
+//
+//WebUI.verifyElementText(findTestObject('ReplicatedSite/rsNewUser/changesSaved'), 'Your changes have been saved.')

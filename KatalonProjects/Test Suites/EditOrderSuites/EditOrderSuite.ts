@@ -70,4 +70,10 @@
          <variableId>137e9e5c-36d1-42a8-a382-da49a12aab59</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>3f4e87c3-3437-4f46-b854-09b2af482d3a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/EditOrder-V/rsEditOrderAddNewItems</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

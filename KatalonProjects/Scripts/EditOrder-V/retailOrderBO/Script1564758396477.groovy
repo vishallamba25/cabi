@@ -136,9 +136,9 @@ if (emptyCart.size() > 0) {
     WebUI.delay(5)
 }
 
-addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
+addOnStyle = "2158"//findTestData('miscData').getValue('addOnStyle', 1)
 
-addOnStyle2 = findTestData('miscData').getValue('addOnStyle', 2)
+addOnStyle2 = "3709"//findTestData('miscData').getValue('addOnStyle', 2)
 
 ///////////////
 WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
@@ -199,6 +199,7 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/addToCart2')
 WebUI.delay(5)
 
 /////////////////////////////////////////////////////////////
+editScenarioNumber=1;
 if (editScenarioNumber == 1) {
     //////////
     //////////

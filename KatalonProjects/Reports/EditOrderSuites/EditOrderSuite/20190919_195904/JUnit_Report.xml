@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="EditOrderSuite" time="221" tests="0" failures="0" errors="1">
+   <testsuite name="EditOrderSuite" tests="0" failures="0" errors="1" time="221" timestamp="2019-09-19 19:59:09" hostname="user - 10.0.102.168" id="Test Suites/EditOrderSuites/EditOrderSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\EditOrderSuites\\EditOrderSuite\\20190919_195904"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\EditOrderSuites\\EditOrderSuite\\20190919_195904\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 10.0.102.168"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 76.0.3809.132"/>
+         <property name="hostAddress" value="10.0.102.168"/>
+         <property name="sessionId" value="48c6378cc2ac4f5493cb83ca5b540499"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/EditOrder-V/rsEditOrderAddNewItems" classname="Test Cases/EditOrder-V/rsEditOrderAddNewItems" status="ERROR">
+         <error type="ERROR" message="Test Cases/EditOrder-V/rsEditOrderAddNewItems FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/EditOrder/retailOrderRS' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at rsEditOrderAddNewItems.run(rsEditOrderAddNewItems:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1568903344939.run(TempTestSuite1568903344939.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/ReplicatedSite/h1_thanks_msg' located by 'By.xpath: //div[@id='confirmation-page']/div/div/div/h1' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at retailOrderRS.run(retailOrderRS:172)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+"/>
+         <system-out><![CDATA[2019-09-19 19:59:09 - [TEST_CASE][ERROR] - Test Cases/EditOrder-V/rsEditOrderAddNewItems: Test Cases/EditOrder-V/rsEditOrderAddNewItems FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/EditOrder/retailOrderRS' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at rsEditOrderAddNewItems.run(rsEditOrderAddNewItems:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1568903344939.run(TempTestSuite1568903344939.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/ReplicatedSite/h1_thanks_msg' located by 'By.xpath: //div[@id='confirmation-page']/div/div/div/h1' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at retailOrderRS.run(retailOrderRS:172)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+
+
+2019-09-19 19:59:09 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-09-19 19:59:10 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-09-19 19:59:10 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-09-19 19:59:10 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-19 19:59:11 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-19 19:59:11 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-19 19:59:11 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-09-19 19:59:15 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-19 19:59:15 - [TEST_STEP][ERROR] - callTestCase(findTestCase("EditOrder/retailOrderRS"), ["addOnStyle":""], STOP_ON_FAILURE): callTestCase(findTestCase("EditOrder/retailOrderRS"), ["addOnStyle":""], STOP_ON_FAILURE) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/EditOrder/retailOrderRS' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at rsEditOrderAddNewItems.run(rsEditOrderAddNewItems:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1568903344939.run(TempTestSuite1568903344939.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/ReplicatedSite/h1_thanks_msg' located by 'By.xpath: //div[@id='confirmation-page']/div/div/div/h1' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at retailOrderRS.run(retailOrderRS:172)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+
+
+2019-09-19 19:59:15 - [TEST_CASE][ERROR] - Test Cases/EditOrder/retailOrderRS: Test Cases/EditOrder/retailOrderRS FAILED.
+Reason:
+com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/ReplicatedSite/h1_thanks_msg' located by 'By.xpath: //div[@id='confirmation-page']/div/div/div/h1' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at retailOrderRS.run(retailOrderRS:172)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at rsEditOrderAddNewItems.run(rsEditOrderAddNewItems:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1568903344939.run(TempTestSuite1568903344939.groovy:35)
+
+
+2019-09-19 19:59:16 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-09-19 19:59:16 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-09-19 19:59:17 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-09-19 19:59:17 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-09-19 19:59:19 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-09-19 19:59:19 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-09-19 19:59:19 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-09-19 19:59:19 - [TEST_STEP][PASSED] - actions = new org.openqa.selenium.interactions.Actions(driver): null
+
+2019-09-19 19:59:19 - [TEST_STEP][PASSED] - RSTestEnvt = findTestData("envtData").getValue("RSTestEnvt", 1): null
+
+2019-09-19 19:59:21 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-19 19:59:31 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-19 19:59:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/rsLogin"), ["RSURL":"", "RSuser":"", "RSpass":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/rsLogin' successfully
+
+2019-09-19 19:59:31 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/rsLogin: Test Cases/TestCaseUtilities/rsLogin
+
+2019-09-19 19:59:31 - [TEST_STEP][PASSED] - dataFile = "micrositeData": null
+
+2019-09-19 19:59:31 - [TEST_STEP][PASSED] - guest1Mail = findTestData(dataFile).getValue("guest1Mail", 1): null
+
+2019-09-19 19:59:31 - [TEST_STEP][PASSED] - guest1Pass = findTestData(dataFile).getValue("guest1Pass", 1): null
+
+2019-09-19 19:59:31 - [TEST_STEP][PASSED] - RSTestEnvt = findTestData("envtData").getValue("RSTestEnvt", 1): null
+
+2019-09-19 19:59:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/setVHost"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/setVHost' successfully
+
+2019-09-19 19:59:32 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/setVHost: Test Cases/TestCaseUtilities/setVHost
+
+2019-09-19 19:59:32 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-09-19 19:59:32 - [TEST_STEP][PASSED] - ofbizUser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-09-19 19:59:32 - [TEST_STEP][PASSED] - ofbizPass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-09-19 19:59:32 - [TEST_STEP][PASSED] - vhostTarget = findTestData("envtData").getValue("vhostTarget", 1): null
+
+2019-09-19 19:59:32 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-19 19:59:34 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-09-19 19:59:34 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Username_username"), ofbizUser): Text 'automation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Username_username'
+
+2019-09-19 19:59:35 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Username_username'
+
+2019-09-19 19:59:35 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Password_password"), ofbizPass): Text 'cabiautomation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Password_password'
+
+2019-09-19 19:59:35 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Password_password'
+
+2019-09-19 19:59:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Password_Submit")): Object: 'Object Repository/virualShowRSVPOR/Page_/input_Password_Submit' is clicked on
+
+2019-09-19 19:59:39 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/input_Password_Submit' is clicked on
+
+2019-09-19 19:59:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/a_Set Vhost")): Object: 'Object Repository/virualShowRSVPOR/Page_/a_Set Vhost' is clicked on
+
+2019-09-19 19:59:39 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/a_Set Vhost' is clicked on
+
+2019-09-19 19:59:39 - [TEST_STEP][PASSED] - click(UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", vhostTarget, "')]")): Object: 'select_target' is clicked on
+
+2019-09-19 19:59:39 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-09-19 19:59:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/input")): Object: 'Object Repository/virualShowRSVPOR/Page_/input' is clicked on
+
+2019-09-19 19:59:43 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/input' is clicked on
+
+2019-09-19 19:59:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/setVHost' successfully
+
+2019-09-19 19:59:43 - [TEST_STEP][PASSED] - loginURL = UtilityMethods.concat("https://mirandakate.", RSTestEnvt, ".com/?component=account.login-gateway"): null
+
+2019-09-19 19:59:43 - [TEST_STEP][PASSED] - navigateToUrl(loginURL): Navigate to 'https://mirandakate.cabitest5.com/?component=account.login-gateway' successfully
+
+2019-09-19 20:00:12 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabitest5.com/?component=account.login-gateway' successfully
+
+2019-09-19 20:00:12 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-19 20:00:15 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-19 20:00:15 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email"), guest1Mail): Text 'guest1-test@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-09-19 20:00:15 - [MESSAGE][PASSED] - Text 'guest1-test@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-09-19 20:00:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-09-19 20:00:16 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue' is clicked on
+
+2019-09-19 20:00:16 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password"), guest1Pass): Text 'blackdress19' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'
+
+2019-09-19 20:00:17 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Welcome_password'
+
+2019-09-19 20:00:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue_pass")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue_pass' is clicked on
+
+2019-09-19 20:00:17 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue_pass' is clicked on
+
+2019-09-19 20:00:17 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-19 20:00:22 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-19 20:00:22 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later"), 0)): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-09-19 20:00:22 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2019-09-19 20:00:22 - [MESSAGE][PASSED] - Object 'Object Repository/virualShowRSVPOR/Page_Show microsite/complete_my_profile_later' is present
+
+2019-09-19 20:00:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later")): Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-09-19 20:00:28 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_Show microsite/div_Ill complete my profile later' is clicked on
+
+2019-09-19 20:00:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/rsLogin' successfully
+
+2019-09-19 20:00:28 - [TEST_STEP][PASSED] - loginURL = UtilityMethods.concat("https://mirandakate.", RSTestEnvt, ".com/account/#!/checkout"): null
+
+2019-09-19 20:00:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/a_shop")): Object: 'Object Repository/ReplicatedSite/a_shop' is clicked on
+
+2019-09-19 20:01:10 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/a_shop' is clicked on
+
+2019-09-19 20:01:10 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-19 20:01:13 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-19 20:01:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/div_first_item_to_buy_from_vs")): Object: 'Object Repository/ReplicatedSite/div_first_item_to_buy_from_vs' is clicked on
+
+2019-09-19 20:01:35 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/div_first_item_to_buy_from_vs' is clicked on
+
+2019-09-19 20:01:35 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-19 20:01:38 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-19 20:01:38 - [TEST_STEP][PASSED] - noOfOptions = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/div_no_of_options_for_checkout"), 5): null
+
+2019-09-19 20:01:38 - [TEST_STEP][PASSED] - for ([i = 1, i <= noOfOptions.size(), (i++)]): Delayed 3 second(s)
+
+2019-09-19 20:01:38 - [TEST_STEP][PASSED] - dropDown = UtilityMethods.createTestObject("div_drop_down", "(//div[@class='add-to-cart-form']/div[@class='attribute ng-scope']/div[@class='input-select ng-scope']/select)[", String.valueOf(i), "]"): null
+
+2019-09-19 20:01:38 - [TEST_STEP][PASSED] - click(dropDown): Object: 'div_drop_down' is clicked on
+
+2019-09-19 20:01:38 - [MESSAGE][PASSED] - Object: 'div_drop_down' is clicked on
+
+2019-09-19 20:01:38 - [TEST_STEP][PASSED] - selectLastOption = UtilityMethods.createTestObject("div_select_last_option", "(//div[@class='add-to-cart-form']/div[@class='attribute ng-scope']/div[@class='input-select ng-scope']/select)[", String.valueOf(i), "]/option[last()]"): null
+
+2019-09-19 20:01:38 - [TEST_STEP][PASSED] - click(selectLastOption): Object: 'div_select_last_option' is clicked on
+
+2019-09-19 20:01:39 - [MESSAGE][PASSED] - Object: 'div_select_last_option' is clicked on
+
+2019-09-19 20:01:39 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-19 20:01:42 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-19 20:01:42 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-19 20:01:45 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-19 20:01:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/button_add_item_to_bag")): Object: 'Object Repository/ReplicatedSite/button_add_item_to_bag' is clicked on
+
+2019-09-19 20:01:45 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/button_add_item_to_bag' is clicked on
+
+2019-09-19 20:01:45 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-19 20:01:48 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-19 20:01:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/a_cart_svg")): Object: 'Object Repository/ReplicatedSite/a_cart_svg' is clicked on
+
+2019-09-19 20:01:52 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/a_cart_svg' is clicked on
+
+2019-09-19 20:01:52 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-19 20:01:57 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-19 20:01:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/a_checkout")): Object: 'Object Repository/ReplicatedSite/a_checkout' is clicked on
+
+2019-09-19 20:01:57 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/a_checkout' is clicked on
+
+2019-09-19 20:01:57 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-19 20:02:07 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-19 20:02:07 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-19 20:02:17 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-19 20:02:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_other_address")): Object: 'Object Repository/ReplicatedSite/input_other_address' is clicked on
+
+2019-09-19 20:02:18 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_other_address' is clicked on
+
+2019-09-19 20:02:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_my_address_edit_order")): Object: 'Object Repository/ReplicatedSite/input_my_address_edit_order' is clicked on
+
+2019-09-19 20:02:18 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_my_address_edit_order' is clicked on
+
+2019-09-19 20:02:18 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("ReplicatedSite/button_save_and_continue"), 60): Object 'Object Repository/ReplicatedSite/button_save_and_continue' is clickable
+
+2019-09-19 20:02:18 - [MESSAGE][PASSED] - Object 'Object Repository/ReplicatedSite/button_save_and_continue' is clickable
+
+2019-09-19 20:02:18 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-09-19 20:02:18 - [TEST_STEP][PASSED] - element = driver.findElement(By.xpath("(//button/span[contains(text(), 'Save and Continue')])[1]")): null
+
+2019-09-19 20:02:18 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", element): null
+
+2019-09-19 20:02:18 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-09-19 20:02:21 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-09-19 20:02:21 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/input_pay_with_credit"), 5)): null
+
+2019-09-19 20:02:21 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/button_add_another_card"), 5)): null
+
+2019-09-19 20:02:21 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/select_credit_card_type"), 5)): null
+
+2019-09-19 20:02:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/select_credit_card_type")): Object: 'Object Repository/ReplicatedSite/select_credit_card_type' is clicked on
+
+2019-09-19 20:02:22 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/select_credit_card_type' is clicked on
+
+2019-09-19 20:02:22 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/input_creditcard_first_name"), 5)): null
+
+2019-09-19 20:02:22 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/ReplicatedSite/input_creditcard_first_name"), "abcd"): Text 'abcd' is set on object 'Object Repository/ReplicatedSite/input_creditcard_first_name'
+
+2019-09-19 20:02:22 - [MESSAGE][PASSED] - Text 'abcd' is set on object 'Object Repository/ReplicatedSite/input_creditcard_first_name'
+
+2019-09-19 20:02:22 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/input_creditcard_last_name"), 5)): null
+
+2019-09-19 20:02:22 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/ReplicatedSite/input_creditcard_last_name"), "efgh"): Text 'efgh' is set on object 'Object Repository/ReplicatedSite/input_creditcard_last_name'
+
+2019-09-19 20:02:22 - [MESSAGE][PASSED] - Text 'efgh' is set on object 'Object Repository/ReplicatedSite/input_creditcard_last_name'
+
+2019-09-19 20:02:22 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/input_creditcard_card_number"), 5)): null
+
+2019-09-19 20:02:22 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/ReplicatedSite/input_creditcard_card_number"), "4111111111111111"): Text '4111111111111111' is set on object 'Object Repository/ReplicatedSite/input_creditcard_card_number'
+
+2019-09-19 20:02:23 - [MESSAGE][PASSED] - Text '4111111111111111' is set on object 'Object Repository/ReplicatedSite/input_creditcard_card_number'
+
+2019-09-19 20:02:23 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/input_creditcard_expiration_month"), 5)): null
+
+2019-09-19 20:02:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_creditcard_expiration_month")): Object: 'Object Repository/ReplicatedSite/input_creditcard_expiration_month' is clicked on
+
+2019-09-19 20:02:23 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_creditcard_expiration_month' is clicked on
+
+2019-09-19 20:02:23 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/input_creditcard_expiration_year"), 5)): null
+
+2019-09-19 20:02:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/ReplicatedSite/input_creditcard_expiration_year")): Object: 'Object Repository/ReplicatedSite/input_creditcard_expiration_year' is clicked on
+
+2019-09-19 20:02:23 - [MESSAGE][PASSED] - Object: 'Object Repository/ReplicatedSite/input_creditcard_expiration_year' is clicked on
+
+2019-09-19 20:02:23 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/input_billing_address"), 5)): null
+
+2019-09-19 20:02:23 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/input_billing_location_mailing"), 5)): null
+
+2019-09-19 20:02:23 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/input_billing_location_add_new"), 5)): null
+
+2019-09-19 20:02:24 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/input_billing_location_mailing"), 5)): null
+
+2019-09-19 20:02:24 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-09-19 20:02:24 - [TEST_STEP][PASSED] - element = driver.findElement(By.xpath("(//button[@type='submit']/span[contains(text(), 'Save')])[2]")): null
+
+2019-09-19 20:02:24 - [TEST_STEP][PASSED] - actions = new org.openqa.selenium.interactions.Actions(driver): null
+
+2019-09-19 20:02:24 - [TEST_STEP][PASSED] - build().perform(): null
+
+2019-09-19 20:02:24 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-09-19 20:02:34 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-09-19 20:02:34 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("ReplicatedSite/button_save_and_continue_2"), 60): Object 'Object Repository/ReplicatedSite/button_save_and_continue_2' is clickable
+
+2019-09-19 20:02:34 - [MESSAGE][PASSED] - Object 'Object Repository/ReplicatedSite/button_save_and_continue_2' is clickable
+
+2019-09-19 20:02:34 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-09-19 20:02:34 - [TEST_STEP][PASSED] - element = driver.findElement(By.xpath("(//button/span[contains(text(), 'Save and Continue')])[2]")): null
+
+2019-09-19 20:02:34 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", element): null
+
+2019-09-19 20:02:34 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-19 20:02:39 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-19 20:02:39 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/ReplicatedSite/span_complete_order"), 30): Object 'Object Repository/ReplicatedSite/span_complete_order' is clickable
+
+2019-09-19 20:02:39 - [MESSAGE][PASSED] - Object 'Object Repository/ReplicatedSite/span_complete_order' is clickable
+
+2019-09-19 20:02:39 - [TEST_STEP][PASSED] - element = driver.findElement(By.xpath("//span[contains(text(), 'COMPLETE ORDER')]")): null
+
+2019-09-19 20:02:39 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", element): null
+
+2019-09-19 20:02:39 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-09-19 20:02:44 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-09-19 20:02:44 - [TEST_STEP][ERROR] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/h1_thanks_msg"), 5)): executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/h1_thanks_msg"), 5)) FAILED.
+Reason:
+com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/ReplicatedSite/h1_thanks_msg' located by 'By.xpath: //div[@id='confirmation-page']/div/div/div/h1' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at retailOrderRS.run(retailOrderRS:172)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at rsEditOrderAddNewItems.run(rsEditOrderAddNewItems:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1568903344939.run(TempTestSuite1568903344939.groovy:35)
+
+
+2019-09-19 20:02:49 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='confirmation-page']/div/div/div/h1'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-09-19 20:02:49 - [MESSAGE][ERROR] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/ReplicatedSite/h1_thanks_msg"), 5)) FAILED.
+Reason:
+com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/ReplicatedSite/h1_thanks_msg' located by 'By.xpath: //div[@id='confirmation-page']/div/div/div/h1' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at retailOrderRS.run(retailOrderRS:172)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at rsEditOrderAddNewItems.run(rsEditOrderAddNewItems:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1568903344939.run(TempTestSuite1568903344939.groovy:35)
+
+
+2019-09-19 20:02:49 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/EditOrder/retailOrderRS' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/EditOrder/retailOrderRS' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at rsEditOrderAddNewItems.run(rsEditOrderAddNewItems:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1568903344939.run(TempTestSuite1568903344939.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/ReplicatedSite/h1_thanks_msg' located by 'By.xpath: //div[@id='confirmation-page']/div/div/div/h1' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at retailOrderRS.run(retailOrderRS:172)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2019-09-19 20:02:49 - [MESSAGE][ERROR] - callTestCase(findTestCase("EditOrder/retailOrderRS"), ["addOnStyle":""], STOP_ON_FAILURE) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/EditOrder/retailOrderRS' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at rsEditOrderAddNewItems.run(rsEditOrderAddNewItems:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1568903344939.run(TempTestSuite1568903344939.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/ReplicatedSite/h1_thanks_msg' located by 'By.xpath: //div[@id='confirmation-page']/div/div/div/h1' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at retailOrderRS.run(retailOrderRS:172)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-out>
+         <system-err><![CDATA[2019-09-19 19:59:09 - [TEST_CASE][ERROR] - Test Cases/EditOrder-V/rsEditOrderAddNewItems: Test Cases/EditOrder-V/rsEditOrderAddNewItems FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/EditOrder/retailOrderRS' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at rsEditOrderAddNewItems.run(rsEditOrderAddNewItems:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1568903344939.run(TempTestSuite1568903344939.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/ReplicatedSite/h1_thanks_msg' located by 'By.xpath: //div[@id='confirmation-page']/div/div/div/h1' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at retailOrderRS.run(retailOrderRS:172)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-09-19 19:59:09 - [TEST_SUITE][ERROR] - EditOrderSuite: Test Cases/EditOrder-V/rsEditOrderAddNewItems FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/EditOrder/retailOrderRS' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at rsEditOrderAddNewItems.run(rsEditOrderAddNewItems:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1568903344939.run(TempTestSuite1568903344939.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/ReplicatedSite/h1_thanks_msg' located by 'By.xpath: //div[@id='confirmation-page']/div/div/div/h1' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at retailOrderRS.run(retailOrderRS:172)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-out>
+      <system-err><![CDATA[2019-09-19 19:59:09 - [TEST_SUITE][ERROR] - EditOrderSuite: Test Cases/EditOrder-V/rsEditOrderAddNewItems FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/EditOrder/retailOrderRS' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at rsEditOrderAddNewItems.run(rsEditOrderAddNewItems:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1568903344939.run(TempTestSuite1568903344939.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/ReplicatedSite/h1_thanks_msg' located by 'By.xpath: //div[@id='confirmation-page']/div/div/div/h1' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at retailOrderRS.run(retailOrderRS:172)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+   </testsuite>
+</testsuites>

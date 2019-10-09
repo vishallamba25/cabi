@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+NewArrivalsSuite,Chrome 77.0.3865.90,,2019-09-27 17:55:24,2019-09-27 18:00:24,5m - 0.388s,FAILED
+,,,,,,
+Test Cases/NewArrival/productWatchlist,Chrome 77.0.3865.90,,2019-09-27 17:55:24,2019-09-27 17:58:40,3m - 15.389s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 77.0.3865.90,,2019-09-27 17:55:24,2019-09-27 17:55:24,0.070s,PASSED
+"openBrowser("""")",Chrome 77.0.3865.90,,2019-09-27 17:55:25,2019-09-27 17:55:29,3.780s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 77.0.3865.90,,2019-09-27 17:55:29,2019-09-27 17:58:40,3m - 10.812s,FAILED
+,,,,,,
+Test Cases/NewArrival/productEblast,Chrome 77.0.3865.90,,2019-09-27 17:58:40,2019-09-27 18:00:23,1m - 43.777s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 77.0.3865.90,,2019-09-27 17:58:40,2019-09-27 17:58:40,0.002s,PASSED
+"openBrowser("""")",Chrome 77.0.3865.90,,2019-09-27 17:58:40,2019-09-27 17:58:43,3.223s,PASSED
+"for ([timeRow = 1, timeRow <= findTestData(""timezoneData"").getRowNumbers(), (timeRow++)])",Chrome 77.0.3865.90,,2019-09-27 17:58:43,2019-09-27 18:00:23,1m - 39.995s,FAILED

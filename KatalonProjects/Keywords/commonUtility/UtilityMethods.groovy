@@ -5,13 +5,18 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import java.text.DateFormat
 import java.text.SimpleDateFormat
+import java.util.concurrent.TimeUnit
 
 import javax.imageio.ImageIO
 
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.StaleElementReferenceException
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
+import org.openqa.selenium.support.ui.ExpectedConditions
+import org.openqa.selenium.support.ui.FluentWait
+import org.openqa.selenium.support.ui.Wait
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.ConditionType
@@ -85,10 +90,17 @@ public class UtilityMethods {
 
 	@Keyword
 	public static boolean listEquals(ArrayList<String> expectedRange, ArrayList<String> actualRange){
+
+
+		println expectedRange.size()
+		println actualRange.size()
+
+
+
 		if(expectedRange.size()!=actualRange.size())
 			return false;
 		for(int i=0; i<expectedRange.size(); i++){
-			if(expectedRange.get(i)!=actualRange.get(i)){
+			if(!(expectedRange.get(i).equalsIgnoreCase(actualRange.get(i)))){
 				return false;
 			}
 		}
@@ -234,4 +246,69 @@ public class UtilityMethods {
 			assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_rsvp_notreply'), noreplyList);
 		}
 	}
+
+	//extracts 'test18' from whole backoffice url string provided
+	@Keyword
+	public static String getEnvt(String BOURL){
+		String user=""
+		for(int i=0; i<BOURL.length(); i++){
+			if(BOURL.charAt(i)=='/'){
+				i+=2;
+				while(BOURL.charAt(i)!='.'){
+					user=UtilityMethods.concat(user, (BOURL.charAt(i)).toString());
+					i++;
+				}
+				break;
+			}
+		}
+		println user
+		return user;
+	}
+
+
+	// Another approach, after everything I have learned, that might
+	// also be effective.  With this method, a wait timeout occurs 3
+	// times within the 90 second limit.  So, the method will run
+	// between 15-90 seconds, depending on the situation of failure.
+	public static WebElement getElementByLocator( final By locator, WebDriver driver ) {
+		//LOGGER.info( "Get element by locator: " + locator.toString() );
+		final long startTime = System.currentTimeMillis();
+		Wait<WebDriver> wait = new FluentWait<WebDriver>( driver )
+				.withTimeout(30, TimeUnit.SECONDS)
+				.pollingEvery(5, TimeUnit.SECONDS)
+				.ignoring( StaleElementReferenceException.class ) ;
+		int tries = 0;
+		boolean found = false;
+		WebElement we = null;
+		while ( (System.currentTimeMillis() - startTime) < 91000 ) {
+			//LOGGER.info( "Searching for element. Try number " + (tries++) );
+			try {
+				we = wait.until( ExpectedConditions.presenceOfElementLocated( locator ) );
+				found = true;
+				break;
+			} catch ( StaleElementReferenceException e ) {
+				//LOGGER.info( "Stale element: \n" + e.getMessage() + "\n");
+			}
+		}
+		long endTime = System.currentTimeMillis();
+		long totalTime = endTime - startTime;
+		if ( found ) {
+			//LOGGER.info("Found element after waiting for " + totalTime + " milliseconds." );
+		} else {
+			//LOGGER.info( "Failed to find element after " + totalTime + " milliseconds." );
+		}
+		return we;
+	}
+
+	public static String getXPathFromElement(WebElement element) {
+		String elementDescription = element.toString();
+		return elementDescription.substring(elementDescription.lastIndexOf("-> xpath: ") + 10, elementDescription.lastIndexOf("]"));
+	}
+
+	public static TestObject fromElement(WebElement element) {
+		TestObject testObject = new TestObject();
+		testObject.addProperty("xpath", ConditionType.EQUALS, getXPathFromElement(element));
+		return testObject;
+	}
+
 }

@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='iframe-header-links']/div[@class='iframe-header-link' and contains(text(), ' LOOKS ')]</value>
+         <value>//app-minimalized-header/div/div/div/span/a[contains(text(), 'looks')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -17,9 +17,15 @@
       <testCaseId>Test Cases/VirtualShow/VS_Automation</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>263189cf-d9de-4bc9-80a5-5dd4211b92b6</guid>
+      <guid>dbabc8f6-8cfc-4160-af76-3bb0cf703386</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/VirtualShow/VS_hostess</testCaseId>
+      <testCaseId>Test Cases/VirtualShow/newUserRegistrationRS</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b3c64562-b960-41ee-a136-8e30e4dd4fb0</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ShowOrder" time="108" tests="0" failures="1" errors="0">
+   <testsuite name="ShowOrder" tests="0" failures="1" errors="0" time="108" timestamp="2019-10-05 21:24:46" hostname="user - Nivedita" id="Test Suites/ShowOrder">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\ShowOrder\\20191005_212438"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\ShowOrder\\20191005_212438\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\ShowOrder\\20191005_212438\\1570290993369.png, C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\ShowOrder\\20191005_212438\\1570290993924.png"/>
+         <property name="hostName" value="user - Nivedita"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 77.0.3865.90"/>
+         <property name="hostAddress" value="169.254.129.143"/>
+         <property name="sessionId" value="023c08834775d6b6fdb521e4a67ff3cf"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/StressTests/ShowOrder" classname="Test Cases/StressTests/ShowOrder" status="FAILED">
+         <failure type="FAILED" message="Test Cases/StressTests/ShowOrder FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570290878793.run(TempTestSuite1570290878793.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:214)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+"/>
+         <system-out><![CDATA[2019-10-05 21:24:47 - [TEST_CASE][FAILED] - Test Cases/StressTests/ShowOrder: Test Cases/StressTests/ShowOrder FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570290878793.run(TempTestSuite1570290878793.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:214)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2019-10-05 21:24:48 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-10-05 21:24:48 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-10-05 21:24:48 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-10-05 21:24:50 - [TEST_STEP][PASSED] - dataFile = "virtualShowData": null
+
+2019-10-05 21:24:50 - [TEST_STEP][PASSED] - guest1 = findTestData(dataFile).getValue("guest1", 1): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - guest2 = findTestData(dataFile).getValue("guest2", 1): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - hostess = findTestData(dataFile).getValue("hostess", 1): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - cohostess = findTestData(dataFile).getValue("cohostess", 1): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - dfMM = new java.text.SimpleDateFormat(MM): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - dfDD = new java.text.SimpleDateFormat(dd): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - dfYYYY = new java.text.SimpleDateFormat(yyyy): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - today = getInstance().getTime(): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - c = Calendar.getInstance(): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - c.setTime(today): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - c.add(DATE, 0): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - newShowDate = c.getTime(): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - vsyear = dfYYYY.format(newShowDate): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - vsmonth = dfMM.format(newShowDate): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - vsday = dfDD.format(newShowDate): null
+
+2019-10-05 21:24:53 - [TEST_STEP][PASSED] - println(UtilityMethods.concat("from DTY: ", vsday, " ", vsmonth, " ", vsyear)): null
+
+2019-10-05 21:24:54 - [TEST_STEP][FAILED] - callTestCase(findTestCase("VirtualShow/createAPhysicalShow"), ["BOURL":"", "BOuser":"", "BOpass":"", "hostess":"", "cohostess":"", "vsday":vsday, "vsmonth":vsmonth, "vsyear":vsyear], STOP_ON_FAILURE): callTestCase(findTestCase("VirtualShow/createAPhysicalShow"), ["BOURL":"", "BOuser":"", "BOpass":"", "hostess":"", "cohostess":"", "vsday":vsday, "vsmonth":vsmonth, "vsyear":vsyear], STOP_ON_FAILURE) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570290878793.run(TempTestSuite1570290878793.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:214)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2019-10-05 21:24:54 - [TEST_CASE][FAILED] - Test Cases/VirtualShow/createAPhysicalShow: Test Cases/VirtualShow/createAPhysicalShow FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:214)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570290878793.run(TempTestSuite1570290878793.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2019-10-05 21:24:56 - [TEST_STEP][PASSED] - dataFile = "virtualShowData": null
+
+2019-10-05 21:24:56 - [TEST_STEP][PASSED] - stylist = findTestData(dataFile).getValue("stylist", 1): null
+
+2019-10-05 21:24:56 - [TEST_STEP][PASSED] - hostess = findTestData(dataFile).getValue("hostess", 1): null
+
+2019-10-05 21:24:57 - [TEST_STEP][PASSED] - cohostess = findTestData(dataFile).getValue("cohostess", 1): null
+
+2019-10-05 21:24:57 - [TEST_STEP][PASSED] - guest1 = findTestData(dataFile).getValue("guest1", 1): null
+
+2019-10-05 21:24:57 - [TEST_STEP][PASSED] - guest2 = findTestData(dataFile).getValue("guest2", 1): null
+
+2019-10-05 21:24:57 - [TEST_STEP][PASSED] - verifyGuestCount = findTestData(dataFile).getValue("verifyGuestCount", 1): null
+
+2019-10-05 21:24:57 - [TEST_STEP][PASSED] - RSTestEnvt = findTestData("envtData").getValue("RSTestEnvt", 1): null
+
+2019-10-05 21:24:57 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-10-05 21:24:58 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-10-05 21:24:58 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-10-05 21:24:58 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-10-05 21:25:03 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-10-05 21:25:03 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-10-05 21:25:03 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-10-05 21:25:04 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-10-05 21:25:04 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-10-05 21:25:04 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-10-05 21:25:05 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-10-05 21:25:05 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-10-05 21:25:06 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-10-05 21:25:06 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-10-05 21:25:08 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-10-05 21:25:08 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test9.cliotest.com/backoffice/control/main' successfully
+
+2019-10-05 21:25:16 - [MESSAGE][PASSED] - Navigate to 'https://test9.cliotest.com/backoffice/control/main' successfully
+
+2019-10-05 21:25:16 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-05 21:25:17 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-05 21:25:17 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-10-05 21:25:17 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-10-05 21:25:18 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-10-05 21:25:18 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-10-05 21:25:18 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-10-05 21:25:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-10-05 21:25:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-10-05 21:25:32 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-05 21:25:35 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-05 21:25:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-10-05 21:25:35 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi/span_username"), stylist): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-10-05 21:25:35 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-10-05 21:25:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-10-05 21:25:35 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-10-05 21:25:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-10-05 21:25:39 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-10-05 21:25:39 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), hostess): Text 'ahostess-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-10-05 21:25:40 - [MESSAGE][PASSED] - Text 'ahostess-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-10-05 21:25:40 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 21:25:42 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 21:25:42 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-10-05 21:25:42 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-10-05 21:25:42 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-10-05 21:25:42 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-10-05 21:25:42 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 21:25:44 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 21:25:44 - [TEST_STEP][PASSED] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5): null
+
+2019-10-05 21:25:44 - [TEST_STEP][PASSED] - println(validateHostessAddressMsg.size()): null
+
+2019-10-05 21:25:44 - [TEST_STEP][PASSED] - if (validateHostessAddressMsg.isEmpty()): null
+
+2019-10-05 21:25:44 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess"), "3", true): All options with value '3' are selected in object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-10-05 21:25:45 - [MESSAGE][PASSED] - All options with value '3' are selected in object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-10-05 21:25:45 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), cohostess): Text 'bcohost-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-10-05 21:25:46 - [MESSAGE][PASSED] - Text 'bcohost-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-10-05 21:25:46 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 21:25:48 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 21:25:48 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-10-05 21:25:48 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-10-05 21:25:48 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-10-05 21:25:48 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-10-05 21:25:48 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-05 21:25:51 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-05 21:25:51 - [TEST_STEP][PASSED] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5): null
+
+2019-10-05 21:25:51 - [TEST_STEP][PASSED] - if (validateHostessAddressMsg.size() != 4): null
+
+2019-10-05 21:25:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-10-05 21:25:54 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-10-05 21:25:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Physical_Show")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Physical_Show' is clicked on
+
+2019-10-05 21:25:54 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Physical_Show' is clicked on
+
+2019-10-05 21:25:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time' is clicked on
+
+2019-10-05 21:25:55 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time' is clicked on
+
+2019-10-05 21:25:55 - [TEST_STEP][PASSED] - println(UtilityMethods.concat(" ", vsday, " ", vsmonth, " ", vsyear)): null
+
+2019-10-05 21:25:55 - [TEST_STEP][PASSED] - year = vsyear: null
+
+2019-10-05 21:25:55 - [TEST_STEP][PASSED] - month = vsmonth: null
+
+2019-10-05 21:25:55 - [TEST_STEP][PASSED] - day = vsday: null
+
+2019-10-05 21:25:55 - [TEST_STEP][PASSED] - pastdate = findTestData("virtualShowData").getValue("pastdate", 1): null
+
+2019-10-05 21:25:55 - [TEST_STEP][PASSED] - xpath = UtilityMethods.concat("//td[@data-month='" + month - 1 + "' and @data-year='" + year + "']/a[contains(text(), '" + day + "')]"): null
+
+2019-10-05 21:25:55 - [TEST_STEP][PASSED] - dateObj = new com.kms.katalon.core.testobject.TestObject(td_month_year_day): null
+
+2019-10-05 21:25:55 - [TEST_STEP][PASSED] - dateObj.addProperty("xpath", EQUALS, xpath): null
+
+2019-10-05 21:25:55 - [TEST_STEP][PASSED] - monthBound = 12: null
+
+2019-10-05 21:25:55 - [TEST_STEP][PASSED] - dateObjList = findWebElements(dateObj, 5): null
+
+2019-10-05 21:25:55 - [TEST_STEP][PASSED] - while (dateObjList.size() == 0 && monthBound > 0): null
+
+2019-10-05 21:25:55 - [TEST_STEP][PASSED] - click(dateObj): Object: 'td_month_year_day' is clicked on
+
+2019-10-05 21:25:55 - [MESSAGE][PASSED] - Object: 'td_month_year_day' is clicked on
+
+2019-10-05 21:25:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time' is clicked on
+
+2019-10-05 21:25:56 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time' is clicked on
+
+2019-10-05 21:25:56 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 21:25:58 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 21:25:58 - [TEST_STEP][PASSED] - click(findTestObject("virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_show_address_same_as_hostess")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_show_address_same_as_hostess' is clicked on
+
+2019-10-05 21:25:58 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_show_address_same_as_hostess' is clicked on
+
+2019-10-05 21:25:58 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 21:26:00 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 21:26:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_shipping_address_same_as_location")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_shipping_address_same_as_location' is clicked on
+
+2019-10-05 21:26:00 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_shipping_address_same_as_location' is clicked on
+
+2019-10-05 21:26:00 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 21:26:02 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 21:26:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next' is clicked on
+
+2019-10-05 21:26:02 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next' is clicked on
+
+2019-10-05 21:26:02 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-05 21:26:07 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-05 21:26:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite' is clicked on
+
+2019-10-05 21:26:12 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite' is clicked on
+
+2019-10-05 21:26:12 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), guest1): Text 'guest1-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-05 21:26:13 - [MESSAGE][PASSED] - Text 'guest1-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-05 21:26:13 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 21:26:15 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 21:26:15 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-05 21:26:16 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-05 21:26:16 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-05 21:26:16 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-05 21:26:16 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 21:26:18 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 21:26:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-10-05 21:26:19 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-10-05 21:26:19 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-05 21:26:25 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-05 21:26:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), guest2): Text 'guest2-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-05 21:26:25 - [MESSAGE][PASSED] - Text 'guest2-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-05 21:26:25 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 21:26:27 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 21:26:27 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-05 21:26:27 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-05 21:26:27 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-05 21:26:27 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-05 21:26:27 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 21:26:29 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 21:26:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-10-05 21:26:31 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-10-05 21:26:31 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-05 21:26:33 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-05 21:26:33 - [TEST_STEP][PASSED] - verifyHostess = UtilityMethods.splitPersonName(hostess): null
+
+2019-10-05 21:26:33 - [TEST_STEP][PASSED] - verifyCohostess = UtilityMethods.splitPersonName(cohostess): null
+
+2019-10-05 21:26:33 - [TEST_STEP][PASSED] - verifyGuest1 = UtilityMethods.splitPersonName(guest1): null
+
+2019-10-05 21:26:33 - [TEST_STEP][PASSED] - verifyGuest2 = UtilityMethods.splitPersonName(guest2): null
+
+2019-10-05 21:26:33 - [TEST_STEP][FAILED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name"), UtilityMethods.concat(verifyHostess[1], ", ", verifyHostess[0])): verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name"), UtilityMethods.concat(verifyHostess[1], ", ", verifyHostess[0])) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:214)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570290878793.run(TempTestSuite1570290878793.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2019-10-05 21:26:33 - [MESSAGE][FAILED] - Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched. (Root cause: com.kms.katalon.core.exception.StepFailedException: Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:214)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570290878793.run(TempTestSuite1570290878793.groovy:35)
+)
+[[ATTACHMENT|C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\ShowOrder\\20191005_212438\\1570290993369.png]]
+
+2019-10-05 21:26:34 - [MESSAGE][FAILED] - Verify element text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' FAILED. (Root cause: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:214)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570290878793.run(TempTestSuite1570290878793.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)
+[[ATTACHMENT|C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\ShowOrder\\20191005_212438\\1570290993924.png]]
+
+2019-10-05 21:26:34 - [MESSAGE][FAILED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name"), UtilityMethods.concat(verifyHostess[1], ", ", verifyHostess[0])) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:214)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570290878793.run(TempTestSuite1570290878793.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2019-10-05 21:26:34 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570290878793.run(TempTestSuite1570290878793.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:214)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)
+
+2019-10-05 21:26:34 - [MESSAGE][FAILED] - callTestCase(findTestCase("VirtualShow/createAPhysicalShow"), ["BOURL":"", "BOuser":"", "BOpass":"", "hostess":"", "cohostess":"", "vsday":vsday, "vsmonth":vsmonth, "vsyear":vsyear], STOP_ON_FAILURE) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570290878793.run(TempTestSuite1570290878793.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:214)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-out>
+         <system-err><![CDATA[2019-10-05 21:24:47 - [TEST_CASE][FAILED] - Test Cases/StressTests/ShowOrder: Test Cases/StressTests/ShowOrder FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570290878793.run(TempTestSuite1570290878793.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:214)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-10-05 21:24:46 - [TEST_SUITE][FAILED] - ShowOrder: Test Cases/StressTests/ShowOrder FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570290878793.run(TempTestSuite1570290878793.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:214)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-out>
+      <system-err><![CDATA[2019-10-05 21:24:46 - [TEST_SUITE][FAILED] - ShowOrder: Test Cases/StressTests/ShowOrder FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570290878793.run(TempTestSuite1570290878793.groovy:35)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Verify element text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' FAILED.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.verifyElementText(VerifyElementTextKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword.execute(VerifyElementTextKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementText(WebUiBuiltInKeywords.groovy:3663)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyElementText$3.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:214)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: com.kms.katalon.core.exception.StepFailedException: Actual text 'abc, ahostess-test1' and expected text 'abc, ahostess-test' of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are NOT matched.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.doCall(VerifyElementTextKeyword.groovy:57)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementTextKeyword$_verifyElementText_closure1.call(VerifyElementTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-err>
+   </testsuite>
+</testsuites>

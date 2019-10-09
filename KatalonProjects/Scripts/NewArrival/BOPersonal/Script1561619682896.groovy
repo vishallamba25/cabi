@@ -30,6 +30,7 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/span_Continue to Order'))
 
+	println GlobalVariable.BOPersonal
     WebUI.callTestCase(findTestCase('NewArrival/productVerify'), [('available') : GlobalVariable.BOPersonal, ('storeType') : 'BOPersonal'], 
         FailureHandling.CONTINUE_ON_FAILURE)
 }

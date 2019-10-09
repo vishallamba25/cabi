@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ShowOrderTestSuite" time="380" tests="0" failures="0" errors="1">
+   <testsuite name="ShowOrderTestSuite" tests="0" failures="0" errors="1" time="380" timestamp="2019-10-06 01:28:43" hostname="user - Nivedita" id="Test Suites/ShowOrderTestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\ShowOrderTestSuite\\20191006_012813"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\ShowOrderTestSuite\\20191006_012813\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - Nivedita"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 77.0.3865.90"/>
+         <property name="hostAddress" value="192.168.43.31"/>
+         <property name="sessionId" value="02e22f21731830f51db8a4f09796c2ab"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/StressTests/ShowOrder" classname="Test Cases/StressTests/ShowOrder" status="ERROR">
+         <error type="ERROR" message="Test Cases/StressTests/ShowOrder FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/TestCaseUtilities/showOrderPaeymentCC' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:238)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570305493968.run(TempTestSuite1570305493968.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Shipping/a_review_order' located by 'By.xpath: //ul[@class='form-actions']/li/a/span[contains(text(), 'Review Order')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at showOrderPaeymentCC.run(showOrderPaeymentCC:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+"/>
+         <system-out><![CDATA[2019-10-06 01:28:51 - [TEST_CASE][ERROR] - Test Cases/StressTests/ShowOrder: Test Cases/StressTests/ShowOrder FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/TestCaseUtilities/showOrderPaeymentCC' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:238)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570305493968.run(TempTestSuite1570305493968.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Shipping/a_review_order' located by 'By.xpath: //ul[@class='form-actions']/li/a/span[contains(text(), 'Review Order')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at showOrderPaeymentCC.run(showOrderPaeymentCC:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+
+
+2019-10-06 01:28:53 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-10-06 01:28:53 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-10-06 01:28:53 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-10-06 01:29:01 - [TEST_STEP][PASSED] - dataFile = "virtualShowData": null
+
+2019-10-06 01:29:01 - [TEST_STEP][PASSED] - guest1 = findTestData(dataFile).getValue("guest1", 1): null
+
+2019-10-06 01:29:17 - [TEST_STEP][PASSED] - guest2 = findTestData(dataFile).getValue("guest2", 1): null
+
+2019-10-06 01:29:17 - [TEST_STEP][PASSED] - hostess = findTestData(dataFile).getValue("hostess", 1): null
+
+2019-10-06 01:29:18 - [TEST_STEP][PASSED] - cohostess = findTestData(dataFile).getValue("cohostess", 1): null
+
+2019-10-06 01:29:18 - [TEST_STEP][PASSED] - dfMM = new java.text.SimpleDateFormat(MM): null
+
+2019-10-06 01:29:18 - [TEST_STEP][PASSED] - dfDD = new java.text.SimpleDateFormat(dd): null
+
+2019-10-06 01:29:18 - [TEST_STEP][PASSED] - dfYYYY = new java.text.SimpleDateFormat(yyyy): null
+
+2019-10-06 01:29:18 - [TEST_STEP][PASSED] - today = getInstance().getTime(): null
+
+2019-10-06 01:29:18 - [TEST_STEP][PASSED] - c = Calendar.getInstance(): null
+
+2019-10-06 01:29:18 - [TEST_STEP][PASSED] - c.setTime(today): null
+
+2019-10-06 01:29:18 - [TEST_STEP][PASSED] - c.add(DATE, 0): null
+
+2019-10-06 01:29:18 - [TEST_STEP][PASSED] - newShowDate = c.getTime(): null
+
+2019-10-06 01:29:18 - [TEST_STEP][PASSED] - vsyear = dfYYYY.format(newShowDate): null
+
+2019-10-06 01:29:18 - [TEST_STEP][PASSED] - vsmonth = dfMM.format(newShowDate): null
+
+2019-10-06 01:29:18 - [TEST_STEP][PASSED] - vsday = dfDD.format(newShowDate): null
+
+2019-10-06 01:29:18 - [TEST_STEP][PASSED] - println(UtilityMethods.concat("from DTY: ", vsday, " ", vsmonth, " ", vsyear)): null
+
+2019-10-06 01:29:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("VirtualShow/createAPhysicalShow"), ["BOURL":"", "BOuser":"", "BOpass":"", "hostess":"", "cohostess":"", "vsday":vsday, "vsmonth":vsmonth, "vsyear":vsyear], STOP_ON_FAILURE): Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' successfully
+
+2019-10-06 01:29:23 - [TEST_CASE][PASSED] - Test Cases/VirtualShow/createAPhysicalShow: Test Cases/VirtualShow/createAPhysicalShow
+
+2019-10-06 01:29:30 - [TEST_STEP][PASSED] - dataFile = "virtualShowData": null
+
+2019-10-06 01:29:30 - [TEST_STEP][PASSED] - stylist = findTestData(dataFile).getValue("stylist", 1): null
+
+2019-10-06 01:29:31 - [TEST_STEP][PASSED] - hostess = findTestData(dataFile).getValue("hostess", 1): null
+
+2019-10-06 01:29:31 - [TEST_STEP][PASSED] - cohostess = findTestData(dataFile).getValue("cohostess", 1): null
+
+2019-10-06 01:29:32 - [TEST_STEP][PASSED] - guest1 = findTestData(dataFile).getValue("guest1", 1): null
+
+2019-10-06 01:29:32 - [TEST_STEP][PASSED] - guest2 = findTestData(dataFile).getValue("guest2", 1): null
+
+2019-10-06 01:29:33 - [TEST_STEP][PASSED] - verifyGuestCount = findTestData(dataFile).getValue("verifyGuestCount", 1): null
+
+2019-10-06 01:29:33 - [TEST_STEP][PASSED] - RSTestEnvt = findTestData("envtData").getValue("RSTestEnvt", 1): null
+
+2019-10-06 01:29:34 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-10-06 01:29:37 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-10-06 01:29:38 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-10-06 01:29:38 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-10-06 01:29:58 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-10-06 01:29:58 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-10-06 01:29:59 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-10-06 01:30:00 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-10-06 01:30:01 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-10-06 01:30:01 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-10-06 01:30:01 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-10-06 01:30:02 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-10-06 01:30:10 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-10-06 01:30:10 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-10-06 01:30:16 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-10-06 01:30:16 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test9.cliotest.com/backoffice/control/main' successfully
+
+2019-10-06 01:30:31 - [MESSAGE][PASSED] - Navigate to 'https://test9.cliotest.com/backoffice/control/main' successfully
+
+2019-10-06 01:30:31 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-06 01:30:33 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-06 01:30:33 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-10-06 01:30:33 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-10-06 01:30:37 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-10-06 01:30:37 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-10-06 01:30:39 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-10-06 01:30:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-10-06 01:31:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-10-06 01:31:01 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-06 01:31:04 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-06 01:31:04 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-10-06 01:31:04 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi/span_username"), stylist): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-10-06 01:31:04 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-10-06 01:31:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-10-06 01:31:05 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-10-06 01:31:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-10-06 01:31:13 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-10-06 01:31:13 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), hostess): Text 'ahostess-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-10-06 01:31:17 - [MESSAGE][PASSED] - Text 'ahostess-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-10-06 01:31:17 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:31:19 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:31:19 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-10-06 01:31:20 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-10-06 01:31:20 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-10-06 01:31:21 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-10-06 01:31:21 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:31:23 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:31:23 - [TEST_STEP][PASSED] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5): null
+
+2019-10-06 01:31:23 - [TEST_STEP][PASSED] - println(validateHostessAddressMsg.size()): null
+
+2019-10-06 01:31:23 - [TEST_STEP][PASSED] - if (validateHostessAddressMsg.isEmpty()): null
+
+2019-10-06 01:31:23 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess"), "3", true): All options with value '3' are selected in object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-10-06 01:31:27 - [MESSAGE][PASSED] - All options with value '3' are selected in object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-10-06 01:31:27 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), cohostess): Text 'bcohost-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-10-06 01:31:30 - [MESSAGE][PASSED] - Text 'bcohost-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-10-06 01:31:30 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:31:32 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:31:32 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-10-06 01:31:32 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-10-06 01:31:32 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-10-06 01:31:33 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-10-06 01:31:33 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-06 01:31:36 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-06 01:31:36 - [TEST_STEP][PASSED] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5): null
+
+2019-10-06 01:31:36 - [TEST_STEP][PASSED] - if (validateHostessAddressMsg.size() != 4): null
+
+2019-10-06 01:31:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-10-06 01:31:43 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-10-06 01:31:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Physical_Show")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Physical_Show' is clicked on
+
+2019-10-06 01:31:44 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Physical_Show' is clicked on
+
+2019-10-06 01:31:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time' is clicked on
+
+2019-10-06 01:31:46 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time' is clicked on
+
+2019-10-06 01:31:46 - [TEST_STEP][PASSED] - println(UtilityMethods.concat(" ", vsday, " ", vsmonth, " ", vsyear)): null
+
+2019-10-06 01:31:46 - [TEST_STEP][PASSED] - year = vsyear: null
+
+2019-10-06 01:31:46 - [TEST_STEP][PASSED] - month = vsmonth: null
+
+2019-10-06 01:31:46 - [TEST_STEP][PASSED] - day = vsday: null
+
+2019-10-06 01:31:46 - [TEST_STEP][PASSED] - pastdate = findTestData("virtualShowData").getValue("pastdate", 1): null
+
+2019-10-06 01:31:46 - [TEST_STEP][PASSED] - xpath = UtilityMethods.concat("//td[@data-month='" + month - 1 + "' and @data-year='" + year + "']/a[contains(text(), '" + day + "')]"): null
+
+2019-10-06 01:31:46 - [TEST_STEP][PASSED] - dateObj = new com.kms.katalon.core.testobject.TestObject(td_month_year_day): null
+
+2019-10-06 01:31:46 - [TEST_STEP][PASSED] - dateObj.addProperty("xpath", EQUALS, xpath): null
+
+2019-10-06 01:31:46 - [TEST_STEP][PASSED] - monthBound = 12: null
+
+2019-10-06 01:31:46 - [TEST_STEP][PASSED] - dateObjList = findWebElements(dateObj, 5): null
+
+2019-10-06 01:31:47 - [TEST_STEP][PASSED] - while (dateObjList.size() == 0 && monthBound > 0): null
+
+2019-10-06 01:31:47 - [TEST_STEP][PASSED] - click(dateObj): Object: 'td_month_year_day' is clicked on
+
+2019-10-06 01:31:48 - [MESSAGE][PASSED] - Object: 'td_month_year_day' is clicked on
+
+2019-10-06 01:31:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time' is clicked on
+
+2019-10-06 01:31:50 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time' is clicked on
+
+2019-10-06 01:31:50 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:31:52 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:31:52 - [TEST_STEP][PASSED] - click(findTestObject("virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_show_address_same_as_hostess")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_show_address_same_as_hostess' is clicked on
+
+2019-10-06 01:31:53 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_show_address_same_as_hostess' is clicked on
+
+2019-10-06 01:31:53 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:31:55 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:31:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_shipping_address_same_as_location")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_shipping_address_same_as_location' is clicked on
+
+2019-10-06 01:31:56 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_shipping_address_same_as_location' is clicked on
+
+2019-10-06 01:31:56 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:31:58 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:31:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next' is clicked on
+
+2019-10-06 01:31:59 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next' is clicked on
+
+2019-10-06 01:31:59 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-06 01:32:04 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-06 01:32:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite' is clicked on
+
+2019-10-06 01:32:17 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite' is clicked on
+
+2019-10-06 01:32:17 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), guest1): Text 'guest1-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-06 01:32:18 - [MESSAGE][PASSED] - Text 'guest1-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-06 01:32:18 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:32:20 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:32:20 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-06 01:32:21 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-06 01:32:21 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-06 01:32:21 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-06 01:32:21 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:32:23 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:32:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-10-06 01:32:25 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-10-06 01:32:25 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-06 01:32:30 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-06 01:32:30 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), guest2): Text 'guest2-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-06 01:32:31 - [MESSAGE][PASSED] - Text 'guest2-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-06 01:32:31 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:32:33 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:32:33 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-06 01:32:33 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-06 01:32:33 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-06 01:32:34 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-10-06 01:32:34 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:32:36 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:32:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-10-06 01:32:37 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-10-06 01:32:37 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:32:39 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:32:39 - [TEST_STEP][PASSED] - verifyHostess = UtilityMethods.splitPersonName(hostess): null
+
+2019-10-06 01:32:39 - [TEST_STEP][PASSED] - verifyCohostess = UtilityMethods.splitPersonName(cohostess): null
+
+2019-10-06 01:32:39 - [TEST_STEP][PASSED] - verifyGuest1 = UtilityMethods.splitPersonName(guest1): null
+
+2019-10-06 01:32:39 - [TEST_STEP][PASSED] - verifyGuest2 = UtilityMethods.splitPersonName(guest2): null
+
+2019-10-06 01:32:39 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name"), UtilityMethods.concat(verifyHostess[1], ", ", verifyHostess[0])): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are matched.
+
+2019-10-06 01:32:39 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are matched.
+
+2019-10-06 01:32:39 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name"), UtilityMethods.concat(verifyCohostess[1], ", ", verifyCohostess[0])): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name' are matched.
+
+2019-10-06 01:32:39 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name' are matched.
+
+2019-10-06 01:32:39 - [TEST_STEP][PASSED] - listElement = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_guest_name_list"), 5): null
+
+2019-10-06 01:32:40 - [TEST_STEP][PASSED] - guestCount = Integer.parseInt(verifyGuestCount): null
+
+2019-10-06 01:32:40 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-10-06 01:32:40 - [TEST_STEP][PASSED] - for ([i = 0, i < guestCount, (i++)]): null
+
+2019-10-06 01:32:40 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-10-06 01:32:40 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest1[1], ", ", verifyGuest1[0]))): null
+
+2019-10-06 01:32:40 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest2[1], ", ", verifyGuest2[0]))): null
+
+2019-10-06 01:32:40 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-10-06 01:32:40 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest1[1], ", ", verifyGuest1[0]))): null
+
+2019-10-06 01:32:40 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest2[1], ", ", verifyGuest2[0]))): null
+
+2019-10-06 01:32:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next' is clicked on
+
+2019-10-06 01:32:46 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next' is clicked on
+
+2019-10-06 01:32:46 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-06 01:32:49 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-06 01:32:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview' is clicked on
+
+2019-10-06 01:32:54 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview' is clicked on
+
+2019-10-06 01:32:54 - [TEST_STEP][PASSED] - showID = getText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text")): Text of object 'Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text' is: 'Show #: 104771523'
+
+2019-10-06 01:32:55 - [MESSAGE][PASSED] - Text of object 'Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text' is: 'Show #: 104771523'
+
+2019-10-06 01:32:55 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:32:57 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:32:57 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-10-06 01:32:57 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-10-06 01:32:57 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile"), 5)): null
+
+2019-10-06 01:33:01 - [TEST_STEP][PASSED] - rsName = getText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName")): Text of object 'Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName' is: 'MirandaKate'
+
+2019-10-06 01:33:02 - [MESSAGE][PASSED] - Text of object 'Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName' is: 'MirandaKate'
+
+2019-10-06 01:33:02 - [TEST_STEP][PASSED] - micrositeURL = UtilityMethods.createURL(rsName, RSTestEnvt, showID): null
+
+2019-10-06 01:33:07 - [TEST_STEP][PASSED] - println(micrositeURL): null
+
+2019-10-06 01:33:07 - [TEST_STEP][PASSED] - back(): Navigate back successfully
+
+2019-10-06 01:33:11 - [MESSAGE][PASSED] - Navigate back successfully
+
+2019-10-06 01:33:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' successfully
+
+2019-10-06 01:33:11 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-10-06 01:33:11 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-10-06 01:33:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders' is clicked on
+
+2019-10-06 01:33:18 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders' is clicked on
+
+2019-10-06 01:33:18 - [TEST_STEP][PASSED] - g1Vars = UtilityMethods.splitPersonName(guest1): null
+
+2019-10-06 01:33:18 - [TEST_STEP][PASSED] - g1Var = UtilityMethods.concat(g1Vars[1], ", ", g1Vars[0]): null
+
+2019-10-06 01:33:18 - [TEST_STEP][PASSED] - buttonPlaceOrder = UtilityMethods.createTestObject("buttoPlaceOrder", "//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '", g1Var, "')]/parent::td/following-sibling::td[1]/button"): null
+
+2019-10-06 01:33:18 - [TEST_STEP][PASSED] - click(buttonPlaceOrder): Object: 'buttoPlaceOrder' is clicked on
+
+2019-10-06 01:33:26 - [MESSAGE][PASSED] - Object: 'buttoPlaceOrder' is clicked on
+
+2019-10-06 01:33:26 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-06 01:33:29 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-06 01:33:29 - [TEST_STEP][PASSED] - DTYMsg = "Hooray! This order is eligible for "Direct to You" shipping.": null
+
+2019-10-06 01:33:29 - [TEST_STEP][PASSED] - println(getText(findTestObject("Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility"))): Text of object 'Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility' is: 'Hooray! This order is eligible for "Direct to You" shipping.'
+
+2019-10-06 01:33:29 - [MESSAGE][PASSED] - Text of object 'Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility' is: 'Hooray! This order is eligible for "Direct to You" shipping.'
+
+2019-10-06 01:33:29 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].checked=true;", findWebElement(findTestObject("Object Repository/Page_cabi Home/a_same_shipping_address"), 10)): null
+
+2019-10-06 01:33:29 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-06 01:33:32 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-06 01:33:32 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/Page_cabi Home/a_order_items"), 5)): null
+
+2019-10-06 01:33:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Retail Store/span_quick_entry")): Object: 'Object Repository/Page_cabi Retail Store/span_quick_entry' is clicked on
+
+2019-10-06 01:33:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Retail Store/span_quick_entry' is clicked on
+
+2019-10-06 01:33:37 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-06 01:33:40 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-06 01:33:40 - [TEST_STEP][PASSED] - emptyCart = findWebElements(findTestObject("Object Repository/Page_cabi Personal Store/removeFromCart"), 5): Unable to find the element located by 'By.xpath: //*[@id="removeFromCart_0"]/span'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-06 01:33:46 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="removeFromCart_0"]/span'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-06 01:33:46 - [TEST_STEP][PASSED] - if (emptyCart.size() > 0): null
+
+2019-10-06 01:33:46 - [TEST_STEP][PASSED] - addOnStyle = "2158": null
+
+2019-10-06 01:33:46 - [TEST_STEP][PASSED] - addOnStyle2 = "3709": null
+
+2019-10-06 01:33:46 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0"), addOnStyle): Text '2158' is set on object 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-06 01:33:46 - [MESSAGE][PASSED] - Text '2158' is set on object 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-06 01:33:46 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:33:48 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:33:48 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-06 01:33:48 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-06 01:33:48 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:33:50 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:33:50 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-06 01:33:51 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-06 01:33:51 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-06 01:33:51 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-10-06 01:33:51 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-06 01:33:56 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-06 01:33:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/selectSize")): Object: 'Object Repository/Page_cabi Order Items/selectSize' is clicked on
+
+2019-10-06 01:33:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/selectSize' is clicked on
+
+2019-10-06 01:33:56 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-06 01:33:59 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-06 01:33:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/span_Add to Cart")): Object: 'Object Repository/Page_cabi Order Items/span_Add to Cart' is clicked on
+
+2019-10-06 01:33:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/span_Add to Cart' is clicked on
+
+2019-10-06 01:33:59 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-06 01:34:04 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-06 01:34:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/a_next")): Object: 'Object Repository/Page_cabi Order Items/a_next' is clicked on
+
+2019-10-06 01:34:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/a_next' is clicked on
+
+2019-10-06 01:34:05 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-06 01:34:08 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-06 01:34:08 - [TEST_STEP][PASSED] - println(findWebElement(findTestObject("Object Repository/Page_cabi Shipping/select_ship_to_show_loc"), 5).getAttribute("disabled")): null
+
+2019-10-06 01:34:08 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/Page_cabi Shipping/check_as_dty_order"), 5)): null
+
+2019-10-06 01:34:09 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-06 01:34:15 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-06 01:34:15 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-10-06 01:34:16 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-10-06 01:34:16 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/Page_cabi Shipping/check_as_dty_order"), 5)): null
+
+2019-10-06 01:34:18 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-06 01:34:23 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-06 01:34:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/a_show_order_checkout_next")): Object: 'Object Repository/Page_cabi Shipping/a_show_order_checkout_next' is clicked on
+
+2019-10-06 01:34:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/a_show_order_checkout_next' is clicked on
+
+2019-10-06 01:34:23 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-10-06 01:34:24 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-10-06 01:34:24 - [TEST_STEP][PASSED] - println(getText(findTestObject("Object Repository/Page_cabi Shipping/div_DTY-warning_popup"))): Text of object 'Object Repository/Page_cabi Shipping/div_DTY-warning_popup' is: 'This order is eligible for "Direct to You" shipping.
+Do you want to change this order to "Direct to You" and ship immediately?'
+
+2019-10-06 01:34:25 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Shipping/div_DTY-warning_popup' is: 'This order is eligible for "Direct to You" shipping.
+Do you want to change this order to "Direct to You" and ship immediately?'
+
+2019-10-06 01:34:25 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-10-06 01:34:26 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-10-06 01:34:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/button_DTY_warning_popup_ship_DTY")): Object: 'Object Repository/Page_cabi Shipping/button_DTY_warning_popup_ship_DTY' is clicked on
+
+2019-10-06 01:34:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/button_DTY_warning_popup_ship_DTY' is clicked on
+
+2019-10-06 01:34:27 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-10-06 01:34:28 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-10-06 01:34:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/a_make_first_payment")): Object: 'Object Repository/Page_cabi Shipping/a_make_first_payment' is clicked on
+
+2019-10-06 01:34:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/a_make_first_payment' is clicked on
+
+2019-10-06 01:34:29 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-06 01:34:32 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-06 01:34:32 - [TEST_STEP][ERROR] - callTestCase(findTestCase("TestCaseUtilities/showOrderPaeymentCC"), [:], STOP_ON_FAILURE): callTestCase(findTestCase("TestCaseUtilities/showOrderPaeymentCC"), [:], STOP_ON_FAILURE) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/TestCaseUtilities/showOrderPaeymentCC' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:238)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570305493968.run(TempTestSuite1570305493968.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Shipping/a_review_order' located by 'By.xpath: //ul[@class='form-actions']/li/a/span[contains(text(), 'Review Order')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at showOrderPaeymentCC.run(showOrderPaeymentCC:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+
+
+2019-10-06 01:34:32 - [TEST_CASE][ERROR] - Test Cases/TestCaseUtilities/showOrderPaeymentCC: Test Cases/TestCaseUtilities/showOrderPaeymentCC FAILED.
+Reason:
+com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Shipping/a_review_order' located by 'By.xpath: //ul[@class='form-actions']/li/a/span[contains(text(), 'Review Order')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at showOrderPaeymentCC.run(showOrderPaeymentCC:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:238)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570305493968.run(TempTestSuite1570305493968.groovy:35)
+
+
+2019-10-06 01:34:33 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-10-06 01:34:33 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-10-06 01:34:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/select_payment_options_select")): Object: 'Object Repository/Page_cabi Shipping/select_payment_options_select' is clicked on
+
+2019-10-06 01:34:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/select_payment_options_select' is clicked on
+
+2019-10-06 01:34:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/select_payment_options_new_cc")): Object: 'Object Repository/Page_cabi Shipping/select_payment_options_new_cc' is clicked on
+
+2019-10-06 01:34:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/select_payment_options_new_cc' is clicked on
+
+2019-10-06 01:34:34 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-06 01:34:37 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-06 01:34:37 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/Page_cabi Shipping/select_payment_visa"), 10)): null
+
+2019-10-06 01:34:38 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Shipping/select_payment_fname"), "abcd"): Text 'abcd' is set on object 'Object Repository/Page_cabi Shipping/select_payment_fname'
+
+2019-10-06 01:34:38 - [MESSAGE][PASSED] - Text 'abcd' is set on object 'Object Repository/Page_cabi Shipping/select_payment_fname'
+
+2019-10-06 01:34:38 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Shipping/select_payment_lname"), "fghi"): Text 'fghi' is set on object 'Object Repository/Page_cabi Shipping/select_payment_lname'
+
+2019-10-06 01:34:39 - [MESSAGE][PASSED] - Text 'fghi' is set on object 'Object Repository/Page_cabi Shipping/select_payment_lname'
+
+2019-10-06 01:34:39 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Shipping/select_payment_card_number"), "4111111111111111"): Text '4111111111111111' is set on object 'Object Repository/Page_cabi Shipping/select_payment_card_number'
+
+2019-10-06 01:34:40 - [MESSAGE][PASSED] - Text '4111111111111111' is set on object 'Object Repository/Page_cabi Shipping/select_payment_card_number'
+
+2019-10-06 01:34:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/select_payment_exp_date_month")): Object: 'Object Repository/Page_cabi Shipping/select_payment_exp_date_month' is clicked on
+
+2019-10-06 01:34:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/select_payment_exp_date_month' is clicked on
+
+2019-10-06 01:34:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/select_payment_exp_date_year")): Object: 'Object Repository/Page_cabi Shipping/select_payment_exp_date_year' is clicked on
+
+2019-10-06 01:34:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/select_payment_exp_date_year' is clicked on
+
+2019-10-06 01:34:41 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/Page_cabi Shipping/input_select_billing_add_same_as_mailing_add"), 10)): null
+
+2019-10-06 01:34:41 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-10-06 01:34:44 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-10-06 01:34:44 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/Page_cabi Shipping/a_save_shipping_info"), 10)): null
+
+2019-10-06 01:34:50 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-06 01:34:52 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-06 01:34:52 - [TEST_STEP][ERROR] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/Page_cabi Shipping/a_review_order"), 10)): executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/Page_cabi Shipping/a_review_order"), 10)) FAILED.
+Reason:
+com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Shipping/a_review_order' located by 'By.xpath: //ul[@class='form-actions']/li/a/span[contains(text(), 'Review Order')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at showOrderPaeymentCC.run(showOrderPaeymentCC:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:238)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570305493968.run(TempTestSuite1570305493968.groovy:35)
+
+
+2019-10-06 01:35:03 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //ul[@class='form-actions']/li/a/span[contains(text(), 'Review Order')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-06 01:35:03 - [MESSAGE][ERROR] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/Page_cabi Shipping/a_review_order"), 10)) FAILED.
+Reason:
+com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Shipping/a_review_order' located by 'By.xpath: //ul[@class='form-actions']/li/a/span[contains(text(), 'Review Order')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at showOrderPaeymentCC.run(showOrderPaeymentCC:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:238)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570305493968.run(TempTestSuite1570305493968.groovy:35)
+
+
+2019-10-06 01:35:03 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/TestCaseUtilities/showOrderPaeymentCC' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/TestCaseUtilities/showOrderPaeymentCC' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:238)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570305493968.run(TempTestSuite1570305493968.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Shipping/a_review_order' located by 'By.xpath: //ul[@class='form-actions']/li/a/span[contains(text(), 'Review Order')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at showOrderPaeymentCC.run(showOrderPaeymentCC:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2019-10-06 01:35:03 - [MESSAGE][ERROR] - callTestCase(findTestCase("TestCaseUtilities/showOrderPaeymentCC"), [:], STOP_ON_FAILURE) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/TestCaseUtilities/showOrderPaeymentCC' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:238)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570305493968.run(TempTestSuite1570305493968.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Shipping/a_review_order' located by 'By.xpath: //ul[@class='form-actions']/li/a/span[contains(text(), 'Review Order')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at showOrderPaeymentCC.run(showOrderPaeymentCC:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-out>
+         <system-err><![CDATA[2019-10-06 01:28:51 - [TEST_CASE][ERROR] - Test Cases/StressTests/ShowOrder: Test Cases/StressTests/ShowOrder FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/TestCaseUtilities/showOrderPaeymentCC' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:238)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570305493968.run(TempTestSuite1570305493968.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Shipping/a_review_order' located by 'By.xpath: //ul[@class='form-actions']/li/a/span[contains(text(), 'Review Order')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at showOrderPaeymentCC.run(showOrderPaeymentCC:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-10-06 01:28:43 - [TEST_SUITE][ERROR] - ShowOrderTestSuite: Test Cases/StressTests/ShowOrder FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/TestCaseUtilities/showOrderPaeymentCC' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:238)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570305493968.run(TempTestSuite1570305493968.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Shipping/a_review_order' located by 'By.xpath: //ul[@class='form-actions']/li/a/span[contains(text(), 'Review Order')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at showOrderPaeymentCC.run(showOrderPaeymentCC:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-out>
+      <system-err><![CDATA[2019-10-06 01:28:43 - [TEST_SUITE][ERROR] - ShowOrderTestSuite: Test Cases/StressTests/ShowOrder FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/TestCaseUtilities/showOrderPaeymentCC' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at ShowOrder.run(ShowOrder:238)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1570305493968.run(TempTestSuite1570305493968.groovy:35)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_cabi Shipping/a_review_order' located by 'By.xpath: //ul[@class='form-actions']/li/a/span[contains(text(), 'Review Order')]' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1097)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElement$0.call(Unknown Source)
+	at showOrderPaeymentCC.run(showOrderPaeymentCC:43)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+   </testsuite>
+</testsuites>

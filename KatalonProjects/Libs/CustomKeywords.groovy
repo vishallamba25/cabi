@@ -139,3 +139,9 @@ def static "commonUtility.UtilityMethods.validateGuestsListDashboard"(
          , 	presentList
          , 	allList)
 }
+
+def static "commonUtility.UtilityMethods.getEnvt"(
+    	String BOURL	) {
+    (new commonUtility.UtilityMethods()).getEnvt(
+        	BOURL)
+}

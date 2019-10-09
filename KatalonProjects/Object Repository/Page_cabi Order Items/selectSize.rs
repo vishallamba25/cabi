@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//select[@name='sizeSelect']/option[@value='L']</value>
+         <value>//select[@name='sizeSelect']/option[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -58,7 +58,7 @@
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
-      <value>//select[@name='sizeSelect']/option[@value='L']</value>
+      <value>//select[@name='sizeSelect']/option[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

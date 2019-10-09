@@ -25,7 +25,7 @@
    <testCaseLink>
       <guid>ff43b699-bf45-40ca-9278-046ce1b205b0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NewArrival/productEblast</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -43,19 +43,19 @@
    <testCaseLink>
       <guid>5e102b1c-4bba-436b-b70d-8ae18d754f8e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NewArrival/BOPersonal</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>237fb932-afd3-432e-9706-e052e1d24231</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NewArrival/BORetail</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8b803076-f22c-4aec-bfc2-575e664a1c35</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NewArrival/BOShowOrder</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -67,7 +67,7 @@
    <testCaseLink>
       <guid>5c18c7c3-9e43-4386-8319-290330d8ffc0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NewArrival/addOnOrderPersonal</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -79,7 +79,7 @@
    <testCaseLink>
       <guid>690c307a-910e-4010-98c6-de07f3eb9dc8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NewArrival/addOnOrderRetail</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

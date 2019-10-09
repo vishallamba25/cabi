@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_confirm-pass_div</name>
+   <name>input_verify_code_div</name>
    <tag></tag>
-   <elementGuidId>f0598fbe-eff6-4d02-96ac-52906259beb8</elementGuidId>
+   <elementGuidId>2411c471-76ea-45ca-a3c2-2a0d30cf1257</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='custom-input password']/input[@name='confirmPassword']/parent::div</value>
+         <value>//div[@class='custom-input']/input[@name='pass']/parent::div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

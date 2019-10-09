@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_confirm-pass_div</name>
+   <name>a_I_will_complete_my_profile_later</name>
    <tag></tag>
-   <elementGuidId>f0598fbe-eff6-4d02-96ac-52906259beb8</elementGuidId>
+   <elementGuidId>09425a22-aec0-4a5d-b0a3-1ae2a7a668ad</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='custom-input password']/input[@name='confirmPassword']/parent::div</value>
+         <value>//div[contains(text(), 'later')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

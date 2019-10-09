@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_confirm-pass_div</name>
+   <name>a_sign_out</name>
    <tag></tag>
-   <elementGuidId>f0598fbe-eff6-4d02-96ac-52906259beb8</elementGuidId>
+   <elementGuidId>f67c7abe-11ea-40d5-bfd5-4d00dcc4433d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='custom-input password']/input[@name='confirmPassword']/parent::div</value>
+         <value>//profile-dropdown/div/div/ul/li/a[contains(text(), 'Sign Out')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

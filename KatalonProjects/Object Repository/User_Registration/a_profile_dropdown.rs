@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_confirm-pass_div</name>
+   <name>a_profile_dropdown</name>
    <tag></tag>
-   <elementGuidId>f0598fbe-eff6-4d02-96ac-52906259beb8</elementGuidId>
+   <elementGuidId>9dbb3686-3176-464e-aae7-8c2e2f061372</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='custom-input password']/input[@name='confirmPassword']/parent::div</value>
+         <value>//span[@id='profile-dropdown-toggle']/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_confirm-pass_div</name>
+   <name>verify_text_welcome</name>
    <tag></tag>
-   <elementGuidId>f0598fbe-eff6-4d02-96ac-52906259beb8</elementGuidId>
+   <elementGuidId>01c1000f-5f8b-44a9-98ff-d8785b4d6f6f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='custom-input password']/input[@name='confirmPassword']/parent::div</value>
+         <value>//h2[contains(text(), 'Welcome!')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

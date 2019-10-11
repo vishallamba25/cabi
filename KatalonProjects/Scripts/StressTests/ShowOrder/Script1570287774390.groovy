@@ -782,15 +782,21 @@ WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.
 
 WebUI.delay(3)
 
-/*DTYMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Shipping/li_DTY_payment_info'), 
+/*List<WebElement> DTYMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Shipping/li_DTY_payment_info'), 
     5)
 
 if (DTYMsgs.size() > 0) {
     sa.assertTrue(false)
 }*/
 
-/**************------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>******************/
-WebUI.callTestCase(findTestCase('TestCaseUtilities/showOrderPaeymentCC'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_select'))
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_cash'))
+
+WebUI.delay(5)
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_review_order'), 
+        10))
 
 WebUI.delay(2)
 
@@ -914,15 +920,23 @@ WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.
 
 WebUI.delay(3)
 
-/*DTYMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Shipping/li_DTY_payment_info'), 
+/*List<WebElement> DTYMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Shipping/li_DTY_payment_info'), 
     5)
 
 if (DTYMsgs.size() > 0) {
     sa.assertTrue(false)
 }*/
 
-/**************------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>******************/
-WebUI.callTestCase(findTestCase('TestCaseUtilities/showOrderPaeymentCC'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_select'))
+
+WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/select_payment_options_cash'))
+
+WebUI.delay(5)
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_review_order'), 
+        10))
+
+WebUI.delay(2)
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Shipping/a_submit_order'),
 		10))
 

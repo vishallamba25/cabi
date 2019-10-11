@@ -6,11 +6,11 @@
    <elementGuidId>f0598fbe-eff6-4d02-96ac-52906259beb8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='custom-input password']/input[@name='confirmPassword']/parent::div</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@class='custom-input password']/input[@name='confirmPassword']/parent::div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

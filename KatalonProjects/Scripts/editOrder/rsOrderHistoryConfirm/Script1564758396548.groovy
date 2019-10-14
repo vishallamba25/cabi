@@ -96,6 +96,7 @@ if (editButton.size() > 0) {
 		
     } else if (editScenarioNumber == 3) {
         println('scen = 3')
+		WebUI.delay(2)
 
         String expectedNoEditMsg1 = 'We\'re Sorry.'
 
@@ -122,7 +123,7 @@ if (editButton.size() > 0) {
         assert donationRemoveButton.size() == 0
     } else if (editScenarioNumber == 5) {
         println('scen = 5')
-
+		WebUI.delay(5)
         String expectedMessage = 'Item Shipped'
 
         String actualMessage = WebUI.getText(findTestObject('Object Repository/ReplicatedSite/itemShipped'))

@@ -88,7 +88,7 @@ println(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/lab
 
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), DTYMsg, FailureHandling.CONTINUE_ON_FAILURE)
 
-executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
 WebUI.delay(3)
 WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
@@ -273,7 +273,7 @@ println(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/lab
 
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), DTYMsg, FailureHandling.CONTINUE_ON_FAILURE)
 
-executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
 WebUI.delay(3)
 WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
@@ -555,7 +555,7 @@ println(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/lab
 
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), DTYMsg, FailureHandling.CONTINUE_ON_FAILURE)
 
-executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
 WebUI.delay(3)
 WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 WebUI.delay(3)
@@ -747,7 +747,7 @@ if (noDTYMsg.size() > 0) {
     sa.assertTrue(false)
 }
 
-executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
 WebUI.delay(3)
 WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
@@ -878,7 +878,7 @@ if (noDTYMsg.size() > 0) {
     sa.assertTrue(false)
 }
 
-executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
 WebUI.delay(3)
 WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 

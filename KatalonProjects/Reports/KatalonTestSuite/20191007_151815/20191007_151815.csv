@@ -1,0 +1,46 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+KatalonTestSuite,Chrome 77.0.3865.90,,2019-10-07 15:18:23,2019-10-07 15:20:29,2m - 6.704s,FAILED
+,,,,,,
+Test Cases/VirtualShow/newUserRegistrationRS,Chrome 77.0.3865.90,,2019-10-07 15:18:23,2019-10-07 15:20:28,2m - 4.590s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 77.0.3865.90,,2019-10-07 15:18:27,2019-10-07 15:18:27,0.174s,PASSED
+"RSURL = findTestData(""envtData"").getValue(""RSURL"", 1)",Chrome 77.0.3865.90,/**********Faker initialization for Random Names********************/,2019-10-07 15:18:28,2019-10-07 15:18:28,0.238s,PASSED
+"RSuser = findTestData(""credData"").getValue(""RSuser"", 1)",Chrome 77.0.3865.90,,2019-10-07 15:18:28,2019-10-07 15:18:29,0.142s,PASSED
+"RSTestEnvt = findTestData(""envtData"").getValue(""RSTestEnvt"", 1)",Chrome 77.0.3865.90,,2019-10-07 15:18:29,2019-10-07 15:18:29,0.108s,PASSED
+faker = new com.github.javafaker.Faker(),Chrome 77.0.3865.90,,2019-10-07 15:18:29,2019-10-07 15:18:30,0.973s,PASSED
+name = name().fullName(),Chrome 77.0.3865.90,,2019-10-07 15:18:30,2019-10-07 15:18:30,0.041s,PASSED
+firstName = name.firstName(),Chrome 77.0.3865.90,,2019-10-07 15:18:30,2019-10-07 15:18:30,0.018s,PASSED
+lastName = name().lastName(),Chrome 77.0.3865.90,,2019-10-07 15:18:30,2019-10-07 15:18:30,0.010s,PASSED
+email = internet.emailAddress(),Chrome 77.0.3865.90,,2019-10-07 15:18:30,2019-10-07 15:18:30,0.057s,PASSED
+"openBrowser("""")",Chrome 77.0.3865.90,,2019-10-07 15:18:30,2019-10-07 15:18:36,6.328s,PASSED
+maximizeWindow(),Chrome 77.0.3865.90,,2019-10-07 15:18:36,2019-10-07 15:18:37,1.082s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], CONTINUE_ON_FAILURE)",Chrome 77.0.3865.90,/**********Setting Vhost********************/,2019-10-07 15:18:37,2019-10-07 15:18:48,10.870s,PASSED
+navigateToUrl(RSURL),Chrome 77.0.3865.90,,2019-10-07 15:18:48,2019-10-07 15:19:09,21.157s,PASSED
+"loginURL = UtilityMethods.concat(""https://mirandakate."", RSTestEnvt, "".com/?component=account.login-gateway"")",Chrome 77.0.3865.90,/**********Creating login on RS for new user********************/,2019-10-07 15:19:09,2019-10-07 15:19:09,0.003s,PASSED
+navigateToUrl(loginURL),Chrome 77.0.3865.90,,2019-10-07 15:19:09,2019-10-07 15:19:17,7.865s,PASSED
+"setText(findTestObject(""ReplicatedSite/rs_Page_Trendy/input_Sign in  Create account_email""), email)",Chrome 77.0.3865.90,,2019-10-07 15:19:17,2019-10-07 15:19:19,1.784s,PASSED
+"click(findTestObject(""ReplicatedSite/rs_Page_Trendy/button_Continue""))",Chrome 77.0.3865.90,,2019-10-07 15:19:19,2019-10-07 15:19:19,0.463s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-07 15:19:19,2019-10-07 15:19:24,5.031s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/rsFirstName""))",Chrome 77.0.3865.90,,2019-10-07 15:19:24,2019-10-07 15:19:25,0.284s,PASSED
+"setText(findTestObject(""ReplicatedSite/rsNewUser/rsFirstName""), firstName)",Chrome 77.0.3865.90,,2019-10-07 15:19:25,2019-10-07 15:19:25,0.614s,PASSED
+"setText(findTestObject(""ReplicatedSite/rsNewUser/rsLastName""), lastName)",Chrome 77.0.3865.90,,2019-10-07 15:19:25,2019-10-07 15:19:26,0.671s,PASSED
+"setText(findTestObject(""ReplicatedSite/rsNewUser/rsPassword""), ""blackdress19"")",Chrome 77.0.3865.90,,2019-10-07 15:19:26,2019-10-07 15:19:27,0.625s,PASSED
+"setText(findTestObject(""ReplicatedSite/rsNewUser/rsConfirmPassword""), ""blackdress19"")",Chrome 77.0.3865.90,,2019-10-07 15:19:27,2019-10-07 15:19:27,0.612s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/noThanksLabel""))",Chrome 77.0.3865.90,,2019-10-07 15:19:27,2019-10-07 15:19:28,0.310s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/continueButton""))",Chrome 77.0.3865.90,,2019-10-07 15:19:28,2019-10-07 15:19:28,0.729s,PASSED
+delay(5),Chrome 77.0.3865.90,,2019-10-07 15:19:28,2019-10-07 15:19:33,5.007s,PASSED
+driver = getWebDriver(),Chrome 77.0.3865.90,,2019-10-07 15:19:33,2019-10-07 15:19:33,0.028s,PASSED
+executor = driver,Chrome 77.0.3865.90,,2019-10-07 15:19:33,2019-10-07 15:19:33,0.063s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/gotItThanks""))",Chrome 77.0.3865.90,,2019-10-07 15:19:33,2019-10-07 15:19:34,0.279s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/setUpMyProfile""))",Chrome 77.0.3865.90,,2019-10-07 15:19:34,2019-10-07 15:19:41,7.641s,PASSED
+"waitForElementClickable(findTestObject(""ReplicatedSite/rsNewUser/dressOftenOption""), 5)",Chrome 77.0.3865.90,,2019-10-07 15:19:41,2019-10-07 15:19:42,0.883s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-07 15:19:42,2019-10-07 15:19:45,3.007s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/dressOftenOption""))",Chrome 77.0.3865.90,,2019-10-07 15:19:45,2019-10-07 15:19:45,0.184s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/dressStyle""))",Chrome 77.0.3865.90,,2019-10-07 15:19:45,2019-10-07 15:19:46,0.249s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/dressShape""))",Chrome 77.0.3865.90,,2019-10-07 15:19:46,2019-10-07 15:19:46,0.318s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/dressAccentuate""))",Chrome 77.0.3865.90,,2019-10-07 15:19:46,2019-10-07 15:19:46,0.249s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/dislikeColors""))",Chrome 77.0.3865.90,,2019-10-07 15:19:46,2019-10-07 15:19:46,0.247s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/dislikePatterns""))",Chrome 77.0.3865.90,,2019-10-07 15:19:46,2019-10-07 15:19:47,0.229s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/continueButtonStyleForm""))",Chrome 77.0.3865.90,,2019-10-07 15:19:47,2019-10-07 15:19:47,0.266s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/topsRadiobutton""), 5)",Chrome 77.0.3865.90,,2019-10-07 15:19:47,2019-10-07 15:19:53,5.844s,PASSED
+delay(3),Chrome 77.0.3865.90,,2019-10-07 15:19:53,2019-10-07 15:19:56,3.007s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/sweatersRadioButton""))",Chrome 77.0.3865.90,,2019-10-07 15:19:56,2019-10-07 15:20:28,32.109s,FAILED

@@ -25,7 +25,15 @@ WebUI.click(findTestObject('Page_cabi Home/a_personal_purchases'))
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/span_Continue to Order'))
 
-addOnStyle = "2158"//findTestData('miscData').getValue('addOnStyle', 1)
+List<WebElement> emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 5)
+if (emptyCart.size() > 0) {
+	WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'))
+	println('cart not empty')
+	WebUI.delay(5)
+}
+
+
+addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
 
 WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
 
@@ -60,12 +68,13 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_cabi Personal Store/makeFirstPayment'))
 
-WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/select_cash'))
+//WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/select_cash'))
 
 WebUI.click(findTestObject('Page_cabi Personal Store/submitPayment'))
 
 WebUI.click(findTestObject('Page_cabi Personal Store/submitOrderId'))
 
+WebUI.closeBrowser()
 //String successMsg = ''
 //
 //boolean orderSuccess = false

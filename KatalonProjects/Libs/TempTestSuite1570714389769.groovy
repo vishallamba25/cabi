@@ -15,9 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
 
-suiteProperties.put('id', 'Test Suites/VirtualShowSuites/DashboardSuite')
+suiteProperties.put('id', 'Test Suites/VirtualShowSuites/DTYSuite')
 
-suiteProperties.put('name', 'DashboardSuite')
+suiteProperties.put('name', 'DTYSuite')
 
 suiteProperties.put('description', '')
  
@@ -28,8 +28,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowSuites\\DashboardSuite\\20191009_193505\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowSuites\\DTYSuite\\20191010_190309\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/VirtualShowSuites/DashboardSuite', suiteProperties, [new TestCaseBinding('Test Cases/VirtualShow/VS_Automation', 'Test Cases/VirtualShow/VS_Automation',  null), new TestCaseBinding('Test Cases/VirtualShow/newUserRegistrationRS', 'Test Cases/VirtualShow/newUserRegistrationRS',  null)])
+TestCaseMain.startTestSuite('Test Suites/VirtualShowSuites/DTYSuite', suiteProperties, [new TestCaseBinding('Test Cases/VirtualShow/BODTY/DTY', 'Test Cases/VirtualShow/BODTY/DTY',  null), new TestCaseBinding('Test Cases/VirtualShow/BODTY/DTYNotEligible', 'Test Cases/VirtualShow/BODTY/DTYNotEligible',  null), new TestCaseBinding('Test Cases/VirtualShow/BODTY/DTYVS', 'Test Cases/VirtualShow/BODTY/DTYVS',  null)])

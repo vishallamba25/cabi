@@ -211,7 +211,7 @@ for (int row = 1; row <= noOfContacts; row++) {
 
     
 
-	List<WebElement> completeMyPlrofileLater = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/User_Registration/a_I_will_complete_my_profile_later'),
+	List<WebElement> completeMyPlrofileLater = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/User_Registration/verify_text_welcome'),
 		5)
 	if(completeMyPlrofileLater.size()>0){
 		WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/User_Registration/a_I_will_complete_my_profile_later'),30)))

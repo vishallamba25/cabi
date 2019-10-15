@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//cart[@show-options='true']//span[text()='Item #3701']/parent::div/parent::div/div[last()]/p</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='shopping-cart']/ div/div[@class='shop-td']/p[contains(text(), 'Item Shipped')][1]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

@@ -186,7 +186,6 @@ for (int timeRow = 1; timeRow <= 1; timeRow++) {
 
     WebUI.click(findTestObject('Object Repository/Page_cabi_addOn_order/a_continue_to_order'))
 
-    WebUI.delay(2)
 
     /****************product Verify Short*****************
     WebUI.callTestCase(findTestCase('NewArrival/productVerifyShort'), [('available') : GlobalVariable.BOAddonPersonal], 

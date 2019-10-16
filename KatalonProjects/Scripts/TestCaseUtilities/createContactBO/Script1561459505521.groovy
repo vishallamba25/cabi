@@ -88,7 +88,7 @@ for (int row = 1; row <= noOfContacts; row++) {
 		WebUI.delay(3)
 
         WebUI.verifyElementText(findTestObject('Page_cabi Edit Customer Profile/address_validator_check'), '  Address validated by cabi.', 
-            FailureHandling.STOP_ON_FAILURE)
+            FailureHandling.CONTINUE_ON_FAILURE)
 
         WebUI.click(findTestObject('Page_cabi Edit Customer Profile/input_Interested In_save'))
 

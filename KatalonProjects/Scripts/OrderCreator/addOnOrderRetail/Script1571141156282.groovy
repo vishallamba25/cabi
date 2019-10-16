@@ -21,17 +21,8 @@ JavascriptExecutor executor;
 addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
 //int i = 1
 
-for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); timeRow++) {
-    /*if (timeRow > i) {
-        while (GlobalVariable.controlParallelism < GlobalVariable.parallelTC) {
-        }
-    }*/
+for (int timeRow = 1; timeRow <= 1; timeRow++) {
     
-    WebUI.callTestCase(findTestCase('NewArrival/populateTimeGlobalVars'), [('row') : timeRow], FailureHandling.CONTINUE_ON_FAILURE)
-
-    WebUI.callTestCase(findTestCase('NewArrival/setTimezone'), [('ofbizURL') : '', ('ofbizuser') : '', ('ofbizpass') : ''
-            , ('orderType') : GlobalVariable.orderType, ('timeZone') : GlobalVariable.timeZone, ('serverTarget') : GlobalVariable.serverTarget, ('clockServerTarget') : GlobalVariable.clockServerTarget], 
-        FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -273,12 +264,11 @@ for (int timeRow = 1; timeRow <= findTestData('timezoneData').getRowNumbers(); t
 
     WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_next'))
 
-    WebUI.delay(2)
 
-    /****************product Verify Short******************/
+   /* *//****************product Verify Short******************//*
     WebUI.callTestCase(findTestCase('NewArrival/productVerifyShort'), [('available') : GlobalVariable.BOAddonRetail], FailureHandling.CONTINUE_ON_FAILURE)
 
-    /*GlobalVariable.controlParallelism = (GlobalVariable.controlParallelism + 1)
+    GlobalVariable.controlParallelism = (GlobalVariable.controlParallelism + 1)
 
     if (GlobalVariable.controlParallelism == GlobalVariable.parallelTC) {
         i++

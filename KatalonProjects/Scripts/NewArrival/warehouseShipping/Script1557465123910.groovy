@@ -81,5 +81,5 @@ if (itemsNotpacked.size() > 0) {
 }
 
 
-WebUI.click(findTestObject('Cabi warehouse/warehouseLogout'))
+//WebUI.click(findTestObject('Cabi warehouse/warehouseLogout'))
 

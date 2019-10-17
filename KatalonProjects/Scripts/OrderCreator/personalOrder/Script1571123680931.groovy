@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import org.testng.asserts.SoftAssert
 
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
@@ -74,19 +75,20 @@ WebUI.click(findTestObject('Page_cabi Personal Store/submitPayment'))
 
 WebUI.click(findTestObject('Page_cabi Personal Store/submitOrderId'))
 
-WebUI.closeBrowser()
-//String successMsg = ''
-//
-//boolean orderSuccess = false
-//
-//List<WebElement> successMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'),
-//	5)
-//
-//if (successMsgs.size() > 0) {
-//	successMsg = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'))
-//
-//	orderSuccess = true
-//	
-//}
-//	
-//	assert orderSuccess == true
+
+String successMsg = ''
+
+boolean orderSuccess = false
+
+List<WebElement> successMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'),
+	5)
+
+if (successMsgs.size() > 0) {
+	successMsg = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'))
+	orderSuccess = true
+	
+}
+SoftAssert sa= new SoftAssert();
+	
+	sa.assertTrue(orderSuccess)
+//WebUI.closeBrowser()

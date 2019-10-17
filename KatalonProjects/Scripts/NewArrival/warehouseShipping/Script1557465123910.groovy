@@ -35,7 +35,9 @@ if (pickListCreated.size() == 0) {
 }
 
 String picklistCreatedMessage= commonUtility.UtilityMethods.concat("Picklist for order: [", orderId, "] has been created successfully.")
+println picklistCreatedMessage
 WebUI.verifyElementText(findTestObject('Cabi warehouse/picklistCreatedMessage'), picklistCreatedMessage)
+
 
 WebUI.click(findTestObject('Page_cabi Create Single Order PickList/a_Manage PickLists'))
 WebUI.delay(2)
@@ -79,5 +81,5 @@ if (itemsNotpacked.size() > 0) {
 }
 
 
-WebUI.click(findTestObject('Cabi warehouse/warehouseLogout'))
+//WebUI.click(findTestObject('Cabi warehouse/warehouseLogout'))
 

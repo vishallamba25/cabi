@@ -107,6 +107,21 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
+    public static Object personalOrderID
+     
+    /**
+     * <p></p>
+     */
+    public static Object showOrderID
+     
+    /**
+     * <p></p>
+     */
+    public static Object addOnPersonalOrderID
+     
+    /**
+     * <p></p>
+     */
     public static Object micrositeURL
      
 
@@ -135,6 +150,9 @@ public class GlobalVariable {
             parallelTC = selectedVariables['parallelTC']
             clockServerTarget = selectedVariables['clockServerTarget']
             retailOrderID = selectedVariables['retailOrderID']
+            personalOrderID = selectedVariables['personalOrderID']
+            showOrderID = selectedVariables['showOrderID']
+            addOnPersonalOrderID = selectedVariables['addOnPersonalOrderID']
             micrositeURL = selectedVariables['micrositeURL']
             
         } catch (Exception e) {

@@ -90,7 +90,10 @@ for (int timeRow = 1; timeRow <= 1; timeRow++) {
 	SoftAssert sa= new SoftAssert();
 		
 		sa.assertTrue(orderSuccess)
-	//WebUI.closeBrowser()
+	
+		/***************************warehouse shipping***************************/
+		WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : GlobalVariable.personalOrderID], FailureHandling.CONTINUE_ON_FAILURE )
+		/***************************end warehouse shipping***********************/
 	
 	
 	

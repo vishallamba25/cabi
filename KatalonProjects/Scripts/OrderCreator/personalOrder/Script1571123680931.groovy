@@ -84,13 +84,13 @@ boolean orderSuccess = false
 
 List<WebElement> successMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'), 
     5)
-
+String orderID;
 if (successMsgs.size() > 0) {
     successMsg = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'))
 
     orderSuccess = true
 
-    String orderID = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_order_id'))
+    orderID = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_order_id'))
 
     println(orderID)
 }
@@ -100,10 +100,10 @@ SoftAssert sa = new SoftAssert()
 sa.assertTrue(orderSuccess)
 
 
-println personalShip
-String ship= "no"
-ship=personalShip
-if(ship.equalsIgnoreCase("y")){
+println ship
+String shipString= "no"
+shipString=ship
+if(shipString.equalsIgnoreCase("y")){
 	/***************************warehouse shipping***************************/
 WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : orderID], FailureHandling.CONTINUE_ON_FAILURE )
 /***************************end warehouse shipping***********************/

@@ -1,16 +1,13 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import org.openqa.selenium.Keys
+import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
-import org.testng.asserts.SoftAssert
-
+import org.testng.asserts.SoftAssert as SoftAssert
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
-import commonUtility.UtilityMethods
+import commonUtility.UtilityMethods as UtilityMethods
 import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
@@ -21,7 +18,6 @@ String rmaNumber
 
 //int i = 1
 for (int timeRow = 1; timeRow <= 1; timeRow++) {
-    
     if (timeRow == 1) {
         /**************************************Order Creation and Shipping*************************************************************/
         WebUI.callTestCase(findTestCase('TestCaseUtilities/backOfficeLogin'), [('BOURL') : '', ('BOuser') : '', ('BOpass') : ''], 
@@ -100,15 +96,15 @@ for (int timeRow = 1; timeRow <= 1; timeRow++) {
             orderSuccess = true
 
             GlobalVariable.addOnOrderId = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_order_id'))
-			println GlobalVariable.addOnOrderId
+
+            println(GlobalVariable.addOnOrderId)
         }
         
         assert orderSuccess == true
 
         /***************************warehouse shipping***************************/
-        WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : GlobalVariable.addOnOrderId], FailureHandling.CONTINUE_ON_FAILURE )
-		/***************************end warehouse shipping***********************/
-		/**************************************End Order Creation and Shipping*************************************************************/
+        WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : GlobalVariable.addOnOrderId], FailureHandling.CONTINUE_ON_FAILURE) /***************************end warehouse shipping***********************/
+        /**************************************End Order Creation and Shipping*************************************************************/
     }
     
     /***************************return order and validate addOn products***************************/
@@ -174,99 +170,106 @@ for (int timeRow = 1; timeRow <= 1; timeRow++) {
         WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_Next_1'))
 
         WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_Submit RMA'))
-		WebUI.delay(2)
+
+        WebUI.delay(2)
+
         rmaNumber = WebUI.getText(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_get_rma_number'))
+    } else {
+        WebUI.delay(1)
+
+        WebUI.click(UtilityMethods.createTestObject('a_view_existing_rma', '//div/span[text()= \'RMA# ', rmaNumber, '\']/following-sibling::a'))
+
+        WebUI.delay(1)
+
+        WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_next_existing_rma'))
     }
-	else{
-		WebUI.delay(1)
-		WebUI.click(UtilityMethods.createTestObject("a_view_existing_rma", '//div/span[text()= \'RMA# ', rmaNumber, '\']/following-sibling::a'))
-		WebUI.delay(1)
-		WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/a_next_existing_rma'))
-	}
-	WebUI.delay(1)
+    
+    WebUI.delay(1)
+
     WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi Stylist Create RMA/addonOrder'))
 
     WebUI.delay(3)
 
     WebUI.click(findTestObject('Object Repository/Page_cabi_addOn_order/a_continue_to_order'))
-	
-	/**********************************************************************************************/
-	List<WebElement> emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 5)
-	if (emptyCart.size() > 0) {
-		WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'))
-		println('cart not empty')
-		WebUI.delay(5)
-	}
-	
-	
-	addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
-	
-	///////////////
-        WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'))
 
-        WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
+    /**********************************************************************************************/
+    List<WebElement> emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 
+        5)
 
-        WebUI.delay(2)
+    if (emptyCart.size() > 0) {
+        WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'))
 
-        String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
+        println('cart not empty')
 
-        WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
-
-        ///////////////
-	
-	WebUI.delay(5)
-	
-	WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize'))
-	
-	WebUI.delay(3)
-	
-	WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Add to Cart'))
-	
-	WebUI.delay(5)
-	
-	WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/a_checkout'))
-	
-	WebUI.delay(3)
-	
-	WebUI.click(findTestObject('Page_cabi Personal Store/nextButtonShipping'))
-	
-	WebUI.delay(3)
-	
-	WebUI.click(findTestObject('Page_cabi Personal Store/makeFirstPayment'))
-	
-	//WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/select_cash'))
-	
-	WebUI.click(findTestObject('Page_cabi Personal Store/submitPayment'))
-	
-	WebUI.click(findTestObject('Page_cabi Personal Store/submitOrderId'))
-	
-	
-	String successMsg = ''
-	
-	boolean orderSuccess = false
-	
-	List<WebElement> successMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'),
-		5)
-	
-	if (successMsgs.size() > 0) {
-		successMsg = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'))
-		orderSuccess = true
-		
-	}
-	SoftAssert sa= new SoftAssert();
-		
-		sa.assertTrue(orderSuccess)
-	//WebUI.closeBrowser()
-
-
-    /****************product Verify Short*****************
-    WebUI.callTestCase(findTestCase('NewArrival/productVerifyShort'), [('available') : GlobalVariable.BOAddonPersonal], 
-        FailureHandling.CONTINUE_ON_FAILURE /*GlobalVariable.controlParallelism = (GlobalVariable.controlParallelism + 1)
-
-    if (GlobalVariable.controlParallelism == GlobalVariable.parallelTC) {
-        i++
+        WebUI.delay(5)
     }
-	println "from personal"
-	println GlobalVariable.controlParallelism
-	println GlobalVariable.parallelTC*/
+    
+    addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
+
+    ///////////////
+    WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'))
+
+    WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
+
+    WebUI.delay(2)
+
+    String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
+
+    WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
+
+    ///////////////
+    WebUI.delay(5)
+
+    WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize'))
+
+    WebUI.delay(3)
+
+    WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Add to Cart'))
+
+    WebUI.delay(5)
+
+    WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/a_checkout'))
+
+    WebUI.delay(3)
+
+    WebUI.click(findTestObject('Page_cabi Personal Store/nextButtonShipping'))
+
+    WebUI.delay(3)
+
+    WebUI.click(findTestObject('Page_cabi Personal Store/makeFirstPayment'))
+
+    //WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/select_cash'))
+    WebUI.click(findTestObject('Page_cabi Personal Store/submitPayment'))
+
+    WebUI.click(findTestObject('Page_cabi Personal Store/submitOrderId'))
+
+    String successMsg = ''
+
+    boolean orderSuccess = false
+
+    List<WebElement> successMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'), 
+        5)
+	String orderID;
+    if (successMsgs.size() > 0) {
+        successMsg = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'))
+
+        orderSuccess = true
+		orderID = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_order_id'))
+		println(orderID)
+    }
+    
+    SoftAssert sa = new SoftAssert()
+
+    sa.assertTrue(orderSuccess)
+	println ship
+	String shipString= "no"
+	shipString=ship
+	if(shipString.equalsIgnoreCase("y")){
+		/***************************warehouse shipping***************************/
+	WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : orderID], FailureHandling.CONTINUE_ON_FAILURE )
+	/***************************end warehouse shipping***********************/
+	}
+	
+	
+	
 }

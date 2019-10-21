@@ -32,13 +32,13 @@ for (int timeRow = 1; timeRow <= 1; timeRow++) {
 
     WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), 
         Keys.chord(Keys.ENTER))
-	
-	WebUI.delay(2)
-	
-	WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Order Items/a_item_img'),
-		30)))
-	
-	WebUI.delay(2)
+
+    WebUI.delay(2)
+
+    WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Order Items/a_item_img'), 
+                30)))
+
+    WebUI.delay(2)
 
     WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style'), 
                 30)))
@@ -55,47 +55,58 @@ for (int timeRow = 1; timeRow <= 1; timeRow++) {
         WebUI.delay(3)
     }
     
-	WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Order Items/a_add_to_cart'),
-		30)))
-	WebUI.delay(3)
-	WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Order Items/a_checkout_online_store'),
-		30)))
-	WebUI.delay(3)
-	
-	WebUI.click(findTestObject('Page_cabi Personal Store/nextButtonShipping'))
-	
-	WebUI.delay(3)
-	
-	WebUI.click(findTestObject('Page_cabi Personal Store/makeFirstPayment'))
-	
-	//WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/select_cash'))
-	
-	WebUI.click(findTestObject('Page_cabi Personal Store/submitPayment'))
-	
-	WebUI.click(findTestObject('Page_cabi Personal Store/submitOrderId'))
-	
-	
-	String successMsg = ''
-	
-	boolean orderSuccess = false
-	
-	List<WebElement> successMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'),
-		5)
-	
-	if (successMsgs.size() > 0) {
-		successMsg = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'))
-		orderSuccess = true
-		
-	}
-	SoftAssert sa= new SoftAssert();
-		
-		sa.assertTrue(orderSuccess)
-	
-		/***************************warehouse shipping***************************/
-		WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : GlobalVariable.personalOrderID], FailureHandling.CONTINUE_ON_FAILURE )
-		/***************************end warehouse shipping***********************/
-	
-	
-	
-	
-}	
+    WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Order Items/a_add_to_cart'), 
+                30)))
+
+    WebUI.delay(3)
+
+    WebUI.executeJavaScript('arguments[0].click()', Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Order Items/a_checkout_online_store'), 
+                30)))
+
+    WebUI.delay(3)
+
+    WebUI.click(findTestObject('Page_cabi Personal Store/nextButtonShipping'))
+
+    WebUI.delay(3)
+
+    WebUI.click(findTestObject('Page_cabi Personal Store/makeFirstPayment'))
+
+    //WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/select_cash'))
+    WebUI.click(findTestObject('Page_cabi Personal Store/submitPayment'))
+
+    WebUI.click(findTestObject('Page_cabi Personal Store/submitOrderId'))
+
+    String successMsg = ''
+
+    boolean orderSuccess = false
+
+    List<WebElement> successMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'), 
+        5)
+
+    String orderID
+
+    if (successMsgs.size() > 0) {
+        successMsg = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'))
+
+        orderSuccess = true
+
+        orderID = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_order_id'))
+
+        println(orderID)
+    }
+    
+    SoftAssert sa = new SoftAssert()
+
+    sa.assertTrue(orderSuccess)
+
+    println(ship)
+
+    String shipString = 'no'
+
+    shipString = ship
+
+    if (shipString.equalsIgnoreCase('y')) {
+        /***************************warehouse shipping***************************/
+        WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : orderID], FailureHandling.CONTINUE_ON_FAILURE) /***************************end warehouse shipping***********************/
+    }
+}

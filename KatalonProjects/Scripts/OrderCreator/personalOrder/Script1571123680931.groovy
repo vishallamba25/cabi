@@ -99,8 +99,10 @@ SoftAssert sa = new SoftAssert()
 
 sa.assertTrue(orderSuccess)
 
+
 println personalShip
-String ship=personalShip
+String ship= "no"
+ship=personalShip
 if(ship.equalsIgnoreCase("y")){
 	/***************************warehouse shipping***************************/
 WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : orderID], FailureHandling.CONTINUE_ON_FAILURE )

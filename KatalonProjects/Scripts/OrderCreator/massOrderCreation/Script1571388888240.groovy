@@ -33,6 +33,7 @@ for(int i=1; i<=6; i++){
 /*****************************************************/
 String noOfOrders= Integer.parseInt(orderCreationData[1][1]);
 String personalShip= orderCreationData[1][2];
+println "***************************noOfOrders************personalShip********************"
 println noOfOrders
 println personalShip
 

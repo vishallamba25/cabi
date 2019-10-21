@@ -38,13 +38,19 @@
       <guid>739c675b-7f6b-4f23-858b-b7d329b6eb9a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/OrderCreator/BOOnline</testCaseId>
+      <testCaseId>Test Cases/OrderCreator/onlineOrder</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>76bd5b38-8ad3-4e7c-b199-52870af9a084</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/OrderCreator/personalOrder</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8a4446ab-5655-4b8f-ab74-cf4807603d10</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>d2564939-96c3-4b75-8451-f0376a174d30</guid>

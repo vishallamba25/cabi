@@ -2,7 +2,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.openqa.selenium.Keys
 import org.openqa.selenium.WebElement as WebElement
+import org.testng.asserts.SoftAssert
 
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
@@ -104,7 +106,9 @@ for (int timeRow = 1; timeRow <= 1; timeRow++) {
         assert orderSuccess == true
 
         /***************************warehouse shipping***************************/
-        WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : GlobalVariable.addOnOrderId], FailureHandling.CONTINUE_ON_FAILURE /***********************************************************************/ /***************************end warehouse shipping***********************/ ) /**************************************End Order Creation and Shipping*************************************************************/
+        WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : GlobalVariable.addOnOrderId], FailureHandling.CONTINUE_ON_FAILURE )
+		/***************************end warehouse shipping***********************/
+		/**************************************End Order Creation and Shipping*************************************************************/
     }
     
     /***************************return order and validate addOn products***************************/
@@ -185,6 +189,74 @@ for (int timeRow = 1; timeRow <= 1; timeRow++) {
     WebUI.delay(3)
 
     WebUI.click(findTestObject('Object Repository/Page_cabi_addOn_order/a_continue_to_order'))
+	
+	/**********************************************************************************************/
+	List<WebElement> emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'), 5)
+	if (emptyCart.size() > 0) {
+		WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'))
+		println('cart not empty')
+		WebUI.delay(5)
+	}
+	
+	
+	addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
+	
+	///////////////
+        WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'))
+
+        WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
+
+        WebUI.delay(2)
+
+        String prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
+
+        WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
+
+        ///////////////
+	
+	WebUI.delay(5)
+	
+	WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize'))
+	
+	WebUI.delay(3)
+	
+	WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/span_Add to Cart'))
+	
+	WebUI.delay(5)
+	
+	WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/a_checkout'))
+	
+	WebUI.delay(3)
+	
+	WebUI.click(findTestObject('Page_cabi Personal Store/nextButtonShipping'))
+	
+	WebUI.delay(3)
+	
+	WebUI.click(findTestObject('Page_cabi Personal Store/makeFirstPayment'))
+	
+	//WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/select_cash'))
+	
+	WebUI.click(findTestObject('Page_cabi Personal Store/submitPayment'))
+	
+	WebUI.click(findTestObject('Page_cabi Personal Store/submitOrderId'))
+	
+	
+	String successMsg = ''
+	
+	boolean orderSuccess = false
+	
+	List<WebElement> successMsgs = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'),
+		5)
+	
+	if (successMsgs.size() > 0) {
+		successMsg = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_success_msg'))
+		orderSuccess = true
+		
+	}
+	SoftAssert sa= new SoftAssert();
+		
+		sa.assertTrue(orderSuccess)
+	//WebUI.closeBrowser()
 
 
     /****************product Verify Short*****************

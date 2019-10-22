@@ -15,9 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
 
-suiteProperties.put('id', 'Test Suites/OrderCreatorSuites/OrderCreatorSuitePersonal')
+suiteProperties.put('id', 'Test Suites/VirtualShowSuites/DashboardSuite')
 
-suiteProperties.put('name', 'OrderCreatorSuitePersonal')
+suiteProperties.put('name', 'DashboardSuite')
 
 suiteProperties.put('description', '')
  
@@ -28,8 +28,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\OrderCreatorSuites\\OrderCreatorSuitePersonal\\20191021_202253\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowSuites\\DashboardSuite\\20191022_182745\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/OrderCreatorSuites/OrderCreatorSuitePersonal', suiteProperties, [new TestCaseBinding('Test Cases/OrderCreator/massOrderCreationPersonal', 'Test Cases/OrderCreator/massOrderCreationPersonal',  null)])
+TestCaseMain.startTestSuite('Test Suites/VirtualShowSuites/DashboardSuite', suiteProperties, [new TestCaseBinding('Test Cases/VirtualShow/VS_Automation', 'Test Cases/VirtualShow/VS_Automation',  null), new TestCaseBinding('Test Cases/VirtualShow/newUserRegistrationRS', 'Test Cases/VirtualShow/newUserRegistrationRS',  null)])

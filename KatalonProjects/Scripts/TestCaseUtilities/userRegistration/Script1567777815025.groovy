@@ -127,11 +127,11 @@ for (int row = 1; row <= noOfContacts; row++) {
     //WebUI.delay(2)
     //WebUI.executeJavaScript("arguments[0].click", Arrays.asList(element))
     //executor.executeScript("document.evaluate('//div[@class=\\'custom-input\\']/input[@name=\\'firstName\\']', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.value='ABCD';")
-    executor.executeScript('document.evaluate(\'//div[@class=\\\'custom-input\\\']/input[@name=\\\'lastName\\\']\', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.value=\'ABCD\';')
-
-    executor.executeScript('document.evaluate(\'//div[@class=\\\'custom-input password\\\']/input[@name=\\\'password\\\']\', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.value=\'ABCD\';')
-
-    executor.executeScript('document.evaluate(\'//div[@class=\\\'custom-input password\\\']/input[@name=\\\'confirmPassword\\\']\', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.value=\'ABCD\';')
+//    executor.executeScript('document.evaluate(\'//div[@class=\\\'custom-input\\\']/input[@name=\\\'lastName\\\']\', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.value=\'ABCD\';')
+//
+//    executor.executeScript('document.evaluate(\'//div[@class=\\\'custom-input password\\\']/input[@name=\\\'password\\\']\', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.value=\'ABCD\';')
+//
+//    executor.executeScript('document.evaluate(\'//div[@class=\\\'custom-input password\\\']/input[@name=\\\'confirmPassword\\\']\', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.value=\'ABCD\';')
 
     /*//executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/User_Registration/input_fname'), 10))
 	WebUI.sendKeys(findTestObject('Object Repository/User_Registration/input_fname'), firstName)
@@ -223,5 +223,5 @@ for (int row = 1; row <= noOfContacts; row++) {
     WebUI.delay(1)
 
     WebUI.click(findTestObject('Object Repository/User_Registration/a_sign_out'))
-	WebUI.closeWindowIndex(currentTab + 1)
+	//WebUI.closeWindowIndex(currentTab + 1)
 }

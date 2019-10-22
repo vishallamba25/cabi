@@ -28,7 +28,7 @@ println ship
 
 
 for(int i=1; i<= noOfOrders; i++){
-	WebUI.callTestCase(findTestCase('Test Cases/OrderCreator/massOrderCreationAddOnOrderRetail'), [('ship') : ship],
+	WebUI.callTestCase(findTestCase('Test Cases/OrderCreator/addOnOrderRetail'), [('ship') : ship],
 	FailureHandling.CONTINUE_ON_FAILURE)
 }
 

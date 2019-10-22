@@ -19,7 +19,7 @@
    <testCaseLink>
       <guid>dbabc8f6-8cfc-4160-af76-3bb0cf703386</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/VirtualShow/newUserRegistrationRS</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

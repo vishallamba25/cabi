@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//h2[contains(text(), 'Welcome!')]</value>
+         <value>//h2[contains(text(), 'Welcome')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

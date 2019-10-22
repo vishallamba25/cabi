@@ -63,6 +63,7 @@ public class VSGuest {
 
 
 		int elementCount= names.size();
+		println elementCount
 		ArrayList<VSGuest> resultList= new ArrayList<>()
 		VSGuest guest;
 		for(int i=0; i<elementCount; i++){

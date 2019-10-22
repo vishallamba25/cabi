@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+OrderCreatorSuitePersonal,Chrome 77.0.3865.120,,2019-10-21 20:23:02,2019-10-21 20:25:24,2m - 21.811s,PASSED
+,,,,,,
+Test Cases/OrderCreator/massOrderCreationPersonal,Chrome 77.0.3865.120,,2019-10-21 20:23:05,2019-10-21 20:25:23,2m - 17.707s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 77.0.3865.120,,2019-10-21 20:23:06,2019-10-21 20:23:06,0.165s,PASSED
+"openBrowser("""")",Chrome 77.0.3865.120,,2019-10-21 20:23:07,2019-10-21 20:23:13,6.061s,PASSED
+"dataFile = ""orderCreationData""",Chrome 77.0.3865.120,,2019-10-21 20:23:13,2019-10-21 20:23:13,0.002s,PASSED
+orderType = 1,Chrome 77.0.3865.120,,2019-10-21 20:23:13,2019-10-21 20:23:13,0.003s,PASSED
+"noOfOrders = Integer.parseInt(findTestData(dataFile).getValue(""noOfOrders"", orderType))",Chrome 77.0.3865.120,,2019-10-21 20:23:13,2019-10-21 20:23:15,2.290s,PASSED
+"ship = findTestData(dataFile).getValue(""shipping"", orderType)",Chrome 77.0.3865.120,,2019-10-21 20:23:15,2019-10-21 20:23:15,0.073s,PASSED
+println(noOfOrders),Chrome 77.0.3865.120,,2019-10-21 20:23:15,2019-10-21 20:23:15,0.005s,PASSED
+println(ship),Chrome 77.0.3865.120,,2019-10-21 20:23:15,2019-10-21 20:23:15,0.002s,PASSED
+"for ([i = 1, i <= noOfOrders, (i++)])",Chrome 77.0.3865.120,,2019-10-21 20:23:15,2019-10-21 20:25:23,2m - 7.698s,PASSED

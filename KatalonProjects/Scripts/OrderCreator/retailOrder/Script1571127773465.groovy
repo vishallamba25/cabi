@@ -14,3 +14,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('EditOrder-V/retailOrderBO'), [('editScenarioNumber') : ''], FailureHandling.STOP_ON_FAILURE)
+
+println ship
+String shipString= "no"
+shipString=ship
+if(shipString.equalsIgnoreCase("y")){
+	/***************************warehouse shipping***************************/
+WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : GlobalVariable.retailOrderID], FailureHandling.CONTINUE_ON_FAILURE )
+/***************************end warehouse shipping***********************/
+}

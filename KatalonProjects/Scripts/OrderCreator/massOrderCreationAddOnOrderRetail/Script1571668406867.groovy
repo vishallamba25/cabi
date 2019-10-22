@@ -19,29 +19,20 @@ WebUI.openBrowser('')
 
 /**********vaiable initialization********************/
 String dataFile = 'orderCreationData'
-
-String[][] orderCreationData= new String[7][3];
-
-for(int i=1; i<=6; i++){
-	orderCreationData[i][0]= findTestData(dataFile).getValue('orderType', i)
-	orderCreationData[i][1]= findTestData(dataFile).getValue('noOfOrders', i)
-	orderCreationData[i][2]= findTestData(dataFile).getValue('shipping', i)
-}
-
-
-
-/*****************************************************/
-String noOfOrders= Integer.parseInt(orderCreationData[1][1]);
-String personalShip= orderCreationData[1][2];
-println "***************************noOfOrders************personalShip********************"
+int orderType=5;
+int noOfOrders= Integer.parseInt(findTestData(dataFile).getValue('noOfOrders', orderType));
+String ship= findTestData(dataFile).getValue('shipping', orderType)
 println noOfOrders
-println personalShip
+println ship
+/*****************************************************/
+
 
 for(int i=1; i<= noOfOrders; i++){
-	WebUI.callTestCase(findTestCase('Test Cases/OrderCreator/personalOrder'), [('personalShip') : personalShip],
+	WebUI.callTestCase(findTestCase('Test Cases/OrderCreator/massOrderCreationAddOnOrderRetail'), [('ship') : ship],
 	FailureHandling.CONTINUE_ON_FAILURE)
-	println i
 }
+
+
 
 
 

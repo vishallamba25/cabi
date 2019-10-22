@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import org.testng.asserts.SoftAssert
 
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
@@ -287,7 +288,10 @@ if (successMsgs.size() > 0) {
     GlobalVariable.retailOrderID = WebUI.getText(findTestObject('Object Repository/Page_cabi Personal Store/p_order_id'))
 }
 
-assert orderSuccess == true
+SoftAssert sa = new SoftAssert()
+
+sa.assertTrue(orderSuccess)
+
 
 not_run: WebUI.closeBrowser()
 

@@ -287,8 +287,42 @@ for (int timeRow = 1; timeRow <= 1; timeRow++) {
     }
     
     addOnStyle = findTestData('miscData').getValue('addOnStyle', 1)
+	
+	WebUI.delay(3)
+	
+		/////////////////////////
+		WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_entry'))
+	
+		WebUI.delay(3)
+	
+		emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'),
+			5)
+	
+		while (emptyCart.size() > 0) {
+			WebUI.click(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'))
+	
+			println('cart not empty')
+	
+			WebUI.delay(5)
+	
+			emptyCart = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Personal Store/removeFromCart'),
+				5)
+		}
+		
+		///////////////
+		WebUI.click(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'))
+	
+		WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
+	
+		WebUI.delay(3)
+	
+		prod_message = WebUI.getText(findTestObject('Page_cabi Create Order/first_option'))
+	
+		WebUI.click(findTestObject('Page_cabi Create Order/first_option'))
+	
+		///////////////
 
-    WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
+    /*WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
 
     WebUI.delay(2)
 
@@ -301,7 +335,7 @@ for (int timeRow = 1; timeRow <= 1; timeRow++) {
             Keys.ARROW_DOWN))
 
     WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
-            Keys.ENTER))
+            Keys.ENTER))*/
 
     WebUI.delay(5)
 

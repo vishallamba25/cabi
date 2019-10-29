@@ -156,7 +156,7 @@ WebUI.delay(5)
 //_________________________________
 WebUI.switchToWindowIndex(currentTab + 1)
 
-UtilityMethods.validateGuestsListDashboard(yesList, noList, maybeList, noreplyList, presentList, allList)
+//UtilityMethods.validateGuestsListDashboard(yesList, noList, maybeList, noreplyList, presentList, allList)
 
 println(WebUI.getWindowIndex())
 
@@ -239,7 +239,7 @@ WebUI.delay(2)
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'), 
         5))
 
-UtilityMethods.validateGuestsListDashboard(yesList, noList, maybeList, noreplyList, presentList, allList)
+//UtilityMethods.validateGuestsListDashboard(yesList, noList, maybeList, noreplyList, presentList, allList)
 
 WebUI.switchToWindowIndex(currentTab + 2)
 
@@ -264,7 +264,7 @@ maybeList.remove(guest1Obj)
 //_________________________________
 WebUI.switchToWindowIndex(currentTab + 1)
 
-UtilityMethods.validateGuestsListDashboard(yesList, noList, maybeList, noreplyList, presentList, allList)
+//UtilityMethods.validateGuestsListDashboard(yesList, noList, maybeList, noreplyList, presentList, allList)
 
 /********************************YES and JOIN************************/
 WebUI.switchToWindowIndex(currentTab + 2)
@@ -858,7 +858,7 @@ try {
 }
 catch (org.openqa.selenium.StaleElementReferenceException ex) {
     assert VSGuest.validateGuests(findTestObject('Object Repository/virualShowRSVPOR/dashboard/select_present'), presentList)
-} 
+}
 
 WebUI.delay(10)
 

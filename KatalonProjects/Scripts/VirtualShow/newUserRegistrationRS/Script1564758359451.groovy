@@ -82,8 +82,12 @@ JavascriptExecutor executor = ((driver) as JavascriptExecutor)
 //        5))
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/gotItThanks'))
 
+//WebUI.delay(5)
+
+//WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/noThanksLink'))
+
 //TestObject profileOptions= UtilityMethods.createTestObject("profileOptions", '//div[@class=\'check\' and preceding-sibling::div[text()=\'',Casual,'\']]')
-WebUI.click(findTestObject('ReplicatedSite/rsNewUser/setUpMyProfile'))
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/rsNewUser/setUpMyProfile'))
 
 WebUI.waitForElementClickable(findTestObject('ReplicatedSite/rsNewUser/dressOftenOption'), 5)
 

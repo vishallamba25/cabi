@@ -17,7 +17,7 @@ WebUI.callTestCase(findTestCase('TestCaseUtilities/cabiWarehouseLogin'), [('CWUR
 WebUI.click(findTestObject('Page_cabi Manage PickLists/a_Create PickLists'))
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/findOrders/Page_cabi Find Orders/Page_cabi SampleLine Shipment Screen/a_Single Order'))
+WebUI.click(findTestObject('findOrders/Page_cabi Find Orders/Page_cabi SampleLine Shipment Screen/a_single_order'))
 
 WebUI.setText(findTestObject('Page_cabi Create Single Order PickList/input_Order Id_orderId'), orderId)
 

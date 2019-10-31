@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;mm-0&quot;]/div[2]/div/questionnaire-root/app-questionnaire/div/div[1]/app-questionnaire-my-style-product-rs/div/div/div/div/div[6]/app-my-style-product-question/div/div[2]/div/label/div[2]</value>
+         <value>//*[@id=&quot;mm-0&quot;]/div/div/questionnaire-root/app-questionnaire/div/div[1]/app-questionnaire-my-style-product-rs/div/div/div/div/div[6]/app-my-style-product-question/div/div[3]/div/label/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;mm-0&quot;]/div[2]/div/questionnaire-root/app-questionnaire/div/div[1]/app-questionnaire-my-style-product-rs/div/div/div/div/div[6]/app-my-style-product-question/div/div[2]/div/label/div[2]</value>
+      <value>//*[@id=&quot;mm-0&quot;]/div/div/questionnaire-root/app-questionnaire/div/div[1]/app-questionnaire-my-style-product-rs/div/div/div/div/div[6]/app-my-style-product-question/div/div[3]/div/label/div[2]</value>
    </webElementProperties>
 </WebElementEntity>

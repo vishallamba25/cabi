@@ -242,9 +242,9 @@ WebUI.click(findTestObject('ReplicatedSite/rsNewUser/dressOftenOption2'))
 
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/dressStyle2'))
 
-//WebUI.click(findTestObject('ReplicatedSite/rsNewUser/saveButton'))
-//
-//WebUI.verifyElementText(findTestObject('ReplicatedSite/rsNewUser/changesSaved'), 'Your changes have been saved.')
+WebUI.click(findTestObject('ReplicatedSite/rsNewUser/saveButton'))
+
+WebUI.verifyElementText(findTestObject('ReplicatedSite/rsNewUser/changesSaved'), 'Your changes have been saved.')
 
 //executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('ReplicatedSite/rsNewUser/sizeAndMeasurementsTab'), 
 //        5))
@@ -257,56 +257,58 @@ executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/editBustSize'))
 
 List<String> editSizeList = new ArrayList()
-//
+
 editSizeList.add('35')
-//
+
 editSizeList.add('30')
-//
+
 editSizeList.add('36')
-//
+
 editSizeList.add('32')
-//
+
 editSizeList.add('Extra Large')
-//
+
 editSizeList.add('Medium')
-//
+
 editSizeList.add('Regular')
-//
+
 editSizeList.add('Extra Large')
 
 editSizeList.add('10')
-//
+
 List<String> editStyleList = new ArrayList()
-//
+
 editStyleList.add('Bust Sizes:')
-//
+
 editStyleList.add('Waist Sizes:')
-//
+
 editStyleList.add('Hip Sizes:')
-//
+
 editStyleList.add('Inseam Sizes:')
-//
+
 editStyleList.add('Top Sizes:')
-//
+
 editStyleList.add('Trouser Sizes:')
-//
+
 editStyleList.add('Trouser Length:')
-//
+
 editStyleList.add('Skirt Sizes:')
-//
+
 editStyleList.add('Dress Sizes:')
-//
+
 editStyleList.add('Shoe Sizes:')
-//
-//
+
+
 for (int i = 0; i < editStyleList.size(); i++) {
 	TestObject editStyleForm = UtilityMethods.createTestObject('editStyleForm','//span[text()=\'',editStyleList.get(i),'\']/parent::div/following-sibling::div//div[@class=\'drop-text\' and text()=\'',editSizeList.get(i),'\']')
-//	
+	
 	WebUI.click(editStyleForm)
-//
+
 	WebUI.delay(3)
 }
-//
+
 WebUI.click(findTestObject('ReplicatedSite/rsNewUser/saveButton'))
-//
+
+//WebUI.click(findTestObject('ReplicatedSite/rsNewUser/saveChangesButton'))
+
 WebUI.verifyElementText(findTestObject('ReplicatedSite/rsNewUser/changesSaved'), 'Your changes have been saved.')

@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.interactions.Actions as Actions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
@@ -547,16 +547,16 @@ for (int i = 1; i <= noOfOptions.size(); i++) {
     TestObject dropDown = UtilityMethods.createTestObject('div_drop_down', '(//div[@class=\'dropdown-toggle\']/div[@class=\'dropdown-button\']/div[@class=\'drop-caret\'])[', 
         Integer.toString(i), ']')
 
-	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(dropDown))
-    //WebUI.click(dropDown)
+//	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(dropDown))
+    WebUI.click(dropDown)
 
     WebUI.delay(3)
 
     TestObject selectSecondOption = UtilityMethods.createTestObject('div_select_second_option', '(//div/div[@class=\'item-options bootstrap\']/app-dropdown)[', 
         Integer.toString(i), ']/div/div/div/div/div/div/div[@class=\'dropdown-item\' and position()=\'2\']')
 
-	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(selectSecondOption))
-   // WebUI.click(selectSecondOption)
+//	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(selectSecondOption))
+    WebUI.click(selectSecondOption)
 
     WebUI.delay(3)
 }
@@ -686,15 +686,15 @@ for (int i = 1; i <= noOfOptions.size(); i++) {
     TestObject dropDown = UtilityMethods.createTestObject('div_drop_down', '(//div[@class=\'add-to-cart-form\']/div[@class=\'attribute ng-scope\']/div[@class=\'input-select ng-scope\']/select)[', 
         String.valueOf(i), ']')
 
-	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(dropDown))
-    //WebUI.click(dropDown)
+//	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(dropDown))
+    WebUI.click(dropDown)
 
     //WebUI.delay(3)
     TestObject selectLastOption = UtilityMethods.createTestObject('div_select_last_option', '(//div[@class=\'add-to-cart-form\']/div[@class=\'attribute ng-scope\']/div[@class=\'input-select ng-scope\']/select)[', 
         String.valueOf(i), ']/option[last()]')
 
-	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(selectLastOption))
-    //WebUI.click(selectLastOption)
+//	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(selectLastOption))
+    WebUI.click(selectLastOption)
 
     WebUI.delay(3)
 }
@@ -802,12 +802,12 @@ if (!(addAnotherCards.isEmpty())) {
             5))
 }
 
-//WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_add_another_card'))
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/select_credit_card_type'), 
-        5))
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_add_another_card'))
+//executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/select_credit_card_type'), 
+  //      5))
 
-WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/select_credit_card_type'),30)))
-//WebUI.click(findTestObject('Object Repository/ReplicatedSite/select_credit_card_type'))
+//WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/select_credit_card_type'),30)))
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/select_credit_card_type'))
 
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_creditcard_first_name'), 
         5))
@@ -827,14 +827,14 @@ WebUI.setText(findTestObject('Object Repository/ReplicatedSite/input_creditcard_
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_creditcard_expiration_month'), 
         5))
 
-WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_creditcard_expiration_month'),30)))
-//WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_creditcard_expiration_month'))
+//WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_creditcard_expiration_month'),30)))
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_creditcard_expiration_month'))
 
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_creditcard_expiration_year'), 
-        5))
+//executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_creditcard_expiration_year'), 
+        //5))
 
-WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_creditcard_expiration_year'),30)))
-//WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_creditcard_expiration_year'))
+//WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_creditcard_expiration_year'),30)))
+WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_creditcard_expiration_year'))
 
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/input_billing_address'), 
         5))
@@ -916,7 +916,7 @@ catch (org.openqa.selenium.StaleElementReferenceException ex) {
 WebUI.delay(10)
 
 /**************************************************************************************************************/
-/*****************************************end session**********************************************************
+//****************************************end session**********************************************************
 WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/button_end_session'))
 
 WebUI.delay(3)
@@ -925,4 +925,5 @@ WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/button_
 
 WebUI.delay(3)
 
-WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/dashboard/p_show_is_over'), 'This show is not active.')*/
+WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/dashboard/p_show_is_over'), 'This show is not active.')
+

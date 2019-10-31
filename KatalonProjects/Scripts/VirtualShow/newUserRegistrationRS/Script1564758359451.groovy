@@ -246,6 +246,8 @@ WebUI.click(findTestObject('ReplicatedSite/rsNewUser/saveButton'))
 
 WebUI.verifyElementText(findTestObject('ReplicatedSite/rsNewUser/changesSaved'), 'Your changes have been saved.')
 
+WebUI.delay(5)
+
 //executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('ReplicatedSite/rsNewUser/sizeAndMeasurementsTab'), 
 //        5))
 

@@ -144,13 +144,23 @@ titleList.add('Inseam')
 
 titleList.add('Tops')
 
+titleList.add('Tops')
+
+titleList.add('Trouser')
+
 titleList.add('Trouser')
 
 titleList.add('Trouser Length')
 
 titleList.add('Jacket')
 
+titleList.add('Jacket')
+
 titleList.add('Skirts')
+
+titleList.add('Skirts')
+
+titleList.add('Dresses')
 
 titleList.add('Dresses')
 
@@ -170,15 +180,25 @@ sizeList.add('34')
 
 sizeList.add('30')
 
+sizeList.add('6')
+
 sizeList.add('L')
+
+sizeList.add('10')
 
 sizeList.add('L')
 
 sizeList.add('L')
 
-sizeList.add('L')
+sizeList.add('12')
 
 sizeList.add('L')
+
+sizeList.add('12')
+
+sizeList.add('L')
+
+sizeList.add('14')
 
 sizeList.add('L')
 
@@ -248,15 +268,15 @@ WebUI.verifyElementText(findTestObject('ReplicatedSite/rsNewUser/changesSaved'),
 
 WebUI.delay(5)
 
-//executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('ReplicatedSite/rsNewUser/sizeAndMeasurementsTab'), 
-//        5))
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('ReplicatedSite/rsNewUser/sizeAndMeasurementsTab'), 
+        5))
 
-WebUI.click(findTestObject('ReplicatedSite/rsNewUser/sizeAndMeasurementsTab'))
+//WebUI.click(findTestObject('ReplicatedSite/rsNewUser/sizeAndMeasurementsTab'))
 
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('ReplicatedSite/rsNewUser/editBustSize'),
 	5))
 
-WebUI.click(findTestObject('ReplicatedSite/rsNewUser/editBustSize'))
+//WebUI.click(findTestObject('ReplicatedSite/rsNewUser/editBustSize'))
 
 List<String> editSizeList = new ArrayList()
 

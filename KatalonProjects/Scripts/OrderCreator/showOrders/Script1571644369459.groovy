@@ -84,7 +84,10 @@ WebUI.delay(3)
 println(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility')))
 */
 //WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), DTYMsg, FailureHandling.CONTINUE_ON_FAILURE)
-executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
+
+
+/*******************************handling same shipping address error********************/
+executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
         10))
 
 WebUI.delay(3)
@@ -96,6 +99,24 @@ WebUI.delay(3)
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
         5))
 
+
+List<WebElement> span_same_shipping_address_error = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/span_same_shipping_address_error'),
+	5)
+
+if (span_same_shipping_address_error.size() > 0) {
+	executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
+        10))
+
+WebUI.delay(3)
+
+WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+
+WebUI.delay(3)
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
+        5))
+}
+/*******************************end handling same shipping address error********************/
 /////////////////////////////////////////////////
 WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_entry'))
 
@@ -119,12 +140,12 @@ addOnStyle2 = findTestData('miscData').getValue('addOnStyle', 2)
 ///////////////
 WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
         Keys.ARROW_DOWN))
 
-WebUI.delay(2)
+WebUI.delay(1)
 
 WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
         Keys.ARROW_DOWN))
@@ -132,6 +153,18 @@ WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Ma
 WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
         Keys.ENTER))
 
+/////////////////////////////////////////////////////
+/*WebUI.setText(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), addOnStyle)
+
+WebUI.delay(2)
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
+		Keys.ARROW_DOWN))
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'), Keys.chord(
+		Keys.ENTER))
+/////////////////////////////////
+*/
 WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/Page_cabi Order Items/selectSize'))
@@ -217,7 +250,8 @@ WebUI.delay(3)
 //DTYMsg = 'Hooray! This order is eligible for "Direct to You" shipping.'
 //println(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility')))
 //WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), DTYMsg, FailureHandling.CONTINUE_ON_FAILURE)
-executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
+/*******************************handling same shipping address error********************/
+executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
         10))
 
 WebUI.delay(3)
@@ -225,6 +259,28 @@ WebUI.delay(3)
 WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
 WebUI.delay(3)
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
+        5))
+
+
+span_same_shipping_address_error = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/span_same_shipping_address_error'),
+	5)
+
+if (span_same_shipping_address_error.size() > 0) {
+	executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
+        10))
+
+WebUI.delay(3)
+
+WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+
+WebUI.delay(3)
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
+        5))
+}
+/*******************************end handling same shipping address error********************/
 
 driver = DriverFactory.getWebDriver()
 
@@ -703,7 +759,8 @@ WebUI.delay(3)
 if (noDTYMsg.size() > 0) {
     sa.assertTrue(false)
 }*/
-executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
+/*******************************handling same shipping address error********************/
+executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
         10))
 
 WebUI.delay(3)
@@ -711,6 +768,28 @@ WebUI.delay(3)
 WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
 WebUI.delay(3)
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
+        5))
+
+
+span_same_shipping_address_error = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/span_same_shipping_address_error'),
+	5)
+
+if (span_same_shipping_address_error.size() > 0) {
+	executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
+        10))
+
+WebUI.delay(3)
+
+WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+
+WebUI.delay(3)
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
+        5))
+}
+/*******************************end handling same shipping address error********************/
 
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
         5))
@@ -840,7 +919,8 @@ WebUI.delay(3)
 if (noDTYMsg.size() > 0) {
     sa.assertTrue(false)
 }*/
-executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
+/*******************************handling same shipping address error********************/
+executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
         10))
 
 WebUI.delay(3)
@@ -848,6 +928,28 @@ WebUI.delay(3)
 WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
 WebUI.delay(3)
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
+        5))
+
+
+span_same_shipping_address_error = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/span_same_shipping_address_error'),
+	5)
+
+if (span_same_shipping_address_error.size() > 0) {
+	executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
+        10))
+
+WebUI.delay(3)
+
+WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+
+WebUI.delay(3)
+
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
+        5))
+}
+/*******************************end handling same shipping address error********************/
 
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
         5))
@@ -987,14 +1089,14 @@ println WebUI.getText(buttonEditDTYNonOptedOrder)
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/input_close_show'))
 WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/input_close_show_confirm'))*/
 
-
+/*
 println(ship)
 String shipString = 'no'
 shipString = ship
 if (shipString.equalsIgnoreCase('y')) {
-    /***************************warehouse shipping***************************/
-    WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('showId') : orderID], FailureHandling.CONTINUE_ON_FAILURE) /***************************end warehouse shipping***********************/
-}
+    *//***************************warehouse shipping***************************//*
+    WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('showId') : orderID], FailureHandling.CONTINUE_ON_FAILURE) *//***************************end warehouse shipping***********************//*
+}*/
 
 
 

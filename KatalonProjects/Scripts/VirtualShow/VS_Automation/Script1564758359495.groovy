@@ -2,6 +2,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import java.text.DateFormat
+import java.text.SimpleDateFormat
+
 import org.openqa.selenium.By as By
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.Keys
@@ -58,11 +61,36 @@ List<WebElement> presentList = new ArrayList()
 List<WebElement> allList = new ArrayList()
 
 /****************************************************/
-String vsyear = (findTestData('virtualShowData').getValue('vsyear', 1)) 
+/***************getting DTY eleigible date: Two days after today*************/
+DateFormat dfMM = new SimpleDateFormat('MM')
+
+DateFormat dfDD = new SimpleDateFormat('dd')
+
+DateFormat dfYYYY = new SimpleDateFormat('yyyy')
+
+Date today = Calendar.getInstance().getTime()
+
+Calendar c = Calendar.getInstance()
+
+c.setTime(today)
+
+c.add(Calendar.DATE, 0) //Two days after today
+
+Date newShowDate = c.getTime()
+
+//String todayAsString = df.format(currentDatePlusOne);
+String vsyear = dfYYYY.format(newShowDate)
+
+String vsmonth = dfMM.format(newShowDate)
+
+String vsday = dfDD.format(newShowDate)
+println UtilityMethods.concat("from DTY: ", vsday, " ", vsmonth, " ", vsyear)
+/***************end getting DTY eleigible date*********/
+/*String vsyear = (findTestData('virtualShowData').getValue('vsyear', 1)) 
 
 String vsmonth = (findTestData('virtualShowData').getValue('vsmonth', 1)) 
 
-String vsday = (findTestData('virtualShowData').getValue('vsday', 1)) 
+String vsday = (findTestData('virtualShowData').getValue('vsday', 1)) */
 
 WebUI.callTestCase(findTestCase('VirtualShow/createShow'), [('testEnvt') : '', ('username') : '', ('password') : '', ('stylist') : ''
         , ('hostess') : '', ('cohostess') : '', ('guest1') : '', ('guest2') : '', ('verifyHostess') : '', ('verifyCohostess') : ''
@@ -211,7 +239,8 @@ if (userLogin.size() == 0) {
     WebUI.refresh()
 }
 
-List<WebElement> listElement1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'), 
+/*********************new rsvp changes: direct login without any type of rsvp*********************?
+/*List<WebElement> listElement1 = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/div_Update your RSVP'), 
     5)
 
 'Validating invited guest\'s \'Yes\' RSVP\r\n'
@@ -235,7 +264,7 @@ if (listElement1.empty) {
     println('RSVP is updated previously')
 }
 
-/***************updating lists***-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->***/
+*//***************updating lists***-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->***//*
 maybeList.add(guest1Obj)
 
 noreplyList.remove(guest1Obj)
@@ -268,7 +297,7 @@ WebUI.delay(4)
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/Page_Show microsite/h2_Sorry you cant make it.'), 
     'Sorry you can\'t make it.')
 
-/***************updating lists***-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->***/
+*//***************updating lists***-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->***//*
 noList.add(guest1Obj)
 
 maybeList.remove(guest1Obj)
@@ -278,7 +307,7 @@ WebUI.switchToWindowIndex(currentTab + 1)
 
 //UtilityMethods.validateGuestsListDashboard(yesList, noList, maybeList, noreplyList, presentList, allList)
 
-/********************************YES and JOIN************************/
+*//********************************YES and JOIN************************//*
 WebUI.switchToWindowIndex(currentTab + 2)
 
 WebUI.delay(2)
@@ -301,7 +330,8 @@ WebUI.delay(4)
 
 WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/showMicrosite/button_join_the_show'),30)))
 //WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))
-
+*/
+/*********************enf new rsvp changes: direct login without any type of rsvp*********************?
 WebUI.delay(3)
 
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'), 

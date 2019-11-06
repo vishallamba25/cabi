@@ -63,5 +63,5 @@ WebUI.delay(5)
 
 TestObject div_cancelled_order= UtilityMethods.createTestObject("div_cancelled_order", '//span[contains(text(), \'', orderID, '\')]/parent::div/parent::div/div[@class=\'table-row-status\']/span')
 println WebUI.getText(div_cancelled_order)
-//WebUI.verifyElementText(div_cancelled_order, "Cancelled")
+WebUI.verifyElementText(div_cancelled_order, "Cancelled")
 

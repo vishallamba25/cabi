@@ -31,7 +31,7 @@
    <testCaseLink>
       <guid>9f11b5f2-cbf8-4b47-9faf-a85a9b8894c3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/VirtualShow/BODTY/DTYVSNotEligible</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

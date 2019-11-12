@@ -89,8 +89,10 @@ if (editButton.size() > 0) {
         assert cancelOrderButton.size() > 0
 		executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/ReplicatedSite/button_yes_cancel_order'), 10));
         //WebUI.click(findTestObject('Object Repository/ReplicatedSite/button_yes_cancel_order'))
-        WebUI.delay(5)
+        WebUI.delay(3)
 		TestObject div_cancelled_order= UtilityMethods.createTestObject("div_cancelled_order", '//span[contains(text(), \'', orderID, '\')]/parent::div/parent::div/div[@class=\'table-row-status\']/span')
+		executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(div_cancelled_order, 10));
+		WebUI.delay(2)
 		println WebUI.getText(div_cancelled_order)
 		WebUI.verifyElementText(div_cancelled_order, "Cancelled")
 		

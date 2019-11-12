@@ -15,6 +15,13 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import commonUtility.UtilityMethods as UtilityMethods
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 /**********vaiable initialization********************/
 String dataFile = 'virtualShowData'
@@ -84,8 +91,6 @@ WebUI.delay(3)
 println(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility')))
 */
 //WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), DTYMsg, FailureHandling.CONTINUE_ON_FAILURE)
-
-
 /*******************************handling same shipping address error********************/
 executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
         10))
@@ -99,23 +104,23 @@ WebUI.delay(3)
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
         5))
 
-
-List<WebElement> span_same_shipping_address_error = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/span_same_shipping_address_error'),
-	5)
+List<WebElement> span_same_shipping_address_error = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/span_same_shipping_address_error'), 
+    5)
 
 if (span_same_shipping_address_error.size() > 0) {
-	executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
-        10))
+    executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
+            10))
 
-WebUI.delay(3)
+    WebUI.delay(3)
 
-WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+    WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
-WebUI.delay(3)
+    WebUI.delay(3)
 
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
-        5))
+    executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
+            5))
 }
+
 /*******************************end handling same shipping address error********************/
 /////////////////////////////////////////////////
 WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_entry'))
@@ -263,31 +268,27 @@ WebUI.delay(3)
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
         5))
 
-
-span_same_shipping_address_error = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/span_same_shipping_address_error'),
-	5)
+span_same_shipping_address_error = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/span_same_shipping_address_error'), 
+    5)
 
 if (span_same_shipping_address_error.size() > 0) {
-	executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
-        10))
+    executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
+            10))
 
-WebUI.delay(3)
+    WebUI.delay(3)
 
-WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+    WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
-WebUI.delay(3)
+    WebUI.delay(3)
 
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
-        5))
+    executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
+            5))
 }
-/*******************************end handling same shipping address error********************/
 
+/*******************************end handling same shipping address error********************/
 driver = DriverFactory.getWebDriver()
 
 executor = ((driver) as JavascriptExecutor)
-
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
-        5))
 
 /////////////////////////////////////////////////
 WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_entry'))
@@ -772,28 +773,24 @@ WebUI.delay(3)
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
         5))
 
-
-span_same_shipping_address_error = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/span_same_shipping_address_error'),
-	5)
+span_same_shipping_address_error = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/span_same_shipping_address_error'), 
+    5)
 
 if (span_same_shipping_address_error.size() > 0) {
-	executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
-        10))
+    executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
+            10))
 
-WebUI.delay(3)
+    WebUI.delay(3)
 
-WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+    WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
-WebUI.delay(3)
+    WebUI.delay(3)
 
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
-        5))
+    executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
+            5))
 }
+
 /*******************************end handling same shipping address error********************/
-
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
-        5))
-
 /////////////////////////////////////////////////
 WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_entry'))
 
@@ -932,28 +929,24 @@ WebUI.delay(3)
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
         5))
 
-
-span_same_shipping_address_error = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/span_same_shipping_address_error'),
-	5)
+span_same_shipping_address_error = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Page_cabi Home/span_same_shipping_address_error'), 
+    5)
 
 if (span_same_shipping_address_error.size() > 0) {
-	executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
-        10))
+    executor.executeScript('arguments[0].click;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 
+            10))
 
-WebUI.delay(3)
+    WebUI.delay(3)
 
-WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
+    WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
-WebUI.delay(3)
+    WebUI.delay(3)
 
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
-        5))
+    executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
+            5))
 }
+
 /*******************************end handling same shipping address error********************/
-
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
-        5))
-
 /////////////////////////////////////////////////
 WebUI.click(findTestObject('Object Repository/Page_cabi Retail Store/span_quick_entry'))
 
@@ -1061,44 +1054,6 @@ WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/a_back_to_order
 
 WebUI.delay(2)
 
-/*************DTY order warehouse shipping*****************/
-/*
-buttonEditDTYOptedOrder = UtilityMethods.createTestObject('buttonEditDTYOptedOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'',
-	g1Var, '\')]/parent::td/following-sibling::td[@class=\'column-order\']/a')
-
-String DTYOrderID = WebUI.getText(buttonEditDTYOptedOrder)
-println DTYOrderID
-println WebUI.getText(buttonEditDTYOptedOrder)
-
-int currentTab = WebUI.getWindowIndex()
-executor.executeScript('window.open();')
-WebUI.switchToWindowIndex(currentTab + 1)
-
-
-WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('orderId') : DTYOrderID], FailureHandling.STOP_ON_FAILURE)*/
-/*************Non-DTY order warehouse shipping*****************/
-/*WebUI.switchToWindowIndex(currentTab)
-WebUI.delay(2)
-buttonEditDTYNonOptedOrder = UtilityMethods.createTestObject('buttonEditDTYNonOptedOrder', '//table[@class=\'show-order-table\']/tbody/tr/td/span[contains(text(), \'', 
-    g2Var, '\')]/parent::td/following-sibling::td[@class=\'column-order\']/a')
-
-String NonDTYOrderID = WebUI.getText(buttonEditDTYNonOptedOrder)
-println NonDTYOrderID
-println WebUI.getText(buttonEditDTYNonOptedOrder)
-///////////////Close the Show
-WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/input_close_show'))
-WebUI.click(findTestObject('Object Repository/Page_cabi Shipping/input_close_show_confirm'))*/
-
-/*
-println(ship)
-String shipString = 'no'
-shipString = ship
-if (shipString.equalsIgnoreCase('y')) {
-    *//***************************warehouse shipping***************************//*
-    WebUI.callTestCase(findTestCase('NewArrival/warehouseShipping'), [('showId') : orderID], FailureHandling.CONTINUE_ON_FAILURE) *//***************************end warehouse shipping***********************//*
-}*/
-
-
-
-
+/**********Show Close************/
+WebUI.callTestCase(findTestCase('OrderCreator/showClose'), [:], FailureHandling.STOP_ON_FAILURE)
 

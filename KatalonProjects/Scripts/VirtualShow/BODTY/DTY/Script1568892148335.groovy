@@ -21,7 +21,7 @@ import commonUtility.UtilityMethods as UtilityMethods
 import internal.GlobalVariable as GlobalVariable
 
 
-/**********vaiable initialization********************/
+/**********vaiable initialization***********************/
 String dataFile = 'virtualShowData'
 
 String guest1 = findTestData(dataFile).getValue('guest1', 1)

@@ -6,6 +6,9 @@ import org.testng.asserts.SoftAssert
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+
+WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/showOrderShipping/a_overview'),30)))
+WebUI.delay(1)
 WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/showOrderShipping/input_decline_hostess_benefit'),30)))
 WebUI.delay(1)
 WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/showOrderShipping/input_decline_cohostess_benefit'),30)))
@@ -16,7 +19,7 @@ WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.
 
 List<WebElement> yesCloseShow = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/showOrderShipping/button_close_the_show_yes'), 5)
 if (yesCloseShow.size() > 0){
-	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(yesCloseShow))
+	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(yesCloseShow.get(0)))
 }
 
 SoftAssert sa = new SoftAssert()

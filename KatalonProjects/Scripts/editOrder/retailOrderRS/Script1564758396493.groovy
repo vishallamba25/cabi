@@ -78,11 +78,14 @@ WebUI.click(findTestObject('Object Repository/ReplicatedSite/input_my_address_ed
 
 WebUI.waitForElementClickable(findTestObject('ReplicatedSite/button_save_and_continue'), 60)
 
+TestObject savAndContinue = UtilityMethods.createTestObject('savAndContinue', '(//button/span[contains(text(), \'Save and Continue\')])[1]')
+WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(savAndContinue, 30)))
+
 driver = DriverFactory.getWebDriver()
 
 element = driver.findElement(By.xpath('(//button/span[contains(text(), \'Save and Continue\')])[1]'))
-
-executor.executeScript('arguments[0].click();', element)
+executor = ((driver) as JavascriptExecutor)
+//executor.executeScript('arguments[0].click();', element)
 
 WebUI.delay(3)
 

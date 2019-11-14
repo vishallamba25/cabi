@@ -1,0 +1,33 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+DTYVSSuite,Chrome 78.0.3904.70,,2019-11-06 14:57:18,2019-11-06 14:59:29,2m - 11.020s,ERROR
+,,,,,,
+Test Cases/VirtualShow/BODTY/DTYVS,Chrome 78.0.3904.70,,2019-11-06 14:57:21,2019-11-06 14:59:28,2m - 7.166s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.70,,2019-11-06 14:57:23,2019-11-06 14:57:23,0.097s,PASSED
+"dataFile = ""virtualShowData""",Chrome 78.0.3904.70,,2019-11-06 14:57:27,2019-11-06 14:57:27,0.004s,PASSED
+"guest1 = findTestData(dataFile).getValue(""guest1"", 1)",Chrome 78.0.3904.70,,2019-11-06 14:57:27,2019-11-06 14:57:31,4.021s,PASSED
+"guest2 = findTestData(dataFile).getValue(""guest2"", 1)",Chrome 78.0.3904.70,,2019-11-06 14:57:31,2019-11-06 14:57:32,0.130s,PASSED
+"hostess = findTestData(dataFile).getValue(""hostess"", 1)",Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:32,0.135s,PASSED
+"cohostess = findTestData(dataFile).getValue(""cohostess"", 1)",Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:32,0.331s,PASSED
+dfMM = new java.text.SimpleDateFormat(MM),Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:32,0.062s,PASSED
+dfDD = new java.text.SimpleDateFormat(dd),Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:32,0.004s,PASSED
+dfYYYY = new java.text.SimpleDateFormat(yyyy),Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:32,0.004s,PASSED
+today = getInstance().getTime(),Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:32,0.262s,PASSED
+c = Calendar.getInstance(),Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:32,0.002s,PASSED
+c.setTime(today),Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:32,0.002s,PASSED
+"c.add(DATE, 2)",Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:32,0.003s,PASSED
+newShowDate = c.getTime(),Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:32,0.003s,PASSED
+vsyear = dfYYYY.format(newShowDate),Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:32,0.004s,PASSED
+vsmonth = dfMM.format(newShowDate),Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:32,0.002s,PASSED
+vsday = dfDD.format(newShowDate),Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:32,0.002s,PASSED
+"println(UtilityMethods.concat(""from DTY: "", vsday, "" "", vsmonth, "" "", vsyear))",Chrome 78.0.3904.70,,2019-11-06 14:57:32,2019-11-06 14:57:33,0.150s,PASSED
+"callTestCase(findTestCase(""VirtualShow/createShow""), [""testEnvt"":"""", ""username"":"""", ""password"":"""", ""stylist"":"""", ""hostess"":"""", ""cohostess"":"""", ""guest1"":"""", ""guest2"":"""", ""verifyHostess"":"""", ... ], CONTINUE_ON_FAILURE)",Chrome 78.0.3904.70,,2019-11-06 14:57:33,2019-11-06 14:59:20,1m - 47.204s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders""))",Chrome 78.0.3904.70,,2019-11-06 14:59:20,2019-11-06 14:59:21,1.690s,PASSED
+g1Vars = UtilityMethods.splitPersonName(guest1),Chrome 78.0.3904.70,,2019-11-06 14:59:21,2019-11-06 14:59:21,0.001s,PASSED
+"g1Var = UtilityMethods.concat(g1Vars[1], "", "", g1Vars[0])",Chrome 78.0.3904.70,,2019-11-06 14:59:21,2019-11-06 14:59:21,0.001s,PASSED
+"buttonPlaceOrder = UtilityMethods.createTestObject(""buttoPlaceOrder"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", g1Var, ""')]/parent::td/following-sibling::td[1]/button"")",Chrome 78.0.3904.70,,2019-11-06 14:59:21,2019-11-06 14:59:21,0.002s,PASSED
+click(buttonPlaceOrder),Chrome 78.0.3904.70,,2019-11-06 14:59:21,2019-11-06 14:59:25,3.397s,PASSED
+delay(3),Chrome 78.0.3904.70,,2019-11-06 14:59:25,2019-11-06 14:59:28,3.006s,PASSED
+"DTYMsg = ""Hooray! This order is eligible for ""Direct to You"" shipping.""",Chrome 78.0.3904.70,,2019-11-06 14:59:28,2019-11-06 14:59:28,0.001s,PASSED
+"println(getText(findTestObject(""Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility"")))",Chrome 78.0.3904.70,,2019-11-06 14:59:28,2019-11-06 14:59:28,0.074s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility""), DTYMsg, CONTINUE_ON_FAILURE)",Chrome 78.0.3904.70,,2019-11-06 14:59:28,2019-11-06 14:59:28,0.048s,PASSED
+"executor.executeScript(""arguments[0].checked=true;"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""), 10))",Chrome 78.0.3904.70,,2019-11-06 14:59:28,2019-11-06 14:59:28,0.026s,ERROR

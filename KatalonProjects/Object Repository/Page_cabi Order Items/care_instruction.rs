@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//li/label[contains(text(), 'Fabric:')]/parent::li/following-sibling::li/em)[2]</value>
+         <value>//li/label[contains(text(), 'Care instruction:')]/parent::li/following-sibling::li/em</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

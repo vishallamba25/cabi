@@ -147,10 +147,10 @@ if (listElement1.empty) {
 
 WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show'))z
 WebUI.delay(3)*/
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
+WebUI.click(findTestObject('virualShowRSVPOR/dashboard/a_close_mic_alert1'))
 
 WebUI.switchToWindowIndex(currentTab + 1)
-WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
+WebUI.click(findTestObject('virualShowRSVPOR/dashboard/a_close_mic_alert1'))
 
 /****************chatting******************/
 String iMStylist="Hi I am stylistA"

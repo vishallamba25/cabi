@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="DTYVSNESuite" time="212" tests="1" failures="0" errors="0">
+   <testsuite name="DTYVSNESuite" tests="1" failures="0" errors="0" time="212" timestamp="2019-11-06 14:57:18" hostname="user - 10.0.102.44" id="Test Suites/VirtualShowSuites/DTYParallelSuites/DTYVSNESuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowSuites\\DTYParallelSuites\\DTYVSNESuite\\20191106_145708"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowSuites\\DTYParallelSuites\\DTYVSNESuite\\20191106_145708\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 10.0.102.44"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 78.0.3904.70"/>
+         <property name="hostAddress" value="10.0.102.44"/>
+         <property name="sessionId" value="63e2ae9cc96a2e09e76b04ea186921a8"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/VirtualShow/BODTY/DTYVSNotEligible" classname="Test Cases/VirtualShow/BODTY/DTYVSNotEligible" status="PASSED">
+         <system-out><![CDATA[2019-11-06 14:57:20 - [TEST_CASE][PASSED] - Test Cases/VirtualShow/BODTY/DTYVSNotEligible: Test Cases/VirtualShow/BODTY/DTYVSNotEligible
+
+2019-11-06 14:57:21 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-11-06 14:57:22 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-11-06 14:57:22 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-11-06 14:57:26 - [TEST_STEP][PASSED] - sa = new org.testng.asserts.SoftAssert(): null
+
+2019-11-06 14:57:26 - [TEST_STEP][PASSED] - dataFile = "virtualShowData": null
+
+2019-11-06 14:57:26 - [TEST_STEP][PASSED] - guest1 = findTestData(dataFile).getValue("guest1", 1): null
+
+2019-11-06 14:57:30 - [TEST_STEP][PASSED] - guest2 = findTestData(dataFile).getValue("guest2", 1): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - hostess = findTestData(dataFile).getValue("hostess", 1): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - cohostess = findTestData(dataFile).getValue("cohostess", 1): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - dfMM = new java.text.SimpleDateFormat(MM): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - dfDD = new java.text.SimpleDateFormat(dd): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - dfYYYY = new java.text.SimpleDateFormat(yyyy): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - today = getInstance().getTime(): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - c = Calendar.getInstance(): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - c.setTime(today): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - c.add(DATE, 3): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - newShowDate = c.getTime(): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - vsyear = dfYYYY.format(newShowDate): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - vsmonth = dfMM.format(newShowDate): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - vsday = dfDD.format(newShowDate): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - c.add(DATE, -2): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - showEligDate = c.getTime(): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - vsyearElig = dfYYYY.format(showEligDate): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - vsmonthElig = dfMM.format(showEligDate): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - vsdayElig = dfDD.format(showEligDate): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - println(UtilityMethods.concat("from DTY: ", vsday, " ", vsmonth, " ", vsyear)): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("VirtualShow/createShow"), ["testEnvt":"", "username":"", "password":"", "stylist":"", "hostess":"", "cohostess":"", "guest1":"", "guest2":"", "verifyHostess":"", ... ], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/VirtualShow/createShow' successfully
+
+2019-11-06 14:57:32 - [TEST_CASE][PASSED] - Test Cases/VirtualShow/createShow: Test Cases/VirtualShow/createShow
+
+2019-11-06 14:57:34 - [TEST_STEP][PASSED] - dataFile = "virtualShowData": null
+
+2019-11-06 14:57:34 - [TEST_STEP][PASSED] - stylist = findTestData(dataFile).getValue("stylist", 1): null
+
+2019-11-06 14:57:34 - [TEST_STEP][PASSED] - hostess = findTestData(dataFile).getValue("hostess", 1): null
+
+2019-11-06 14:57:35 - [TEST_STEP][PASSED] - cohostess = findTestData(dataFile).getValue("cohostess", 1): null
+
+2019-11-06 14:57:35 - [TEST_STEP][PASSED] - guest1 = findTestData(dataFile).getValue("guest1", 1): null
+
+2019-11-06 14:57:35 - [TEST_STEP][PASSED] - guest2 = findTestData(dataFile).getValue("guest2", 1): null
+
+2019-11-06 14:57:35 - [TEST_STEP][PASSED] - verifyGuestCount = findTestData(dataFile).getValue("verifyGuestCount", 1): null
+
+2019-11-06 14:57:35 - [TEST_STEP][PASSED] - RSTestEnvt = findTestData("envtData").getValue("RSTestEnvt", 1): null
+
+2019-11-06 14:57:35 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-11-06 14:57:36 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-06 14:57:36 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-11-06 14:57:36 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-11-06 14:57:42 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-11-06 14:57:42 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-06 14:57:43 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-06 14:57:43 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-11-06 14:57:43 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-11-06 14:57:44 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-11-06 14:57:44 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-11-06 14:57:44 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-11-06 14:57:44 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-11-06 14:57:44 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-11-06 14:57:46 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-06 14:57:46 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-11-06 14:57:49 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-11-06 14:57:49 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test18.cliotest.com/backoffice/control/main' successfully
+
+2019-11-06 14:58:01 - [MESSAGE][PASSED] - Navigate to 'https://test18.cliotest.com/backoffice/control/main' successfully
+
+2019-11-06 14:58:01 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-11-06 14:58:02 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-11-06 14:58:02 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-11-06 14:58:02 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-11-06 14:58:03 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-11-06 14:58:03 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-11-06 14:58:03 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-11-06 14:58:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-11-06 14:58:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-11-06 14:58:18 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-11-06 14:58:21 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-11-06 14:58:21 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-11-06 14:58:21 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi/span_username"), stylist): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-11-06 14:58:21 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-11-06 14:58:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-11-06 14:58:22 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-11-06 14:58:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-11-06 14:58:26 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-11-06 14:58:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), hostess): Text 'ahostess-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-11-06 14:58:27 - [MESSAGE][PASSED] - Text 'ahostess-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-11-06 14:58:27 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:58:29 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:58:29 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-11-06 14:58:29 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-11-06 14:58:29 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-11-06 14:58:29 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-11-06 14:58:29 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:58:31 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:58:31 - [TEST_STEP][PASSED] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5): null
+
+2019-11-06 14:58:31 - [TEST_STEP][PASSED] - println(validateHostessAddressMsg.size()): null
+
+2019-11-06 14:58:31 - [TEST_STEP][PASSED] - if (validateHostessAddressMsg.isEmpty()): null
+
+2019-11-06 14:58:31 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess"), "3", true): All options with value '3' are selected in object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-11-06 14:58:32 - [MESSAGE][PASSED] - All options with value '3' are selected in object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-11-06 14:58:32 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), cohostess): Text 'bcohost-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-11-06 14:58:32 - [MESSAGE][PASSED] - Text 'bcohost-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-11-06 14:58:32 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:58:34 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:58:34 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-11-06 14:58:34 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-11-06 14:58:34 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-11-06 14:58:35 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-11-06 14:58:35 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-11-06 14:58:38 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-11-06 14:58:38 - [TEST_STEP][PASSED] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5): null
+
+2019-11-06 14:58:38 - [TEST_STEP][PASSED] - if (validateHostessAddressMsg.size() != 4): null
+
+2019-11-06 14:58:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-11-06 14:58:40 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-11-06 14:58:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show' is clicked on
+
+2019-11-06 14:58:40 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show' is clicked on
+
+2019-11-06 14:58:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time' is clicked on
+
+2019-11-06 14:58:41 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time' is clicked on
+
+2019-11-06 14:58:41 - [TEST_STEP][PASSED] - println(UtilityMethods.concat(" ", vsday, " ", vsmonth, " ", vsyear)): null
+
+2019-11-06 14:58:41 - [TEST_STEP][PASSED] - year = vsyear: null
+
+2019-11-06 14:58:41 - [TEST_STEP][PASSED] - month = vsmonth: null
+
+2019-11-06 14:58:41 - [TEST_STEP][PASSED] - day = vsday: null
+
+2019-11-06 14:58:41 - [TEST_STEP][PASSED] - pastdate = findTestData("virtualShowData").getValue("pastdate", 1): null
+
+2019-11-06 14:58:41 - [TEST_STEP][PASSED] - xpath = UtilityMethods.concat("//td[@data-month='" + month - 1 + "' and @data-year='" + year + "']/a[contains(text(), '" + day + "')]"): null
+
+2019-11-06 14:58:41 - [TEST_STEP][PASSED] - dateObj = new com.kms.katalon.core.testobject.TestObject(td_month_year_day): null
+
+2019-11-06 14:58:41 - [TEST_STEP][PASSED] - dateObj.addProperty("xpath", EQUALS, xpath): null
+
+2019-11-06 14:58:41 - [TEST_STEP][PASSED] - monthBound = 12: null
+
+2019-11-06 14:58:41 - [TEST_STEP][PASSED] - dateObjList = findWebElements(dateObj, 5): null
+
+2019-11-06 14:58:41 - [TEST_STEP][PASSED] - while (dateObjList.size() == 0 && monthBound > 0): null
+
+2019-11-06 14:58:41 - [TEST_STEP][PASSED] - click(dateObj): Object: 'td_month_year_day' is clicked on
+
+2019-11-06 14:58:41 - [MESSAGE][PASSED] - Object: 'td_month_year_day' is clicked on
+
+2019-11-06 14:58:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time' is clicked on
+
+2019-11-06 14:58:42 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time' is clicked on
+
+2019-11-06 14:58:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next' is clicked on
+
+2019-11-06 14:58:42 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next' is clicked on
+
+2019-11-06 14:58:42 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-11-06 14:58:47 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-11-06 14:58:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite' is clicked on
+
+2019-11-06 14:58:51 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite' is clicked on
+
+2019-11-06 14:58:51 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), guest1): Text 'guest1-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:51 - [MESSAGE][PASSED] - Text 'guest1-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:51 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:58:53 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:58:53 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:54 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:54 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:54 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:54 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:58:56 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:58:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-11-06 14:58:56 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-11-06 14:58:56 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-11-06 14:59:01 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-11-06 14:59:01 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), guest2): Text 'guest2-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:59:02 - [MESSAGE][PASSED] - Text 'guest2-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:59:02 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:59:04 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:59:04 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:59:04 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:59:04 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:59:04 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:59:04 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:59:06 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-11-06 14:59:06 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:59:08 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - verifyHostess = UtilityMethods.splitPersonName(hostess): null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - verifyCohostess = UtilityMethods.splitPersonName(cohostess): null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - verifyGuest1 = UtilityMethods.splitPersonName(guest1): null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - verifyGuest2 = UtilityMethods.splitPersonName(guest2): null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name"), UtilityMethods.concat(verifyHostess[1], ", ", verifyHostess[0])): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are matched.
+
+2019-11-06 14:59:08 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are matched.
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name"), UtilityMethods.concat(verifyCohostess[1], ", ", verifyCohostess[0])): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name' are matched.
+
+2019-11-06 14:59:08 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name' are matched.
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - listElement = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_guest_name_list"), 5): null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - guestCount = Integer.parseInt(verifyGuestCount): null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - assert listElement.size() == guestCount: null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - for ([i = 0, i < guestCount, (i++)]): null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest1[1], ", ", verifyGuest1[0]))): null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - flag = true: null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest2[1], ", ", verifyGuest2[0]))): null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest1[1], ", ", verifyGuest1[0]))): null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest2[1], ", ", verifyGuest2[0]))): null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - flag = true: null
+
+2019-11-06 14:59:08 - [TEST_STEP][PASSED] - assert flag == true: null
+
+2019-11-06 14:59:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next' is clicked on
+
+2019-11-06 14:59:10 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next' is clicked on
+
+2019-11-06 14:59:10 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-11-06 14:59:15 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-11-06 14:59:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview' is clicked on
+
+2019-11-06 14:59:18 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview' is clicked on
+
+2019-11-06 14:59:18 - [TEST_STEP][PASSED] - showID = getText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text")): Text of object 'Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text' is: 'Show #: 104819867'
+
+2019-11-06 14:59:18 - [MESSAGE][PASSED] - Text of object 'Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text' is: 'Show #: 104819867'
+
+2019-11-06 14:59:18 - [TEST_STEP][PASSED] - rightClick(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/a_Account")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_Account' is right clicked on
+
+2019-11-06 14:59:18 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_Account' is right clicked on
+
+2019-11-06 14:59:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile' is clicked on
+
+2019-11-06 14:59:20 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile' is clicked on
+
+2019-11-06 14:59:20 - [TEST_STEP][PASSED] - rsName = getText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName")): Text of object 'Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName' is: 'MirandaKate'
+
+2019-11-06 14:59:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName' is: 'MirandaKate'
+
+2019-11-06 14:59:20 - [TEST_STEP][PASSED] - micrositeURL = UtilityMethods.createURL(rsName, RSTestEnvt, showID): null
+
+2019-11-06 14:59:21 - [TEST_STEP][PASSED] - println(micrositeURL): null
+
+2019-11-06 14:59:21 - [TEST_STEP][PASSED] - back(): Navigate back successfully
+
+2019-11-06 14:59:22 - [MESSAGE][PASSED] - Navigate back successfully
+
+2019-11-06 14:59:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/VirtualShow/createShow' successfully
+
+2019-11-06 14:59:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders' is clicked on
+
+2019-11-06 14:59:24 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders' is clicked on
+
+2019-11-06 14:59:24 - [TEST_STEP][PASSED] - g1Vars = UtilityMethods.splitPersonName(guest1): null
+
+2019-11-06 14:59:24 - [TEST_STEP][PASSED] - g1Var = UtilityMethods.concat(g1Vars[1], ", ", g1Vars[0]): null
+
+2019-11-06 14:59:24 - [TEST_STEP][PASSED] - buttonPlaceOrder = UtilityMethods.createTestObject("buttoPlaceOrder", "//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '", g1Var, "')]/parent::td/following-sibling::td[1]/button"): null
+
+2019-11-06 14:59:24 - [TEST_STEP][PASSED] - click(buttonPlaceOrder): Object: 'buttoPlaceOrder' is clicked on
+
+2019-11-06 14:59:27 - [MESSAGE][PASSED] - Object: 'buttoPlaceOrder' is clicked on
+
+2019-11-06 14:59:27 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-11-06 14:59:30 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-11-06 14:59:30 - [TEST_STEP][PASSED] - DTYMsg = UtilityMethods.concat("This order will become eligible for "Direct to You" shipping after ", vsmonthElig, "/", vsdayElig, "."): null
+
+2019-11-06 14:59:30 - [TEST_STEP][PASSED] - println(getText(findTestObject("Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility"))): Text of object 'Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility' is: 'This order will become eligible for "Direct to You" shipping after 11/07.'
+
+2019-11-06 14:59:30 - [MESSAGE][PASSED] - Text of object 'Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility' is: 'This order will become eligible for "Direct to You" shipping after 11/07.'
+
+2019-11-06 14:59:30 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility"), DTYMsg, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility' are matched.
+
+2019-11-06 14:59:30 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility' are matched.
+
+2019-11-06 14:59:30 - [TEST_STEP][PASSED] - check(findTestObject("Object Repository/Page_cabi Home/a_same_shipping_address")): Object 'Object Repository/Page_cabi Home/a_same_shipping_address' is checked
+
+2019-11-06 14:59:30 - [MESSAGE][PASSED] - Object 'Object Repository/Page_cabi Home/a_same_shipping_address' is checked
+
+2019-11-06 14:59:30 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-11-06 14:59:33 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-11-06 14:59:33 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-11-06 14:59:33 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-11-06 14:59:33 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/Page_cabi Home/a_order_items"), 5)): null
+
+2019-11-06 14:59:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Retail Store/span_quick_entry")): Object: 'Object Repository/Page_cabi Retail Store/span_quick_entry' is clicked on
+
+2019-11-06 14:59:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Retail Store/span_quick_entry' is clicked on
+
+2019-11-06 14:59:37 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-11-06 14:59:40 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-11-06 14:59:40 - [TEST_STEP][PASSED] - emptyCart = findWebElements(findTestObject("Object Repository/Page_cabi Personal Store/removeFromCart"), 5): Unable to find the element located by 'By.xpath: //*[@id="removeFromCart_0"]/span'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-11-06 14:59:45 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="removeFromCart_0"]/span'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-11-06 14:59:45 - [TEST_STEP][PASSED] - if (emptyCart.size() > 0): null
+
+2019-11-06 14:59:45 - [TEST_STEP][PASSED] - addOnStyle = findTestData("miscData").getValue("addOnStyle", 1): null
+
+2019-11-06 14:59:45 - [TEST_STEP][PASSED] - addOnStyle2 = findTestData("miscData").getValue("addOnStyle", 2): null
+
+2019-11-06 14:59:45 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0"), addOnStyle): Text '3701' is set on object 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-11-06 14:59:45 - [MESSAGE][PASSED] - Text '3701' is set on object 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-11-06 14:59:45 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:59:47 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:59:47 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-11-06 14:59:47 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-11-06 14:59:47 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:59:49 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:59:49 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-11-06 14:59:49 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-11-06 14:59:49 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-11-06 14:59:49 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0'
+
+2019-11-06 14:59:49 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-11-06 14:59:54 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-11-06 14:59:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/selectSize")): Object: 'Object Repository/Page_cabi Order Items/selectSize' is clicked on
+
+2019-11-06 14:59:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/selectSize' is clicked on
+
+2019-11-06 14:59:55 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-11-06 14:59:58 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-11-06 14:59:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/span_Add to Cart")): Object: 'Object Repository/Page_cabi Order Items/span_Add to Cart' is clicked on
+
+2019-11-06 14:59:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/span_Add to Cart' is clicked on
+
+2019-11-06 14:59:58 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-11-06 15:00:03 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-11-06 15:00:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Order Items/a_next")): Object: 'Object Repository/Page_cabi Order Items/a_next' is clicked on
+
+2019-11-06 15:00:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Order Items/a_next' is clicked on
+
+2019-11-06 15:00:03 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-11-06 15:00:06 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-11-06 15:00:06 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Page_cabi Shipping/label_DTYMsg1"), "This order is not yet eligible for "Direct to You" shipping.", CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/Page_cabi Shipping/label_DTYMsg1' are matched.
+
+2019-11-06 15:00:06 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Shipping/label_DTYMsg1' are matched.
+
+2019-11-06 15:00:06 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-06 15:00:07 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-06 15:00:07 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Page_cabi Shipping/label_DTYMsg2"), ""Direct to You" order must be paid by credit card or cabi Gift Card.", CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/Page_cabi Shipping/label_DTYMsg2' are matched.
+
+2019-11-06 15:00:07 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Shipping/label_DTYMsg2' are matched.
+
+2019-11-06 15:00:07 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-06 15:00:08 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-06 15:00:08 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Page_cabi Shipping/label_DTYMsg3"), ""Direct to You" order can start being placed 2 days before the show date.", CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/Page_cabi Shipping/label_DTYMsg3' are matched.
+
+2019-11-06 15:00:08 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Shipping/label_DTYMsg3' are matched.
+
+2019-11-06 15:00:08 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-06 15:00:09 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-06 15:00:09 - [TEST_STEP][PASSED] - hasAtributeDisabled = verifyElementHasAttribute(findTestObject("Object Repository/Page_cabi Shipping/check_as_dty_order"), "disabled", 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Page_cabi Shipping/check_as_dty_order' has attribute 'disabled'
+
+2019-11-06 15:00:09 - [MESSAGE][PASSED] - Object 'Object Repository/Page_cabi Shipping/check_as_dty_order' has attribute 'disabled'
+
+2019-11-06 15:00:09 - [TEST_STEP][PASSED] - if (hasAtributeDisabled): Object 'Object Repository/Page_cabi Shipping/check_as_dty_order' has attribute 'disabled' with value 'true'
+
+2019-11-06 15:00:09 - [TEST_STEP][PASSED] - verifyElementAttributeValue(findTestObject("Object Repository/Page_cabi Shipping/check_as_dty_order"), "disabled", "true", 20): Object 'Object Repository/Page_cabi Shipping/check_as_dty_order' has attribute 'disabled' with value 'true'
+
+2019-11-06 15:00:09 - [MESSAGE][PASSED] - Object 'Object Repository/Page_cabi Shipping/check_as_dty_order' has attribute 'disabled' with value 'true'
+
+2019-11-06 15:00:09 - [TEST_STEP][PASSED] - span_place_dty_order_greys = findWebElements(findTestObject("Object Repository/Page_cabi Shipping/span_place_dty_order_grey"), 20): null
+
+2019-11-06 15:00:09 - [TEST_STEP][PASSED] - if (span_place_dty_order_greys.size() != 1): null
+
+2019-11-06 15:00:09 - [TEST_STEP][PASSED] - verifyElementHasAttribute(findTestObject("Page_cabi Shipping/span_dty_checkmark_grey"), "style", 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Page_cabi Shipping/span_dty_checkmark_grey' has attribute 'style'
+
+2019-11-06 15:00:09 - [MESSAGE][PASSED] - Object 'Object Repository/Page_cabi Shipping/span_dty_checkmark_grey' has attribute 'style'
+
+2019-11-06 15:00:09 - [TEST_STEP][PASSED] - verifyElementAttributeValue(findTestObject("Object Repository/Page_cabi Shipping/span_dty_checkmark_grey"), "style", "background-color: rgb(211, 211, 211); cursor: default;", 20): Object 'Object Repository/Page_cabi Shipping/span_dty_checkmark_grey' has attribute 'style' with value 'background-color: rgb(211, 211, 211); cursor: default;'
+
+2019-11-06 15:00:09 - [MESSAGE][PASSED] - Object 'Object Repository/Page_cabi Shipping/span_dty_checkmark_grey' has attribute 'style' with value 'background-color: rgb(211, 211, 211); cursor: default;'
+
+2019-11-06 15:00:09 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-06 15:00:10 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-06 15:00:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/a_show_order_checkout_next")): Object: 'Object Repository/Page_cabi Shipping/a_show_order_checkout_next' is clicked on
+
+2019-11-06 15:00:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/a_show_order_checkout_next' is clicked on
+
+2019-11-06 15:00:11 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-06 15:00:12 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-06 15:00:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/a_make_first_payment")): Object: 'Object Repository/Page_cabi Shipping/a_make_first_payment' is clicked on
+
+2019-11-06 15:00:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/a_make_first_payment' is clicked on
+
+2019-11-06 15:00:14 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-11-06 15:00:17 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - paymentOptions = findWebElements(findTestObject("Page_cabi Shipping/select_payment_options"), 20): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - get(0).getAttribute(addOnStyle): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - validPayOption = true: null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - for (org.openqa.selenium.WebElement we : paymentOptions): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - option = we.getText(): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - validPayOption = false: null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - if (option.matches(".*[^\d]\d{4}$") || option.equalsIgnoreCase("Gift Card") || option.equalsIgnoreCase("Add New Credit Card") || option.equalsIgnoreCase("Cash") || option.equalsIgnoreCase("Check")): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - validPayOption = true: null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - option = we.getText(): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - validPayOption = false: null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - if (option.matches(".*[^\d]\d{4}$") || option.equalsIgnoreCase("Gift Card") || option.equalsIgnoreCase("Add New Credit Card") || option.equalsIgnoreCase("Cash") || option.equalsIgnoreCase("Check")): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - validPayOption = true: null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - option = we.getText(): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - validPayOption = false: null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - if (option.matches(".*[^\d]\d{4}$") || option.equalsIgnoreCase("Gift Card") || option.equalsIgnoreCase("Add New Credit Card") || option.equalsIgnoreCase("Cash") || option.equalsIgnoreCase("Check")): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - validPayOption = true: null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - option = we.getText(): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - validPayOption = false: null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - if (option.matches(".*[^\d]\d{4}$") || option.equalsIgnoreCase("Gift Card") || option.equalsIgnoreCase("Add New Credit Card") || option.equalsIgnoreCase("Cash") || option.equalsIgnoreCase("Check")): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - validPayOption = true: null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - option = we.getText(): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - validPayOption = false: null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - if (option.matches(".*[^\d]\d{4}$") || option.equalsIgnoreCase("Gift Card") || option.equalsIgnoreCase("Add New Credit Card") || option.equalsIgnoreCase("Cash") || option.equalsIgnoreCase("Check")): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - validPayOption = true: null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - sa.assertTrue(validPayOption): null
+
+2019-11-06 15:00:17 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-11-06 15:00:20 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-11-06 15:00:20 - [TEST_STEP][PASSED] - DTYMsgs = findWebElements(findTestObject("Object Repository/Page_cabi Shipping/li_DTY_payment_info"), 5): null
+
+2019-11-06 15:00:20 - [TEST_STEP][PASSED] - if (DTYMsgs.size() > 0): null
+
+2019-11-06 15:00:20 - [TEST_STEP][PASSED] - sa.assertTrue(false): null
+
+2019-11-06 15:00:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/select_payment_options_select")): Object: 'Object Repository/Page_cabi Shipping/select_payment_options_select' is clicked on
+
+2019-11-06 15:00:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/select_payment_options_select' is clicked on
+
+2019-11-06 15:00:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/select_payment_options_cash")): Object: 'Object Repository/Page_cabi Shipping/select_payment_options_cash' is clicked on
+
+2019-11-06 15:00:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/select_payment_options_cash' is clicked on
+
+2019-11-06 15:00:20 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-06 15:00:21 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-06 15:00:21 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/Page_cabi Shipping/a_review_order"), 10)): null
+
+2019-11-06 15:00:22 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 15:00:24 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 15:00:24 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/Page_cabi Shipping/a_submit_order"), 10)): null
+
+2019-11-06 15:00:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/a_order_view")): Object: 'Object Repository/Page_cabi Shipping/a_order_view' is clicked on
+
+2019-11-06 15:00:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/a_order_view' is clicked on
+
+2019-11-06 15:00:27 - [TEST_STEP][PASSED] - actualOrderStatus = getText(findTestObject("Object Repository/Page_cabi Shipping/span_order_status")): Text of object 'Object Repository/Page_cabi Shipping/span_order_status' is: 'ORDER STATUS : OPEN 
+ORDER # SH708483208  '
+
+2019-11-06 15:00:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_cabi Shipping/span_order_status' is: 'ORDER STATUS : OPEN 
+ORDER # SH708483208  '
+
+2019-11-06 15:00:27 - [TEST_STEP][PASSED] - expectedOrderStatus = "OPEN": null
+
+2019-11-06 15:00:27 - [TEST_STEP][PASSED] - sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus)): null
+
+2019-11-06 15:00:27 - [TEST_STEP][PASSED] - println(actualOrderStatus): null
+
+2019-11-06 15:00:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/a_back_to_orders")): Object: 'Object Repository/Page_cabi Shipping/a_back_to_orders' is clicked on
+
+2019-11-06 15:00:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/a_back_to_orders' is clicked on
+
+2019-11-06 15:00:29 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 15:00:31 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 15:00:31 - [TEST_STEP][PASSED] - ActualDTYNonOptedOrderStatus = getText(UtilityMethods.createTestObject("DTYOptedOrderStatus", "//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '", g1Var, "')]/parent::td/following-sibling::td[@class='order-status']")): Text of object 'DTYOptedOrderStatus' is: 'Completed
+Nov 06 1:29 AM'
+
+2019-11-06 15:00:31 - [MESSAGE][PASSED] - Text of object 'DTYOptedOrderStatus' is: 'Completed
+Nov 06 1:29 AM'
+
+2019-11-06 15:00:31 - [TEST_STEP][PASSED] - sa.assertEquals(ActualDTYNonOptedOrderStatus, "Completed"): null
+
+2019-11-06 15:00:31 - [TEST_STEP][PASSED] - buttonEditDTYOptedOrder = UtilityMethods.createTestObject("buttonEditDTYOptedOrder", "//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '", g1Var, "')]/parent::td/following-sibling::td[@class='column-order']/a"): null
+
+2019-11-06 15:00:31 - [TEST_STEP][PASSED] - click(buttonEditDTYOptedOrder): Object: 'buttonEditDTYOptedOrder' is clicked on
+
+2019-11-06 15:00:34 - [MESSAGE][PASSED] - Object: 'buttonEditDTYOptedOrder' is clicked on
+
+2019-11-06 15:00:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/a_edit_order")): Object: 'Object Repository/Page_cabi Shipping/a_edit_order' is clicked on
+
+2019-11-06 15:00:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/a_edit_order' is clicked on
+
+2019-11-06 15:00:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/a_edit_order_shipping")): Object: 'Object Repository/Page_cabi Shipping/a_edit_order_shipping' is clicked on
+
+2019-11-06 15:00:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/a_edit_order_shipping' is clicked on
+
+2019-11-06 15:00:39 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Page_cabi Shipping/label_DTYMsg1"), "This order is not yet eligible for "Direct to You" shipping.", CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/Page_cabi Shipping/label_DTYMsg1' are matched.
+
+2019-11-06 15:00:40 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Shipping/label_DTYMsg1' are matched.
+
+2019-11-06 15:00:40 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-06 15:00:41 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-06 15:00:41 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Page_cabi Shipping/label_DTYMsg2"), ""Direct to You" order must be paid by credit card or cabi Gift Card.", CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/Page_cabi Shipping/label_DTYMsg2' are matched.
+
+2019-11-06 15:00:41 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Shipping/label_DTYMsg2' are matched.
+
+2019-11-06 15:00:41 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-06 15:00:42 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-06 15:00:42 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/Page_cabi Shipping/label_DTYMsg3"), ""Direct to You" order can start being placed 2 days before the show date.", CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/Page_cabi Shipping/label_DTYMsg3' are matched.
+
+2019-11-06 15:00:42 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Shipping/label_DTYMsg3' are matched.
+
+2019-11-06 15:00:42 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-06 15:00:43 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-06 15:00:43 - [TEST_STEP][PASSED] - hasAtributeDisabled = verifyElementHasAttribute(findTestObject("Object Repository/Page_cabi Shipping/check_as_dty_order"), "disabled", 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Page_cabi Shipping/check_as_dty_order' has attribute 'disabled'
+
+2019-11-06 15:00:43 - [MESSAGE][PASSED] - Object 'Object Repository/Page_cabi Shipping/check_as_dty_order' has attribute 'disabled'
+
+2019-11-06 15:00:43 - [TEST_STEP][PASSED] - if (hasAtributeDisabled): Object 'Object Repository/Page_cabi Shipping/check_as_dty_order' has attribute 'disabled' with value 'true'
+
+2019-11-06 15:00:43 - [TEST_STEP][PASSED] - verifyElementAttributeValue(findTestObject("Object Repository/Page_cabi Shipping/check_as_dty_order"), "disabled", "true", 20): Object 'Object Repository/Page_cabi Shipping/check_as_dty_order' has attribute 'disabled' with value 'true'
+
+2019-11-06 15:00:43 - [MESSAGE][PASSED] - Object 'Object Repository/Page_cabi Shipping/check_as_dty_order' has attribute 'disabled' with value 'true'
+
+2019-11-06 15:00:43 - [TEST_STEP][PASSED] - span_place_dty_order_greys = findWebElements(findTestObject("Object Repository/Page_cabi Shipping/span_place_dty_order_grey"), 20): null
+
+2019-11-06 15:00:43 - [TEST_STEP][PASSED] - if (span_place_dty_order_greys.size() != 1): null
+
+2019-11-06 15:00:43 - [TEST_STEP][PASSED] - verifyElementHasAttribute(findTestObject("Page_cabi Shipping/span_dty_checkmark_grey"), "style", 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Page_cabi Shipping/span_dty_checkmark_grey' has attribute 'style'
+
+2019-11-06 15:00:43 - [MESSAGE][PASSED] - Object 'Object Repository/Page_cabi Shipping/span_dty_checkmark_grey' has attribute 'style'
+
+2019-11-06 15:00:43 - [TEST_STEP][PASSED] - verifyElementAttributeValue(findTestObject("Object Repository/Page_cabi Shipping/span_dty_checkmark_grey"), "style", "background-color: rgb(211, 211, 211); cursor: default;", 20): Object 'Object Repository/Page_cabi Shipping/span_dty_checkmark_grey' has attribute 'style' with value 'background-color: rgb(211, 211, 211); cursor: default;'
+
+2019-11-06 15:00:43 - [MESSAGE][PASSED] - Object 'Object Repository/Page_cabi Shipping/span_dty_checkmark_grey' has attribute 'style' with value 'background-color: rgb(211, 211, 211); cursor: default;'
+
+2019-11-06 15:00:43 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 15:00:45 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 15:00:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi Shipping/a_edit_order_cancel")): Object: 'Object Repository/Page_cabi Shipping/a_edit_order_cancel' is clicked on
+
+2019-11-06 15:00:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Shipping/a_edit_order_cancel' is clicked on
+
+2019-11-06 15:00:49 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-06 15:00:50 - [MESSAGE][PASSED] - Delayed 1 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-11-06 14:57:18 - [TEST_SUITE][PASSED] - DTYVSNESuite: Test Cases/VirtualShow/BODTY/DTYVSNotEligible]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -25,7 +25,9 @@ TestObject to;
 
 
 WebDriver driver = DriverFactory.getWebDriver()
-for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
+int rowNumbers= findTestData('productData').getRowNumbers()
+println rowNumbers
+for (int row = 1; row <= rowNumbers; row++) {
 	WebUI.delay(5)
 	sa= new SoftAssert();
 	
@@ -123,7 +125,7 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 
         WebUI.verifyMatch(Split_Data, findTestData('productData').getValue('Retail', row), true, FailureHandling.CONTINUE_ON_FAILURE)
 
-        String[] sizeRange1 = ['XXS', 'XS', 'S', 'M', 'L', 'XL']
+        String[] sizeRange1 = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL']
 
         String[] sizeRange2 = ['00', '0', '2', '4', '6', '8', '10', '12', '14', '16']
 
@@ -132,6 +134,8 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
         String[] sizeRange4 = ['5', '6', '6.5', '7', '7.5', '8', '8.5', '9', '9.5', '10', '11']
 
         String[] sizeRange5 = ['XS/S', 'M/L']
+		
+		String[] sizeRange6 = ['One Size']
 
         String[] sizeRangeSplit = UtilityMethods.SplitSizes(findTestData('productData').getValue('SzRange', row))
 
@@ -170,7 +174,11 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
                 expectedRange = UtilityMethods.getExpectedRange(sizeRange5, sizeRangeSplit)
 
                 println('XS/S')
-            } else {
+            } else if (actualRange.get(0).toString().equalsIgnoreCase('One Size')) {
+                expectedRange = UtilityMethods.getExpectedRange(sizeRange6, sizeRangeSplit)
+
+                println('One Size')
+            }else {
                 println('else')
 
                 println(actualRange.get(0).toString())
@@ -190,8 +198,16 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
         WebUI.verifyElementText(findTestObject('Page_cabi Order Items/product_title'), findTestData('productData').getValue(
                 'Description', row), FailureHandling.CONTINUE_ON_FAILURE)
 
-        WebUI.verifyElementText(findTestObject('Page_cabi Order Items/product_fabric'), findTestData('productData').getValue(
-                'FinalContent', row), FailureHandling.CONTINUE_ON_FAILURE)
+		String finalContent=findTestData('productData').getValue('FinalContent', row);
+		if(finalContent.equalsIgnoreCase("")){
+			List<WebElement> fContent = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Order Items/product_fabric'), 5)
+			sa.assertTrue(fContent.size() == 0)
+		}
+		else{
+			WebUI.verifyElementText(findTestObject('Page_cabi Order Items/product_fabric'), finalContent, FailureHandling.CONTINUE_ON_FAILURE)
+		}
+		
+        
 
         String actualCasreIntrn = ('<div>' + WebUI.getText(findTestObject('Page_cabi Order Items/care_instruction'))) + 
         '</div>'

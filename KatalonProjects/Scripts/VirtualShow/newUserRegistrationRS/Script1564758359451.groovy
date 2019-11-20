@@ -324,7 +324,8 @@ editStyleList.add('Shoe Sizes:')
 for (int i = 0; i < editStyleList.size(); i++) {
 	TestObject editStyleForm = UtilityMethods.createTestObject('editStyleForm','//span[text()=\'',editStyleList.get(i),'\']/parent::div/following-sibling::div//div[@class=\'drop-text\' and text()=\'',editSizeList.get(i),'\']')
 	
-	WebUI.click(editStyleForm)
+	WebUI.executeJavaScript("arguments[0].click()", Arrays.asList(WebUiCommonHelper.findWebElement(editStyleForm,30)))
+	//WebUI.click(editStyleForm)
 
 	WebUI.delay(3)
 }

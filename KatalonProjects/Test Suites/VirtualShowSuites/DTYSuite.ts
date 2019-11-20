@@ -25,7 +25,7 @@
    <testCaseLink>
       <guid>b99e6704-c539-4c5a-945d-ba717f215cf1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/VirtualShow/BODTY/DTYVS</testCaseId>
    </testCaseLink>
    <testCaseLink>

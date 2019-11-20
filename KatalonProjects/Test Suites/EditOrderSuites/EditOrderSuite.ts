@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>8683407e-edc5-4ff7-ae2c-dd0b7fe7aa6c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/EditOrder-V/rsEditOrderSimple</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -25,7 +25,7 @@
    <testCaseLink>
       <guid>5d38d882-3cac-4d95-85d5-609dd641fac6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/EditOrder-V/rsEditOrderDonation</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -49,7 +49,7 @@
    <testCaseLink>
       <guid>87125a85-7ff1-4727-9d1d-05ea01830a1c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/EditOrder-V/rsEditOrderPartialShip</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -73,7 +73,7 @@
    <testCaseLink>
       <guid>3f4e87c3-3437-4f46-b854-09b2af482d3a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/EditOrder-V/rsEditOrderAddNewItems</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

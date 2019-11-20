@@ -89,15 +89,16 @@ println(WebUI.getText(findTestObject('Object Repository/virualShowRSVPOR/DTY/lab
 
 WebUI.verifyElementText(findTestObject('Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility'), DTYMsg, FailureHandling.CONTINUE_ON_FAILURE)
 
+WebDriver driver = DriverFactory.getWebDriver()
+
+JavascriptExecutor executor = ((driver) as JavascriptExecutor)
 executor.executeScript('arguments[0].checked=true;', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'), 10))
 WebUI.delay(3)
 WebUI.check(findTestObject('Object Repository/Page_cabi Home/a_same_shipping_address'))
 
 WebUI.delay(3)
 
-WebDriver driver = DriverFactory.getWebDriver()
 
-JavascriptExecutor executor = ((driver) as JavascriptExecutor)
 
 executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/Page_cabi Home/a_order_items'), 
         5))

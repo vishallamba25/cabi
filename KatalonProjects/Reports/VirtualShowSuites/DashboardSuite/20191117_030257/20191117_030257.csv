@@ -1,0 +1,143 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+DashboardSuite,Chrome 78.0.3904.97,,2019-11-17 03:03:00,2019-11-17 03:05:50,2m - 50.250s,ERROR
+,,,,,,
+Test Cases/VirtualShow/newUserRegistrationRS,Chrome 78.0.3904.97,,2019-11-17 03:03:00,2019-11-17 03:05:49,2m - 49.152s,ERROR
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.97,,2019-11-17 03:03:01,2019-11-17 03:03:01,0.053s,PASSED
+"RSURL = findTestData(""envtData"").getValue(""RSURL"", 1)",Chrome 78.0.3904.97,/**********Faker initialization for Random Names********************/,2019-11-17 03:03:02,2019-11-17 03:03:02,0.099s,PASSED
+"RSuser = findTestData(""credData"").getValue(""RSuser"", 1)",Chrome 78.0.3904.97,,2019-11-17 03:03:02,2019-11-17 03:03:02,0.078s,PASSED
+"RSTestEnvt = findTestData(""envtData"").getValue(""RSTestEnvt"", 1)",Chrome 78.0.3904.97,,2019-11-17 03:03:02,2019-11-17 03:03:02,0.062s,PASSED
+faker = new com.github.javafaker.Faker(),Chrome 78.0.3904.97,,2019-11-17 03:03:02,2019-11-17 03:03:02,0.376s,PASSED
+name = name().fullName(),Chrome 78.0.3904.97,,2019-11-17 03:03:02,2019-11-17 03:03:02,0.008s,PASSED
+firstName = name.firstName(),Chrome 78.0.3904.97,,2019-11-17 03:03:02,2019-11-17 03:03:02,0.000s,PASSED
+lastName = name().lastName(),Chrome 78.0.3904.97,,2019-11-17 03:03:02,2019-11-17 03:03:02,0.000s,PASSED
+email = internet.emailAddress(),Chrome 78.0.3904.97,,2019-11-17 03:03:02,2019-11-17 03:03:03,0.027s,PASSED
+"openBrowser("""")",Chrome 78.0.3904.97,,2019-11-17 03:03:03,2019-11-17 03:03:06,3.391s,PASSED
+maximizeWindow(),Chrome 78.0.3904.97,,2019-11-17 03:03:06,2019-11-17 03:03:07,1.062s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,/**********Setting Vhost********************/,2019-11-17 03:03:07,2019-11-17 03:03:16,9.411s,PASSED
+navigateToUrl(RSURL),Chrome 78.0.3904.97,,2019-11-17 03:03:16,2019-11-17 03:03:28,11.553s,PASSED
+"loginURL = UtilityMethods.concat(""https://mirandakate."", RSTestEnvt, "".com/?component=account.login-gateway"")",Chrome 78.0.3904.97,/**********Creating login on RS for new user********************/,2019-11-17 03:03:28,2019-11-17 03:03:28,0.002s,PASSED
+navigateToUrl(loginURL),Chrome 78.0.3904.97,,2019-11-17 03:03:28,2019-11-17 03:03:31,2.968s,PASSED
+"setText(findTestObject(""ReplicatedSite/rs_Page_Trendy/input_Sign in  Create account_email""), email)",Chrome 78.0.3904.97,,2019-11-17 03:03:31,2019-11-17 03:03:33,2.106s,PASSED
+"click(findTestObject(""ReplicatedSite/rs_Page_Trendy/button_Continue""))",Chrome 78.0.3904.97,,2019-11-17 03:03:33,2019-11-17 03:03:33,0.119s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-17 03:03:33,2019-11-17 03:03:38,5.018s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/rsFirstName""))",Chrome 78.0.3904.97,,2019-11-17 03:03:38,2019-11-17 03:03:38,0.126s,PASSED
+"setText(findTestObject(""ReplicatedSite/rsNewUser/rsFirstName""), firstName)",Chrome 78.0.3904.97,,2019-11-17 03:03:38,2019-11-17 03:03:38,0.195s,PASSED
+"setText(findTestObject(""ReplicatedSite/rsNewUser/rsLastName""), lastName)",Chrome 78.0.3904.97,,2019-11-17 03:03:38,2019-11-17 03:03:39,0.241s,PASSED
+"setText(findTestObject(""ReplicatedSite/rsNewUser/rsPassword""), ""blackdress19"")",Chrome 78.0.3904.97,,2019-11-17 03:03:39,2019-11-17 03:03:39,0.325s,PASSED
+"setText(findTestObject(""ReplicatedSite/rsNewUser/rsConfirmPassword""), ""blackdress19"")",Chrome 78.0.3904.97,,2019-11-17 03:03:39,2019-11-17 03:03:39,0.280s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/noThanksLabel""))",Chrome 78.0.3904.97,,2019-11-17 03:03:39,2019-11-17 03:03:39,0.089s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/continueButton""))",Chrome 78.0.3904.97,,2019-11-17 03:03:39,2019-11-17 03:03:40,0.084s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-17 03:03:40,2019-11-17 03:03:45,5.003s,PASSED
+driver = getWebDriver(),Chrome 78.0.3904.97,,2019-11-17 03:03:45,2019-11-17 03:03:45,0.016s,PASSED
+executor = driver,Chrome 78.0.3904.97,,2019-11-17 03:03:45,2019-11-17 03:03:45,0.031s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/gotItThanks""))",Chrome 78.0.3904.97,,2019-11-17 03:03:45,2019-11-17 03:03:45,0.082s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/setUpMyProfile""))",Chrome 78.0.3904.97,,2019-11-17 03:03:45,2019-11-17 03:03:56,11.212s,PASSED
+"waitForElementClickable(findTestObject(""ReplicatedSite/rsNewUser/dressOftenOption""), 5)",Chrome 78.0.3904.97,,2019-11-17 03:03:56,2019-11-17 03:03:56,0.250s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-17 03:03:56,2019-11-17 03:03:59,3.005s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/dressOftenOption""))",Chrome 78.0.3904.97,,2019-11-17 03:03:59,2019-11-17 03:03:59,0.100s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/dressStyle""))",Chrome 78.0.3904.97,,2019-11-17 03:03:59,2019-11-17 03:03:59,0.105s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/dressShape""))",Chrome 78.0.3904.97,,2019-11-17 03:03:59,2019-11-17 03:03:59,0.141s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/dressAccentuate""))",Chrome 78.0.3904.97,,2019-11-17 03:03:59,2019-11-17 03:04:00,0.087s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/dislikeColors""))",Chrome 78.0.3904.97,,2019-11-17 03:04:00,2019-11-17 03:04:00,0.105s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/dislikePatterns""))",Chrome 78.0.3904.97,,2019-11-17 03:04:00,2019-11-17 03:04:00,0.097s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/continueButtonStyleForm""))",Chrome 78.0.3904.97,,2019-11-17 03:04:00,2019-11-17 03:04:00,0.113s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/topsRadiobutton""), 5)",Chrome 78.0.3904.97,,2019-11-17 03:04:00,2019-11-17 03:04:02,1.736s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-17 03:04:02,2019-11-17 03:04:05,3.003s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/sweatersRadioButton""))",Chrome 78.0.3904.97,,2019-11-17 03:04:05,2019-11-17 03:04:05,0.143s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/bottomsRadioButton""))",Chrome 78.0.3904.97,,2019-11-17 03:04:05,2019-11-17 03:04:05,0.136s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/bottomsRadioButton""))",Chrome 78.0.3904.97,,2019-11-17 03:04:05,2019-11-17 03:04:05,0.080s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/skirtsRadioButton""))",Chrome 78.0.3904.97,,2019-11-17 03:04:05,2019-11-17 03:04:05,0.085s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/dressessRadioButton""))",Chrome 78.0.3904.97,,2019-11-17 03:04:05,2019-11-17 03:04:05,0.117s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/jacketsRadioButton""))",Chrome 78.0.3904.97,,2019-11-17 03:04:05,2019-11-17 03:04:05,0.119s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/continueButtonStyleForm""))",Chrome 78.0.3904.97,,2019-11-17 03:04:05,2019-11-17 03:04:05,0.114s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-17 03:04:05,2019-11-17 03:04:10,5.004s,PASSED
+titleList = new java.util.ArrayList(),Chrome 78.0.3904.97,"/**********Profile Completion Forms for Size,Types of Dresses etc********************/",2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Bust"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Band Size"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.003s,PASSED
+"titleList.add(""Cup Size"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Waist"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Hips"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Inseam"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Tops"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Tops"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Trouser"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Trouser"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Trouser Length"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Jacket"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.000s,PASSED
+"titleList.add(""Jacket"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Skirts"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Skirts"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.002s,PASSED
+"titleList.add(""Dresses"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"titleList.add(""Dresses"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.000s,PASSED
+"titleList.add(""Shoes"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.000s,PASSED
+sizeList = new java.util.ArrayList(),Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"sizeList.add(""35"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.000s,PASSED
+"sizeList.add(""30"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.000s,PASSED
+"sizeList.add(""B"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.000s,PASSED
+"sizeList.add(""28"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.000s,PASSED
+"sizeList.add(""34"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"sizeList.add(""30"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"sizeList.add(""6"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"sizeList.add(""L"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"sizeList.add(""10"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.002s,PASSED
+"sizeList.add(""L"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"sizeList.add(""L"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"sizeList.add(""12"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"sizeList.add(""L"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"sizeList.add(""12"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"sizeList.add(""L"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"sizeList.add(""14"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.000s,PASSED
+"sizeList.add(""L"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.000s,PASSED
+"sizeList.add(""9"")",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:04:10,0.001s,PASSED
+"for ([i = 0, i < titleList.size(), (i++)])",Chrome 78.0.3904.97,,2019-11-17 03:04:10,2019-11-17 03:05:07,56.177s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-17 03:05:07,2019-11-17 03:05:12,5.006s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/continueButtonStyleForm""))",Chrome 78.0.3904.97,,2019-11-17 03:05:12,2019-11-17 03:05:12,0.199s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-17 03:05:12,2019-11-17 03:05:17,5.004s,PASSED
+contactNumber = 3,Chrome 78.0.3904.97,/**********Adding email and contact info********************/,2019-11-17 03:05:17,2019-11-17 03:05:17,0.001s,PASSED
+"address1 = findTestData(""contactData"").getValue(""address1"", contactNumber)",Chrome 78.0.3904.97,,2019-11-17 03:05:17,2019-11-17 03:05:17,0.056s,PASSED
+"city = findTestData(""contactData"").getValue(""city"", contactNumber)",Chrome 78.0.3904.97,,2019-11-17 03:05:17,2019-11-17 03:05:17,0.052s,PASSED
+"state = findTestData(""contactData"").getValue(""state"", contactNumber)",Chrome 78.0.3904.97,,2019-11-17 03:05:17,2019-11-17 03:05:17,0.042s,PASSED
+"zip = findTestData(""contactData"").getValue(""zip"", contactNumber)",Chrome 78.0.3904.97,,2019-11-17 03:05:17,2019-11-17 03:05:17,0.056s,PASSED
+"sendKeys(findTestObject(""ReplicatedSite/rsNewUser/streetAddress1""), address1)",Chrome 78.0.3904.97,,2019-11-17 03:05:17,2019-11-17 03:05:17,0.190s,PASSED
+"sendKeys(findTestObject(""ReplicatedSite/rsNewUser/cityInfo""), city)",Chrome 78.0.3904.97,,2019-11-17 03:05:17,2019-11-17 03:05:17,0.099s,PASSED
+"sendKeys(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/zipCode""), zip)",Chrome 78.0.3904.97,,2019-11-17 03:05:17,2019-11-17 03:05:17,0.103s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-17 03:05:17,2019-11-17 03:05:20,3.002s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/stateDropdownCaret""))",Chrome 78.0.3904.97,,2019-11-17 03:05:20,2019-11-17 03:05:21,0.166s,PASSED
+"addressState = UtilityMethods.createTestObject(""addressState"", ""//div[text()='"", state, ""']"")",Chrome 78.0.3904.97,,2019-11-17 03:05:21,2019-11-17 03:05:21,0.000s,PASSED
+click(addressState),Chrome 78.0.3904.97,,2019-11-17 03:05:21,2019-11-17 03:05:21,0.125s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/continueButtonStyleForm""))",Chrome 78.0.3904.97,,2019-11-17 03:05:21,2019-11-17 03:05:21,0.095s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-17 03:05:21,2019-11-17 03:05:26,5.005s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/profileDropdownButton""))",Chrome 78.0.3904.97,,2019-11-17 03:05:26,2019-11-17 03:05:29,3.207s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-17 03:05:29,2019-11-17 03:05:34,5.003s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/rsNewUser/myProfileLink""))",Chrome 78.0.3904.97,,2019-11-17 03:05:34,2019-11-17 03:05:38,3.793s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-17 03:05:38,2019-11-17 03:05:41,3.002s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/styleSiderbarMenu""))",Chrome 78.0.3904.97,,2019-11-17 03:05:41,2019-11-17 03:05:41,0.127s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/dressOftenOption2""))",Chrome 78.0.3904.97,,2019-11-17 03:05:41,2019-11-17 03:05:42,1.238s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/dressStyle2""))",Chrome 78.0.3904.97,,2019-11-17 03:05:42,2019-11-17 03:05:42,0.183s,PASSED
+"click(findTestObject(""ReplicatedSite/rsNewUser/saveButton""))",Chrome 78.0.3904.97,,2019-11-17 03:05:42,2019-11-17 03:05:43,0.195s,PASSED
+"verifyElementText(findTestObject(""ReplicatedSite/rsNewUser/changesSaved""), ""Your changes have been saved."")",Chrome 78.0.3904.97,,2019-11-17 03:05:43,2019-11-17 03:05:43,0.075s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-17 03:05:43,2019-11-17 03:05:48,5.005s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""ReplicatedSite/rsNewUser/sizeAndMeasurementsTab""), 5))",Chrome 78.0.3904.97,,2019-11-17 03:05:48,2019-11-17 03:05:48,0.077s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""ReplicatedSite/rsNewUser/editBustSize""), 5))",Chrome 78.0.3904.97,,2019-11-17 03:05:48,2019-11-17 03:05:49,1.243s,PASSED
+editSizeList = new java.util.ArrayList(),Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.000s,PASSED
+"editSizeList.add(""35"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.001s,PASSED
+"editSizeList.add(""30"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.001s,PASSED
+"editSizeList.add(""36"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.000s,PASSED
+"editSizeList.add(""32"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.001s,PASSED
+"editSizeList.add(""Extra Large"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.000s,PASSED
+"editSizeList.add(""Medium"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.000s,PASSED
+"editSizeList.add(""Regular"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.001s,PASSED
+"editSizeList.add(""Extra Large"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.000s,PASSED
+"editSizeList.add(""10"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.000s,PASSED
+editStyleList = new java.util.ArrayList(),Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.001s,PASSED
+"editStyleList.add(""Bust Sizes:"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.000s,PASSED
+"editStyleList.add(""Waist Sizes:"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.001s,PASSED
+"editStyleList.add(""Hip Sizes:"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.001s,PASSED
+"editStyleList.add(""Inseam Sizes:"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.000s,PASSED
+"editStyleList.add(""Top Sizes:"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.001s,PASSED
+"editStyleList.add(""Trouser Sizes:"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.000s,PASSED
+"editStyleList.add(""Trouser Length:"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.001s,PASSED
+"editStyleList.add(""Skirt Sizes:"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.000s,PASSED
+"editStyleList.add(""Dress Sizes:"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.000s,PASSED
+"editStyleList.add(""Shoe Sizes:"")",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.001s,PASSED
+"for ([i = 0, i < editStyleList.size(), (i++)])",Chrome 78.0.3904.97,,2019-11-17 03:05:49,2019-11-17 03:05:49,0.044s,ERROR

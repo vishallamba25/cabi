@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>18db96e4-0b64-4c65-af49-4b07c161deee</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/NA_Timezone_Separated/BOPersonal1</testCaseId>
    </testCaseLink>
    <testCaseLink>

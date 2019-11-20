@@ -14,9 +14,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\user\\AppData\\Local\\Temp\\Katalon\\Test Cases\\VirtualShow\\newUserRegistrationRS\\20191104_123405\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\user\\AppData\\Local\\Temp\\Katalon\\Test Cases\\NewArrival\\productVerify\\20191114_154713\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/VirtualShow/newUserRegistrationRS', new TestCaseBinding('Test Cases/VirtualShow/newUserRegistrationRS',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/NewArrival/productVerify', new TestCaseBinding('Test Cases/NewArrival/productVerify',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

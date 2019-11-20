@@ -123,7 +123,7 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
 
         WebUI.verifyMatch(Split_Data, findTestData('productData').getValue('Retail', row), true, FailureHandling.CONTINUE_ON_FAILURE)
 
-        String[] sizeRange1 = ['XXS', 'XS', 'S', 'M', 'L', 'XL']
+        String[] sizeRange1 = ['XXS', 'XS', 'S', 'M', 'L', 'XL','XXL']
 
         String[] sizeRange2 = ['00', '0', '2', '4', '6', '8', '10', '12', '14', '16']
 
@@ -132,6 +132,8 @@ for (int row = 1; row <= findTestData('productData').getRowNumbers(); row++) {
         String[] sizeRange4 = ['5', '6', '6.5', '7', '7.5', '8', '8.5', '9', '9.5', '10', '11']
 
         String[] sizeRange5 = ['XS/S', 'M/L']
+		
+		String[] sizeRange6 = ['One Size']
 
         String[] sizeRangeSplit = UtilityMethods.SplitSizes(findTestData('productData').getValue('SzRange', row))
 

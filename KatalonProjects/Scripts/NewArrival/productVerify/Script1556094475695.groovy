@@ -193,10 +193,11 @@ for (int row = 1; row <= rowNumbers; row++) {
         }
         
         WebUI.delay(2)
-
+		
         WebUI.verifyElementText(findTestObject('Page_cabi Order Items/product_title'), findTestData('productData').getValue(
                 'Description', row), FailureHandling.CONTINUE_ON_FAILURE)
-
+		
+		/**************************final content*****************************************/
 		String finalContent=findTestData('productData').getValue('FinalContent', row);
 		if(finalContent.equalsIgnoreCase("")){
 			List<WebElement> fContent = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Order Items/product_fabric'), 5)
@@ -206,12 +207,22 @@ for (int row = 1; row <= rowNumbers; row++) {
 			WebUI.verifyElementText(findTestObject('Page_cabi Order Items/product_fabric'), finalContent, FailureHandling.CONTINUE_ON_FAILURE)
 		}
 		
+        /**************************care instruction*****************************************/
+		String expectedCasreIntrn=findTestData('productData').getValue('CareInstr', row);
         
+		
+		if(expectedCasreIntrn.equalsIgnoreCase("")){
+			List<WebElement> actualCI = WebUiCommonHelper.findWebElements(findTestObject('Page_cabi Order Items/care_instruction'), 5)
+			sa.assertTrue(actualCI.size() == 0)
+		}
+		else{
+			String actualCasreIntrn = ('<div>' + WebUI.getText(findTestObject('Page_cabi Order Items/care_instruction'))) +
+			'</div>'
+			sa.assertTrue(actualCasreIntrn.equals(expectedCasreIntrn))
+		}
+		/**************************end care instruction*****************************************/
 
-        String actualCasreIntrn = ('<div>' + WebUI.getText(findTestObject('Page_cabi Order Items/care_instruction'))) + 
-        '</div>'
-
-		sa.assertTrue(actualCasreIntrn.equals(findTestData('productData').getValue('CareInstr', row)))
+		
         //assert actualCasreIntrn.equals(findTestData('productData').getValue('CareInstr', row))
     }
 }

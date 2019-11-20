@@ -1,0 +1,390 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+DTYSuite,Chrome 78.0.3904.97,,2019-11-15 14:25:17,2019-11-15 14:36:10,10m - 53.383s,PASSED
+,,,,,,
+Test Cases/VirtualShow/BODTY/DTYVS,Chrome 78.0.3904.97,,2019-11-15 14:25:17,2019-11-15 14:36:09,10m - 52.081s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.97,,2019-11-15 14:25:17,2019-11-15 14:25:18,0.086s,PASSED
+"dataFile = ""virtualShowData""",Chrome 78.0.3904.97,,2019-11-15 14:25:19,2019-11-15 14:25:19,0.002s,PASSED
+"guest1 = findTestData(dataFile).getValue(""guest1"", 1)",Chrome 78.0.3904.97,,2019-11-15 14:25:19,2019-11-15 14:25:20,1.340s,PASSED
+"guest2 = findTestData(dataFile).getValue(""guest2"", 1)",Chrome 78.0.3904.97,,2019-11-15 14:25:20,2019-11-15 14:25:20,0.303s,PASSED
+"hostess = findTestData(dataFile).getValue(""hostess"", 1)",Chrome 78.0.3904.97,,2019-11-15 14:25:20,2019-11-15 14:25:20,0.116s,PASSED
+"cohostess = findTestData(dataFile).getValue(""cohostess"", 1)",Chrome 78.0.3904.97,,2019-11-15 14:25:20,2019-11-15 14:25:21,0.119s,PASSED
+dfMM = new java.text.SimpleDateFormat(MM),Chrome 78.0.3904.97,,2019-11-15 14:25:21,2019-11-15 14:25:21,0.029s,PASSED
+dfDD = new java.text.SimpleDateFormat(dd),Chrome 78.0.3904.97,,2019-11-15 14:25:21,2019-11-15 14:25:21,0.002s,PASSED
+dfYYYY = new java.text.SimpleDateFormat(yyyy),Chrome 78.0.3904.97,,2019-11-15 14:25:21,2019-11-15 14:25:21,0.001s,PASSED
+today = getInstance().getTime(),Chrome 78.0.3904.97,,2019-11-15 14:25:21,2019-11-15 14:25:21,0.036s,PASSED
+c = Calendar.getInstance(),Chrome 78.0.3904.97,,2019-11-15 14:25:21,2019-11-15 14:25:21,0.015s,PASSED
+c.setTime(today),Chrome 78.0.3904.97,,2019-11-15 14:25:21,2019-11-15 14:25:21,0.007s,PASSED
+"c.add(DATE, 2)",Chrome 78.0.3904.97,,2019-11-15 14:25:21,2019-11-15 14:25:21,0.003s,PASSED
+newShowDate = c.getTime(),Chrome 78.0.3904.97,,2019-11-15 14:25:21,2019-11-15 14:25:21,0.003s,PASSED
+vsyear = dfYYYY.format(newShowDate),Chrome 78.0.3904.97,,2019-11-15 14:25:21,2019-11-15 14:25:21,0.006s,PASSED
+vsmonth = dfMM.format(newShowDate),Chrome 78.0.3904.97,,2019-11-15 14:25:21,2019-11-15 14:25:21,0.007s,PASSED
+vsday = dfDD.format(newShowDate),Chrome 78.0.3904.97,,2019-11-15 14:25:21,2019-11-15 14:25:21,0.003s,PASSED
+"println(UtilityMethods.concat(""from DTY: "", vsday, "" "", vsmonth, "" "", vsyear))",Chrome 78.0.3904.97,,2019-11-15 14:25:21,2019-11-15 14:25:21,0.049s,PASSED
+"callTestCase(findTestCase(""VirtualShow/createShow""), [""testEnvt"":"""", ""username"":"""", ""password"":"""", ""stylist"":"""", ""hostess"":"""", ""cohostess"":"""", ""guest1"":"""", ""guest2"":"""", ""verifyHostess"":"""", ... ], CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:25:21,2019-11-15 14:26:53,1m - 32.481s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders""))",Chrome 78.0.3904.97,,2019-11-15 14:26:53,2019-11-15 14:26:55,1.751s,PASSED
+g1Vars = UtilityMethods.splitPersonName(guest1),Chrome 78.0.3904.97,,2019-11-15 14:26:55,2019-11-15 14:26:55,0.002s,PASSED
+"g1Var = UtilityMethods.concat(g1Vars[1], "", "", g1Vars[0])",Chrome 78.0.3904.97,,2019-11-15 14:26:55,2019-11-15 14:26:55,0.001s,PASSED
+"buttonPlaceOrder = UtilityMethods.createTestObject(""buttoPlaceOrder"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", g1Var, ""')]/parent::td/following-sibling::td[1]/button"")",Chrome 78.0.3904.97,,2019-11-15 14:26:55,2019-11-15 14:26:55,0.003s,PASSED
+click(buttonPlaceOrder),Chrome 78.0.3904.97,,2019-11-15 14:26:55,2019-11-15 14:26:58,3.321s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:26:58,2019-11-15 14:27:01,3.003s,PASSED
+"DTYMsg = ""Hooray! This order is eligible for ""Direct to You"" shipping.""",Chrome 78.0.3904.97,,2019-11-15 14:27:01,2019-11-15 14:27:01,0.001s,PASSED
+"println(getText(findTestObject(""Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility"")))",Chrome 78.0.3904.97,,2019-11-15 14:27:01,2019-11-15 14:27:01,0.075s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility""), DTYMsg, CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:27:01,2019-11-15 14:27:01,0.036s,PASSED
+driver = getWebDriver(),Chrome 78.0.3904.97,,2019-11-15 14:27:01,2019-11-15 14:27:01,0.008s,PASSED
+executor = driver,Chrome 78.0.3904.97,,2019-11-15 14:27:01,2019-11-15 14:27:01,0.016s,PASSED
+"executor.executeScript(""arguments[0].checked=true;"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:27:01,2019-11-15 14:27:01,0.028s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:27:01,2019-11-15 14:27:04,3.005s,PASSED
+"check(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""))",Chrome 78.0.3904.97,,2019-11-15 14:27:04,2019-11-15 14:27:05,0.067s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:27:05,2019-11-15 14:27:08,3.005s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_order_items""), 5))",Chrome 78.0.3904.97,,2019-11-15 14:27:08,2019-11-15 14:27:08,0.067s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Retail Store/span_quick_entry""))",Chrome 78.0.3904.97,,2019-11-15 14:27:08,2019-11-15 14:27:12,4.332s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:27:12,2019-11-15 14:27:15,3.003s,PASSED
+"emptyCart = findWebElements(findTestObject(""Object Repository/Page_cabi Personal Store/removeFromCart""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:27:15,2019-11-15 14:27:20,5.237s,PASSED
+if (emptyCart.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:27:20,2019-11-15 14:27:20,0.001s,PASSED
+"addOnStyle = findTestData(""miscData"").getValue(""addOnStyle"", 1)",Chrome 78.0.3904.97,,2019-11-15 14:27:20,2019-11-15 14:27:20,0.044s,PASSED
+"addOnStyle2 = findTestData(""miscData"").getValue(""addOnStyle"", 2)",Chrome 78.0.3904.97,,2019-11-15 14:27:20,2019-11-15 14:27:20,0.022s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), addOnStyle)",Chrome 78.0.3904.97,,2019-11-15 14:27:20,2019-11-15 14:27:20,0.149s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:27:20,2019-11-15 14:27:22,2.004s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 78.0.3904.97,,2019-11-15 14:27:22,2019-11-15 14:27:22,0.063s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:27:22,2019-11-15 14:27:24,2.003s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 78.0.3904.97,,2019-11-15 14:27:24,2019-11-15 14:27:25,0.062s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ENTER))",Chrome 78.0.3904.97,,2019-11-15 14:27:25,2019-11-15 14:27:25,0.056s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:27:25,2019-11-15 14:27:30,5.004s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/selectSize""))",Chrome 78.0.3904.97,,2019-11-15 14:27:30,2019-11-15 14:27:30,0.068s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:27:30,2019-11-15 14:27:33,3.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/span_Add to Cart""))",Chrome 78.0.3904.97,,2019-11-15 14:27:33,2019-11-15 14:27:33,0.112s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:27:33,2019-11-15 14:27:38,5.004s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/a_next""))",Chrome 78.0.3904.97,,2019-11-15 14:27:38,2019-11-15 14:27:38,0.133s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:27:38,2019-11-15 14:27:41,3.004s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_cabi Shipping/label_DTYMsg1""), ""This order is eligible for ""Direct to You"" shipping."", CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:27:41,2019-11-15 14:27:41,0.065s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:27:41,2019-11-15 14:27:42,1.004s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_cabi Shipping/label_DTYMsg2""), """"Direct to You"" order must be paid by credit card or cabi Gift Card."", CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:27:42,2019-11-15 14:27:42,0.062s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:27:42,2019-11-15 14:27:43,1.003s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_cabi Shipping/label_DTYMsg3""), """"Direct to You"" order can start being placed 2 days before the show date."", CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:27:43,2019-11-15 14:27:43,0.082s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:27:43,2019-11-15 14:27:44,1.005s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_show_order_checkout_next""))",Chrome 78.0.3904.97,,2019-11-15 14:27:44,2019-11-15 14:27:45,0.407s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:27:45,2019-11-15 14:27:46,1.005s,PASSED
+"println(getText(findTestObject(""Object Repository/Page_cabi Shipping/div_DTY-warning_popup"")))",Chrome 78.0.3904.97,,2019-11-15 14:27:46,2019-11-15 14:27:46,0.072s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_cabi Shipping/div_DTY-warning_popup""), ""This order is eligible for ""Direct to You"" shipping.
+Do you want to change this order to ""Direct to You"" and ship immediately?"")",Chrome 78.0.3904.97,,2019-11-15 14:27:46,2019-11-15 14:27:46,0.033s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:27:46,2019-11-15 14:27:47,1.004s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/button_DTY_warning_popup_ship_DTY""))",Chrome 78.0.3904.97,,2019-11-15 14:27:47,2019-11-15 14:27:47,0.482s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:27:47,2019-11-15 14:27:48,1.005s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_make_first_payment""))",Chrome 78.0.3904.97,,2019-11-15 14:27:48,2019-11-15 14:27:49,0.870s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:27:49,2019-11-15 14:27:52,3.005s,PASSED
+"paymentOptions = findWebElements(findTestObject(""Page_cabi Shipping/select_payment_options""), 20)",Chrome 78.0.3904.97,,2019-11-15 14:27:52,2019-11-15 14:27:52,0.046s,PASSED
+get(0).getAttribute(addOnStyle),Chrome 78.0.3904.97,,2019-11-15 14:27:52,2019-11-15 14:27:52,0.018s,PASSED
+validPayOption = true,Chrome 78.0.3904.97,,2019-11-15 14:27:52,2019-11-15 14:27:52,0.001s,PASSED
+for (org.openqa.selenium.WebElement we : paymentOptions),Chrome 78.0.3904.97,,2019-11-15 14:27:52,2019-11-15 14:27:52,0.094s,PASSED
+sa = new org.testng.asserts.SoftAssert(),Chrome 78.0.3904.97,,2019-11-15 14:27:52,2019-11-15 14:27:52,0.009s,PASSED
+sa.assertTrue(validPayOption),Chrome 78.0.3904.97,,2019-11-15 14:27:52,2019-11-15 14:27:52,0.007s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_cabi Shipping/li_DTY_payment_info""), """"Direct to You"" orders require payment via credit card or cabi Gift Card."", CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:27:52,2019-11-15 14:27:52,0.045s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:27:52,2019-11-15 14:27:55,3.003s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/showOrderPaeymentCC""), [:], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:27:55,2019-11-15 14:28:10,14.673s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_submit_order""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:28:10,2019-11-15 14:28:11,1.062s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_order_view""))",Chrome 78.0.3904.97,,2019-11-15 14:28:11,2019-11-15 14:28:15,3.745s,PASSED
+"actualOrderStatus = getText(findTestObject(""Object Repository/Page_cabi Shipping/span_order_status""))",Chrome 78.0.3904.97,,2019-11-15 14:28:15,2019-11-15 14:28:15,0.047s,PASSED
+"expectedOrderStatus = ""PENDING SHIPMENT""",Chrome 78.0.3904.97,,2019-11-15 14:28:15,2019-11-15 14:28:15,0.001s,PASSED
+sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus)),Chrome 78.0.3904.97,,2019-11-15 14:28:15,2019-11-15 14:28:15,0.001s,PASSED
+println(actualOrderStatus),Chrome 78.0.3904.97,,2019-11-15 14:28:15,2019-11-15 14:28:15,0.001s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_back_to_orders""))",Chrome 78.0.3904.97,,2019-11-15 14:28:15,2019-11-15 14:28:16,1.266s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:28:16,2019-11-15 14:28:18,2.006s,PASSED
+g2Vars = UtilityMethods.splitPersonName(guest2),Chrome 78.0.3904.97,,2019-11-15 14:28:18,2019-11-15 14:28:18,0.002s,PASSED
+"g2Var = UtilityMethods.concat(g2Vars[1], "", "", g2Vars[0])",Chrome 78.0.3904.97,,2019-11-15 14:28:18,2019-11-15 14:28:18,0.001s,PASSED
+"buttonPlaceOrder = UtilityMethods.createTestObject(""buttoPlaceOrder"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", g2Var, ""')]/parent::td/following-sibling::td[1]/button"")",Chrome 78.0.3904.97,,2019-11-15 14:28:18,2019-11-15 14:28:18,0.001s,PASSED
+click(buttonPlaceOrder),Chrome 78.0.3904.97,,2019-11-15 14:28:18,2019-11-15 14:28:20,2.333s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:28:20,2019-11-15 14:28:23,3.004s,PASSED
+"DTYMsg = ""Hooray! This order is eligible for ""Direct to You"" shipping.""",Chrome 78.0.3904.97,,2019-11-15 14:28:23,2019-11-15 14:28:23,0.001s,PASSED
+"println(getText(findTestObject(""Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility"")))",Chrome 78.0.3904.97,,2019-11-15 14:28:23,2019-11-15 14:28:23,0.061s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility""), DTYMsg, CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:28:23,2019-11-15 14:28:23,0.030s,PASSED
+"executor.executeScript(""arguments[0].checked=true;"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:28:23,2019-11-15 14:28:24,0.021s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:28:24,2019-11-15 14:28:27,3.003s,PASSED
+"check(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""))",Chrome 78.0.3904.97,,2019-11-15 14:28:27,2019-11-15 14:28:27,0.047s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:28:27,2019-11-15 14:28:30,3.004s,PASSED
+driver = getWebDriver(),Chrome 78.0.3904.97,,2019-11-15 14:28:30,2019-11-15 14:28:30,0.001s,PASSED
+executor = driver,Chrome 78.0.3904.97,,2019-11-15 14:28:30,2019-11-15 14:28:30,0.001s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_order_items""), 5))",Chrome 78.0.3904.97,,2019-11-15 14:28:30,2019-11-15 14:28:30,0.053s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Retail Store/span_quick_entry""))",Chrome 78.0.3904.97,,2019-11-15 14:28:30,2019-11-15 14:28:33,3.864s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:28:33,2019-11-15 14:28:36,3.002s,PASSED
+"emptyCart = findWebElements(findTestObject(""Object Repository/Page_cabi Personal Store/removeFromCart""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:28:36,2019-11-15 14:28:42,5.217s,PASSED
+if (emptyCart.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:28:42,2019-11-15 14:28:42,0.001s,PASSED
+"addOnStyle = findTestData(""miscData"").getValue(""addOnStyle"", 1)",Chrome 78.0.3904.97,,2019-11-15 14:28:42,2019-11-15 14:28:42,0.043s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), addOnStyle)",Chrome 78.0.3904.97,,2019-11-15 14:28:42,2019-11-15 14:28:42,0.162s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:28:42,2019-11-15 14:28:44,2.003s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 78.0.3904.97,,2019-11-15 14:28:44,2019-11-15 14:28:44,0.059s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:28:44,2019-11-15 14:28:46,2.002s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 78.0.3904.97,,2019-11-15 14:28:46,2019-11-15 14:28:46,0.060s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ENTER))",Chrome 78.0.3904.97,,2019-11-15 14:28:46,2019-11-15 14:28:46,0.040s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:28:46,2019-11-15 14:28:51,5.005s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/selectSize""))",Chrome 78.0.3904.97,,2019-11-15 14:28:51,2019-11-15 14:28:51,0.084s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:28:51,2019-11-15 14:28:54,3.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/span_Add to Cart""))",Chrome 78.0.3904.97,,2019-11-15 14:28:54,2019-11-15 14:28:54,0.218s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:28:54,2019-11-15 14:28:59,5.001s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/a_next""))",Chrome 78.0.3904.97,,2019-11-15 14:28:59,2019-11-15 14:29:00,0.129s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:29:00,2019-11-15 14:29:03,3.004s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_cabi Shipping/label_DTYMsg1""), ""This order is eligible for ""Direct to You"" shipping."", CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:29:03,2019-11-15 14:29:03,0.067s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:29:03,2019-11-15 14:29:04,1.004s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_cabi Shipping/label_DTYMsg2""), """"Direct to You"" order must be paid by credit card or cabi Gift Card."", CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:29:04,2019-11-15 14:29:04,0.055s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:29:04,2019-11-15 14:29:05,1.002s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_cabi Shipping/label_DTYMsg3""), """"Direct to You"" order can start being placed 2 days before the show date."", CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:29:05,2019-11-15 14:29:05,0.070s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:29:05,2019-11-15 14:29:06,1.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/select_ship_to_guest_add""))",Chrome 78.0.3904.97,,2019-11-15 14:29:06,2019-11-15 14:29:06,0.115s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:29:06,2019-11-15 14:29:11,5.004s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_show_order_checkout_next""))",Chrome 78.0.3904.97,,2019-11-15 14:29:11,2019-11-15 14:29:11,0.140s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:29:11,2019-11-15 14:29:12,1.004s,PASSED
+"println(getText(findTestObject(""Object Repository/Page_cabi Shipping/div_DTY-warning_popup"")))",Chrome 78.0.3904.97,,2019-11-15 14:29:12,2019-11-15 14:29:12,0.061s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_cabi Shipping/div_DTY-warning_popup""), ""This order is eligible for ""Direct to You"" shipping.
+Do you want to change this order to ""Direct to You"" and ship immediately?"")",Chrome 78.0.3904.97,,2019-11-15 14:29:12,2019-11-15 14:29:12,0.042s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:29:12,2019-11-15 14:29:13,1.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/button_DTY_warning_popup_no_ship_DTY""))",Chrome 78.0.3904.97,,2019-11-15 14:29:13,2019-11-15 14:29:13,0.144s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:29:13,2019-11-15 14:29:14,1.005s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_make_first_payment""))",Chrome 78.0.3904.97,,2019-11-15 14:29:14,2019-11-15 14:29:16,1.540s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:29:16,2019-11-15 14:29:19,3.003s,PASSED
+"DTYMsgs = findWebElements(findTestObject(""Object Repository/Page_cabi Shipping/li_DTY_payment_info""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:29:19,2019-11-15 14:29:19,0.040s,PASSED
+if (DTYMsgs.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:29:19,2019-11-15 14:29:19,0.002s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/select_payment_options_select""))",Chrome 78.0.3904.97,,2019-11-15 14:29:19,2019-11-15 14:29:19,0.146s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/select_payment_options_cash""))",Chrome 78.0.3904.97,,2019-11-15 14:29:19,2019-11-15 14:29:19,0.079s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:29:19,2019-11-15 14:29:20,1.004s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_review_order""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:29:20,2019-11-15 14:29:20,0.080s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:29:20,2019-11-15 14:29:22,2.005s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_submit_order""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:29:22,2019-11-15 14:29:23,0.847s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_order_view""))",Chrome 78.0.3904.97,,2019-11-15 14:29:23,2019-11-15 14:29:25,1.564s,PASSED
+"actualOrderStatus = getText(findTestObject(""Object Repository/Page_cabi Shipping/span_order_status""))",Chrome 78.0.3904.97,,2019-11-15 14:29:25,2019-11-15 14:29:25,0.061s,PASSED
+"expectedOrderStatus = ""OPEN""",Chrome 78.0.3904.97,,2019-11-15 14:29:25,2019-11-15 14:29:25,0.001s,PASSED
+sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus)),Chrome 78.0.3904.97,,2019-11-15 14:29:25,2019-11-15 14:29:25,0.000s,PASSED
+println(actualOrderStatus),Chrome 78.0.3904.97,,2019-11-15 14:29:25,2019-11-15 14:29:25,0.001s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_back_to_orders""))",Chrome 78.0.3904.97,,2019-11-15 14:29:25,2019-11-15 14:29:26,1.275s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:29:26,2019-11-15 14:29:28,2.003s,PASSED
+"ActualDTYOptedOrderStatus = getText(UtilityMethods.createTestObject(""DTYOptedOrderStatus"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", g1Var, ""')]/parent::td/following-sibling::td[@class='order-status']""))",Chrome 78.0.3904.97,,2019-11-15 14:29:28,2019-11-15 14:29:28,0.069s,PASSED
+"ActualDTYNonOptedOrderStatus = getText(UtilityMethods.createTestObject(""DTYOptedOrderStatus"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", g2Var, ""')]/parent::td/following-sibling::td[@class='order-status']""))",Chrome 78.0.3904.97,,2019-11-15 14:29:28,2019-11-15 14:29:28,0.039s,PASSED
+"sa.assertEquals(ActualDTYOptedOrderStatus, ""PENDING SHIPMENT"")",Chrome 78.0.3904.97,,2019-11-15 14:29:28,2019-11-15 14:29:28,0.002s,PASSED
+"sa.assertEquals(ActualDTYNonOptedOrderStatus, ""Completed"")",Chrome 78.0.3904.97,,2019-11-15 14:29:28,2019-11-15 14:29:28,0.000s,PASSED
+"buttonEditDTYOptedOrder = UtilityMethods.createTestObject(""buttonEditDTYOptedOrder"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", g1Var, ""')]/parent::td/following-sibling::td[@class='column-order']/a"")",Chrome 78.0.3904.97,,2019-11-15 14:29:28,2019-11-15 14:29:28,0.001s,PASSED
+click(buttonEditDTYOptedOrder),Chrome 78.0.3904.97,,2019-11-15 14:29:28,2019-11-15 14:29:29,1.402s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order""))",Chrome 78.0.3904.97,,2019-11-15 14:29:29,2019-11-15 14:29:33,4.009s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order_shipping""))",Chrome 78.0.3904.97,,2019-11-15 14:29:33,2019-11-15 14:29:34,0.229s,PASSED
+"checkDisabled = verifyElementHasAttribute(findTestObject(""Object Repository/Page_cabi Shipping/check_as_dty_order""), ""disabled"", 20, CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:29:34,2019-11-15 14:29:35,0.911s,PASSED
+"checkChecked = verifyElementHasAttribute(findTestObject(""Object Repository/Page_cabi Shipping/check_as_dty_order""), ""checked"", 20, CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:29:35,2019-11-15 14:29:35,0.028s,PASSED
+if (checkDisabled && checkChecked),Chrome 78.0.3904.97,,2019-11-15 14:29:35,2019-11-15 14:29:35,0.074s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:29:35,2019-11-15 14:29:37,2.002s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order_cancel""))",Chrome 78.0.3904.97,,2019-11-15 14:29:37,2019-11-15 14:29:38,1.663s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:29:38,2019-11-15 14:29:39,1.007s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_invitaions""))",Chrome 78.0.3904.97,,2019-11-15 14:29:39,2019-11-15 14:29:43,3.307s,PASSED
+"guest3 = findTestData(dataFile).getValue(""guest3"", 1)",Chrome 78.0.3904.97,,2019-11-15 14:29:43,2019-11-15 14:29:43,0.035s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guests""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:29:43,2019-11-15 14:29:44,1.634s,PASSED
+"setText(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box""), guest3)",Chrome 78.0.3904.97,,2019-11-15 14:29:44,2019-11-15 14:29:45,0.534s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:29:45,2019-11-15 14:29:47,2.002s,PASSED
+"sendKeys(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box""), Keys.chord(ARROW_DOWN))",Chrome 78.0.3904.97,,2019-11-15 14:29:47,2019-11-15 14:29:47,0.190s,PASSED
+"sendKeys(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box""), Keys.chord(ENTER))",Chrome 78.0.3904.97,,2019-11-15 14:29:47,2019-11-15 14:29:47,0.032s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:29:47,2019-11-15 14:29:49,2.002s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest""))",Chrome 78.0.3904.97,,2019-11-15 14:29:49,2019-11-15 14:29:50,0.466s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:29:50,2019-11-15 14:29:52,2.005s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next""))",Chrome 78.0.3904.97,,2019-11-15 14:29:52,2019-11-15 14:29:53,1.553s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview""))",Chrome 78.0.3904.97,,2019-11-15 14:29:53,2019-11-15 14:29:54,1.266s,PASSED
+"click(findTestObject(""Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders""))",Chrome 78.0.3904.97,,2019-11-15 14:29:54,2019-11-15 14:29:56,1.281s,PASSED
+"buttonEditDTYNonOptedOrder = UtilityMethods.createTestObject(""buttonEditDTYNonOptedOrder"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", g2Var, ""')]/parent::td/following-sibling::td[@class='column-order']/a"")",Chrome 78.0.3904.97,,2019-11-15 14:29:56,2019-11-15 14:29:56,0.001s,PASSED
+click(buttonEditDTYNonOptedOrder),Chrome 78.0.3904.97,,2019-11-15 14:29:56,2019-11-15 14:29:59,2.921s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order""))",Chrome 78.0.3904.97,,2019-11-15 14:29:59,2019-11-15 14:30:03,4.691s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order_shipping""))",Chrome 78.0.3904.97,,2019-11-15 14:30:03,2019-11-15 14:30:04,0.256s,PASSED
+"verifyElementNotHasAttribute(findTestObject(""Object Repository/Page_cabi Shipping/check_as_dty_order""), ""disabled"", 20, CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:30:04,2019-11-15 14:30:04,0.901s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:30:04,2019-11-15 14:30:06,2.002s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order_payments""))",Chrome 78.0.3904.97,,2019-11-15 14:30:06,2019-11-15 14:30:07,0.127s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:30:07,2019-11-15 14:30:10,3.003s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/showOrderPaeymentCC""), [:], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:30:10,2019-11-15 14:30:25,14.940s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order_save_changes""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:30:25,2019-11-15 14:30:25,0.069s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order""))",Chrome 78.0.3904.97,,2019-11-15 14:30:25,2019-11-15 14:30:34,9.470s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order_shipping""))",Chrome 78.0.3904.97,,2019-11-15 14:30:34,2019-11-15 14:30:34,0.262s,PASSED
+"verifyElementNotHasAttribute(findTestObject(""Object Repository/Page_cabi Shipping/check_as_dty_order""), ""disabled"", 20, CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:30:34,2019-11-15 14:30:35,0.892s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/check_as_dty_order""), 5))",Chrome 78.0.3904.97,,2019-11-15 14:30:35,2019-11-15 14:30:36,0.380s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:30:36,2019-11-15 14:30:41,5.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_show_order_checkout_next""))",Chrome 78.0.3904.97,,2019-11-15 14:30:41,2019-11-15 14:30:41,0.148s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:30:41,2019-11-15 14:30:42,1.002s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_review_order""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:30:42,2019-11-15 14:30:42,0.255s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order_save_changes""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:30:42,2019-11-15 14:30:45,2.586s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_back_to_orders""))",Chrome 78.0.3904.97,,2019-11-15 14:30:45,2019-11-15 14:30:48,3.449s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:30:48,2019-11-15 14:30:50,2.004s,PASSED
+g3Vars = UtilityMethods.splitPersonName(guest3),Chrome 78.0.3904.97,,2019-11-15 14:30:50,2019-11-15 14:30:50,0.001s,PASSED
+"g3Var = UtilityMethods.concat(g3Vars[1], "", "", g3Vars[0])",Chrome 78.0.3904.97,,2019-11-15 14:30:50,2019-11-15 14:30:50,0.003s,PASSED
+"buttonPlaceOrder = UtilityMethods.createTestObject(""buttoPlaceOrder"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", g3Var, ""')]/parent::td/following-sibling::td[1]/button"")",Chrome 78.0.3904.97,,2019-11-15 14:30:50,2019-11-15 14:30:50,0.002s,PASSED
+click(buttonPlaceOrder),Chrome 78.0.3904.97,,2019-11-15 14:30:50,2019-11-15 14:30:53,2.620s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:30:53,2019-11-15 14:30:56,3.002s,PASSED
+"DTYMsg = ""Hooray! This order is eligible for ""Direct to You"" shipping.""",Chrome 78.0.3904.97,,2019-11-15 14:30:56,2019-11-15 14:30:56,0.000s,PASSED
+"println(getText(findTestObject(""Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility"")))",Chrome 78.0.3904.97,,2019-11-15 14:30:56,2019-11-15 14:30:56,0.069s,PASSED
+"verifyElementText(findTestObject(""Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility""), DTYMsg, CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:30:56,2019-11-15 14:30:56,0.026s,PASSED
+"executor.executeScript(""arguments[0].checked=true;"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:30:56,2019-11-15 14:30:56,0.022s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:30:56,2019-11-15 14:30:59,3.002s,PASSED
+"check(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""))",Chrome 78.0.3904.97,,2019-11-15 14:30:59,2019-11-15 14:30:59,0.050s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:30:59,2019-11-15 14:31:02,3.003s,PASSED
+driver = getWebDriver(),Chrome 78.0.3904.97,,2019-11-15 14:31:02,2019-11-15 14:31:02,0.001s,PASSED
+executor = driver,Chrome 78.0.3904.97,,2019-11-15 14:31:02,2019-11-15 14:31:02,0.001s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_order_items""), 5))",Chrome 78.0.3904.97,,2019-11-15 14:31:02,2019-11-15 14:31:02,0.065s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Retail Store/span_quick_entry""))",Chrome 78.0.3904.97,,2019-11-15 14:31:02,2019-11-15 14:31:05,3.559s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:31:05,2019-11-15 14:31:08,3.003s,PASSED
+"emptyCart = findWebElements(findTestObject(""Object Repository/Page_cabi Personal Store/removeFromCart""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:31:08,2019-11-15 14:31:14,5.217s,PASSED
+if (emptyCart.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:31:14,2019-11-15 14:31:14,0.001s,PASSED
+"addOnStyle = findTestData(""miscData"").getValue(""addOnStyle"", 1)",Chrome 78.0.3904.97,,2019-11-15 14:31:14,2019-11-15 14:31:14,0.049s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), addOnStyle)",Chrome 78.0.3904.97,,2019-11-15 14:31:14,2019-11-15 14:31:14,0.123s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:31:14,2019-11-15 14:31:16,2.001s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 78.0.3904.97,,2019-11-15 14:31:16,2019-11-15 14:31:16,0.053s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:31:16,2019-11-15 14:31:18,2.001s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 78.0.3904.97,,2019-11-15 14:31:18,2019-11-15 14:31:18,0.074s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ENTER))",Chrome 78.0.3904.97,,2019-11-15 14:31:18,2019-11-15 14:31:18,0.049s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:31:18,2019-11-15 14:31:23,5.004s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/selectSize""))",Chrome 78.0.3904.97,,2019-11-15 14:31:23,2019-11-15 14:31:23,0.081s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:31:23,2019-11-15 14:31:26,3.004s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/span_Add to Cart""))",Chrome 78.0.3904.97,,2019-11-15 14:31:26,2019-11-15 14:31:26,0.130s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:31:26,2019-11-15 14:31:31,5.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/a_next""))",Chrome 78.0.3904.97,,2019-11-15 14:31:31,2019-11-15 14:31:31,0.136s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:31:31,2019-11-15 14:31:34,3.003s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_cabi Shipping/label_DTYMsg1""), ""This order is eligible for ""Direct to You"" shipping."", CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:31:34,2019-11-15 14:31:34,0.062s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:31:34,2019-11-15 14:31:35,1.004s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_cabi Shipping/label_DTYMsg2""), """"Direct to You"" order must be paid by credit card or cabi Gift Card."", CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:31:35,2019-11-15 14:31:36,0.070s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:31:36,2019-11-15 14:31:37,1.001s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_cabi Shipping/label_DTYMsg3""), """"Direct to You"" order can start being placed 2 days before the show date."", CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:31:37,2019-11-15 14:31:37,0.056s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:31:37,2019-11-15 14:31:38,1.002s,PASSED
+"verifyElementNotHasAttribute(findTestObject(""Object Repository/Page_cabi Shipping/select_ship_to_show_loc""), ""disabled"", 20, CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:31:38,2019-11-15 14:31:58,20.766s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/select_ship_to_guest_add""))",Chrome 78.0.3904.97,,2019-11-15 14:31:58,2019-11-15 14:31:59,0.137s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:31:59,2019-11-15 14:32:04,5.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_show_order_checkout_next""))",Chrome 78.0.3904.97,,2019-11-15 14:32:04,2019-11-15 14:32:04,0.141s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:32:04,2019-11-15 14:32:05,1.001s,PASSED
+"println(getText(findTestObject(""Object Repository/Page_cabi Shipping/div_DTY-warning_popup"")))",Chrome 78.0.3904.97,,2019-11-15 14:32:05,2019-11-15 14:32:05,0.071s,PASSED
+"verifyElementText(findTestObject(""Object Repository/Page_cabi Shipping/div_DTY-warning_popup""), ""This order is eligible for ""Direct to You"" shipping.
+Do you want to change this order to ""Direct to You"" and ship immediately?"")",Chrome 78.0.3904.97,,2019-11-15 14:32:05,2019-11-15 14:32:05,0.029s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:32:05,2019-11-15 14:32:06,1.001s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/button_DTY_warning_popup_no_ship_DTY""))",Chrome 78.0.3904.97,,2019-11-15 14:32:06,2019-11-15 14:32:06,0.150s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:32:06,2019-11-15 14:32:07,1.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_make_first_payment""))",Chrome 78.0.3904.97,,2019-11-15 14:32:07,2019-11-15 14:32:09,1.896s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:32:09,2019-11-15 14:32:12,3.002s,PASSED
+"DTYMsgs = findWebElements(findTestObject(""Object Repository/Page_cabi Shipping/li_DTY_payment_info""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:32:12,2019-11-15 14:32:12,0.039s,PASSED
+if (DTYMsgs.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:32:12,2019-11-15 14:32:12,0.000s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/showOrderPaeymentCC""), [:], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:32:12,2019-11-15 14:32:27,15.086s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:32:27,2019-11-15 14:32:29,2.003s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_submit_order""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:32:29,2019-11-15 14:32:29,0.085s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_order_view""))",Chrome 78.0.3904.97,,2019-11-15 14:32:29,2019-11-15 14:32:32,3.419s,PASSED
+"actualOrderStatus = getText(findTestObject(""Object Repository/Page_cabi Shipping/span_order_status""))",Chrome 78.0.3904.97,,2019-11-15 14:32:32,2019-11-15 14:32:33,0.061s,PASSED
+"expectedOrderStatus = ""OPEN""",Chrome 78.0.3904.97,,2019-11-15 14:32:33,2019-11-15 14:32:33,0.000s,PASSED
+sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus)),Chrome 78.0.3904.97,,2019-11-15 14:32:33,2019-11-15 14:32:33,0.000s,PASSED
+println(actualOrderStatus),Chrome 78.0.3904.97,,2019-11-15 14:32:33,2019-11-15 14:32:33,0.000s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_back_to_orders""))",Chrome 78.0.3904.97,,2019-11-15 14:32:33,2019-11-15 14:32:34,1.433s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:32:34,2019-11-15 14:32:36,2.004s,PASSED
+"buttonEditDTYNonOptedOrderCC = UtilityMethods.createTestObject(""buttonEditDTYNonOptedOrderCC"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", g3Var, ""')]/parent::td/following-sibling::td[@class='column-order']/a"")",Chrome 78.0.3904.97,,2019-11-15 14:32:36,2019-11-15 14:32:36,0.000s,PASSED
+click(buttonEditDTYNonOptedOrderCC),Chrome 78.0.3904.97,,2019-11-15 14:32:36,2019-11-15 14:32:39,3.384s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order""))",Chrome 78.0.3904.97,,2019-11-15 14:32:39,2019-11-15 14:32:44,5.093s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order_shipping""))",Chrome 78.0.3904.97,,2019-11-15 14:32:44,2019-11-15 14:32:45,0.315s,PASSED
+"verifyElementNotHasAttribute(findTestObject(""Object Repository/Page_cabi Shipping/check_as_dty_order""), ""disabled"", 20, CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:32:45,2019-11-15 14:32:46,0.826s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/check_as_dty_order""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:32:46,2019-11-15 14:32:46,0.375s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:32:46,2019-11-15 14:32:48,2.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order_payments""))",Chrome 78.0.3904.97,,2019-11-15 14:32:48,2019-11-15 14:32:48,0.119s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:32:48,2019-11-15 14:32:51,3.001s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_review_order""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:32:51,2019-11-15 14:32:51,0.109s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_edit_order_save_changes""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:32:51,2019-11-15 14:32:54,2.905s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:32:54,2019-11-15 14:32:56,2.004s,PASSED
+"actualOrderStatus = getText(findTestObject(""Object Repository/Page_cabi Shipping/span_order_status""))",Chrome 78.0.3904.97,,2019-11-15 14:32:56,2019-11-15 14:32:56,0.069s,PASSED
+"expectedOrderStatus = ""PENDING SHIPMENT""",Chrome 78.0.3904.97,,2019-11-15 14:32:56,2019-11-15 14:32:56,0.000s,PASSED
+sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus)),Chrome 78.0.3904.97,,2019-11-15 14:32:56,2019-11-15 14:32:56,0.000s,PASSED
+println(actualOrderStatus),Chrome 78.0.3904.97,,2019-11-15 14:32:56,2019-11-15 14:32:56,0.001s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_back_to_orders""))",Chrome 78.0.3904.97,,2019-11-15 14:32:56,2019-11-15 14:32:57,1.292s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:32:57,2019-11-15 14:32:59,2.004s,PASSED
+hVars = UtilityMethods.splitPersonName(hostess),Chrome 78.0.3904.97,,2019-11-15 14:32:59,2019-11-15 14:32:59,0.001s,PASSED
+"hVar = UtilityMethods.concat(hVars[1], "", "", hVars[0])",Chrome 78.0.3904.97,,2019-11-15 14:32:59,2019-11-15 14:32:59,0.003s,PASSED
+"buttonPlaceOrder = UtilityMethods.createTestObject(""buttoPlaceOrder"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", hVar, ""')]/parent::td/following-sibling::td[1]/button"")",Chrome 78.0.3904.97,,2019-11-15 14:32:59,2019-11-15 14:32:59,0.002s,PASSED
+click(buttonPlaceOrder),Chrome 78.0.3904.97,,2019-11-15 14:32:59,2019-11-15 14:33:02,2.607s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:33:02,2019-11-15 14:33:05,3.002s,PASSED
+"noDTYMsg = findWebElements(findTestObject(""Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:33:05,2019-11-15 14:33:10,5.195s,PASSED
+if (noDTYMsg.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:33:10,2019-11-15 14:33:10,0.001s,PASSED
+"executor.executeScript(""arguments[0].checked=true;"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:33:10,2019-11-15 14:33:10,0.029s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:33:10,2019-11-15 14:33:13,3.003s,PASSED
+"check(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""))",Chrome 78.0.3904.97,,2019-11-15 14:33:13,2019-11-15 14:33:13,0.057s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:33:13,2019-11-15 14:33:16,3.002s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_order_items""), 5))",Chrome 78.0.3904.97,,2019-11-15 14:33:16,2019-11-15 14:33:16,0.078s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Retail Store/span_quick_entry""))",Chrome 78.0.3904.97,,2019-11-15 14:33:16,2019-11-15 14:33:21,4.065s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:33:21,2019-11-15 14:33:24,3.003s,PASSED
+"emptyCart = findWebElements(findTestObject(""Object Repository/Page_cabi Personal Store/removeFromCart""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:33:24,2019-11-15 14:33:29,5.214s,PASSED
+if (emptyCart.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:33:29,2019-11-15 14:33:29,0.001s,PASSED
+"addOnStyle = findTestData(""miscData"").getValue(""addOnStyle"", 1)",Chrome 78.0.3904.97,,2019-11-15 14:33:29,2019-11-15 14:33:29,0.047s,PASSED
+"addOnStyle2 = findTestData(""miscData"").getValue(""addOnStyle"", 2)",Chrome 78.0.3904.97,,2019-11-15 14:33:29,2019-11-15 14:33:29,0.017s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), addOnStyle)",Chrome 78.0.3904.97,,2019-11-15 14:33:29,2019-11-15 14:33:29,0.105s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:33:29,2019-11-15 14:33:31,2.003s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 78.0.3904.97,,2019-11-15 14:33:31,2019-11-15 14:33:31,0.058s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:33:31,2019-11-15 14:33:33,2.002s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 78.0.3904.97,,2019-11-15 14:33:33,2019-11-15 14:33:33,0.058s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ENTER))",Chrome 78.0.3904.97,,2019-11-15 14:33:33,2019-11-15 14:33:33,0.047s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:33:33,2019-11-15 14:33:38,5.002s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/selectSize""))",Chrome 78.0.3904.97,,2019-11-15 14:33:38,2019-11-15 14:33:38,0.084s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:33:38,2019-11-15 14:33:41,3.002s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/span_Add to Cart""))",Chrome 78.0.3904.97,,2019-11-15 14:33:41,2019-11-15 14:33:41,0.115s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:33:41,2019-11-15 14:33:46,5.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/a_next""))",Chrome 78.0.3904.97,,2019-11-15 14:33:46,2019-11-15 14:33:46,0.141s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:33:46,2019-11-15 14:33:49,3.003s,PASSED
+"noDTYMsg = findWebElements(findTestObject(""Object Repository/Page_cabi Shipping/label_DTYMsg1""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:33:49,2019-11-15 14:33:55,5.214s,PASSED
+if (noDTYMsg.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:33:55,2019-11-15 14:33:55,0.001s,PASSED
+"noDTYCheck = findWebElements(findTestObject(""Object Repository/Page_cabi Shipping/check_as_dty_order""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:33:55,2019-11-15 14:34:00,5.203s,PASSED
+if (noDTYCheck.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:34:00,2019-11-15 14:34:00,0.001s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:34:00,2019-11-15 14:34:05,5.005s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_show_order_checkout_next""))",Chrome 78.0.3904.97,,2019-11-15 14:34:05,2019-11-15 14:34:05,0.186s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:34:05,2019-11-15 14:34:06,1.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_make_first_payment""))",Chrome 78.0.3904.97,,2019-11-15 14:34:06,2019-11-15 14:34:08,1.971s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:34:08,2019-11-15 14:34:11,3.002s,PASSED
+"DTYMsgs = findWebElements(findTestObject(""Object Repository/Page_cabi Shipping/li_DTY_payment_info""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:34:11,2019-11-15 14:34:11,0.054s,PASSED
+if (DTYMsgs.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:34:11,2019-11-15 14:34:11,0.001s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/showOrderPaeymentCC""), [:], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:34:11,2019-11-15 14:34:27,15.669s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:34:27,2019-11-15 14:34:29,2.005s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_submit_order""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:34:29,2019-11-15 14:34:29,0.071s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_order_view""))",Chrome 78.0.3904.97,,2019-11-15 14:34:29,2019-11-15 14:34:33,3.876s,PASSED
+"actualOrderStatus = getText(findTestObject(""Object Repository/Page_cabi Shipping/span_order_status""))",Chrome 78.0.3904.97,,2019-11-15 14:34:33,2019-11-15 14:34:33,0.052s,PASSED
+"expectedOrderStatus = ""OPEN""",Chrome 78.0.3904.97,,2019-11-15 14:34:33,2019-11-15 14:34:33,0.000s,PASSED
+sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus)),Chrome 78.0.3904.97,,2019-11-15 14:34:33,2019-11-15 14:34:33,0.001s,PASSED
+println(actualOrderStatus),Chrome 78.0.3904.97,,2019-11-15 14:34:33,2019-11-15 14:34:33,0.000s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_back_to_orders""))",Chrome 78.0.3904.97,,2019-11-15 14:34:33,2019-11-15 14:34:34,1.523s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:34:34,2019-11-15 14:34:36,2.003s,PASSED
+chVars = UtilityMethods.splitPersonName(cohostess),Chrome 78.0.3904.97,,2019-11-15 14:34:36,2019-11-15 14:34:36,0.000s,PASSED
+"chVar = UtilityMethods.concat(chVars[1], "", "", chVars[0])",Chrome 78.0.3904.97,,2019-11-15 14:34:36,2019-11-15 14:34:36,0.000s,PASSED
+"buttonPlaceOrder = UtilityMethods.createTestObject(""buttoPlaceOrder"", ""//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '"", chVar, ""')]/parent::td/following-sibling::td[1]/button"")",Chrome 78.0.3904.97,,2019-11-15 14:34:36,2019-11-15 14:34:36,0.001s,PASSED
+click(buttonPlaceOrder),Chrome 78.0.3904.97,,2019-11-15 14:34:36,2019-11-15 14:34:39,2.841s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:34:39,2019-11-15 14:34:42,3.004s,PASSED
+"noDTYMsg = findWebElements(findTestObject(""Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:34:42,2019-11-15 14:34:47,5.176s,PASSED
+if (noDTYMsg.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:34:47,2019-11-15 14:34:47,0.003s,PASSED
+"executor.executeScript(""arguments[0].checked=true;"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:34:47,2019-11-15 14:34:47,0.067s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:34:47,2019-11-15 14:34:50,3.002s,PASSED
+"check(findTestObject(""Object Repository/Page_cabi Home/a_same_shipping_address""))",Chrome 78.0.3904.97,,2019-11-15 14:34:50,2019-11-15 14:34:50,0.041s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:34:50,2019-11-15 14:34:53,3.001s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Home/a_order_items""), 5))",Chrome 78.0.3904.97,,2019-11-15 14:34:53,2019-11-15 14:34:53,0.071s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Retail Store/span_quick_entry""))",Chrome 78.0.3904.97,,2019-11-15 14:34:53,2019-11-15 14:34:57,3.819s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:34:57,2019-11-15 14:35:00,3.003s,PASSED
+"emptyCart = findWebElements(findTestObject(""Object Repository/Page_cabi Personal Store/removeFromCart""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:35:00,2019-11-15 14:35:06,5.741s,PASSED
+if (emptyCart.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:35:06,2019-11-15 14:35:06,0.000s,PASSED
+"addOnStyle = findTestData(""miscData"").getValue(""addOnStyle"", 1)",Chrome 78.0.3904.97,,2019-11-15 14:35:06,2019-11-15 14:35:06,0.041s,PASSED
+"addOnStyle2 = findTestData(""miscData"").getValue(""addOnStyle"", 2)",Chrome 78.0.3904.97,,2019-11-15 14:35:06,2019-11-15 14:35:06,0.021s,PASSED
+"setText(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), addOnStyle)",Chrome 78.0.3904.97,,2019-11-15 14:35:06,2019-11-15 14:35:06,0.113s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:35:06,2019-11-15 14:35:08,2.001s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 78.0.3904.97,,2019-11-15 14:35:08,2019-11-15 14:35:08,0.058s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:35:08,2019-11-15 14:35:10,2.002s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ARROW_DOWN))",Chrome 78.0.3904.97,,2019-11-15 14:35:10,2019-11-15 14:35:10,0.037s,PASSED
+"sendKeys(findTestObject(""Object Repository/Page_cabi Create Order/input_Manual Discount_stylelookup_0""), Keys.chord(ENTER))",Chrome 78.0.3904.97,,2019-11-15 14:35:10,2019-11-15 14:35:10,0.044s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:35:10,2019-11-15 14:35:15,5.002s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/selectSize""))",Chrome 78.0.3904.97,,2019-11-15 14:35:15,2019-11-15 14:35:15,0.106s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:35:15,2019-11-15 14:35:18,3.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/span_Add to Cart""))",Chrome 78.0.3904.97,,2019-11-15 14:35:18,2019-11-15 14:35:19,0.115s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:35:19,2019-11-15 14:35:24,5.002s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Order Items/a_next""))",Chrome 78.0.3904.97,,2019-11-15 14:35:24,2019-11-15 14:35:24,0.166s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:35:24,2019-11-15 14:35:27,3.005s,PASSED
+"noDTYMsg = findWebElements(findTestObject(""Object Repository/Page_cabi Shipping/label_DTYMsg1""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:35:27,2019-11-15 14:35:32,5.134s,PASSED
+if (noDTYMsg.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:35:32,2019-11-15 14:35:32,0.000s,PASSED
+"noDTYCheck = findWebElements(findTestObject(""Object Repository/Page_cabi Shipping/check_as_dty_order""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:35:32,2019-11-15 14:35:37,5.169s,PASSED
+if (noDTYCheck.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:35:37,2019-11-15 14:35:37,0.001s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 14:35:37,2019-11-15 14:35:42,5.003s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_show_order_checkout_next""))",Chrome 78.0.3904.97,,2019-11-15 14:35:42,2019-11-15 14:35:42,0.195s,PASSED
+delay(1),Chrome 78.0.3904.97,,2019-11-15 14:35:42,2019-11-15 14:35:43,1.002s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_make_first_payment""))",Chrome 78.0.3904.97,,2019-11-15 14:35:43,2019-11-15 14:35:45,1.526s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 14:35:45,2019-11-15 14:35:48,3.004s,PASSED
+"DTYMsgs = findWebElements(findTestObject(""Object Repository/Page_cabi Shipping/li_DTY_payment_info""), 5)",Chrome 78.0.3904.97,,2019-11-15 14:35:48,2019-11-15 14:35:48,0.043s,PASSED
+if (DTYMsgs.size() > 0),Chrome 78.0.3904.97,,2019-11-15 14:35:48,2019-11-15 14:35:48,0.001s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/showOrderPaeymentCC""), [:], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 14:35:48,2019-11-15 14:36:03,14.910s,PASSED
+"executor.executeScript(""arguments[0].click();"", findWebElement(findTestObject(""Object Repository/Page_cabi Shipping/a_submit_order""), 10))",Chrome 78.0.3904.97,,2019-11-15 14:36:03,2019-11-15 14:36:04,1.435s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_order_view""))",Chrome 78.0.3904.97,,2019-11-15 14:36:04,2019-11-15 14:36:06,1.436s,PASSED
+"actualOrderStatus = getText(findTestObject(""Object Repository/Page_cabi Shipping/span_order_status""))",Chrome 78.0.3904.97,,2019-11-15 14:36:06,2019-11-15 14:36:06,0.070s,PASSED
+"expectedOrderStatus = ""OPEN""",Chrome 78.0.3904.97,,2019-11-15 14:36:06,2019-11-15 14:36:06,0.001s,PASSED
+sa.assertTrue(actualOrderStatus.contains(expectedOrderStatus)),Chrome 78.0.3904.97,,2019-11-15 14:36:06,2019-11-15 14:36:06,0.000s,PASSED
+println(actualOrderStatus),Chrome 78.0.3904.97,,2019-11-15 14:36:06,2019-11-15 14:36:06,0.001s,PASSED
+"click(findTestObject(""Object Repository/Page_cabi Shipping/a_back_to_orders""))",Chrome 78.0.3904.97,,2019-11-15 14:36:06,2019-11-15 14:36:07,1.375s,PASSED
+delay(2),Chrome 78.0.3904.97,,2019-11-15 14:36:07,2019-11-15 14:36:09,2.003s,PASSED

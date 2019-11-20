@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+EditOrderSuite,Chrome 78.0.3904.97,,2019-11-15 15:53:41,2019-11-15 16:04:32,10m - 50.725s,FAILED
+,,,,,,
+Test Cases/EditOrder-V/rsEditOrderGiftCard,Chrome 78.0.3904.97,,2019-11-15 15:53:42,2019-11-15 15:55:54,2m - 11.999s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.97,,2019-11-15 15:53:42,2019-11-15 15:53:42,0.049s,PASSED
+"callTestCase(findTestCase(""EditOrder/retailOrderBO""), [""editScenarioNumber"":3], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:53:43,2019-11-15 15:55:54,2m - 11.242s,FAILED
+,,,,,,
+Test Cases/EditOrder-V/rsEditOrderPartialShip,Chrome 78.0.3904.97,,2019-11-15 15:55:54,2019-11-15 16:00:51,4m - 57.156s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.97,,2019-11-15 15:55:54,2019-11-15 15:55:54,0.004s,PASSED
+"callTestCase(findTestCase(""EditOrder/retailOrderBO""), [""editScenarioNumber"":5], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:55:54,2019-11-15 15:57:58,2m - 4.240s,PASSED
+delay(10),Chrome 78.0.3904.97,,2019-11-15 15:57:58,2019-11-15 15:58:09,10.004s,PASSED
+"callTestCase(findTestCase(""NewArrival/warehouseShipping""), [""orderId"":retailOrderID], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:58:09,2019-11-15 15:59:07,58.727s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:59:07,2019-11-15 15:59:19,11.755s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/rsLogin""), [""RSURL"":"""", ""RSuser"":"""", ""RSpass"":""""], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:59:19,2019-11-15 16:00:17,58.391s,PASSED
+"callTestCase(findTestCase(""EditOrder/rsOrderHistoryConfirm""), [""orderID"":"""", ""editScenarioNumber"":5], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 16:00:17,2019-11-15 16:00:51,33.697s,PASSED
+,,,,,,
+Test Cases/EditOrder-V/rsEditOrderRS,Chrome 78.0.3904.97,,2019-11-15 16:00:51,2019-11-15 16:04:31,3m - 40.227s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.97,,2019-11-15 16:00:51,2019-11-15 16:00:51,0.000s,PASSED
+"openBrowser("""")",Chrome 78.0.3904.97,,2019-11-15 16:00:51,2019-11-15 16:00:54,2.808s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 16:00:54,2019-11-15 16:01:06,12.321s,PASSED
+"callTestCase(findTestCase(""EditOrder/retailOrderRS""), [""addOnStyle"":""""], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 16:01:06,2019-11-15 16:04:31,3m - 24.931s,FAILED

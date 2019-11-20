@@ -68,6 +68,9 @@ public class UtilityMethods {
 				}
 			}
 		}
+		else if(arr.length==1){
+			
+		}
 		else{
 			for(int i=0; i<sizeRange.length; i++){
 				if(sizeRange[i]==arr[0]){

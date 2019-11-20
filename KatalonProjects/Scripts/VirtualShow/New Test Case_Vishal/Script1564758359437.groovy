@@ -228,7 +228,7 @@ WebUI.switchToWindowIndex(currentTab + 1)
 
 WebUI.delay(2)
 
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'), 
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('virualShowRSVPOR/dashboard/a_close_mic_alert1'), 
         5))
 
 UtilityMethods.validateGuestsListDashboard(yesList, noList, maybeList, noreplyList, presentList, allList)
@@ -278,10 +278,10 @@ WebUI.click(findTestObject('Object Repository/showMicrosite/button_join_the_show
 
 WebUI.delay(3)
 
-executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'), 
+executor.executeScript('arguments[0].click();', WebUiCommonHelper.findWebElement(findTestObject('virualShowRSVPOR/dashboard/a_close_mic_alert1'), 
         5))
 
-//WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
+//WebUI.click(findTestObject('virualShowRSVPOR/dashboard/a_close_mic_alert1'))
 /***************updating lists***-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->***/
 guest1Obj.active = true
 

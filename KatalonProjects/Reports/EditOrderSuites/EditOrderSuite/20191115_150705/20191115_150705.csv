@@ -1,0 +1,72 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+EditOrderSuite,Chrome 78.0.3904.97,,2019-11-15 15:07:08,2019-11-15 15:26:43,19m - 34.213s,FAILED
+,,,,,,
+Test Cases/EditOrder-V/rsEditOrderSimple,Chrome 78.0.3904.97,,2019-11-15 15:07:09,2019-11-15 15:12:15,5m - 6.649s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.97,,2019-11-15 15:07:09,2019-11-15 15:07:09,0.046s,PASSED
+"callTestCase(findTestCase(""EditOrder/retailOrderBO""), [""editScenarioNumber"":1], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:07:09,2019-11-15 15:09:21,2m - 11.523s,PASSED
+delay(10),Chrome 78.0.3904.97,,2019-11-15 15:09:21,2019-11-15 15:09:31,10.004s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:09:31,2019-11-15 15:09:41,10.734s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/rsLogin""), [""RSURL"":"""", ""RSuser"":"""", ""RSpass"":""""], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:09:41,2019-11-15 15:10:33,51.368s,PASSED
+"callTestCase(findTestCase(""EditOrder/rsOrderHistoryConfirm""), [""orderID"":"""", ""editScenarioNumber"":1], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:10:33,2019-11-15 15:12:15,1m - 42.623s,PASSED
+,,,,,,
+Test Cases/EditOrder-V/rsEditOrderDonation,Chrome 78.0.3904.97,,2019-11-15 15:12:15,2019-11-15 15:15:44,3m - 28.610s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.97,,2019-11-15 15:12:15,2019-11-15 15:12:15,0.002s,PASSED
+"callTestCase(findTestCase(""EditOrder/retailOrderBO""), [""editScenarioNumber"":4], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:12:16,2019-11-15 15:14:22,2m - 6.710s,PASSED
+delay(10),Chrome 78.0.3904.97,,2019-11-15 15:14:22,2019-11-15 15:14:32,10.002s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/rsLogin""), [""RSURL"":"""", ""RSuser"":"""", ""RSpass"":""""], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:14:32,2019-11-15 15:15:19,46.536s,PASSED
+"callTestCase(findTestCase(""EditOrder/rsOrderHistoryConfirm""), [""orderID"":"""", ""editScenarioNumber"":4], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:15:19,2019-11-15 15:15:44,25.183s,PASSED
+,,,,,,
+Test Cases/EditOrder-V/rsEditOrderGiftCard,Chrome 78.0.3904.97,,2019-11-15 15:15:44,2019-11-15 15:17:47,2m - 3.132s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.97,,2019-11-15 15:15:44,2019-11-15 15:15:44,0.001s,PASSED
+"callTestCase(findTestCase(""EditOrder/retailOrderBO""), [""editScenarioNumber"":3], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:15:44,2019-11-15 15:17:47,2m - 2.737s,FAILED
+,,,,,,
+Test Cases/EditOrder-V/rsEditOrderPartialShip,Chrome 78.0.3904.97,,2019-11-15 15:17:47,2019-11-15 15:19:32,1m - 44.498s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.97,,2019-11-15 15:17:47,2019-11-15 15:17:47,0.005s,PASSED
+"callTestCase(findTestCase(""EditOrder/retailOrderBO""), [""editScenarioNumber"":5], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:17:47,2019-11-15 15:19:32,1m - 44.276s,FAILED
+,,,,,,
+Test Cases/EditOrder-V/rsEditOrderRS,Chrome 78.0.3904.97,,2019-11-15 15:19:32,2019-11-15 15:21:46,2m - 14.038s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.97,,2019-11-15 15:19:32,2019-11-15 15:19:32,0.001s,PASSED
+"openBrowser("""")",Chrome 78.0.3904.97,,2019-11-15 15:19:32,2019-11-15 15:19:35,3.010s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:19:35,2019-11-15 15:19:45,9.816s,PASSED
+"callTestCase(findTestCase(""EditOrder/retailOrderRS""), [""addOnStyle"":""""], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:19:45,2019-11-15 15:21:46,2m - 1.048s,FAILED
+,,,,,,
+Test Cases/EditOrder-V/rsEditOrderAddNewItems,Chrome 78.0.3904.97,,2019-11-15 15:21:46,2019-11-15 15:26:42,4m - 56.061s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.97,,2019-11-15 15:21:46,2019-11-15 15:21:46,0.001s,PASSED
+"openBrowser("""")",Chrome 78.0.3904.97,,2019-11-15 15:21:46,2019-11-15 15:21:49,2.887s,PASSED
+"callTestCase(findTestCase(""EditOrder/retailOrderRS""), [""addOnStyle"":""""], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:21:49,2019-11-15 15:24:19,2m - 29.683s,PASSED
+"verifyElementText(findTestObject(""Object Repository/ReplicatedSite/h1_thanks_msg""), ""Thanks for placing your order!"")",Chrome 78.0.3904.97,,2019-11-15 15:24:19,2019-11-15 15:24:19,0.036s,PASSED
+"orderID = getText(findTestObject(""Object Repository/ReplicatedSite/span_rs_orderid""))",Chrome 78.0.3904.97,,2019-11-15 15:24:19,2019-11-15 15:24:19,0.041s,PASSED
+println(orderID),Chrome 78.0.3904.97,,2019-11-15 15:24:19,2019-11-15 15:24:19,0.001s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/addItemsLink""))",Chrome 78.0.3904.97,,2019-11-15 15:24:19,2019-11-15 15:24:19,0.100s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 15:24:19,2019-11-15 15:24:24,5.002s,PASSED
+title = getWindowTitle(),Chrome 78.0.3904.97,,2019-11-15 15:24:24,2019-11-15 15:24:36,12.247s,PASSED
+"verifyMatch(title, ""Clothes - Cabi Fall 2019 Collection"", true, CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:24:36,2019-11-15 15:24:36,0.007s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/a_cart_svg""))",Chrome 78.0.3904.97,,2019-11-15 15:24:36,2019-11-15 15:24:45,8.942s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 15:24:45,2019-11-15 15:24:50,5.002s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/shopForMoreItemsLink""))",Chrome 78.0.3904.97,,2019-11-15 15:24:50,2019-11-15 15:25:07,17.246s,PASSED
+"verifyMatch(title, ""Clothes - Cabi Fall 2019 Collection"", true, CONTINUE_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:25:07,2019-11-15 15:25:07,0.002s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/a_cart_svg""))",Chrome 78.0.3904.97,,2019-11-15 15:25:07,2019-11-15 15:25:15,8.289s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 15:25:15,2019-11-15 15:25:20,5.002s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/a_update_order""))",Chrome 78.0.3904.97,,2019-11-15 15:25:20,2019-11-15 15:25:21,0.102s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 15:25:21,2019-11-15 15:25:26,5.003s,PASSED
+"callTestCase(findTestCase(""EditOrder/rsUpdateOrder""), [:], STOP_ON_FAILURE)",Chrome 78.0.3904.97,,2019-11-15 15:25:26,2019-11-15 15:26:00,34.693s,PASSED
+delay(3),Chrome 78.0.3904.97,,2019-11-15 15:26:00,2019-11-15 15:26:03,3.002s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/a_cancel_edit""))",Chrome 78.0.3904.97,,2019-11-15 15:26:03,2019-11-15 15:26:03,0.235s,PASSED
+"cancelEditButton = findWebElements(findTestObject(""Object Repository/ReplicatedSite/h2_sure_to_cancel_edit""), 1)",Chrome 78.0.3904.97,,2019-11-15 15:26:03,2019-11-15 15:26:03,0.022s,PASSED
+assert cancelEditButton.size() > 0,Chrome 78.0.3904.97,,2019-11-15 15:26:03,2019-11-15 15:26:03,0.001s,PASSED
+"click(findTestObject(""ReplicatedSite/button_yes_cancel_edit""))",Chrome 78.0.3904.97,,2019-11-15 15:26:03,2019-11-15 15:26:04,0.133s,PASSED
+"xpath = UtilityMethods.concat(""//span[contains(text(), '"", orderID, ""')]/parent::div/parent::div/div[@class='table-row-edit-order']"")",Chrome 78.0.3904.97,,2019-11-15 15:26:04,2019-11-15 15:26:04,0.001s,PASSED
+to = new com.kms.katalon.core.testobject.TestObject(a_edit_link),Chrome 78.0.3904.97,,2019-11-15 15:26:04,2019-11-15 15:26:04,0.000s,PASSED
+"to.addProperty(""xpath"", EQUALS, xpath)",Chrome 78.0.3904.97,,2019-11-15 15:26:04,2019-11-15 15:26:04,0.000s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 15:26:04,2019-11-15 15:26:09,5.002s,PASSED
+println(to.getXpaths()),Chrome 78.0.3904.97,,2019-11-15 15:26:09,2019-11-15 15:26:09,0.001s,PASSED
+click(to),Chrome 78.0.3904.97,,2019-11-15 15:26:09,2019-11-15 15:26:13,4.349s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 15:26:13,2019-11-15 15:26:18,5.001s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/a_cancel_order""))",Chrome 78.0.3904.97,,2019-11-15 15:26:18,2019-11-15 15:26:25,6.634s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 15:26:25,2019-11-15 15:26:30,5.002s,PASSED
+"cancelOrderButton = findWebElements(findTestObject(""Object Repository/ReplicatedSite/h2_sure_to_cancel_order""), 1)",Chrome 78.0.3904.97,,2019-11-15 15:26:30,2019-11-15 15:26:30,0.022s,PASSED
+assert cancelOrderButton.size() > 0,Chrome 78.0.3904.97,,2019-11-15 15:26:30,2019-11-15 15:26:30,0.000s,PASSED
+"click(findTestObject(""Object Repository/ReplicatedSite/button_yes_cancel_order""))",Chrome 78.0.3904.97,,2019-11-15 15:26:30,2019-11-15 15:26:30,0.120s,PASSED
+delay(5),Chrome 78.0.3904.97,,2019-11-15 15:26:30,2019-11-15 15:26:35,5.003s,PASSED
+"div_cancelled_order = UtilityMethods.createTestObject(""div_cancelled_order"", ""//span[contains(text(), '"", orderID, ""')]/parent::div/parent::div/div[@class='table-row-status']/span"")",Chrome 78.0.3904.97,,2019-11-15 15:26:35,2019-11-15 15:26:35,0.001s,PASSED
+println(getText(div_cancelled_order)),Chrome 78.0.3904.97,,2019-11-15 15:26:35,2019-11-15 15:26:42,6.985s,PASSED

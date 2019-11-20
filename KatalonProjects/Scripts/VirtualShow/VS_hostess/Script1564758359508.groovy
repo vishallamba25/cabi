@@ -203,8 +203,8 @@ WebUI.navigateToUrl(GlobalVariable.micrositeURL)
 
 
 WebUI.delay(3)
-executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'), 10));
-//WebUI.click(findTestObject('Object Repository/virualShowRSVPOR/dashboard/a_close_mic_alert'))
+executor.executeScript("arguments[0].click();", WebUiCommonHelper.findWebElement(findTestObject('virualShowRSVPOR/dashboard/a_close_mic_alert1'), 10));
+//WebUI.click(findTestObject('virualShowRSVPOR/dashboard/a_close_mic_alert1'))
 /***************updating lists***-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->-->***/
 hostessObj.active=true;
 hostessObj.micStatus=2;

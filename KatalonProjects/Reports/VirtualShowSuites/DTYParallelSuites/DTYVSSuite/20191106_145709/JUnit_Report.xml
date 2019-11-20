@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="DTYVSSuite" time="131" tests="0" failures="0" errors="1">
+   <testsuite name="DTYVSSuite" tests="0" failures="0" errors="1" time="131" timestamp="2019-11-06 14:57:18" hostname="user - 10.0.102.44" id="Test Suites/VirtualShowSuites/DTYParallelSuites/DTYVSSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowSuites\\DTYParallelSuites\\DTYVSSuite\\20191106_145709"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\VirtualShowSuites\\DTYParallelSuites\\DTYVSSuite\\20191106_145709\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 10.0.102.44"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 78.0.3904.70"/>
+         <property name="hostAddress" value="10.0.102.44"/>
+         <property name="sessionId" value="55a2582e6d4c952e81af72d381e684e2"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/VirtualShow/BODTY/DTYVS" classname="Test Cases/VirtualShow/BODTY/DTYVS" status="ERROR">
+         <error type="ERROR" message="Test Cases/VirtualShow/BODTY/DTYVS FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: executor for class: Script1568892165581
+	at DTYVS.run(DTYVS:92)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573032429999.run(TempTestSuite1573032429999.groovy:35)
+"/>
+         <system-out><![CDATA[2019-11-06 14:57:21 - [TEST_CASE][ERROR] - Test Cases/VirtualShow/BODTY/DTYVS: Test Cases/VirtualShow/BODTY/DTYVS FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: executor for class: Script1568892165581
+	at DTYVS.run(DTYVS:92)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573032429999.run(TempTestSuite1573032429999.groovy:35)
+
+
+2019-11-06 14:57:23 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-11-06 14:57:23 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-11-06 14:57:23 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-11-06 14:57:27 - [TEST_STEP][PASSED] - dataFile = "virtualShowData": null
+
+2019-11-06 14:57:27 - [TEST_STEP][PASSED] - guest1 = findTestData(dataFile).getValue("guest1", 1): null
+
+2019-11-06 14:57:31 - [TEST_STEP][PASSED] - guest2 = findTestData(dataFile).getValue("guest2", 1): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - hostess = findTestData(dataFile).getValue("hostess", 1): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - cohostess = findTestData(dataFile).getValue("cohostess", 1): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - dfMM = new java.text.SimpleDateFormat(MM): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - dfDD = new java.text.SimpleDateFormat(dd): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - dfYYYY = new java.text.SimpleDateFormat(yyyy): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - today = getInstance().getTime(): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - c = Calendar.getInstance(): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - c.setTime(today): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - c.add(DATE, 2): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - newShowDate = c.getTime(): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - vsyear = dfYYYY.format(newShowDate): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - vsmonth = dfMM.format(newShowDate): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - vsday = dfDD.format(newShowDate): null
+
+2019-11-06 14:57:32 - [TEST_STEP][PASSED] - println(UtilityMethods.concat("from DTY: ", vsday, " ", vsmonth, " ", vsyear)): null
+
+2019-11-06 14:57:33 - [TEST_STEP][PASSED] - callTestCase(findTestCase("VirtualShow/createShow"), ["testEnvt":"", "username":"", "password":"", "stylist":"", "hostess":"", "cohostess":"", "guest1":"", "guest2":"", "verifyHostess":"", ... ], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/VirtualShow/createShow' successfully
+
+2019-11-06 14:57:33 - [TEST_CASE][PASSED] - Test Cases/VirtualShow/createShow: Test Cases/VirtualShow/createShow
+
+2019-11-06 14:57:35 - [TEST_STEP][PASSED] - dataFile = "virtualShowData": null
+
+2019-11-06 14:57:35 - [TEST_STEP][PASSED] - stylist = findTestData(dataFile).getValue("stylist", 1): null
+
+2019-11-06 14:57:35 - [TEST_STEP][PASSED] - hostess = findTestData(dataFile).getValue("hostess", 1): null
+
+2019-11-06 14:57:35 - [TEST_STEP][PASSED] - cohostess = findTestData(dataFile).getValue("cohostess", 1): null
+
+2019-11-06 14:57:35 - [TEST_STEP][PASSED] - guest1 = findTestData(dataFile).getValue("guest1", 1): null
+
+2019-11-06 14:57:36 - [TEST_STEP][PASSED] - guest2 = findTestData(dataFile).getValue("guest2", 1): null
+
+2019-11-06 14:57:36 - [TEST_STEP][PASSED] - verifyGuestCount = findTestData(dataFile).getValue("verifyGuestCount", 1): null
+
+2019-11-06 14:57:36 - [TEST_STEP][PASSED] - RSTestEnvt = findTestData("envtData").getValue("RSTestEnvt", 1): null
+
+2019-11-06 14:57:36 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-11-06 14:57:37 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-06 14:57:37 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-11-06 14:57:37 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-11-06 14:57:42 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-11-06 14:57:42 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-06 14:57:43 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-06 14:57:43 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-11-06 14:57:43 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-11-06 14:57:44 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-11-06 14:57:44 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-11-06 14:57:44 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-11-06 14:57:44 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-11-06 14:57:44 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-11-06 14:57:46 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-06 14:57:46 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-11-06 14:57:49 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-11-06 14:57:49 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test18.cliotest.com/backoffice/control/main' successfully
+
+2019-11-06 14:58:01 - [MESSAGE][PASSED] - Navigate to 'https://test18.cliotest.com/backoffice/control/main' successfully
+
+2019-11-06 14:58:01 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-11-06 14:58:02 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-11-06 14:58:02 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-11-06 14:58:02 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-11-06 14:58:03 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-11-06 14:58:03 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-11-06 14:58:04 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-11-06 14:58:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-11-06 14:58:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-11-06 14:58:18 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-11-06 14:58:21 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-11-06 14:58:21 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-11-06 14:58:21 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi/span_username"), stylist): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-11-06 14:58:22 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-11-06 14:58:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-11-06 14:58:22 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-11-06 14:58:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-11-06 14:58:25 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-11-06 14:58:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), hostess): Text 'ahostess-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-11-06 14:58:26 - [MESSAGE][PASSED] - Text 'ahostess-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-11-06 14:58:26 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:58:28 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:58:28 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-11-06 14:58:28 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-11-06 14:58:28 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-11-06 14:58:28 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-11-06 14:58:28 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:58:30 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:58:30 - [TEST_STEP][PASSED] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5): null
+
+2019-11-06 14:58:30 - [TEST_STEP][PASSED] - println(validateHostessAddressMsg.size()): null
+
+2019-11-06 14:58:30 - [TEST_STEP][PASSED] - if (validateHostessAddressMsg.isEmpty()): null
+
+2019-11-06 14:58:30 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess"), "3", true): All options with value '3' are selected in object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-11-06 14:58:31 - [MESSAGE][PASSED] - All options with value '3' are selected in object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/select_Choose_From_Contacts_Co-Hostess'  using regular expression
+
+2019-11-06 14:58:31 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), cohostess): Text 'bcohost-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-11-06 14:58:31 - [MESSAGE][PASSED] - Text 'bcohost-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-11-06 14:58:31 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:58:33 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:58:33 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-11-06 14:58:33 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-11-06 14:58:33 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-11-06 14:58:33 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Cohostess'
+
+2019-11-06 14:58:33 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-11-06 14:58:36 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-11-06 14:58:36 - [TEST_STEP][PASSED] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5): null
+
+2019-11-06 14:58:36 - [TEST_STEP][PASSED] - if (validateHostessAddressMsg.size() != 4): null
+
+2019-11-06 14:58:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-11-06 14:58:39 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_next' is clicked on
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show' is clicked on
+
+2019-11-06 14:58:39 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/check_Virtual_Show' is clicked on
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time' is clicked on
+
+2019-11-06 14:58:39 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_Show_Date_Time' is clicked on
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - println(UtilityMethods.concat(" ", vsday, " ", vsmonth, " ", vsyear)): null
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - year = vsyear: null
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - month = vsmonth: null
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - day = vsday: null
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - pastdate = findTestData("virtualShowData").getValue("pastdate", 1): null
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - xpath = UtilityMethods.concat("//td[@data-month='" + month - 1 + "' and @data-year='" + year + "']/a[contains(text(), '" + day + "')]"): null
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - dateObj = new com.kms.katalon.core.testobject.TestObject(td_month_year_day): null
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - dateObj.addProperty("xpath", EQUALS, xpath): null
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - monthBound = 12: null
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - dateObjList = findWebElements(dateObj, 5): null
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - while (dateObjList.size() == 0 && monthBound > 0): null
+
+2019-11-06 14:58:39 - [TEST_STEP][PASSED] - click(dateObj): Object: 'td_month_year_day' is clicked on
+
+2019-11-06 14:58:40 - [MESSAGE][PASSED] - Object: 'td_month_year_day' is clicked on
+
+2019-11-06 14:58:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time' is clicked on
+
+2019-11-06 14:58:40 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/a_select_End_Time' is clicked on
+
+2019-11-06 14:58:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next' is clicked on
+
+2019-11-06 14:58:40 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Time and Place/input_next' is clicked on
+
+2019-11-06 14:58:40 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-11-06 14:58:45 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-11-06 14:58:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite' is clicked on
+
+2019-11-06 14:58:48 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Invite Hostess/input_Skip_Invite' is clicked on
+
+2019-11-06 14:58:48 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), guest1): Text 'guest1-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:49 - [MESSAGE][PASSED] - Text 'guest1-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:49 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:58:51 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:58:51 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:51 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:51 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:51 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:51 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:58:53 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:58:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-11-06 14:58:54 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-11-06 14:58:54 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-11-06 14:58:59 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-11-06 14:58:59 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), guest2): Text 'guest2-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:59 - [MESSAGE][PASSED] - Text 'guest2-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:58:59 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:59:01 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:59:01 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:59:01 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:59:01 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:59:02 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/contact_search_box'
+
+2019-11-06 14:59:02 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:59:04 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:59:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-11-06 14:59:04 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/a_add_guest' is clicked on
+
+2019-11-06 14:59:04 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 14:59:06 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - verifyHostess = UtilityMethods.splitPersonName(hostess): null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - verifyCohostess = UtilityMethods.splitPersonName(cohostess): null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - verifyGuest1 = UtilityMethods.splitPersonName(guest1): null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - verifyGuest2 = UtilityMethods.splitPersonName(guest2): null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name"), UtilityMethods.concat(verifyHostess[1], ", ", verifyHostess[0])): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are matched.
+
+2019-11-06 14:59:06 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_hostess_name' are matched.
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name"), UtilityMethods.concat(verifyCohostess[1], ", ", verifyCohostess[0])): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name' are matched.
+
+2019-11-06 14:59:06 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_cohostess_name' are matched.
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - listElement = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/span_guest_name_list"), 5): null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - guestCount = Integer.parseInt(verifyGuestCount): null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - assert listElement.size() == guestCount: null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - for ([i = 0, i < guestCount, (i++)]): null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest1[1], ", ", verifyGuest1[0]))): null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - flag = true: null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest2[1], ", ", verifyGuest2[0]))): null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - flag = false: null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest1[1], ", ", verifyGuest1[0]))): null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - if (getText().equals(UtilityMethods.concat(verifyGuest2[1], ", ", verifyGuest2[0]))): null
+
+2019-11-06 14:59:06 - [TEST_STEP][PASSED] - flag = true: null
+
+2019-11-06 14:59:07 - [TEST_STEP][PASSED] - assert flag == true: null
+
+2019-11-06 14:59:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next' is clicked on
+
+2019-11-06 14:59:09 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Add Guests/input_Next' is clicked on
+
+2019-11-06 14:59:09 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-11-06 14:59:14 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-11-06 14:59:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview' is clicked on
+
+2019-11-06 14:59:16 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/input_Overview' is clicked on
+
+2019-11-06 14:59:16 - [TEST_STEP][PASSED] - showID = getText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text")): Text of object 'Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text' is: 'Show #: 104819865'
+
+2019-11-06 14:59:16 - [MESSAGE][PASSED] - Text of object 'Object Repository/virualShowRSVPOR/Page_cabi Orders/li_Show_ID_Text' is: 'Show #: 104819865'
+
+2019-11-06 14:59:16 - [TEST_STEP][PASSED] - rightClick(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/a_Account")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_Account' is right clicked on
+
+2019-11-06 14:59:16 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_Account' is right clicked on
+
+2019-11-06 14:59:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile' is clicked on
+
+2019-11-06 14:59:18 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Orders/a_My Profile' is clicked on
+
+2019-11-06 14:59:18 - [TEST_STEP][PASSED] - rsName = getText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName")): Text of object 'Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName' is: 'MirandaKate'
+
+2019-11-06 14:59:18 - [MESSAGE][PASSED] - Text of object 'Object Repository/virualShowRSVPOR/Page_cabi My Profile/span_rsName' is: 'MirandaKate'
+
+2019-11-06 14:59:18 - [TEST_STEP][PASSED] - micrositeURL = UtilityMethods.createURL(rsName, RSTestEnvt, showID): null
+
+2019-11-06 14:59:19 - [TEST_STEP][PASSED] - println(micrositeURL): null
+
+2019-11-06 14:59:19 - [TEST_STEP][PASSED] - back(): Navigate back successfully
+
+2019-11-06 14:59:20 - [MESSAGE][PASSED] - Navigate back successfully
+
+2019-11-06 14:59:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/VirtualShow/createShow' successfully
+
+2019-11-06 14:59:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders' is clicked on
+
+2019-11-06 14:59:21 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Edit Show - Send Invitations/a_orders' is clicked on
+
+2019-11-06 14:59:21 - [TEST_STEP][PASSED] - g1Vars = UtilityMethods.splitPersonName(guest1): null
+
+2019-11-06 14:59:21 - [TEST_STEP][PASSED] - g1Var = UtilityMethods.concat(g1Vars[1], ", ", g1Vars[0]): null
+
+2019-11-06 14:59:21 - [TEST_STEP][PASSED] - buttonPlaceOrder = UtilityMethods.createTestObject("buttoPlaceOrder", "//table[@class='show-order-table']/tbody/tr/td/span[contains(text(), '", g1Var, "')]/parent::td/following-sibling::td[1]/button"): null
+
+2019-11-06 14:59:21 - [TEST_STEP][PASSED] - click(buttonPlaceOrder): Object: 'buttoPlaceOrder' is clicked on
+
+2019-11-06 14:59:25 - [MESSAGE][PASSED] - Object: 'buttoPlaceOrder' is clicked on
+
+2019-11-06 14:59:25 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-11-06 14:59:28 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-11-06 14:59:28 - [TEST_STEP][PASSED] - DTYMsg = "Hooray! This order is eligible for "Direct to You" shipping.": null
+
+2019-11-06 14:59:28 - [TEST_STEP][PASSED] - println(getText(findTestObject("Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility"))): Text of object 'Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility' is: 'Hooray! This order is eligible for "Direct to You" shipping.'
+
+2019-11-06 14:59:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility' is: 'Hooray! This order is eligible for "Direct to You" shipping.'
+
+2019-11-06 14:59:28 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility"), DTYMsg, CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility' are matched.
+
+2019-11-06 14:59:28 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/DTY/label_DtyEligibility' are matched.
+
+2019-11-06 14:59:28 - [TEST_STEP][ERROR] - executor.executeScript("arguments[0].checked=true;", findWebElement(findTestObject("Object Repository/Page_cabi Home/a_same_shipping_address"), 10)): executor.executeScript("arguments[0].checked=true;", findWebElement(findTestObject("Object Repository/Page_cabi Home/a_same_shipping_address"), 10)) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: executor for class: Script1568892165581
+	at DTYVS.run(DTYVS:92)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573032429999.run(TempTestSuite1573032429999.groovy:35)
+
+
+2019-11-06 14:59:28 - [MESSAGE][ERROR] - executor.executeScript("arguments[0].checked=true;", findWebElement(findTestObject("Object Repository/Page_cabi Home/a_same_shipping_address"), 10)) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: executor for class: Script1568892165581
+	at DTYVS.run(DTYVS:92)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573032429999.run(TempTestSuite1573032429999.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-11-06 14:57:21 - [TEST_CASE][ERROR] - Test Cases/VirtualShow/BODTY/DTYVS: Test Cases/VirtualShow/BODTY/DTYVS FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: executor for class: Script1568892165581
+	at DTYVS.run(DTYVS:92)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573032429999.run(TempTestSuite1573032429999.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-11-06 14:57:18 - [TEST_SUITE][ERROR] - DTYVSSuite: Test Cases/VirtualShow/BODTY/DTYVS FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: executor for class: Script1568892165581
+	at DTYVS.run(DTYVS:92)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573032429999.run(TempTestSuite1573032429999.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-11-06 14:57:18 - [TEST_SUITE][ERROR] - DTYVSSuite: Test Cases/VirtualShow/BODTY/DTYVS FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: executor for class: Script1568892165581
+	at DTYVS.run(DTYVS:92)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573032429999.run(TempTestSuite1573032429999.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

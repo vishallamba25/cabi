@@ -25,7 +25,7 @@
    <testCaseLink>
       <guid>5d38d882-3cac-4d95-85d5-609dd641fac6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/EditOrder-V/rsEditOrderDonation</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

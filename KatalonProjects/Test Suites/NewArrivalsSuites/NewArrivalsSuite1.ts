@@ -79,7 +79,7 @@
    <testCaseLink>
       <guid>670c0c4a-3744-4758-9628-3919870a610f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NA_Timezone_Separated/BORetail6</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -109,7 +109,7 @@
    <testCaseLink>
       <guid>30908a66-5e09-4022-88e5-94548f47c844</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NA_Timezone_Separated/addOnOrderPersonal1</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -121,7 +121,7 @@
    <testCaseLink>
       <guid>2e89cf9b-7dff-4858-b888-301463dbc0a1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NA_Timezone_Separated/addOnOrderPersonal2</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -133,7 +133,7 @@
    <testCaseLink>
       <guid>ac1be82b-33fd-4e94-8fba-59e7f1993947</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NA_Timezone_Separated/addOnOrderPersonal3</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -145,7 +145,7 @@
    <testCaseLink>
       <guid>58d30b7a-a41f-4b98-8841-abcf106b80f5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NA_Timezone_Separated/addOnOrderPersonal4</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -157,7 +157,7 @@
    <testCaseLink>
       <guid>25688955-54ca-4072-a5db-741f799cdacb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NA_Timezone_Separated/addOnOrderPersonal5</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -169,7 +169,7 @@
    <testCaseLink>
       <guid>9ffa0486-f5c1-42b9-b4aa-52820c2b6fab</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/NA_Timezone_Separated/addOnOrderPersonal6</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

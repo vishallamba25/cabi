@@ -32,7 +32,6 @@ for (int row = 1; row <= rowNumbers; row++) {
 	sa= new SoftAssert();
 	
 	styleid_data = findTestData('productData').getValue('Style', row)
-	println "******************+++++++++++++++++++**********************************************"
 	println styleid_data
 	/*****************solving stale element exception problem*******************/
 	by= By.xpath("//input[@name='style']")
@@ -40,7 +39,7 @@ for (int row = 1; row <= rowNumbers; row++) {
 	to= UtilityMethods.fromElement(styleWe)
 	
 	//findTestObject('Object Repository/Page_cabi Order Items/input_New Arrivals - Blooming Blush_style')
-	
+	println "******************+++++++++++++++++++**********************************************"
     WebUI.setText(to, styleid_data)
 
     WebUI.sendKeys(to, Keys.chord(Keys.ENTER))
@@ -124,7 +123,11 @@ for (int row = 1; row <= rowNumbers; row++) {
 
         WebUI.verifyMatch(Split_Data, findTestData('productData').getValue('Retail', row), true, FailureHandling.CONTINUE_ON_FAILURE)
 
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> 0fad55411408e528e50b57536f8eb32fb21922a6
         String[] sizeRange1 = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL']
 
         String[] sizeRange2 = ['00', '0', '2', '4', '6', '8', '10', '12', '14', '16']

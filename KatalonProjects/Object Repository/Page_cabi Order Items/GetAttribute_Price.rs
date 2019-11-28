@@ -6,16 +6,14 @@
    <elementGuidId>9f91da7a-b0bc-447e-908a-503ede5b8061</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//li[@class= &quot;product-prices&quot;]/div</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//li[@class= &quot;product-prices&quot;]//.//div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -33,7 +33,7 @@ public class UtilityMethods {
 	@Keyword
 	public static String SplitData(String Data) {
 
-		String[] data = Data.split('[$.|-]')
+		String[] data = Data.split('[$£.|-]')
 		String data1 = data[1].toString()
 		return data1;
 	}

@@ -1,0 +1,1937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AddContacts" time="520" tests="2" failures="0" errors="0">
+   <testsuite name="AddContacts" tests="2" failures="0" errors="0" time="520" timestamp="2019-12-03 12:40:13" hostname="user - 10.0.102.44" id="Test Suites/AddContacts">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\AddContacts\\20191203_124008"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\AddContacts\\20191203_124008\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 10.0.102.44"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 78.0.3904.108"/>
+         <property name="hostAddress" value="10.0.102.44"/>
+         <property name="sessionId" value="d0ad61b34a7b82f3f55b297e243a5a82"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/TestCaseUtilities/createContactBO" classname="Test Cases/TestCaseUtilities/createContactBO" status="PASSED">
+         <system-out><![CDATA[2019-12-03 12:40:13 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/createContactBO: Test Cases/TestCaseUtilities/createContactBO
+
+2019-12-03 12:40:14 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-12-03 12:40:14 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-12-03 12:40:14 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-12-03 12:40:14 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-12-03 12:40:15 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-12-03 12:40:15 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-12-03 12:40:15 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-12-03 12:40:18 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-12-03 12:40:18 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-12-03 12:40:18 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-12-03 12:40:18 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-12-03 12:40:19 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-12-03 12:40:19 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-12-03 12:40:19 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-12-03 12:40:19 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-12-03 12:40:20 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-12-03 12:40:20 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-12-03 12:40:22 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-12-03 12:40:22 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test21.cliotest.com/backoffice/control/main' successfully
+
+2019-12-03 12:40:30 - [MESSAGE][PASSED] - Navigate to 'https://test21.cliotest.com/backoffice/control/main' successfully
+
+2019-12-03 12:40:30 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:40:31 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:40:31 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-12-03 12:40:31 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-12-03 12:40:31 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-12-03 12:40:31 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-12-03 12:40:31 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-12-03 12:40:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-12-03 12:40:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-12-03 12:40:44 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:40:47 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:40:47 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-12-03 12:40:47 - [TEST_STEP][PASSED] - noOfContacts = findTestData("contactData").getRowNumbers(): null
+
+2019-12-03 12:40:47 - [TEST_STEP][PASSED] - for ([row = 1, row <= noOfContacts, (row++)]): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:40:47 - [TEST_STEP][PASSED] - println(noOfContacts): null
+
+2019-12-03 12:40:47 - [TEST_STEP][PASSED] - firstName = findTestData("contactData").getValue("firstName", row): null
+
+2019-12-03 12:40:47 - [TEST_STEP][PASSED] - lastName = findTestData("contactData").getValue("lastName", row): null
+
+2019-12-03 12:40:47 - [TEST_STEP][PASSED] - email = findTestData("contactData").getValue("email", row): null
+
+2019-12-03 12:40:47 - [TEST_STEP][PASSED] - address1 = findTestData("contactData").getValue("address1", row): null
+
+2019-12-03 12:40:47 - [TEST_STEP][PASSED] - city = findTestData("contactData").getValue("city", row): null
+
+2019-12-03 12:40:47 - [TEST_STEP][PASSED] - state = findTestData("contactData").getValue("state", row): null
+
+2019-12-03 12:40:47 - [TEST_STEP][PASSED] - zip = findTestData("contactData").getValue("zip", row): null
+
+2019-12-03 12:40:47 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-12-03 12:40:47 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-12-03 12:40:47 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Page_cabi Home/a_Contact Manager"), 5)): null
+
+2019-12-03 12:40:52 - [TEST_STEP][PASSED] - space = " ": null
+
+2019-12-03 12:40:52 - [TEST_STEP][PASSED] - fNameLName = $firstName$space$lastName: null
+
+2019-12-03 12:40:52 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_check_contact"), fNameLName): Text 'ahostess-test abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_check_contact'
+
+2019-12-03 12:40:53 - [MESSAGE][PASSED] - Text 'ahostess-test abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_check_contact'
+
+2019-12-03 12:40:53 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:40:55 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:40:55 - [TEST_STEP][PASSED] - contactNotFound = findWebElements(findTestObject("Page_cabi/div_contact_not_found"), 5): null
+
+2019-12-03 12:40:55 - [TEST_STEP][PASSED] - if (contactNotFound.size() > 0): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:40:55 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi/a_NEW CONTACT")): Object: 'Object Repository/Page_cabi/a_NEW CONTACT' is clicked on
+
+2019-12-03 12:40:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/a_NEW CONTACT' is clicked on
+
+2019-12-03 12:40:57 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName"), firstName): Text 'ahostess-test' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName'
+
+2019-12-03 12:40:58 - [MESSAGE][PASSED] - Text 'ahostess-test' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName'
+
+2019-12-03 12:40:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName"), lastName): Text 'abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName'
+
+2019-12-03 12:40:58 - [MESSAGE][PASSED] - Text 'abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName'
+
+2019-12-03 12:40:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress"), email): Text 'ahostess-test@test.com' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress'
+
+2019-12-03 12:40:58 - [MESSAGE][PASSED] - Text 'ahostess-test@test.com' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress'
+
+2019-12-03 12:40:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1"), address1): Text '973 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-12-03 12:40:59 - [MESSAGE][PASSED] - Text '973 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-12-03 12:40:59 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2"), ""): Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-12-03 12:40:59 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-12-03 12:40:59 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_City_city"), city): Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-12-03 12:40:59 - [MESSAGE][PASSED] - Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-12-03 12:40:59 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_select_a_state")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-12-03 12:40:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-12-03 12:40:59 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_state"), state): Text 'Michigan' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state'
+
+2019-12-03 12:40:59 - [MESSAGE][PASSED] - Text 'Michigan' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state'
+
+2019-12-03 12:40:59 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:41:01 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:41:01 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_state")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_state' is clicked on
+
+2019-12-03 12:41:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_state' is clicked on
+
+2019-12-03 12:41:01 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_state_postalCode"), zip): Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-12-03 12:41:01 - [MESSAGE][PASSED] - Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-12-03 12:41:01 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_click_near_address")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_click_near_address' is clicked on
+
+2019-12-03 12:41:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_click_near_address' is clicked on
+
+2019-12-03 12:41:02 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:41:05 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:41:05 - [TEST_STEP][PASSED] - addSuggest = findWebElements(findTestObject("Object Repository/Page_cabi Edit Customer Profile/check_address_suggestion"), 5): Unable to find the element located by 'By.xpath: (//li[@id='hint']/h5[contains(text(), 'Address')]/parent::li/table/tbody/tr/td/input[@class='hint_check_mailAddr'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:41:10 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//li[@id='hint']/h5[contains(text(), 'Address')]/parent::li/table/tbody/tr/td/input[@class='hint_check_mailAddr'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:41:10 - [TEST_STEP][PASSED] - if (addSuggest.size() > 0): null
+
+2019-12-03 12:41:10 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:41:13 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:41:13 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Edit Customer Profile/address_validator_check"), "  Address validated by cabi.", CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/Page_cabi Edit Customer Profile/address_validator_check' are matched.
+
+2019-12-03 12:41:13 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Edit Customer Profile/address_validator_check' are matched.
+
+2019-12-03 12:41:13 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/input_Interested In_save")): Object: 'Object Repository/Page_cabi Edit Customer Profile/input_Interested In_save' is clicked on
+
+2019-12-03 12:41:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/input_Interested In_save' is clicked on
+
+2019-12-03 12:41:13 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:41:16 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:41:16 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi View Customer Profile/label_first_name"), firstName): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_first_name' are matched.
+
+2019-12-03 12:41:21 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_first_name' are matched.
+
+2019-12-03 12:41:21 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi View Customer Profile/label_last_name"), lastName): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:41:21 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:41:21 - [TEST_STEP][PASSED] - println(noOfContacts): null
+
+2019-12-03 12:41:21 - [TEST_STEP][PASSED] - firstName = findTestData("contactData").getValue("firstName", row): null
+
+2019-12-03 12:41:21 - [TEST_STEP][PASSED] - lastName = findTestData("contactData").getValue("lastName", row): null
+
+2019-12-03 12:41:22 - [TEST_STEP][PASSED] - email = findTestData("contactData").getValue("email", row): null
+
+2019-12-03 12:41:22 - [TEST_STEP][PASSED] - address1 = findTestData("contactData").getValue("address1", row): null
+
+2019-12-03 12:41:22 - [TEST_STEP][PASSED] - city = findTestData("contactData").getValue("city", row): null
+
+2019-12-03 12:41:22 - [TEST_STEP][PASSED] - state = findTestData("contactData").getValue("state", row): null
+
+2019-12-03 12:41:22 - [TEST_STEP][PASSED] - zip = findTestData("contactData").getValue("zip", row): null
+
+2019-12-03 12:41:22 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-12-03 12:41:22 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-12-03 12:41:22 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Page_cabi Home/a_Contact Manager"), 5)): null
+
+2019-12-03 12:41:24 - [TEST_STEP][PASSED] - space = " ": null
+
+2019-12-03 12:41:24 - [TEST_STEP][PASSED] - fNameLName = $firstName$space$lastName: null
+
+2019-12-03 12:41:24 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_check_contact"), fNameLName): Text 'bcohost-test abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_check_contact'
+
+2019-12-03 12:41:25 - [MESSAGE][PASSED] - Text 'bcohost-test abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_check_contact'
+
+2019-12-03 12:41:25 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:41:27 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:41:27 - [TEST_STEP][PASSED] - contactNotFound = findWebElements(findTestObject("Page_cabi/div_contact_not_found"), 5): null
+
+2019-12-03 12:41:27 - [TEST_STEP][PASSED] - if (contactNotFound.size() > 0): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:41:27 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi/a_NEW CONTACT")): Object: 'Object Repository/Page_cabi/a_NEW CONTACT' is clicked on
+
+2019-12-03 12:41:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/a_NEW CONTACT' is clicked on
+
+2019-12-03 12:41:29 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName"), firstName): Text 'bcohost-test' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName'
+
+2019-12-03 12:41:30 - [MESSAGE][PASSED] - Text 'bcohost-test' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName'
+
+2019-12-03 12:41:30 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName"), lastName): Text 'abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName'
+
+2019-12-03 12:41:30 - [MESSAGE][PASSED] - Text 'abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName'
+
+2019-12-03 12:41:30 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress"), email): Text 'bcohost-test@test.com' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress'
+
+2019-12-03 12:41:30 - [MESSAGE][PASSED] - Text 'bcohost-test@test.com' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress'
+
+2019-12-03 12:41:30 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1"), address1): Text '973 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-12-03 12:41:30 - [MESSAGE][PASSED] - Text '973 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-12-03 12:41:30 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2"), ""): Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-12-03 12:41:30 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-12-03 12:41:30 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_City_city"), city): Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-12-03 12:41:31 - [MESSAGE][PASSED] - Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-12-03 12:41:31 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_select_a_state")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-12-03 12:41:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-12-03 12:41:31 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_state"), state): Text 'Michigan' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state'
+
+2019-12-03 12:41:31 - [MESSAGE][PASSED] - Text 'Michigan' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state'
+
+2019-12-03 12:41:31 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:41:33 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:41:33 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_state")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_state' is clicked on
+
+2019-12-03 12:41:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_state' is clicked on
+
+2019-12-03 12:41:33 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_state_postalCode"), zip): Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-12-03 12:41:33 - [MESSAGE][PASSED] - Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-12-03 12:41:33 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_click_near_address")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_click_near_address' is clicked on
+
+2019-12-03 12:41:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_click_near_address' is clicked on
+
+2019-12-03 12:41:33 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:41:36 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:41:36 - [TEST_STEP][PASSED] - addSuggest = findWebElements(findTestObject("Object Repository/Page_cabi Edit Customer Profile/check_address_suggestion"), 5): Unable to find the element located by 'By.xpath: (//li[@id='hint']/h5[contains(text(), 'Address')]/parent::li/table/tbody/tr/td/input[@class='hint_check_mailAddr'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:41:41 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//li[@id='hint']/h5[contains(text(), 'Address')]/parent::li/table/tbody/tr/td/input[@class='hint_check_mailAddr'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:41:41 - [TEST_STEP][PASSED] - if (addSuggest.size() > 0): null
+
+2019-12-03 12:41:41 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:41:44 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:41:44 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Edit Customer Profile/address_validator_check"), "  Address validated by cabi.", CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/Page_cabi Edit Customer Profile/address_validator_check' are matched.
+
+2019-12-03 12:41:45 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Edit Customer Profile/address_validator_check' are matched.
+
+2019-12-03 12:41:45 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/input_Interested In_save")): Object: 'Object Repository/Page_cabi Edit Customer Profile/input_Interested In_save' is clicked on
+
+2019-12-03 12:41:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/input_Interested In_save' is clicked on
+
+2019-12-03 12:41:45 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:41:48 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:41:48 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi View Customer Profile/label_first_name"), firstName): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_first_name' are matched.
+
+2019-12-03 12:41:51 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_first_name' are matched.
+
+2019-12-03 12:41:51 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi View Customer Profile/label_last_name"), lastName): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:41:51 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:41:51 - [TEST_STEP][PASSED] - println(noOfContacts): null
+
+2019-12-03 12:41:51 - [TEST_STEP][PASSED] - firstName = findTestData("contactData").getValue("firstName", row): null
+
+2019-12-03 12:41:51 - [TEST_STEP][PASSED] - lastName = findTestData("contactData").getValue("lastName", row): null
+
+2019-12-03 12:41:51 - [TEST_STEP][PASSED] - email = findTestData("contactData").getValue("email", row): null
+
+2019-12-03 12:41:51 - [TEST_STEP][PASSED] - address1 = findTestData("contactData").getValue("address1", row): null
+
+2019-12-03 12:41:51 - [TEST_STEP][PASSED] - city = findTestData("contactData").getValue("city", row): null
+
+2019-12-03 12:41:51 - [TEST_STEP][PASSED] - state = findTestData("contactData").getValue("state", row): null
+
+2019-12-03 12:41:51 - [TEST_STEP][PASSED] - zip = findTestData("contactData").getValue("zip", row): null
+
+2019-12-03 12:41:51 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-12-03 12:41:51 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-12-03 12:41:51 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Page_cabi Home/a_Contact Manager"), 5)): null
+
+2019-12-03 12:41:53 - [TEST_STEP][PASSED] - space = " ": null
+
+2019-12-03 12:41:53 - [TEST_STEP][PASSED] - fNameLName = $firstName$space$lastName: null
+
+2019-12-03 12:41:53 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_check_contact"), fNameLName): Text 'guest1-test abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_check_contact'
+
+2019-12-03 12:41:54 - [MESSAGE][PASSED] - Text 'guest1-test abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_check_contact'
+
+2019-12-03 12:41:54 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:41:56 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:41:56 - [TEST_STEP][PASSED] - contactNotFound = findWebElements(findTestObject("Page_cabi/div_contact_not_found"), 5): null
+
+2019-12-03 12:41:56 - [TEST_STEP][PASSED] - if (contactNotFound.size() > 0): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:41:56 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi/a_NEW CONTACT")): Object: 'Object Repository/Page_cabi/a_NEW CONTACT' is clicked on
+
+2019-12-03 12:41:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/a_NEW CONTACT' is clicked on
+
+2019-12-03 12:41:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName"), firstName): Text 'guest1-test' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName'
+
+2019-12-03 12:41:58 - [MESSAGE][PASSED] - Text 'guest1-test' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName'
+
+2019-12-03 12:41:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName"), lastName): Text 'abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName'
+
+2019-12-03 12:41:58 - [MESSAGE][PASSED] - Text 'abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName'
+
+2019-12-03 12:41:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress"), email): Text 'guest1-test@test.com' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress'
+
+2019-12-03 12:41:58 - [MESSAGE][PASSED] - Text 'guest1-test@test.com' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress'
+
+2019-12-03 12:41:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1"), address1): Text '974 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-12-03 12:41:58 - [MESSAGE][PASSED] - Text '974 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-12-03 12:41:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2"), ""): Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-12-03 12:41:59 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-12-03 12:41:59 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_City_city"), city): Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-12-03 12:41:59 - [MESSAGE][PASSED] - Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-12-03 12:41:59 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_select_a_state")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-12-03 12:41:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-12-03 12:41:59 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_state"), state): Text 'Michigan' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state'
+
+2019-12-03 12:41:59 - [MESSAGE][PASSED] - Text 'Michigan' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state'
+
+2019-12-03 12:41:59 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:42:01 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:42:01 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_state")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_state' is clicked on
+
+2019-12-03 12:42:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_state' is clicked on
+
+2019-12-03 12:42:01 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_state_postalCode"), zip): Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-12-03 12:42:01 - [MESSAGE][PASSED] - Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-12-03 12:42:01 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_click_near_address")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_click_near_address' is clicked on
+
+2019-12-03 12:42:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_click_near_address' is clicked on
+
+2019-12-03 12:42:01 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:42:04 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:42:04 - [TEST_STEP][PASSED] - addSuggest = findWebElements(findTestObject("Object Repository/Page_cabi Edit Customer Profile/check_address_suggestion"), 5): Unable to find the element located by 'By.xpath: (//li[@id='hint']/h5[contains(text(), 'Address')]/parent::li/table/tbody/tr/td/input[@class='hint_check_mailAddr'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:42:10 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//li[@id='hint']/h5[contains(text(), 'Address')]/parent::li/table/tbody/tr/td/input[@class='hint_check_mailAddr'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:42:10 - [TEST_STEP][PASSED] - if (addSuggest.size() > 0): null
+
+2019-12-03 12:42:10 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:42:13 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:42:13 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Edit Customer Profile/address_validator_check"), "  Address validated by cabi.", CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/Page_cabi Edit Customer Profile/address_validator_check' are matched.
+
+2019-12-03 12:42:13 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Edit Customer Profile/address_validator_check' are matched.
+
+2019-12-03 12:42:13 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/input_Interested In_save")): Object: 'Object Repository/Page_cabi Edit Customer Profile/input_Interested In_save' is clicked on
+
+2019-12-03 12:42:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/input_Interested In_save' is clicked on
+
+2019-12-03 12:42:13 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:42:16 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:42:16 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi View Customer Profile/label_first_name"), firstName): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_first_name' are matched.
+
+2019-12-03 12:42:19 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_first_name' are matched.
+
+2019-12-03 12:42:19 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi View Customer Profile/label_last_name"), lastName): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:42:19 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:42:19 - [TEST_STEP][PASSED] - println(noOfContacts): null
+
+2019-12-03 12:42:19 - [TEST_STEP][PASSED] - firstName = findTestData("contactData").getValue("firstName", row): null
+
+2019-12-03 12:42:19 - [TEST_STEP][PASSED] - lastName = findTestData("contactData").getValue("lastName", row): null
+
+2019-12-03 12:42:19 - [TEST_STEP][PASSED] - email = findTestData("contactData").getValue("email", row): null
+
+2019-12-03 12:42:19 - [TEST_STEP][PASSED] - address1 = findTestData("contactData").getValue("address1", row): null
+
+2019-12-03 12:42:19 - [TEST_STEP][PASSED] - city = findTestData("contactData").getValue("city", row): null
+
+2019-12-03 12:42:19 - [TEST_STEP][PASSED] - state = findTestData("contactData").getValue("state", row): null
+
+2019-12-03 12:42:19 - [TEST_STEP][PASSED] - zip = findTestData("contactData").getValue("zip", row): null
+
+2019-12-03 12:42:19 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-12-03 12:42:19 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-12-03 12:42:19 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Page_cabi Home/a_Contact Manager"), 5)): null
+
+2019-12-03 12:42:21 - [TEST_STEP][PASSED] - space = " ": null
+
+2019-12-03 12:42:21 - [TEST_STEP][PASSED] - fNameLName = $firstName$space$lastName: null
+
+2019-12-03 12:42:21 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_check_contact"), fNameLName): Text 'guest2-test abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_check_contact'
+
+2019-12-03 12:42:22 - [MESSAGE][PASSED] - Text 'guest2-test abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_check_contact'
+
+2019-12-03 12:42:22 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:42:24 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:42:24 - [TEST_STEP][PASSED] - contactNotFound = findWebElements(findTestObject("Page_cabi/div_contact_not_found"), 5): null
+
+2019-12-03 12:42:24 - [TEST_STEP][PASSED] - if (contactNotFound.size() > 0): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:42:24 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi/a_NEW CONTACT")): Object: 'Object Repository/Page_cabi/a_NEW CONTACT' is clicked on
+
+2019-12-03 12:42:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/a_NEW CONTACT' is clicked on
+
+2019-12-03 12:42:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName"), firstName): Text 'guest2-test' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName'
+
+2019-12-03 12:42:26 - [MESSAGE][PASSED] - Text 'guest2-test' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName'
+
+2019-12-03 12:42:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName"), lastName): Text 'abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName'
+
+2019-12-03 12:42:26 - [MESSAGE][PASSED] - Text 'abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName'
+
+2019-12-03 12:42:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress"), email): Text 'guest2-test@test.com' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress'
+
+2019-12-03 12:42:26 - [MESSAGE][PASSED] - Text 'guest2-test@test.com' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress'
+
+2019-12-03 12:42:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1"), address1): Text '975 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-12-03 12:42:27 - [MESSAGE][PASSED] - Text '975 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-12-03 12:42:27 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2"), ""): Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-12-03 12:42:27 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-12-03 12:42:27 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_City_city"), city): Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-12-03 12:42:27 - [MESSAGE][PASSED] - Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-12-03 12:42:27 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_select_a_state")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-12-03 12:42:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-12-03 12:42:27 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_state"), state): Text 'Michigan' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state'
+
+2019-12-03 12:42:27 - [MESSAGE][PASSED] - Text 'Michigan' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state'
+
+2019-12-03 12:42:27 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:42:29 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:42:29 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_state")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_state' is clicked on
+
+2019-12-03 12:42:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_state' is clicked on
+
+2019-12-03 12:42:29 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_state_postalCode"), zip): Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-12-03 12:42:29 - [MESSAGE][PASSED] - Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-12-03 12:42:29 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_click_near_address")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_click_near_address' is clicked on
+
+2019-12-03 12:42:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_click_near_address' is clicked on
+
+2019-12-03 12:42:30 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:42:33 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:42:33 - [TEST_STEP][PASSED] - addSuggest = findWebElements(findTestObject("Object Repository/Page_cabi Edit Customer Profile/check_address_suggestion"), 5): Unable to find the element located by 'By.xpath: (//li[@id='hint']/h5[contains(text(), 'Address')]/parent::li/table/tbody/tr/td/input[@class='hint_check_mailAddr'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:42:38 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//li[@id='hint']/h5[contains(text(), 'Address')]/parent::li/table/tbody/tr/td/input[@class='hint_check_mailAddr'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:42:38 - [TEST_STEP][PASSED] - if (addSuggest.size() > 0): null
+
+2019-12-03 12:42:38 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:42:41 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:42:41 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Edit Customer Profile/address_validator_check"), "  Address validated by cabi.", CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/Page_cabi Edit Customer Profile/address_validator_check' are matched.
+
+2019-12-03 12:42:41 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Edit Customer Profile/address_validator_check' are matched.
+
+2019-12-03 12:42:41 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/input_Interested In_save")): Object: 'Object Repository/Page_cabi Edit Customer Profile/input_Interested In_save' is clicked on
+
+2019-12-03 12:42:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/input_Interested In_save' is clicked on
+
+2019-12-03 12:42:41 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:42:44 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:42:44 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi View Customer Profile/label_first_name"), firstName): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_first_name' are matched.
+
+2019-12-03 12:42:47 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_first_name' are matched.
+
+2019-12-03 12:42:47 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi View Customer Profile/label_last_name"), lastName): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:42:47 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:42:47 - [TEST_STEP][PASSED] - println(noOfContacts): null
+
+2019-12-03 12:42:47 - [TEST_STEP][PASSED] - firstName = findTestData("contactData").getValue("firstName", row): null
+
+2019-12-03 12:42:47 - [TEST_STEP][PASSED] - lastName = findTestData("contactData").getValue("lastName", row): null
+
+2019-12-03 12:42:47 - [TEST_STEP][PASSED] - email = findTestData("contactData").getValue("email", row): null
+
+2019-12-03 12:42:47 - [TEST_STEP][PASSED] - address1 = findTestData("contactData").getValue("address1", row): null
+
+2019-12-03 12:42:47 - [TEST_STEP][PASSED] - city = findTestData("contactData").getValue("city", row): null
+
+2019-12-03 12:42:47 - [TEST_STEP][PASSED] - state = findTestData("contactData").getValue("state", row): null
+
+2019-12-03 12:42:47 - [TEST_STEP][PASSED] - zip = findTestData("contactData").getValue("zip", row): null
+
+2019-12-03 12:42:47 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-12-03 12:42:47 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-12-03 12:42:47 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Page_cabi Home/a_Contact Manager"), 5)): null
+
+2019-12-03 12:42:49 - [TEST_STEP][PASSED] - space = " ": null
+
+2019-12-03 12:42:49 - [TEST_STEP][PASSED] - fNameLName = $firstName$space$lastName: null
+
+2019-12-03 12:42:49 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_check_contact"), fNameLName): Text 'guest3-test abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_check_contact'
+
+2019-12-03 12:42:50 - [MESSAGE][PASSED] - Text 'guest3-test abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_check_contact'
+
+2019-12-03 12:42:50 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:42:52 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:42:52 - [TEST_STEP][PASSED] - contactNotFound = findWebElements(findTestObject("Page_cabi/div_contact_not_found"), 5): null
+
+2019-12-03 12:42:52 - [TEST_STEP][PASSED] - if (contactNotFound.size() > 0): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:42:52 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi/a_NEW CONTACT")): Object: 'Object Repository/Page_cabi/a_NEW CONTACT' is clicked on
+
+2019-12-03 12:42:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/a_NEW CONTACT' is clicked on
+
+2019-12-03 12:42:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName"), firstName): Text 'guest3-test' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName'
+
+2019-12-03 12:42:54 - [MESSAGE][PASSED] - Text 'guest3-test' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_First Name_firstName'
+
+2019-12-03 12:42:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName"), lastName): Text 'abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName'
+
+2019-12-03 12:42:54 - [MESSAGE][PASSED] - Text 'abc' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Last Name_lastName'
+
+2019-12-03 12:42:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress"), email): Text 'guest3-test@test.com' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress'
+
+2019-12-03 12:42:54 - [MESSAGE][PASSED] - Text 'guest3-test@test.com' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Email Address_emailAddress'
+
+2019-12-03 12:42:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1"), address1): Text '976 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-12-03 12:42:54 - [MESSAGE][PASSED] - Text '976 BRAHMS CT' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address1_address1'
+
+2019-12-03 12:42:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2"), ""): Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-12-03 12:42:55 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_Address2_address2'
+
+2019-12-03 12:42:55 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi Edit Customer Profile/input_City_city"), city): Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-12-03 12:42:55 - [MESSAGE][PASSED] - Text 'TROY' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_City_city'
+
+2019-12-03 12:42:55 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_select_a_state")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-12-03 12:42:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_select_a_state' is clicked on
+
+2019-12-03 12:42:55 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_state"), state): Text 'Michigan' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state'
+
+2019-12-03 12:42:55 - [MESSAGE][PASSED] - Text 'Michigan' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state'
+
+2019-12-03 12:42:55 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:42:57 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:42:57 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_state")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_state' is clicked on
+
+2019-12-03 12:42:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_state' is clicked on
+
+2019-12-03 12:42:57 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi Edit Customer Profile/input_state_postalCode"), zip): Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-12-03 12:42:57 - [MESSAGE][PASSED] - Text '48085' is set on object 'Object Repository/Page_cabi Edit Customer Profile/input_state_postalCode'
+
+2019-12-03 12:42:57 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/span_click_near_address")): Object: 'Object Repository/Page_cabi Edit Customer Profile/span_click_near_address' is clicked on
+
+2019-12-03 12:42:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/span_click_near_address' is clicked on
+
+2019-12-03 12:42:57 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:43:00 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:43:00 - [TEST_STEP][PASSED] - addSuggest = findWebElements(findTestObject("Object Repository/Page_cabi Edit Customer Profile/check_address_suggestion"), 5): Unable to find the element located by 'By.xpath: (//li[@id='hint']/h5[contains(text(), 'Address')]/parent::li/table/tbody/tr/td/input[@class='hint_check_mailAddr'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:43:06 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//li[@id='hint']/h5[contains(text(), 'Address')]/parent::li/table/tbody/tr/td/input[@class='hint_check_mailAddr'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:43:06 - [TEST_STEP][PASSED] - if (addSuggest.size() > 0): null
+
+2019-12-03 12:43:06 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:43:09 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:43:09 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi Edit Customer Profile/address_validator_check"), "  Address validated by cabi.", CONTINUE_ON_FAILURE): Actual text and expected text of test object 'Object Repository/Page_cabi Edit Customer Profile/address_validator_check' are matched.
+
+2019-12-03 12:43:09 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi Edit Customer Profile/address_validator_check' are matched.
+
+2019-12-03 12:43:09 - [TEST_STEP][PASSED] - click(findTestObject("Page_cabi Edit Customer Profile/input_Interested In_save")): Object: 'Object Repository/Page_cabi Edit Customer Profile/input_Interested In_save' is clicked on
+
+2019-12-03 12:43:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi Edit Customer Profile/input_Interested In_save' is clicked on
+
+2019-12-03 12:43:09 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:43:12 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:43:12 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi View Customer Profile/label_first_name"), firstName): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_first_name' are matched.
+
+2019-12-03 12:43:15 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_first_name' are matched.
+
+2019-12-03 12:43:15 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_cabi View Customer Profile/label_last_name"), lastName): Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:43:15 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_cabi View Customer Profile/label_last_name' are matched.
+
+2019-12-03 12:43:15 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-12-03 12:43:16 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TestCaseUtilities/userRegistration" classname="Test Cases/TestCaseUtilities/userRegistration" status="PASSED">
+         <system-out><![CDATA[2019-12-03 12:43:16 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/userRegistration: Test Cases/TestCaseUtilities/userRegistration
+
+2019-12-03 12:43:16 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-12-03 12:43:16 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-12-03 12:43:16 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-12-03 12:43:16 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-12-03 12:43:16 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-12-03 12:43:16 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-12-03 12:43:19 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-12-03 12:43:19 - [TEST_STEP][PASSED] - RSTestEnvt = findTestData("envtData").getValue("RSTestEnvt", 1): null
+
+2019-12-03 12:43:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/setVHost"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/setVHost' successfully
+
+2019-12-03 12:43:19 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/setVHost: Test Cases/TestCaseUtilities/setVHost
+
+2019-12-03 12:43:19 - [TEST_STEP][PASSED] - ofbizURL = findTestData("envtData").getValue("ofbizURL", 1): null
+
+2019-12-03 12:43:19 - [TEST_STEP][PASSED] - ofbizUser = findTestData("credData").getValue("ofbizuser", 1): null
+
+2019-12-03 12:43:19 - [TEST_STEP][PASSED] - ofbizPass = findTestData("credData").getValue("ofbizpass", 1): null
+
+2019-12-03 12:43:19 - [TEST_STEP][PASSED] - vhostTarget = findTestData("envtData").getValue("vhostTarget", 1): null
+
+2019-12-03 12:43:19 - [TEST_STEP][PASSED] - navigateToUrl(ofbizURL): Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-12-03 12:43:21 - [MESSAGE][PASSED] - Navigate to 'https://pushofbiz.cliotest.com/login.php' successfully
+
+2019-12-03 12:43:21 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Username_username"), ofbizUser): Text 'automation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Username_username'
+
+2019-12-03 12:43:21 - [MESSAGE][PASSED] - Text 'automation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Username_username'
+
+2019-12-03 12:43:21 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Password_password"), ofbizPass): Text 'cabiautomation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Password_password'
+
+2019-12-03 12:43:21 - [MESSAGE][PASSED] - Text 'cabiautomation' is set on object 'Object Repository/virualShowRSVPOR/Page_/input_Password_password'
+
+2019-12-03 12:43:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/input_Password_Submit")): Object: 'Object Repository/virualShowRSVPOR/Page_/input_Password_Submit' is clicked on
+
+2019-12-03 12:43:25 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/input_Password_Submit' is clicked on
+
+2019-12-03 12:43:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/a_Set Vhost")): Object: 'Object Repository/virualShowRSVPOR/Page_/a_Set Vhost' is clicked on
+
+2019-12-03 12:43:26 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/a_Set Vhost' is clicked on
+
+2019-12-03 12:43:26 - [TEST_STEP][PASSED] - click(UtilityMethods.createTestObject("select_target", "//select[@name='Target']/option[contains(text(), '", vhostTarget, "')]")): Object: 'select_target' is clicked on
+
+2019-12-03 12:43:26 - [MESSAGE][PASSED] - Object: 'select_target' is clicked on
+
+2019-12-03 12:43:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_/input")): Object: 'Object Repository/virualShowRSVPOR/Page_/input' is clicked on
+
+2019-12-03 12:43:29 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_/input' is clicked on
+
+2019-12-03 12:43:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/setVHost' successfully
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - sa = new org.testng.asserts.SoftAssert(): null
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - WMURL = findTestData("envtData").getValue("WMURL", 1): null
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - WMEnvt = findTestData("envtData").getValue("WMEnvt", 1): null
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - WMpass = findTestData("credData").getValue("WMpass", 1): null
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - noOfContacts = findTestData("contactData").getRowNumbers(): null
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - for ([row = 1, row <= noOfContacts, (row++)]): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - println(noOfContacts): null
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - firstName = findTestData("contactData").getValue("firstName", row): null
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - lastName = findTestData("contactData").getValue("lastName", row): null
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - email = findTestData("contactData").getValue("email", row): null
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - pass = findTestData("contactData").getValue("pass", row): null
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - loginURL = UtilityMethods.concat("https://mirandakate.", RSTestEnvt, ".com/?component=account.login-gateway"): null
+
+2019-12-03 12:43:29 - [TEST_STEP][PASSED] - navigateToUrl(loginURL): Navigate to 'https://mirandakate.cabitest5.com/?component=account.login-gateway' successfully
+
+2019-12-03 12:44:02 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabitest5.com/?component=account.login-gateway' successfully
+
+2019-12-03 12:44:02 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:44:05 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:44:05 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email"), email): Text 'ahostess-test@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-12-03 12:44:06 - [MESSAGE][PASSED] - Text 'ahostess-test@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-12-03 12:44:06 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:06 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:06 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:44:09 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:44:09 - [TEST_STEP][PASSED] - welcome = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 5): Unable to find the element located by 'By.xpath: //h2[contains(text(), 'Welcome')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:44:14 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //h2[contains(text(), 'Welcome')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:44:14 - [TEST_STEP][PASSED] - if (welcome.size() > 0): null
+
+2019-12-03 12:44:14 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_fname"), 30): null
+
+2019-12-03 12:44:14 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:14 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:14 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("User_Registration/input_fname_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:14 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_fname"), firstName): Text 'ahostess-test' is set on object 'Object Repository/User_Registration/input_fname'
+
+2019-12-03 12:44:15 - [MESSAGE][PASSED] - Text 'ahostess-test' is set on object 'Object Repository/User_Registration/input_fname'
+
+2019-12-03 12:44:15 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_lname"), 30): null
+
+2019-12-03 12:44:15 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:15 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:15 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("User_Registration/input_lname_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:15 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:15 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_lname"), lastName): Text 'abc' is set on object 'Object Repository/User_Registration/input_lname'
+
+2019-12-03 12:44:15 - [MESSAGE][PASSED] - Text 'abc' is set on object 'Object Repository/User_Registration/input_lname'
+
+2019-12-03 12:44:15 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_pass"), 30): null
+
+2019-12-03 12:44:15 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:15 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:15 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_pass_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:15 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:15 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_pass"), pass): Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_pass'
+
+2019-12-03 12:44:15 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_pass'
+
+2019-12-03 12:44:15 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_confirm-pass"), 30): null
+
+2019-12-03 12:44:15 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:16 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:16 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_confirm-pass_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:16 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:16 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_confirm-pass"), pass): Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_confirm-pass'
+
+2019-12-03 12:44:16 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_confirm-pass'
+
+2019-12-03 12:44:16 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/check_email_div"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:16 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:16 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/check_email_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:16 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:16 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:16 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:16 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:16 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:16 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/User_Registration/check_email"), 10)): null
+
+2019-12-03 12:44:16 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 10)): null
+
+2019-12-03 12:44:16 - [TEST_STEP][PASSED] - emailAlreadyPresent = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_already_have_email"), 5): null
+
+2019-12-03 12:44:18 - [TEST_STEP][PASSED] - if (emailAlreadyPresent.size() < 1): null
+
+2019-12-03 12:44:18 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-12-03 12:44:29 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-12-03 12:44:29 - [TEST_STEP][PASSED] - currentTab = getWindowIndex(): Current window's index is: 0
+
+2019-12-03 12:44:29 - [MESSAGE][PASSED] - Current window's index is: 0
+
+2019-12-03 12:44:29 - [TEST_STEP][PASSED] - executor.executeScript("window.open();"): null
+
+2019-12-03 12:44:29 - [TEST_STEP][PASSED] - switchToWindowIndex(currentTab + 1): Switched to window with index: '1'
+
+2019-12-03 12:44:29 - [MESSAGE][PASSED] - Switched to window with index: '1'
+
+2019-12-03 12:44:29 - [TEST_STEP][PASSED] - navigateToUrl(WMURL): Navigate to 'http://webmail.cabiclio.com/' successfully
+
+2019-12-03 12:44:33 - [MESSAGE][PASSED] - Navigate to 'http://webmail.cabiclio.com/' successfully
+
+2019-12-03 12:44:33 - [TEST_STEP][PASSED] - emailAlreadyLogin = findWebElements(findTestObject("Object Repository/User_Registration/span_inbox_verify_already_login"), 5): Unable to find the element located by 'By.xpath: //div[@id='mailboxcontainer']/div/ul/li/a[@rel='INBOX']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:44:39 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='mailboxcontainer']/div/ul/li/a[@rel='INBOX']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:44:39 - [TEST_STEP][PASSED] - if (emailAlreadyLogin.size() < 1): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:39 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/input_user"), WMEnvt): Text 'test21' is set on object 'Object Repository/User_Registration/Roundcube_Webmail/input_user'
+
+2019-12-03 12:44:39 - [MESSAGE][PASSED] - Text 'test21' is set on object 'Object Repository/User_Registration/Roundcube_Webmail/input_user'
+
+2019-12-03 12:44:39 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/input_pass"), WMpass): Text 'blackdress19' is set on object 'Object Repository/User_Registration/Roundcube_Webmail/input_pass'
+
+2019-12-03 12:44:39 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/User_Registration/Roundcube_Webmail/input_pass'
+
+2019-12-03 12:44:39 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/input_submit"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:42 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:42 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:44:44 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:44:44 - [TEST_STEP][PASSED] - tdVerifyMail = findWebElements(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail"), 5): null
+
+2019-12-03 12:44:44 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail")): Object: 'Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail' is double clicked on
+
+2019-12-03 12:44:45 - [MESSAGE][PASSED] - Object: 'Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail' is double clicked on
+
+2019-12-03 12:44:45 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:44:47 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:44:47 - [TEST_STEP][PASSED] - veriCode = getText(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/p_verify_code")): Text of object 'Object Repository/User_Registration/Roundcube_Webmail/p_verify_code' is: '12682'
+
+2019-12-03 12:44:47 - [MESSAGE][PASSED] - Text of object 'Object Repository/User_Registration/Roundcube_Webmail/p_verify_code' is: '12682'
+
+2019-12-03 12:44:47 - [TEST_STEP][PASSED] - switchToWindowIndex(currentTab): Switched to window with index: '0'
+
+2019-12-03 12:44:47 - [MESSAGE][PASSED] - Switched to window with index: '0'
+
+2019-12-03 12:44:47 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_verify_code"), 30): null
+
+2019-12-03 12:44:47 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:47 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:47 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_verify_code_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:47 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_verify_code"), veriCode): Text '12682' is set on object 'Object Repository/User_Registration/input_verify_code'
+
+2019-12-03 12:44:47 - [MESSAGE][PASSED] - Text '12682' is set on object 'Object Repository/User_Registration/input_verify_code'
+
+2019-12-03 12:44:47 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:48 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:44:48 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:48 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:48 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:58 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:58 - [TEST_STEP][PASSED] - completeMyPlrofileLater = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 5): null
+
+2019-12-03 12:44:58 - [TEST_STEP][PASSED] - if (completeMyPlrofileLater.size() > 0): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:44:58 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_I_will_complete_my_profile_later"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:02 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:02 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_profile_dropdown"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:02 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:02 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-12-03 12:45:03 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-12-03 12:45:03 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_sign_out"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:03 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:03 - [TEST_STEP][PASSED] - signoutButton = findWebElements(findTestObject("Object Repository/User_Registration/a_logout"), 5): Unable to find the element located by 'By.xpath: //a[contains(text(), 'Logout')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:45:09 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(), 'Logout')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:45:09 - [TEST_STEP][PASSED] - if (signoutButton.size() > 0): null
+
+2019-12-03 12:45:09 - [TEST_STEP][PASSED] - signoutButton = findWebElements(findTestObject("Object Repository/User_Registration/a_signout"), 5): null
+
+2019-12-03 12:45:09 - [TEST_STEP][PASSED] - if (signoutButton.size() > 0): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:09 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_signout"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:09 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:09 - [TEST_STEP][PASSED] - println(noOfContacts): null
+
+2019-12-03 12:45:09 - [TEST_STEP][PASSED] - firstName = findTestData("contactData").getValue("firstName", row): null
+
+2019-12-03 12:45:09 - [TEST_STEP][PASSED] - lastName = findTestData("contactData").getValue("lastName", row): null
+
+2019-12-03 12:45:09 - [TEST_STEP][PASSED] - email = findTestData("contactData").getValue("email", row): null
+
+2019-12-03 12:45:09 - [TEST_STEP][PASSED] - pass = findTestData("contactData").getValue("pass", row): null
+
+2019-12-03 12:45:09 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-12-03 12:45:09 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-12-03 12:45:09 - [TEST_STEP][PASSED] - loginURL = UtilityMethods.concat("https://mirandakate.", RSTestEnvt, ".com/?component=account.login-gateway"): null
+
+2019-12-03 12:45:09 - [TEST_STEP][PASSED] - navigateToUrl(loginURL): Navigate to 'https://mirandakate.cabitest5.com/?component=account.login-gateway' successfully
+
+2019-12-03 12:45:15 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabitest5.com/?component=account.login-gateway' successfully
+
+2019-12-03 12:45:15 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:45:18 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:45:18 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email"), email): Text 'bcohost-test@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-12-03 12:45:18 - [MESSAGE][PASSED] - Text 'bcohost-test@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-12-03 12:45:18 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:18 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:18 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:45:21 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:45:21 - [TEST_STEP][PASSED] - welcome = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 5): Unable to find the element located by 'By.xpath: //h2[contains(text(), 'Welcome')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:45:26 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //h2[contains(text(), 'Welcome')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:45:26 - [TEST_STEP][PASSED] - if (welcome.size() > 0): null
+
+2019-12-03 12:45:26 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_fname"), 30): null
+
+2019-12-03 12:45:26 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:26 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:26 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("User_Registration/input_fname_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:26 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_fname"), firstName): Text 'bcohost-test' is set on object 'Object Repository/User_Registration/input_fname'
+
+2019-12-03 12:45:27 - [MESSAGE][PASSED] - Text 'bcohost-test' is set on object 'Object Repository/User_Registration/input_fname'
+
+2019-12-03 12:45:27 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_lname"), 30): null
+
+2019-12-03 12:45:27 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:27 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:27 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("User_Registration/input_lname_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:27 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:27 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_lname"), lastName): Text 'abc' is set on object 'Object Repository/User_Registration/input_lname'
+
+2019-12-03 12:45:27 - [MESSAGE][PASSED] - Text 'abc' is set on object 'Object Repository/User_Registration/input_lname'
+
+2019-12-03 12:45:27 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_pass"), 30): null
+
+2019-12-03 12:45:27 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:27 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:27 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_pass_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:27 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:27 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_pass"), pass): Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_pass'
+
+2019-12-03 12:45:28 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_pass'
+
+2019-12-03 12:45:28 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_confirm-pass"), 30): null
+
+2019-12-03 12:45:28 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:28 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:28 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_confirm-pass_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:28 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:28 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_confirm-pass"), pass): Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_confirm-pass'
+
+2019-12-03 12:45:28 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_confirm-pass'
+
+2019-12-03 12:45:28 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/check_email_div"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:28 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:28 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/check_email_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:28 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:28 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:28 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:28 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:28 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:28 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/User_Registration/check_email"), 10)): null
+
+2019-12-03 12:45:28 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 10)): null
+
+2019-12-03 12:45:28 - [TEST_STEP][PASSED] - emailAlreadyPresent = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_already_have_email"), 5): null
+
+2019-12-03 12:45:30 - [TEST_STEP][PASSED] - if (emailAlreadyPresent.size() < 1): null
+
+2019-12-03 12:45:30 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-12-03 12:45:40 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-12-03 12:45:40 - [TEST_STEP][PASSED] - currentTab = getWindowIndex(): Current window's index is: 0
+
+2019-12-03 12:45:41 - [MESSAGE][PASSED] - Current window's index is: 0
+
+2019-12-03 12:45:41 - [TEST_STEP][PASSED] - executor.executeScript("window.open();"): null
+
+2019-12-03 12:45:41 - [TEST_STEP][PASSED] - switchToWindowIndex(currentTab + 1): Switched to window with index: '1'
+
+2019-12-03 12:45:41 - [MESSAGE][PASSED] - Switched to window with index: '1'
+
+2019-12-03 12:45:41 - [TEST_STEP][PASSED] - navigateToUrl(WMURL): Navigate to 'http://webmail.cabiclio.com/' successfully
+
+2019-12-03 12:45:41 - [MESSAGE][PASSED] - Navigate to 'http://webmail.cabiclio.com/' successfully
+
+2019-12-03 12:45:41 - [TEST_STEP][PASSED] - emailAlreadyLogin = findWebElements(findTestObject("Object Repository/User_Registration/span_inbox_verify_already_login"), 5): null
+
+2019-12-03 12:45:42 - [TEST_STEP][PASSED] - if (emailAlreadyLogin.size() < 1): null
+
+2019-12-03 12:45:42 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:45:44 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:45:44 - [TEST_STEP][PASSED] - tdVerifyMail = findWebElements(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail"), 5): null
+
+2019-12-03 12:45:44 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail")): Object: 'Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail' is double clicked on
+
+2019-12-03 12:45:44 - [MESSAGE][PASSED] - Object: 'Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail' is double clicked on
+
+2019-12-03 12:45:44 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:45:46 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:45:46 - [TEST_STEP][PASSED] - veriCode = getText(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/p_verify_code")): Text of object 'Object Repository/User_Registration/Roundcube_Webmail/p_verify_code' is: '14860'
+
+2019-12-03 12:45:46 - [MESSAGE][PASSED] - Text of object 'Object Repository/User_Registration/Roundcube_Webmail/p_verify_code' is: '14860'
+
+2019-12-03 12:45:46 - [TEST_STEP][PASSED] - switchToWindowIndex(currentTab): Switched to window with index: '0'
+
+2019-12-03 12:45:46 - [MESSAGE][PASSED] - Switched to window with index: '0'
+
+2019-12-03 12:45:46 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_verify_code"), 30): null
+
+2019-12-03 12:45:46 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:46 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:46 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_verify_code_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:46 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:46 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_verify_code"), veriCode): Text '14860' is set on object 'Object Repository/User_Registration/input_verify_code'
+
+2019-12-03 12:45:47 - [MESSAGE][PASSED] - Text '14860' is set on object 'Object Repository/User_Registration/input_verify_code'
+
+2019-12-03 12:45:47 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:47 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:45:47 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:47 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:47 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:53 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:53 - [TEST_STEP][PASSED] - completeMyPlrofileLater = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 5): null
+
+2019-12-03 12:45:53 - [TEST_STEP][PASSED] - if (completeMyPlrofileLater.size() > 0): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:53 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_I_will_complete_my_profile_later"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:58 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:58 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_profile_dropdown"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:58 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:58 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-12-03 12:45:59 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-12-03 12:45:59 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_sign_out"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:59 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:45:59 - [TEST_STEP][PASSED] - signoutButton = findWebElements(findTestObject("Object Repository/User_Registration/a_logout"), 5): Unable to find the element located by 'By.xpath: //a[contains(text(), 'Logout')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:46:04 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(), 'Logout')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:46:04 - [TEST_STEP][PASSED] - if (signoutButton.size() > 0): null
+
+2019-12-03 12:46:04 - [TEST_STEP][PASSED] - signoutButton = findWebElements(findTestObject("Object Repository/User_Registration/a_signout"), 5): null
+
+2019-12-03 12:46:04 - [TEST_STEP][PASSED] - if (signoutButton.size() > 0): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:04 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_signout"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:04 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:04 - [TEST_STEP][PASSED] - println(noOfContacts): null
+
+2019-12-03 12:46:04 - [TEST_STEP][PASSED] - firstName = findTestData("contactData").getValue("firstName", row): null
+
+2019-12-03 12:46:04 - [TEST_STEP][PASSED] - lastName = findTestData("contactData").getValue("lastName", row): null
+
+2019-12-03 12:46:04 - [TEST_STEP][PASSED] - email = findTestData("contactData").getValue("email", row): null
+
+2019-12-03 12:46:04 - [TEST_STEP][PASSED] - pass = findTestData("contactData").getValue("pass", row): null
+
+2019-12-03 12:46:04 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-12-03 12:46:04 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-12-03 12:46:04 - [TEST_STEP][PASSED] - loginURL = UtilityMethods.concat("https://mirandakate.", RSTestEnvt, ".com/?component=account.login-gateway"): null
+
+2019-12-03 12:46:04 - [TEST_STEP][PASSED] - navigateToUrl(loginURL): Navigate to 'https://mirandakate.cabitest5.com/?component=account.login-gateway' successfully
+
+2019-12-03 12:46:11 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabitest5.com/?component=account.login-gateway' successfully
+
+2019-12-03 12:46:11 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:46:14 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:46:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email"), email): Text 'guest1-test@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-12-03 12:46:14 - [MESSAGE][PASSED] - Text 'guest1-test@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-12-03 12:46:14 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:14 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:14 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:46:17 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:46:17 - [TEST_STEP][PASSED] - welcome = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 5): Unable to find the element located by 'By.xpath: //h2[contains(text(), 'Welcome')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:46:22 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //h2[contains(text(), 'Welcome')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:46:22 - [TEST_STEP][PASSED] - if (welcome.size() > 0): null
+
+2019-12-03 12:46:22 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_fname"), 30): null
+
+2019-12-03 12:46:22 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:22 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:22 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("User_Registration/input_fname_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:23 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_fname"), firstName): Text 'guest1-test' is set on object 'Object Repository/User_Registration/input_fname'
+
+2019-12-03 12:46:23 - [MESSAGE][PASSED] - Text 'guest1-test' is set on object 'Object Repository/User_Registration/input_fname'
+
+2019-12-03 12:46:23 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_lname"), 30): null
+
+2019-12-03 12:46:23 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:23 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:23 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("User_Registration/input_lname_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:23 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_lname"), lastName): Text 'abc' is set on object 'Object Repository/User_Registration/input_lname'
+
+2019-12-03 12:46:23 - [MESSAGE][PASSED] - Text 'abc' is set on object 'Object Repository/User_Registration/input_lname'
+
+2019-12-03 12:46:23 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_pass"), 30): null
+
+2019-12-03 12:46:23 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:23 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:23 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_pass_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:23 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_pass"), pass): Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_pass'
+
+2019-12-03 12:46:23 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_pass'
+
+2019-12-03 12:46:23 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_confirm-pass"), 30): null
+
+2019-12-03 12:46:24 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:24 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:24 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_confirm-pass_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:24 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_confirm-pass"), pass): Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_confirm-pass'
+
+2019-12-03 12:46:24 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_confirm-pass'
+
+2019-12-03 12:46:24 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/check_email_div"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:24 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:24 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/check_email_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:24 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:24 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:24 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:24 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:24 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:24 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/User_Registration/check_email"), 10)): null
+
+2019-12-03 12:46:24 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 10)): null
+
+2019-12-03 12:46:24 - [TEST_STEP][PASSED] - emailAlreadyPresent = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_already_have_email"), 5): null
+
+2019-12-03 12:46:26 - [TEST_STEP][PASSED] - if (emailAlreadyPresent.size() < 1): null
+
+2019-12-03 12:46:26 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-12-03 12:46:36 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-12-03 12:46:36 - [TEST_STEP][PASSED] - currentTab = getWindowIndex(): Current window's index is: 0
+
+2019-12-03 12:46:36 - [MESSAGE][PASSED] - Current window's index is: 0
+
+2019-12-03 12:46:36 - [TEST_STEP][PASSED] - executor.executeScript("window.open();"): null
+
+2019-12-03 12:46:36 - [TEST_STEP][PASSED] - switchToWindowIndex(currentTab + 1): Switched to window with index: '1'
+
+2019-12-03 12:46:36 - [MESSAGE][PASSED] - Switched to window with index: '1'
+
+2019-12-03 12:46:36 - [TEST_STEP][PASSED] - navigateToUrl(WMURL): Navigate to 'http://webmail.cabiclio.com/' successfully
+
+2019-12-03 12:46:38 - [MESSAGE][PASSED] - Navigate to 'http://webmail.cabiclio.com/' successfully
+
+2019-12-03 12:46:38 - [TEST_STEP][PASSED] - emailAlreadyLogin = findWebElements(findTestObject("Object Repository/User_Registration/span_inbox_verify_already_login"), 5): null
+
+2019-12-03 12:46:38 - [TEST_STEP][PASSED] - if (emailAlreadyLogin.size() < 1): null
+
+2019-12-03 12:46:38 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:46:40 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:46:40 - [TEST_STEP][PASSED] - tdVerifyMail = findWebElements(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail"), 5): null
+
+2019-12-03 12:46:40 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail")): Object: 'Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail' is double clicked on
+
+2019-12-03 12:46:40 - [MESSAGE][PASSED] - Object: 'Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail' is double clicked on
+
+2019-12-03 12:46:40 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:46:42 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:46:42 - [TEST_STEP][PASSED] - veriCode = getText(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/p_verify_code")): Text of object 'Object Repository/User_Registration/Roundcube_Webmail/p_verify_code' is: '23669'
+
+2019-12-03 12:46:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/User_Registration/Roundcube_Webmail/p_verify_code' is: '23669'
+
+2019-12-03 12:46:43 - [TEST_STEP][PASSED] - switchToWindowIndex(currentTab): Switched to window with index: '0'
+
+2019-12-03 12:46:43 - [MESSAGE][PASSED] - Switched to window with index: '0'
+
+2019-12-03 12:46:43 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_verify_code"), 30): null
+
+2019-12-03 12:46:43 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:43 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:43 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_verify_code_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:43 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:43 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_verify_code"), veriCode): Text '23669' is set on object 'Object Repository/User_Registration/input_verify_code'
+
+2019-12-03 12:46:43 - [MESSAGE][PASSED] - Text '23669' is set on object 'Object Repository/User_Registration/input_verify_code'
+
+2019-12-03 12:46:43 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:43 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:46:43 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:43 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:43 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:50 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:50 - [TEST_STEP][PASSED] - completeMyPlrofileLater = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 5): null
+
+2019-12-03 12:46:50 - [TEST_STEP][PASSED] - if (completeMyPlrofileLater.size() > 0): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:50 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_I_will_complete_my_profile_later"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:53 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:53 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_profile_dropdown"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:53 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:53 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-12-03 12:46:54 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-12-03 12:46:54 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_sign_out"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:55 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:46:55 - [TEST_STEP][PASSED] - signoutButton = findWebElements(findTestObject("Object Repository/User_Registration/a_logout"), 5): Unable to find the element located by 'By.xpath: //a[contains(text(), 'Logout')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:47:00 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(), 'Logout')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:47:00 - [TEST_STEP][PASSED] - if (signoutButton.size() > 0): null
+
+2019-12-03 12:47:00 - [TEST_STEP][PASSED] - signoutButton = findWebElements(findTestObject("Object Repository/User_Registration/a_signout"), 5): null
+
+2019-12-03 12:47:00 - [TEST_STEP][PASSED] - if (signoutButton.size() > 0): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:00 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_signout"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:00 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:00 - [TEST_STEP][PASSED] - println(noOfContacts): null
+
+2019-12-03 12:47:00 - [TEST_STEP][PASSED] - firstName = findTestData("contactData").getValue("firstName", row): null
+
+2019-12-03 12:47:00 - [TEST_STEP][PASSED] - lastName = findTestData("contactData").getValue("lastName", row): null
+
+2019-12-03 12:47:00 - [TEST_STEP][PASSED] - email = findTestData("contactData").getValue("email", row): null
+
+2019-12-03 12:47:00 - [TEST_STEP][PASSED] - pass = findTestData("contactData").getValue("pass", row): null
+
+2019-12-03 12:47:00 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-12-03 12:47:00 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-12-03 12:47:00 - [TEST_STEP][PASSED] - loginURL = UtilityMethods.concat("https://mirandakate.", RSTestEnvt, ".com/?component=account.login-gateway"): null
+
+2019-12-03 12:47:00 - [TEST_STEP][PASSED] - navigateToUrl(loginURL): Navigate to 'https://mirandakate.cabitest5.com/?component=account.login-gateway' successfully
+
+2019-12-03 12:47:06 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabitest5.com/?component=account.login-gateway' successfully
+
+2019-12-03 12:47:06 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:47:09 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:47:09 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email"), email): Text 'guest2-test@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-12-03 12:47:10 - [MESSAGE][PASSED] - Text 'guest2-test@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-12-03 12:47:10 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:10 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:10 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:47:13 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:47:13 - [TEST_STEP][PASSED] - welcome = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 5): Unable to find the element located by 'By.xpath: //h2[contains(text(), 'Welcome')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:47:18 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //h2[contains(text(), 'Welcome')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:47:18 - [TEST_STEP][PASSED] - if (welcome.size() > 0): null
+
+2019-12-03 12:47:18 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_fname"), 30): null
+
+2019-12-03 12:47:18 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:18 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:18 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("User_Registration/input_fname_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:18 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:18 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_fname"), firstName): Text 'guest2-test' is set on object 'Object Repository/User_Registration/input_fname'
+
+2019-12-03 12:47:18 - [MESSAGE][PASSED] - Text 'guest2-test' is set on object 'Object Repository/User_Registration/input_fname'
+
+2019-12-03 12:47:18 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_lname"), 30): null
+
+2019-12-03 12:47:18 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:18 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:18 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("User_Registration/input_lname_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:18 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:18 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_lname"), lastName): Text 'abc' is set on object 'Object Repository/User_Registration/input_lname'
+
+2019-12-03 12:47:19 - [MESSAGE][PASSED] - Text 'abc' is set on object 'Object Repository/User_Registration/input_lname'
+
+2019-12-03 12:47:19 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_pass"), 30): null
+
+2019-12-03 12:47:19 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:19 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:19 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_pass_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:19 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:19 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_pass"), pass): Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_pass'
+
+2019-12-03 12:47:19 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_pass'
+
+2019-12-03 12:47:19 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_confirm-pass"), 30): null
+
+2019-12-03 12:47:19 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:19 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:19 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_confirm-pass_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:19 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:19 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_confirm-pass"), pass): Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_confirm-pass'
+
+2019-12-03 12:47:19 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_confirm-pass'
+
+2019-12-03 12:47:19 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/check_email_div"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:19 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:19 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/check_email_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:19 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:19 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:20 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:20 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:20 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:20 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/User_Registration/check_email"), 10)): null
+
+2019-12-03 12:47:20 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 10)): null
+
+2019-12-03 12:47:20 - [TEST_STEP][PASSED] - emailAlreadyPresent = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_already_have_email"), 5): null
+
+2019-12-03 12:47:22 - [TEST_STEP][PASSED] - if (emailAlreadyPresent.size() < 1): null
+
+2019-12-03 12:47:22 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-12-03 12:47:32 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-12-03 12:47:32 - [TEST_STEP][PASSED] - currentTab = getWindowIndex(): Current window's index is: 0
+
+2019-12-03 12:47:32 - [MESSAGE][PASSED] - Current window's index is: 0
+
+2019-12-03 12:47:32 - [TEST_STEP][PASSED] - executor.executeScript("window.open();"): null
+
+2019-12-03 12:47:33 - [TEST_STEP][PASSED] - switchToWindowIndex(currentTab + 1): Switched to window with index: '1'
+
+2019-12-03 12:47:33 - [MESSAGE][PASSED] - Switched to window with index: '1'
+
+2019-12-03 12:47:33 - [TEST_STEP][PASSED] - navigateToUrl(WMURL): Navigate to 'http://webmail.cabiclio.com/' successfully
+
+2019-12-03 12:47:33 - [MESSAGE][PASSED] - Navigate to 'http://webmail.cabiclio.com/' successfully
+
+2019-12-03 12:47:33 - [TEST_STEP][PASSED] - emailAlreadyLogin = findWebElements(findTestObject("Object Repository/User_Registration/span_inbox_verify_already_login"), 5): null
+
+2019-12-03 12:47:33 - [TEST_STEP][PASSED] - if (emailAlreadyLogin.size() < 1): null
+
+2019-12-03 12:47:33 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:47:35 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:47:35 - [TEST_STEP][PASSED] - tdVerifyMail = findWebElements(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail"), 5): null
+
+2019-12-03 12:47:35 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail")): Object: 'Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail' is double clicked on
+
+2019-12-03 12:47:36 - [MESSAGE][PASSED] - Object: 'Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail' is double clicked on
+
+2019-12-03 12:47:36 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:47:38 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:47:38 - [TEST_STEP][PASSED] - veriCode = getText(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/p_verify_code")): Text of object 'Object Repository/User_Registration/Roundcube_Webmail/p_verify_code' is: '16349'
+
+2019-12-03 12:47:38 - [MESSAGE][PASSED] - Text of object 'Object Repository/User_Registration/Roundcube_Webmail/p_verify_code' is: '16349'
+
+2019-12-03 12:47:38 - [TEST_STEP][PASSED] - switchToWindowIndex(currentTab): Switched to window with index: '0'
+
+2019-12-03 12:47:38 - [MESSAGE][PASSED] - Switched to window with index: '0'
+
+2019-12-03 12:47:38 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_verify_code"), 30): null
+
+2019-12-03 12:47:38 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:38 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:38 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_verify_code_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:38 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:38 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_verify_code"), veriCode): Text '16349' is set on object 'Object Repository/User_Registration/input_verify_code'
+
+2019-12-03 12:47:39 - [MESSAGE][PASSED] - Text '16349' is set on object 'Object Repository/User_Registration/input_verify_code'
+
+2019-12-03 12:47:39 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:39 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:47:39 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:39 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:39 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:45 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:45 - [TEST_STEP][PASSED] - completeMyPlrofileLater = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 5): null
+
+2019-12-03 12:47:45 - [TEST_STEP][PASSED] - if (completeMyPlrofileLater.size() > 0): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:45 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_I_will_complete_my_profile_later"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:48 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:48 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_profile_dropdown"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:49 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:49 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-12-03 12:47:50 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-12-03 12:47:50 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_sign_out"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:50 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:50 - [TEST_STEP][PASSED] - signoutButton = findWebElements(findTestObject("Object Repository/User_Registration/a_logout"), 5): Unable to find the element located by 'By.xpath: //a[contains(text(), 'Logout')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:47:55 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(), 'Logout')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:47:55 - [TEST_STEP][PASSED] - if (signoutButton.size() > 0): null
+
+2019-12-03 12:47:55 - [TEST_STEP][PASSED] - signoutButton = findWebElements(findTestObject("Object Repository/User_Registration/a_signout"), 5): null
+
+2019-12-03 12:47:55 - [TEST_STEP][PASSED] - if (signoutButton.size() > 0): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:55 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_signout"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:55 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:47:55 - [TEST_STEP][PASSED] - println(noOfContacts): null
+
+2019-12-03 12:47:55 - [TEST_STEP][PASSED] - firstName = findTestData("contactData").getValue("firstName", row): null
+
+2019-12-03 12:47:55 - [TEST_STEP][PASSED] - lastName = findTestData("contactData").getValue("lastName", row): null
+
+2019-12-03 12:47:55 - [TEST_STEP][PASSED] - email = findTestData("contactData").getValue("email", row): null
+
+2019-12-03 12:47:55 - [TEST_STEP][PASSED] - pass = findTestData("contactData").getValue("pass", row): null
+
+2019-12-03 12:47:55 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-12-03 12:47:55 - [TEST_STEP][PASSED] - executor = driver: null
+
+2019-12-03 12:47:55 - [TEST_STEP][PASSED] - loginURL = UtilityMethods.concat("https://mirandakate.", RSTestEnvt, ".com/?component=account.login-gateway"): null
+
+2019-12-03 12:47:55 - [TEST_STEP][PASSED] - navigateToUrl(loginURL): Navigate to 'https://mirandakate.cabitest5.com/?component=account.login-gateway' successfully
+
+2019-12-03 12:48:01 - [MESSAGE][PASSED] - Navigate to 'https://mirandakate.cabitest5.com/?component=account.login-gateway' successfully
+
+2019-12-03 12:48:01 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:48:04 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:48:04 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email"), email): Text 'guest3-test@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-12-03 12:48:05 - [MESSAGE][PASSED] - Text 'guest3-test@test.com' is set on object 'Object Repository/virualShowRSVPOR/Page_Show microsite/input_Sign in  Create account_email'
+
+2019-12-03 12:48:05 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/virualShowRSVPOR/Page_Show microsite/button_Continue"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:05 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:05 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 12:48:08 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 12:48:08 - [TEST_STEP][PASSED] - welcome = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 5): Unable to find the element located by 'By.xpath: //h2[contains(text(), 'Welcome')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:48:13 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //h2[contains(text(), 'Welcome')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:48:13 - [TEST_STEP][PASSED] - if (welcome.size() > 0): null
+
+2019-12-03 12:48:13 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_fname"), 30): null
+
+2019-12-03 12:48:13 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:13 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:13 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("User_Registration/input_fname_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:13 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:13 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_fname"), firstName): Text 'guest3-test' is set on object 'Object Repository/User_Registration/input_fname'
+
+2019-12-03 12:48:14 - [MESSAGE][PASSED] - Text 'guest3-test' is set on object 'Object Repository/User_Registration/input_fname'
+
+2019-12-03 12:48:14 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_lname"), 30): null
+
+2019-12-03 12:48:14 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:14 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:14 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("User_Registration/input_lname_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:14 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_lname"), lastName): Text 'abc' is set on object 'Object Repository/User_Registration/input_lname'
+
+2019-12-03 12:48:14 - [MESSAGE][PASSED] - Text 'abc' is set on object 'Object Repository/User_Registration/input_lname'
+
+2019-12-03 12:48:14 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_pass"), 30): null
+
+2019-12-03 12:48:14 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:14 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:14 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_pass_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:14 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_pass"), pass): Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_pass'
+
+2019-12-03 12:48:14 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_pass'
+
+2019-12-03 12:48:14 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_confirm-pass"), 30): null
+
+2019-12-03 12:48:14 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:14 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:14 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_confirm-pass_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:14 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_confirm-pass"), pass): Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_confirm-pass'
+
+2019-12-03 12:48:15 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/User_Registration/input_confirm-pass'
+
+2019-12-03 12:48:15 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/check_email_div"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:15 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:15 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/check_email_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:15 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:15 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:15 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:15 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:15 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:15 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/User_Registration/check_email"), 10)): null
+
+2019-12-03 12:48:15 - [TEST_STEP][PASSED] - executor.executeScript("arguments[0].click();", findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 10)): null
+
+2019-12-03 12:48:15 - [TEST_STEP][PASSED] - emailAlreadyPresent = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_already_have_email"), 5): null
+
+2019-12-03 12:48:18 - [TEST_STEP][PASSED] - if (emailAlreadyPresent.size() < 1): null
+
+2019-12-03 12:48:18 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2019-12-03 12:48:28 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2019-12-03 12:48:28 - [TEST_STEP][PASSED] - currentTab = getWindowIndex(): Current window's index is: 0
+
+2019-12-03 12:48:28 - [MESSAGE][PASSED] - Current window's index is: 0
+
+2019-12-03 12:48:28 - [TEST_STEP][PASSED] - executor.executeScript("window.open();"): null
+
+2019-12-03 12:48:28 - [TEST_STEP][PASSED] - switchToWindowIndex(currentTab + 1): Switched to window with index: '1'
+
+2019-12-03 12:48:28 - [MESSAGE][PASSED] - Switched to window with index: '1'
+
+2019-12-03 12:48:28 - [TEST_STEP][PASSED] - navigateToUrl(WMURL): Navigate to 'http://webmail.cabiclio.com/' successfully
+
+2019-12-03 12:48:29 - [MESSAGE][PASSED] - Navigate to 'http://webmail.cabiclio.com/' successfully
+
+2019-12-03 12:48:29 - [TEST_STEP][PASSED] - emailAlreadyLogin = findWebElements(findTestObject("Object Repository/User_Registration/span_inbox_verify_already_login"), 5): null
+
+2019-12-03 12:48:29 - [TEST_STEP][PASSED] - if (emailAlreadyLogin.size() < 1): null
+
+2019-12-03 12:48:29 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:48:31 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:48:31 - [TEST_STEP][PASSED] - tdVerifyMail = findWebElements(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail"), 5): null
+
+2019-12-03 12:48:31 - [TEST_STEP][PASSED] - doubleClick(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail")): Object: 'Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail' is double clicked on
+
+2019-12-03 12:48:31 - [MESSAGE][PASSED] - Object: 'Object Repository/User_Registration/Roundcube_Webmail/td_verify_mail' is double clicked on
+
+2019-12-03 12:48:31 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 12:48:33 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 12:48:33 - [TEST_STEP][PASSED] - veriCode = getText(findTestObject("Object Repository/User_Registration/Roundcube_Webmail/p_verify_code")): Text of object 'Object Repository/User_Registration/Roundcube_Webmail/p_verify_code' is: '20607'
+
+2019-12-03 12:48:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/User_Registration/Roundcube_Webmail/p_verify_code' is: '20607'
+
+2019-12-03 12:48:33 - [TEST_STEP][PASSED] - switchToWindowIndex(currentTab): Switched to window with index: '0'
+
+2019-12-03 12:48:34 - [MESSAGE][PASSED] - Switched to window with index: '0'
+
+2019-12-03 12:48:34 - [TEST_STEP][PASSED] - element1 = findWebElement(findTestObject("Object Repository/User_Registration/input_verify_code"), 30): null
+
+2019-12-03 12:48:34 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(element1)): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:34 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:34 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/input_verify_code_div"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:34 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:34 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/User_Registration/input_verify_code"), veriCode): Text '20607' is set on object 'Object Repository/User_Registration/input_verify_code'
+
+2019-12-03 12:48:34 - [MESSAGE][PASSED] - Text '20607' is set on object 'Object Repository/User_Registration/input_verify_code'
+
+2019-12-03 12:48:34 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:34 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click' successfully
+
+2019-12-03 12:48:34 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/button_submit"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:34 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:34 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:43 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:43 - [TEST_STEP][PASSED] - completeMyPlrofileLater = findWebElements(findTestObject("Object Repository/User_Registration/verify_text_welcome"), 5): null
+
+2019-12-03 12:48:43 - [TEST_STEP][PASSED] - if (completeMyPlrofileLater.size() > 0): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:43 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_I_will_complete_my_profile_later"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:46 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:46 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_profile_dropdown"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:47 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:47 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-12-03 12:48:48 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-12-03 12:48:48 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_sign_out"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:48 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:48 - [TEST_STEP][PASSED] - signoutButton = findWebElements(findTestObject("Object Repository/User_Registration/a_logout"), 5): Unable to find the element located by 'By.xpath: //a[contains(text(), 'Logout')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:48:53 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(), 'Logout')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 12:48:53 - [TEST_STEP][PASSED] - if (signoutButton.size() > 0): null
+
+2019-12-03 12:48:53 - [TEST_STEP][PASSED] - signoutButton = findWebElements(findTestObject("Object Repository/User_Registration/a_signout"), 5): null
+
+2019-12-03 12:48:53 - [TEST_STEP][PASSED] - if (signoutButton.size() > 0): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:53 - [TEST_STEP][PASSED] - executeJavaScript("arguments[0].click()", Arrays.asList(findWebElement(findTestObject("Object Repository/User_Registration/a_signout"), 30))): Execute JavaScript 'arguments[0].click()' successfully
+
+2019-12-03 12:48:53 - [MESSAGE][PASSED] - Execute JavaScript 'arguments[0].click()' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-12-03 12:40:13 - [TEST_SUITE][PASSED] - AddContacts: Test Cases/TestCaseUtilities/userRegistration]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

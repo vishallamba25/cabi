@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+AddContacts,Chrome 78.0.3904.108,,2019-12-03 12:40:13,2019-12-03 12:48:54,8m - 40.800s,PASSED
+,,,,,,
+Test Cases/TestCaseUtilities/createContactBO,Chrome 78.0.3904.108,,2019-12-03 12:40:13,2019-12-03 12:43:16,3m - 2.535s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.108,,2019-12-03 12:40:14,2019-12-03 12:40:14,0.152s,PASSED
+"openBrowser("""")",Chrome 78.0.3904.108,,2019-12-03 12:40:14,2019-12-03 12:40:18,3.773s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/backOfficeLogin""), [""BOURL"":"""", ""BOuser"":"""", ""BOpass"":""""], STOP_ON_FAILURE)",Chrome 78.0.3904.108,,2019-12-03 12:40:18,2019-12-03 12:40:47,28.561s,PASSED
+"noOfContacts = findTestData(""contactData"").getRowNumbers()",Chrome 78.0.3904.108,,2019-12-03 12:40:47,2019-12-03 12:40:47,0.109s,PASSED
+"for ([row = 1, row <= noOfContacts, (row++)])",Chrome 78.0.3904.108,,2019-12-03 12:40:47,2019-12-03 12:43:15,2m - 28.462s,PASSED
+closeBrowser(),Chrome 78.0.3904.108,,2019-12-03 12:43:15,2019-12-03 12:43:16,0.747s,PASSED
+,,,,,,
+Test Cases/TestCaseUtilities/userRegistration,Chrome 78.0.3904.108,,2019-12-03 12:43:16,2019-12-03 12:48:53,5m - 37.041s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 78.0.3904.108,,2019-12-03 12:43:16,2019-12-03 12:43:16,0.003s,PASSED
+"openBrowser("""")",Chrome 78.0.3904.108,,2019-12-03 12:43:16,2019-12-03 12:43:19,2.116s,PASSED
+"RSTestEnvt = findTestData(""envtData"").getValue(""RSTestEnvt"", 1)",Chrome 78.0.3904.108,,2019-12-03 12:43:19,2019-12-03 12:43:19,0.014s,PASSED
+"callTestCase(findTestCase(""TestCaseUtilities/setVHost""), [:], CONTINUE_ON_FAILURE)",Chrome 78.0.3904.108,,2019-12-03 12:43:19,2019-12-03 12:43:29,10.099s,PASSED
+sa = new org.testng.asserts.SoftAssert(),Chrome 78.0.3904.108,,2019-12-03 12:43:29,2019-12-03 12:43:29,0.015s,PASSED
+"WMURL = findTestData(""envtData"").getValue(""WMURL"", 1)",Chrome 78.0.3904.108,,2019-12-03 12:43:29,2019-12-03 12:43:29,0.038s,PASSED
+"WMEnvt = findTestData(""envtData"").getValue(""WMEnvt"", 1)",Chrome 78.0.3904.108,,2019-12-03 12:43:29,2019-12-03 12:43:29,0.029s,PASSED
+"WMpass = findTestData(""credData"").getValue(""WMpass"", 1)",Chrome 78.0.3904.108,,2019-12-03 12:43:29,2019-12-03 12:43:29,0.020s,PASSED
+"noOfContacts = findTestData(""contactData"").getRowNumbers()",Chrome 78.0.3904.108,,2019-12-03 12:43:29,2019-12-03 12:43:29,0.016s,PASSED
+"for ([row = 1, row <= noOfContacts, (row++)])",Chrome 78.0.3904.108,,2019-12-03 12:43:29,2019-12-03 12:48:53,5m - 24.220s,PASSED

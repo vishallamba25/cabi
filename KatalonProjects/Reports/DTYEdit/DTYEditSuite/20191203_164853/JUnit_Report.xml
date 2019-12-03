@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="DTYEditSuite" time="61" tests="0" failures="0" errors="1">
+   <testsuite name="DTYEditSuite" tests="0" failures="0" errors="1" time="61" timestamp="2019-12-03 16:48:59" hostname="user - 172.16.231.54" id="Test Suites/DTYEdit/DTYEditSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\DTYEdit\\DTYEditSuite\\20191203_164853"/>
+         <property name="logFiles" value="C:\\Users\\user\\Documents\\testautomation\\KatalonProjects\\Reports\\DTYEdit\\DTYEditSuite\\20191203_164853\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 172.16.231.54"/>
+         <property name="os" value="Windows 8.1 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+         <property name="browser" value="Chrome 78.0.3904.108"/>
+         <property name="hostAddress" value="172.16.231.54"/>
+         <property name="sessionId" value="56632749169981700185a42a0f57fc4b"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 8.1"/>
+      </properties>
+      <testcase name="Test Cases/VirtualShow/BODTY/DTYEdit" classname="Test Cases/VirtualShow/BODTY/DTYEdit" status="ERROR">
+         <error type="ERROR" message="Test Cases/VirtualShow/BODTY/DTYEdit FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at DTYEdit.run(DTYEdit:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1575371933499.run(TempTestSuite1575371933499.groovy:35)
+Caused by: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter hostess email address}
+  (Session info: chrome=78.0.3904.108): Please enter hostess email address
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'NIVEDITA', ip: '172.16.231.54', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(direct), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56632749169981700185a42a0f57fc4b
+*** Element info: {Using=xpath, value=//p[contains(text(),'Address validated by cabi.')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:20)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:358)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:761)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElements.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+"/>
+         <system-out><![CDATA[2019-12-03 16:49:00 - [TEST_CASE][ERROR] - Test Cases/VirtualShow/BODTY/DTYEdit: Test Cases/VirtualShow/BODTY/DTYEdit FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at DTYEdit.run(DTYEdit:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1575371933499.run(TempTestSuite1575371933499.groovy:35)
+Caused by: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter hostess email address}
+  (Session info: chrome=78.0.3904.108): Please enter hostess email address
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'NIVEDITA', ip: '172.16.231.54', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(direct), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56632749169981700185a42a0f57fc4b
+*** Element info: {Using=xpath, value=//p[contains(text(),'Address validated by cabi.')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:20)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:358)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:761)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElements.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+
+
+2019-12-03 16:49:01 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-12-03 16:49:01 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-12-03 16:49:01 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-12-03 16:49:03 - [TEST_STEP][PASSED] - dataFile = "virtualShowData": null
+
+2019-12-03 16:49:03 - [TEST_STEP][PASSED] - guest1 = findTestData(dataFile).getValue("guest1", 1): null
+
+2019-12-03 16:49:06 - [TEST_STEP][PASSED] - dfMM = new java.text.SimpleDateFormat(MM): null
+
+2019-12-03 16:49:06 - [TEST_STEP][PASSED] - dfDD = new java.text.SimpleDateFormat(dd): null
+
+2019-12-03 16:49:06 - [TEST_STEP][PASSED] - dfYYYY = new java.text.SimpleDateFormat(yyyy): null
+
+2019-12-03 16:49:06 - [TEST_STEP][PASSED] - today = getInstance().getTime(): null
+
+2019-12-03 16:49:06 - [TEST_STEP][PASSED] - c = Calendar.getInstance(): null
+
+2019-12-03 16:49:06 - [TEST_STEP][PASSED] - c.setTime(today): null
+
+2019-12-03 16:49:06 - [TEST_STEP][PASSED] - c.add(DATE, 2): null
+
+2019-12-03 16:49:06 - [TEST_STEP][PASSED] - newShowDate = c.getTime(): null
+
+2019-12-03 16:49:06 - [TEST_STEP][PASSED] - vsyear = dfYYYY.format(newShowDate): null
+
+2019-12-03 16:49:06 - [TEST_STEP][PASSED] - vsmonth = dfMM.format(newShowDate): null
+
+2019-12-03 16:49:06 - [TEST_STEP][PASSED] - vsday = dfDD.format(newShowDate): null
+
+2019-12-03 16:49:06 - [TEST_STEP][PASSED] - println(UtilityMethods.concat("from DTY: ", vsday, " ", vsmonth, " ", vsyear)): null
+
+2019-12-03 16:49:06 - [TEST_STEP][ERROR] - callTestCase(findTestCase("VirtualShow/createAPhysicalShow"), ["BOURL":"", "BOuser":"", "BOpass":"", "hostess":"", "cohostess":"", "vsday":vsday, "vsmonth":vsmonth, "vsyear":vsyear], STOP_ON_FAILURE): callTestCase(findTestCase("VirtualShow/createAPhysicalShow"), ["BOURL":"", "BOuser":"", "BOpass":"", "hostess":"", "cohostess":"", "vsday":vsday, "vsmonth":vsmonth, "vsyear":vsyear], STOP_ON_FAILURE) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at DTYEdit.run(DTYEdit:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1575371933499.run(TempTestSuite1575371933499.groovy:35)
+Caused by: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter hostess email address}
+  (Session info: chrome=78.0.3904.108): Please enter hostess email address
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'NIVEDITA', ip: '172.16.231.54', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(direct), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56632749169981700185a42a0f57fc4b
+*** Element info: {Using=xpath, value=//p[contains(text(),'Address validated by cabi.')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:20)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:358)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:761)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElements.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+
+
+2019-12-03 16:49:07 - [TEST_CASE][ERROR] - Test Cases/VirtualShow/createAPhysicalShow: Test Cases/VirtualShow/createAPhysicalShow FAILED.
+Reason:
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter hostess email address}
+  (Session info: chrome=78.0.3904.108): Please enter hostess email address
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'NIVEDITA', ip: '172.16.231.54', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(direct), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56632749169981700185a42a0f57fc4b
+*** Element info: {Using=xpath, value=//p[contains(text(),'Address validated by cabi.')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:20)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:358)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:761)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElements.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at DTYEdit.run(DTYEdit:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1575371933499.run(TempTestSuite1575371933499.groovy:35)
+
+
+2019-12-03 16:49:08 - [TEST_STEP][PASSED] - dataFile = "virtualShowData": null
+
+2019-12-03 16:49:08 - [TEST_STEP][PASSED] - stylist = findTestData(dataFile).getValue("stylist", 1): null
+
+2019-12-03 16:49:08 - [TEST_STEP][PASSED] - hostess = findTestData(dataFile).getValue("hostess", 1): null
+
+2019-12-03 16:49:09 - [TEST_STEP][PASSED] - cohostess = findTestData(dataFile).getValue("cohostess", 1): null
+
+2019-12-03 16:49:09 - [TEST_STEP][PASSED] - guest1 = findTestData(dataFile).getValue("guest1", 1): null
+
+2019-12-03 16:49:09 - [TEST_STEP][PASSED] - guest2 = findTestData(dataFile).getValue("guest2", 1): null
+
+2019-12-03 16:49:09 - [TEST_STEP][PASSED] - verifyGuestCount = findTestData(dataFile).getValue("verifyGuestCount", 1): null
+
+2019-12-03 16:49:09 - [TEST_STEP][PASSED] - RSTestEnvt = findTestData("envtData").getValue("RSTestEnvt", 1): null
+
+2019-12-03 16:49:09 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-12-03 16:49:09 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-12-03 16:49:09 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-12-03 16:49:10 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-12-03 16:49:14 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-12-03 16:49:14 - [TEST_STEP][PASSED] - callTestCase(findTestCase("TestCaseUtilities/backOfficeLogin"), ["BOURL":"", "BOuser":"", "BOpass":""], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-12-03 16:49:14 - [TEST_CASE][PASSED] - Test Cases/TestCaseUtilities/backOfficeLogin: Test Cases/TestCaseUtilities/backOfficeLogin
+
+2019-12-03 16:49:14 - [TEST_STEP][PASSED] - BOURL = findTestData("envtData").getValue("BOURL", 1): null
+
+2019-12-03 16:49:14 - [TEST_STEP][PASSED] - BOuser = findTestData("credData").getValue("BOuser", 1): null
+
+2019-12-03 16:49:14 - [TEST_STEP][PASSED] - BOpass = findTestData("credData").getValue("BOpass", 1): null
+
+2019-12-03 16:49:14 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-12-03 16:49:14 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-12-03 16:49:15 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-12-03 16:49:15 - [MESSAGE][INFO] - User set preference: ['args', '[--use-fake-ui-for-media-stream, --start-maximized]']
+
+2019-12-03 16:49:18 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-12-03 16:49:18 - [TEST_STEP][PASSED] - navigateToUrl(BOURL): Navigate to 'https://test21.cliotest.com/backoffice/control/main' successfully
+
+2019-12-03 16:49:30 - [MESSAGE][PASSED] - Navigate to 'https://test21.cliotest.com/backoffice/control/main' successfully
+
+2019-12-03 16:49:30 - [TEST_STEP][PASSED] - logOut = findWebElements(findTestObject("Object Repository/Page_cabi Home/log_out"), 1): Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 16:49:32 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(text(),'Log Out')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-12-03 16:49:32 - [TEST_STEP][PASSED] - if (logOut.size() == 0): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-12-03 16:49:32 - [TEST_STEP][PASSED] - setText(findTestObject("Page_cabi/input_Welcome to_USERNAME"), BOuser): Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-12-03 16:49:32 - [MESSAGE][PASSED] - Text '400000002' is set on object 'Object Repository/Page_cabi/input_Welcome to_USERNAME'
+
+2019-12-03 16:49:32 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_cabi/input_Welcome to_PASSWORD"), BOpass): Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-12-03 16:49:32 - [MESSAGE][PASSED] - Text 'blackdress19' is set on object 'Object Repository/Page_cabi/input_Welcome to_PASSWORD'
+
+2019-12-03 16:49:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_cabi/input_Welcome to_consultantLogin")): Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-12-03 16:49:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_cabi/input_Welcome to_consultantLogin' is clicked on
+
+2019-12-03 16:49:50 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2019-12-03 16:49:53 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2019-12-03 16:49:53 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/TestCaseUtilities/backOfficeLogin' successfully
+
+2019-12-03 16:49:53 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi/span_username"), stylist): Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-12-03 16:49:53 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/virualShowRSVPOR/Page_cabi/span_username' are matched.
+
+2019-12-03 16:49:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-12-03 16:49:53 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_shows _orders' is clicked on
+
+2019-12-03 16:49:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show")): Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-12-03 16:49:55 - [MESSAGE][PASSED] - Object: 'Object Repository/virualShowRSVPOR/Page_cabi Home/a_Create_A_Show' is clicked on
+
+2019-12-03 16:49:55 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), hostess): Text 'ahostess-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-12-03 16:49:56 - [MESSAGE][PASSED] - Text 'ahostess-test abc' is set on object 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-12-03 16:49:56 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 16:49:58 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 16:49:58 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ARROW_DOWN)): Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-12-03 16:49:58 - [MESSAGE][PASSED] - Keys 'DOWN + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-12-03 16:49:58 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-12-03 16:49:58 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/input_Hostess'
+
+2019-12-03 16:49:58 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-12-03 16:50:00 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-12-03 16:50:00 - [TEST_STEP][ERROR] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5): validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5) FAILED.
+Reason:
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter hostess email address}
+  (Session info: chrome=78.0.3904.108): Please enter hostess email address
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'NIVEDITA', ip: '172.16.231.54', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(direct), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56632749169981700185a42a0f57fc4b
+*** Element info: {Using=xpath, value=//p[contains(text(),'Address validated by cabi.')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:20)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:358)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:761)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElements.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at DTYEdit.run(DTYEdit:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1575371933499.run(TempTestSuite1575371933499.groovy:35)
+
+
+2019-12-03 16:50:00 - [MESSAGE][ERROR] - validateHostessAddressMsg = findWebElements(findTestObject("Object Repository/virualShowRSVPOR/Page_cabi Create Show - Set Hostess/validate_address_msg"), 5) FAILED.
+Reason:
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter hostess email address}
+  (Session info: chrome=78.0.3904.108): Please enter hostess email address
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'NIVEDITA', ip: '172.16.231.54', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(direct), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56632749169981700185a42a0f57fc4b
+*** Element info: {Using=xpath, value=//p[contains(text(),'Address validated by cabi.')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:20)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:358)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:761)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElements.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at DTYEdit.run(DTYEdit:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1575371933499.run(TempTestSuite1575371933499.groovy:35)
+
+
+2019-12-03 16:50:00 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at DTYEdit.run(DTYEdit:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1575371933499.run(TempTestSuite1575371933499.groovy:35)
+Caused by: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter hostess email address}
+  (Session info: chrome=78.0.3904.108): Please enter hostess email address
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'NIVEDITA', ip: '172.16.231.54', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(direct), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56632749169981700185a42a0f57fc4b
+*** Element info: {Using=xpath, value=//p[contains(text(),'Address validated by cabi.')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:20)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:358)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:761)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElements.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2019-12-03 16:50:00 - [MESSAGE][ERROR] - callTestCase(findTestCase("VirtualShow/createAPhysicalShow"), ["BOURL":"", "BOuser":"", "BOpass":"", "hostess":"", "cohostess":"", "vsday":vsday, "vsmonth":vsmonth, "vsyear":vsyear], STOP_ON_FAILURE) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at DTYEdit.run(DTYEdit:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1575371933499.run(TempTestSuite1575371933499.groovy:35)
+Caused by: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter hostess email address}
+  (Session info: chrome=78.0.3904.108): Please enter hostess email address
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'NIVEDITA', ip: '172.16.231.54', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(direct), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56632749169981700185a42a0f57fc4b
+*** Element info: {Using=xpath, value=//p[contains(text(),'Address validated by cabi.')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:20)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:358)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:761)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElements.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-out>
+         <system-err><![CDATA[2019-12-03 16:49:00 - [TEST_CASE][ERROR] - Test Cases/VirtualShow/BODTY/DTYEdit: Test Cases/VirtualShow/BODTY/DTYEdit FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at DTYEdit.run(DTYEdit:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1575371933499.run(TempTestSuite1575371933499.groovy:35)
+Caused by: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter hostess email address}
+  (Session info: chrome=78.0.3904.108): Please enter hostess email address
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'NIVEDITA', ip: '172.16.231.54', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(direct), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56632749169981700185a42a0f57fc4b
+*** Element info: {Using=xpath, value=//p[contains(text(),'Address validated by cabi.')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:20)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:358)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:761)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElements.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-12-03 16:48:59 - [TEST_SUITE][ERROR] - DTYEditSuite: Test Cases/VirtualShow/BODTY/DTYEdit FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at DTYEdit.run(DTYEdit:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1575371933499.run(TempTestSuite1575371933499.groovy:35)
+Caused by: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter hostess email address}
+  (Session info: chrome=78.0.3904.108): Please enter hostess email address
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'NIVEDITA', ip: '172.16.231.54', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(direct), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56632749169981700185a42a0f57fc4b
+*** Element info: {Using=xpath, value=//p[contains(text(),'Address validated by cabi.')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:20)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:358)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:761)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElements.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-out>
+      <system-err><![CDATA[2019-12-03 16:48:59 - [TEST_SUITE][ERROR] - DTYEditSuite: Test Cases/VirtualShow/BODTY/DTYEdit FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/VirtualShow/createAPhysicalShow' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at DTYEdit.run(DTYEdit:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1575371933499.run(TempTestSuite1575371933499.groovy:35)
+Caused by: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter hostess email address}
+  (Session info: chrome=78.0.3904.108): Please enter hostess email address
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'NIVEDITA', ip: '172.16.231.54', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(direct), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56632749169981700185a42a0f57fc4b
+*** Element info: {Using=xpath, value=//p[contains(text(),'Address validated by cabi.')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:20)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:397)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:358)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElements(WebUiCommonHelper.java:761)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper$findWebElements.call(Unknown Source)
+	at createAPhysicalShow.run(createAPhysicalShow:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+   </testsuite>
+</testsuites>
